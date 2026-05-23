@@ -638,37 +638,38 @@
 <header class="site-header">
   <span class="logo">Ryuzaburo</span>
   <nav style="display:flex; gap:2rem; align-items:center;">
-    <a href="men-history.html">男性版</a>
-    <a href="selection-logic.html">選出ロジック</a>
+    <a href="men-history.html" data-en="Men's Edition">男性版</a>
+    <a href="selection-logic.html" data-en="Selection Logic">選出ロジック</a>
+    <button id="langBtn" onclick="toggleLang()" style="background:none;border:1px solid rgba(200,134,10,0.4);border-radius:50px;padding:0.28rem 0.9rem;font-size:0.65rem;letter-spacing:0.12em;color:var(--gray);cursor:pointer;transition:all 0.3s;margin-right:0.5rem;">EN</button>
     <button id="themeBtn" style="background:none;border:1px solid rgba(200,134,10,0.4);border-radius:50px;padding:0.28rem 0.9rem;font-size:0.65rem;letter-spacing:0.12em;color:var(--gray);cursor:pointer;display:flex;align-items:center;gap:0.4rem;transition:all 0.3s;">
-      <span id="themeIcon">☀️</span><span id="themeLabel">ライト</span>
+      <span id="themeIcon">☀️</span><span id="themeLabel" data-en="Light">ライト</span>
     </button>
   </nav>
 </header>
 
 <div class="page-hero">
   <p class="hero-eyebrow">Research / History</p>
-  <h1 class="hero-title">日本の歴史を彩る<br><em>影響力ある女性 20人</em></h1>
+  <h1 class="hero-title" data-en-html="20 Influential Women&lt;br&gt;&lt;em&gt;Who Shaped Japanese History&lt;/em&gt;">日本の歴史を彩る<br><em>影響力ある女性 20人</em></h1>
   <p class="hero-desc">
     政治・文学・芸術・教育・社会運動——<br>
     弥生時代から現代まで、時代を動かした女性たちの肖像。<br>
     5項目総合評価による客観的ランキング。
   </p>
-  <a href="selection-logic.html" class="hero-methodology-link">選出ロジックを見る →</a>
+  <a href="selection-logic.html" class="hero-methodology-link" data-en="View Selection Logic →">選出ロジックを見る →</a>
 </div>
 
 <nav class="filter-nav">
-  <button class="filter-btn active" data-filter="all">すべて</button>
-  <button class="filter-btn" data-filter="yayoi">弥生</button>
-  <button class="filter-btn" data-filter="asuka">飛鳥</button>
-  <button class="filter-btn" data-filter="heian">平安</button>
-  <button class="filter-btn" data-filter="kamakura">鎌倉</button>
-  <button class="filter-btn" data-filter="sengoku">戦国</button>
-  <button class="filter-btn" data-filter="azuchi">安土桃山</button>
-  <button class="filter-btn" data-filter="bakumatsu">幕末</button>
-  <button class="filter-btn" data-filter="meiji">明治</button>
-  <button class="filter-btn" data-filter="taisho">大正</button>
-  <button class="filter-btn" data-filter="modern">現代</button>
+  <button class="filter-btn active" data-filter="all" data-en="All">すべて</button>
+  <button class="filter-btn" data-filter="yayoi" data-en="Yayoi">弥生</button>
+  <button class="filter-btn" data-filter="asuka" data-en="Asuka">飛鳥</button>
+  <button class="filter-btn" data-filter="heian" data-en="Heian">平安</button>
+  <button class="filter-btn" data-filter="kamakura" data-en="Kamakura">鎌倉</button>
+  <button class="filter-btn" data-filter="sengoku" data-en="Sengoku">戦国</button>
+  <button class="filter-btn" data-filter="azuchi" data-en="Azuchi-Momoyama">安土桃山</button>
+  <button class="filter-btn" data-filter="bakumatsu" data-en="Bakumatsu">幕末</button>
+  <button class="filter-btn" data-filter="meiji" data-en="Meiji">明治</button>
+  <button class="filter-btn" data-filter="taisho" data-en="Taisho">大正</button>
+  <button class="filter-btn" data-filter="modern" data-en="Modern">現代</button>
 </nav>
 
 <main class="profiles-wrap">
@@ -690,22 +691,22 @@
         <div class="artifact-thumb">
           <span class="artifact-icon">🪞</span>
           <div class="artifact-text">
-            <div class="artifact-name">三角縁神獣鏡</div>
-            <div class="artifact-loc">各地博物館蔵</div>
+            <div class="artifact-name" data-en="Bronze Mirror with Deities & Beasts">三角縁神獣鏡</div>
+            <div class="artifact-loc" data-en="Various Museums">各地博物館蔵</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">📜</span>
           <div class="artifact-text">
-            <div class="artifact-name">魏志倭人伝</div>
-            <div class="artifact-loc">中国・三国志史料</div>
+            <div class="artifact-name" data-en="Wei Zhi — Account of the Wa People">魏志倭人伝</div>
+            <div class="artifact-loc" data-en="Three Kingdoms Chronicles, China">中国・三国志史料</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">🏛️</span>
           <div class="artifact-text">
-            <div class="artifact-name">纏向遺跡</div>
-            <div class="artifact-loc">奈良県桜井市</div>
+            <div class="artifact-name" data-en="Makimuku Archaeological Site">纏向遺跡</div>
+            <div class="artifact-loc" data-en="Sakurai, Nara Prefecture">奈良県桜井市</div>
           </div>
         </div>
       </div>
@@ -717,21 +718,21 @@
           <span class="name-romaji">Himiko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">弥生時代</span>
+          <span class="era-badge" data-en="Yayoi Period">弥生時代</span>
           <span class="dates">生没年不詳（約175〜248年頃）</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">宗教</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Religion">宗教</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="1">
         邪馬台国を統治した女王。中国の史書『魏志倭人伝』に詳述され、「親魏倭王」の金印を魏帝から授与されたとされる。
         鬼道（巫術的祭祀）を用いて民衆を従え、弟が政務を補佐したという統治形態は、日本古代の宗教的権威と政治権力が未分離だった時代を象徴する。
         奈良県纏向遺跡が邪馬台国の有力候補地として注目されており、大規模建物跡や大量の桃の種が出土している。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:53.7%"></div></div>
         <span class="pop-value">16.1%</span>
       </div>
@@ -757,22 +758,22 @@
         <div class="artifact-thumb">
           <span class="artifact-icon">📖</span>
           <div class="artifact-text">
-            <div class="artifact-name">源氏物語 写本</div>
-            <div class="artifact-loc">国立国会図書館蔵</div>
+            <div class="artifact-name" data-en="Tale of Genji Manuscript">源氏物語 写本</div>
+            <div class="artifact-loc" data-en="National Diet Library Collection">国立国会図書館蔵</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">📝</span>
           <div class="artifact-text">
-            <div class="artifact-name">紫式部日記</div>
-            <div class="artifact-loc">藤田美術館ほか</div>
+            <div class="artifact-name" data-en="Murasaki Shikibu Diary">紫式部日記</div>
+            <div class="artifact-loc" data-en="Fujita Museum & Others">藤田美術館ほか</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">🎨</span>
           <div class="artifact-text">
-            <div class="artifact-name">伝狩野探幽筆 肖像画</div>
-            <div class="artifact-loc">国立国会図書館蔵</div>
+            <div class="artifact-name" data-en="Portrait Attr. to Kanō Tan'yū">伝狩野探幽筆 肖像画</div>
+            <div class="artifact-loc" data-en="National Diet Library Collection">国立国会図書館蔵</div>
           </div>
         </div>
       </div>
@@ -784,21 +785,21 @@
           <span class="name-romaji">Murasaki Shikibu</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">平安時代</span>
+          <span class="era-badge" data-en="Heian Period">平安時代</span>
           <span class="dates">978頃〜1014年以降</span>
         </div>
         <div class="field-tags">
-          <span class="tag">文学</span>
-          <span class="tag">宮廷文化</span>
+          <span class="tag" data-en="Literature">文学</span>
+          <span class="tag" data-en="Court Culture">宮廷文化</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="2">
         世界最古の長編小説とも称される『源氏物語』の作者。一条天皇の中宮・彰子に仕えながら執筆し、宮廷の風俗・人間心理を精緻に描いた。
         その文学的影響は千年を越えて継続し、現代の日本語・文学・美術・演劇に多大な痕跡を残す。
         2024年の大河ドラマ主人公にもなり、令和の時代に改めてその生涯が注目された。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:33%"></div></div>
         <span class="pop-value">9.9%</span>
       </div>
@@ -824,22 +825,22 @@
         <div class="artifact-thumb">
           <span class="artifact-icon">🎨</span>
           <div class="artifact-text">
-            <div class="artifact-name">政子肖像画</div>
-            <div class="artifact-loc">鶴岡八幡宮蔵</div>
+            <div class="artifact-name" data-en="Portrait of Masako">政子肖像画</div>
+            <div class="artifact-loc" data-en="Tsurugaoka Hachimangu Collection">鶴岡八幡宮蔵</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">🏛️</span>
           <div class="artifact-text">
-            <div class="artifact-name">願成就院</div>
-            <div class="artifact-loc">静岡県伊豆の国市</div>
+            <div class="artifact-name" data-en="Ganjojuin Temple">願成就院</div>
+            <div class="artifact-loc" data-en="Izu no Kuni, Shizuoka">静岡県伊豆の国市</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">📜</span>
           <div class="artifact-text">
-            <div class="artifact-name">吾妻鏡</div>
-            <div class="artifact-loc">鎌倉幕府公式記録</div>
+            <div class="artifact-name" data-en="Azuma Kagami Chronicle">吾妻鏡</div>
+            <div class="artifact-loc" data-en="Official Kamakura Shogunate Record">鎌倉幕府公式記録</div>
           </div>
         </div>
       </div>
@@ -851,21 +852,21 @@
           <span class="name-romaji">Hojo Masako</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">鎌倉時代</span>
+          <span class="era-badge" data-en="Kamakura Period">鎌倉時代</span>
           <span class="dates">1157〜1225年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">軍事</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Military">軍事</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="3">
         源頼朝の正室。頼朝没後は出家しながらも「尼将軍」として幕府の実権を掌握し、北条氏による執権政治の基盤を築いた。
         承久の乱（1221年）では自ら幕府武士団に演説し、後鳥羽上皇方の朝廷軍に大勝。
         女性でありながら政軍両面で最高権力を行使した日本史上希有なリーダーである。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:24.7%"></div></div>
         <span class="pop-value">7.4%</span>
       </div>
@@ -899,14 +900,14 @@
           <span class="artifact-icon">📜</span>
           <div class="artifact-text">
             <div class="artifact-name">秀吉への書状</div>
-            <div class="artifact-loc">各博物館蔵</div>
+            <div class="artifact-loc" data-en="Various Museum Collections">各博物館蔵</div>
           </div>
         </div>
         <div class="artifact-thumb">
           <span class="artifact-icon">🎨</span>
           <div class="artifact-text">
             <div class="artifact-name">北政所肖像画</div>
-            <div class="artifact-loc">高台寺蔵</div>
+            <div class="artifact-loc" data-en="Kōdai-ji Temple Collection">高台寺蔵</div>
           </div>
         </div>
       </div>
@@ -918,21 +919,21 @@
           <span class="name-romaji">Nene / Kitamandokoro</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">安土桃山</span>
+          <span class="era-badge" data-en="Azuchi-Momoyama">安土桃山</span>
           <span class="dates">1549〜1624年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
+          <span class="tag" data-en="Politics">政治</span>
           <span class="tag">文化</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="4">
         豊臣秀吉の正室。内助の功で秀吉の天下統一事業を支え、諸大名の妻たちからも「おねさま」と慕われた。
         秀吉死後は出家し「高台院」と号し、京都東山に高台寺を創建。茶道・工芸の庇護者として桃山文化の完成に貢献した。
         秀吉との間には子がなかったが、その品格と政治的手腕は時代を超えて高く評価される。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:15.3%"></div></div>
         <span class="pop-value">4.6%</span>
       </div>
@@ -985,21 +986,21 @@
           <span class="name-romaji">Tenshoin Atsuhime</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">幕末</span>
+          <span class="era-badge" data-en="Bakumatsu Period">幕末</span>
           <span class="dates">1836〜1883年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">外交</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Diplomacy">外交</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="5">
         薩摩藩主島津斉彬の養女として13代将軍徳川家定に嫁ぎ、大奥の最高権力者となった。
         幕末の政治的混乱の中、薩摩と幕府双方に通じた立場から江戸城の無血開城に間接的な影響を与えたとされる。
         維新後も旧将軍家の後見として精力的に活動し、明治の激動期を毅然として生きた女性として人気が高い。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:13.7%"></div></div>
         <span class="pop-value">4.1%</span>
       </div>
@@ -1052,21 +1053,21 @@
           <span class="name-romaji">Ono no Komachi</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">平安時代</span>
+          <span class="era-badge" data-en="Heian Period">平安時代</span>
           <span class="dates">生没年不詳（9〜10世紀頃）</span>
         </div>
         <div class="field-tags">
-          <span class="tag">文学</span>
+          <span class="tag" data-en="Literature">文学</span>
           <span class="tag">和歌</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="6">
         六歌仙・三十六歌仙の一人に数えられる平安期を代表する女性歌人。その恋愛歌は情念と美意識の極致とされ、
         『古今和歌集』に18首が収録されている。生涯の詳細は不明だが、絶世の美女・孤高の老女という二面的な伝説が
         能や歌舞伎の題材として受け継がれ、「美人」の代名詞として現代まで機能している。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:13.7%"></div></div>
         <span class="pop-value">4.1%</span>
       </div>
@@ -1119,21 +1120,21 @@
           <span class="name-romaji">Tomoe Gozen</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">平安末〜鎌倉</span>
+          <span class="era-badge" data-en="Late Heian / Kamakura">平安末〜鎌倉</span>
           <span class="dates">生没年諸説（12世紀後半）</span>
         </div>
         <div class="field-tags">
-          <span class="tag">軍事</span>
-          <span class="tag">武芸</span>
+          <span class="tag" data-en="Military">軍事</span>
+          <span class="tag" data-en="Martial Arts">武芸</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="7">
         源義仲（木曽義仲）の側近として各地の合戦に従軍した伝説的女武者。
         『平家物語』では「弓矢・刀・武芸いずれも並ぶ者なし」と称賛され、倶利伽羅峠の戦いでも活躍したとされる。
         実在の証拠は乏しいが、その存在は日本における女性の武的潜在力を体現する象徴として能・歌舞伎・小説で繰り返し描かれてきた。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:13%"></div></div>
         <span class="pop-value">3.9%</span>
       </div>
@@ -1186,22 +1187,22 @@
           <span class="name-romaji">Niijima Yae</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">幕末〜明治</span>
+          <span class="era-badge" data-en="Bakumatsu – Meiji">幕末〜明治</span>
           <span class="dates">1845〜1932年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">軍事</span>
-          <span class="tag">教育</span>
-          <span class="tag">医療</span>
+          <span class="tag" data-en="Military">軍事</span>
+          <span class="tag" data-en="Education">教育</span>
+          <span class="tag" data-en="Medicine">医療</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="8">
         会津藩砲術師範の家に生まれ、戊辰戦争では銃を手に鶴ヶ城に篭城し「会津の女傑」と呼ばれた。
         維新後は夫・新島襄とともに同志社英学校を創立し、女子教育の普及に生涯を捧げた。
         日清・日露戦争では篤志看護婦として従軍し、その行動力と多才さから「幕末のジャンヌ・ダルク」とも称される。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:11.3%"></div></div>
         <span class="pop-value">3.4%</span>
       </div>
@@ -1235,7 +1236,7 @@
           <span class="artifact-icon">🏯</span>
           <div class="artifact-text">
             <div class="artifact-name">小谷城址</div>
-            <div class="artifact-loc">滋賀県長浜市</div>
+            <div class="artifact-loc" data-en="Nagahama, Shiga Prefecture">滋賀県長浜市</div>
           </div>
         </div>
         <div class="artifact-thumb">
@@ -1254,21 +1255,21 @@
           <span class="name-romaji">Oichi no Kata</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">戦国時代</span>
+          <span class="era-badge" data-en="Sengoku Period">戦国時代</span>
           <span class="dates">1547〜1583年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">外交</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Diplomacy">外交</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="9">
         織田信長の妹として浅井長政に嫁ぎ、のちに柴田勝家の妻となった戦国の女性。
         茶々（淀殿）・初・江という三姉妹の母として、豊臣・徳川両政権の外戚関係を通じて戦国から江戸初期にかけての政治史に深く関わった。
         賤ヶ岳の戦い後、夫・勝家とともに北ノ庄城で壮絶な最期を遂げたとされる。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:11%"></div></div>
         <span class="pop-value">3.3%</span>
       </div>
@@ -1321,21 +1322,21 @@
           <span class="name-romaji">Hosokawa Gracia</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">安土桃山</span>
+          <span class="era-badge" data-en="Azuchi-Momoyama">安土桃山</span>
           <span class="dates">1563〜1600年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">宗教</span>
-          <span class="tag">政治</span>
+          <span class="tag" data-en="Religion">宗教</span>
+          <span class="tag" data-en="Politics">政治</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="10">
         明智光秀の娘として生まれ、細川忠興に嫁いだ後キリスト教の洗礼を受け「ガラシャ（恩寵）」と名乗った。
         関ヶ原の前哨戦で西軍の人質要求を拒み、家老に介錯させて殉死。その死はイエズス会を通じてヨーロッパにも伝わり、
         「殉教のガラシャ」として日本のキリシタン史を象徴する存在となった。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:11%"></div></div>
         <span class="pop-value">3.3%</span>
       </div>
@@ -1388,21 +1389,21 @@
           <span class="name-romaji">Tsuda Umeko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">明治〜大正</span>
+          <span class="era-badge" data-en="Meiji – Taisho">明治〜大正</span>
           <span class="dates">1864〜1929年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">教育</span>
+          <span class="tag" data-en="Education">教育</span>
           <span class="tag">国際</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="11">
         明治政府が派遣した最初の女子留学生として6歳で渡米し、ブリンマー大学で生物学を修めた先駆者。
         帰国後は1900年に女子英学塾（現・津田塾大学）を創立し、英語を通じた女性の自立と高等教育の普及に尽力した。
         現在の五千円札に2024年から肖像が採用され、教育者としての歴史的功績が改めて評価されている。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:9.3%"></div></div>
         <span class="pop-value">2.8%</span>
       </div>
@@ -1429,7 +1430,7 @@
           <span class="artifact-icon">📷</span>
           <div class="artifact-text">
             <div class="artifact-name">若き日の写真</div>
-            <div class="artifact-loc">国立国会図書館蔵</div>
+            <div class="artifact-loc" data-en="National Diet Library Collection">国立国会図書館蔵</div>
           </div>
         </div>
         <div class="artifact-thumb">
@@ -1455,21 +1456,21 @@
           <span class="name-romaji">Yosano Akiko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">明治〜昭和</span>
+          <span class="era-badge" data-en="Meiji – Showa">明治〜昭和</span>
           <span class="dates">1878〜1942年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">文学</span>
-          <span class="tag">社会運動</span>
+          <span class="tag" data-en="Literature">文学</span>
+          <span class="tag" data-en="Social Movement">社会運動</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="12">
         浪漫歌人として自由奔放な恋愛短歌を詠んだ『みだれ髪』で文壇デビュー。
         日露戦争時には弟の出征を嘆いた「君死にたまふことなかれ」で反戦・平和への強い意志を表明し、社会に衝撃を与えた。
         夫・鉄幹と「明星」誌を主導し、さらに『源氏物語』の現代語訳にも着手するなど、近代日本文学の多様な面で先導的な役割を果たした。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:8.3%"></div></div>
         <span class="pop-value">2.5%</span>
       </div>
@@ -1522,21 +1523,21 @@
           <span class="name-romaji">Higuchi Ichiyo</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">明治時代</span>
+          <span class="era-badge" data-en="Meiji Period">明治時代</span>
           <span class="dates">1872〜1896年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">文学</span>
-          <span class="tag">小説</span>
+          <span class="tag" data-en="Literature">文学</span>
+          <span class="tag" data-en="Fiction">小説</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="13">
         わずか24年の短い生涯で、明治の女性の心理と庶民生活を鋭く描いた小説家・歌人。
         『たけくらべ』『にごりえ』『十三夜』などは発表当時から森鷗外・幸田露伴に激賞され、日本近代文学の金字塔となった。
         女性として初めて旧五千円札の肖像に採用され、現在も国民的な認知度を誇る。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:7.7%"></div></div>
         <span class="pop-value">2.3%</span>
       </div>
@@ -1589,22 +1590,22 @@
           <span class="name-romaji">Hiratsuka Raicho</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">大正〜昭和</span>
+          <span class="era-badge" data-en="Taisho – Showa">大正〜昭和</span>
           <span class="dates">1886〜1971年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">社会運動</span>
-          <span class="tag">思想</span>
-          <span class="tag">文学</span>
+          <span class="tag" data-en="Social Movement">社会運動</span>
+          <span class="tag" data-en="Philosophy">思想</span>
+          <span class="tag" data-en="Literature">文学</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="14">
         「元始、女性は太陽であった」という宣言で始まる女性誌『青鞜』を1911年に創刊し、日本フェミニズムの先駆けとなった思想家・作家。
         与謝野晶子との「母性保護論争」など、女性の権利・自立をめぐる議論をリードし、戦後は日本婦人団体連合会会長として平和運動にも尽力した。
         その名は現在でも日本の女性解放運動史を語る際に必ず登場する。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:6.3%"></div></div>
         <span class="pop-value">1.9%</span>
       </div>
@@ -1657,22 +1658,22 @@
           <span class="name-romaji">Empress Suiko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">飛鳥時代</span>
+          <span class="era-badge" data-en="Asuka Period">飛鳥時代</span>
           <span class="dates">554〜628年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">外交</span>
-          <span class="tag">仏教</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Diplomacy">外交</span>
+          <span class="tag" data-en="Buddhism">仏教</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="15">
         日本史上初の女性天皇（第33代）として593年に即位し、甥・聖徳太子を摂政として飛鳥文化の黄金期を開いた。
         遣隋使の派遣、仏教の積極的な振興、そして「冠位十二階」「憲法十七条」の制定（聖徳太子と共同で）により、
         中央集権国家の礎を築いた。その治世は36年にわたり、後の歴代女帝のモデルとなった。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:7%"></div></div>
         <span class="pop-value">2.1%</span>
       </div>
@@ -1725,21 +1726,21 @@
           <span class="name-romaji">Kawashima Yoshiko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">昭和戦前</span>
+          <span class="era-badge" data-en="Pre-war Showa">昭和戦前</span>
           <span class="dates">1907〜1948年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">スパイ</span>
+          <span class="tag" data-en="Intelligence">スパイ</span>
           <span class="tag">活動家</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="16">
         清朝粛親王の第14王女として北京に生まれ、日本人・川島浪速の養女となった謎多き人物。
         上海や満州で男装し、「東洋のマタ・ハリ」と呼ばれながら日本のスパイ活動に従事したとされる。
         第二次世界大戦後は国民党政府に漢奸（売国奴）として逮捕・処刑されたが、実際の活動の真相は今なお議論が続く歴史ミステリーである。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:5%"></div></div>
         <span class="pop-value">1.5%</span>
       </div>
@@ -1792,21 +1793,21 @@
           <span class="name-romaji">Ichikawa Fusae</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">大正〜昭和</span>
+          <span class="era-badge" data-en="Taisho – Showa">大正〜昭和</span>
           <span class="dates">1893〜1981年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">政治</span>
-          <span class="tag">社会運動</span>
+          <span class="tag" data-en="Politics">政治</span>
+          <span class="tag" data-en="Social Movement">社会運動</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="17">
         戦前から戦後にかけて日本の婦人参政権運動を主導した政治家・活動家。
         1921年に平塚らいてうと「新婦人協会」を設立し、戦後は参議院議員として長年にわたり清潔な政治と女性の地位向上のために活動した。
         女性が参政権を得た1945年以降も、政界での腐敗追及と市民運動を通じて「クリーン政治」の象徴となった。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:5.7%"></div></div>
         <span class="pop-value">1.7%</span>
       </div>
@@ -1859,22 +1860,22 @@
           <span class="name-romaji">Ishimure Michiko</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">現代</span>
+          <span class="era-badge" data-en="Contemporary">現代</span>
           <span class="dates">1927〜2018年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">文学</span>
-          <span class="tag">社会運動</span>
-          <span class="tag">環境</span>
+          <span class="tag" data-en="Literature">文学</span>
+          <span class="tag" data-en="Social Movement">社会運動</span>
+          <span class="tag" data-en="Environment">環境</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="18">
         水俣病の実態を記録した長編ドキュメンタリー小説『苦海浄土』（1969年）で、環境汚染問題に文学の力で光を当てた作家。
         チッソ工場廃液による水銀中毒患者の苦しみを詩的・叙事詩的な文体で描き、世界中の読者の心を揺り動かした。
         その作品は「環境文学の古典」として国際的に翻訳・評価され、日本における公害反対運動の精神的支柱となった。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:4%"></div></div>
         <span class="pop-value">1.2%</span>
       </div>
@@ -1927,22 +1928,22 @@
           <span class="name-romaji">Kusama Yayoi</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">現代</span>
+          <span class="era-badge" data-en="Contemporary">現代</span>
           <span class="dates">1929年〜</span>
         </div>
         <div class="field-tags">
-          <span class="tag">芸術</span>
-          <span class="tag">前衛</span>
+          <span class="tag" data-en="Art">芸術</span>
+          <span class="tag" data-en="Avant-garde">前衛</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="19">
         水玉・網・無限増殖をモチーフとした前衛芸術で世界的評価を獲得した現代美術家。
         1950年代からニューヨークで活動し、ポップアートやフェミニストアートの先駆者としても位置づけられる。
         近年は「世界で最も有名な存命の女性アーティスト」との評もあり、東京・新宿に草間彌生美術館を開設。
         その独自の宇宙観と強烈な色彩感覚は21世紀においても衰えを知らない。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:4.7%"></div></div>
         <span class="pop-value">1.4%</span>
       </div>
@@ -1995,22 +1996,22 @@
           <span class="name-romaji">Oyama Sutematsu</span>
         </h2>
         <div class="profile-meta">
-          <span class="era-badge">明治時代</span>
+          <span class="era-badge" data-en="Meiji Period">明治時代</span>
           <span class="dates">1860〜1919年</span>
         </div>
         <div class="field-tags">
-          <span class="tag">教育</span>
+          <span class="tag" data-en="Education">教育</span>
           <span class="tag">国際</span>
           <span class="tag">社会事業</span>
         </div>
       </header>
-      <p class="profile-bio">
+      <p class="profile-bio" bio-rank="20">
         津田梅子と同期の女子留学生第一号として11歳で渡米し、ヴァッサー大学を卒業した明治の先駆者。
         帰国後は陸軍元帥・大山巌の妻として鹿鳴館の花形となる一方、看護教育や女性福祉事業に尽力し「鹿鳴館の花」と称された。
         その優雅な外交センスと教育への情熱は、明治の文明開化を体現する女性像として高く評価されている。
       </p>
       <div class="pop-row">
-        <span class="pop-label">世論調査人気</span>
+        <span class="pop-label" data-en="Public Popularity">世論調査人気</span>
         <div class="pop-bar"><div class="pop-fill" style="width:3.3%"></div></div>
         <span class="pop-value">1.0%</span>
       </div>
@@ -2242,14 +2243,79 @@
 </div>
 <footer>
   <div class="footer-links">
-    <a href="men-history.html">男性版 — 影響力ある日本の男性21人</a>
-    <a href="selection-logic.html">選出ロジック詳細</a>
+    <a href="men-history.html" data-en="Men's Edition — 21 Influential Men">男性版 — 影響力ある日本の男性21人</a>
+    <a href="selection-logic.html" data-en="Selection Logic Details">選出ロジック詳細</a>
   </div>
   <p class="footer-copy">&copy; 2026 Ryuzaburo — All rights reserved</p>
 </footer>
 
 <script>
-  // Filter functionality
+  // ── Language Toggle ──
+  const bios_en = {
+    1: "Queen of the Yamataikoku kingdom, documented in the Chinese chronicle 'Wei Zhi' (Account of the Wa People). She was said to have received the golden seal of 'Friendly King of the Wa' from the Wei emperor. Ruling through shamanic religious rites ('kidō'), she governed with her brother handling day-to-day administration — a system reflecting an age when religious authority and political power were inseparable. The Makimuku archaeological site in Nara is today's leading candidate for Yamataikoku.",
+    2: "Author of 'The Tale of Genji' — often called the world's first novel. Serving as a lady-in-waiting to Empress Consort Shoshi of Emperor Ichijo, she crafted an unparalleled portrait of Heian court life and human psychology. Her literary influence has endured for over a millennium, leaving deep traces in modern Japanese language, literature, painting, and theater. In 2024 she became the protagonist of NHK's flagship historical drama, re-introducing her life to a new generation.",
+    3: "Wife of Minamoto no Yoritomo, founder of the Kamakura Shogunate. After Yoritomo's death she became a nun yet wielded real power as 'The Nun Shogun,' securing the dominance of the Hojo clan. At the Jokyu War (1221) she personally rallied the samurai retainers with a passionate speech, turning the tide against Emperor Go-Toba's imperial forces. The first woman to hold supreme political authority in Japanese history.",
+    4: "The devoted wife of Toyotomi Hideyoshi, whose steadfast support behind the scenes helped him rise from foot soldier to supreme ruler. Known as 'Oku-sama' (dear lady) even by the wives of rival warlords, she was a pillar of the Toyotomi household. After Hideyoshi's death she became a nun and took the name Kōdai-in, founding Kōdai-ji Temple in Kyoto's Higashiyama district as a memorial to her husband — a temple that still stands today.",
+    5: "Adopted daughter of Satsuma Domain lord Shimazu Nariakira, she married the 13th Tokugawa shogun Iesada and became the supreme authority in the Ooku (the shogun's inner palace). In the chaos of the Bakumatsu era, her unique position straddling both Satsuma and the Tokugawa shogunate enabled her to negotiate the peaceful surrender of Edo Castle — sparing the city from destruction and securing a peaceful transition of power.",
+    6: "One of the Rokkasen (Six Poetry Masters) and Sanjurokkasen (Thirty-Six Poetry Immortals) of the Heian era. Her love poems are considered the pinnacle of passion and aesthetic beauty, with 18 poems included in 'Kokin Wakashū.' Her very existence became shrouded in legend — her extraordinary beauty and the poems lamenting its fading made her a symbol of fleeting beauty in Japanese literary and artistic tradition.",
+    7: "A legendary female warrior who fought alongside Minamoto no Yoshinaka (Kiso Yoshinaka) in battles across Japan. 'The Tale of the Heike' praises her as 'peerless in archery, swordsmanship, and all martial arts,' describing how she fought at the front of the Battle of Kurikara Pass. Her image as a woman who commanded troops and fought with equal skill to any man made her an enduring symbol of feminine valor in Japanese culture.",
+    8: "Born into a family of gunnery instructors for the Aizu Domain, she took up a rifle and fought in the defense of Tsurugajo Castle during the Boshin War (1868), earning the name 'Maiden of Aizu.' After the Meiji Restoration she married Christian educator Niijima Jo and co-founded Doshisha University in Kyoto. A woman who embodied both the samurai spirit of resistance and the pioneer spirit of women's education.",
+    9: "Sister of Oda Nobunaga and wife of Azai Nagamasa — and after his death, of Shibata Katsuie. As mother of the three sisters Chacha (Yodo-dono), Hatsu, and Go, she linked by blood the Toyotomi and Tokugawa power structures through her daughters' marriages. Her beauty and tragic fate — dying with Katsuie at the fall of Kitanosho Castle — made her one of the most poignant figures of the Sengoku era.",
+    10: "Born as a daughter of Akechi Mitsuhide, she married Hosokawa Tadaoki and later received Christian baptism, taking the name Gracia (Grace). When the Western army demanded she serve as a hostage on the eve of the Battle of Sekigahara, she refused — and her chief retainer, following her orders, took her life to preserve her honor. Her faith and her final act of defiant dignity made her Japan's most celebrated Christian martyr.",
+    11: "A pioneer who traveled to the United States at age six as one of the first female students sent by the Meiji government. She studied biology at Bryn Mawr College and returned to Japan determined to transform women's education. In 1900 she founded the Women's English School (now Tsuda University), dedicating her life to developing women's intellectual independence. Her portrait appeared on Japan's 5,000-yen note, and she now graces the new 5,000-yen note from 2024.",
+    12: "She burst onto the literary scene with 'Midaregami' (Tangled Hair, 1901), a collection of bold, passionate waka poems celebrating love and the female body with unprecedented freedom. During the Russo-Japanese War, her anti-war poem 'Thou Shalt Not Die' (sending her brother to the front) shocked the nation with its fierce maternal love and pacifist conviction. A towering figure in Meiji women's liberation through the power of poetry.",
+    13: "In a brief life of just 24 years, this novelist and poet captured the psychology of Meiji women and working-class life with piercing insight. Works including 'Takekurabe,' 'Nigorie,' and 'Jusan'ya' were immediately praised by Mori Ogai and Koda Rohan upon publication. Her portrait has graced Japan's 5,000-yen banknote for many years — a symbol of women's literary achievement in the modern era.",
+    14: "A philosopher and writer who launched the feminist journal 'Seitosha' in 1911, opening with the declaration: 'In the beginning, woman was the sun.' Regarded as the founding mother of Japanese feminism, she worked alongside Yosano Akiko and Ichikawa Fusae to advance women's rights. Her concept of women's fundamental liberation — spiritual, intellectual, and social — shaped the women's movement in Japan for generations.",
+    15: "The first female emperor in Japanese history (the 33rd sovereign), she ascended to the throne in 593 with her nephew Prince Shotoku as regent, ushering in the golden age of Asuka culture. She dispatched envoys to the Sui Dynasty of China, actively promoted Buddhism, and established the framework of state governance — making her reign one of the most culturally significant in Japanese history.",
+    16: "Born the 14th princess of the Qing Dynasty's Prince Su in Beijing, she was adopted by Japanese guardian Kawashima Naniwa and became one of the most mysterious figures of modern Japanese history. Operating in Shanghai and Manchuria dressed as a man and known as the 'Eastern Mata Hari,' she worked in Japanese intelligence activities. Executed in Beijing in 1948 on charges of treason — her true motivations remain debated to this day.",
+    17: "A politician and activist who led Japan's women's suffrage movement from prewar through postwar eras. In 1921 she co-founded the 'New Women's Association' with Hiratsuka Raicho, and after the war served as a member of the House of Councillors for many years, championing women's political participation. She founded the Ichikawa Fusae Memorial Women's Center, which continues her legacy today.",
+    18: "An author who shone the light of literature on the tragedy of Minamata disease — industrial mercury poisoning caused by Chisso Corporation's factory effluent — through her landmark documentary novel 'Kugai Jōdo' (Paradise in the Sea of Sorrow, 1969). She gave voice to the victims who had been silenced and forgotten, and is recognized globally as a pioneer of environmental literature and conscience.",
+    19: "A contemporary artist who has won worldwide acclaim with her signature motifs of polka dots, nets, and infinite proliferation. Active in New York from the 1950s, she was a forerunner of Pop Art and feminist art before returning to Japan. With 'Infinity Mirrored Rooms,' pumpkin sculptures, and immersive installations, she has become one of the most recognized and exhibited artists in the world — continuing to create into her 90s.",
+    20: "One of the first female Japanese students to study abroad (alongside Tsuda Umeko), she traveled to the United States at age 11 and graduated from Vassar College — the first Japanese woman to earn an American university degree. Returning to Japan she became the wife of Field Marshal Oyama Iwao and a star of the Rokumeikan diplomatic salon era, serving as a bridge between Japanese and Western culture at the dawn of the Meiji era."
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'ja';
+
+  function toggleLang() {
+    currentLang = currentLang === 'ja' ? 'en' : 'ja';
+    localStorage.setItem('lang', currentLang);
+    applyLang();
+  }
+
+  function applyLang() {
+    const isEN = currentLang === 'en';
+    const btn = document.getElementById('langBtn');
+    if (btn) btn.textContent = isEN ? 'JP' : 'EN';
+
+    // Swap short text (data-en attribute)
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (!el.dataset.jaOriginal) el.dataset.jaOriginal = el.textContent.trim();
+      el.textContent = isEN ? el.dataset.en : el.dataset.jaOriginal;
+    });
+
+    // Swap HTML elements (data-en-html attribute)
+    document.querySelectorAll('[data-en-html]').forEach(el => {
+      if (!el.dataset.jaHtmlOriginal) el.dataset.jaHtmlOriginal = el.innerHTML;
+      el.innerHTML = isEN ? el.dataset.enHtml : el.dataset.jaHtmlOriginal;
+    });
+
+    // Swap bio paragraphs (bio-rank attribute)
+    document.querySelectorAll('[bio-rank]').forEach(el => {
+      const rank = el.getAttribute('bio-rank');
+      if (!el.dataset.jaOriginal) el.dataset.jaOriginal = el.textContent.trim();
+      el.textContent = isEN ? (bios_en[rank] || el.dataset.jaOriginal) : el.dataset.jaOriginal;
+    });
+
+    // Update page title
+    document.title = isEN
+      ? '20 Influential Women Who Shaped Japanese History'
+      : '日本の歴史を彩る影響力ある女性20人';
+  }
+
+  // Apply saved language on load
+  applyLang();
+
+  // ── Filter functionality
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.profile-card');
   const dividers = document.querySelectorAll('.divider');
@@ -2363,7 +2429,10 @@
   function applyTheme(light){
     document.documentElement.setAttribute('data-theme', light?'light':'dark');
     document.getElementById('themeIcon').textContent = light?'🌙':'☀️';
-    document.getElementById('themeLabel').textContent = light?'ダーク':'ライト';
+    const isEN = currentLang === 'en';
+    document.getElementById('themeLabel').textContent = light
+      ? (isEN ? 'Dark' : 'ダーク')
+      : (isEN ? 'Light' : 'ライト');
     localStorage.setItem('theme', light?'light':'dark');
   }
   const savedTh = localStorage.getItem('theme');
@@ -2427,11 +2496,16 @@
       const loc = thumb.querySelector('.artifact-loc')?.textContent || '';
       const card = thumb.closest('.profile-card');
       const personName = card?.querySelector('.name-jp')?.textContent || '';
+      const isEN = currentLang === 'en';
+      const collectionLabel = isEN ? 'Collection:' : '所蔵：';
+      const artifactBody = isEN
+        ? `A historical artifact associated with "${personName}".<br>Held and preserved at ${loc}.`
+        : `「${personName}」ゆかりの史料・遺物です。<br>${loc} に所蔵・保存されています。`;
       openModal(`
         <span class="modal-icon">${icon}</span>
         <h2 class="modal-title">${name}</h2>
-        <p class="modal-sub">所蔵：${loc}</p>
-        <p class="modal-body">「${personName}」ゆかりの史料・遺物です。<br>${loc} に所蔵・保存されています。</p>
+        <p class="modal-sub">${collectionLabel} ${loc}</p>
+        <p class="modal-body">${artifactBody}</p>
       `);
     });
   });
