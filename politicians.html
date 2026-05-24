@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>統覧 TORAN — 政治家ランキング</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg:       #06080f;
+      --card:     #0d1426;
+      --mid:      #111827;
+      --red:      #e6384f;
+      --blue:     #4a8fd4;
+      --gold:     #f5c842;
+      --green:    #4ac776;
+      --orange:   #f0a030;
+      --text:     #dde3f0;
+      --gray:     #6878a0;
+      --border:   rgba(74,144,226,0.12);
+      --border-h: rgba(74,144,226,0.28);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', 'Noto Serif JP', sans-serif;
+      font-weight: 300;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(6,8,15,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+    .logo-ja {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.12em;
+    }
+    .logo-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      font-weight: 300;
+      color: var(--gray);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .nav-link {
+      font-size: 0.75rem;
+      color: var(--gray);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--text); }
+    .nav-link.back::before { content: '← '; }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(74,143,212,0.04) 0%, transparent 100%);
+    }
+    .hero-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      color: var(--blue);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+    .hero-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+    .hero-title span {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      color: var(--blue);
+      font-size: 1.1em;
+    }
+    .hero-tagline {
+      font-size: 0.85rem;
+      color: var(--gray);
+      letter-spacing: 0.08em;
+      margin-bottom: 2.5rem;
+      font-family: 'Noto Serif JP', serif;
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1;
+    }
+    .stat-num.blue { color: var(--blue); }
+    .stat-num.green { color: var(--green); }
+    .stat-num.orange { color: var(--orange); }
+    .stat-num.gold { color: var(--gold); }
+    .stat-label {
+      font-size: 0.7rem;
+      color: var(--gray);
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+    }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+      background: rgba(13,20,38,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0.9rem 2rem;
+    }
+
+    .filter-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 180px;
+    }
+    .search-icon {
+      position: absolute;
+      left: 0.7rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gray);
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+    .filter-input {
+      width: 100%;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem 0.5rem 2.1rem;
+      color: var(--text);
+      font-size: 0.82rem;
+      font-family: 'Noto Serif JP', sans-serif;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .filter-input:focus { border-color: var(--blue); }
+    .filter-input::placeholder { color: var(--gray); }
+
+    .filter-select {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      color: var(--text);
+      font-size: 0.8rem;
+      font-family: 'Noto Serif JP', sans-serif;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .filter-select:focus { border-color: var(--blue); }
+    .filter-select option { background: #111827; }
+
+    .filter-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--gray);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .filter-toggle.active {
+      border-color: var(--orange);
+      color: var(--orange);
+      background: rgba(240,160,48,0.08);
+    }
+
+    .result-count {
+      max-width: 1100px;
+      margin: 0.6rem auto 0;
+      font-size: 0.75rem;
+      color: var(--gray);
+      padding: 0 0;
+    }
+
+    /* ── TABLE SECTION ── */
+    .table-section {
+      max-width: 1100px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .table-wrap {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--card);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: rgba(74,144,212,0.06);
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    th:hover { color: var(--text); }
+    th .sort-icon { margin-left: 0.3rem; opacity: 0.4; }
+    th.sort-asc .sort-icon::after { content: ' ↑'; opacity: 1; }
+    th.sort-desc .sort-icon::after { content: ' ↓'; opacity: 1; }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: rgba(74,144,212,0.06); }
+
+    td {
+      padding: 0.85rem 1rem;
+      font-size: 0.85rem;
+      vertical-align: middle;
+    }
+
+    .rank-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--gray);
+      text-align: center;
+    }
+
+    .rank-badge {
+      display: inline-block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      border: 1px solid currentColor;
+      min-width: 2.8rem;
+      text-align: center;
+    }
+
+    .name-block { display: flex; flex-direction: column; gap: 0.15rem; }
+    .name-ja {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .name-reading {
+      font-size: 0.68rem;
+      color: var(--gray);
+      letter-spacing: 0.06em;
+    }
+
+    .party-badge {
+      display: inline-block;
+      padding: 0.18rem 0.55rem;
+      border-radius: 3px;
+      font-size: 0.72rem;
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 400;
+      white-space: nowrap;
+      color: #fff;
+    }
+
+    .chamber-text {
+      font-size: 0.78rem;
+      color: var(--gray);
+    }
+    .district-text {
+      font-size: 0.68rem;
+      color: rgba(104,120,160,0.7);
+      margin-top: 0.1rem;
+    }
+
+    .score-cell { min-width: 110px; }
+    .score-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1;
+    }
+    .score-bar-wrap {
+      height: 3px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 2px;
+      margin-top: 0.35rem;
+      width: 80px;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--blue), var(--green));
+    }
+
+    .flags-cell { text-align: center; }
+    .flag-icon { font-size: 1rem; }
+
+    .detail-btn {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid var(--border-h);
+      border-radius: 5px;
+      font-size: 0.72rem;
+      color: var(--blue);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .detail-btn:hover {
+      background: rgba(74,143,212,0.12);
+      border-color: var(--blue);
+    }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--gray);
+    }
+    .empty-state p { font-size: 0.9rem; margin-top: 0.5rem; }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      margin-top: 4rem;
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--gray);
+      letter-spacing: 0.1em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .site-header { padding: 0 1rem; }
+      .hero { padding: 2.5rem 1rem 2rem; }
+      .filter-bar { padding: 0.75rem 1rem; }
+      .table-section { padding: 0 0.75rem; }
+      td, th { padding: 0.6rem 0.6rem; }
+      .th-chamber, .td-chamber { display: none; }
+      .th-flags { display: none; }
+      .td-flags { display: none; }
+      .stats-grid { gap: 1.2rem; }
+    }
+    @media (max-width: 540px) {
+      .th-rank-badge, .td-rank-badge { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a class="logo" href="politicians.html">
+    <span class="logo-ja">統覧</span>
+    <span class="logo-en">TORAN</span>
+  </a>
+  <nav class="header-nav">
+    <a class="nav-link back" href="index.html">Portfolio</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">Japan Political Intelligence Database</p>
+  <h1 class="hero-title">政治家 <span>総覧</span></h1>
+  <p class="hero-tagline">812人の政治家データベース — 実績・発言・疑惑を根拠に基づき評価する</p>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num blue" id="stat-surveyed">—</div>
+      <div class="stat-label">調査済</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num green" id="stat-a-plus">—</div>
+      <div class="stat-label">A評価以上</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num orange" id="stat-caution">—</div>
+      <div class="stat-label">要注意フラグ</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num gold" id="stat-evidence">—</div>
+      <div class="stat-label">根拠数</div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input class="filter-input" id="search" type="text" placeholder="氏名・政党・役職で検索…">
+    </div>
+    <select class="filter-select" id="filter-chamber">
+      <option value="">すべての院</option>
+      <option value="衆議院">衆議院</option>
+      <option value="参議院">参議院</option>
+      <option value="知事">知事</option>
+    </select>
+    <select class="filter-select" id="filter-party">
+      <option value="">すべての政党</option>
+      <option value="自民党">自民党</option>
+      <option value="立憲民主党">立憲民主党</option>
+      <option value="日本維新の会">日本維新の会</option>
+      <option value="公明党">公明党</option>
+      <option value="国民民主党">国民民主党</option>
+      <option value="日本共産党">日本共産党</option>
+      <option value="れいわ新選組">れいわ新選組</option>
+      <option value="参政党">参政党</option>
+      <option value="無所属">無所属</option>
+    </select>
+    <select class="filter-select" id="filter-rank">
+      <option value="">すべてのランク</option>
+      <option value="S">S</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+    </select>
+    <button class="filter-toggle" id="toggle-caution">⚠️ 要注意のみ</button>
+  </div>
+  <div class="result-count" id="result-count"></div>
+</div>
+
+<!-- TABLE -->
+<main class="table-section">
+  <div class="table-wrap">
+    <table id="politician-table">
+      <thead>
+        <tr>
+          <th data-col="rank" class="th-ranknum">#<span class="sort-icon"></span></th>
+          <th data-col="rank-badge" class="th-rank-badge">ランク<span class="sort-icon"></span></th>
+          <th data-col="name">氏名<span class="sort-icon"></span></th>
+          <th data-col="party">政党<span class="sort-icon"></span></th>
+          <th data-col="chamber" class="th-chamber">院/選挙区<span class="sort-icon"></span></th>
+          <th data-col="total">総合スコア<span class="sort-icon"></span></th>
+          <th data-col="flags" class="th-flags">フラグ</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <div class="empty-state" id="empty-state" style="display:none">
+      <div style="font-size:2rem">🔍</div>
+      <p>該当する政治家が見つかりませんでした</p>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  © 2026 統覧 TORAN | Ryuzaburo — このサイトは教育・情報目的のプロトタイプです
+</footer>
+
+<script>
+/* ── DATA ── */
+const AXES_JA = ['国民生活改善','経済・財政','安全保障','政策実現力','説明責任','長期国益','公共性','政治倫理'];
+const STANCE_ITEMS = [
+  {key:'tax_cut',label:'減税'},{key:'active_fiscal',label:'積極財政'},{key:'discipline',label:'財政規律'},
+  {key:'defense',label:'防衛強化'},{key:'econ_sec',label:'経済安保'},{key:'immigration',label:'移民拡大'},
+  {key:'renewable',label:'再エネ推進'},{key:'nuclear',label:'原発活用'},{key:'expo',label:'万博推進'},
+  {key:'ir',label:'IR推進'},{key:'mynumber',label:'マイナ推進'},{key:'birthrate',label:'少子化対策'},
+  {key:'education',label:'教育投資'},{key:'regional',label:'地方創生'},{key:'china',label:'対中依存削減'},
+  {key:'foreign',label:'外国人政策'},{key:'food',label:'食料安保'},{key:'semi',label:'半導体支援'}
+];
+
+const PARTY_COLORS = {
+  '自民党':'#c8102e','立憲民主党':'#003f8a','日本維新の会':'#f2a100',
+  '公明党':'#9b59b6','国民民主党':'#7ac143','日本共産党':'#e4002b',
+  'れいわ新選組':'#ff69b4','参政党':'#ff8c00','無所属':'#808080'
+};
+
+const POLITICIANS = [
+  {
+    id:'P001', name:'高市 早苗', reading:'たかいちさなえ', party:'自民党', role:'内閣総理大臣',
+    chamber:'衆議院', district:'奈良2区', status:'現職', gender:'女', age:65,
+    total:82, rank:'A-',
+    axes:[4,5,5,4,3,3,4,4],
+    stances:{tax_cut:'◎',active_fiscal:'○',discipline:'△',defense:'◎',econ_sec:'◎',immigration:'×',renewable:'△',nuclear:'○',expo:'×',ir:'×',mynumber:'△',birthrate:'○',education:'○',regional:'△',china:'×',foreign:'△',food:'○',semi:'◎'},
+    plus:'経済安保・防衛・半導体投資',minus:'財政膨張傾向・旧統一教会接点',
+    comment:'国家戦略型。安全保障・経済安保に強い。財政規律に懸念。',
+    links:{hp:'https://takaichi.com',tw:'https://twitter.com/takaichi_sanae',yt:'',wiki:'https://ja.wikipedia.org/wiki/高市早苗'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P002', name:'石破 茂', reading:'いしばしげる', party:'自民党', role:'前内閣総理大臣',
+    chamber:'衆議院', district:'鳥取1区', status:'現職', gender:'男', age:68,
+    total:71, rank:'B+',
+    axes:[3,3,5,3,4,4,3,4],
+    stances:{tax_cut:'△',active_fiscal:'△',discipline:'○',defense:'◎',econ_sec:'○',immigration:'△',renewable:'△',nuclear:'△',expo:'△',ir:'△',mynumber:'○',birthrate:'△',education:'△',regional:'◎',china:'○',foreign:'△',food:'○',semi:'○'},
+    plus:'防衛政策・地方創生・説明責任意識',minus:'党内基盤が弱く政策実現力に課題',
+    comment:'防衛専門家として信頼性は高いが、党内での求心力に欠ける。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/石破茂'},
+    flag_crime:false, flag_caution:false, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P003', name:'玉木 雄一郎', reading:'たまきゆういちろう', party:'国民民主党', role:'党代表',
+    chamber:'衆議院', district:'香川2区', status:'現職', gender:'男', age:56,
+    total:68, rank:'B',
+    axes:[5,5,3,4,2,3,4,2],
+    stances:{tax_cut:'◎',active_fiscal:'◎',discipline:'△',defense:'○',econ_sec:'○',immigration:'△',renewable:'△',nuclear:'○',expo:'△',ir:'△',mynumber:'△',birthrate:'◎',education:'◎',regional:'○',china:'○',foreign:'△',food:'○',semi:'○'},
+    plus:'手取り増・年収の壁撤廃・現実的な政策提案',minus:'不倫問題による信頼失墜（2024年）',
+    comment:'生活者目線の政策が評価される一方、私的スキャンダルが政治倫理評価を大きく下げた。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/玉木雄一郎'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P004', name:'吉村 洋文', reading:'よしむらひろふみ', party:'日本維新の会', role:'大阪府知事',
+    chamber:'知事', district:'大阪府', status:'現職', gender:'男', age:50,
+    total:70, rank:'B+',
+    axes:[4,4,3,4,3,3,4,3],
+    stances:{tax_cut:'○',active_fiscal:'○',discipline:'○',defense:'△',econ_sec:'○',immigration:'△',renewable:'△',nuclear:'○',expo:'◎',ir:'◎',mynumber:'○',birthrate:'○',education:'○',regional:'◎',china:'△',foreign:'△',food:'△',semi:'△'},
+    plus:'大阪の行政改革・コロナ対応・維新改革',minus:'万博費用膨張・IR推進への批判',
+    comment:'改革志向で実行力はあるが、万博・IRへのコスト管理が問われている。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/吉村洋文'},
+    flag_crime:false, flag_caution:false, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P005', name:'山本 太郎', reading:'やまもとたろう', party:'れいわ新選組', role:'党代表',
+    chamber:'参議院', district:'比例', status:'現職', gender:'男', age:51,
+    total:55, rank:'C+',
+    axes:[4,3,2,2,3,2,4,4],
+    stances:{tax_cut:'◎',active_fiscal:'◎',discipline:'×',defense:'×',econ_sec:'△',immigration:'◎',renewable:'◎',nuclear:'×',expo:'×',ir:'×',mynumber:'×',birthrate:'◎',education:'◎',regional:'△',china:'△',foreign:'◎',food:'○',semi:'△'},
+    plus:'社会的弱者への政策・消費税廃止の訴え',minus:'財源不明確・安全保障政策の現実性に欠ける',
+    comment:'訴求力の高いメッセージで支持を集めるが、財政・安保の政策設計に課題が大きい。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/山本太郎_(政治家)'},
+    flag_crime:false, flag_caution:false, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P006', name:'河野 太郎', reading:'こうのたろう', party:'自民党', role:'元デジタル大臣',
+    chamber:'衆議院', district:'神奈川15区', status:'現職', gender:'男', age:63,
+    total:58, rank:'C+',
+    axes:[2,3,3,3,2,3,3,2],
+    stances:{tax_cut:'△',active_fiscal:'△',discipline:'○',defense:'○',econ_sec:'○',immigration:'○',renewable:'◎',nuclear:'△',expo:'△',ir:'△',mynumber:'◎',birthrate:'△',education:'△',regional:'△',china:'○',foreign:'○',food:'△',semi:'○'},
+    plus:'デジタル改革の推進・英語での国際発信力',minus:'マイナ保険証トラブル多発・説明責任不足・SNSブロック問題',
+    comment:'改革のアイデアは多いが実装に問題が多発。説明責任の回避姿勢が信頼を損ねている。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/河野太郎'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P007', name:'野田 佳彦', reading:'のだよしひこ', party:'立憲民主党', role:'党代表',
+    chamber:'衆議院', district:'千葉4区', status:'現職', gender:'男', age:68,
+    total:61, rank:'B-',
+    axes:[3,3,3,3,3,3,3,4],
+    stances:{tax_cut:'×',active_fiscal:'△',discipline:'◎',defense:'△',econ_sec:'△',immigration:'△',renewable:'○',nuclear:'×',expo:'△',ir:'×',mynumber:'△',birthrate:'△',education:'△',regional:'△',china:'△',foreign:'△',food:'△',semi:'△'},
+    plus:'政治倫理・財政規律への意識・安定したリーダーシップ',minus:'消費税増税断行の評価分かれる・政権奪回への道筋が不明確',
+    comment:'誠実さは評価されるが、民主党政権期の消費税増税など評価が分かれる政策が多い。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/野田佳彦'},
+    flag_crime:false, flag_caution:false, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P008', name:'蓮舫', reading:'れんほう', party:'立憲民主党', role:'参議院議員',
+    chamber:'参議院', district:'東京', status:'現職', gender:'女', age:57,
+    total:48, rank:'C',
+    axes:[3,2,2,2,2,2,3,2],
+    stances:{tax_cut:'△',active_fiscal:'△',discipline:'△',defense:'×',econ_sec:'△',immigration:'◎',renewable:'◎',nuclear:'×',expo:'×',ir:'×',mynumber:'×',birthrate:'△',education:'△',regional:'△',china:'△',foreign:'◎',food:'△',semi:'△'},
+    plus:'政府批判・事業仕分けでの存在感',minus:'二重国籍問題（2016年）・代替案の少ない批判政治・東京都知事選大敗',
+    comment:'批判力は高いが、建設的な政策提案が少なく、二重国籍問題での対応も評価を下げた。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/蓮舫'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P009', name:'小池 百合子', reading:'こいけゆりこ', party:'無所属', role:'東京都知事',
+    chamber:'知事', district:'東京都', status:'現職', gender:'女', age:73,
+    total:52, rank:'C',
+    axes:[3,3,2,3,1,2,3,1],
+    stances:{tax_cut:'△',active_fiscal:'△',discipline:'△',defense:'△',econ_sec:'△',immigration:'△',renewable:'◎',nuclear:'×',expo:'△',ir:'×',mynumber:'○',birthrate:'△',education:'△',regional:'△',china:'△',foreign:'△',food:'△',semi:'△'},
+    plus:'東京都の知名度向上・再エネ推進',minus:'学歴詐称疑惑（カイロ大）・豊洲市場問題・公金支出問題',
+    comment:'行政手腕と説明責任に大きな疑問符。学歴詐称疑惑の未決着が最大の問題。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/小池百合子'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  },
+  {
+    id:'P010', name:'岸田 文雄', reading:'きしだふみお', party:'自民党', role:'前内閣総理大臣',
+    chamber:'衆議院', district:'広島1区', status:'現職', gender:'男', age:68,
+    total:44, rank:'C',
+    axes:[2,3,4,3,1,3,2,1],
+    stances:{tax_cut:'×',active_fiscal:'△',discipline:'△',defense:'◎',econ_sec:'○',immigration:'○',renewable:'○',nuclear:'○',expo:'○',ir:'△',mynumber:'○',birthrate:'△',education:'△',regional:'△',china:'○',foreign:'△',food:'△',semi:'○'},
+    plus:'G7広島サミット・防衛費増額・核廃絶外交',minus:'自民党裏金問題（派閥政治資金）・物価高対応不足・説明責任の回避',
+    comment:'外交では一定の成果を上げたが、裏金問題での対応と生活コスト問題への無策が致命的。',
+    links:{hp:'',tw:'',yt:'',wiki:'https://ja.wikipedia.org/wiki/岸田文雄'},
+    flag_crime:false, flag_caution:true, updated:'2026-05-20', survey:'調査済'
+  }
+];
+
+const EVIDENCE = [
+  {id:'E001',pid:'P001',cat:'実績',sub:'成立法案',summary:'経済安全保障推進法を主導・成立（2022年）',detail:'サプライチェーン強化、特許非公開制度などを規定。半導体等の重要技術保護の基盤を整備。経済安保大臣として法案を推進した。',src:'国会議事録',url:'https://www.cas.go.jp/jp/seisaku/keizai_anzen_hosyo/',rel:'A',impact:'+',date:'2022-05-11'},
+  {id:'E002',pid:'P001',cat:'問題・疑惑',sub:'外国関係問題',summary:'旧統一教会（世界平和統一家庭連合）との接点が複数確認',detail:'2022年8月の安倍元首相銃撃事件後の報道で関係が明らかに。ビデオメッセージの送付や関連会合への参加が確認されている。',src:'新聞・テレビ',url:'',rel:'A',impact:'-',date:'2022-08-10'},
+  {id:'E003',pid:'P001',cat:'発言・主張',sub:'政策主張',summary:'「積極財政」と防衛費増額を一貫して主張',detail:'財政規律より成長投資・防衛投資を優先する立場を表明。半導体・AI・宇宙分野への国家投資を継続訴求。',src:'国会答弁・演説',url:'',rel:'A',impact:'+',date:'2024-01-15'},
+  {id:'E004',pid:'P001',cat:'問題・疑惑',sub:'説明責任問題',summary:'放送法「政治的公平」解釈変更問題（2023年）',detail:'総務大臣時代に放送法の解釈を変更させようとした内部文書が表面化。当初否定していたが、文書の実在が確認され説明責任が問われた。',src:'報道・国会',url:'',rel:'B',impact:'-',date:'2023-03-07'},
+  {id:'E005',pid:'P001',cat:'実績',sub:'政策実現力',summary:'2024年自民党総裁選で決選投票を制し総裁に',detail:'1回目の投票では石破茂に次ぐ2位だったが、決選投票で逆転。首相就任後、半導体・AI政策の推進を続けている。',src:'報道',url:'',rel:'A',impact:'+',date:'2024-09-27'},
+  {id:'E006',pid:'P002',cat:'実績',sub:'行政実績',summary:'防衛大臣として自衛隊の能力強化を推進',detail:'複数回の防衛大臣就任で防衛力整備計画を推進。特に離島防衛・南西シフトを主導した。',src:'政府資料',url:'',rel:'A',impact:'+',date:'2015-01-01'},
+  {id:'E007',pid:'P002',cat:'発言・主張',summary:'アジア版NATOの創設を提唱',detail:'東アジアの安全保障環境の悪化を受け、アジア版NATOに相当する集団安全保障機構の設立を主張。現実性に議論も。',src:'演説・メディア',url:'',rel:'A',impact:'±',date:'2024-10-01',sub:'政策主張'},
+  {id:'E008',pid:'P002',cat:'問題・疑惑',summary:'党内基盤の弱さから政策実現力に課題',detail:'総裁選では複数回挑戦し2024年に当選したが、旧派閥との関係が難しく政権運営が短命に終わった。',src:'報道・分析',url:'',rel:'B',impact:'-',date:'2024-11-01',sub:'説明責任問題'},
+  {id:'E009',pid:'P003',cat:'実績',sub:'政策実現力',summary:'年収103万円の壁撤廃・基礎控除引き上げを実現',detail:'2024年衆院選で躍進後、自公との協議で基礎控除の引き上げを合意させた。手取りを増やす具体的な成果。',src:'国会・報道',url:'',rel:'A',impact:'+',date:'2024-12-01'},
+  {id:'E010',pid:'P003',cat:'犯罪・違反',sub:'不祥事',summary:'グラビアアイドルとの不倫関係が週刊誌報道（2024年）',detail:'週刊誌の報道により不倫関係が発覚。党代表として謝罪し、政治倫理上の問題として批判を受けた。離党処分などは受けていないが、国民の信頼を大きく損ねた。',src:'週刊誌・本人謝罪',url:'',rel:'A',impact:'-',date:'2024-11-15'},
+  {id:'E011',pid:'P003',cat:'発言・主張',summary:'「手取りを増やす」を一貫した党の核心政策として訴求',detail:'所得税の基礎控除引き上げ・消費税減税・社会保険料軽減など、生活者の手取り増を最優先とする政策を一貫して主張。',src:'国会質問・演説',url:'',rel:'A',impact:'+',date:'2024-01-01',sub:'政策主張'},
+  {id:'E012',pid:'P004',cat:'実績',sub:'行政実績',summary:'大阪コロナ対策で独自路線を推進（2020〜2022年）',detail:'独自の「大阪モデル」を設定し、府民への見える化を推進。政府より早い自粛要請など独自対応を実施した。',src:'大阪府発表・報道',url:'',rel:'A',impact:'+',date:'2020-04-01'},
+  {id:'E013',pid:'P004',cat:'問題・疑惑',sub:'利益誘導疑惑',summary:'万博費用が当初予算の約2倍超に膨張',detail:'2025年大阪・関西万博の建設費が当初の1,850億円から2,350億円超に膨張。費用増大の責任問題と追加の国民負担が批判された。',src:'報道・会計検査院',url:'',rel:'A',impact:'-',date:'2023-12-01'},
+  {id:'E014',pid:'P004',cat:'実績',summary:'大阪都構想への挑戦（2015/2020年）',detail:'大阪の二重行政解消を目指した大阪都構想を二度の住民投票で問うた。いずれも僅差で否決されたが、改革志向の強さを示した。',src:'住民投票結果',url:'',rel:'A',impact:'±',date:'2020-11-01',sub:'政策実現力'},
+  {id:'E015',pid:'P005',cat:'発言・主張',summary:'消費税廃止・BI（ベーシックインカム）の訴え',detail:'消費税を廃止し、コロナ禍では全国民への10万円給付継続を主張。財源についての説明が不明確との批判を受ける。',src:'国会質問・演説',url:'',rel:'A',impact:'±',date:'2022-01-01',sub:'政策主張'},
+  {id:'E016',pid:'P005',cat:'問題・疑惑',summary:'財政政策の財源説明が不明確',detail:'積極財政・消費税廃止・社会保障充実を同時に訴えるが、具体的な財源の説明に欠けるとして経済専門家から批判を受けている。',src:'学者・専門家の批判',url:'',rel:'B',impact:'-',date:'2023-01-01',sub:'説明責任問題'},
+  {id:'E017',pid:'P006',cat:'問題・疑惑',sub:'説明責任問題',summary:'マイナ保険証の健康保険証廃止で混乱多発（2023年）',detail:'デジタル大臣として強引にマイナ保険証への一本化を推進したが、情報ひも付けミス、別人データ登録など多数のトラブルが発生。廃止撤回には至らず混乱が継続した。',src:'報道・国会質疑',url:'',rel:'A',impact:'-',date:'2023-06-01'},
+  {id:'E018',pid:'P006',cat:'問題・疑惑',sub:'説明責任問題',summary:'X（旧Twitter）での批判者ブロック問題',detail:'大臣・閣僚在職中にXで多数の有権者・ジャーナリストをブロックしていたことが判明。公職者としての説明責任回避と批判された。',src:'報道',url:'',rel:'A',impact:'-',date:'2022-12-01'},
+  {id:'E019',pid:'P006',cat:'実績',summary:'ワクチン接種推進を大臣として主導（2021年）',detail:'コロナワクチンのワクチン担当大臣として接種体制の整備を推進。接種率向上に一定の貢献をした。',src:'政府発表',url:'',rel:'A',impact:'+',date:'2021-06-01',sub:'行政実績'},
+  {id:'E020',pid:'P007',cat:'問題・疑惑',sub:'政策責任',summary:'消費税を5%→8%に増税を決定（2012年）',detail:'民主党政権の首相として消費税の段階的引き上げ法案を成立させた。「社会保障のため」という主張だが、景気悪化・国民負担増の原因として現在も評価が分かれる。',src:'国会議事録',url:'',rel:'A',impact:'-',date:'2012-08-10'},
+  {id:'E021',pid:'P007',cat:'実績',sub:'政策実現力',summary:'東日本大震災・福島原発事故対応を陣頭指揮',detail:'2011年の東日本大震災・福島第一原発事故において官房長官として、また後継首相として対応を指揮した。批判もあるが危機対応の経験を持つ。',src:'政府資料・報道',url:'',rel:'A',impact:'+',date:'2011-03-11'},
+  {id:'E022',pid:'P008',cat:'犯罪・違反',sub:'法令・倫理問題',summary:'二重国籍問題（2016年）— 日本国籍を明示せず活動',detail:'2016年の民進党代表選前後に、日本・台湾の二重国籍状態であることが判明。国会議員として日本国籍を確認せずに活動していた期間が問題となった。謝罪・台湾国籍離脱を表明したが、公文書の公開が不十分との批判が残る。',src:'報道・本人会見',url:'',rel:'A',impact:'-',date:'2016-09-01'},
+  {id:'E023',pid:'P008',cat:'問題・疑惑',summary:'2024年東京都知事選で野党候補として大敗（3位）',detail:'野党統一候補として出馬したが、小池百合子・石丸伸二に次ぐ3位に終わった。組織力や政策の訴求力の問題が指摘された。',src:'選挙結果',url:'',rel:'A',impact:'-',date:'2024-07-07',sub:'政策実現力'},
+  {id:'E024',pid:'P009',cat:'犯罪・違反',sub:'不祥事',summary:'カイロ大学卒業「学歴詐称」疑惑 — 未解決',detail:'カイロ大学を首席卒業と主張しているが、当時の留学生や同大学出身者から疑問が呈されている。カイロ大学から証明書は発行されているが、詳細な証拠の公開を一貫して拒否しており、透明性に大きな問題がある。',src:'著書・報道・研究者証言',url:'',rel:'B',impact:'-',date:'2020-04-01'},
+  {id:'E025',pid:'P009',cat:'問題・疑惑',sub:'利益誘導疑惑',summary:'豊洲市場移転問題での説明責任（2017年）',detail:'知事就任後、前知事が決定した豊洲への移転を「土壌汚染問題」として凍結。最終的に移転したが、その間に多大なコストと混乱が生じた。一連の判断への説明責任が問われた。',src:'都議会・報道',url:'',rel:'A',impact:'-',date:'2017-01-01'},
+  {id:'E026',pid:'P009',cat:'問題・疑惑',summary:'都内団体への公金支出問題（2024年）',detail:'東京都が所管・支援する各種団体への公金支出について、支出の根拠・透明性が不明確との指摘が都議会で相次いだ。「公金チューチュー」という批判が広がった。',src:'都議会・報道',url:'',rel:'B',impact:'-',date:'2024-02-01',sub:'政治資金問題'},
+  {id:'E027',pid:'P010',cat:'犯罪・違反',sub:'政治資金問題',summary:'自民党派閥の政治資金パーティー裏金問題（2023〜2024年）',detail:'安倍派（清和政策研究会）を中心に、政治資金パーティー収入をキックバックし政治資金収支報告書に記載しない「裏金」が慣行化されていたことが発覚。岸田派（宏池会）も解散を余儀なくされた。首相として責任を取るべきとの批判が強い。',src:'東京地検・報道・国会',url:'',rel:'A',impact:'-',date:'2023-12-13'},
+  {id:'E028',pid:'P010',cat:'問題・疑惑',sub:'政策責任',summary:'物価高騰下での電気代・ガス代補助打ち切り（2024年）',detail:'エネルギー価格の高騰が続く中、補助制度を打ち切ったことで家計負担が増大。庶民の生活実態への感度の低さとして批判された。',src:'報道・家計統計',url:'',rel:'A',impact:'-',date:'2024-06-01'},
+  {id:'E029',pid:'P010',cat:'実績',summary:'G7広島サミット開催・核廃絶宣言（2023年）',detail:'広島出身の首相として初めてG7サミットを広島で開催し、各国首脳を原爆慰霊碑に招待。核廃絶に向けた国際的メッセージを発信した。',src:'外務省・報道',url:'',rel:'A',impact:'+',date:'2023-05-21',sub:'行政実績'}
+];
+
+/* ── HELPERS ── */
+function rankColor(rank) {
+  if(rank.startsWith('S')) return '#f5c842';
+  if(rank.startsWith('A')) return '#4ac776';
+  if(rank.startsWith('B')) return '#4a8fd4';
+  if(rank.startsWith('C')) return '#f0a030';
+  return '#e6384f';
+}
+
+function partyBadge(party) {
+  const color = PARTY_COLORS[party] || '#555';
+  return `<span class="party-badge" style="background:${color}">${party}</span>`;
+}
+
+/* ── STATE ── */
+let sortCol = 'total';
+let sortDir = 'desc';
+let filters = { search:'', chamber:'', party:'', rank:'', caution: false };
+let filtered = [...POLITICIANS];
+
+/* ── STATS ── */
+function updateStats() {
+  document.getElementById('stat-surveyed').textContent = POLITICIANS.filter(p=>p.survey==='調査済').length + '人';
+  document.getElementById('stat-a-plus').textContent = POLITICIANS.filter(p=>p.rank.startsWith('A')||p.rank.startsWith('S')).length + '人';
+  document.getElementById('stat-caution').textContent = POLITICIANS.filter(p=>p.flag_caution||p.flag_crime).length + '人';
+  document.getElementById('stat-evidence').textContent = EVIDENCE.length + '件';
+}
+
+/* ── RENDER ── */
+function applyFilters() {
+  const q = filters.search.toLowerCase();
+  filtered = POLITICIANS.filter(p => {
+    if(q && !p.name.includes(filters.search) && !p.reading.includes(q) && !p.party.includes(q) && !p.role.includes(q)) return false;
+    if(filters.chamber && p.chamber !== filters.chamber) return false;
+    if(filters.party && p.party !== filters.party) return false;
+    if(filters.rank && !p.rank.startsWith(filters.rank)) return false;
+    if(filters.caution && !p.flag_caution && !p.flag_crime) return false;
+    return true;
+  });
+  applySort();
+  render();
+}
+
+function applySort() {
+  filtered.sort((a,b) => {
+    let av, bv;
+    switch(sortCol) {
+      case 'total': av=a.total; bv=b.total; break;
+      case 'name': av=a.name; bv=b.name; break;
+      case 'party': av=a.party; bv=b.party; break;
+      case 'chamber': av=a.chamber; bv=b.chamber; break;
+      case 'rank-badge': av=a.rank; bv=b.rank; break;
+      default: av=a.total; bv=b.total;
+    }
+    if(av < bv) return sortDir==='asc' ? -1 : 1;
+    if(av > bv) return sortDir==='asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function render() {
+  const tbody = document.getElementById('table-body');
+  const empty = document.getElementById('empty-state');
+  const count = document.getElementById('result-count');
+
+  // Rank by total desc (original rank order)
+  const sorted_by_total = [...POLITICIANS].sort((a,b) => b.total - a.total);
+  const rankMap = {};
+  sorted_by_total.forEach((p,i) => rankMap[p.id] = i+1);
+
+  count.textContent = `${filtered.length} 人 / 全 ${POLITICIANS.length} 人`;
+
+  if(filtered.length === 0) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = filtered.map(p => {
+    const rc = rankColor(p.rank);
+    const barW = Math.round(p.total);
+    const flags = [
+      p.flag_crime ? '<span class="flag-icon" title="犯罪・違反">🚨</span>' : '',
+      p.flag_caution ? '<span class="flag-icon" title="要注意">⚠️</span>' : ''
+    ].join('');
+
+    return `<tr onclick="window.location='politician.html?id=${p.id}'">
+      <td class="rank-num">${rankMap[p.id]}</td>
+      <td class="td-rank-badge"><span class="rank-badge" style="color:${rc};border-color:${rc}20;background:${rc}12">${p.rank}</span></td>
+      <td>
+        <div class="name-block">
+          <div class="name-ja">${p.name}</div>
+          <div class="name-reading">${p.reading}</div>
+        </div>
+      </td>
+      <td>${partyBadge(p.party)}</td>
+      <td class="td-chamber">
+        <div class="chamber-text">${p.chamber}</div>
+        <div class="district-text">${p.district}</div>
+      </td>
+      <td class="score-cell">
+        <div class="score-num">${p.total}</div>
+        <div class="score-bar-wrap"><div class="score-bar-fill" style="width:${barW}%"></div></div>
+      </td>
+      <td class="flags-cell td-flags">${flags || '<span style="color:var(--gray);font-size:0.7rem">—</span>'}</td>
+      <td><a class="detail-btn" href="politician.html?id=${p.id}" onclick="event.stopPropagation()">詳細 →</a></td>
+    </tr>`;
+  }).join('');
+
+  // Update sort indicators
+  document.querySelectorAll('th').forEach(th => {
+    th.classList.remove('sort-asc','sort-desc');
+    if(th.dataset.col === sortCol) th.classList.add(sortDir==='asc'?'sort-asc':'sort-desc');
+  });
+}
+
+/* ── EVENT LISTENERS ── */
+document.getElementById('search').addEventListener('input', e => {
+  filters.search = e.target.value;
+  applyFilters();
+});
+document.getElementById('filter-chamber').addEventListener('change', e => {
+  filters.chamber = e.target.value;
+  applyFilters();
+});
+document.getElementById('filter-party').addEventListener('change', e => {
+  filters.party = e.target.value;
+  applyFilters();
+});
+document.getElementById('filter-rank').addEventListener('change', e => {
+  filters.rank = e.target.value;
+  applyFilters();
+});
+document.getElementById('toggle-caution').addEventListener('click', function() {
+  filters.caution = !filters.caution;
+  this.classList.toggle('active', filters.caution);
+  applyFilters();
+});
+
+document.querySelectorAll('th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    if(sortCol === th.dataset.col) {
+      sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+    } else {
+      sortCol = th.dataset.col;
+      sortDir = sortCol === 'total' ? 'desc' : 'asc';
+    }
+    applySort();
+    render();
+  });
+});
+
+/* ── INIT ── */
+updateStats();
+applyFilters();
+</script>
+</body>
+</html>
