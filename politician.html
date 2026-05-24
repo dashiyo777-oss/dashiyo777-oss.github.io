@@ -6,6 +6,63 @@
 <title>統覧 TORAN — 政治家カルテ</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
+  /* !! EXTRA STYLES FOR PROFILE PAGE v2 !! */
+  .profile-hero-card {
+    background: linear-gradient(135deg, #080e20 0%, #0b162e 60%, #060d1a 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 2rem 2rem;
+  }
+  .profile-hero-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start;
+  }
+  .hero-rank-row {
+    display: flex; align-items: center; gap: 0.9rem; margin-bottom: 0.8rem; flex-wrap: wrap;
+  }
+  .hero-rank-box {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600;
+    padding: 0.15rem 0.65rem; border-radius: 5px; border: 2px solid currentColor;
+    line-height: 1.3;
+  }
+  .hero-party-badge {
+    display: inline-block; padding: 0.2rem 0.65rem; border-radius: 4px;
+    font-size: 0.78rem; font-family: 'Noto Serif JP', serif; font-weight: 400; color: #fff;
+  }
+  .hero-flag-pill {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    padding: 0.15rem 0.65rem; border-radius: 50px; font-size: 0.65rem; font-weight: 500;
+  }
+  .hero-flag-pill.crime { background: rgba(230,56,79,0.15); border: 1px solid rgba(230,56,79,0.4); color: var(--red); }
+  .hero-flag-pill.caution { background: rgba(240,160,48,0.12); border: 1px solid rgba(240,160,48,0.35); color: var(--orange); }
+  .hero-name-ja {
+    font-family: 'Noto Serif JP', serif; font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 600; color: var(--text); letter-spacing: 0.08em; line-height: 1.15; margin-bottom: 0.25rem;
+  }
+  .hero-reading { font-size: 0.78rem; color: var(--gray); letter-spacing: 0.12em; margin-bottom: 0.4rem; font-family: 'Noto Serif JP', serif; }
+  .hero-role { font-size: 0.85rem; color: var(--blue); letter-spacing: 0.06em; margin-bottom: 0.9rem; font-family: 'Noto Serif JP', serif; }
+  .hero-meta-pills { display: flex; gap: 0.45rem; flex-wrap: wrap; margin-bottom: 0.9rem; }
+  .meta-pill { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; border: 1px solid var(--border); color: var(--gray); }
+  .hero-links { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+  .hero-link { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.65rem; border: 1px solid var(--border); border-radius: 4px; font-size: 0.68rem; color: var(--gray); text-decoration: none; transition: all 0.2s; }
+  .hero-link:hover { border-color: var(--blue); color: var(--blue); }
+  .hero-score-block { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+  .hero-score-label { font-size: 0.6rem; color: var(--gray); letter-spacing: 0.15em; text-transform: uppercase; }
+  .hero-score-num { font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 600; line-height: 1; }
+  .hero-score-max { font-size: 0.75rem; color: var(--gray); }
+  .hero-updated { font-size: 0.62rem; color: var(--gray); margin-top: 0.4rem; }
+  .nav-prev-next { max-width: 1100px; margin: 0 auto 1.5rem; padding: 0 2rem; display: flex; justify-content: space-between; gap: 1rem; }
+  .nav-prev-btn, .nav-next-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 5px; text-decoration: none; color: var(--gray); font-size: 0.72rem; font-family: 'Noto Serif JP', sans-serif; transition: all 0.2s; }
+  .nav-prev-btn:hover, .nav-next-btn:hover { border-color: var(--blue); color: var(--blue); }
+  .nav-prev-btn.off, .nav-next-btn.off { opacity: 0.3; pointer-events: none; }
+  .nav-btn-name { font-family: 'Noto Serif JP', serif; color: var(--text); font-size: 0.8rem; }
+  @media (max-width: 768px) {
+    .profile-hero-inner { grid-template-columns: 1fr; }
+    .hero-score-block { text-align: left; align-items: flex-start; flex-direction: row; align-items: center; gap: 1rem; }
+    .hero-score-num { font-size: 2.8rem; }
+    .nav-prev-next { padding: 0 1rem; }
+  }
+</style>
+<style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
@@ -339,12 +396,19 @@
     <span class="logo-en">TORAN</span>
   </a>
   <nav class="header-nav">
-    <a class="nav-link back" href="politicians.html">ランキング一覧</a>
+    <a class="nav-link back" href="politicians.html">一覧へ</a>
+    <a class="nav-link back" href="index.html">Portfolio</a>
   </nav>
 </header>
 
-<!-- PROFILE HERO (populated by JS) -->
-<section class="profile-hero">
+<!-- PROFILE HERO v2 (populated by JS) -->
+<div class="profile-hero-card" id="profile-hero-v2"></div>
+
+<!-- PREV/NEXT NAV -->
+<div class="nav-prev-next" id="nav-prev-next"></div>
+
+<!-- PROFILE HERO (populated by JS) — kept for legacy but hidden -->
+<section class="profile-hero" style="display:none">
   <div class="profile-inner">
     <div class="profile-left" id="profile-left"></div>
     <div class="profile-score-box" id="score-box"></div>
@@ -433,7 +497,7 @@
 </div>
 
 <footer class="site-footer" id="site-footer">
-  統覧 TORAN © 2025 — このサイトは教育・情報目的のプロトタイプです
+  © 2026 統覧 TORAN | Ryuzaburo — このサイトは教育・情報目的のプロトタイプです
 </footer>
 
 <script>
@@ -691,6 +755,64 @@ function buildPage(p) {
   const rc = rankColor(p.rank);
   const sc = scoreColor(p.total);
   const pc = PARTY_COLORS[p.party] || '#666';
+
+  // ── NEW Profile Hero
+  const idx = POLITICIANS.findIndex(x => x.id === p.id);
+  const prevP = POLITICIANS[idx - 1];
+  const nextP = POLITICIANS[idx + 1];
+
+  const flagPills = [
+    p.flag_crime ? '<span class="hero-flag-pill crime">🚨 犯罪・違反あり</span>' : '',
+    p.flag_caution ? '<span class="hero-flag-pill caution">⚠️ 要注意フラグ</span>' : ''
+  ].join('');
+
+  const linkPills = [
+    p.links && p.links.hp ? `<a class="hero-link" href="${p.links.hp}" target="_blank" rel="noopener">🏠 公式サイト</a>` : '',
+    p.links && p.links.tw ? `<a class="hero-link" href="${p.links.tw}" target="_blank" rel="noopener">&#120143; Twitter/X</a>` : '',
+    p.links && p.links.yt ? `<a class="hero-link" href="${p.links.yt}" target="_blank" rel="noopener">▶ YouTube</a>` : '',
+    p.links && p.links.wiki ? `<a class="hero-link" href="${p.links.wiki}" target="_blank" rel="noopener">📖 Wikipedia</a>` : ''
+  ].join('');
+
+  const sorted2 = [...POLITICIANS].sort((a,b) => b.total - a.total);
+  const rankNum2 = sorted2.findIndex(x => x.id === p.id) + 1;
+
+  document.getElementById('profile-hero-v2').innerHTML = `
+    <div class="profile-hero-inner">
+      <div>
+        <div class="hero-rank-row">
+          <span style="font-size:0.7rem;color:var(--gray);letter-spacing:0.15em;font-family:'Montserrat',sans-serif"># ${rankNum2}</span>
+          <span class="hero-rank-box" style="color:${rc};border-color:${rc}40;background:${rc}12">${p.rank}</span>
+          <span class="hero-party-badge" style="background:${pc}">${p.party}</span>
+          ${flagPills}
+        </div>
+        <div class="hero-name-ja">${p.name}</div>
+        <div class="hero-reading">${p.reading}</div>
+        <div class="hero-role">${p.role}</div>
+        <div class="hero-meta-pills">
+          <span class="meta-pill">${p.chamber}</span>
+          <span class="meta-pill">${p.district}</span>
+          <span class="meta-pill">${p.status}</span>
+          <span class="meta-pill">${p.gender} · ${p.age}歳</span>
+        </div>
+        <div class="hero-links">${linkPills}</div>
+      </div>
+      <div class="hero-score-block">
+        <div class="hero-score-label">総合スコア</div>
+        <div class="hero-score-num" style="color:${rc}">${p.total}</div>
+        <div class="hero-score-max">/ 100</div>
+        <div class="hero-updated">最終更新 ${p.updated}</div>
+      </div>
+    </div>
+  `;
+
+  // ── Prev/Next nav
+  const prevBtn = prevP
+    ? `<a class="nav-prev-btn" href="politician.html?id=${prevP.id}">← <span class="nav-btn-name">${prevP.name}</span></a>`
+    : `<span class="nav-prev-btn off">← 前の政治家</span>`;
+  const nextBtn = nextP
+    ? `<a class="nav-next-btn" href="politician.html?id=${nextP.id}"><span class="nav-btn-name">${nextP.name}</span> →</a>`
+    : `<span class="nav-next-btn off">次の政治家 →</span>`;
+  document.getElementById('nav-prev-next').innerHTML = prevBtn + nextBtn;
 
   // ── Hero left
   const flagsHtml = [
