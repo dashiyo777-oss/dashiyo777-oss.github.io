@@ -10,8 +10,9 @@
   output/politicians_merged.json を出力します。
 """
 
-import json, glob, os
+import json, glob, os, sys
 from datetime import date
+from validate_batch import validate_batch, load_base
 
 BASE_FILE       = 'output/politicians_base.json'
 BATCHES_DIR     = 'batches'
@@ -35,6 +36,42 @@ def main():
 
     merged_count = 0
     evidence_count = 0
+    total_errors = 0
+    VALIDATED_DIR = os.path.join(BATCHES_DIR, '.validated')
+    os.makedirs(VALIDATED_DIR, exist_ok=True)
+
+    # 未検証バッチのみチェック
+    unvalidated = [bf for bf in batch_files
+                   if not os.path.exists(os.path.join(VALIDATED_DIR,
+                       os.path.basename(bf) + '.ok'))]
+
+    if unvalidated:
+        print(f"\n{'='*55}")
+        print(f"🔍 バッチ検証フェーズ（未検証 {len(unvalidated)} 件）")
+        print(f"{'='*55}")
+        for bf in unvalidated:
+            ok, warn, err = validate_batch(bf, base_map, silent=False)
+            total_errors += err
+            # ERRORなしなら検証済みフラグを作成
+            if err == 0:
+                flag = os.path.join(VALIDATED_DIR, os.path.basename(bf) + '.ok')
+                open(flag, 'w').close()
+
+        if total_errors > 0:
+            print(f"\n{'='*55}")
+            print(f"❌ 合計 {total_errors} 件の ERROR が検出されました。")
+            print(f"   該当バッチのJSONを確認・修正してください。")
+            print(f"   ※ corrections/ で上書き修正した場合は --force で強制続行できます。")
+            print(f"{'='*55}\n")
+            if '--force' not in sys.argv:
+                print("⛔ マージを中止しました。")
+                return
+            else:
+                print("⚠️  --force 指定のため続行します。\n")
+        else:
+            print(f"\n✅ 全バッチ検証OK。マージを開始します。\n")
+    else:
+        print(f"✅ 全バッチ検証済み。マージを開始します。")
 
     for bf in batch_files:
         with open(bf, encoding='utf-8') as f:
