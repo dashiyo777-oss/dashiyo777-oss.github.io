@@ -13,10 +13,11 @@
 import json, glob, os
 from datetime import date
 
-BASE_FILE   = 'output/politicians_base.json'
-BATCHES_DIR = 'batches'
-OUT_FILE    = 'output/politicians_merged.json'
-DATA_JS     = '../portfolio/data.js'   # HTMLが読み込むファイル（任意）
+BASE_FILE       = 'output/politicians_base.json'
+BATCHES_DIR     = 'batches'
+CORRECTIONS_DIR = 'corrections'   # 手動修正ファイル（バッチより後に適用）
+OUT_FILE        = 'output/politicians_merged.json'
+DATA_JS         = '../portfolio/data.js'   # HTMLが読み込むファイル（任意）
 
 def main():
     # ── ベースJSONを読み込む ──
@@ -77,6 +78,61 @@ def main():
             evidence_count += added
 
         print(f"  ✅ {os.path.basename(bf)}: {len(batch)}名マージ")
+
+    # ── corrections/ を適用（バッチより後＝優先） ──
+    corr_files = sorted(glob.glob(f'{CORRECTIONS_DIR}/correction_*.json'))
+    if corr_files:
+        corr_count = 0
+        for cf in corr_files:
+            with open(cf, encoding='utf-8') as f:
+                corrections = json.load(f)
+            for item in corrections:
+                pid = item.get('id')
+                if pid not in base_map:
+                    print(f"  ⚠️  修正 {pid} はベースに存在しません → スキップ")
+                    continue
+                p = base_map[pid]
+                action = item.get('_action', 'update')  # 'update' or 'reset'
+
+                if action == 'reset':
+                    # 評価データをリセット（未評価状態に戻す）
+                    p['axes']       = [0]*8
+                    p['total']      = 0
+                    p['rank']       = '未評価'
+                    p['survey']     = '未評価'
+                    p['plus']       = ''
+                    p['minus']      = ''
+                    p['comment']    = ''
+                    p['flag_crime'] = False
+                    p['flag_caution'] = False
+                    p['evidence']   = []
+                    if 'role' in item:
+                        p['role'] = item['role']
+                    if 'stances' in item:
+                        p['stances'] = item['stances']
+                    print(f"  🔄 修正RESET: {pid} {p['name']}")
+                else:
+                    # 指定フィールドのみ上書き
+                    for key in ['total','rank','axes','stances','role',
+                                'plus','minus','comment','survey',
+                                'flag_crime','flag_caution','updated']:
+                        if key in item:
+                            p[key] = item[key]
+                    # evidence は replace_all=true のとき全置換
+                    if item.get('_replace_evidence'):
+                        p['evidence'] = item.get('evidence', [])
+                        for ev in p['evidence']:
+                            ev['pid'] = pid
+                    elif 'evidence' in item:
+                        existing_summaries = {e.get('summary','') for e in p.get('evidence', [])}
+                        for ev in item['evidence']:
+                            ev['pid'] = pid
+                            if ev.get('summary','') not in existing_summaries:
+                                p.setdefault('evidence', []).append(ev)
+                                existing_summaries.add(ev.get('summary',''))
+                    print(f"  ✏️  修正UPDATE: {pid} {p['name']}")
+                corr_count += 1
+            print(f"  ✅ {os.path.basename(cf)}: {len(corrections)}件適用")
 
     # ── 集計 ──
     result = list(base_map.values())
