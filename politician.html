@@ -369,11 +369,68 @@
   .ax-bar-fill { height: 100%; border-radius: 3px; background: var(--blue); }
   .ax-val { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 500; min-width: 20px; text-align: right; }
 
+  /* ── EVALUATION GUIDE (collapsible) ── */
+  .eval-guide-wrap {
+    margin-top: 0.8rem;
+  }
+  .eval-guide-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--gray);
+    font-size: 0.70rem;
+    font-family: 'Noto Serif JP', sans-serif;
+    padding: 0.4rem 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .eval-guide-toggle:hover { border-color: var(--blue); color: var(--blue); }
+  .eval-guide-toggle .arrow { transition: transform 0.25s; }
+  .eval-guide-toggle.open .arrow { transform: rotate(180deg); }
+  .eval-guide-body {
+    display: none;
+    margin-top: 0.6rem;
+    padding: 0.9rem 1rem;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .eval-guide-body.open { display: block; }
+  .eval-guide-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.68rem;
+  }
+  .eval-guide-body td {
+    padding: 0.35rem 0.4rem;
+    border-bottom: 1px solid rgba(74,144,226,0.08);
+    vertical-align: top;
+    line-height: 1.5;
+    color: var(--gray);
+  }
+  .eval-guide-body tr:last-child td { border-bottom: none; }
+  .eval-guide-body td:first-child { color: var(--blue); white-space: nowrap; width: 38%; }
+  .eval-guide-body .guide-note {
+    font-size: 0.62rem;
+    color: rgba(128,144,184,0.7);
+    margin-top: 0.7rem;
+    line-height: 1.7;
+    border-top: 1px solid var(--border);
+    padding-top: 0.6rem;
+  }
+
   /* ── FOOTER ── */
   .site-footer {
     margin-top: 3rem; border-top: 1px solid var(--border);
     padding: 2rem; text-align: center;
     font-size: 0.65rem; color: var(--gray); letter-spacing: 0.1em;
+    line-height: 1.8;
   }
 
   /* ── RESPONSIVE ── */
@@ -470,6 +527,40 @@
       </div>
     </div>
 
+    <!-- Evaluation Guide (collapsible) -->
+    <div class="section-card">
+      <div class="section-body" style="padding-bottom:0.6rem">
+        <div class="eval-guide-wrap">
+          <button class="eval-guide-toggle" id="eval-guide-toggle">
+            <span>❓ 評価基準・スコアの見方</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="eval-guide-body" id="eval-guide-body">
+            <table>
+              <tr><td>総合スコア計算</td><td>8軸合計（最大40点）× 100 ÷ 40 = 0〜100点</td></tr>
+              <tr><td>🏠 国民生活改善</td><td>雇用・社会保障・物価対策・消費者保護</td></tr>
+              <tr><td>💹 経済・財政</td><td>成長政策・財政規律・税制・産業育成</td></tr>
+              <tr><td>🛡 安全保障</td><td>防衛・外交・危機管理・サイバー</td></tr>
+              <tr><td>⚙️ 政策実現力</td><td>立法実績・交渉力・行政手腕・実行力</td></tr>
+              <tr><td>📢 説明責任</td><td>透明性・情報公開・不祥事への対応</td></tr>
+              <tr><td>🌱 長期国益</td><td>少子化・エネルギー・国土強靱化</td></tr>
+              <tr><td>⚖️ 公共性</td><td>公益優先・利益相反回避・市民目線</td></tr>
+              <tr><td>🧹 政治倫理</td><td>献金・政治資金・法令遵守・不記載問題</td></tr>
+              <tr><td>ランク S</td><td>90点〜（突出した実績・倫理ともに高水準）</td></tr>
+              <tr><td>ランク A+〜A-</td><td>75〜89点（総合的に優れた政治家）</td></tr>
+              <tr><td>ランク B+〜B-</td><td>55〜74点（標準的・一定の実績あり）</td></tr>
+              <tr><td>ランク C+〜C-</td><td>35〜54点（課題が目立つ・実績不足）</td></tr>
+              <tr><td>ランク D</td><td>34点以下（深刻な問題あり）</td></tr>
+            </table>
+            <div class="guide-note">
+              ※ このデータはAI（大規模言語モデル）による分析を基に作成されており、事実関係の誤りを含む可能性があります。
+              投票の参考とする場合は、各議員の公式サイト・国会会議録等の一次情報を必ずご確認ください。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Stance -->
     <div class="section-card">
       <div class="section-head">
@@ -497,7 +588,9 @@
 </div>
 
 <footer class="site-footer" id="site-footer">
-  © 2026 統覧 TORAN | Ryuzaburo — このサイトは教育・情報目的のプロトタイプです
+  © 2026 統覧 TORAN | Ryuzaburo<br>
+  このサイトは教育・情報目的のプロトタイプです。AI生成データを含むため内容の正確性を保証しません。<br>
+  評価・スコアは独自基準によるものであり、特定の政党・政治家を支持・批判するものではありません。
 </footer>
 
 <script src="data.js"></script>
@@ -885,6 +978,17 @@ function switchTab(key) {
     return;
   }
   buildPage(p);
+})();
+
+/* ── 評価基準 折りたたみ ── */
+(function() {
+  const toggle = document.getElementById('eval-guide-toggle');
+  const body   = document.getElementById('eval-guide-body');
+  if (!toggle || !body) return;
+  toggle.addEventListener('click', () => {
+    const isOpen = body.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+  });
 })();
 </script>
 </body>

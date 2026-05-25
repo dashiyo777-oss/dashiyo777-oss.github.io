@@ -235,6 +235,124 @@
       color: var(--orange);
       background: rgba(240,160,48,0.08);
     }
+    .btn-guide {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid rgba(91,160,224,0.35);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--blue);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      font-family: 'Noto Serif JP', sans-serif;
+    }
+    .btn-guide:hover {
+      border-color: var(--blue);
+      background: rgba(91,160,224,0.10);
+    }
+
+    /* ── GUIDE MODAL ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(5,10,22,0.82);
+      backdrop-filter: blur(6px);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: var(--card);
+      border: 1px solid var(--border-h);
+      border-radius: 14px;
+      max-width: 680px;
+      width: 100%;
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      color: var(--gray);
+      font-size: 1.3rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--text); }
+    .modal-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--blue);
+      letter-spacing: 0.08em;
+      margin-bottom: 1.4rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .guide-section {
+      margin-bottom: 1.4rem;
+    }
+    .guide-section h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.65rem;
+    }
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.76rem;
+    }
+    .guide-table td {
+      padding: 0.4rem 0.6rem;
+      border-bottom: 1px solid rgba(74,144,226,0.10);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .guide-table tr:last-child td { border-bottom: none; }
+    .guide-table td:first-child {
+      color: var(--blue);
+      white-space: nowrap;
+      width: 38%;
+    }
+    .rank-row td:first-child { font-weight: 600; letter-spacing: 0.06em; }
+    .rank-s  { color: #f5c842 !important; }
+    .rank-a  { color: #4ac776 !important; }
+    .rank-b  { color: #5ba0e0 !important; }
+    .rank-c  { color: #f0a030 !important; }
+    .rank-d  { color: #e6384f !important; }
+    .guide-note {
+      font-size: 0.70rem;
+      color: var(--gray);
+      line-height: 1.7;
+      border-top: 1px solid var(--border);
+      padding-top: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+    .stance-legend {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      font-size: 0.76rem;
+    }
+    .stance-legend span { color: var(--gray); }
+    .stance-legend strong { margin-right: 0.3rem; font-size: 0.9rem; }
 
     .result-count {
       max-width: 1100px;
@@ -502,6 +620,7 @@
       <option value="D">D</option>
     </select>
     <button class="filter-toggle" id="toggle-caution">⚠️ 要注意のみ</button>
+    <button class="btn-guide" id="btn-guide">❓ 評価基準</button>
   </div>
   <div class="result-count" id="result-count"></div>
 </div>
@@ -531,9 +650,82 @@
   </div>
 </main>
 
+<!-- 評価基準 MODAL -->
+<div class="modal-overlay" id="guide-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div class="modal-title">📊 評価基準ガイド</div>
+
+    <div class="guide-section">
+      <h3>① 総合スコアの計算方法</h3>
+      <table class="guide-table">
+        <tr><td>8軸スコア合計</td><td>各軸 0〜5点 × 8軸 = 最大 40点</td></tr>
+        <tr><td>総合スコア換算</td><td>合計点 × 100 ÷ 40 = 0〜100点</td></tr>
+        <tr><td>例）全軸 4点</td><td>32 × 100 ÷ 40 = <strong>80点</strong></td></tr>
+      </table>
+    </div>
+
+    <div class="guide-section">
+      <h3>② 8つの評価軸</h3>
+      <table class="guide-table">
+        <tr><td>🏠 国民生活改善</td><td>雇用・社会保障・物価対策・消費者保護</td></tr>
+        <tr><td>💹 経済・財政</td><td>成長政策・財政規律・税制・産業育成</td></tr>
+        <tr><td>🛡 安全保障</td><td>防衛・外交・危機管理・サイバー</td></tr>
+        <tr><td>⚙️ 政策実現力</td><td>立法実績・交渉力・行政手腕・実行力</td></tr>
+        <tr><td>📢 説明責任</td><td>透明性・情報公開・不祥事への対応</td></tr>
+        <tr><td>🌱 長期国益</td><td>少子化・エネルギー・国土強靱化</td></tr>
+        <tr><td>⚖️ 公共性</td><td>公益優先・利益相反回避・市民目線</td></tr>
+        <tr><td>🧹 政治倫理</td><td>献金・政治資金・法令遵守・不記載問題</td></tr>
+      </table>
+    </div>
+
+    <div class="guide-section">
+      <h3>③ ランク基準</h3>
+      <table class="guide-table">
+        <tr class="rank-row"><td class="rank-s">S</td><td>90点以上 ― 突出した実績・倫理ともに高水準</td></tr>
+        <tr class="rank-row"><td class="rank-a">A+ / A / A-</td><td>75〜89点 ― 総合的に優れた政治家</td></tr>
+        <tr class="rank-row"><td class="rank-b">B+ / B / B-</td><td>55〜74点 ― 標準的・一定の実績あり</td></tr>
+        <tr class="rank-row"><td class="rank-c">C+ / C / C-</td><td>35〜54点 ― 課題が目立つ・実績不足</td></tr>
+        <tr class="rank-row"><td class="rank-d">D</td><td>34点以下 ― 深刻な問題あり</td></tr>
+        <tr class="rank-row"><td style="color:var(--gray)">情報不足</td><td>公開情報が乏しく評価困難</td></tr>
+        <tr class="rank-row"><td style="color:var(--gray)">未評価</td><td>評価未実施</td></tr>
+      </table>
+    </div>
+
+    <div class="guide-section">
+      <h3>④ 政策スタンス記号</h3>
+      <div class="stance-legend">
+        <div><strong style="color:#4ac776">◎</strong><span>強く支持</span></div>
+        <div><strong style="color:#5ba0e0">○</strong><span>支持</span></div>
+        <div><strong style="color:#8090b8">△</strong><span>中立・条件付き</span></div>
+        <div><strong style="color:#e6384f">×</strong><span>反対</span></div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h3>⑤ フラグの意味</h3>
+      <table class="guide-table">
+        <tr><td>🚨 犯罪フラグ</td><td>逮捕・起訴・有罪判決の記録あり</td></tr>
+        <tr><td>⚠️ 要注意フラグ</td><td>行政処分・政治資金問題・説明責任に疑義あり</td></tr>
+      </table>
+    </div>
+
+    <div class="guide-note">
+      ※ このサイトのデータはAI（大規模言語モデル）による分析を基に作成されており、
+      事実関係の誤りを含む可能性があります。投票の参考として活用する場合は、
+      必ず一次情報（各議員の公式サイト・国会会議録等）を併せてご確認ください。<br>
+      ※ 評価は作成者の主観・判断基準を反映しており、特定の政党・政治家を支持・
+      批判することを目的としたものではありません。
+    </div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer class="site-footer">
-  © 2026 統覧 TORAN | Ryuzaburo — このサイトは教育・情報目的のプロトタイプです
+  © 2026 統覧 TORAN | Ryuzaburo —
+  このサイトは教育・情報目的のプロトタイプです。AI生成データを含むため内容の正確性を保証しません。<br>
+  評価・スコアは独自基準によるものであり、特定の政党・政治家を支持・批判するものではありません。
+  一次情報（公式サイト・国会会議録）の併用を推奨します。
 </footer>
 
 <script src="data.js"></script>
@@ -713,6 +905,19 @@ document.querySelectorAll('th[data-col]').forEach(th => {
 /* ── INIT ── */
 updateStats();
 applyFilters();
+
+/* ── 評価基準モーダル ── */
+(function() {
+  const overlay = document.getElementById('guide-modal');
+  const btnOpen = document.getElementById('btn-guide');
+  const btnClose = document.getElementById('modal-close');
+  function openModal()  { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+  btnOpen.addEventListener('click', openModal);
+  btnClose.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+})();
 </script>
 </body>
 </html>
