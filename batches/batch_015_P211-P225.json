@@ -1,0 +1,482 @@
+[
+  {
+    "id": "P211",
+    "axes": [3, 4, 3, 3, 2, 4, 3, 2],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "三重県知事3期の実績、地方自治行政やデジタル化、災害対策への高い実務手腕。",
+    "minus": "安倍派の政治資金不記載問題に関与したことによる、党からの役職停止処分。",
+    "comment": "通産官僚や三重県知事を経て国政へ。知事時代には地方創生やデジタルガバナンスで実績を残した。一方で、安倍派の不記載問題に絡み党から処分を受け、信頼回復に努めている。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": true,
+    "evidence": [
+      {
+        "cat": "問題・疑惑",
+        "sub": "政治資金問題",
+        "summary": "政治資金収支報告書の不記載による党役職停止処分",
+        "detail": "清和政策研究会（安倍派）のパーティー収入還流をめぐり、自身の政治団体における不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。",
+        "src": "自由民主党党紀委員会処分決定公表",
+        "url": "",
+        "rel": "discipline",
+        "impact": "中",
+        "date": "2024-04"
+      }
+    ]
+  },
+  {
+    "id": "P212",
+    "axes": [3, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "◎",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "×",
+      "foreign": "○", "food": "○", "semi": "◎"
+    },
+    "role": "衆議院議員",
+    "plus": "財務官僚出身。内閣府副大臣等の経験に基づく外務・通商政策、経済安保への専門性。",
+    "minus": "実務・政策立案重視の気質であり、一般消費者向けの機動的なアピールは控えめな点。",
+    "comment": "財務省、外務省の経歴を持つ政策通。内閣府副大臣等として、科学技術、AIルール策定、知的財産戦略などの先端経済分野において実務的な調整力を発揮してきた中堅の実力派。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "先端技術政策",
+        "summary": "内閣府副大臣として生成AIの安全枠組み策定を牽引",
+        "detail": "内閣府副大臣（科学技術・イノベーション等担当）として、AIの国際的な規制緩和と利用促進、著作権等に関する官民の共通ガイドライン策定の実務を統括した。",
+        "src": "内閣府 科学技術政策発表資料",
+        "url": "",
+        "rel": "econ_sec",
+        "impact": "中",
+        "date": "2024-02"
+      }
+    ]
+  },
+  {
+    "id": "P213",
+    "axes": [3, 4, 3, 5, 3, 3, 4, 4],
+    "stances": {
+      "tax_cut": "×", "active_fiscal": "×", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "財務大臣や東京五輪相、党総務会長を歴任。抜群の安定感と強固な財政実務能力。",
+    "minus": "財政規律を過度に重んじる緊縮姿勢が、積極財政や減税を望む層から批判を招く面。",
+    "comment": "第2次・3次岸田内閣等で長く財務大臣を務めた。緊迫する地政学的リスクに応じた防衛費増額の財源確保や、国際金融会議での調整において極めて手硬い安定した手腕を発揮した与党の重鎮。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "財政運営",
+        "summary": "財務大臣として防衛力強化に向けた財源確保スキームの策定",
+        "detail": "防衛予算の抜本増額を支えるため、防衛力強化資金の設置や歳出削減の積み上げなど、財政規律を一定程度維持しつつ多額の資金を捻出する実務を主導した。",
+        "src": "財務省 予算編成公報資料",
+        "url": "",
+        "rel": "discipline",
+        "impact": "高",
+        "date": "2023-12"
+      }
+    ]
+  },
+  {
+    "id": "P214",
+    "axes": [3, 3, 3, 3, 2, 3, 3, 2],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "総務大臣等の経験。地方自治体の行政デジタル化や、過疎地支援への着実な取り組み。",
+    "minus": "安倍派の政治資金不記載問題に関与したことによる、党からの役職停止処分。",
+    "comment": "総務大臣などを歴任。マイナンバーカードの活用推進や過疎地域のインフラ強靱化を担った。一方で、安倍派の一連の不記載問題により党から役職停止処分を受け、信頼回復に努めている。",
+    "survey": "評価済",
+    "total": 55,
+    "rank": "D",
+    "flag_crime": false,
+    "flag_caution": true,
+    "evidence": [
+      {
+        "cat": "問題・疑惑",
+        "sub": "政治資金問題",
+        "summary": "政治資金収支報告書の不記載による党役職停止処分",
+        "detail": "清和政策研究会（安倍派）のパーティー収入をめぐる不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。",
+        "src": "自由民主党党紀委員会処分決定通知",
+        "url": "",
+        "rel": "discipline",
+        "impact": "中",
+        "date": "2024-04"
+      }
+    ]
+  },
+  {
+    "id": "P215",
+    "axes": [3, 4, 3, 4, 3, 4, 4, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "×", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "◎", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "外務副大臣等の経験。北方領土の元島民支援や、北海道の過疎地振興、少子化対策への注力。",
+    "minus": "親族の対ロシア外交をめぐる論調に関し、バランスの維持に注視される面。",
+    "comment": "防衛政務官や外務副大臣、党青年局長などを歴任。北海道の一次産業保護や多子世帯の経済負担軽減に動き、現実的な実務調整能力を備えた若手・中堅の女性リーダー候補の一人。",
+    "survey": "評価済",
+    "total": 70,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "危機管理外交",
+        "summary": "外務副大臣としてウクライナへの人道支援物資輸送を差配",
+        "detail": "外務副大臣の立場で、防衛省や関係機関と連携し、ウクライナに対する医療用資材や防弾チョッキ等の迅速な無償供与手続きの調整にあたった。",
+        "src": "外務省 ウクライナ情勢緊急対応記録",
+        "url": "",
+        "rel": "foreign",
+        "impact": "中",
+        "date": "2022-03"
+      }
+    ]
+  },
+  {
+    "id": "P216",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "党の地方インフラ再整備や地域コミュニティ維持に対する高い関心。",
+    "minus": "国政レベルでの目立った独自法案の主導実績や多角的な活動データの不足。",
+    "comment": "自由民主党所属の議員。特定の際立った成果を定量評価するための情報が現時点で限定的であるため、本評価は党の基本方針に基づく推定配置であることを明記する。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "地域振興",
+        "summary": "過疎地域の一次産業保護と鳥獣害対策の強化を要求",
+        "detail": "地域産業を守るため、農家へのスマート化機器導入助成や、中山間地域における野生鳥獣による作物被害を防ぐ防除予算拡大を求めている。",
+        "src": "自由民主党公認候補選挙公報資料",
+        "url": "",
+        "rel": "regional",
+        "impact": "低",
+        "date": "2024-10"
+      }
+    ]
+  },
+  {
+    "id": "P217",
+    "axes": [4, 4, 3, 4, 3, 4, 4, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "×",
+      "foreign": "○", "food": "◎", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "農林水産副大臣等の経験。食料安全保障の強化や、農林水産業のDX推進。",
+    "minus": "次世代のホープとされるが、党内での独自の大型立法単独主導はこれからの段階。",
+    "comment": "農水官僚出身。自民党青年局長や農水副大臣を経験。食料自給率の向上やスマート農業の普及、農産物の輸出拡大に実務で貢献。不記載問題の渦中でも比較的クリーンな姿勢を保つ。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "農政改革",
+        "summary": "食料・農業・農村基本法の四半世紀ぶり改正に尽力",
+        "detail": "農水副大臣等として、地政学的リスクに伴う肥料・飼料の国内確保や備蓄強化を柱とする基本法の抜本見直し案をまとめ国会成立に寄与した。",
+        "src": "農林水産省基本法改正特設公示",
+        "url": "",
+        "rel": "food",
+        "impact": "中",
+        "date": "2024-05"
+      }
+    ]
+  },
+  {
+    "id": "P218",
+    "axes": [4, 3, 3, 3, 3, 4, 4, 4],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "○", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "◎", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "厚生労働政務官等の経験。医療DXの推進や孤独・孤立対策の法制化への貢献。",
+    "minus": "社会保障の専門分野に特化する反面、強力な独自マクロ経済成長の提示が地味な点。",
+    "comment": "経済産業官僚を経て国政へ。厚労政務官等を歴任。孤独・孤立対策推進法の成立に向けた実務、医療現場の働き方改革、認知症基本法整備に関与した、ガバナンス改革の推進派中堅。",
+    "survey": "評価済",
+    "total": 70,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "社会保障",
+        "summary": "厚生労働政務官として「孤独・孤立対策推進法」の整備を後押し",
+        "detail": "社会的孤立を防ぐための自治体・NPOの連携強化、国を挙げた一元的な相談支援体制の構築を盛り込んだ法律の原案策定を実務で支えた。",
+        "src": "内閣官房・厚生労働省孤独対策記録",
+        "url": "",
+        "rel": "birthrate",
+        "impact": "中",
+        "date": "2023-05"
+      }
+    ]
+  },
+  {
+    "id": "P219",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "◎", "active_fiscal": "○", "discipline": "×", "defense": "△", "econ_sec": "○",
+      "immigration": "×", "renewable": "△", "nuclear": "×", "expo": "×", "ir": "×",
+      "mynumber": "×", "birthrate": "◎", "education": "◎", "regional": "○", "china": "×",
+      "foreign": "×", "food": "◎", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "独自の教育環境改革や、オーガニック給食導入、食の安全への高い関心。",
+    "minus": "国政レベルにおける具体的な法案立法や、委員会審議での採択実績が不足。",
+    "comment": "参政党の基本方針に準じ、化学肥料依存からの脱却や伝統文化の保護を訴える。独自の国会活動データが限られているため、推定スコアで処理している。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "食の安全",
+        "summary": "学校給食への国産有機農産物の導入拡大を主張",
+        "detail": "子どもの健康保護と国内の一次産業を守るため、化学農薬に依存しない有機農業への助成拡充の必要性をアピールしている。",
+        "src": "参政党政策宣言資料",
+        "url": "",
+        "rel": "food",
+        "impact": "低",
+        "date": "2024-10"
+      }
+    ]
+  },
+  {
+    "id": "P220",
+    "axes": [4, 4, 3, 3, 4, 3, 4, 4],
+    "stances": {
+      "tax_cut": "◎", "active_fiscal": "◎", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "△",
+      "mynumber": "○", "birthrate": "◎", "education": "◎", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "民間企業（製造業）出身。科学技術投資、電気料金引き下げ等の家計負担軽減の提言。",
+    "minus": "野党議員の立場もあり、独自の減税関連法案を単独成立させた累積実績は発展途上。",
+    "comment": "地方議員を経て国政へ。国民民主党の「手取りを増やす」方針を支持。暫定税率の凍結解除によるガソリン減税や、年収の壁打破を叫び、中小ものづくり企業の生産性向上を訴える。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "家計経済政策",
+        "summary": "ガソリン税のトリガー条項凍結解除を国会で要求",
+        "detail": "衆院の各委員会等において、エネルギー価格高騰が物流業や地方の家計を圧迫しているとして、暫定税率分を速やかに引き下げる措置を強く促した。",
+        "src": "衆議院災害対策特別委員会会議録",
+        "url": "",
+        "rel": "tax_cut",
+        "impact": "中",
+        "date": "2023-11"
+      }
+    ]
+  },
+  {
+    "id": "P221",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "◎", "active_fiscal": "○", "discipline": "○", "defense": "△", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "×", "expo": "×", "ir": "×",
+      "mynumber": "△", "birthrate": "○", "education": "○", "regional": "◎", "china": "○",
+      "foreign": "○", "food": "○", "semi": "△"
+    },
+    "role": "衆議院議員",
+    "plus": "地域に根ざした活動や、高齢化地域における交通インフラ維持への意欲。",
+    "minus": "国政レベルにおける主要な独自法案の立法主導や、マクロ成長の提示データが不足。",
+    "comment": "地域福祉や生活者目線の支援を掲げて活動を展開。独自の政策成果を定量評価するための情報が現時点で限定的であるため、推定配置とする。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "地域福祉",
+        "summary": "過疎地・高齢化エリアにおける移動交通網の維持を要求",
+        "detail": "公共交通の縮小に悩む地域において、デマンド型バスの導入促進や地方自治体への財政補助の拡充を街頭等で求めた。",
+        "src": "公式マニフェスト活動報告資料",
+        "url": "",
+        "rel": "regional",
+        "impact": "低",
+        "date": "2024-10"
+      }
+    ]
+  },
+  {
+    "id": "P222",
+    "axes": [3, 4, 3, 3, 4, 3, 4, 3],
+    "stances": {
+      "tax_cut": "◎", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "◎", "ir": "◎",
+      "mynumber": "○", "birthrate": "○", "education": "◎", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "地方議会（兵庫県議）出身。行財政改革や「身を切る改革」の徹底的な推進姿勢。",
+    "minus": "歳出削減や行革を重視する反面、中長期の大規模産業投資ビジョンが地味な点。",
+    "comment": "日本維新の会に所属。国会議員の定数削減、旧文通費（調査研究広報滞在費）の領収書添付による使途完全義務化を厳しく要求し、行政の無駄遣い削減を強く叫ぶ。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "政治改革",
+        "summary": "旧文通費の使途公開および残金返納を求める法案の共同提出",
+        "detail": "維新の国対実務者らと連携し、旧文通費の透明化と国庫返納の仕組みを導入するための関連法案を共同提出した。",
+        "src": "衆議院法案提出公報記録",
+        "url": "",
+        "rel": "discipline",
+        "impact": "中",
+        "date": "2023-06"
+      }
+    ]
+  },
+  {
+    "id": "P223",
+    "axes": [4, 3, 3, 2, 4, 3, 4, 4],
+    "stances": {
+      "tax_cut": "◎", "active_fiscal": "◎", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "△",
+      "mynumber": "○", "birthrate": "◎", "education": "◎", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "報道記者出身。東海圏をベースにした現役世代への減税や、雇用環境是正の訴え。",
+    "minus": "所属枠組みの変遷もあり、独自の大型立法を直接可決に導いた累積実績データは途上。",
+    "comment": "元記者。維新への移籍後、基礎控除引き上げによる減税措置や「年収の壁」打破を唱え、現役世代の可処分所得向上をアピール。詳細なデータが限定的な一部指標は、党の方針を勘案した推定配置。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "家計支援政策",
+        "summary": "所得税の基礎控除額拡大による実質的な家計支援を主張",
+        "detail": "インフレによる生活困窮を緩和するため、働き控えを招く壁を大幅に引き上げ、働く人の手取りを増やすべきだと訴えた。",
+        "src": "日本維新の会 選挙公報資料",
+        "url": "",
+        "rel": "tax_cut",
+        "impact": "低",
+        "date": "2024-10"
+      }
+    ]
+  },
+  {
+    "id": "P224",
+    "axes": [3, 4, 3, 3, 2, 4, 4, 2],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "◎",
+      "immigration": "△", "renewable": "○", "nuclear": "◎", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "◎"
+    },
+    "role": "衆議院議員",
+    "plus": "経済産業副大臣等の経験。エネルギー政策や経済安全保障の実務。過疎地支援。",
+    "minus": "安倍派の政治資金不記載問題に関与したことによる、党からの戒告処分の影響。",
+    "comment": "経産副大臣や環境政務官を歴任。水素エネルギー導入拡大や先端技術のサプライチェーン確保などに関与。一方で、安倍派の一連の不記載問題において戒告処分を受け、道義的信頼の回復が課題の最中にある。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": true,
+    "evidence": [
+      {
+        "cat": "問題・疑惑",
+        "sub": "政治資金問題",
+        "summary": "政治資金収支報告書の不記載による党からの戒告処分",
+        "detail": "清和政策研究会（安倍派）の資金処理に関して、自身の関連団体での還流金の報告書不記載が指摘され、自由民主党の党紀委員会から戒告の処分を受けた。",
+        "src": "自由民主党党紀委員会処分発表",
+        "url": "",
+        "rel": "discipline",
+        "impact": "中",
+        "date": "2024-04"
+      }
+    ]
+  },
+  {
+    "id": "P225",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "衆議院議員",
+    "plus": "党の地方組織や地域に密着した活動、中小企業支援への高い関心。",
+    "minus": "独自の大型立法や、国会での際立った主導権を示すデータが未蓄積である点。",
+    "comment": "自由民主党所属の議員。特定の際立った成果を定量評価するためのデータが現時点で限定的であるため、本評価は党の基本方針に基づく推定配置であることを明記する。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "地域振興",
+        "summary": "地方の事業者保護と雇用環境の維持を主張",
+        "detail": "物価高騰に直面する地域の小規模事業者に対するエネルギー補助金の継続や、若者の地元定着を促すための正規雇用創出、土木インフラ強靭化を訴えている。",
+        "src": "自民党公認候補選挙公報資料",
+        "url": "",
+        "rel": "regional",
+        "impact": "低",
+        "date": "2024-10"
+      }
+    ]
+  }
+]
