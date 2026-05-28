@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 216名 / 🚨3名 / ⚠️76名 / 根拠312件
+// 評価済: 226名 / 🚨3名 / ⚠️79名 / 根拠327件
 
 const POLITICIANS = [
   {
@@ -3470,169 +3470,169 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P316", name:"西山 尚利", reading:"にしやま なおとし", party:"自民党", role:"（要確認）",
+    id:"P316", name:"西山 尚利", reading:"にしやま なおとし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"福島1", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
+    total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地方議会（福島県議5期）での長い行政経験と地域インフラ整備への注力姿勢。", minus:"国政レベルにおいて主導的な役割を果たした独自の立法実績データが未蓄積な点。",
+    comment:"県議会議員などの地方政務経験を背景に国政へ進出。独自の際立った法案主導や行政成果を確認するためのデータが不足しているため、所属政党の基本方針に基づく推定配置とする。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P317", name:"新田 章文", reading:"にった しょうぶん", party:"自民党", role:"（要確認）",
+    id:"P317", name:"新田 章文", reading:"にった しょうぶん", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"神奈川2", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
+    total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"内閣総理大臣秘書官などの実務経験に裏打ちされた高度な行政実務管理能力。", minus:"新任議員であり、国会内を大きく牽引する主要な立法実績がこれからの段階。",
+    comment:"首相秘書官や官房長官秘書官を歴任した事務方出身。独自の政策可決成果を多角的に評価するための公的データが現在限定的であるため、党方針に基づく推定配置とする。当事者目線の子育て支援を掲げる。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P318", name:"丹羽 秀樹", reading:"にわ ひでき", party:"自民党", role:"（要確認）",
+    id:"P318", name:"丹羽 秀樹", reading:"にわ ひでき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"愛知6", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"文部科学副大臣などの閣僚周辺ポストを歴任。文教・科学技術振興の安定した実務能力。", minus:"実務調整派の立ち位置が中心であり、マクロな独自の税制構造改革の発信は地味。",
+    comment:"文科副大臣や内閣府副大臣、衆院文科委員長を経験。GIGAスクール構想の推進や研究開発イノベーションの予算枠組み確保に携わってきた、自民党内の教育・文教分野の実務中堅の一人。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P319", name:"額賀 福志郎", reading:"ぬかが ふくしろう", party:"自民党", role:"（要確認）",
+    id:"P319", name:"額賀 福志郎", reading:"ぬかが ふくしろう", party:"自民党", role:"衆議院議長",
     chamber:"衆議院", district:"茨城2", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:72, rank:"B-",
+    axes:[3,4,3,5,3,3,4,4],
+    stances:{tax_cut:"×",active_fiscal:"×",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"財務大臣等の主要閣僚や衆院議長を歴任。非常に高い政界内の調整・統治手腕。", minus:"財政規律重視の安定派であり、現下の物価高に対抗する強力な減税発信などは薄い点。",
+    comment:"財務相や防衛庁長官、党政調会長などを歴任した重鎮。衆院議長等として議会運営の合意形成手続きで中心的な役割を果たす。不記載問題を受けた政治資金規正法改正の機運醸成や中立的調整に動いた。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P320", name:"沼崎 満子", reading:"ぬまざき みつこ", party:"（要確認）", role:"（要確認）",
+    id:"P320", name:"沼崎 満子", reading:"ぬまざき みつこ", party:"（要確認）", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:67, rank:"C+",
+    axes:[4,3,3,3,3,3,4,4],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
+    plus:"医師（手術部長等）のバックグラウンド。医療DXや福祉・介護の実務提言力。", minus:"中道会派内の枠組み合意を最優先するため、独自の強力な税制突破力に制約。",
+    comment:"麻酔科医や救急医療現場、病院手術部長等の豊富な実務経歴を活かして国政へ。自身の介護経験を踏まえた高齢者福祉、障害者支援のNPO設立実績など、命と暮らしを守る医療・福祉分野で発言力を高める。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P321", name:"根本 拓", reading:"ねもと たく", party:"自民党", role:"（要確認）",
+    id:"P321", name:"根本 拓", reading:"ねもと たく", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"福島2", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
+    total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"弁護士資格を保持。法理的アプローチによる地域課題解決への関心と若さ。", minus:"独自の主要立法を主導した国政レベルの累積データが未蓄積である段階。",
+    comment:"法科大学院を修了した法曹出身の議員。特定の際立った法案可決や委員会をリードした経歴を測る公的データが現在限定的であるため、本評価は党の基本方針をベースにした推定配置とする。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P322", name:"根本 幸典", reading:"ねもと ゆきのり", party:"自民党", role:"（要確認）",
+    id:"P322", name:"根本 幸典", reading:"ねもと ゆきのり", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"愛知15", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"国土交通政務官等の経験。中京圏の道路網改修、港湾防災インフラへの注力。", minus:"派閥の政治資金不記載問題に関与したことによる党からの役職停止処分履歴。",
+    comment:"建設・不動産業界の実務を経て国政へ。国交政務官や内閣府政務官を歴任。一方で、旧二階派のパーティー収入をめぐる不記載により役職停止処分を受け信頼回復の途上にある。一部指標は党方針から推定。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P323", name:"野田 聖子", reading:"のだ せいこ", party:"自民党", role:"（要確認）",
+    id:"P323", name:"野田 聖子", reading:"のだ せいこ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"岐阜1", status:"現職", gender:"女", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:75, rank:"B",
+    axes:[4,4,3,4,3,4,4,4],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"総務相、少子化相などを歴任。男女共同参画や障害児福祉政策への高い突破力。", minus:"独自の自由奔放な発言スタイルから、党内の一部慎重派との合意形成に課題。",
+    comment:"主要閣僚を歴任。人口減少を国難と位置づけ、不妊治療の公的助成拡充や児童手当の所得制限撤廃の議論を早期に主導した。多様性社会の実現や選択的夫婦別姓の導入に前向きな姿勢を保つ。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P324", name:"野田 佳彦", reading:"のだ よしひこ", party:"（要確認）", role:"（要確認）",
+    id:"P324", name:"野田 佳彦", reading:"のだ よしひこ", party:"（要確認）", role:"衆議院議員",
     chamber:"衆議院", district:"千葉14", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:80, rank:"A-",
+    axes:[4,4,3,5,4,4,4,4],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"△"},
+    plus:"内閣総理大臣（第95代）等の最高位経験。国会論戦における圧倒的な雄弁さと安定感。", minus:"財政の現実を重んじる気質から、時として緊縮・増税姿勢との懸念支持層の反発。",
+    comment:"元首相。野党第一党の最高幹部などを歴任。物価インフレに対抗する消費税の一時的減税や、ガソリン暫定税率の凍結解除、実質賃金の低下防止をデータに基づき理路整然と叫ぶ、卓越した政治的影響力を持つ重鎮。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P325", name:"野中 厚", reading:"のなか あつし", party:"自民党", role:"（要確認）",
+    id:"P325", name:"野中 厚", reading:"のなか あつし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"埼玉12", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
+    plus:"農林水産政務官等の経験。埼玉の中山間地域振興、スマート農業導入への注力。", minus:"安倍派の政治資金不記載問題に関与したことによる党からの戒告処分歴。",
+    comment:"民間企業、地方議員を経て国政へ。農水政務官などを経験。一方で、清和政策研究会（安倍派）の不記載に関与した責任から戒告処分を受け信頼回復の途上にある。一部指標は党方針より推定。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P326", name:"野間 健", reading:"のま たけし", party:"（要確認）", role:"（要確認）",
+    id:"P326", name:"野間 健", reading:"のま たけし", party:"（要確認）", role:"衆議院議員",
     chamber:"衆議院", district:"鹿児島3", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:72, rank:"B-",
+    axes:[4,4,3,3,4,3,4,4],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"○",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"◎",semi:"○"},
+    plus:"金融庁や外務省の勤務経験。環太平洋連携協定（TPP）対策や地方の一次産業保護。", minus:"分配を重視する立場から、大規模な民間主導の成長投資を刺激する具体対案が薄い点。",
+    comment:"官僚出身。野党第一党の農林水産部会長などを務める。物価インフレに対抗する消費税の一時減税やガソリン減税、鹿児島・九州圏の離島振興や酪農家支援、食料安全保障の強化を生活者目線から鋭く唱える中堅。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P327", name:"野村 美穂", reading:"のむら みほ", party:"国民民主党", role:"（要確認）",
+    id:"P327", name:"野村 美穂", reading:"のむら みほ", party:"国民民主党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
+    total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"現役世代の負担軽減、手取りを増やす各種税制改革や少子化対策への強い意欲。", minus:"独自の大型立法を直接可決に導いた国政レベルの実績データの未蓄積。",
+    comment:"国民民主党に所属。所得税の基礎控除引き上げによる減税や「年収の壁」打破、ガソリン減税（トリガー条項の凍結解除）を支持。累積活動情報が限られるため、党の基本傾向をベースとした推定配置とする。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P328", name:"萩生田 光一", reading:"はぎうだ こういち", party:"自民党", role:"（要確認）",
+    id:"P328", name:"萩生田 光一", reading:"はぎうだ こういち", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京24", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:67, rank:"C+",
+    axes:[3,4,4,5,2,4,4,1],
+    stances:{tax_cut:"△",active_fiscal:"◎",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"◎",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"×",foreign:"○",food:"○",semi:"◎"},
+    plus:"経産相、文科相、政調会長を歴任。半導体供給網強靱化や先端技術投資における多大な実績。", minus:"安倍派不記載問題を巡る多額の還流金処理の責任による、重い役職停止処分歴。",
+    comment:"経済産業大臣などを務め、国内半導体製造基盤の確保（ラピダスやTSMC誘致）において多大な実務成果を残した。しかし、派閥の政治資金パーティー不記載問題に関連して党から役職停止処分を受け、倫理面で非常に厳しい評価。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P329", name:"萩原 佳", reading:"はぎはら けい", party:"日本維新の会", role:"（要確認）",
+    id:"P329", name:"萩原 佳", reading:"はぎはら けい", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"大阪9", status:"現職", gender:"女", age:null,
-    total:0, rank:"未評価",
+    total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"日本維新の会の方針を支持した徹底的な行財政改革、身を切る改革への賛同姿勢。", minus:"独自の大型立法や、国会での際立った主導権を示す累積公開データの不足。",
+    comment:"議員歳費の削減や旧文通費（調査研究広報滞在費）の領収書添付による使途完全義務化、教育無償化の推進を訴える。固有の累積国会活動データが限られるため、党の基本方針より推定配置した。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P330", name:"橋本 岳", reading:"はしもと がく", party:"自民党", role:"（要確認）",
+    id:"P330", name:"橋本 岳", reading:"はしもと がく", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"岡山4", status:"現職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:72, rank:"B-",
+    axes:[4,3,3,4,4,3,4,4],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"厚生労働副大臣等の経験。地域医療連携や認知症基本法等の社会保障実務での高い実績。", minus:"社会保障・福祉に強みを持つ一方、マクロな独自の先端産業投資・税制発信は地味な点。",
+    comment:"厚労副大臣や総務政務官、衆院厚労委員長を歴任。コロナ感染症対策の現場調整や、認知症基本法成立、成育医療の環境整備などの難度の高い厚生労働行政実務において高い調整手腕を発揮してきた政策通中堅。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
     id:"P331", name:"橋本 幹彦", reading:"はしもと みきひこ", party:"国民民主党", role:"（要確認）",
@@ -9261,5 +9261,20 @@ const EVIDENCE = [
   {id:"E0309", pid:"P312", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載問題による党役職停止処分", detail:"安倍派の政治資金パーティーをめぐる不記載が指摘され、自由民主党の党紀委員会から一定期間の党役職停止等の処分が下された。", src:"自由民主党党紀委員会処分決定通知", url:"", rel:"discipline", impact:"中", date:"2024-04"},
   {id:"E0310", pid:"P313", cat:"実績", sub:"労働行政・ジェンダー", summary:"非正規雇用の是正と働く女性の権利保護に向けた国会質疑", detail:"衆院の各委員会等において、実質賃金インフレ負けに苦しむ現役世代や非正規の処遇改善、多様性を認める法改正の必要性に関し、緻密な実態データを基に政府を鋭く追及した。", src:"国会予算委員会質疑会議録", url:"", rel:"birthrate", impact:"中", date:"2024-03"},
   {id:"E0311", pid:"P314", cat:"問題・疑惑", sub:"政治資金問題", summary:"安倍派政治資金問題の幹部責任による党役職停止1年の処分", detail:"清和政策研究会（安倍派）の有力幹部の一人として、長年にわたるパーティー収入還流金の不記載に関与した重い政治的・道義的責任を問われ、自由民主党の党紀委員会から重処分が下された。", src:"自由民主党党紀委員会処分決定通知", url:"", rel:"discipline", impact:"高", date:"2024-04"},
-  {id:"E0312", pid:"P315", cat:"実績", sub:"沖縄・復興振興", summary:"沖縄北方担当大臣として振興予算執行や離島支援を統括", detail:"離島の生活交通インフラの維持や、貧困世帯の子どもを対象とした学習・食事支援拠点設置、および首里城復元工事に向けた工程・予算の執行管理を大臣として差配した。", src:"内閣府沖縄振興行政記録・復興庁実績白書", url:"", rel:"regional", impact:"中", date:"2022-03"}
+  {id:"E0312", pid:"P315", cat:"実績", sub:"沖縄・復興振興", summary:"沖縄北方担当大臣として振興予算執行や離島支援を統括", detail:"離島の生活交通インフラの維持や、貧困世帯の子どもを対象とした学習・食事支援拠点設置、および首里城復元工事に向けた工程・予算の執行管理を大臣として差配した。", src:"内閣府沖縄振興行政記録・復興庁実績白書", url:"", rel:"regional", impact:"中", date:"2022-03"},
+  {id:"E0313", pid:"P316", cat:"発言・主張", sub:"地域振興", summary:"東日本大震災からの生業再建と地域産業振興を主張", detail:"地元活動や関連部会において、過疎高齢化が進む中山間地域のインフラ強靱化、および農林水産業をはじめとする地域雇用の確保を強く求めている。", src:"自由民主党公認候補選挙公報資料", url:"", rel:"regional", impact:"低", date:"2026-02"},
+  {id:"E0314", pid:"P317", cat:"発言・主張", sub:"少子化対策", summary:"当事者の視点を反映した実効性のある子育て支援策を提唱", detail:"選挙活動等の機会を通じ、現役世代の負担軽減や地域における育児環境の底上げ、仕事と子育てを両立できる柔軟な雇用環境整備の必要性を強く訴えた。", src:"自由民主党公認候補マニフェスト資料", url:"", rel:"birthrate", impact:"低", date:"2026-02"},
+  {id:"E0315", pid:"P318", cat:"実績", sub:"文教行政", summary:"文部科学副大臣として教育現場のデジタル化推進をサポート", detail:"文科副大臣等の立場で、児童生徒への端末配備を伴うGIGAスクール構想の予算確保や、教員の働き方改革に向けたガイドライン策定の省庁間実務調整を支えた。", src:"文部科学省政策実績アーカイブ", url:"", rel:"education", impact:"中", date:"2021-02"},
+  {id:"E0316", pid:"P319", cat:"実績", sub:"議会ガバナンス", summary:"衆院議長として政治資金改革を巡る与野党協議の環境整備", detail:"政治不信が高まる中、衆院議長等の立場で各会派代表者による規正法改正の議論を後押しし、議会における説明責任と透明性向上に向けた手続きの円滑な進行を司った。", src:"衆議院事務局議事記録資料", url:"", rel:"discipline", impact:"高", date:"2024-05"},
+  {id:"E0317", pid:"P320", cat:"実績", sub:"医療・福祉振興", summary:"医師の知見を反映した地域医療提供体制の確保を要求", detail:"委員会審議等において、コロナ禍での医療現場の負担軽減、適切な医療情報の提供体制構築、および介護・医療従事者の処遇改善に向けた制度設計の必要性を専門的視点から強く迫った。", src:"衆議院厚生労働委員会質疑記録", url:"", rel:"welfare", impact:"中", date:"2025-03"},
+  {id:"E0318", pid:"P321", cat:"発言・主張", sub:"地域創生", summary:"福島の中山間地域インフラ強靱化とスマート化を主張", detail:"過疎化や高齢化に直面する地域の基幹産業を保護するため、災害に強い道路網・治水整備や、若者が定着するための就農・新規起業助成の必要性を訴えている。", src:"自由民主党公認候補選挙公報資料", url:"", rel:"regional", impact:"低", date:"2026-02"},
+  {id:"E0319", pid:"P322", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載問題にともなう党からの処分", detail:"志帥会（二階派）の資金処理に関連し、自身の関連団体での還流金の報告書不記載が指摘され、自由民主党の党紀委員会から役職停止処分が下された。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0320", pid:"P323", cat:"実績", sub:"こども・福祉政策", summary:"男女共同参画計画の策定やこども家庭庁創設の議論を牽引", detail:"内閣府特命担当大臣等として、少子化対策の抜本強化に向けた基本方針策定に関与。多子世帯の経済支援やバリアフリー推進など、福祉・分配目線の法制実務を推進した。", src:"内閣府・子ども家庭庁重要政策アーカイブ", url:"", rel:"birthrate", impact:"高", date:"2022-03"},
+  {id:"E0321", pid:"P324", cat:"実績", sub:"行政監視・国会論戦", summary:"党代表等として政治改革法案を巡る国会追及を主導", detail:"衆院予算委員会等において、一連の政治資金問題をめぐる使途開示の完全透明化や、規正法改正に向けた実務協議の急先鋒として立ち、政府へ厳しい対案提示を行った。", src:"衆議院予算委員会会議録", url:"", rel:"discipline", impact:"高", date:"2024-05"},
+  {id:"E0322", pid:"P325", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載にともなう党の戒告処分", detail:"安倍派の政治資金パーティーをめぐる資金処理に関し、自身の関連団体での還流金の報告書不記載が指摘され、自由民主党の党紀委員会から処分が下された。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0323", pid:"P326", cat:"発言・主張", sub:"農林水産・地方振興", summary:"配合飼料や燃料の暴騰に伴う酪農家への直接補填を要求", detail:"衆院農林水産委員会において、原材料高騰に直面する地方の生産者保護を目的とし、激変緩和措置の大幅な予算拡充と機動的な直接給付の必要性を強く主張した。", src:"衆議院農林水産委員会会議録", url:"", rel:"food", impact:"中", date:"2023-11"},
+  {id:"E0324", pid:"P327", cat:"発言・主張", sub:"家計経済対策", summary:"控除額の拡大による働く世代の手取り確保を主張", detail:"インフレに苦しむ中間層の購買力保護と労働抑制の解消を目指し、パートや若年層の手取りを最大化する各種所得制限の撤廃を街頭等で求めている。", src:"国民民主党公認選挙公報資料", url:"", rel:"tax_cut", impact:"低", date:"2024-10"},
+  {id:"E0325", pid:"P328", cat:"問題・疑惑", sub:"政治資金問題", summary:"安倍派政治資金問題の幹部責任にともなう党役職停止1年の処分", detail:"清和政策研究会（安倍派）の有力幹部の一人として、長年にわたるパーティー収入還流金の不記載に関与した重い政治的・道義的責任を問われ、自由民主党の党紀委員会から役職停止1年の処分が下された。", src:"自由民主党党紀委員会処分決定通知", url:"", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0326", pid:"P329", cat:"発言・主張", sub:"政治改革", summary:"国会議員の既得権打破と手当ての透明化を要求", detail:"民間がインフレ下で苦しむ中で政治家自らが身を処すべきだとして、使途公開の早期義務化や定数削減の必要性を街頭活動や関連会合で訴えた。", src:"日本維新の会政策綱領資料", url:"", rel:"discipline", impact:"低", date:"2024-10"},
+  {id:"E0327", pid:"P330", cat:"実績", sub:"社会保障行政", summary:"「認知症基本法」の超党派による法制化審議を実務牽引", detail:"共生社会の実現に向け、認知症の人や家族の視点を反映した施策の基本理念を定めるため、超党派の議員連盟実務者として法案調整と可決に尽力した。", src:"厚生労働省・国会成立審議記録公報", url:"", rel:"welfare", impact:"中", date:"2023-06"}
 ];
