@@ -151,7 +151,7 @@ def main():
                 else:
                     # 指定フィールドのみ上書き
                     for key in ['total','rank','axes','stances','role',
-                                'plus','minus','comment','survey',
+                                'plus','minus','comment','survey','party',
                                 'flag_crime','flag_caution','updated']:
                         if key in item:
                             p[key] = item[key]

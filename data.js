@@ -71,7 +71,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P007", name:"赤羽 一嘉", reading:"あかば かずよし", party:"（要確認）", role:"衆議院議員",
+    id:"P007", name:"赤羽 一嘉", reading:"あかば かずよし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
     total:73, rank:"B+",
     axes:[4,3,3,4,4,3,4,4],
@@ -214,7 +214,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P020", name:"有田 芳生", reading:"ありた よしふ", party:"（要確認）", role:"衆議院議員",
+    id:"P020", name:"有田 芳生", reading:"ありた よしふ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"男", age:null,
     total:62, rank:"B-",
     axes:[3,2,2,3,4,3,4,4],
@@ -280,7 +280,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P026", name:"伊佐 進一", reading:"いさ しんいち", party:"（要確認）", role:"衆議院議員",
+    id:"P026", name:"伊佐 進一", reading:"いさ しんいち", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
     total:74, rank:"B+",
     axes:[4,4,3,4,4,3,4,4],
@@ -401,7 +401,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P037", name:"泉 健太", reading:"いずみ けんた", party:"（要確認）", role:"衆議院議員",
+    id:"P037", name:"泉 健太", reading:"いずみ けんた", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"京都3", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,3,4,4],
@@ -555,7 +555,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P051", name:"犬飼 明佳", reading:"いぬかい あきよし", party:"（要確認）", role:"衆議院議員",
+    id:"P051", name:"犬飼 明佳", reading:"いぬかい あきよし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"女", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -764,7 +764,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P070", name:"浮島 智子", reading:"うきしま ともこ", party:"（要確認）", role:"衆議院議員",
+    id:"P070", name:"浮島 智子", reading:"うきしま ともこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"女", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,3,3,4,4],
@@ -929,7 +929,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P085", name:"大島 敦", reading:"おおしま あつし", party:"（要確認）", role:"衆議院議員",
+    id:"P085", name:"大島 敦", reading:"おおしま あつし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[3,3,3,2,3,3,3,3],
@@ -984,7 +984,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P090", name:"大森 江里子", reading:"おおもり えりこ", party:"（要確認）", role:"衆議院議員",
+    id:"P090", name:"大森 江里子", reading:"おおもり えりこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"女", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -1017,7 +1017,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P093", name:"岡本 三成", reading:"おかもと みつなり", party:"（要確認）", role:"衆議院議員",
+    id:"P093", name:"岡本 三成", reading:"おかもと みつなり", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,3,4,4,4],
@@ -1039,7 +1039,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P095", name:"小川 淳也", reading:"おがわ じゅんや", party:"（要確認）", role:"衆議院議員",
+    id:"P095", name:"小川 淳也", reading:"おがわ じゅんや", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"香川1", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,4,2,3,4,4,4,4],
@@ -1116,7 +1116,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P102", name:"落合 貴之", reading:"おちあい たかゆき", party:"（要確認）", role:"衆議院議員",
+    id:"P102", name:"落合 貴之", reading:"おちあい たかゆき", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,3,4,4],
@@ -1182,7 +1182,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P108", name:"河西 宏一", reading:"かさい こういち", party:"（要確認）", role:"衆議院議員",
+    id:"P108", name:"河西 宏一", reading:"かさい こういち", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -1336,7 +1336,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P122", name:"金子 恵美", reading:"かねこ えみ", party:"（要確認）", role:"衆議院議員",
+    id:"P122", name:"金子 恵美", reading:"かねこ えみ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"女", age:null,
     total:70, rank:"B-",
     axes:[4,3,2,4,4,3,4,4],
@@ -1391,7 +1391,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P127", name:"神谷 裕", reading:"かみや ひろし", party:"（要確認）", role:"衆議院議員",
+    id:"P127", name:"神谷 裕", reading:"かみや ひろし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"北海道10", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,2,3,4,3,4,4],
@@ -1457,7 +1457,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P133", name:"河野 義博", reading:"かわの よしひろ", party:"（要確認）", role:"衆議院議員",
+    id:"P133", name:"河野 義博", reading:"かわの よしひろ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -1534,7 +1534,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P140", name:"菊田 真紀子", reading:"きくた まきこ", party:"（要確認）", role:"衆議院議員",
+    id:"P140", name:"菊田 真紀子", reading:"きくた まきこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"女", age:null,
     total:70, rank:"B-",
     axes:[4,3,2,4,4,3,4,4],
@@ -1633,7 +1633,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P149", name:"金城 泰邦", reading:"きんじょう やすくに", party:"（要確認）", role:"衆議院議員",
+    id:"P149", name:"金城 泰邦", reading:"きんじょう やすくに", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -1688,7 +1688,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P154", name:"國重 徹", reading:"くにしげ とおる", party:"（要確認）", role:"衆議院議員",
+    id:"P154", name:"國重 徹", reading:"くにしげ とおる", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,4,3,4,4],
@@ -1842,7 +1842,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P168", name:"輿水 恵一", reading:"こしみず けいいち", party:"（要確認）", role:"衆議院議員",
+    id:"P168", name:"輿水 恵一", reading:"こしみず けいいち", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,4,3,4,4],
@@ -1875,7 +1875,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P171", name:"後藤 祐一", reading:"ごとう ゆういち", party:"（要確認）", role:"衆議院議員",
+    id:"P171", name:"後藤 祐一", reading:"ごとう ゆういち", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,4,3,4,3],
@@ -1963,7 +1963,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P179", name:"近藤 和也", reading:"こんどう かずや", party:"（要確認）", role:"衆議院議員",
+    id:"P179", name:"近藤 和也", reading:"こんどう かずや", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,2,3,4,3,4,4],
@@ -2029,7 +2029,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P185", name:"斉藤 鉄夫", reading:"さいとう てつお", party:"（要確認）", role:"衆議院議員（元国土交通大臣）",
+    id:"P185", name:"斉藤 鉄夫", reading:"さいとう てつお", party:"中道改革連合", role:"衆議院議員（元国土交通大臣）",
     chamber:"衆議院", district:"比例・中国", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,3,3,5,4,3,4,4],
@@ -2128,7 +2128,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P194", name:"佐藤 英道", reading:"さとう ひでみち", party:"（要確認）", role:"衆議院議員（元農林水産副大臣）",
+    id:"P194", name:"佐藤 英道", reading:"さとう ひでみち", party:"中道改革連合", role:"衆議院議員（元農林水産副大臣）",
     chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -2172,7 +2172,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P198", name:"重徳 和彦", reading:"しげとく かずひこ", party:"（要確認）", role:"衆議院議員",
+    id:"P198", name:"重徳 和彦", reading:"しげとく かずひこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,3,4,4],
@@ -2194,7 +2194,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P200", name:"階 猛", reading:"しな たけし", party:"（要確認）", role:"衆議院議員",
+    id:"P200", name:"階 猛", reading:"しな たけし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"岩手1", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,3,4,4],
@@ -2260,7 +2260,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P206", name:"庄子 賢一", reading:"しょうじ けんいち", party:"（要確認）", role:"衆議院議員",
+    id:"P206", name:"庄子 賢一", reading:"しょうじ けんいち", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -2678,7 +2678,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P244", name:"田嶋 要", reading:"たじま かなめ", party:"（要確認）", role:"衆議院議員",
+    id:"P244", name:"田嶋 要", reading:"たじま かなめ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,3,4,4,4,4],
@@ -2964,7 +2964,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P270", name:"角田 秀穂", reading:"つのだ ひでお", party:"（要確認）", role:"衆議院議員",
+    id:"P270", name:"角田 秀穂", reading:"つのだ ひでお", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -3085,7 +3085,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P281", name:"中川 宏昌", reading:"なかがわ ひろまさ", party:"（要確認）", role:"衆議院議員",
+    id:"P281", name:"中川 宏昌", reading:"なかがわ ひろまさ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -3096,7 +3096,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P282", name:"中川 康洋", reading:"なかがわ やすひろ", party:"（要確認）", role:"衆議院議員（元文部科学大臣政務官）",
+    id:"P282", name:"中川 康洋", reading:"なかがわ やすひろ", party:"中道改革連合", role:"衆議院議員（元文部科学大臣政務官）",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,4,3,3,3,4,3,3],
@@ -3206,7 +3206,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"（要確認）", role:"衆議院議員",
+    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -3261,7 +3261,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P297", name:"中野 洋昌", reading:"なかの ひろまさ", party:"（要確認）", role:"衆議院議員",
+    id:"P297", name:"中野 洋昌", reading:"なかの ひろまさ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[3,4,3,3,4,3,4,3],
@@ -3382,7 +3382,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P308", name:"西園 勝秀", reading:"にしぞの かつひで", party:"（要確認）", role:"衆議院議員",
+    id:"P308", name:"西園 勝秀", reading:"にしぞの かつひで", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -3437,7 +3437,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P313", name:"西村 智奈美", reading:"にしむら ちなみ", party:"（要確認）", role:"衆議院議員",
+    id:"P313", name:"西村 智奈美", reading:"にしむら ちなみ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"女", age:null,
     total:67, rank:"C+",
     axes:[4,3,2,3,4,3,4,4],
@@ -3514,7 +3514,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P320", name:"沼崎 満子", reading:"ぬまざき みつこ", party:"（要確認）", role:"衆議院議員",
+    id:"P320", name:"沼崎 満子", reading:"ぬまざき みつこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -3558,7 +3558,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P324", name:"野田 佳彦", reading:"のだ よしひこ", party:"（要確認）", role:"衆議院議員",
+    id:"P324", name:"野田 佳彦", reading:"のだ よしひこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"千葉14", status:"現職", gender:"男", age:null,
     total:80, rank:"A-",
     axes:[4,4,3,5,4,4,4,4],
@@ -3580,7 +3580,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P326", name:"野間 健", reading:"のま たけし", party:"（要確認）", role:"衆議院議員",
+    id:"P326", name:"野間 健", reading:"のま たけし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"鹿児島3", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,4,3,3,4,3,4,4],
@@ -3712,7 +3712,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P338", name:"浜地 雅一", reading:"はまち まさかず", party:"（要確認）", role:"衆議院議員",
+    id:"P338", name:"浜地 雅一", reading:"はまち まさかず", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,4,3,4,4],
@@ -3745,7 +3745,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P341", name:"原田 直樹", reading:"はらだ なおき", party:"（要確認）", role:"衆議院議員",
+    id:"P341", name:"原田 直樹", reading:"はらだ なおき", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -3833,7 +3833,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P349", name:"平林 晃", reading:"ひらばやし あきら", party:"（要確認）", role:"衆議院議員",
+    id:"P349", name:"平林 晃", reading:"ひらばやし あきら", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・中国", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -3877,7 +3877,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P353", name:"福重 隆浩", reading:"ふくしげ たかひろ", party:"（要確認）", role:"衆議院議員",
+    id:"P353", name:"福重 隆浩", reading:"ふくしげ たかひろ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[4,3,3,3,3,3,4,4],
@@ -4680,7 +4680,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P426", name:"山岡 達丸", reading:"やまおか たつまる", party:"（要確認）", role:"衆議院議員",
+    id:"P426", name:"山岡 達丸", reading:"やまおか たつまる", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -4735,7 +4735,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P431", name:"山崎 正恭", reading:"やまさき まさやす", party:"（要確認）", role:"衆議院議員",
+    id:"P431", name:"山崎 正恭", reading:"やまさき まさやす", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・四国", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -4812,7 +4812,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P438", name:"山本 香苗", reading:"やまもと かなえ", party:"（要確認）", role:"衆議院議員",
+    id:"P438", name:"山本 香苗", reading:"やまもと かなえ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
@@ -4911,7 +4911,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P447", name:"吉田 宣弘", reading:"よしだ のぶひろ", party:"（要確認）", role:"衆議院議員",
+    id:"P447", name:"吉田 宣弘", reading:"よしだ のぶひろ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,3,4,4,4,4],
@@ -4955,7 +4955,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P451", name:"笠 浩史", reading:"りゅう ひろふみ", party:"（要確認）", role:"参議院議員",
+    id:"P451", name:"笠 浩史", reading:"りゅう ひろふみ", party:"中道改革連合", role:"参議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -5021,7 +5021,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
   },
   {
-    id:"P457", name:"早稲田 ゆき", reading:"わせだ ゆき", party:"（要確認）", role:"衆議院議員",
+    id:"P457", name:"早稲田 ゆき", reading:"わせだ ゆき", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -5098,7 +5098,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P464", name:"渡辺 創", reading:"わたなべ そう", party:"（要確認）", role:"衆議院議員",
+    id:"P464", name:"渡辺 創", reading:"わたなべ そう", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"宮崎1", status:"現職", gender:"男", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
