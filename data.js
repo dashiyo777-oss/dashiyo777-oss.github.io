@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 591名 / 🚨4名 / ⚠️95名 / 根拠569件
+// 評価済: 594名 / 🚨4名 / ⚠️95名 / 根拠572件
 
 const POLITICIANS = [
   {
@@ -8915,37 +8915,37 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P811", name:"鳩山一郎", reading:"", party:"無所属", role:"（要確認）",
+    id:"P811", name:"鳩山一郎", reading:"", party:"無所属", role:"元内閣総理大臣",
     chamber:"元議員", district:"", status:"元職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:72, rank:"B-",
+    axes:[4,4,3,4,3,5,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"日本民主党を結党し、戦後保守政治の礎を築いた。日ソ国交回復を実現した。", minus:"公職追放による長期の政治空白があり、政界復帰後の党内勢力争いに多くの時間を費やした。",
+    comment:"保守合同を推進し自由民主党の初代総裁となった。戦後日本の外交・内政の基盤を確立した歴史的指導者。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P812", name:"菅直人", reading:"", party:"無所属", role:"（要確認）",
+    id:"P812", name:"菅直人", reading:"", party:"無所属", role:"元内閣総理大臣",
     chamber:"元議員", district:"", status:"元職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"×",expo:"△",ir:"△",mynumber:"△",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"市民運動出身の経歴を持ち、厚生大臣時代には薬害エイズ問題等で強い行政的決断力を示した。", minus:"首相在任時の東日本大震災への対応については評価が分かれ、危機管理の難しさが残った。",
+    comment:"科学者志望から政治家の道へ進み、市民派として長年活動。首相経験者として行政刷新等の議論を牽引。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P813", name:"森喜朗", reading:"", party:"無所属", role:"（要確認）",
+    id:"P813", name:"森喜朗", reading:"", party:"無所属", role:"元内閣総理大臣",
     chamber:"元議員", district:"", status:"元職", gender:"男", age:null,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"党内調整能力に長け、多くの閣僚・要職を歴任し政権の安定に貢献した。", minus:"在任中の発言等がメディアで批判を浴びるなど、説明責任を巡る課題がしばしば指摘された。",
+    comment:"自民党の要職を歴任した重鎮。九州・沖縄サミットの完遂など実務的な外交・内政調整を行う。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   }
 ];
 
@@ -9518,5 +9518,8 @@ const EVIDENCE = [
   {id:"E0566", pid:"P807", cat:"実績", sub:"行政改革", summary:"行政改革の推進", detail:"知事・市長として大規模な行財政改革を主導した。", src:"活動実績", url:"", rel:"政策実現力", impact:"高", date:"2024-05"},
   {id:"E0567", pid:"P808", cat:"実績", sub:"地方政治", summary:"知事としての行政経験", detail:"地方知事として行政を主導した。", src:"活動プロフィール", url:"", rel:"政策実現力", impact:"低", date:"2024-05"},
   {id:"E0568", pid:"P809", cat:"実績", sub:"地方政治", summary:"知事としての行政経験", detail:"地方知事として行政を主導した。", src:"活動プロフィール", url:"", rel:"政策実現力", impact:"低", date:"2024-05"},
-  {id:"E0569", pid:"P810", cat:"実績", sub:"国政", summary:"政権運営の主導", detail:"長年、国政の中心で政権運営と党務を担った。", src:"国政実績", url:"", rel:"政策実現力", impact:"中", date:"2024-03"}
+  {id:"E0569", pid:"P810", cat:"実績", sub:"国政", summary:"政権運営の主導", detail:"長年、国政の中心で政権運営と党務を担った。", src:"国政実績", url:"", rel:"政策実現力", impact:"中", date:"2024-03"},
+  {id:"E0570", pid:"P811", cat:"実績", sub:"外交", summary:"日ソ国交回復の実現", detail:"首相として外交交渉を主導し、長年の懸案であった日ソ国交回復を達成した。", src:"国立国会図書館 近代日本人の肖像", url:"https://www.ndl.go.jp/portrait/datas/473", rel:"長期国益", impact:"高", date:"1956-10"},
+  {id:"E0571", pid:"P812", cat:"実績", sub:"厚生行政", summary:"薬害エイズ問題への対応", detail:"厚生大臣として薬害エイズ問題の責任を認め、被害者との和解を導く行政的決断を行った。", src:"首相官邸 歴代内閣", url:"https://www.kantei.go.jp/jp/rekidainaikaku/094.html", rel:"政治倫理", impact:"高", date:"1996-01"},
+  {id:"E0572", pid:"P813", cat:"実績", sub:"外交", summary:"九州・沖縄サミットの完遂", detail:"小渕内閣から引き継いだ九州・沖縄サミットを首脳として円滑に完遂させた。", src:"自由民主党 党のあゆみ", url:"https://www.jimin.jp/aboutus/history/19.html", rel:"政策実現力", impact:"中", date:"2000-07"}
 ];
