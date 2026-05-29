@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 597名 / 🚨4名 / ⚠️102名 / 根拠590件
+// 評価済: 598名 / 🚨4名 / ⚠️102名 / 根拠594件
 
 const POLITICIANS = [
   {
@@ -8946,6 +8946,17 @@ const POLITICIANS = [
     comment:"自民党の要職を歴任した重鎮。九州・沖縄サミットの完遂など実務的な外交・内政調整を行う。",
     links:{hp:"",tw:"",yt:"",wiki:""},
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
+  },
+  {
+    id:"P814", name:"原口 一博", reading:"はらぐち かずひろ", party:"減税日本・ゆうこく連合", role:"前衆議院議員（佐賀1区）、減税日本・ゆうこく連合共同代表、元総務大臣",
+    chamber:"元議員", district:"佐賀1区", status:"元職", gender:"男", age:66,
+    total:62, rank:"C-",
+    axes:[3,4,2,4,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"△",econ_sec:"△",immigration:"△",renewable:"○",nuclear:"△",expo:"×",ir:"×",mynumber:"×",birthrate:"△",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"△"},
+    plus:"松下政経塾出身で10回当選・元総務大臣。消費税廃止・積極財政を一貫して主張し、MMT的財政出動論の国会における論客。X（旧Twitter）46.9万フォロワーを持つ発信力の高い政治家。", minus:"2026年衆院選で落選し現在前職。ワクチン・5G・ディープステートに関する発言が物議を醸し、主流メディアから陰謀論的と批判されることがある。",
+    comment:"総務大臣・10回当選という確かな実績を持ち、積極財政・消費税廃止を旗印に野党再編を模索する実力者。一部発言の真偽については賛否が分かれる状況であり、再出馬予定。",
+    links:{hp:"",tw:"",yt:"",wiki:""},
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   }
 ];
 
@@ -9539,5 +9550,9 @@ const EVIDENCE = [
   {id:"E0587", pid:"P810", cat:"実績", sub:"国政", summary:"政権運営の主導", detail:"長年、国政の中心で政権運営と党務を担った。", src:"国政実績", url:"", rel:"政策実現力", impact:"中", date:"2024-03"},
   {id:"E0588", pid:"P811", cat:"実績", sub:"外交", summary:"日ソ国交回復の実現", detail:"首相として外交交渉を主導し、長年の懸案であった日ソ国交回復を達成した。", src:"国立国会図書館 近代日本人の肖像", url:"https://www.ndl.go.jp/portrait/datas/473", rel:"長期国益", impact:"高", date:"1956-10"},
   {id:"E0589", pid:"P812", cat:"実績", sub:"厚生行政", summary:"薬害エイズ問題への対応", detail:"厚生大臣として薬害エイズ問題の責任を認め、被害者との和解を導く行政的決断を行った。", src:"首相官邸 歴代内閣", url:"https://www.kantei.go.jp/jp/rekidainaikaku/094.html", rel:"政治倫理", impact:"高", date:"1996-01"},
-  {id:"E0590", pid:"P813", cat:"実績", sub:"外交", summary:"九州・沖縄サミットの完遂", detail:"小渕内閣から引き継いだ九州・沖縄サミットを首脳として円滑に完遂させた。", src:"自由民主党 党のあゆみ", url:"https://www.jimin.jp/aboutus/history/19.html", rel:"政策実現力", impact:"中", date:"2000-07"}
+  {id:"E0590", pid:"P813", cat:"実績", sub:"外交", summary:"九州・沖縄サミットの完遂", detail:"小渕内閣から引き継いだ九州・沖縄サミットを首脳として円滑に完遂させた。", src:"自由民主党 党のあゆみ", url:"https://www.jimin.jp/aboutus/history/19.html", rel:"政策実現力", impact:"中", date:"2000-07"},
+  {id:"E0591", pid:"P814", cat:"実績", sub:"閣僚経験", summary:"鳩山内閣で総務大臣を務め通信・放送行政を担当", detail:"2009年〜2010年、鳩山由紀夫内閣で総務大臣に就任。通信・放送分野の規制改革、地上デジタル放送移行、地域主権改革を推進した。", src:"総務省・Wikipedia", url:"", rel:"政策実現力", impact:"高", date:"2009-09"},
+  {id:"E0592", pid:"P814", cat:"実績", sub:"議員経験", summary:"衆議院10回当選・総務委員長・決算行政監視委員長を歴任", detail:"佐賀1区で10回連続当選。総務委員長、決算行政監視委員長など国会の要職を歴任。松下政経塾4期出身で政策立案能力が高い。", src:"衆議院公式・松下政経塾", url:"", rel:"政策実現力", impact:"高", date:"2024-01"},
+  {id:"E0593", pid:"P814", cat:"発言・主張", sub:"経済政策", summary:"消費税廃止・積極財政を一貫して主張し『今こそ消費税廃止＋積極財政を！』を著書として出版", detail:"MMT（現代貨幣理論）的観点から消費税廃止と財政出動を訴え続けている。2025年に著書『今こそ消費税廃止＋積極財政を！』を刊行。減税日本・ゆうこく連合の経済政策の柱として位置付ける。", src:"著書・各紙報道", url:"", rel:"tax_cut", impact:"中", date:"2025-01"},
+  {id:"E0594", pid:"P814", cat:"実績", sub:"野党再編", summary:"河村たかし氏と減税日本・ゆうこく連合を共同結成し野党再編を模索", detail:"2026年1月、河村たかし氏と新党「減税日本・ゆうこく連合」を結成。中道改革連合には合流せず独自路線で野党再結集を図る。", src:"ニコニコニュース・各紙報道", url:"", rel:"政策実現力", impact:"中", date:"2026-01"}
 ];

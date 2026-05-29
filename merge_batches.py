@@ -125,11 +125,33 @@ def main():
                 corrections = json.load(f)
             for item in corrections:
                 pid = item.get('id')
+                action = item.get('_action', 'update')  # 'update', 'reset', or 'add'
                 if pid not in base_map:
-                    print(f"  ⚠️  修正 {pid} はベースに存在しません → スキップ")
-                    continue
+                    if action == 'add':
+                        # 新規政治家を追加
+                        new_p = {
+                            'id': pid, 'name': item.get('name',''), 'reading': item.get('reading',''),
+                            'party': item.get('party',''), 'faction': item.get('faction',''),
+                            'role': item.get('role',''), 'chamber': item.get('chamber',''),
+                            'district': item.get('district',''), 'status': item.get('status','元職'),
+                            'gender': item.get('gender',''), 'age': item.get('age', None),
+                            'total': item.get('total',0), 'rank': item.get('rank','未評価'),
+                            'axes': item.get('axes',[0]*8), 'stances': item.get('stances',{}),
+                            'plus': item.get('plus',''), 'minus': item.get('minus',''),
+                            'comment': item.get('comment',''), 'flag_crime': item.get('flag_crime',False),
+                            'flag_caution': item.get('flag_caution',False),
+                            'updated': item.get('updated', date.today().strftime('%Y.%m')),
+                            'survey': item.get('survey','評価済'),
+                            'evidence': [dict(ev, pid=pid) for ev in item.get('evidence',[])]
+                        }
+                        base_map[pid] = new_p
+                        print(f"  ➕ 新規追加: {pid} {new_p['name']}")
+                        corr_count += 1
+                        continue
+                    else:
+                        print(f"  ⚠️  修正 {pid} はベースに存在しません → スキップ")
+                        continue
                 p = base_map[pid]
-                action = item.get('_action', 'update')  # 'update' or 'reset'
 
                 if action == 'reset':
                     # 評価データをリセット（未評価状態に戻す）
