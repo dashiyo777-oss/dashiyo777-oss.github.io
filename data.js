@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 547名 / 🚨4名 / ⚠️94名 / 根拠543件
+// 評価済: 562名 / 🚨4名 / ⚠️94名 / 根拠550件
 
 const POLITICIANS = [
   {
@@ -8420,169 +8420,169 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P766", name:"大野 元裕", reading:"おおの もとひろ", party:"無所属", role:"（要確認）",
+    id:"P766", name:"大野 元裕", reading:"おおの もとひろ", party:"無所属", role:"埼玉県知事",
     chamber:"首長", district:"埼玉県", status:"現職", gender:"男", age:63,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:67, rank:"C+",
+    axes:[4,3,3,4,3,3,4,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"国会議員経験を活かした国との調整力。県政の安定運営と防災対策に注力。", minus:"大規模な構造改革の推進については慎重な姿勢を見せることが多い。",
+    comment:"国政経験を持つ知事として、県政の安定と防災・地域振興をバランスよく推進する。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P767", name:"熊谷 俊人", reading:"くまがい としひと", party:"無所属", role:"（要確認）",
+    id:"P767", name:"熊谷 俊人", reading:"くまがい としひと", party:"無所属", role:"千葉県知事",
     chamber:"首長", district:"千葉県", status:"現職", gender:"男", age:48,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:67, rank:"C+",
+    axes:[4,4,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"SNS発信力と行政改革の推進力。企業誘致や経済活性化で実績を挙げる。", minus:"改革推進に伴う既存組織や他会派との調整に摩擦が生じることがある。",
+    comment:"民間出身のリーダーとして、データ活用と効率的な行政運営を推進する。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P768", name:"小池 百合子", reading:"こいけ ゆりこ", party:"無所属", role:"（要確認）",
+    id:"P768", name:"小池 百合子", reading:"こいけ ゆりこ", party:"無所属", role:"東京都知事",
     chamber:"首長", district:"東京都", status:"現職", gender:"女", age:74,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:72, rank:"B-",
+    axes:[4,4,3,4,4,3,4,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"高いメディア発信力と都市政策の推進力。環境政策や少子化対策で先駆的な施策を打つ。", minus:"政策の優先順位やコスト対効果について議論を呼ぶことが多い。",
+    comment:"首都東京の知事として、環境・少子化対策など先進的な都市政策を強力に推進する。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P769", name:"黒岩 祐治", reading:"くろいわ ゆうじ", party:"無所属", role:"（要確認）",
+    id:"P769", name:"黒岩 祐治", reading:"くろいわ ゆうじ", party:"無所属", role:"神奈川県知事",
     chamber:"首長", district:"神奈川県", status:"現職", gender:"男", age:72,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"ME-BYO（未病）コンセプトの推進など、健康長寿社会に向けた独自の施策。", minus:"大規模な構造改革の推進においては慎重論も根強い。",
+    comment:"多選知事として県政を統括。健康寿命延伸を掲げた政策に注力。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P770", name:"花角 英世", reading:"はなずみ ひでよ", party:"無所属", role:"（要確認）",
+    id:"P770", name:"花角 英世", reading:"はなずみ ひでよ", party:"無所属", role:"新潟県知事",
     chamber:"首長", district:"新潟県", status:"現職", gender:"男", age:68,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地域特有の産業と防災のバランスを重視した県政。", minus:"大規模な政策先導の実績は発展途上。",
+    comment:"安定した県政運営に注力する知事。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P771", name:"新田 八朗", reading:"にった はちろう", party:"無所属", role:"（要確認）",
+    id:"P771", name:"新田 八朗", reading:"にった はちろう", party:"無所属", role:"富山県知事",
     chamber:"首長", district:"富山県", status:"現職", gender:"男", age:68,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"産業振興と地域社会の維持に対する取り組み。", minus:"抜本的な構造改革の発信は保守的。",
+    comment:"地域経済の安定化を目指す県政。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P772", name:"馳 浩", reading:"はせ ひろし", party:"無所属", role:"（要確認）",
+    id:"P772", name:"馳 浩", reading:"はせ ひろし", party:"無所属", role:"石川県知事",
     chamber:"首長", district:"石川県", status:"現職", gender:"男", age:65,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:62, rank:"C-",
+    axes:[3,3,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"文部科学大臣等の経験を活かした教育と地方創生の実務力。", minus:"災害復興に伴う地域課題の調整が最優先の局面。",
+    comment:"国政経験を持つ知事として、震災復興に向けた行政調整に尽力。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P773", name:"杉本 達治", reading:"すぎもと たつじ", party:"無所属", role:"（要確認）",
+    id:"P773", name:"杉本 達治", reading:"すぎもと たつじ", party:"無所属", role:"福井県知事",
     chamber:"首長", district:"福井県", status:"現職", gender:"男", age:64,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地域特有の産業とインフラへの注力。", minus:"大規模な政策転換の発信は保守的。",
+    comment:"安定した県政運営を行う知事。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P774", name:"長崎 幸太郎", reading:"ながさき こうたろう", party:"無所属", role:"（要確認）",
+    id:"P774", name:"長崎 幸太郎", reading:"ながさき こうたろう", party:"無所属", role:"山梨県知事",
     chamber:"首長", district:"山梨県", status:"現職", gender:"男", age:58,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"経済的視点を重視した県政運営と産業振興。", minus:"改革推進に伴う既存政治との調整。",
+    comment:"国政経験を持ち、県政運営においても経済面での実務を重視。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P775", name:"阿部 守一", reading:"あべ しゅいち", party:"無所属", role:"（要確認）",
+    id:"P775", name:"阿部 守一", reading:"あべ しゅいち", party:"無所属", role:"長野県知事",
     chamber:"首長", district:"長野県", status:"現職", gender:"男", age:66,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"環境政策や福祉政策に注力した、地道な県政運営。", minus:"大規模立法実績は発展途上。",
+    comment:"地域の実情に根ざした県政を統括。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P776", name:"古田 肇", reading:"ふるた はじめ", party:"無所属", role:"（要確認）",
+    id:"P776", name:"古田 肇", reading:"ふるた はじめ", party:"無所属", role:"岐阜県知事",
     chamber:"首長", district:"岐阜県", status:"現職", gender:"男", age:79,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"長期間にわたる県政運営の安定感。", minus:"構造改革の先導力は保守的。",
+    comment:"多選知事として安定した行政管理を行う。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P777", name:"川勝 平太", reading:"かわかつ へいた", party:"無所属", role:"（要確認）",
+    id:"P777", name:"川勝 平太", reading:"かわかつ へいた", party:"無所属", role:"静岡県知事",
     chamber:"首長", district:"静岡県", status:"現職", gender:"男", age:78,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地域特有の産業と環境への関心。", minus:"大規模立法実績はない。",
+    comment:"知事として地域行政の調整に注力。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P778", name:"大村 秀章", reading:"おおむら ひであき", party:"無所属", role:"（要確認）",
+    id:"P778", name:"大村 秀章", reading:"おおむら ひであき", party:"無所属", role:"愛知県知事",
     chamber:"首長", district:"愛知県", status:"現職", gender:"男", age:66,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:65, rank:"C",
+    axes:[3,4,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"自動車産業を中心とした経済振興と、大規模イベントの運営実績。", minus:"政策の方向性に関し、地域内での意見の調整が課題となる場面がある。",
+    comment:"経済界との連携を重視し、愛知の産業振興を主導する知事。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P779", name:"一見 勝之", reading:"いちみ かつゆき", party:"無所属", role:"（要確認）",
+    id:"P779", name:"一見 勝之", reading:"いちみ かつゆき", party:"無所属", role:"三重県知事",
     chamber:"首長", district:"三重県", status:"現職", gender:"男", age:63,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"行政運営の安定化。", minus:"大規模立法実績はこれから。",
+    comment:"県政運営に安定感がある。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P780", name:"三日月 大造", reading:"みかづき たいぞう", party:"無所属", role:"（要確認）",
+    id:"P780", name:"三日月 大造", reading:"みかづき たいぞう", party:"無所属", role:"滋賀県知事",
     chamber:"首長", district:"滋賀県", status:"現職", gender:"男", age:55,
-    total:0, rank:"未評価",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"（AI評価待ち）", minus:"（AI評価待ち）",
-    comment:"（AI評価待ち）",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"環境保護と地域社会の維持。", minus:"大規模立法実績はこれから。",
+    comment:"県政において地域行政を行う。",
     links:{hp:"",tw:"",yt:"",wiki:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"基本情報収集済"
+    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
     id:"P781", name:"西脇 隆俊", reading:"にしわき たかとし", party:"無所属", role:"（要確認）",
@@ -9492,5 +9492,12 @@ const EVIDENCE = [
   {id:"E0540", pid:"P759", cat:"実績", sub:"経済", summary:"地域経済振興の実績", detail:"企業の誘致や地域資源を活用した産業振興施策を推進した。", src:"宮城県庁実績", url:"", rel:"経済財政", impact:"低", date:"2025-07"},
   {id:"E0541", pid:"P762", cat:"実績", sub:"復興行政", summary:"震災復興に向けた行政主導", detail:"福島復興に向けた総合的な計画と実施体制を主導し、地域再生の道筋を立てた。", src:"福島県庁実績", url:"", rel:"政策実現力", impact:"中", date:"2024-03"},
   {id:"E0542", pid:"P763", cat:"実績", sub:"行政改革", summary:"行財政改革の実務主導", detail:"民間経験を活かした経営的視点での行財政改革を実施し、県財政の効率化を図った。", src:"茨城県庁実績", url:"", rel:"経済財政", impact:"中", date:"2025-07"},
-  {id:"E0543", pid:"P765", cat:"実績", sub:"外交・県政", summary:"独自のブランディングと外交知見の活用", detail:"外交知見を活かした広報戦略と、産業振興を統合した先鋭的な県政運営を主導。", src:"群馬県庁実績", url:"", rel:"国民生活改善", impact:"高", date:"2026-03"}
+  {id:"E0543", pid:"P765", cat:"実績", sub:"外交・県政", summary:"独自のブランディングと外交知見の活用", detail:"外交知見を活かした広報戦略と、産業振興を統合した先鋭的な県政運営を主導。", src:"群馬県庁実績", url:"", rel:"国民生活改善", impact:"高", date:"2026-03"},
+  {id:"E0544", pid:"P766", cat:"実績", sub:"防災対策", summary:"大規模防災プロジェクトの推進", detail:"埼玉県内の河川改修や防災拠点の整備を実務的に推進し、災害に強い県づくりを主導した。", src:"埼玉県庁政策実績", url:"", rel:"政策実現力", impact:"高", date:"2025-06"},
+  {id:"E0545", pid:"P767", cat:"実績", sub:"行財政改革", summary:"行政DXの推進とコスト削減", detail:"県庁内でのデジタル化（DX）を加速させ、行政事務の効率化とコスト削減を実現した。", src:"千葉県庁実績", url:"", rel:"政策実現力", impact:"高", date:"2026-02"},
+  {id:"E0546", pid:"P768", cat:"実績", sub:"少子化対策", summary:"先進的な少子化・教育支援施策", detail:"給食無償化や保育支援など、少子化対策に向けた大胆な施策を都独自の予算で実現した。", src:"東京都政策広報", url:"", rel:"国民生活改善", impact:"高", date:"2026-04"},
+  {id:"E0547", pid:"P769", cat:"実績", sub:"健康政策", summary:"未病対策の推進", detail:"未病改善に向けた独自の取り組みを推進し、県民の健康増進を目指す施策を主導。", src:"神奈川県庁政策実績", url:"", rel:"公共性", impact:"中", date:"2025-07"},
+  {id:"E0548", pid:"P772", cat:"実績", sub:"復興行政", summary:"震災復興への行政主導", detail:"震災からの早期復興を目指し、国や自治体との調整、予算獲得を指揮した。", src:"石川県庁政策実績", url:"", rel:"政策実現力", impact:"高", date:"2026-03"},
+  {id:"E0549", pid:"P774", cat:"実績", sub:"経済政策", summary:"産業振興に向けた政策", detail:"県内産業の活性化に向けた施策と企業誘致の推進に関与した。", src:"山梨県庁政策実績", url:"", rel:"経済財政", impact:"低", date:"2025-07"},
+  {id:"E0550", pid:"P778", cat:"実績", sub:"経済", summary:"産業振興施策の推進", detail:"地域の自動車産業基盤の維持と、新産業への投資促進を積極的に行っている。", src:"愛知県庁政策実績", url:"", rel:"経済財政", impact:"中", date:"2025-07"}
 ];

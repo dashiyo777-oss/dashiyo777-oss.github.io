@@ -1,0 +1,386 @@
+[
+  {
+    "id": "P766",
+    "axes": [4, 3, 3, 4, 3, 3, 4, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "埼玉県知事",
+    "plus": "国会議員経験を活かした国との調整力。県政の安定運営と防災対策に注力。",
+    "minus": "大規模な構造改革の推進については慎重な姿勢を見せることが多い。",
+    "comment": "国政経験を持つ知事として、県政の安定と防災・地域振興をバランスよく推進する。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "防災対策",
+        "summary": "大規模防災プロジェクトの推進",
+        "detail": "埼玉県内の河川改修や防災拠点の整備を実務的に推進し、災害に強い県づくりを主導した。",
+        "src": "埼玉県庁政策実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "高",
+        "date": "2025-06"
+      }
+    ]
+  },
+  {
+    "id": "P767",
+    "axes": [4, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "千葉県知事",
+    "plus": "SNS発信力と行政改革の推進力。企業誘致や経済活性化で実績を挙げる。",
+    "minus": "改革推進に伴う既存組織や他会派との調整に摩擦が生じることがある。",
+    "comment": "民間出身のリーダーとして、データ活用と効率的な行政運営を推進する。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "行財政改革",
+        "summary": "行政DXの推進とコスト削減",
+        "detail": "県庁内でのデジタル化（DX）を加速させ、行政事務の効率化とコスト削減を実現した。",
+        "src": "千葉県庁実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "高",
+        "date": "2026-02"
+      }
+    ]
+  },
+  {
+    "id": "P768",
+    "axes": [4, 4, 3, 4, 4, 3, 4, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "△",
+      "mynumber": "○", "birthrate": "◎", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "東京都知事",
+    "plus": "高いメディア発信力と都市政策の推進力。環境政策や少子化対策で先駆的な施策を打つ。",
+    "minus": "政策の優先順位やコスト対効果について議論を呼ぶことが多い。",
+    "comment": "首都東京の知事として、環境・少子化対策など先進的な都市政策を強力に推進する。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "少子化対策",
+        "summary": "先進的な少子化・教育支援施策",
+        "detail": "給食無償化や保育支援など、少子化対策に向けた大胆な施策を都独自の予算で実現した。",
+        "src": "東京都政策広報",
+        "url": "",
+        "rel": "国民生活改善",
+        "impact": "高",
+        "date": "2026-04"
+      }
+    ]
+  },
+  {
+    "id": "P769",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "神奈川県知事",
+    "plus": "ME-BYO（未病）コンセプトの推進など、健康長寿社会に向けた独自の施策。",
+    "minus": "大規模な構造改革の推進においては慎重論も根強い。",
+    "comment": "多選知事として県政を統括。健康寿命延伸を掲げた政策に注力。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "健康政策",
+        "summary": "未病対策の推進",
+        "detail": "未病改善に向けた独自の取り組みを推進し、県民の健康増進を目指す施策を主導。",
+        "src": "神奈川県庁政策実績",
+        "url": "",
+        "rel": "公共性",
+        "impact": "中",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P770",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "新潟県知事",
+    "plus": "地域特有の産業と防災のバランスを重視した県政。",
+    "minus": "大規模な政策先導の実績は発展途上。",
+    "comment": "安定した県政運営に注力する知事。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P771",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "富山県知事",
+    "plus": "産業振興と地域社会の維持に対する取り組み。",
+    "minus": "抜本的な構造改革の発信は保守的。",
+    "comment": "地域経済の安定化を目指す県政。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P772",
+    "axes": [3, 3, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "石川県知事",
+    "plus": "文部科学大臣等の経験を活かした教育と地方創生の実務力。",
+    "minus": "災害復興に伴う地域課題の調整が最優先の局面。",
+    "comment": "国政経験を持つ知事として、震災復興に向けた行政調整に尽力。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "復興行政",
+        "summary": "震災復興への行政主導",
+        "detail": "震災からの早期復興を目指し、国や自治体との調整、予算獲得を指揮した。",
+        "src": "石川県庁政策実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "高",
+        "date": "2026-03"
+      }
+    ]
+  },
+  {
+    "id": "P773",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "福井県知事",
+    "plus": "地域特有の産業とインフラへの注力。",
+    "minus": "大規模な政策転換の発信は保守的。",
+    "comment": "安定した県政運営を行う知事。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P774",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "山梨県知事",
+    "plus": "経済的視点を重視した県政運営と産業振興。",
+    "minus": "改革推進に伴う既存政治との調整。",
+    "comment": "国政経験を持ち、県政運営においても経済面での実務を重視。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済政策",
+        "summary": "産業振興に向けた政策",
+        "detail": "県内産業の活性化に向けた施策と企業誘致の推進に関与した。",
+        "src": "山梨県庁政策実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "低",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P775",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "長野県知事",
+    "plus": "環境政策や福祉政策に注力した、地道な県政運営。",
+    "minus": "大規模立法実績は発展途上。",
+    "comment": "地域の実情に根ざした県政を統括。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P776",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "岐阜県知事",
+    "plus": "長期間にわたる県政運営の安定感。",
+    "minus": "構造改革の先導力は保守的。",
+    "comment": "多選知事として安定した行政管理を行う。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P777",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "静岡県知事",
+    "plus": "地域特有の産業と環境への関心。",
+    "minus": "大規模立法実績はない。",
+    "comment": "知事として地域行政の調整に注力。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P778",
+    "axes": [3, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "愛知県知事",
+    "plus": "自動車産業を中心とした経済振興と、大規模イベントの運営実績。",
+    "minus": "政策の方向性に関し、地域内での意見の調整が課題となる場面がある。",
+    "comment": "経済界との連携を重視し、愛知の産業振興を主導する知事。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "産業振興施策の推進",
+        "detail": "地域の自動車産業基盤の維持と、新産業への投資促進を積極的に行っている。",
+        "src": "愛知県庁政策実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "中",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P779",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "三重県知事",
+    "plus": "行政運営の安定化。",
+    "minus": "大規模立法実績はこれから。",
+    "comment": "県政運営に安定感がある。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P780",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "滋賀県知事",
+    "plus": "環境保護と地域社会の維持。",
+    "minus": "大規模立法実績はこれから。",
+    "comment": "県政において地域行政を行う。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  }
+]
