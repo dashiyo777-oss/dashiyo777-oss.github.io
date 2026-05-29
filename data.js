@@ -8246,11 +8246,11 @@ const POLITICIANS = [
   {
     id:"P750", name:"蓮舫", reading:"れんほう", party:"立憲民主党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:65, rank:"C",
-    axes:[3,4,3,4,3,3,3,3],
-    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"外交・安保分野での論理的かつ強硬な発信力と、政策提言の実績。", minus:"主張が保守的であり、他党派との調整において意見が分かれることが多い。",
-    comment:"自民党の論客。国益を重視した外交・安保政策の議論を展開する。",
+    total:72, rank:"B-",
+    axes:[4,3,3,4,5,3,4,3],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"行政監視役としての卓越した追及力と、メディアを通じた国民への高い発信力。", minus:"対決姿勢が強く、与党との実務的な合意形成が困難な場合が多い。",
+    comment:"ベテラン論客。行政の不透明な運用を追及する質疑で高い注目を集める。",
     links:{hp:"",tw:"",yt:"",wiki:""},
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
@@ -9483,5 +9483,5 @@ const EVIDENCE = [
   {id:"E0531", pid:"P745", cat:"実績", sub:"経済財政", summary:"税制改正とデジタル政策の実務調整", detail:"税制改正やデジタル化推進における実務調整に関与。", src:"公明党政策実績", url:"", rel:"経済財政", impact:"中", date:"2025-07"},
   {id:"E0532", pid:"P747", cat:"実績", sub:"国土交通", summary:"地方インフラ整備の調整", detail:"地域インフラの維持管理に向けた予算配分や行政調整の実務に関与。", src:"参議院会議録", url:"", rel:"政策実現力", impact:"低", date:"2025-06"},
   {id:"E0533", pid:"P749", cat:"実績", sub:"行政改革", summary:"行政改革の推進と議論", detail:"かつて行政改革を主導し、公務員制度改革などで一定の議論を牽引した。", src:"参議院会議録", url:"", rel:"政策実現力", impact:"中", date:"2024-03"},
-  {id:"E0534", pid:"P750", cat:"実績", sub:"外交・安保", summary:"安保政策の強化を求める論戦", detail:"外交・安保政策の強化について、論理的な提言を続けている。", src:"参議院外交防衛委員会", url:"", rel:"安全保障", impact:"中", date:"2026-03"}
+  {id:"E0534", pid:"P750", cat:"実績", sub:"行政監視", summary:"行政運用の厳格な監視と国民への可視化", detail:"行政の不透明な運用や公文書管理の問題を徹底追及し、国民に可視化する役割を担っている。", src:"参議院会議録", url:"", rel:"説明責任", impact:"高", date:"2026-03"}
 ];

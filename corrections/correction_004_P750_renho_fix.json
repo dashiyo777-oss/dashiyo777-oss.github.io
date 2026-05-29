@@ -1,0 +1,51 @@
+[
+  {
+    "_action": "update",
+    "_note": "蓮舫(P750): batch_050で自民党保守派の内容が誤記入。正しい評価に差し替え。total 73→72, rank B→B-(sum=29, int(72.5)=72)",
+    "id": "P750",
+    "axes": [4, 3, 3, 4, 5, 3, 4, 3],
+    "stances": {
+      "tax_cut": "△",
+      "active_fiscal": "△",
+      "discipline": "○",
+      "defense": "△",
+      "econ_sec": "○",
+      "immigration": "△",
+      "renewable": "○",
+      "nuclear": "×",
+      "expo": "×",
+      "ir": "×",
+      "mynumber": "×",
+      "birthrate": "○",
+      "education": "○",
+      "regional": "○",
+      "china": "△",
+      "foreign": "○",
+      "food": "○",
+      "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "行政監視役としての卓越した追及力と、メディアを通じた国民への高い発信力。",
+    "minus": "対決姿勢が強く、与党との実務的な合意形成が困難な場合が多い。",
+    "comment": "ベテラン論客。行政の不透明な運用を追及する質疑で高い注目を集める。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "_replace_evidence": true,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "行政監視",
+        "summary": "行政運用の厳格な監視と国民への可視化",
+        "detail": "行政の不透明な運用や公文書管理の問題を徹底追及し、国民に可視化する役割を担っている。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "説明責任",
+        "impact": "高",
+        "date": "2026-03"
+      }
+    ]
+  }
+]
