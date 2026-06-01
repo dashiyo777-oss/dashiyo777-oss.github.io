@@ -12,7 +12,16 @@
     "status": "元職",
     "gender": "女",
     "age": 50,
-    "axes": [4, 3, 2, 3, 4, 3, 4, 4],
+    "axes": [
+      4,
+      3,
+      2,
+      3,
+      4,
+      3,
+      4,
+      4
+    ],
     "total": 67,
     "rank": "C+",
     "stances": {
@@ -75,6 +84,12 @@
         "impact": "中",
         "date": "2024-01"
       }
-    ]
+    ],
+    "links": {
+      "tw": "https://x.com/oishiakiko",
+      "hp": "",
+      "yt": "",
+      "wiki": "https://ja.wikipedia.org/wiki/大石晃子"
+    }
   }
 ]

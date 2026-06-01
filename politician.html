@@ -769,7 +769,7 @@ function buildPage(p) {
           <span class="meta-pill">${p.chamber}</span>
           <span class="meta-pill">${p.district}</span>
           <span class="meta-pill">${p.status}</span>
-          <span class="meta-pill">${p.gender} · ${p.age}歳</span>
+          <span class="meta-pill">${p.gender}${p.age != null ? ' · ' + p.age + '歳' : ''}</span>
         </div>
         <div class="hero-links">${linkPills}</div>
       </div>
@@ -826,7 +826,7 @@ function buildPage(p) {
       </div>
       <div class="profile-meta-item">
         <span class="meta-label">年齢</span>
-        <span class="meta-value">${p.age}歳</span>
+        <span class="meta-value">${p.age != null ? p.age + '歳' : '不明'}</span>
       </div>
       <div class="profile-meta-item">
         <span class="meta-label">ステータス</span>

@@ -8966,7 +8966,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"△",immigration:"○",renewable:"○",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
     plus:"弁護士出身で労働問題・非正規雇用・反貧困を専門に活動してきた実務家議員。反維新の大阪拠点として府政の問題点を鋭く追及。SNSでの発信力が高く生活者目線の論戦を展開する。", minus:"れいわの少数政党ゆえ立法実績は限定的。消費税廃止・非武装中立などの主張は理念先行の側面もある。",
     comment:"労働・貧困問題の現場を知る弁護士として国会論戦に実務的視点を持ち込む。大阪維新府政への対抗軸として存在感を発揮。れいわ共同代表として党の路線形成にも関与するが、政策実現には与党との交渉力が課題。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/oishiakiko",hp:"",yt:"",wiki:"https://ja.wikipedia.org/wiki/大石晃子"},
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
