@@ -1,0 +1,51 @@
+[
+  {
+    "_action": "update",
+    "_note": "山谷えり子(P737): batch_050でれいわ新選組代表(山本太郎)の内容が誤記入。正しい評価に差し替え。rank B→C修正(total=65はC域)",
+    "id": "P737",
+    "axes": [3, 3, 4, 3, 3, 4, 3, 3],
+    "stances": {
+      "tax_cut": "△",
+      "active_fiscal": "△",
+      "discipline": "○",
+      "defense": "◎",
+      "econ_sec": "○",
+      "immigration": "×",
+      "renewable": "△",
+      "nuclear": "○",
+      "expo": "○",
+      "ir": "○",
+      "mynumber": "○",
+      "birthrate": "○",
+      "education": "○",
+      "regional": "○",
+      "china": "×",
+      "foreign": "○",
+      "food": "○",
+      "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "拉致問題解決への強い執念と、保守的な価値観に基づく外交・安全保障政策での一貫した姿勢。",
+    "minus": "主張が保守的で強硬なため、リベラル層からの反発や、包括的な合意形成が難しい場面がある。",
+    "comment": "元国家公安委員長。保守政治家として、拉致問題や日本の伝統・文化を守る活動を精力的に行っている。外交・防衛分野での発信力には定評がある。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "_replace_evidence": true,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "外交・安保",
+        "summary": "拉致問題の啓発と解決への尽力",
+        "detail": "拉致問題担当大臣としての経験を背景に、被害者救済と啓発活動を長年にわたり主導している。",
+        "src": "参議院議員 山谷えり子 公式サイト",
+        "url": "https://eriko-yamatani.jp/",
+        "rel": "安全保障",
+        "impact": "高",
+        "date": "2026-05"
+      }
+    ]
+  }
+]

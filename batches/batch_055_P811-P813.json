@@ -1,0 +1,140 @@
+[
+  {
+    "id": "P811",
+    "axes": [4, 4, 3, 4, 3, 5, 3, 3],
+    "stances": {
+      "tax_cut": "○",
+      "active_fiscal": "△",
+      "discipline": "○",
+      "defense": "○",
+      "econ_sec": "○",
+      "immigration": "△",
+      "renewable": "○",
+      "nuclear": "○",
+      "expo": "△",
+      "ir": "△",
+      "mynumber": "○",
+      "birthrate": "○",
+      "education": "○",
+      "regional": "◎",
+      "china": "△",
+      "foreign": "○",
+      "food": "○",
+      "semi": "○"
+    },
+    "role": "元内閣総理大臣",
+    "plus": "日本民主党を結党し、戦後保守政治の礎を築いた。日ソ国交回復を実現した。",
+    "minus": "公職追放による長期の政治空白があり、政界復帰後の党内勢力争いに多くの時間を費やした。",
+    "comment": "保守合同を推進し自由民主党の初代総裁となった。戦後日本の外交・内政の基盤を確立した歴史的指導者。",
+    "survey": "評価済",
+    "total": 72,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "外交",
+        "summary": "日ソ国交回復の実現",
+        "detail": "首相として外交交渉を主導し、長年の懸案であった日ソ国交回復を達成した。",
+        "src": "国立国会図書館 近代日本人の肖像",
+        "url": "https://www.ndl.go.jp/portrait/datas/473",
+        "rel": "長期国益",
+        "impact": "高",
+        "date": "1956-10"
+      }
+    ]
+  },
+  {
+    "id": "P812",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△",
+      "active_fiscal": "△",
+      "discipline": "○",
+      "defense": "△",
+      "econ_sec": "○",
+      "immigration": "△",
+      "renewable": "○",
+      "nuclear": "×",
+      "expo": "△",
+      "ir": "△",
+      "mynumber": "△",
+      "birthrate": "○",
+      "education": "○",
+      "regional": "○",
+      "china": "△",
+      "foreign": "○",
+      "food": "○",
+      "semi": "○"
+    },
+    "role": "元内閣総理大臣",
+    "plus": "市民運動出身の経歴を持ち、厚生大臣時代には薬害エイズ問題等で強い行政的決断力を示した。",
+    "minus": "首相在任時の東日本大震災への対応については評価が分かれ、危機管理の難しさが残った。",
+    "comment": "科学者志望から政治家の道へ進み、市民派として長年活動。首相経験者として行政刷新等の議論を牽引。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "厚生行政",
+        "summary": "薬害エイズ問題への対応",
+        "detail": "厚生大臣として薬害エイズ問題の責任を認め、被害者との和解を導く行政的決断を行った。",
+        "src": "首相官邸 歴代内閣",
+        "url": "https://www.kantei.go.jp/jp/rekidainaikaku/094.html",
+        "rel": "政治倫理",
+        "impact": "高",
+        "date": "1996-01"
+      }
+    ]
+  },
+  {
+    "id": "P813",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△",
+      "active_fiscal": "○",
+      "discipline": "○",
+      "defense": "○",
+      "econ_sec": "○",
+      "immigration": "△",
+      "renewable": "○",
+      "nuclear": "○",
+      "expo": "△",
+      "ir": "△",
+      "mynumber": "○",
+      "birthrate": "○",
+      "education": "○",
+      "regional": "○",
+      "china": "△",
+      "foreign": "○",
+      "food": "○",
+      "semi": "○"
+    },
+    "role": "元内閣総理大臣",
+    "plus": "党内調整能力に長け、多くの閣僚・要職を歴任し政権の安定に貢献した。",
+    "minus": "在任中の発言等がメディアで批判を浴びるなど、説明責任を巡る課題がしばしば指摘された。",
+    "comment": "自民党の要職を歴任した重鎮。九州・沖縄サミットの完遂など実務的な外交・内政調整を行う。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "外交",
+        "summary": "九州・沖縄サミットの完遂",
+        "detail": "小渕内閣から引き継いだ九州・沖縄サミットを首脳として円滑に完遂させた。",
+        "src": "自由民主党 党のあゆみ",
+        "url": "https://www.jimin.jp/aboutus/history/19.html",
+        "rel": "政策実現力",
+        "impact": "中",
+        "date": "2000-07"
+      }
+    ]
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "id": "P781",
+    "axes": [3, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "京都府知事",
+    "plus": "国土交通省出身の知見による、インフラ整備と観光振興の調整力。",
+    "minus": "伝統的な調整型手法が中心で、大規模な構造改革の推進は保守的。",
+    "comment": "元官僚としての実務能力を活かし、京都の伝統と経済のバランスを重視する県政運営。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "観光振興",
+        "summary": "観光地としての持続可能な施策",
+        "detail": "京都の観光過剰（オーバーツーリズム）対策と地域振興の両立に向けた施策を主導。",
+        "src": "京都府庁実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "高",
+        "date": "2026-02"
+      }
+    ]
+  },
+  {
+    "id": "P782",
+    "axes": [4, 4, 3, 4, 3, 3, 4, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "◎", "ir": "◎",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "大阪府知事",
+    "plus": "SNS発信力、行財政改革の推進力、IR・万博誘致の実行力。",
+    "minus": "急速な改革に伴う既存行政との摩擦や、プロジェクトのコスト増への批判がある。",
+    "comment": "維新の代表格として、行財政改革や都市開発を強力に牽引する発信型リーダー。",
+    "survey": "評価済",
+    "total": 70,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済政策",
+        "summary": "IR・万博の誘致と推進",
+        "detail": "大阪の経済活性化を目指し、IR（統合型リゾート）および万博誘致を強力に推進した。",
+        "src": "大阪府公式サイト",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "高",
+        "date": "2026-04"
+      }
+    ]
+  },
+  {
+    "id": "P783",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "兵庫県知事",
+    "plus": "県庁改革への強い姿勢。",
+    "minus": "知事運営を巡る県議会・職員との信頼関係構築が課題。",
+    "comment": "県政運営において大きな注目と批判を同時に受けたが、再選を経て改革を進める。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": true,
+    "evidence": [
+      {
+        "cat": "問題・疑惑",
+        "sub": "ガバナンス",
+        "summary": "県庁内ガバナンスを巡る混乱",
+        "detail": "職員からの告発等を巡る対応で県議会との対立や信頼失墜の指摘を受け、再選を経て対応中。",
+        "src": "報道各社",
+        "url": "",
+        "rel": "政治倫理",
+        "impact": "高",
+        "date": "2026-01"
+      }
+    ]
+  },
+  {
+    "id": "P784",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "奈良県知事",
+    "plus": "地域特有の歴史資源を活かした振興策。",
+    "minus": "大規模な政策先導は保守的。",
+    "comment": "長年県政を統括。地域の安定を重視する。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P785",
+    "axes": [3, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "和歌山県知事",
+    "plus": "元衆議院議員の経験と、経済産業分野の知見を活かした地域経済振興。",
+    "minus": "大規模プロジェクトの推進に伴う環境・地域調整が課題。",
+    "comment": "国政経験を活かし、和歌山の産業基盤強化と観光振興を推進する実務派。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "産業振興に向けた政策",
+        "detail": "地域の産業基盤強化を重視し、国政での人脈を活かした企業誘致を進めている。",
+        "src": "和歌山県庁実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "中",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P786",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "鳥取県知事",
+    "plus": "多選知事としての安定した県政運営と地方自治。",
+    "minus": "抜本的な構造改革の発信は保守的。",
+    "comment": "長年県政を統括し、県民生活の安定を重視する。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P787",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "島根県知事",
+    "plus": "地域特有の課題への丁寧な対応。",
+    "minus": "大規模立法実績はない。",
+    "comment": "県政において地域行政を行う。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P788",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "岡山県知事",
+    "plus": "インフラ整備と経済活性化への注力。",
+    "minus": "大規模な政策転換には慎重。",
+    "comment": "安定した県政運営を行う。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "インフラ整備の推進",
+        "detail": "地域交通や産業インフラの整備を主導。",
+        "src": "岡山県庁実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "低",
+        "date": "2025-06"
+      }
+    ]
+  },
+  {
+    "id": "P789",
+    "axes": [4, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "広島県知事",
+    "plus": "高度な行政経験を活かした、イノベーション促進と経済政策。",
+    "minus": "大規模プロジェクト推進時のコストと環境調整が課題。",
+    "comment": "イノベーション促進を掲げ、産業の高度化を図る実務派。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "イノベーション",
+        "summary": "産学官連携による産業振興",
+        "detail": "イノベーション推進拠点の整備を主導し、広島の産業構造転換を試みている。",
+        "src": "広島県庁実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "高",
+        "date": "2025-10"
+      }
+    ]
+  },
+  {
+    "id": "P790",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "山口県知事",
+    "plus": "地域インフラの維持と産業振興への取り組み。",
+    "minus": "大規模な政策先導は発展途上。",
+    "comment": "地域の実情に根ざした県政運営。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "産業インフラの調整",
+        "detail": "地域産業の基盤維持に向けた政策を推進。",
+        "src": "山口県庁実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "低",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P791",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "徳島県知事",
+    "plus": "地域資源を活かした地域活性化。",
+    "minus": "大規模な構造改革の先導力は保守的。",
+    "comment": "安定した県政運営を行う。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P792",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "香川県知事",
+    "plus": "国土交通省出身としてのインフラ整備の実務能力。",
+    "minus": "大規模な政策転換には慎重。",
+    "comment": "国交省の知見を活かし、インフラ整備等の実務をこなす。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "国土交通",
+        "summary": "インフラ整備調整の実務",
+        "detail": "省庁の知見を活かし、地域交通インフラの整備を主導した。",
+        "src": "香川県庁実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "低",
+        "date": "2025-06"
+      }
+    ]
+  },
+  {
+    "id": "P793",
+    "axes": [3, 4, 3, 4, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "愛媛県知事",
+    "plus": "長期間の県政運営による高い調整能力と、情報発信力。",
+    "minus": "既存の政治構造に根ざしており、急進的な改革には保守的。",
+    "comment": "多選知事として高い知名度と調整力を持つ。",
+    "survey": "評価済",
+    "total": 65,
+    "rank": "C",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "行政運営",
+        "summary": "行政運営の安定化",
+        "detail": "長期間にわたる運営で、県政の安定化と政策の継続性を主導。",
+        "src": "愛媛県庁実績",
+        "url": "",
+        "rel": "政策実現力",
+        "impact": "中",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P794",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "高知県知事",
+    "plus": "地域資源を活用した産業振興の実務。",
+    "minus": "独自の大規模立法実績は発展途上。",
+    "comment": "県政運営に安定感がある。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "地域資源の活用促進",
+        "detail": "地域資源を活かした産業振興施策を推進。",
+        "src": "高知県庁実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "低",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P795",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "△", "ir": "△",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "福岡県知事",
+    "plus": "県政運営における高度な行政調整能力と地域経済の振興。",
+    "minus": "大規模な政策転換については慎重。",
+    "comment": "安定した県政運営で地域経済を牽引。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済",
+        "summary": "県経済の振興と調整",
+        "detail": "県内企業の支援や産業振興の調整を主導。",
+        "src": "福岡県庁実績",
+        "url": "",
+        "rel": "経済財政",
+        "impact": "中",
+        "date": "2025-07"
+      }
+    ]
+  }
+]

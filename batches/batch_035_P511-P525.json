@@ -1,0 +1,386 @@
+[
+  {
+    "id": "P511",
+    "axes": [4, 4, 3, 4, 3, 4, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "元埼玉県知事。地方行政の実務に精通し、地方分権と防災対策に強み。",
+    "minus": "調整型の政治手法に対し、抜本的な国政改革の方向性を巡る賛否。",
+    "comment": "知事経験を活かし、地方創生やインフラ強靱化の議論で安定した存在感を示す。",
+    "survey": "評価済",
+    "total": 70,
+    "rank": "B-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "地方行政",
+        "summary": "知事時代の防災インフラ整備推進",
+        "detail": "埼玉県知事として培った実務経験に基づき、国会にて広域的な防災インフラの整備と地方自治体の自律的な行政運営を提言。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "regional",
+        "impact": "中",
+        "date": "2025-05"
+      }
+    ]
+  },
+  {
+    "id": "P512",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "若手議員としての機動力。",
+    "minus": "具体的な立法実績データが未蓄積。",
+    "comment": "情報不足のため、定量的な評価は困難。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P513",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地域密着型の活動。",
+    "minus": "具体的な立法実績データが未蓄積。",
+    "comment": "情報不足のため、定量的な評価は困難。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P514",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "文部科学分野や社会保障における実務調整能力。",
+    "minus": "大規模な政策先導の実績は発展途上。",
+    "comment": "教育や福祉分野での実務をこなす中堅議員。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "文教行政",
+        "summary": "教育現場の環境改善に向けた予算配分への関与",
+        "detail": "文教関連の予算審査において、教育環境の整備や教員の処遇改善に係る予算執行の適正化を求めた。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "education",
+        "impact": "低",
+        "date": "2025-09"
+      }
+    ]
+  },
+  {
+    "id": "P515",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "生活者目線の地域活動。",
+    "minus": "具体的な国会審議データが未蓄積。",
+    "comment": "情報不足のため、定量的な評価は困難。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P516",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地域住民との連携。",
+    "minus": "具体的な国会審議データが未蓄積。",
+    "comment": "情報不足のため、定量的な評価は困難。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P517",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地方経済のインフラ整備や中小企業支援の実務。",
+    "minus": "国家レベルの政策突破力は発展途上。",
+    "comment": "地域の実務に注力する議員。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済産業支援",
+        "summary": "地方産業の経営安定化に向けた支援",
+        "detail": "地方の中小事業者に対し、経営の安定化を目的とした施策の実効性を検証した。",
+        "src": "参議院経済産業委員会会議録",
+        "url": "",
+        "rel": "econ_sec",
+        "impact": "低",
+        "date": "2025-08"
+      }
+    ]
+  },
+  {
+    "id": "P518",
+    "axes": [4, 3, 3, 4, 4, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "○", "discipline": "○", "defense": "△", "econ_sec": "○",
+      "immigration": "○", "renewable": "◎", "nuclear": "×", "expo": "×", "ir": "×",
+      "mynumber": "×", "birthrate": "◎", "education": "◎", "regional": "○", "china": "○",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "人権問題や司法制度の見直しに関する高い専門知識と発信力。",
+    "minus": "与党との対決姿勢が強く、政策実現の幅が制約される面がある。",
+    "comment": "法曹出身の弁護士。人権やジェンダー政策における論理的な論戦力が評価される。",
+    "survey": "評価済",
+    "total": 67,
+    "rank": "C+",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "司法制度",
+        "summary": "人権保護の観点からの司法制度見直しを主張",
+        "detail": "性暴力被害者支援や人権擁護法制の整備を求め、国会論戦を通じて政策の重要性を訴えた。",
+        "src": "参議院法務委員会会議録",
+        "url": "",
+        "rel": "description",
+        "impact": "中",
+        "date": "2025-11"
+      }
+    ]
+  },
+  {
+    "id": "P519",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "現場重視の活動。",
+    "minus": "具体的な立法実績データが未蓄積。",
+    "comment": "情報不足のため評価不能。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P520",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "△", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "×", "renewable": "△", "nuclear": "×", "expo": "×", "ir": "×",
+      "mynumber": "×", "birthrate": "◎", "education": "◎", "regional": "○", "china": "×",
+      "foreign": "×", "food": "◎", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "食の安全や教育環境の抜本的見直しへの熱意。",
+    "minus": "国政での独自法案を先導した実績データが未蓄積。",
+    "comment": "参政党所属。教育や農業分野での論調は鮮明だが、国会での立法実績はこれから。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P521",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "国土交通分野での実務的な知見と調整力。",
+    "minus": "国家レベルでの大規模な税制改革を先導する実績は発展途上。",
+    "comment": "インフラ整備や地域活性化に注力。実直な政策調整を行う。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "国土交通行政",
+        "summary": "地方インフラの維持管理予算の執行管理",
+        "detail": "地方の交通インフラや防災施設の維持管理に関わる予算の適正な執行と、地域ニーズに応じた配分の調整に関与した。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "regional",
+        "impact": "低",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P522",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地域での活動。",
+    "minus": "独自の主要立法や国会での審議データが未蓄積。",
+    "comment": "情報不足のため評価不能。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P523",
+    "axes": [0, 0, 0, 0, 0, 0, 0, 0],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地域密着型の福祉支援。",
+    "minus": "独自の主要立法や国会での審議データが未蓄積。",
+    "comment": "情報不足のため評価不能。",
+    "survey": "情報不足",
+    "total": 0,
+    "rank": "情報不足",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": []
+  },
+  {
+    "id": "P524",
+    "axes": [3, 4, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "△", "active_fiscal": "○", "discipline": "○", "defense": "○", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "◎", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "地方経済の活性化や、中小企業支援の実務的貢献。",
+    "minus": "国政レベルでの大規模な税制改革への主導力はこれから。",
+    "comment": "自民党の中堅。地域経済のインフラ整備や地場産業保護で堅実な実務を行う。",
+    "survey": "評価済",
+    "total": 62,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "実績",
+        "sub": "経済産業支援",
+        "summary": "地方産業振興に向けた助成金の実務推進",
+        "detail": "地方の中小事業者に対し、経営の安定化や設備投資を促すための助成制度の円滑な運用に尽力した。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "econ_sec",
+        "impact": "低",
+        "date": "2025-07"
+      }
+    ]
+  },
+  {
+    "id": "P525",
+    "axes": [3, 3, 3, 3, 3, 3, 3, 3],
+    "stances": {
+      "tax_cut": "○", "active_fiscal": "○", "discipline": "○", "defense": "△", "econ_sec": "○",
+      "immigration": "△", "renewable": "○", "nuclear": "○", "expo": "○", "ir": "○",
+      "mynumber": "○", "birthrate": "○", "education": "○", "regional": "○", "china": "△",
+      "foreign": "○", "food": "○", "semi": "○"
+    },
+    "role": "参議院議員",
+    "plus": "生活者目線の政策提言と、労働者支援への熱意。",
+    "minus": "野党の立場であり、独自の法案成立実績は途上。",
+    "comment": "れいわ新選組所属。生活困窮者支援や公的負担軽減を強く叫ぶ論客。",
+    "survey": "評価済",
+    "total": 60,
+    "rank": "C-",
+    "flag_crime": false,
+    "flag_caution": false,
+    "evidence": [
+      {
+        "cat": "発言・主張",
+        "sub": "生活支援",
+        "summary": "公的負担軽減を求める論戦",
+        "detail": "国会審議において、物価高騰から国民生活を守るための大胆な給付金拡充や消費税減税を継続的に主張している。",
+        "src": "参議院会議録",
+        "url": "",
+        "rel": "regional",
+        "impact": "中",
+        "date": "2026-02"
+      }
+    ]
+  }
+]
