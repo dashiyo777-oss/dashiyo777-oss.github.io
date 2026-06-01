@@ -30,14 +30,26 @@ def get_next_correction_num():
             if (m := re.search(r'correction_(\d+)', os.path.basename(f)))]
     return max(nums) + 1 if nums else 1
 
+IGNORE_HANDLES = {
+    'intent', 'search', 'hashtag', 'share', 'home',
+    'i', 'explore', 'notifications', 'messages', 'privacy', 'tos'
+}
+
+def _clean_handle(url: str) -> str | None:
+    m = re.search(r'(?:twitter\.com|x\.com)/([A-Za-z0-9_]+)', url)
+    if m and m.group(1).lower() not in IGNORE_HANDLES:
+        return f"https://x.com/{m.group(1)}"
+    return None
+
 def fetch_x_from_wiki_url(wiki_url: str) -> str | None:
-    """Wikipedia APIで外部リンクを取得しX/Twitterハンドルを返す"""
+    """Wikipedia APIで外部リンク＋ウィキテキストを取得しX/Twitterハンドルを返す"""
     try:
         title = wiki_url.split('/wiki/')[-1]
+        # extlinks と ウィキテキスト を同時取得
         api_url = (
             'https://ja.wikipedia.org/w/api.php'
-            f'?action=query&prop=extlinks&titles={title}'
-            '&format=json&ellimit=50'
+            f'?action=query&prop=extlinks%7Crevisions&titles={title}'
+            '&format=json&ellimit=100&rvprop=content&rvslots=main'
         )
         req = Request(api_url, headers={'User-Agent': 'TORAN-LinkCollector/1.0'})
         with urlopen(req, timeout=10) as resp:
@@ -45,15 +57,29 @@ def fetch_x_from_wiki_url(wiki_url: str) -> str | None:
 
         pages = data.get('query', {}).get('pages', {})
         for page in pages.values():
+            # 1) extlinks から検索
             for link in page.get('extlinks', []):
                 url = link.get('*', '')
                 if 'twitter.com' in url or 'x.com' in url:
-                    m = re.search(r'(?:twitter\.com|x\.com)/([A-Za-z0-9_]+)', url)
-                    if m and m.group(1).lower() not in (
-                        'intent', 'search', 'hashtag', 'share', 'home',
-                        'i', 'explore', 'notifications', 'messages'
-                    ):
-                        return f"https://x.com/{m.group(1)}"
+                    h = _clean_handle(url)
+                    if h:
+                        return h
+
+            # 2) ウィキテキストから {{Twitter|handle}} テンプレートを検索
+            wikitext = (page.get('revisions') or [{}])[0]
+            wikitext = wikitext.get('slots', {}).get('main', {}).get('*', '') or \
+                       wikitext.get('*', '')
+            # {{Twitter|handle}} or {{Twitter|handle|...}}
+            for m in re.finditer(r'\{\{[Tt]witter\s*\|\s*([A-Za-z0-9_]+)', wikitext):
+                handle = m.group(1)
+                if handle.lower() not in IGNORE_HANDLES:
+                    return f"https://x.com/{handle}"
+            # 直接URLが書かれているケース (twitter.com/xxx や x.com/xxx)
+            for m in re.finditer(r'(?:twitter\.com|x\.com)/([A-Za-z0-9_]+)', wikitext):
+                handle = m.group(1)
+                if handle.lower() not in IGNORE_HANDLES:
+                    return f"https://x.com/{handle}"
+
         return None
     except Exception:
         return None
