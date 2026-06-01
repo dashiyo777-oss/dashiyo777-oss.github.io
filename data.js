@@ -5424,7 +5424,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"△",immigration:"○",renewable:"○",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"△",education:"○",regional:"△",china:"○",foreign:"○",food:"△",semi:"△"},
     plus:"30年以上の紛争現場経験、国連平和維持軍統括、東ティモール県知事・シエラレオネ武装解除指揮・アフガン軍閥解体を実際に手がけた現役国会議員は他に存在しない。著書『新国防論』・「緩衝国家（Buffer State）」論を提唱する日本唯一の安保実務家議員。", minus:"ウクライナ侵攻巡り「ロシアだけが絶対悪魔なんですか？」発言が批判殺到。即時停戦署名運動は2週間で3000人未満と低調。「緩衝国家」論は理念先行で日本の現実的安保政策への落とし込みが課題。",
     comment:"武装解除・停戦実務の国際的第一人者として安全保障軸は国会議員中最高水準。ウクライナ発言は多角的視点からの問題提起とも取れるが国内で賛否を二分した。1期目野党議員として経済・生活政策の実績は今後の課題。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/isezakikenji",hp:"",yt:"",wiki:"https://ja.wikipedia.org/wiki/伊勢崎賢治"},
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8955,7 +8955,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"△",econ_sec:"△",immigration:"△",renewable:"○",nuclear:"△",expo:"×",ir:"×",mynumber:"×",birthrate:"△",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"△"},
     plus:"松下政経塾出身で10回当選・元総務大臣。消費税廃止・積極財政を一貫して主張し、MMT的財政出動論の国会における論客。X（旧Twitter）46.9万フォロワーを持つ発信力の高い政治家。", minus:"2026年衆院選で落選し現在前職。ワクチン・5G・ディープステートに関する発言が物議を醸し、主流メディアから陰謀論的と批判されることがある。",
     comment:"総務大臣・10回当選という確かな実績を持ち、積極財政・消費税廃止を旗印に野党再編を模索する実力者。一部発言の真偽については賛否が分かれる状況であり、再出馬予定。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/kharaguchi",hp:"https://haraguti.com",yt:"",wiki:"https://ja.wikipedia.org/wiki/原口一博"},
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {

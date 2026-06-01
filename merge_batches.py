@@ -142,6 +142,7 @@ def main():
                             'flag_caution': item.get('flag_caution',False),
                             'updated': item.get('updated', date.today().strftime('%Y.%m')),
                             'survey': item.get('survey','評価済'),
+                            'links': item.get('links', {'hp':'','tw':'','yt':'','wiki':''}),
                             'evidence': [dict(ev, pid=pid) for ev in item.get('evidence',[])]
                         }
                         base_map[pid] = new_p
@@ -174,7 +175,7 @@ def main():
                     # 指定フィールドのみ上書き
                     for key in ['total','rank','axes','stances','role',
                                 'plus','minus','comment','survey','party',
-                                'flag_crime','flag_caution','updated']:
+                                'flag_crime','flag_caution','updated','links']:
                         if key in item:
                             p[key] = item[key]
                     # evidence は replace_all=true のとき全置換
