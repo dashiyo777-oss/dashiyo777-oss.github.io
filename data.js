@@ -12,7 +12,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"衆院規則委員長などの要職を歴任し、議会運営に貢献。", minus:"ベテランとしての独自のリーダーシップが見えにくいとの声。",
     comment:"国会対策や議会運営の安定感は評価されるが、構造改革や独自の経済政策発信においては慎重な姿勢が目立つ。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ichiroaisawa",wiki:"https://ja.wikipedia.org/wiki/%E9%80%A2%E6%B2%A2%E4%B8%80%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -34,7 +34,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"国連職員やJICAの経歴を活かした国際協力を提唱。", minus:"所属政党の枠組みを超えた広範な政策実現力は発展途上。",
     comment:"国際経験を背景にした開発援助や外交政策、持続可能な成長戦略についての提言が評価されている。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/aoyagi_h",wiki:"https://ja.wikipedia.org/wiki/%E9%9D%92%E6%9F%B3%E4%BB%81%E5%A3%AB",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -45,7 +45,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"○",expo:"△",ir:"×",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"△",food:"◎",semi:"○"},
     plus:"資源開発（メタンハイドレート）や防衛政策の積極発信。", minus:"独自の主張が強く、党内主流派との連携に課題。",
     comment:"安全保障や独自のエネルギー政策において熱烈な支持層を持つが、集団的な政策実現に向けた調整力には賛否がある。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/aoyamashigeharu",wiki:"https://ja.wikipedia.org/wiki/%E9%9D%92%E5%B1%B1%E7%B9%81%E6%99%B4",hp:"",yt:""},
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
@@ -67,7 +67,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"◎"},
     plus:"経済再生担当相や経産相を歴任、高い政策立案能力。", minus:"官僚出身であり、大胆な財政出動への慎重姿勢。",
     comment:"内閣特命担当相（経済財政政策）や経済産業大臣として、半導体戦略や経済安全保障政策を実務トップとして推進した手腕が高く評価される。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ryosei_akazawa",wiki:"https://ja.wikipedia.org/wiki/%E8%B5%A4%E6%B2%A2%E4%BA%AE%E6%AD%A3",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -738,7 +738,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"財務副大臣や内閣府副大臣を歴任。税制や地方財政、過疎対策への高い知識。", minus:"官僚出身（自治省）の堅実派であり、強力な独自マクロ経済成長の提示が薄い点。",
     comment:"内閣府副大臣や財務副大臣を歴任した財政・地方制度の専門家。地方交付税の確保や中小企業の資金繰り支援、過疎地域自立促進など実務面で安定した成果を残す。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/Ueno_Kenichiro",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%87%8E%E8%B3%A2%E4%B8%80%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -749,7 +749,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"経済産業政務官等の経験。通産・経産官僚の知見を活かした通商政策提言。", minus:"過去の週刊誌等による不祥事報道や、派閥資金問題による倫理的懸念。",
     comment:"経産官僚出身。経産政務官や法務政務官を経験。しかし、過去の不適切発言をめぐる報道や二階派の政治資金不記載問題に関与したことで、党から処分を受け信頼回復の最中にある。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ueno_hiroshi",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%87%8E%E5%AE%8F%E5%8F%B2",hp:"",yt:""},
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
@@ -771,7 +771,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"文部科学副大臣等の経験。給付型奨学金の拡充や文化芸術振興への多大な貢献。", minus:"連立与党の枠組み内の調整を優先する立ち位置から、独自の抜本税制改革に制限。",
     comment:"元バレリーナの経歴を持ち、文科副大臣などを歴任。幼児教育無償化の推進、困窮世帯への返済不要な給付型奨学金の対象拡大など、教育・福祉分野の実務で高い存在感を示す。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/Tomo_Ukishima",wiki:"https://ja.wikipedia.org/wiki/%E6%B5%AE%E5%B3%B6%E3%81%A8%E3%82%82%E5%AD%90",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -815,7 +815,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"医師。厚生労働政務官等の経験に基づく医療・介護DXや社会保障改革の提言。", minus:"歳出削減の効率化を重視するあまり、中長期の成長投資戦略が限定的との指摘。",
     comment:"医師のバックグラウンドを活かし、社会保障費の適正化や現役世代の負担軽減、医療現場の働き方改革をリードする。旧文通費改革など政治の透明化にも深く関与する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/umemura_ishin",wiki:"https://ja.wikipedia.org/wiki/%E6%A2%85%E6%9D%91%E8%81%A1",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -826,7 +826,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地方議会出身。国対役職での豊富な与野党交渉能力と「身を切る改革」の推進。", minus:"既得権益の打破を強く叫ぶ一方、独自の骨太なマクロ産業経済戦略が控えめな点。",
     comment:"大阪選出の主力中堅。議員定数削減や定数是正、旧文通費（調査研究広報滞在費）の領収書添付による使途完全公開など、身を切る改革の徹底法制化に向け実務交渉を牽引している。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/uranoyasuto",wiki:"https://ja.wikipedia.org/wiki/%E6%B5%A6%E9%87%8E%E9%9D%96%E4%BA%BA",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -1948,7 +1948,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"大蔵・財務官僚出身。総務政務官等の経験。北陸の災害復旧や財政支援実務。", minus:"手堅い実務・官僚型気質であり、独自の強力な成長減税戦略の提示が薄い点。",
     comment:"財務省の主計局主計官などを経て国政へ。総務政務官を経験。能登半島地震後の財政的災害復旧措置の整備において、予算当局の視点から実務的なバックアップに動いた中堅。一部指標は党方針から推定。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/takuokomori_1",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%A3%AE%E5%8D%93%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -1970,7 +1970,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"△",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"◎",semi:"△"},
     plus:"北陸（能登等）選出として、被災地の生活再建や農林水産振興への多大な注力。", minus:"追及型姿勢が中心である反面、国家全体を牽引する強力な独自マクロ成長対案が薄い点。",
     comment:"国対副委員長などを歴任。能登半島地震の復興において、被災した農林水産業者や伝統産業の事業者に対する迅速な公的支援・補正予算の拡充を求め、生活者目線から鋭く発言を続ける野党中堅。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/kondokazuya_",wiki:"https://ja.wikipedia.org/wiki/%E8%BF%91%E8%97%A4%E5%92%8C%E4%B9%9F",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -2014,7 +2014,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"金融界出身。現役世代の負担軽減や徹底的な行財政改革の推進論調。", minus:"既得権益の打破を重視する一方、独自の骨太なマクロ成長戦略の提示に課題。",
     comment:"前職は証券会社勤務。日本維新の会の方針に基づき、旧文通費の領収書添付による使途完全公開や、国会議員の定数削減を求めるなど改革姿勢を示す中堅。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/AlexSaito2019",wiki:"https://ja.wikipedia.org/wiki/%E6%96%8E%E8%97%A4%E3%82%A2%E3%83%AC%E3%83%83%E3%82%AF%E3%82%B9",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -2025,7 +2025,7 @@ const POLITICIANS = [
     stances:{tax_cut:"×",active_fiscal:"×",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"×",foreign:"○",food:"◎",semi:"◎"},
     plus:"経産相、法相、農水相を歴任。先端半導体の国内誘致など戦略産業推進の実績。", minus:"通産・経産官僚出身の堅実派であり、サプライサイド偏重との見方もある点。",
     comment:"経済産業大臣として国内の半導体生産基盤の強化（ラピダス支援の加速等）に多大な実務成果を残す。論理的な国会答弁と、派閥問題でもクリーンな姿勢が高く評価されている。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/saitou_ken",wiki:"https://ja.wikipedia.org/wiki/%E9%BD%8B%E8%97%A4%E5%81%A5",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -2036,7 +2036,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"◎",nuclear:"×",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"工学博士。国土交通大臣を長く務め、インフラ整備や事前防災対策で高い実務成果。", minus:"連立政権の重鎮として安定感はあるが、強力なマクロ経済構造改革の打ち出しは地味。",
     comment:"国交相、環境相、公明党代表を歴任。技術的な専門性を活かし、防災・減災、国土強靱化の推進、観光産業の復興支援などに高い実務成果を示した、屈指の政策安定株。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/saitotetsuo",wiki:"https://ja.wikipedia.org/wiki/%E6%96%89%E8%97%A4%E9%89%84%E5%A4%AB",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -3114,7 +3114,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"◎",food:"○",semi:"◎"},
     plus:"防衛相を複数回歴任。自衛隊出身の知見に基づく安全保障政策の実質的実務牽引。", minus:"安全保障・国防分野に特化する反面、現下の即効的な家計減税等の独自発信が地味。",
     comment:"防衛大臣や首相補佐官（安全保障法制担当）を歴任。陸上自衛隊出身。安保3文書の改定や、日米同盟の抑止力抜本強化、多国間防衛協力の枠組み推進において、防衛実務の総責任者として高い成果を重ねる重鎮政策通。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/nagasakajimusho",wiki:"https://ja.wikipedia.org/wiki/%E9%95%B7%E5%9D%82%E5%BA%B7%E6%AD%A3",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -3136,7 +3136,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"国交相。経済産業政務官等の経験。都市防災、中小企業保護、バリアフリーの推進。", minus:"与党連立内の合意調整を重視する立場から、独自の強力な税制構造改革には制約。",
     comment:"民間企業を経て国政へ。国交相や経済産業政務官などを歴任。豪雨・激甚災害に備える流域治水対策の法制化や、中小建設業の賃上げ・価格転嫁構造是正、生活困窮世帯の住まいの安全確保など、生活密着の実務を指揮する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/nagashima21",wiki:"https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B3%B6%E6%98%AD%E4%B9%85",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -3180,7 +3180,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
     plus:"文部科学政務官等の経験。北海道の一次産業保護や豪雪・離島対策への地道な尽力。", minus:"所属した派閥の政治資金問題への関与に伴う、党からの役職停止処分履歴。",
     comment:"文科政務官などを務め、地域の土木強靱化や酪農・水産振興を訴える。一方で、清和政策研究会（安倍派）の一連の不記載問題において処分を受け信頼回復の途上にある。一部指標は党方針から推定。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/gen_nakatani",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E8%B0%B7%E5%85%83",hp:"",yt:""},
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
@@ -3191,7 +3191,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"○",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"IT企業出身。デジタル行政推進やインターネット選挙運動解禁など、若者向けの法制改革牽引。", minus:"積極的なネット規制緩和姿勢に対し、サイバー空間のセキュリティ確保策の具体化を求める声。",
     comment:"民間ベンチャーを経て国政へ。インターネット選挙運動を可能にする公選法改正や、SNS上の誹謗中傷対策、Web3推進などデジタル社会のインフラ整備において野党第一党屈指の政策先導力を発揮する論客。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/nakatani80",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E8%B0%B7%E7%9C%9F%E4%B8%80",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -4159,7 +4159,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"◎",food:"○",semi:"◎"},
     plus:"環境相等の閣僚経験。外交・安保分野での論理的かつ説得力ある発信力。", minus:"民進党→希望の党→無所属→自民党と4度の党籍変更を繰り返し、野党分裂・崩壊を加速させた。「小池百合子が嫌いで合流した」と言われるほど個人的思惑を優先。野党が政権交代の受け皿となる機会を逸する一因となった。",
     comment:"環境大臣・安全保障政策での実績は本物だが、民進→希望→自民という渡り歩きは公共的な野党政治の土台を自ら切り崩した行為。政策能力と政治倫理は高いが、長期国益・公共性の観点では野党崩壊の共同責任者として評価が下がる。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/hosono_54",wiki:"https://ja.wikipedia.org/wiki/%E7%B4%B0%E9%87%8E%E8%B1%AA%E5%BF%97",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -4170,7 +4170,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"観光担当大臣を歴任。観光立国の推進や地域インフラ整備への実務的な貢献。", minus:"事務処理・実務型の立ち位置であり、マクロ経済を牽引する独自税制発信は地味。",
     comment:"観光担当相などを務め、山梨のインフラ整備や観光需要の回復、デジタル田園都市構想の推進に関与。実務・調整を重視する手堅い政策遂行型の政治家。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/genkihoriuchi",wiki:"https://ja.wikipedia.org/wiki/%E5%A0%80%E5%86%85%E8%A9%94%E5%AD%90",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -4181,7 +4181,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地方自治体出身の経歴。地域のインフラ強靱化や一次産業振興への地道な関与。", minus:"国政レベルでの独自法案を主導した、多角的な活動データが未蓄積な段階。",
     comment:"自民党所属。特定の閣僚経験等はなく、単独での国会審議実績を定量評価するための情報が現時点で限定的であるため、党方針に基づく推定配置とする。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/kyoto_honda",wiki:"https://ja.wikipedia.org/wiki/%E6%9C%AC%E7%94%B0%E5%A4%AA%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -4203,7 +4203,7 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"○",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"外相、国交相等の閣僚経験。野党の要職を経て維新へ。高い外交・安全保障論戦力。", minus:"2011年、在日韓国人から計34万円の政治献金を受領し政治資金規正法違反として外相を引責辞任。【最大責任】2017年民進党代表として「希望の党」への合流（事実上の解党）を一存で決断し、野党を立憲民主・希望・国民民主の三分裂に追い込んだ野党崩壊の直接的主因。その後も維新へ移籍し一貫性を欠く。",
     comment:"外相・国交相等の閣僚経験と高い政策能力を持つが、2017年の民進党解党決断は野党政治に取り返しのつかない打撃を与えた。政権交代可能な二大政党制への道を自ら閉ざした最大責任者として長期国益・公共性の評価は低い。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/maehara2016",wiki:"https://ja.wikipedia.org/wiki/%E5%89%8D%E5%8E%9F%E8%AA%A0%E5%8F%B8",hp:"",yt:""},
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
@@ -4214,7 +4214,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
     plus:"デジタル相、党役員等を歴任。行政DX、AI活用、サイバー防御法制の先導的実務。", minus:"先端技術・インフラへの重心が強く、現下の即効的な家計減税への発信が地味な点。",
     comment:"デジタル大臣などを歴任。行政の完全デジタル化やデジタル原則の一括見直し、Web3・先端技術の囲い込みをリードした党内屈指の実務中堅。クリーンなガバナンス改革推進派。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/makishimakaren",wiki:"https://ja.wikipedia.org/wiki/%E7%89%A7%E5%B3%B6%E3%81%8B%E3%82%8C%E3%82%93",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -5281,7 +5281,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"スポーツ振興と、教育を通じた青少年の健全育成への関心。", minus:"国政レベルでの独自法案を先導した主要な立法実績データが未蓄積。",
     comment:"自民党所属。スポーツ・文化を通じた地域活性化に取り組む。公開データが不足しているため、推定配置を含む。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ikuinaakiko1917",wiki:"https://ja.wikipedia.org/wiki/%E7%94%9F%E7%A8%B2%E6%99%83%E5%AD%90",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -5303,7 +5303,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地域インフラ整備や中小企業振興への地道な関与。", minus:"国政レベルでの独自法案を先導した主要実績データが未蓄積。",
     comment:"自民党所属。地域経済活性化に注力するが、定量的な公的活動データが限られるため推定配置。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/Junichi141",wiki:"https://ja.wikipedia.org/wiki/%E7%9F%B3%E4%BA%95%E6%BA%96%E4%B8%80",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -5314,7 +5314,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地域スポーツ振興や地域活性化への取り組み。", minus:"独自の主要立法実績や、国会全体を先導した活動データが未蓄積。",
     comment:"自民党所属。特定の閣僚経験等はなく、単独での国会審議実績を定量評価するための情報が限定的なため、推定配置とする。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/hirooishii6",wiki:"https://ja.wikipedia.org/wiki/%E7%9F%B3%E4%BA%95%E6%B5%A9%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -5325,7 +5325,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"福祉分野や生活者目線の政策課題への関心。", minus:"国政レベルでの独自法案を先導した主要実績データが未蓄積。",
     comment:"日本維新の会所属。行財政改革を掲げるが、具体的な国会審議実績を定量評価するための公開データが限定的であるため、党の基本方針に基づく推定配置。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ishii_ishin",wiki:"https://ja.wikipedia.org/wiki/%E7%9F%B3%E4%BA%95%E8%8B%97%E5%AD%90",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -5358,7 +5358,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
     plus:"経済や生活者目線での政策課題への強い論調。党内での発信力。", minus:"与党との対決姿勢が強く、広範な合意形成における調整力に課題。",
     comment:"立憲民主党所属。生活者目線の政策を掲げ、精力的に論戦を行う。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/norinotes",wiki:"https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%9E%A3%E3%81%AE%E3%82%8A%E3%81%93",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -6436,7 +6436,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地域経済活性化や中小企業支援の実務。", minus:"国家規模の大規模立法実績は発展途上。",
     comment:"同一人物の別表記の可能性があるため、実績評価を準用。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/koyari_shiga",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E9%91%93%E9%9A%86%E5%8F%B2",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -6447,7 +6447,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"SNSを活用した政治発信と、既存の政治体制に対する改革の訴え。", minus:"大規模な国会立法実績や行政管理の経験が未蓄積。",
     comment:"新興勢力の一員として政治改革を訴える。知名度を活かした発信力はあるが、国会での具体的成果はこれから。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/aqua_saito",wiki:"https://ja.wikipedia.org/wiki/%E9%BD%8A%E8%97%A4%E5%81%A5%E4%B8%80%E9%83%8E",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -6458,7 +6458,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"教育政策における専門的な知見と、現場重視の姿勢。", minus:"国家規模の政策先導実績は発展途上。",
     comment:"教育現場の声を国会に届ける実務型議員として活動。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/saito_yoshitaka",wiki:"https://ja.wikipedia.org/wiki/%E6%96%8E%E8%97%A4%E5%98%89%E9%9A%86",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -6469,7 +6469,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地域産業の振興や防災インフラ整備への手堅い関与。", minus:"国家規模の大規模立法実績は発展途上。",
     comment:"自民党所属。地域社会の安定に寄与する実務型議員。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/yasuyukisakai",wiki:"https://ja.wikipedia.org/wiki/%E9%85%92%E4%BA%95%E5%BA%B8%E8%A1%8C",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -6491,7 +6491,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"厚生労働および経済財政分野での豊富な知見。", minus:"調整型であり、大胆な政策変更の牽引力には限りがある。",
     comment:"党内の重要ポストを経験し、医療・経済の実務に精通した安定的なベテラン。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/akibakenya",wiki:"https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E5%85%85",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -7437,7 +7437,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"○",food:"○",semi:"○"},
     plus:"保守的思想に基づく国政改革の訴えと、作家としての強い発信力。", minus:"議会政治の実務経験が少なく、他党派との調整や大規模立法の実績は発展途上。",
     comment:"日本保守党代表として、保守的な国家観を打ち出す。SNS等の発信力は高いが、国会実務はこれからの段階。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/aichikentjireca",wiki:"https://ja.wikipedia.org/wiki/%E7%99%BE%E7%94%B0%E5%B0%9A%E6%A8%B9",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -7448,7 +7448,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"経済・産業政策における実務能力と、公明党の政策調整力。", minus:"与党内調整を重視するため、独自の大胆な政策発信には制約がある。",
     comment:"公明党所属。経済政策や税制の実務に精通する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/Hiraki_Daisaku",wiki:"https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%9C%A8%E5%A4%A7%E4%BD%9C",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -7470,7 +7470,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"フリーアナウンサーとしての経験を活かした発信力。", minus:"大規模な政策先導の実績はこれから。",
     comment:"無所属で活動。地域課題に対して積極的に発言を行う。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/hirayamasachiko",wiki:"https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%B1%B1%E4%BD%90%E7%9F%A5%E5%AD%90",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -7481,7 +7481,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地方自治の知見やインフラ整備への取り組み。", minus:"国政での独自法案を先導した主要実績はこれから。",
     comment:"立憲民主党所属。地域の現場課題を国政に届ける。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/hirota11",wiki:"https://ja.wikipedia.org/wiki/%E5%BA%83%E7%94%B0%E4%B8%80",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -7492,7 +7492,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"内閣府副大臣等を歴任した行政運営の経験と調整能力。", minus:"大規模な政策先導の実績は発展途上。",
     comment:"自民党の中堅。行政実務の安定感と、党内での調整力で知られる。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/fukuokatakamaro",wiki:"https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B2%A1%E8%B3%87%E9%BA%BF",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8394,7 +8394,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"企業経営の経験を活かした、合理的な行財政改革と産業振興。", minus:"大胆な改革推進に対して、既存の政治基盤との調整が必要。",
     comment:"民間出身の知事。行財政改革を推進し、県経済の活性化に注力。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/koigawa",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BA%95%E5%B7%9D%E5%92%8C%E5%BD%A6",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8405,7 +8405,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"長年の行政運営実績と、地域安定化への取り組み。", minus:"大規模な政策転換の先導力は保守的。",
     comment:"多選知事として地域行政の安定を維持する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/egappetomikazu",wiki:"https://ja.wikipedia.org/wiki/%E7%A6%8F%E7%94%B0%E5%AF%8C%E4%B8%80",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8416,7 +8416,7 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"×",foreign:"◎",food:"○",semi:"○"},
     plus:"高い発信力と外交・安保知見を活かした県政の先鋭的なブランディングと推進力。", minus:"主張が強硬であり、他方面との調整で意見が分かれることが多い。",
     comment:"元閣僚・外交論客。SNSを駆使した発信と国益重視の姿勢で県政を牽引する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/ichita_y",wiki:"https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E4%B8%80%E5%A4%AA",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8427,7 +8427,7 @@ const POLITICIANS = [
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"国会議員経験を活かした国との調整力。県政の安定運営と防災対策に注力。", minus:"大規模な構造改革の推進については慎重な姿勢を見せることが多い。",
     comment:"国政経験を持つ知事として、県政の安定と防災・地域振興をバランスよく推進する。",
-    links:{hp:"",tw:"",yt:"",wiki:""},
+    links:{tw:"https://x.com/oonomotohiro",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%87%8E%E5%85%83%E8%A3%95",hp:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
