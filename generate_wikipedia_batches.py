@@ -402,6 +402,15 @@ def main():
             batch_entries = []
             batch_idx += 1
 
+    # ループ後に残ったバッチを書き出し（最後の議員がスキップされた場合の対策）
+    if batch_entries and not args.dry:
+        ids = [e["id"] for e in batch_entries]
+        id_range = f"{ids[0]}-{ids[-1]}"
+        fname = f"corrections/correction_{corr_num:03d}_wiki_{id_range}.json"
+        with open(fname, "w", encoding="utf-8") as f:
+            json.dump(batch_entries, f, ensure_ascii=False, indent=2)
+        print(f"\n  💾 保存: {fname} ({len(batch_entries)}件)\n")
+
     # キャッシュ最終保存
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False)
