@@ -29,7 +29,7 @@ import os
 from datetime import date
 
 WIKIPEDIA_API = "https://ja.wikipedia.org/w/api.php"
-DELAY = 0.7
+DELAY = 2.0
 BATCH_SIZE = 15
 OUTPUT_DIR = "batches"
 CACHE_FILE = "output/wikipedia_cache.json"
@@ -63,25 +63,33 @@ def fetch_wikipedia(name: str) -> tuple[str, str]:
         "format": "json",
         "formatversion": "2",
     }
-    try:
-        r = requests.get(WIKIPEDIA_API, params=params, timeout=15,
-                         headers={"User-Agent": "TORAN-DataCollector/1.0 (educational)"})
-        r.raise_for_status()
-        data = r.json()
-        pages = data.get("query", {}).get("pages", [])
-        if not pages or "missing" in pages[0]:
-            return "", ""
-        page = pages[0]
-        content = ""
+    for attempt in range(4):
         try:
-            content = page["revisions"][0]["slots"]["main"]["content"]
-        except (KeyError, IndexError):
-            pass
-        extract = page.get("extract", "")
-        return content, extract
-    except Exception as e:
-        print(f"    ⚠️ 通信エラー: {e}")
-        return "", ""
+            r = requests.get(WIKIPEDIA_API, params=params, timeout=15,
+                             headers={"User-Agent": "TORAN-DataCollector/1.0 (educational)"})
+            if r.status_code == 429:
+                wait = 10 * (2 ** attempt)
+                print(f"    ⚠️ 429 レート制限 → {wait}秒待機...", end=" ")
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            data = r.json()
+            pages = data.get("query", {}).get("pages", [])
+            if not pages or "missing" in pages[0]:
+                return "", ""
+            page = pages[0]
+            content = ""
+            try:
+                content = page["revisions"][0]["slots"]["main"]["content"]
+            except (KeyError, IndexError):
+                pass
+            extract = page.get("extract", "")
+            return content, extract
+        except Exception as e:
+            print(f"    ⚠️ 通信エラー: {e}")
+            if attempt < 3:
+                time.sleep(5)
+    return "", ""
 
 
 # ── 経歴解析 ─────────────────────────────────────────────
