@@ -1,0 +1,1241 @@
+[
+  {
+    "id": "P002",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%9D%92%E6%9C%A8%E3%81%B2%E3%81%A8%E3%81%BF"
+    }
+  },
+  {
+    "id": "P010",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%B5%85%E7%94%B0%E3%81%BE%E3%81%99%E3%81%BF"
+    }
+  },
+  {
+    "id": "P016",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%98%BF%E9%83%A8%E5%9C%AD%E5%8F%B2"
+    }
+  },
+  {
+    "id": "P030",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%B7%9D%E5%8B%9D"
+    }
+  },
+  {
+    "id": "P031",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%9D%82%E5%A4%AA"
+    }
+  },
+  {
+    "id": "P034",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E6%A9%8B%E6%9E%97%E5%A4%AA%E9%83%8E"
+    }
+  },
+  {
+    "id": "P036",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%8E%9F%E6%AD%A3%E6%95%AC"
+    }
+  },
+  {
+    "id": "P038",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%80%E8%B0%B7%E5%8B%87%E4%B8%80%E9%83%8E"
+    }
+  },
+  {
+    "id": "P041",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8%E6%AD%A3%E6%9E%9D"
+    }
+  },
+  {
+    "id": "P042",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E6%81%B5%E4%BB%8B"
+    }
+  },
+  {
+    "id": "P043",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%81%A1_(%E6%94%BF%E6%B2%BB%E5%AE%B6)"
+    }
+  },
+  {
+    "id": "P050",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%A8%B2%E8%91%89%E5%A4%A7%E8%BC%94"
+    }
+  },
+  {
+    "id": "P051",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%8A%AC%E9%A3%BC%E6%98%8E%E4%BD%B3"
+    }
+  },
+  {
+    "id": "P058",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BA%95%E5%8E%9F%E9%9A%86"
+    }
+  },
+  {
+    "id": "P060",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BB%8A%E5%B2%A1%E6%A4%8D"
+    }
+  },
+  {
+    "id": "P061",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A9%E5%B4%8E%E6%AF%94%E8%8F%9C"
+    }
+  },
+  {
+    "id": "P066",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E7%94%B0%E8%8B%B1%E4%BF%8A"
+    }
+  },
+  {
+    "id": "P069",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E5%8E%9F%E6%AD%A3%E8%A3%95"
+    }
+  },
+  {
+    "id": "P071",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%AE%87%E4%BD%90%E7%BE%8E%E7%99%BB"
+    }
+  },
+  {
+    "id": "P072",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%87%BC%E6%9C%A8%E7%A7%80%E5%89%9B"
+    }
+  },
+  {
+    "id": "P073",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%86%85%E5%B1%B1%E8%88%AA"
+    }
+  },
+  {
+    "id": "P079",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%A1%9B%E8%97%A4%E5%8D%9A%E6%98%AD"
+    }
+  },
+  {
+    "id": "P085",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E6%95%A6"
+    }
+  },
+  {
+    "id": "P088",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%A5%BF%E6%B4%8B%E5%B9%B3_(%E6%94%BF%E6%B2%BB%E5%AE%B6)"
+    }
+  },
+  {
+    "id": "P090",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%A3%AE%E6%B1%9F%E9%87%8C%E5%AD%90"
+    }
+  },
+  {
+    "id": "P092",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E9%87%8E%E7%B4%94%E5%AD%90"
+    }
+  },
+  {
+    "id": "P094",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E6%9C%AC%E5%BA%B7%E5%AE%8F"
+    }
+  },
+  {
+    "id": "P098",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%95%B7%E7%94%B0%E7%B4%98%E4%B8%80%E9%83%8E"
+    }
+  },
+  {
+    "id": "P100",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%AB%B9%E5%87%B1"
+    }
+  },
+  {
+    "id": "P105",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%8A%B1%E7%91%9B%E4%BB%81"
+    }
+  },
+  {
+    "id": "P145",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%9C%A8%E4%B8%8B%E6%95%8F%E4%B9%8B"
+    }
+  },
+  {
+    "id": "P149",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E6%B3%B0%E9%82%A6"
+    }
+  },
+  {
+    "id": "P150",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%8D%89%E9%96%93%E5%89%9B"
+    }
+  },
+  {
+    "id": "P152",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B7%A5%E8%97%A4%E8%81%96%E5%AD%90"
+    }
+  },
+  {
+    "id": "P157",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%A0%97%E5%8E%9F%E6%B8%89"
+    }
+  },
+  {
+    "id": "P158",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%BB%92%E5%B4%8E%E7%A5%90%E4%B8%80"
+    }
+  },
+  {
+    "id": "P159",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%BB%92%E7%94%B0%E5%BE%81%E6%A8%B9"
+    }
+  },
+  {
+    "id": "P160",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/flX9TZ3V89DiEIzEp"
+    }
+  },
+  {
+    "id": "P165",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/tgaRyvklH6KiP7Rq8"
+    }
+  },
+  {
+    "id": "P172",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/uqitccSMAiKVim0FY"
+    }
+  },
+  {
+    "id": "P174",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/eunefO7M9KuAfta8r"
+    }
+  },
+  {
+    "id": "P178",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/jAiDJDBA3SeuQ0SXb"
+    }
+  },
+  {
+    "id": "P180",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/axZizQkkZAosb0oon"
+    }
+  },
+  {
+    "id": "P181",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/OdPMWX9w8VPM8dqo6"
+    }
+  },
+  {
+    "id": "P182",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/CjZSMmqM0jb3TJ8BH"
+    }
+  },
+  {
+    "id": "P187",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/XJdgmBVh4W1OPN5MN"
+    }
+  },
+  {
+    "id": "P190",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/eKMiJnRPzbeLxXo7a"
+    }
+  },
+  {
+    "id": "P193",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/aMlY99QEQEFnQ0DRp"
+    }
+  },
+  {
+    "id": "P195",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/xBp0Grw0IBXlonRql"
+    }
+  },
+  {
+    "id": "P203",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/R6fWZqUWlmJg904DA"
+    }
+  },
+  {
+    "id": "P204",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/ihs4f0nOuBWd7JbNC"
+    }
+  },
+  {
+    "id": "P207",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/bkQ6CyneaIsI2nBN2"
+    }
+  },
+  {
+    "id": "P216",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/f2EuxjMde4Ubvcab5"
+    }
+  },
+  {
+    "id": "P219",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/phsfKKLdbBtxslJXD"
+    }
+  },
+  {
+    "id": "P221",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%A0%88%E7%94%B0%E8%8B%B1%E5%A4%AA%E9%83%8E"
+    }
+  },
+  {
+    "id": "P225",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/xBi9ig2a8L4Wv3wiY"
+    }
+  },
+  {
+    "id": "P228",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Jl6JLX8aMVm1xfC1x"
+    }
+  },
+  {
+    "id": "P234",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/TWItthImIdQS286QN"
+    }
+  },
+  {
+    "id": "P236",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/jlaZaI3On0FVvqhiy"
+    }
+  },
+  {
+    "id": "P237",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Hos6HJIe0awQnc7QH"
+    }
+  },
+  {
+    "id": "P275",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/RQmHkU0FKw7SAGjJZ"
+    }
+  },
+  {
+    "id": "P278",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/YjUiNZ562pxJcBWu6"
+    }
+  },
+  {
+    "id": "P279",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/twQiJwz5RnBisYEvq"
+    }
+  },
+  {
+    "id": "P280",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/E4TQJC0zi4OGr2RKT"
+    }
+  },
+  {
+    "id": "P281",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/RmvNcamPnTjPR9S66"
+    }
+  },
+  {
+    "id": "P286",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/B8FVBrdSHt96eW8tm"
+    }
+  },
+  {
+    "id": "P287",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/0lSTzQ7MQSrB6cviJ"
+    }
+  },
+  {
+    "id": "P288",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/zwuB1YV7pKihwAVCP"
+    }
+  },
+  {
+    "id": "P292",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/0EA2s3HIUKLsLTUKy"
+    }
+  },
+  {
+    "id": "P295",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/KwS9zGImniPF1OqA7"
+    }
+  },
+  {
+    "id": "P299",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/o3jzcJfyOldIemGVI"
+    }
+  },
+  {
+    "id": "P301",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/nokGer2SPsucS8HGp"
+    }
+  },
+  {
+    "id": "P304",
+    "_action": "update",
+    "links": {
+      "wiki": "鍋島勢https://share.google/AezwH3IUzvsc3kDcL"
+    }
+  },
+  {
+    "id": "P307",
+    "_action": "update",
+    "links": {
+      "wiki": "西岡義高 -https://share.google/Be9HcsE7FJ9yyvzZR"
+    }
+  },
+  {
+    "id": "P316",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/WOcndTuTqZs6t16Be"
+    }
+  },
+  {
+    "id": "P317",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/wZ4URVU6WTe5zkvwx"
+    }
+  },
+  {
+    "id": "P321",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/DEbMpO5JwClGradkr"
+    }
+  },
+  {
+    "id": "P327",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/gxrW2h9cdEMLNqumV"
+    }
+  },
+  {
+    "id": "P329",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/1Kdzheydq4wiG6qpE"
+    }
+  },
+  {
+    "id": "P333",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/mhIRk0i49eFg2qVbt"
+    }
+  },
+  {
+    "id": "P339",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/pFVElDxGedb908kmr"
+    }
+  },
+  {
+    "id": "P341",
+    "_action": "update",
+    "links": {
+      "wiki": "原https://share.google/xlIq7mWiKUaznPGWz"
+    }
+  },
+  {
+    "id": "P342",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/VsyZJ82e96N9nK89c"
+    }
+  },
+  {
+    "id": "P343",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/PsuNqFW2yHJ3AfVTm"
+    }
+  },
+  {
+    "id": "P347",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/DjMsC8W9nhfwNcFr2"
+    }
+  },
+  {
+    "id": "P348",
+    "_action": "update",
+    "links": {
+      "wiki": "平沼正二郎 https://share.google/ge6sLTYRU0KxoS2Oi"
+    }
+  },
+  {
+    "id": "P349",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Etwi3FXud7Mj6Hj7l"
+    }
+  },
+  {
+    "id": "P351",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/xDvAQ0ohqff0e1sM3"
+    }
+  },
+  {
+    "id": "P362",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/2icXP4kDcYKuOwjjn"
+    }
+  },
+  {
+    "id": "P363",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/U4dpt8vVVKs9NOsso"
+    }
+  },
+  {
+    "id": "P366",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/tK2mzpPBWOmxarAqF"
+    }
+  },
+  {
+    "id": "P391",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/YpaAR8MAKfWf5DBc8"
+    }
+  },
+  {
+    "id": "P393",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/4gpSCDN0OE0G9ci0Q"
+    }
+  },
+  {
+    "id": "P395",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/5cjG87aDn6XaLYAmQ"
+    }
+  },
+  {
+    "id": "P399",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/gWzxfFWPiTc8nnGop"
+    }
+  },
+  {
+    "id": "P402",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/L9dH9Eh5OrfHz0Yw5"
+    }
+  },
+  {
+    "id": "P407",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/lDBRMrf8HxCn4EBIy"
+    }
+  },
+  {
+    "id": "P408",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/i34x9BSR3YVChfZov"
+    }
+  },
+  {
+    "id": "P409",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/nLvMYVxdj5Kku2eqd"
+    }
+  },
+  {
+    "id": "P415",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/bK2e6QtNdZoo9Osbu"
+    }
+  },
+  {
+    "id": "P416",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/k61r97GSq7xpjeHyR"
+    }
+  },
+  {
+    "id": "P419",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/8GwZSS3WLvOz0oZ9N"
+    }
+  },
+  {
+    "id": "P420",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/rQo7ft1aCYAq0Gc07"
+    }
+  },
+  {
+    "id": "P421",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/ph9WG6LOkSM7OPWiv"
+    }
+  },
+  {
+    "id": "P424",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/YbulsEqEX6gSfJpCp"
+    }
+  },
+  {
+    "id": "P431",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/JiPXk0lv4NF9SMNCF"
+    }
+  },
+  {
+    "id": "P432",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Vo17i2xYGvwa77EXs"
+    }
+  },
+  {
+    "id": "P434",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/hZV5vOJ9xR8lVSWdu"
+    }
+  },
+  {
+    "id": "P438",
+    "_action": "update",
+    "links": {
+      "wiki": "山本香苗 -https://share.google/9hzxM9OGFgt2LUBED"
+    }
+  },
+  {
+    "id": "P441",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/rJZ3sXNfSM7VA7sjG"
+    }
+  },
+  {
+    "id": "P444",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Oj9HOuu0l5nf0QHLB"
+    }
+  },
+  {
+    "id": "P450",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/DdIlsttIcKDLH2n0M"
+    }
+  },
+  {
+    "id": "P452",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/0A28x5R2K1sPGiZXB"
+    }
+  },
+  {
+    "id": "P455",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/Dj4xOSckgP4j92P0B"
+    }
+  },
+  {
+    "id": "P456",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/nWkxsTBhBHf7IBaQa"
+    }
+  },
+  {
+    "id": "P460",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/hTRoEODwCYszvvlNE"
+    }
+  },
+  {
+    "id": "P464",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/xpyTA3hCMEbanoeUJ"
+    }
+  },
+  {
+    "id": "P465",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/7Lo5WfSDV8ksJf1cr"
+    }
+  },
+  {
+    "id": "P476",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/6mrGmnJEOe4Bw4frJ"
+    }
+  },
+  {
+    "id": "P481",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/G1Mp1iq4AE977gqsS"
+    }
+  },
+  {
+    "id": "P485",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/2iDlIgJViSq06IGrC"
+    }
+  },
+  {
+    "id": "P486",
+    "_action": "update",
+    "links": {
+      "wiki": "https://share.google/vClwkFKvTO2ypX7jD"
+    }
+  },
+  {
+    "id": "P488",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%9F%B3%E5%9E%A3%E3%81%AE%E3%82%8A%E3%81%93"
+    }
+  },
+  {
+    "id": "P498",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%BE%B0%E5%A4%AB"
+    }
+  },
+  {
+    "id": "P506",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E9%BA%BB%E5%A5%88"
+    }
+  },
+  {
+    "id": "P507",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A9%E6%9C%AC%E9%BA%BB%E5%A5%88"
+    }
+  },
+  {
+    "id": "P508",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%8A%AC%E7%AB%A5%E5%91%A8%E4%BD%9C"
+    }
+  },
+  {
+    "id": "P512",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%87%8E%E8%9B%8D"
+    }
+  },
+  {
+    "id": "P515",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%89%9B%E7%94%B0%E8%8C%89%E5%8F%8B"
+    }
+  },
+  {
+    "id": "P516",
+    "_action": "update",
+    "links": {
+      "wiki": "https://seijika-wiki.com/politicians/aafd0971-19e6-4295-9135-beca6b8fc195"
+    }
+  },
+  {
+    "id": "P519",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%89%93%E8%B6%8A%E3%81%95%E3%81%8F%E8%89%AF"
+    }
+  },
+  {
+    "id": "P522",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%8E%9F%E4%B9%85%E7%BE%8E%E5%AD%90"
+    }
+  },
+  {
+    "id": "P526",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B4%A5%E5%8A%9B"
+    }
+  },
+  {
+    "id": "P527",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B4%8E%E5%A4%AA"
+    }
+  },
+  {
+    "id": "P531",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A5%A5%E7%94%B0%E8%8A%99%E7%BE%8E%E4%BB%A3#:~:text=%E5%A5%A5%E7%94%B0%20%E8%8A%99%E7%BE%8E%E4%BB%A3%EF%BC%88%E3%81%8A%E3%81%8F%E3%81%A0%20%E3%81%B5%E3%81%BF,%EF%BC%88%E3%81%88%E3%82%93%E3%81%A9%E3%81%86%20%E3%81%B5%E3%81%BF%E3%82%88%EF%BC%89%E3%80%82"
+    }
+  },
+  {
+    "id": "P535",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%BE%BB%E6%9C%8B%E5%AE%9F#:~:text=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%94%9F%E3%81%BE%E3%82%8C,%E8%AD%B0%E9%95%B7%E7%A7%98%E6%9B%B8%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%A4%E5%8B%99%E3%81%97%E3%81%9F%E3%80%82"
+    }
+  },
+  {
+    "id": "P536",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%BE%BB%E6%9C%8B%E5%AE%9F"
+    }
+  },
+  {
+    "id": "P539",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%B1%A0%E5%B3%B6%E5%BD%B0%E5%AE%8F"
+    }
+  },
+  {
+    "id": "P540",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%B1%A0%E5%B3%B6%E5%BD%B0%E5%AE%8F"
+    }
+  },
+  {
+    "id": "P541",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%A2%B6%E5%8E%9F%E5%A4%A7%E4%BB%8B"
+    }
+  },
+  {
+    "id": "P542",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%8A%A0%E7%94%B0%E8%A3%95%E4%B9%8B"
+    }
+  },
+  {
+    "id": "P566",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%A6%8B%E5%9D%82%E8%8C%82%E7%AF%84"
+    }
+  },
+  {
+    "id": "P569",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%83%A1%E5%B1%B1%E7%8E%B2"
+    }
+  },
+  {
+    "id": "P575",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E5%B3%B6%E6%99%BA%E5%AD%90_(%E6%94%BF%E6%B2%BB%E5%AE%B6)"
+    }
+  },
+  {
+    "id": "P576",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%8F%A4%E5%BA%84%E7%8E%84%E7%9F%A5"
+    }
+  },
+  {
+    "id": "P577",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%BE%8C%E8%97%A4%E7%BF%94%E5%A4%AA"
+    }
+  },
+  {
+    "id": "P582",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9E%97%E3%81%95%E3%82%84%E3%81%8B_(%E6%94%BF%E6%B2%BB%E5%AE%B6)"
+    }
+  },
+  {
+    "id": "P589",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%AB%BB%E4%BA%95%E7%A5%A5%E5%AD%90"
+    }
+  },
+  {
+    "id": "P593",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E7%90%86%E6%B1%9F"
+    }
+  },
+  {
+    "id": "P596",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E6%B8%85%E9%A6%99"
+    }
+  },
+  {
+    "id": "P598",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%A1%A9%E6%9D%91%E6%96%87%E5%A4%8F"
+    }
+  },
+  {
+    "id": "P602",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%87%AA%E8%A6%8B%E8%8B%B1%E5%AD%90"
+    }
+  },
+  {
+    "id": "P611",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E7%B4%94%E5%AD%90"
+    }
+  },
+  {
+    "id": "P618",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9C%A8%E4%BD%B3%E4%BF%9D%E9%87%8C"
+    }
+  },
+  {
+    "id": "P624",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E9%AB%98%E8%89%AF%E6%B2%99%E5%93%89"
+    }
+  },
+  {
+    "id": "P629",
+    "_action": "update",
+    "links": {
+      "wiki": "https://seijika-wiki.com/politicians/aa2eb153-711f-4ecb-ad3a-9995302bbd8e"
+    }
+  },
+  {
+    "id": "P634",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%94%B0%E6%9D%91%E9%BA%BB%E7%BE%8E"
+    }
+  },
+  {
+    "id": "P638",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%87%BA%E5%B7%9D%E6%A1%83%E5%AD%90#:~:text=%E5%87%BA%E5%B7%9D%20%E6%A1%83%E5%AD%90%EF%BC%88%E3%81%A7%E3%81%8C%E3%82%8F,1%E6%9C%9F%EF%BC%89%E3%82%92%E5%8B%99%E3%82%81%E3%81%9F%E3%80%82"
+    }
+  },
+  {
+    "id": "P643",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%BE%B3%E6%B0%B8%E3%82%A8%E3%83%AA"
+    }
+  },
+  {
+    "id": "P645",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%8F%8B%E7%B4%8D%E7%90%86%E7%B7%92"
+    }
+  },
+  {
+    "id": "P646",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%B0%B8%E4%BA%95%E5%AD%A6"
+    }
+  },
+  {
+    "id": "P650",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%A1%E3%81%8D%E3%82%88%E3%81%97"
+    }
+  },
+  {
+    "id": "P652",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%94%B0%E5%84%AA%E5%AD%90"
+    }
+  },
+  {
+    "id": "P666",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%A9%8B%E6%9C%AC%E8%81%96%E5%AD%90"
+    }
+  },
+  {
+    "id": "P684",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E7%91%9E%E7%A9%82"
+    }
+  },
+  {
+    "id": "P702",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B7%9D%E3%82%8B%E3%81%84#:~:text=%E6%9D%BE%E5%B7%9D%20%E3%82%8B%E3%81%84%EF%BC%88%E3%81%BE%E3%81%A4%E3%81%8B%E3%82%8F%20%E3%82%8B%E3%81%84,%E5%BA%9C%E6%94%AF%E9%83%A8%E9%80%A3%E5%90%88%E4%BC%9A%E4%BC%9A%E9%95%B7%E3%80%82&text=%E9%98%B2%E8%A1%9B%E5%A4%A7%E8%87%A3%E6%94%BF%E5%8B%99%E5%AE%98%E5%85%BC,%E9%83%A8%E4%BC%9A%E9%95%B7%E4%BB%A3%E7%90%86%E3%82%92%E6%AD%B4%E4%BB%BB%E3%80%82"
+    }
+  },
+  {
+    "id": "P707",
+    "_action": "update",
+    "links": {
+      "wiki": "https://seijika-wiki.com/politicians/1a8ae333-e857-4e60-a6c6-ea769679eea7"
+    }
+  },
+  {
+    "id": "P712",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E7%B5%B5%E9%87%8C"
+    }
+  },
+  {
+    "id": "P716",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E4%B8%89%E5%8E%9F%E3%81%98%E3%82%85%E3%82%93%E5%AD%90"
+    }
+  },
+  {
+    "id": "P720",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E5%87%BA%E5%8D%83%E6%85%A7"
+    }
+  },
+  {
+    "id": "P721",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%9C%AC%E5%92%8C%E5%AE%8F"
+    }
+  },
+  {
+    "id": "P724",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E8%89%AF%E7%94%B7"
+    }
+  },
+  {
+    "id": "P726",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E6%A3%AE%E3%81%BE%E3%81%95%E3%81%93"
+    }
+  },
+  {
+    "id": "P730",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B1%B1%E5%86%85%E4%BD%B3%E8%8F%9C%E5%AD%90"
+    }
+  },
+  {
+    "id": "P746",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%90%89%E5%B7%9D%E6%B2%99%E7%B9%94"
+    }
+  },
+  {
+    "id": "P752",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E8%8B%A5%E4%BA%95%E6%95%A6%E5%AD%90"
+    }
+  },
+  {
+    "id": "P805",
+    "_action": "update",
+    "links": {
+      "wiki": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E9%87%8E%E9%9B%A8%E9%BE%8D"
+    }
+  }
+]

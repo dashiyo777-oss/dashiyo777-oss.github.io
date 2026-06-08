@@ -350,13 +350,23 @@ def main():
 
         print(f"[{i+1:03d}/{len(targets)}] {pid} {p['name']} ... ", end="", flush=True)
 
+        # wiki URLがあればそこからタイトルを取得（名前検索より正確）
+        import urllib.parse
+        wiki_url = p.get('links', {}).get('wiki', '')
+        if wiki_url and '/wiki/' in wiki_url:
+            wiki_title = urllib.parse.unquote(wiki_url.split('/wiki/')[-1])
+            cache_key = wiki_title
+        else:
+            wiki_title = name
+            cache_key = name
+
         # キャッシュ確認
-        if name in cache:
-            content, extract = cache[name]["content"], cache[name]["extract"]
+        if cache_key in cache:
+            content, extract = cache[cache_key]["content"], cache[cache_key]["extract"]
             print("(キャッシュ)", end=" ")
         else:
-            content, extract = fetch_wikipedia(name)
-            cache[name] = {"content": content, "extract": extract}
+            content, extract = fetch_wikipedia(wiki_title)
+            cache[cache_key] = {"content": content, "extract": extract}
             # キャッシュ保存（途中でも保存）
             if (i + 1) % 10 == 0:
                 with open(CACHE_FILE, "w", encoding="utf-8") as f:
