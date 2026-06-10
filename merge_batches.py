@@ -175,7 +175,7 @@ def main():
                     # 指定フィールドのみ上書き
                     for key in ['total','rank','axes','stances','role',
                                 'plus','minus','comment','survey','party',
-                                'flag_crime','flag_caution','updated']:
+                                'flag_crime','flag_caution','updated','gender','district','status']:
                         if key in item:
                             p[key] = item[key]
                     # links はフィールドごとにマージ（既存tw/wikiを消さない）
