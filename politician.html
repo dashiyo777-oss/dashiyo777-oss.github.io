@@ -627,6 +627,19 @@
   評価・スコアは独自基準によるものであり、特定の政党・政治家を支持・批判するものではありません。
 </footer>
 
+<script>
+/* data.js 読み込みエラー時に「更新中」メッセージを表示 */
+window.addEventListener('error', function(e) {
+  if (e.filename && e.filename.includes('data.js')) {
+    document.body.innerHTML =
+      '<div style="text-align:center;padding:60px 24px;font-family:sans-serif;color:#e8edf8;background:#0d1525;min-height:100vh;display:flex;align-items:center;justify-content:center;">' +
+      '<div><div style="font-size:2rem;margin-bottom:1rem;">🔧</div>' +
+      '<h2 style="font-size:1.4rem;margin-bottom:0.8rem;">サイト更新中です</h2>' +
+      '<p style="color:#8090b8;margin-bottom:1.5rem;">しばらくお待ちください。通常1〜2分で復旧します。</p>' +
+      '<button onclick="location.reload()" style="padding:0.6rem 1.6rem;background:#5ba0e0;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:1rem;">再読み込み</button></div></div>';
+  }
+}, true);
+</script>
 <script src="data.js"></script>
 <script>
 /* ── SHARED DATA ── */
