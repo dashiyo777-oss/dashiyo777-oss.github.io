@@ -194,7 +194,7 @@ const POLITICIANS = [
   {
     id:"P018", name:"あべ 俊子", reading:"あべ としこ", party:"自民党", role:"文部科学大臣",
     chamber:"衆議院", district:"比例・中国", status:"現職", gender:"女", age:null,
-    total:76, rank:"A-",
+    total:70, rank:"B+",
     axes:[4,3,3,4,3,4,4,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"文部科学大臣などの閣僚経験、医療・教育に高い専門性。", minus:"既存の社会保障・医療利権からの脱却への懸念。",
