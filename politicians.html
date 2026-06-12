@@ -1005,6 +1005,7 @@ function applyFilters() {
   render();
 }
 
+const RANK_ORDER = ['S','A+','A','A-','B+','B','B-','C+','C','C-','D','E','情報不足'];
 function applySort() {
   filtered.sort((a,b) => {
     let av, bv;
@@ -1013,7 +1014,10 @@ function applySort() {
       case 'name': av=a.name; bv=b.name; break;
       case 'party': av=a.party; bv=b.party; break;
       case 'chamber': av=a.chamber; bv=b.chamber; break;
-      case 'rank-badge': av=a.rank; bv=b.rank; break;
+      case 'rank-badge':
+        av = RANK_ORDER.indexOf(a.rank); if(av===-1) av=RANK_ORDER.length;
+        bv = RANK_ORDER.indexOf(b.rank); if(bv===-1) bv=RANK_ORDER.length;
+        break;
       default: av=a.total; bv=b.total;
     }
     if(av < bv) return sortDir==='asc' ? -1 : 1;
