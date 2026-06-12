@@ -1,0 +1,54 @@
+name: Validate data.js
+
+on:
+  pull_request:
+    paths:
+      - 'data.js'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data.js'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check data.js file size
+        run: |
+          SIZE=$(wc -c < data.js)
+          echo "data.js size: $SIZE bytes"
+          if [ "$SIZE" -lt 500000 ]; then
+            echo "❌ ERROR: data.js is too small ($SIZE bytes). Expected > 500,000 bytes."
+            echo "壊れたファイルが push されている可能性があります。"
+            exit 1
+          fi
+          echo "✅ File size OK: $SIZE bytes"
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check data.js
+          echo "✅ JavaScript syntax OK"
+
+      - name: Check required header comment
+        run: |
+          HEAD=$(head -1 data.js)
+          if echo "$HEAD" | grep -q "統覧 TORAN"; then
+            echo "✅ Header comment OK"
+          else
+            echo "❌ ERROR: data.js header is missing or wrong."
+            echo "First line: $HEAD"
+            exit 1
+          fi
+
+      - name: Check politician count
+        run: |
+          COUNT=$(grep -c '"id":"P' data.js || true)
+          echo "Politician entries found: $COUNT"
+          if [ "$COUNT" -lt 800 ]; then
+            echo "❌ ERROR: Too few politicians ($COUNT). Expected >= 800."
+            exit 1
+          fi
+          echo "✅ Politician count OK: $COUNT"
