@@ -1,1 +1,1 @@
-PLACEHOLDER
+$(cat /tmp/data_modified.js)
