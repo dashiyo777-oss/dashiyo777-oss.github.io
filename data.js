@@ -777,13 +777,13 @@ const POLITICIANS = [
   {
     id:"P071", name:"宇佐美 登", reading:"うさみ のぼる", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[4,3,3,2,4,3,4,4],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"JOC事務局出身。手取りを増やす経済政策やスポーツ・若者支援への意欲。", minus:"独自の国会における大規模な法案主導の実績データがまだ蓄積の途上である点。",
-    comment:"国民民主党の基本方針に沿い、インフレ下における「年収の壁」打破や暫定税率の凍結（ガソリン減税）を支持。詳細データが限定的な指標は党の傾向から推定配置した。",
-    links:{tw:"https://x.com/usamioffice",hp:"https://usami-noboru.com/",wiki:"https://ja.wikipedia.org/wiki/%E5%AE%87%E4%BD%90%E7%BE%8E%E7%99%BB",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:60, rank:"B-",
+    axes:[3,3,2,4,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"1993年26歳初当選。携帯電話自由化・PL法・障害者基本法・情報公開法の成立に尽力。", minus:"長い落選期間あり。チームみらいでの新たな実績はこれから。",
+    comment:"1990年代の規制緩和を実際に動かしたパイオニア。豊富な立法経験を再び活かす。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
     {
     id:"P072", name:"臼木 秀剛", reading:"うすき ひでたけ", party:"国民民主党", role:"衆議院議員",
@@ -931,13 +931,13 @@ const POLITICIANS = [
   {
     id:"P085", name:"大島 敦", reading:"おおしま あつし", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[3,3,3,2,3,3,3,3],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地方議会議長等の豊富な行政経験と、農林水産業振興への注力。", minus:"国政レベルにおける独自の立法実績や、全国区の政策主導はこれから。",
-    comment:"地方議会での実績を基に活動。地方分権の徹底や過疎地の公共交通維持、一次産業の保護を掲げるが、累積データが限定的であり党方針に基づく推定を含む。",
-    links:{hp:"https://www.google.com/search?q=%E5%A4%A7%E5%B3%B6%20%E6%95%A6%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E6%95%A6",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:60, rank:"B-",
+    axes:[3,3,2,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"求職者支援制度を議員立法で創設。内閣府副大臣・総務副大臣歴任。核融合推進議連会長。", minus:"長年野党議員で政策実現が限定的。",
+    comment:"民主党政権で自殺対策・行政刷新に尽力。9期超のベテラン。フュージョンエネルギー推進。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B3%B6%E6%95%A6",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P086", name:"大空 幸星", reading:"おおぞら こうき", party:"自民党", role:"衆議院議員",
@@ -986,13 +986,13 @@ const POLITICIANS = [
   {
     id:"P090", name:"大森 江里子", reading:"おおもり えりこ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"情報不足", minus:"情報不足",
-    comment:"当該人物の十分な政治活動実績を確認できず、評価不能。",
-    links:{hp:"https://www.google.com/search?q=%E5%A4%A7%E6%A3%AE%20%E6%B1%9F%E9%87%8C%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%A3%AE%E6%B1%9F%E9%87%8C%E5%AD%90",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"税理士として中小企業経営救済の実務。予算委で確定申告期限延長・事業承継税制を提言。", minus:"国政1期目。",
+    comment:"中小企業・税制の現場経験に基づく政策が強み。予算委賛成討論登壇の実績。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%A3%AE%E6%B1%9F%E9%87%8C%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P091", name:"緒方 林太郎", reading:"おがた りんたろう", party:"無所属", role:"衆議院議員",
@@ -1591,13 +1591,13 @@ const POLITICIANS = [
   {
     id:"P145", name:"木下 敏之", reading:"きのした としゆき", party:"参政党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"地方自治体首長（元佐賀市長）としての行政実務経験と、食の安全への関心。", minus:"国政レベルにおける主要な独自法案の立法主導や採択の実績データが未蓄積。",
-    comment:"元官僚・元市長の経歴を持つ。参政党の方針に基づき化学肥料依存からの脱却や有機農業保護、教育改革を唱える。累積データの少なさから、基本指標は党の傾向より推定配置とした。",
-    links:{hp:"https://www.google.com/search?q=%E6%9C%A8%E4%B8%8B%20%E6%95%8F%E4%B9%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9C%A8%E4%B8%8B%E6%95%8F%E4%B9%8B",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"佐賀市長2期（入札電子化・行政改革断行）。福岡大教授13年（地域経済・九州産業の海外展開研究）。", minus:"参政党の政策（移民×・再エネ×）に縛られる部分あり。",
+    comment:"首長経験＋学術背景の異色の経歴。食料安保・地方経済を重視。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9C%A8%E4%B8%8B%E6%95%8F%E4%B9%8B",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P146", name:"木原 誠二", reading:"きはら せいじ", party:"自民党", role:"衆議院議員（元内閣官房副長官）",
@@ -1635,13 +1635,13 @@ const POLITICIANS = [
   {
     id:"P149", name:"金城 泰邦", reading:"きんじょう やすくに", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"内閣府政務官等の経験、沖縄・九州地域の振興や物価高における困窮者支援。", minus:"独自の国会全体を先導する主要な立法主導や際立った公開実績データが発展途上。",
-    comment:"中道リベラル寄り。軽減税率の維持や少子化対策、児童手当の所得制限撤廃などの福祉政策を実務で支える立ち位置。詳細な指標は公開データを基に推定配置を行っている。",
-    links:{hp:"https://www.google.com/search?q=%E9%87%91%E5%9F%8E%20%E6%B3%B0%E9%82%A6%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E6%B3%B0%E9%82%A6",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,2,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"文科大臣政務官（石破内閣）。学校働き方改革を主導。インクルーシブ教育を自身の子育て経験から推進。", minus:"沖縄離島振興は地元寄りの側面も。",
+    comment:"浦添市議・沖縄県議から衆院へ。障がい者福祉と教育現場改革に一貫して取り組む。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E9%87%91%E5%9F%8E%E6%B3%B0%E9%82%A6",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P150", name:"草間 剛", reading:"くさま つよし", party:"自民党", role:"衆議院議員",
@@ -1668,13 +1668,13 @@ const POLITICIANS = [
   {
     id:"P152", name:"工藤 聖子", reading:"くどう せいこ", party:"参政党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"食の安全、地産地消の推進、独自の教育環境整備への高い意欲。", minus:"国政での際立った主要立法実績、多角的な議会活動データが不足。",
-    comment:"参政党所属の議員。独自の政策成果を測る公的データが現時点で限定的であるため、本評価は党の基本方針に基づく推定配置であることを明記する。",
-    links:{hp:"https://www.google.com/search?q=%E5%B7%A5%E8%97%A4%20%E8%81%96%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B7%A5%E8%97%A4%E8%81%96%E5%AD%90",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:45, rank:"D",
+    axes:[2,2,2,2,3,2,2,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"健康相談1000人超のキャリア。イタリア語教室主宰等の多彩な民間経験。", minus:"ホメオパシー普及活動が非科学的側面を持つ。政治経験なし。",
+    comment:"健康・子育て分野の民間活動家から国政へ。政策実現力は未知数。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B7%A5%E8%97%A4%E8%81%96%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P153", name:"国定 勇人", reading:"くにさだ いさと", party:"自民党", role:"衆議院議員（元三条市長）",
@@ -1745,13 +1745,13 @@ const POLITICIANS = [
   {
     id:"P159", name:"黒田 征樹", reading:"くろだ まさき", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"大阪16", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"日本維新の会の方針に沿った行財政改革や、身を切る改革への賛同。", minus:"独自の国会における大規模な法案作成や審議を先導した公開実績の不足。",
-    comment:"維新の会に所属する議員。旧文通費の使途完全公開や歳費削減、地方分権の徹底を訴える。累積の活動データが限定的であるため、党の基本方針より推定配置した。",
-    links:{hp:"https://www.google.com/search?q=%E9%BB%92%E7%94%B0%20%E5%BE%81%E6%A8%B9%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%BB%92%E7%94%B0%E5%BE%81%E6%A8%B9",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:60, rank:"B-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"堺市議4期（議員報酬2割カット・不祥事追及・行財政改革）。2026年公明との最激戦区を2連覇。", minus:"国政2期目で立法実績はまだ積み上げ中。",
+    comment:"行財政改革に一貫して取り組む。内閣委で経済安保・循環型社会の政策提言も積極的。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E9%BB%92%E7%94%B0%E5%BE%81%E6%A8%B9",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P160", name:"小池 正昭", reading:"こいけ まさあき", party:"自民党", role:"衆議院議員",
@@ -1910,13 +1910,13 @@ const POLITICIANS = [
   {
     id:"P174", name:"小林 修平", reading:"こばやし しゅうへい", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"地域に根差した草の根活動と、過疎地域の福祉・公共インフラの維持への熱意。", minus:"新任等のため独自の立法実績、国会を先導したマクロ成長の提示データが不足。",
-    comment:"地域福祉や生活者目線の支援を掲げる。独自の政策成果を多角評価するための公的データが現在限定的であるため、本評価は諸派の傾向を踏まえた暫定の推定配置である。",
-    links:{hp:"https://www.google.com/search?q=%E5%B0%8F%E6%9E%97%20%E4%BF%AE%E5%B9%B3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/eunefO7M9KuAfta8r",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"ドワンゴ・DeNA・ABEJAでエンジニア。チームみらいの選挙システム基盤を構築。", minus:"政治経験なし。エンジニア実績が政策立案にどう繋がるか未知数。",
+    comment:"「永田町のソフトウェアエンジニア」。デジタル政策・規制改革に期待。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9E%97%E4%BF%AE%E5%B9%B3",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P175", name:"小林 鷹之", reading:"こばやし たかゆき", party:"自民党", role:"衆議院議員（千葉2区）、元初代経済安全保障担当大臣、元内閣府特命担当大臣（科学技術・宇宙政策）、元防衛大臣政務官、大蔵省・財務省出身",
@@ -2239,14 +2239,14 @@ const POLITICIANS = [
   },
   {
     id:"P204", name:"島村 かおる", reading:"しまむら かおる", party:"参政党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・中国", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全、化学肥料への過度な依存脱却、地産地消の重要性への熱意。", minus:"独自の大型立法、国政を左右する具体的な実績データが未蓄積な点。",
-    comment:"参政党の基本方針を支持。無農薬野菜の普及や国産給食導入、独自の教育改革を叫ぶ。公開データ不足から党の傾向をベースにした推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%B3%B6%E6%9D%91%20%E3%81%8B%E3%81%8A%E3%82%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/ihs4f0nOuBWd7JbNC",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・中国", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"介護福祉士・ケアマネ資格保有。介護付き高齢者住宅施設長として福祉現場を経験。", minus:"政治経験なし。政策立案能力は未知数。",
+    comment:"介護・福祉現場の経験は貴重。国政での活動実績はこれから。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B3%B6%E6%9D%91%E8%96%AB",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P205", name:"下村 博文", reading:"しもむら はくぶん", party:"自民党", role:"衆議院議員",
@@ -3087,13 +3087,13 @@ const POLITICIANS = [
   {
     id:"P281", name:"中川 宏昌", reading:"なかがわ ひろまさ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の負担軽減、手取りを増やす各種経済改革への強いコミット姿勢。", minus:"独自の大型立法を直接可決に導いた累積実績データが未蓄積である点。",
-    comment:"国民民主党の議員。基礎控除引き上げによる減税や少子化対策、ガソリン減税（トリガー条項の凍結解除）を叫ぶ。活動情報が限られるため、本評価は党の傾向から推定配置した。",
-    links:{hp:"https://www.google.com/search?q=%E4%B8%AD%E5%B7%9D%20%E5%AE%8F%E6%98%8C%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/RmvNcamPnTjPR9S66",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"長野銀行18年・長野県議3期。防災庁設置法審議で積極質問。民間ボランティア登録制度を提言。", minus:"国政1期目。",
+    comment:"防災・減災の実務的提言が特徴。金融と地方行政の知見を融合した政策立案。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B7%9D%E5%AE%8F%E6%98%8C",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P282", name:"中川 康洋", reading:"なかがわ やすひろ", party:"中道改革連合", role:"衆議院議員（元文部科学大臣政務官）",
@@ -3306,14 +3306,14 @@ const POLITICIANS = [
   },
   {
     id:"P301", name:"なかや めぐ", reading:"なかや めぐ", party:"参政党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全や有機農業支援、地域密着の教育環境整備への熱意。", minus:"独自の大型立法や、国会全体を先導した累積実績データが未蓄積な点。",
-    comment:"参政党所属。化学肥料依存からの脱却や食育の推進を掲げる。単独での具体的な政策成果を多角評価するための客観情報が現時点で限定的なため、推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E3%81%AA%E3%81%8B%E3%82%84%20%E3%82%81%E3%81%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/nokGer2SPsucS8HGp",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"食と医療の安全性を訴える草の根活動。ママ目線の政治参加を推進。", minus:"政治経験なし。科学的根拠に基づかない主張の懸念あり。",
+    comment:"子育て世代の声を届ける活動が支持基盤。政策立案力は未知数。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P302", name:"中山 展宏", reading:"なかやま のりひろ", party:"自民党", role:"衆議院議員",
@@ -3373,13 +3373,13 @@ const POLITICIANS = [
   {
     id:"P307", name:"西岡 義高", reading:"にしおか よしたか", party:"国民民主党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の負担軽減策、手取りを増やす各種経済改革への強い訴求力。", minus:"独自の大型立法を直接可決に導いた累積実績データが未蓄積である点。",
-    comment:"国民民主党所属の議員。基礎控除引き上げによる減税や少子化対策、ガソリン減税の必要性を訴える。活動情報が限られるため、本評価は党の傾向から推定配置した。",
-    links:{hp:"https://www.google.com/search?q=%E8%A5%BF%E5%B2%A1%20%E7%BE%A9%E9%AB%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"西岡義高 -https://share.google/Be9HcsE7FJ9yyvzZR",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:60, rank:"B-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地方制度調査会事務局長として「特別市」法案化を主導。高専卒業生の学位授与実現を推進。", minus:"初当選で国政実績の積み上げはこれから。",
+    comment:"インテリジェンスWT座長経験あり。地方自治制度・教育政策に注力する実務派若手。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P308", name:"西園 勝秀", reading:"にしぞの かつひで", party:"中道改革連合", role:"衆議院議員",
@@ -3592,14 +3592,14 @@ const POLITICIANS = [
   },
   {
     id:"P327", name:"野村 美穂", reading:"のむら みほ", party:"国民民主党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の負担軽減、手取りを増やす各種税制改革や少子化対策への強い意欲。", minus:"独自の大型立法を直接可決に導いた国政レベルの実績データの未蓄積。",
-    comment:"国民民主党に所属。所得税の基礎控除引き上げによる減税や「年収の壁」打破、ガソリン減税（トリガー条項の凍結解除）を支持。累積活動情報が限られるため、党の基本傾向をベースとした推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E9%87%8E%E6%9D%91%20%E7%BE%8E%E7%A9%82%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/gxrW2h9cdEMLNqumV",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"女", age:null,
+    total:55, rank:"C+",
+    axes:[3,2,2,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"岐阜県議5期。性暴力被害者支援センター設立主導。SDGs推進課設置に貢献。", minus:"国政初当選で立法実績はこれから。",
+    comment:"男女共同参画推進本部事務局長。子育て現役世代目線の政策を推進。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E9%87%8E%E6%9D%91%E7%BE%8E%E7%A9%82",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P328", name:"萩生田 光一", reading:"はぎうだ こういち", party:"自民党", role:"衆議院議員（東京24区）、元経済産業大臣・文部科学大臣・内閣官房長官補佐・自民党政務調査会長",
@@ -3615,13 +3615,13 @@ const POLITICIANS = [
   {
     id:"P329", name:"萩原 佳", reading:"はぎはら けい", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"大阪9", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"日本維新の会の方針を支持した徹底的な行財政改革、身を切る改革への賛同姿勢。", minus:"独自の大型立法や、国会での際立った主導権を示す累積公開データの不足。",
-    comment:"議員歳費の削減や旧文通費（調査研究広報滞在費）の領収書添付による使途完全義務化、教育無償化の推進を訴える。固有の累積国会活動データが限られるため、党の基本方針より推定配置した。",
-    links:{hp:"https://www.google.com/search?q=%E8%90%A9%E5%8E%9F%20%E4%BD%B3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/1Kdzheydq4wiG6qpE",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:55, rank:"C+",
+    axes:[3,3,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"公認会計士・税理士。税制改革への専門的提言。現代家族形態に合わせた法案提出。", minus:"具体的な立法実現の詳細が少ない。",
+    comment:"財務・税制の専門家として国会論戦に貢献。大阪9区で活動。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P330", name:"橋本 岳", reading:"はしもと がく", party:"自民党", role:"衆議院議員",
@@ -3725,13 +3725,13 @@ const POLITICIANS = [
   {
     id:"P339", name:"林 拓海", reading:"はやし たくみ", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"通信制高校職員での実務経験を活かした不登校対策や教育格差是正への熱意。", minus:"独自の大型立法や、国会全体を先導する多角的な活動データが未蓄積である段階。",
-    comment:"新興会派「チームみらい」に所属する若手議員。制度の隙間に埋もれる弱者の声をかたちにすることを掲げる。公開データ不足から、本評価は会派方針をベースにした推定配置である。",
-    links:{hp:"https://www.google.com/search?q=%E6%9E%97%20%E6%8B%93%E6%B5%B7%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/pFVElDxGedb908kmr",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"通信制高校職員として不登校・教育格差に対応。28歳の若手。", minus:"政治経験なし。実績はほぼなし。",
+    comment:"教育現場の視点を政治に持ち込む。若さを活かした改革に期待。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9E%97%E6%8B%93%E6%B5%B7",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P340", name:"林 芳正", reading:"はやし よしまさ", party:"自民党", role:"総務大臣、元内閣官房長官・外務大臣・文部科学大臣・農林水産大臣・防衛大臣・経済財政担当大臣、衆議院議員（山口3区）",
@@ -3747,24 +3747,24 @@ const POLITICIANS = [
   {
     id:"P341", name:"原田 直樹", reading:"はらだ なおき", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
-    plus:"調査研究会社（シンクタンク）等での実務感覚、青年層育成への高い意欲。", minus:"新任等のため独自の主要立法を主導した累積実績データが未蓄積である点。",
-    comment:"中道改革連合に所属する若手。固有の際立った法案可決や行政成果を確認するための公的データが現時点で限定的であるため、所属政党の基本方針に基づく推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%8E%9F%E7%94%B0%20%E7%9B%B4%E6%A8%B9%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"原https://share.google/xlIq7mWiKUaznPGWz",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:52, rank:"D",
+    axes:[2,2,3,2,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"東大→北京大卒・東大＋ソウル大院修士。英中韓3か国語で外務委質疑。野村総研コンサルタント。", minus:"国政初当選35歳。立法実績はこれから。",
+    comment:"中道改革連合青年局長。国際外交の即戦力。現役子育て世代目線の社会保障改革も訴える。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%8E%9F%E7%94%B0%E7%9B%B4%E6%A8%B9_%28%E6%94%BF%E6%B2%BB%E5%AE%B6%29",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P342", name:"原山 大亮", reading:"はらやま だいすけ", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"日本維新の会の方針に沿った徹底的な行財政改革、身を切る改革への賛同姿勢。", minus:"独自の大型立法や、国会での際立った主導権を示す累積公開データの不足。",
-    comment:"国会議員歳費の削減や旧文通費の領収書添付による使途完全義務化、教育無償化の推進を訴える。固有の累積国会活動データが限られるため、党の基本方針より推定配置した。",
-    links:{hp:"https://www.google.com/search?q=%E5%8E%9F%E5%B1%B1%20%E5%A4%A7%E4%BA%AE%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/VsyZJ82e96N9nK89c",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:52, rank:"D",
+    axes:[3,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"橿原市議2期（議長就任・エアコン設置・議員定数削減主導）。奈良県議も歴任。", minus:"国政初当選で実績はこれから。",
+    comment:"地方での身を切る改革実績を国政へ。農林水産委理事・国対副委員長。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%8E%9F%E5%B1%B1%E5%A4%A7%E4%BA%AE",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P343", name:"東田 淳平", reading:"ひがしだ じゅんぺい", party:"自民党", role:"衆議院議員",
@@ -4484,24 +4484,24 @@ const POLITICIANS = [
   {
     id:"P408", name:"向山 好一", reading:"むこやま こういち", party:"国民民主党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の手取りを増やす経済改革や、所得税減税への強いコミット姿勢。", minus:"国政レベルでの主要な独自立法を直接可決に導いた実績データの未蓄積。",
-    comment:"国民民主党の方針を支持。基礎控除引き上げ等の税制是正を提唱する。詳細な実績データが不足しているため、党の傾向から推定した配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%90%91%E5%B1%B1%20%E5%A5%BD%E4%B8%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/i34x9BSR3YVChfZov",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:60, rank:"B-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"神戸市議2期・兵庫県議2期。国対委員長代理。尖閣3度視察等、安保・拉致問題に積極的。", minus:"国土交通・環境委中心で経済安保等の新領域は課題。",
+    comment:"拉致問題対策本部長代理。地域密着型ベテランで党内調整力あり。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%90%91%E5%B1%B1%E5%A5%BD%E4%B8%80",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P409", name:"武藤 かず子", reading:"むとう かずこ", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域密着型の福祉支援や、生活者目線でのインフラ整備への取り組み。", minus:"独自法案の主導や、国会全体をリードする具体的な議会活動データが未蓄積。",
-    comment:"会派の方針に従い地域課題に取り組むが、定量評価に十分な公開実績が限られるため推定配置。",
-    links:{hp:"https://www.google.com/search?q=%E6%AD%A6%E8%97%A4%20%E3%81%8B%E3%81%9A%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/nLvMYVxdj5Kku2eqd",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"IT企業でPM18年。チームみらい組織活動本部長として全国組織づくりを牽引。", minus:"国政初当選。政策立案実績は未知数。",
+    comment:"組織構築の実務家。デジタル化・行政改革に注力する。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P410", name:"武藤 容治", reading:"むとう ようじ", party:"自民党", role:"衆議院議員",
@@ -4561,13 +4561,13 @@ const POLITICIANS = [
   {
     id:"P415", name:"村上 智信", reading:"むらかみ とものぶ", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"身を切る改革や旧文通費の使途完全公開の徹底推進。", minus:"国政レベルでの独自法案を先導した主要実績データが未蓄積。",
-    comment:"日本維新の会所属。行財政改革を掲げるが、具体的な国会審議実績を多角評価するための公的データが現在限定的であるため、党方針からの推定を含む。",
-    links:{hp:"https://www.google.com/search?q=%E6%9D%91%E4%B8%8A%20%E6%99%BA%E4%BF%A1%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/bK2e6QtNdZoo9Osbu",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"経産省21年（医療福祉機器産業室長・IT政策）。青森・消費者庁等への出向経験豊富。", minus:"比例復活2期目で地元地盤は薄い。",
+    comment:"行政経験を活かした実務型議員。空き家問題・地域活性化・IT政策に注力。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9D%91%E4%B8%8A%E6%99%BA%E4%BF%A1",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P416", name:"村木 汀", reading:"むらき なぎさ", party:"自民党", role:"衆議院議員",
@@ -4605,13 +4605,13 @@ const POLITICIANS = [
   {
     id:"P419", name:"森 ようすけ", reading:"もり ようすけ", party:"国民民主党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の負担軽減、手取りを増やす各種経済改革への強い訴求力。", minus:"独自の大型立法を直接可決に導いた国政レベルの実績データの未蓄積。",
-    comment:"国民民主党の経済政策を支持する。所得税減税や「年収の壁」打破を提唱。活動実績データが不足しており党方針ベースの推定。",
-    links:{hp:"https://www.google.com/search?q=%E6%A3%AE%20%E3%82%88%E3%81%86%E3%81%99%E3%81%91%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/8GwZSS3WLvOz0oZ9N",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"環境省官僚→企業経営者。年少扶養控除復活法案提出。初当選から30回超の国会質疑。", minus:"1期目で政策実現はこれから。",
+    comment:"社会保障調査会事務局長。子育て世代目線で減税・社会保険料軽減を訴える実務派。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%A3%AE%E6%B4%8B%E4%BB%8B_%28%E6%94%BF%E6%B2%BB%E5%AE%B6%29",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P420", name:"森下 千里", reading:"もりした ちさと", party:"自民党", role:"衆議院議員",
@@ -4737,13 +4737,13 @@ const POLITICIANS = [
   {
     id:"P431", name:"山崎 正恭", reading:"やまさき まさやす", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・四国", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域コミュニティ支援や、防災インフラへの地道な関与。", minus:"国政レベルでの主要な立法主導や、多角的な活動データが未蓄積。",
-    comment:"中道会派所属の若手。具体的な政策的成果を定量評価するための情報が現時点で限定的であるため、推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E5%B4%8E%20%E6%AD%A3%E6%81%AD%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/JiPXk0lv4NF9SMNCF",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:55, rank:"C+",
+    axes:[3,2,2,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"中学教員24年。COCOLOプランに自身の主張を反映。不登校対策・デジタル教科書負担軽減を実現。", minus:"国政での実績は比例のみの経験。",
+    comment:"教育現場出身者としての具体的な政策実績。チーム学校・女性デジタル人材育成も推進。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P432", name:"山下 史守朗", reading:"やました しずお", party:"自民党", role:"衆議院議員",
@@ -4769,14 +4769,14 @@ const POLITICIANS = [
   },
   {
     id:"P434", name:"山田 瑛理", reading:"やまだ えり", party:"チームみらい", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"若手議員としての機動力や、生活者の視点に立った地域福祉への関心。", minus:"国政レベルでの主要な立法実績データが未蓄積な段階。",
-    comment:"所属会派の基本方針に従い、地域社会の課題解決を掲げる。公開データが不足しているため推定配置。",
-    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E7%94%B0%20%E7%91%9B%E7%90%86%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/hZV5vOJ9xR8lVSWdu",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"ソニーミュージック12年。川崎市議2期（文教・環境委副委員長）。女性キャリア支援を積極的に訴える。", minus:"国政初当選。",
+    comment:"エンタメ業界と地方議会の経験を融合。女性活躍・コンテンツ産業振興に注力。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P435", name:"山田 賢司", reading:"やまだ けんじ", party:"自民党", role:"衆議院議員",
@@ -4813,14 +4813,14 @@ const POLITICIANS = [
   },
   {
     id:"P438", name:"山本 香苗", reading:"やまもと かなえ", party:"中道改革連合", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地方行政の知見と、現場主義に基づいた地域課題の解決能力。", minus:"独自の大型立法実績や国会全体をリードする多角的な活動データが未蓄積。",
-    comment:"維新所属。具体的な政策成果を定量評価するための情報が限定的であるため、党の基本方針に基づく推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E9%A6%99%E8%8B%97%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"山本香苗 -https://share.google/9hzxM9OGFgt2LUBED",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"女", age:null,
+    total:62, rank:"B-",
+    axes:[3,3,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"外務省キャリア（トルコ語・カザフ語等4か国語）。厚労副大臣。困難女性支援法・造血幹細胞法など議員立法16本以上。", minus:"公明党から中道改革連合への移行で求心力に変化。",
+    comment:"社会保障・女性支援・再生医療の立法実績が際立つ。中道改革連合代表代行。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B1%B1%E6%9C%AC%E9%A6%99%E8%8B%97",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P439", name:"山本 左近", reading:"やまもと さこん", party:"自民党", role:"衆議院議員",
@@ -4880,13 +4880,13 @@ const POLITICIANS = [
   {
     id:"P444", name:"横田 光弘", reading:"よこた みつひろ", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全、有機農業支援への熱意。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"参政党の基本方針を支持。無農薬野菜や教育改革を訴えるが、定量的な公的データ不足から推定配置。",
-    links:{hp:"https://www.google.com/search?q=%E6%A8%AA%E7%94%B0%20%E5%85%89%E5%BC%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/Oj9HOuu0l5nf0QHLB",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:55, rank:"C+",
+    axes:[2,3,3,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"松下政経塾2期生。神奈川県議2期。IT会社代表。外務委で中国の南極資源問題を提起。", minus:"政経塾後の長いキャリアを経て国政は初当選。",
+    comment:"神奈川維新幹事長。IT経営の実務経験を安保・デジタル政策に活かす。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%A8%AA%E7%94%B0%E5%85%89%E5%BC%98",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P445", name:"吉川 里奈", reading:"よしかわ りな", party:"参政党", role:"参政党副代表、衆議院議員（比例東京ブロック）、衆議院法務委員、元看護師",
@@ -4968,13 +4968,13 @@ const POLITICIANS = [
   {
     id:"P452", name:"若狹 清史", reading:"わかさ きよし", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域密着型の活動や、インフラ整備等の地道な貢献。", minus:"独自の大型立法や国会全体を先導した具体的な実績データが未蓄積。",
-    comment:"自民党所属。公開情報が極めて限定的なため、党の基本方針に基づく推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E8%8B%A5%E7%8B%B9%20%E6%B8%85%E5%8F%B2%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/0A28x5R2K1sPGiZXB",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"辻・本郷グループ役員（地方創生統括）。長野県産業振興機構登録専門家として中小企業支援。", minus:"政治経験は秘書・支部長のみ。国政初当選。",
+    comment:"地方創生コンサルタントとしての実務経験が強み。長野1区支部長。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P453", name:"若林 健太", reading:"わかばやし けんた", party:"自民党", role:"衆議院議員",
@@ -5055,14 +5055,14 @@ const POLITICIANS = [
   },
   {
     id:"P460", name:"渡辺 藍理", reading:"わたなべ あいり", party:"参政党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全や教育環境の抜本的見直しへの熱意。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"参政党の基本方針を支持。無農薬農業の推進等を主張。公開情報が限定的なため推定配置。",
-    links:{hp:"https://www.google.com/search?q=%E6%B8%A1%E8%BE%BA%20%E8%97%8D%E7%90%86%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/hTRoEODwCYszvvlNE",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"東邦大理学部卒。学習塾経営・フィットネス指導の実務経験。動物愛護ボランティア継続。", minus:"政治経験なし。参政党の反科学的スタンスとの整合性に課題。",
+    comment:"文科委委員として教育政策に参画。初当選で実績はこれから。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E8%97%8D%E7%90%86",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P461", name:"渡辺 勝幸", reading:"わたなべ かつゆき", party:"自民党", role:"衆議院議員",
@@ -5100,13 +5100,13 @@ const POLITICIANS = [
   {
     id:"P464", name:"渡辺 創", reading:"わたなべ そう", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"宮崎1", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域コミュニティへの深い関与や、過疎地域のインフラ整備への熱意。", minus:"国政レベルでの独自法案を先導した累積実績データが未蓄積。",
-    comment:"自民党所属。具体的な政策的成果を定量評価するための公開データが現時点で限定的であるため、推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E6%B8%A1%E8%BE%BA%20%E5%89%B5%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/xpyTA3hCMEbanoeUJ",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"毎日新聞政治部記者→宮崎県議3期。農林水産委で「地域計画」課題に大臣答弁を引き出す。保守王国宮崎で小選挙区3連覇。", minus:"農業・地方政策以外の分野は手薄。",
+    comment:"野党系ながら宮崎1区を守り続ける。農業政策・一次産業支援に精通。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%B8%A1%E8%BE%BA%E5%89%B5",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P465", name:"渡辺 博道", reading:"わたなべ ひろみち", party:"自民党", role:"衆議院議員",
@@ -5232,13 +5232,13 @@ const POLITICIANS = [
   {
     id:"P476", name:"安達 悠司", reading:"あだち ゆうじ", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全や教育改革への熱意。国民の健康保護を掲げる。", minus:"国会レベルでの独自法案を先導した実績データが未蓄積。",
-    comment:"参政党の基本方針を支持。教育や農業分野を重視するが、公開の実績データが不足。",
-    links:{hp:"https://www.google.com/search?q=%E5%AE%89%E9%81%94%20%E6%82%A0%E5%8F%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/6mrGmnJEOe4Bw4frJ",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:55, rank:"C+",
+    axes:[2,2,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"京大法卒の弁護士。法務委・憲法審査会幹事。「創憲」活動で市民の憲法議論を促進。", minus:"参政党の排他的政策（移民×・マイナ×）が制約。",
+    comment:"法律専門家の視点から憲法改正を論じる。高校生クイズ全国準優勝の経歴。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P477", name:"有村 治子", reading:"ありむら はるこ", party:"自民党", role:"参議院議員",
@@ -5330,14 +5330,14 @@ const POLITICIANS = [
   },
   {
     id:"P485", name:"石井 めぐみ", reading:"いしい めぐみ", party:"日本維新の会", role:"参議院議員",
-    chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域密着型の福祉活動や、生活者目線での活動。", minus:"国政レベルでの独自法案を先導した累積実績データが未蓄積。",
-    comment:"維新所属。具体的な政策的成果を定量評価するための情報が現時点で限定的であるため、推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E7%9F%B3%E4%BA%95%20%E3%82%81%E3%81%90%E3%81%BF%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/2iDlIgJViSq06IGrC",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
+    total:52, rank:"D",
+    axes:[3,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"取手市議5期の地方自治経験。選挙対策委員長代理として党の組織強化に貢献。", minus:"国政1期目。美容業界出身で政策専門性は限定的。",
+    comment:"地方自治の経験を国政に活かす。女性の視点を交えた政策活動を続ける。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E7%9F%B3%E4%BA%95%E3%82%81%E3%81%90%E3%81%BF_%28%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%AE%E6%94%BF%E6%B2%BB%E5%AE%B6%29",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P486", name:"[根本 めぐみ]", reading:"", party:"無所属", role:"参議院議員",
@@ -5474,13 +5474,13 @@ const POLITICIANS = [
   {
     id:"P498", name:"伊藤 辰夫", reading:"いとう たつお", party:"国民民主党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域密着型の草の根活動。", minus:"国政レベルでの主要な立法実績や審議データが未蓄積。",
-    comment:"詳細な国政実績が確認できないため評価不能。",
-    links:{hp:"https://www.google.com/search?q=%E4%BC%8A%E8%97%A4%20%E8%BE%B0%E5%A4%AB%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%BE%B0%E5%A4%AB",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"愛知県議5期18年（議会運営委員長・幹事長・監査委員歴任）。名古屋港管理組合要職。", minus:"国政1期目で具体的な政策実績はこれから。",
+    comment:"中小企業・地場産業視点の経済政策を推進。防災・環境委員会理事。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%BE%B0%E5%A4%AB",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P499", name:"井上 義行", reading:"いのうえ よしゆき", party:"自民党", role:"参議院議員",
@@ -5793,13 +5793,13 @@ const POLITICIANS = [
   {
     id:"P527", name:"岡崎 太", reading:"おかざき ふとし", party:"日本維新の会", role:"参議院議員",
     chamber:"参議院", district:"大阪", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域産業の振興や地場経済への関心。", minus:"独自の大型立法実績データが未蓄積。",
-    comment:"現時点で定量評価に十分な国会審議実績等が確認できないため情報不足。",
-    links:{hp:"https://www.google.com/search?q=%E5%B2%A1%E5%B4%8E%20%E5%A4%AA%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B4%8E%E5%A4%AA",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"大阪市議4期14年（吉村同期）。大阪市債5兆→2兆台に半減。大阪メトロ民営化に関与。", minus:"国政1期目。地方議員として実績を積んだが国政でのリーダーシップはこれから。",
+    comment:"大阪維新政調会長・総務会長歴任。財政改革の実績が際立つ。社保改革に注力。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B4%8E%E5%A4%AA",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P528", name:"岡田 直樹", reading:"おかだ なおき", party:"自民党", role:"参議院議員",
@@ -5880,14 +5880,14 @@ const POLITICIANS = [
   },
   {
     id:"P535", name:"尾辻 朋実", reading:"おつじ ともみ", party:"チームみらい", role:"参議院議員",
-    chamber:"参議院", district:"鹿児島", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域社会の課題解決への関心。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"情報不足のため評価不能。",
-    links:{hp:"https://www.google.com/search?q=%E5%B0%BE%E8%BE%BB%20%E6%9C%8B%E5%AE%9F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%BE%BB%E6%9C%8B%E5%AE%9F#:~:text=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E9%B9%BF%E5%85%90%E5%B3%B6%E5%B8%82%E7%94%9F%E3%81%BE%E3%82%8C,%E8%AD%B0%E9%95%B7%E7%A7%98%E6%9B%B8%E3%81%A8%E3%81%97%E3%81%A6%E5%8B%A4%E5%8B%99%E3%81%97%E3%81%9F%E3%80%82",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"参議院", district:"鹿児島", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"鹿児島県選出「史上初の女性国会議員」。三井物産→法律事務所→議長秘書の多彩な経歴。自民元職を破り約30万票。", minus:"国政1期目。",
+    comment:"保守王国鹿児島での歴史的勝利。環境委・消費者問題特別委所属。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%BE%E8%BE%BB%E6%9C%8B%E5%AE%9F",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P536", name:"[末原 朋実]", reading:"", party:"無所属", role:"参議院議員",
@@ -5925,13 +5925,13 @@ const POLITICIANS = [
   {
     id:"P539", name:"かごしま 彰宏", reading:"かごしま あきひろ", party:"国民民主党", role:"参議院議員",
     chamber:"参議院", district:"神奈川", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域住民との地道な連携。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"現時点で定量評価に十分な国会審議実績等が確認できないため情報不足。",
-    links:{hp:"https://www.google.com/search?q=%E3%81%8B%E3%81%94%E3%81%97%E3%81%BE%20%E5%BD%B0%E5%AE%8F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E7%B1%A0%E5%B3%B6%E5%BD%B0%E5%AE%8F",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"B-",
+    axes:[3,3,2,3,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"農水省キャリア→OECD政策アナリスト→WWF。農林水産委員会理事として農業政策を即戦力で担う。", minus:"国政1期目。",
+    comment:"コメ価格高騰など農業・食料安保の専門家。国際経験豊富な異色の経歴。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P540", name:"[籠島 彰宏]", reading:"", party:"無所属", role:"参議院議員",
@@ -6343,13 +6343,13 @@ const POLITICIANS = [
   {
     id:"P577", name:"後藤 翔太", reading:"ごとう しょうた", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全、教育の抜本改革への熱意。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"参政党の基本方針を支持。定量評価に十分な実績データが不足。",
-    links:{hp:"https://www.google.com/search?q=%E5%BE%8C%E8%97%A4%20%E7%BF%94%E5%A4%AA%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%BE%8C%E8%97%A4%E7%BF%94%E5%A4%AA",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"ラグビー日本代表8キャップ。早稲田・追手門女子を日本一に導く指導力。識学コンサルタント。", minus:"政治経験なし。スポーツ組織論の経験が政策立案にどう繋がるか不明。",
+    comment:"文教科学委員。スポーツ・教育・組織改革分野での発信に期待。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%BE%8C%E8%97%A4%E7%BF%94%E5%A4%AA",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P578", name:"後藤 斎", reading:"ごとう ひとし", party:"国民民主党", role:"参議院議員",
@@ -6397,14 +6397,14 @@ const POLITICIANS = [
   },
   {
     id:"P582", name:"小林 さやか", reading:"こばやし さやか", party:"国民民主党", role:"参議院議員",
-    chamber:"参議院", district:"千葉", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域での地道な活動。", minus:"具体的な立法実績データが未蓄積。",
-    comment:"定量評価に十分な公開情報がない。",
-    links:{hp:"https://www.google.com/search?q=%E5%B0%8F%E6%9E%97%20%E3%81%95%E3%82%84%E3%81%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%9E%97%E3%81%95%E3%82%84%E3%81%8B_(%E6%94%BF%E6%B2%BB%E5%AE%B6)",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    chamber:"参議院", district:"千葉", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"「ビリギャル」モデル。コロンビア大学院で認知科学修士取得。教育・リスキリングの高い発信力。", minus:"政治経験なし。政策立案・議員実務力は未知数。",
+    comment:"知名度と教育への情熱は本物。政治家としての実力はこれから問われる。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P583", name:"[中山 さやか]", reading:"", party:"無所属", role:"参議院議員",
@@ -6475,13 +6475,13 @@ const POLITICIANS = [
   {
     id:"P589", name:"櫻井 祥子", reading:"さくらい しょうこ", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"茨城", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域での草の根活動。", minus:"国政での具体的立法実績が未蓄積。",
-    comment:"評価に足る国会活動情報が不足しているため、調査不能。",
-    links:{hp:"https://www.google.com/search?q=%E6%AB%BB%E4%BA%95%20%E7%A5%A5%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E6%AB%BB%E4%BA%95%E7%A5%A5%E5%AD%90",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"東北大理学部卒のITエンジニア。ITベンチャー共同創業。IT教育事業を法人化。", minus:"政治経験なし。参政党のマイナ×・再エネ×の方針との矛盾がある。",
+    comment:"経産委・決算委所属。IT専門性を経済安保・デジタル政策に活かす。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%AB%BB%E4%BA%95%E7%A5%A5%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P590", name:"櫻井 充", reading:"さくらい みつる", party:"自民党", role:"参議院議員",
@@ -6552,13 +6552,13 @@ const POLITICIANS = [
   {
     id:"P596", name:"塩入 清香", reading:"しおいり さやか", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"東京", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"食の安全、教育への関心。", minus:"国政での独自立法実績が未蓄積。",
-    comment:"参政党所属。公開の定量実績が不足しており評価不能。",
-    links:{hp:"https://www.google.com/search?q=%E5%A1%A9%E5%85%A5%20%E6%B8%85%E9%A6%99%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E6%B8%85%E9%A6%99",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"JAZZシンガー→保守系メディアキャスターとして培った発信力。東京選挙区2位（約67万票）。", minus:"政治経験なし。消費税廃止等の非現実的な財政論。",
+    comment:"知名度は高いが政策専門性は不明。財政金融委・予算委・憲法審査会所属。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E6%B8%85%E9%A6%99",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P597", name:"塩村 あやか", reading:"しおむら あやか", party:"立憲民主党", role:"参議院議員",
@@ -6717,13 +6717,13 @@ const POLITICIANS = [
   {
     id:"P611", name:"杉本 純子", reading:"すぎもと じゅんこ", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"愛知", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"教育改革や食の安全への熱意。", minus:"国政での独自法案を先導した実績データが未蓄積。",
-    comment:"参政党所属。定量的な公的実績データが不足しており評価不能。",
-    links:{hp:"https://www.google.com/search?q=%E6%9D%89%E6%9C%AC%20%E7%B4%94%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E7%B4%94%E5%AD%90",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"夫婦で建築内装業を自営。25か国69都市の海外経験。大病克服後の食育への意識。", minus:"政治経験なし。具体的な政策実績は皆無。",
+    comment:"農林水産委・行政監視委所属。食の安全・農業振興を重視。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%9D%89%E6%9C%AC%E7%B4%94%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P612", name:"鈴木 大地", reading:"すずき だいち", party:"自民党", role:"参議院議員",
@@ -7168,13 +7168,13 @@ const POLITICIANS = [
   {
     id:"P652", name:"中田 優子", reading:"なかだ ゆうこ", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"福岡", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"食の安全や教育環境の抜本的見直しへの熱意。", minus:"独自の主要立法実績が未蓄積。",
-    comment:"参政党の基本方針を支持。定量評価に十分な実績データが不足。",
-    links:{hp:"https://www.google.com/search?q=%E4%B8%AD%E7%94%B0%20%E5%84%AA%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E7%94%B0%E5%84%AA%E5%AD%90",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:47, rank:"D",
+    axes:[2,2,2,2,3,2,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"×",nuclear:"○",expo:"△",ir:"△",mynumber:"×",birthrate:"◎",education:"○",regional:"○",china:"×",foreign:"○",food:"◎",semi:"○"},
+    plus:"生活者・母親目線で福岡選挙区から初当選。参政党の地方組織拡大に貢献。", minus:"政治経験なし。具体的な政策実績は皆無。",
+    comment:"参政党の一般市民代表型議員。活動実績はこれから積み上げる段階。",
+    links:{tw:"",hp:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P653", name:"中西 祐介", reading:"なかにし ゆうすけ", party:"自民党", role:"参議院議員",
