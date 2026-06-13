@@ -2603,13 +2603,13 @@ const POLITICIANS = [
   {
     id:"P237", name:"高見 康裕", reading:"たかみ やすひろ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"島根2", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地方議会（島根県議）出身。法務政務官等を経験。過疎地医療やインフラ整備への注力。", minus:"若手議員であり、国会を先導する独自の際立った法案可決実績はこれからの段階。",
-    comment:"法務大臣政務官などを経験し再犯防止対策等に関与。地元の災害復旧や過疎化対策に尽力しているが、多面的な指標を定量評価するための十分な国会実績データがまだ不足しているため、党方針に基づく推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E9%AB%98%E8%A6%8B%20%E5%BA%B7%E8%A3%95%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/Hos6HJIe0awQnc7QH",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:65, rank:"C",
+    axes:[3, 3, 4, 3, 3, 4, 3, 3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"元海上自衛官の知見を活かし防衛大臣補佐官・法務政務官・国土交通政務官を歴任。多様なキャリアで幅広い行政分野に貢献。", minus:"当選回数が少なく独自の立法実績は限定的。島根2区の地域課題に対する国政レベルでの具体的成果の発信が不足。",
+    comment:"海上自衛官・新聞記者・島根県議を経て国政入り。防衛・法務・国交の3分野で政府要職を歴任し行政経験は豊富。安全保障分野の専門性が強みだが、国会議員としての独自の政策立案実績はこれから。",
+    links:{tw:"https://x.com/TAKAMI_yasuhiro",hp:"https://takami-yasuhiro.com/",wiki:"https://ja.wikipedia.org/wiki/%E9%AB%98%E8%A6%8B%E5%BA%B7%E8%A3%95",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P238", name:"高見 亮", reading:"たかみ りょう", party:"日本維新の会", role:"衆議院議員",
@@ -3285,13 +3285,13 @@ const POLITICIANS = [
   {
     id:"P299", name:"中村 はやと", reading:"なかむら はやと", party:"無所属", role:"衆議院議員",
     chamber:"衆議院", district:"茨城7", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"現役世代の手取りを増やす各種減税、所得税基礎控除枠拡大への強い意欲。", minus:"国政レベルにおける主要な独自立法を直接可決に導いた実績データの未蓄積。",
-    comment:"国民民主党所属の議員。「103万円の壁」の打破やガソリン減税、現役世代の負担軽減を叫ぶ。固有の累積活動情報が限られるため、本評価は党の基本傾向をベースとした推定配置であることを明記する。",
-    links:{hp:"https://www.google.com/search?q=%E4%B8%AD%E6%9D%91%20%E3%81%AF%E3%82%84%E3%81%A8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/o3jzcJfyOldIemGVI",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    total:57, rank:"D",
+    axes:[3, 3, 3, 2, 3, 3, 3, 3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"無所属ながら保守強固な茨城7区で元文科相らを連続撃破。是々非々を掲げ高市早苗氏への首相指名投票など党に縛られない独自判断を示す。", minus:"父・中村喜四郎氏の地盤継承という側面があり、独自の政策立案・国政実績の構築はこれから。2期生として存在感の確立が課題。",
+    comment:"「無敗の男」中村喜四郎元衆院議長の後継として茨城7区を引き継ぎ2連勝。野党系無所属の立場で保守地盤を維持しつつ、首相指名では高市氏に投票するなど柔軟な政治姿勢を見せる。環境委員として活動しているが具体的な政策成果はこれから。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%9D%91%E5%8B%87%E5%A4%AA_(%E6%94%BF%E6%B2%BB%E5%AE%B6)",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P300", name:"中村 裕之", reading:"なかむら ひろゆき", party:"自民党", role:"衆議院議員",
@@ -3658,14 +3658,14 @@ const POLITICIANS = [
   },
   {
     id:"P333", name:"畑野 君枝", reading:"はたの きみえ", party:"日本共産党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
+    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
+    total:55, rank:"D",
+    axes:[4, 2, 1, 3, 3, 2, 4, 3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"×",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"×",food:"◎",semi:"×"},
-    plus:"生活者目線に立った非正規雇用の是正や福祉拡充への高いコミット姿勢。", minus:"国政レベルを先導する独自の大型立法や、多角的な議会活動データが不足。",
-    comment:"日本共産党所属の議員。消費税減税、最低賃金引き上げ、学校教育の完全無償化を主張する。固有の多面的な国会審議実績を定量評価するための公的データが現在限定的である。",
-    links:{hp:"https://www.google.com/search?q=%E7%95%91%E9%87%8E%20%E5%90%9B%E6%9E%9D%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://share.google/mhIRk0i49eFg2qVbt",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
+    plus:"元中学校教諭の専門性を活かし35人学級実現の議論を主導。国立大学運営費交付金12年ぶりの削減ストップに貢献するなど教育分野で具体的成果あり。", minus:"安保法制・改憲への強硬反対姿勢が安全保障政策の実質的議論を阻む。共産党の党是が国益全般の政策バランスを制約している。",
+    comment:"中学校教諭から政界入りし、教育分野での政策立案・実現は際立っている。35人学級の前進や高等教育費負担軽減に具体的成果を残す一方、安保反対・改憲阻止という党の基本方針が安全保障・経済安保分野の評価を大きく下げる。",
+    links:{tw:"",hp:"http://www.hatano-kimie.jp/",wiki:"https://ja.wikipedia.org/wiki/%E7%95%91%E9%87%8E%E5%90%9B%E6%9E%9D",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P334", name:"鳩山 二郎", reading:"はとやま じろう", party:"自民党", role:"衆議院議員",

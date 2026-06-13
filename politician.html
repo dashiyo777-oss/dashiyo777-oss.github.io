@@ -12,6 +12,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>統覧 TORAN — 政治家カルテ</title>
+<meta name="description" content="国会議員の政策・実績・倫理観を8軸で評価。統覧 TORANの政治家カルテ。">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="統覧 TORAN">
+<meta property="og:title" id="og-title" content="統覧 TORAN — 政治家カルテ">
+<meta property="og:description" id="og-desc" content="国会議員の政策・実績・倫理観を8軸で評価。統覧 TORANの政治家カルテ。">
+<meta property="og:url" id="og-url" content="https://dashiyo777-oss.github.io/politician.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" id="tw-title" content="統覧 TORAN — 政治家カルテ">
+<meta name="twitter:description" id="tw-desc" content="国会議員の政策・実績・倫理観を8軸で評価。統覧 TORANの政治家カルテ。">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   /* !! EXTRA STYLES FOR PROFILE PAGE v2 !! */
@@ -53,6 +62,14 @@
   .hero-links { display: flex; gap: 0.45rem; flex-wrap: wrap; }
   .hero-link { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.25rem 0.65rem; border: 1px solid var(--border); border-radius: 4px; font-size: 0.68rem; color: var(--gray); text-decoration: none; transition: all 0.2s; }
   .hero-link:hover { border-color: var(--blue); color: var(--blue); }
+  .share-x-btn {
+    display: inline-flex; align-items: center; gap: 0.35rem;
+    padding: 0.28rem 0.75rem; border-radius: 4px; font-size: 0.7rem;
+    background: #000; color: #fff; border: 1px solid #333;
+    text-decoration: none; font-family: 'Montserrat', sans-serif;
+    font-weight: 500; letter-spacing: 0.04em; transition: background 0.15s;
+  }
+  .share-x-btn:hover { background: #1a1a1a; }
   .hero-score-block { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
   .hero-score-label { font-size: 0.6rem; color: var(--gray); letter-spacing: 0.15em; text-transform: uppercase; }
   .hero-score-num { font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 600; line-height: 1; }
@@ -747,7 +764,14 @@ function buildRadar(axes, container) {
 
 /* ── BUILD PAGE ── */
 function buildPage(p) {
-  document.title = `${p.name} — 統覧 TORAN`;
+  // ── title / OGP 動的更新
+  const pageUrl = `https://dashiyo777-oss.github.io/politician.html?id=${p.id}`;
+  const ogTitle = `${p.name}（${p.party}）の評価: ${p.rank} / ${p.total}点 | 統覧 TORAN`;
+  const ogDesc  = `${p.name}は${p.party}の${p.role}。統覧TORANの総合評価: ${p.rank}（${p.total}点）。${p.comment ? p.comment.slice(0, 60) + '…' : ''}`;
+  document.title = `${p.name}（${p.party}）評価 ${p.rank} ${p.total}点 | 統覧 TORAN`;
+  ['og-title','tw-title'].forEach(id => { const el=document.getElementById(id); if(el) el.setAttribute('content', ogTitle); });
+  ['og-desc', 'tw-desc' ].forEach(id => { const el=document.getElementById(id); if(el) el.setAttribute('content', ogDesc); });
+  const ogUrl = document.getElementById('og-url'); if(ogUrl) ogUrl.setAttribute('content', pageUrl);
 
   const ev = EVIDENCE.filter(e => e.pid === p.id);
   const rc = rankColor(p.rank);
@@ -793,6 +817,14 @@ function buildPage(p) {
           <span class="meta-pill">${p.gender}${p.age != null ? ' ・ ' + p.age + '歳' : ''}</span>
         </div>
         <div class="hero-links">${linkPills}</div>
+        <div style="margin-top:0.7rem">
+          <a class="share-x-btn"
+             href="https://twitter.com/intent/tweet?text=${encodeURIComponent(p.name + '（' + p.party + '）の評価: ' + p.rank + ' / ' + p.total + '点 | 統覧 TORAN')}&url=${encodeURIComponent('https://dashiyo777-oss.github.io/politician.html?id=' + p.id)}"
+             target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Xでシェア
+          </a>
+        </div>
       </div>
       <div class="hero-score-block">
         <div class="hero-score-label">総合スコア</div>
