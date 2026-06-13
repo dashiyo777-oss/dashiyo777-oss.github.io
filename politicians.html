@@ -368,6 +368,18 @@
       font-size: 0.75rem;
       color: var(--gray);
       padding: 0 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .data-updated {
+      font-size: 0.72rem;
+      color: var(--gray);
+      opacity: 0.75;
+    }
+    .data-updated::before {
+      content: "🗓 最終更新: ";
     }
 
     /* ── TABLE SECTION ── */
@@ -724,7 +736,10 @@
     <button class="filter-toggle" id="btn-match" style="border-color:var(--gold);color:var(--gold)">🎯 マッチング</button>
     <button class="btn-guide" id="btn-guide">❓ 評価基準</button>
   </div>
-  <div class="result-count" id="result-count"></div>
+  <div class="result-count" id="result-count">
+    <span id="result-count-text"></span>
+    <span class="data-updated" id="data-updated"></span>
+  </div>
 </div>
 
 <!-- TABLE -->
@@ -1026,17 +1041,27 @@ function applySort() {
   });
 }
 
+// 最新のデータ更新日を計算（初回のみ）
+const _latestUpdated = (() => {
+  const dates = POLITICIANS
+    .filter(p => p.updated)
+    .map(p => p.updated)
+    .sort()
+    .reverse();
+  return dates[0] || '';
+})();
+
 function render() {
   const tbody = document.getElementById('table-body');
   const empty = document.getElementById('empty-state');
-  const count = document.getElementById('result-count');
 
   // Rank by total desc (original rank order)
   const sorted_by_total = [...POLITICIANS].sort((a,b) => b.total - a.total);
   const rankMap = {};
   sorted_by_total.forEach((p,i) => rankMap[p.id] = i+1);
 
-  count.textContent = `${filtered.length} 人 / 全 ${POLITICIANS.length} 人`;
+  document.getElementById('result-count-text').textContent = `${filtered.length} 人 / 全 ${POLITICIANS.length} 人`;
+  document.getElementById('data-updated').textContent = _latestUpdated;
 
   if(filtered.length === 0) {
     tbody.innerHTML = '';
