@@ -6332,7 +6332,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P583", name:"中山 さやか", reading:"なかやま さやか", party:"参政党", role:"参議院議員",
+    id:"P583", name:"塩入 清香", reading:"しおいり さやか", party:"参政党", role:"参議院議員",
     chamber:"参議院", district:"東京", status:"現職", gender:"女", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
