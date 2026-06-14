@@ -448,36 +448,36 @@ const POLITICIANS = [
   },
   {
     id:"P041", name:"井戸 まさえ", reading:"いど まさえ", party:"国民民主党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
-    total:50, rank:"D",
-    axes:[3,2,2,3,2,3,3,2],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"2期当選の議員経験。大臣・長官職としての行政経験（詳細は公式記録を参照）。委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。井戸 正枝（いど まさえ、旧姓は小形、勝又、1965年〈昭和40年〉12月13日 - ）は、日本の政治家。国民民主党所属の衆議院議員（2期）。",
-    links:{tw:"https://x.com/idomasae",hp:"https://idomasae.com/",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8%E6%AD%A3%E6%9E%9D",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    chamber:"衆議院", district:"比例・東京", status:"現職", gender:"女", age:null,
+    total:65, rank:"C",
+    axes:[4,3,3,3,4,3,3,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"無戸籍児問題を国会に持ち込んだ第一人者。民法・子育て支援分野での立法実績と市民運動経験が豊富。", minus:"民主党→立憲→国民民主と渡り歩き政治的軸足が定まりにくい。長い落選期間で国会実績が限定的。",
+    comment:"社会的弱者の権利回復に特化した実務家型議員。自身の体験から無戸籍問題に切り込んだ先駆性は高く評価されるが、政党遍歴と空白期間が安定感を欠かせる。",
+    links:{hp:"https://idomasae.com/",tw:"https://x.com/idomasae",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E6%88%B8%E6%AD%A3%E6%9E%9D",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P042", name:"伊藤 恵介", reading:"いとう けいすけ", party:"参政党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"×",foreign:"×",food:"◎",semi:"○"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。伊藤 恵介（いとう けいすけ、1978年〈昭和53年〉12月1日 - ）は、日本の政治家。参政党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E4%BC%8A%E8%97%A4%20%E6%81%B5%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E6%81%B5%E4%BB%8B",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"◎",expo:"△",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"◎",foreign:"○",food:"◎",semi:"○"},
+    plus:"自衛隊と介護福祉の二分野で現場経験を持つ実務家型。地域の声を丁寧に聞く姿勢と福祉政策への具体的提言が期待される。", minus:"国会実績はゼロで政策立案能力は未知数。参政党の反グローバリズム路線が外交・経済安保面で課題。",
+    comment:"陸上自衛隊出身でケアマネ・NPO法人代表という異色の経歴を持つ1期生。福祉・防衛双方の現場経験を国政に活かせるかが注目される。",
+    links:{hp:"https://www.google.com/search?q=%E4%BC%8A%E8%97%A4%20%E6%81%B5%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P043", name:"伊藤 聡", reading:"いとう さとし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。伊藤 聡（いとう さとし、1979年〈昭和54年〉1月24日 - ）は、日本の政治家、元外務官僚。自由民主党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E4%BC%8A%E8%97%A4%20%E8%81%A1%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%81%A1_(%E6%94%BF%E6%B2%BB%E5%AE%B6)",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[3,4,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"外務省安保担当・ハーバード大研究員と外交安保のキャリアが一貫。理系素養＋公共政策修士で政策立案の質が高い。", minus:"比例単独登載で選挙区地盤なし。国会実績はなく、政策発信の機会をどう活かすかが課題。",
+    comment:"外務省出身で安全保障・外交に特化した専門知識を持つ期待の新人。理系出身という珍しい背景とハーバードでの研究歴が政策の深さを予感させる。",
+    links:{hp:"https://www.google.com/search?q=%E4%BC%8A%E8%97%A4%20%E8%81%A1%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BC%8A%E8%97%A4%E8%81%A1_%28%E6%94%BF%E6%B2%BB%E5%AE%B6%29",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P044", name:"伊藤 信太郎", reading:"いとう しんたろう", party:"自民党", role:"衆議院議員",
@@ -548,13 +548,13 @@ const POLITICIANS = [
   {
     id:"P050", name:"稲葉 大輔", reading:"いなば だいすけ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"静岡8", status:"現職", gender:"男", age:null,
-    total:42, rank:"D",
-    axes:[2,2,2,3,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。稲葉 大輔（いなば だいすけ、1974年〈昭和49年〉3月25日 - ）は日本の政治家。自由民主党所属の衆議院議員（1期）。元浜松市議会議員（3期）。",
+    total:65, rank:"C",
+    axes:[3,3,4,3,4,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"浜松市議3期での地方行政実績と社会福祉法人理事の経験。財務金融・消費者問題委員会への配属も期待できる。", minus:"裏金問題で離党した前任者の後継候補という出自が地盤の正統性に影を落とす。国政実績は新人のためこれから。",
+    comment:"地方議員3期の実績を携えた新人。ホテル経営・福祉法人・地方行政と民間公共双方を経験するが、塩谷問題の後継候補という背景から有権者の信頼回復が最初の課題。",
     links:{hp:"https://www.google.com/search?q=%E7%A8%B2%E8%91%89%20%E5%A4%A7%E8%BC%94%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E7%A8%B2%E8%91%89%E5%A4%A7%E8%BC%94",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P051", name:"犬飼 明佳", reading:"いぬかい あきよし", party:"中道改革連合", role:"衆議院議員",
