@@ -6178,8 +6178,8 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P569", name:"郡山 りょう", reading:"こおりやま りょう", party:"立憲民主党", role:"参議院議員",
-    chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
+    id:"P569", name:"郡山 玲", reading:"こおりやま りょう", party:"立憲民主党", role:"参議院議員",
+    chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
     total:0, rank:"情報不足",
     axes:[0,0,0,0,0,0,0,0],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
@@ -6187,17 +6187,6 @@ const POLITICIANS = [
     comment:"情報不足のため定量評価困難。",
     links:{hp:"https://www.google.com/search?q=%E9%83%A1%E5%B1%B1%20%E3%82%8A%E3%82%87%E3%81%86%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%83%A1%E5%B1%B1%E7%8E%B2",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"情報不足"
-  },
-  {
-    id:"P570", name:"郡山 玲", reading:"こおりやま りょう", party:"立憲民主党", role:"参議院議員",
-    chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
-    total:0, rank:"情報不足",
-    axes:[0,0,0,0,0,0,0,0],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域での活動。", minus:"独自の主要立法実績が未蓄積。",
-    comment:"情報不足のため定量評価困難。",
-    links:{hp:"https://www.google.com/search?q=%5B%E9%83%A1%E5%B1%B1%20%E7%8E%B2%5D%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"情報不足"
   },
   {
     id:"P571", name:"古賀 千景", reading:"こが ちかげ", party:"立憲民主党", role:"参議院議員",
