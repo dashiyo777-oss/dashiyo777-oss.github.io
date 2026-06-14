@@ -558,14 +558,14 @@ const POLITICIANS = [
   },
   {
     id:"P051", name:"犬飼 明佳", reading:"いぬかい あきよし", party:"中道改革連合", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"女", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"△"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。犬飼 明佳（いぬかい あきよし、1972年〈昭和47年〉9月10日 - ）は、日本の政治家。中道改革連合所属の衆議院議員（1期）。愛知県議会議員（4期）を務めた。",
-    links:{tw:"https://x.com/inukai_akiyoshi",hp:"https://inukai-akiyoshi.com/",wiki:"https://ja.wikipedia.org/wiki/%E7%8A%AC%E9%A3%BC%E6%98%8E%E4%BD%B3",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
+    plus:"愛知県議4期のキャリアで医療用ウィッグ助成・夜間定時制高校設立など具体的な福祉・教育政策を実現した実務力が強み。", minus:"衆議院初当選で国政経験ゼロ。2024年公明党公認で落選後に離党・新党移籍と党派変遷が多く一貫性に疑問が残る。",
+    comment:"愛知県議4期で福祉・教育分野の政策実現に定評がある地方政治家。比例単独当選の新人として国政影響力は限定的だが、地方行政経験の厚さは国政でも活かせる素地がある。",
+    links:{hp:"https://inukai-akiyoshi.com/",tw:"https://x.com/inukai_akiyoshi",wiki:"https://ja.wikipedia.org/wiki/%E7%8A%AC%E9%A3%BC%E6%98%8E%E4%BD%B3",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P052", name:"井野 俊郎", reading:"いの としろう", party:"自民党", role:"衆議院議員（元防衛副大臣）",
@@ -634,15 +634,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P058", name:"井原 隆", reading:"いはら ゆたか", party:"自民党", role:"参議院議員",
+    id:"P058", name:"井原 隆", reading:"いはら ゆたか", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"埼玉5", status:"現職", gender:"男", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。井原 隆（いはら ゆたか、1983年〈昭和58年〉1月13日 - ）は、日本の政治家。自由民主党所属の衆議院議員（1期）。元さいたま市議会議員（3期）。",
+    total:62, rank:"C-",
+    axes:[3,3,3,3,3,3,4,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"東大天文学博士・JAXA宇宙飛行士2次選抜・トヨタ出向という異色の経歴。科学技術・経済安保分野での専門的貢献が期待される。", minus:"衆議院1期・政務経験なし。市議上がりの新人で国政での影響力はこれから。学術寄りのバックグラウンドから政策実現力はまだ未知数。",
+    comment:"天文学博士・JAXA選抜・トヨタ出向の異色経歴を持つ理系新人議員。さいたま市議3期での保育・施設整備の実績を持ち、科学技術・経済安保分野での実務型貢献が期待される。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E5%8E%9F%20%E9%9A%86%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E5%8E%9F%E9%9A%86",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P059", name:"今枝 宗一郎", reading:"いまえだ そういちろう", party:"自民党", role:"衆議院議員（元文部科学副大臣）",
@@ -658,24 +658,24 @@ const POLITICIANS = [
   {
     id:"P060", name:"今岡 植", reading:"いまおか うえき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京26", status:"現職", gender:"男", age:null,
-    total:47, rank:"D",
-    axes:[2,3,2,3,2,3,2,2],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"大臣・長官職としての行政経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。今岡 植（いまおか うえき、1988年3月5日 - ）は、日本の政治家、元財務官僚。自由民主党所属の衆議院議員（1期）。",
+    total:62, rank:"C-",
+    axes:[3,3,3,3,4,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"財務省国際局・主税局・地方出向と多様な行政経験。CFA保有の財政・金融分析能力で税制・財政政策での専門的貢献が期待される。", minus:"2024年衆院選落選経験あり。官僚出身のため有権者との距離感や地盤が弱く、小選挙区基盤の強化が課題。",
+    comment:"財務省で国際・税務・地方行財政を幅広く経験した元エリート官僚。ウォートンMBAと財政専門家としての知見は国政で即戦力。財政・経済安保分野での実務型貢献が期待できる。",
     links:{hp:"https://www.google.com/search?q=%E4%BB%8A%E5%B2%A1%20%E6%A4%8D%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BB%8A%E5%B2%A1%E6%A4%8D",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P061", name:"岩崎 比菜", reading:"いわさき ひな", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"女", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。岩崎 比菜（いわさき ひな、1993年〈平成5年〉3月27日 - ）は、日本の実業家、政治家。自由民主党所属の衆議院議員（1期）。本名は草野 比菜。",
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"金融・ベンチャー・ダイバーシティ推進と民間での実績多彩。UBS証券出身のバックグラウンドで経済・金融分野の政策立案能力が高く、女性活躍推進の当事者として説得力がある。", minus:"政治経験ゼロの完全新人。比例単独当選で地盤なし。国政での具体的な政策実現はこれから。",
+    comment:"証券・ESGファンド・スタートアップCFO・ダイバーシティ協会代表と民間キャリアが多彩な若手新人議員。金融・経済・女性活躍の専門性は国政でユニークな価値があるが、政治的基盤はなく比例単独当選。",
     links:{hp:"https://www.google.com/search?q=%E5%B2%A9%E5%B4%8E%20%E6%AF%94%E8%8F%9C%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B2%A9%E5%B4%8E%E6%AF%94%E8%8F%9C",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P062", name:"岩田 和親", reading:"いわた かずちか", party:"自民党", role:"衆議院議員",
@@ -1197,13 +1197,13 @@ const POLITICIANS = [
   {
     id:"P109", name:"鹿嶋 祐介", reading:"かしま ゆうすけ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"千葉4", status:"現職", gender:"男", age:null,
-    total:40, rank:"D",
-    axes:[2,2,2,2,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"Wikipediaの公開情報からは特筆すべき実績を確認できなかった。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。鹿嶋 祐介（かしま ゆうすけ、1980年〈昭和55年〉11月23日 - ）は、日本の政治家、陸上自衛官。自由民主党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E9%B9%BF%E5%B6%8B%20%E7%A5%90%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/鹿嶋祐介",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:62, rank:"C-",
+    axes:[3,3,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"17年の自衛官経験（空挺・格闘指導・コロナ対応）で国防現場を熟知。安全保障政策に現実的な視点を持ち込める希少な存在。", minus:"国政経験ゼロで政策立案・立法の実績未知数。防衛以外の経済・社会政策分野での具体的ビジョンが不明確。",
+    comment:"元陸自幹部・議員秘書という実務キャリアを武器に千葉4区で初当選。国防の最前線を知る政治家として安保政策での貢献が期待されるが、1期目として幅広い政策領域での実績形成が課題。",
+    links:{hp:"https://www.google.com/search?q=%E9%B9%BF%E5%B6%8B%20%E7%A5%90%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%B9%BF%E5%B6%8B%E7%A5%90%E4%BB%8B",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P110", name:"梶山 弘志", reading:"かじやま ひろし", party:"自民党", role:"衆議院議員（元経済産業大臣）",
@@ -1252,13 +1252,13 @@ const POLITICIANS = [
   {
     id:"P114", name:"門 寛子", reading:"かど ひろこ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京8", status:"現職", gender:"女", age:null,
-    total:50, rank:"D",
-    axes:[3,3,2,3,2,3,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"大臣・長官職としての行政経験（詳細は公式記録を参照）。委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。門 寛子（かど ひろこ、1980年6月11日 - ）は、日本の政治家、経産官僚。自由民主党所属の衆議院議員（1期）。慶應SFC研究所上席所員。米国NY州弁護士資格保持。",
-    links:{hp:"https://www.google.com/search?q=%E9%96%80%20%E5%AF%9B%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/門寛子",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[3,3,3,3,4,3,3,4],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"経産省でエネルギー安保・通商交渉・ビジネス人権政策を主導した高度な専門性。NY州弁護士資格も持ち国際交渉に即戦力。", minus:"選挙区・杉並での基盤は薄く2024年は落選経験あり。官僚出身で市民感覚・地元密着型の活動実績が不足。",
+    comment:"東大法卒・経産省20年のキャリアでエネルギー・経済安保・国際人権政策を実務から牽引した逸材。1期目だが政策立案能力は群を抜く。地域基盤の構築と政治家としての発信力向上が今後の鍵。",
+    links:{hp:"https://www.google.com/search?q=%E9%96%80%20%E5%AF%9B%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%96%80%E5%AF%9B%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P115", name:"加藤 鮎子", reading:"かとう あゆこ", party:"自民党", role:"衆議院議員（元こども政策担当大臣）",
@@ -1285,24 +1285,24 @@ const POLITICIANS = [
   {
     id:"P117", name:"加藤 貴弘", reading:"かとう たかひろ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"北海道1", status:"現職", gender:"男", age:null,
-    total:42, rank:"D",
-    axes:[2,2,2,3,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。加藤 貴弘（かとう たかひろ、1983年〈昭和58年〉1月22日 - ）は、日本の政治家。自由民主党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E5%8A%A0%E8%97%A4%20%E8%B2%B4%E5%BC%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/加藤貴弘",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[3,3,3,3,3,3,4,4],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"道議3期で教育・福祉・医療政策を実地で経験。ひとり親家庭支援やデジタル化など地域の生活課題に根ざした政策立案に強み。", minus:"大学進学歴が不明で専門的政策知識の深さに疑問符。道議時代を超える国政スケールの外交・安保等の発信は未知数。",
+    comment:"起業家から道議3期を経て国政入り。福祉・教育分野での地方行政経験は厚く、北海道の課題を国政に反映できる実務家型議員。衆院での政策的存在感の向上が課題。",
+    links:{hp:"https://www.google.com/search?q=%E5%8A%A0%E8%97%A4%20%E8%B2%B4%E5%BC%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%8A%A0%E8%97%A4%E8%B2%B4%E5%BC%98",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P118", name:"加藤 大博", reading:"かとう ともひろ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"岐阜4", status:"現職", gender:"男", age:null,
-    total:40, rank:"D",
-    axes:[2,2,2,2,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"Wikipediaの公開情報からは特筆すべき実績を確認できなかった。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。加藤 大博（かとう ともひろ、1979年〈昭和54年〉6月30日 - ）は、日本の政治家。自由民主党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E5%8A%A0%E8%97%A4%20%E5%A4%A7%E5%8D%9A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/加藤大博",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[3,3,3,3,3,4,4,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"県議5期・副議長の豊富な地方行政経験。中部縦貫道などの広域インフラ整備と農林業の食料安保化を一体推進する独自の政策軸を持つ。", minus:"衆院は1期目で国政スケールの発信・立法実績はこれから。外交・金融等の政策領域は手薄な可能性。",
+    comment:"元大臣秘書・県議5期・副議長という地方政治の重鎮が国政へ転じた。インフラ・農林業・食料安保を三位一体で語れる地域密着型の実務家。",
+    links:{hp:"https://www.google.com/search?q=%E5%8A%A0%E8%97%A4%20%E5%A4%A7%E5%8D%9A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%8A%A0%E8%97%A4%E5%A4%A7%E5%8D%9A",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P119", name:"加藤 竜祥", reading:"かとう りゅうしょう", party:"自民党", role:"衆議院議員",
@@ -1328,14 +1328,14 @@ const POLITICIANS = [
   },
   {
     id:"P121", name:"金澤 結衣", reading:"かなざわ ゆい", party:"自民党", role:"衆議院議員",
-    chamber:"衆議院", district:"神奈川20", status:"現職", gender:"男", age:null,
-    total:37, rank:"D",
-    axes:[2,2,2,2,2,2,2,1],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"Wikipediaの公開情報からは特筆すべき実績を確認できなかった。", minus:"政治資金・不記載・統一教会関係等の問題が報道されている（Wikipedia）。",
-    comment:"Wikipedia基礎評価。金澤 結衣（かなざわ ゆい、1990年〈平成2年〉10月23日 - ）は、日本の政治家。自由民主党所属の衆議院議員（1期）。",
-    links:{hp:"https://www.google.com/search?q=%E9%87%91%E6%BE%A4%20%E7%B5%90%E8%A1%A3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/金澤結衣",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.05", survey:"Wikipedia基礎評価"
+    chamber:"衆議院", district:"神奈川20", status:"現職", gender:"女", age:null,
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"大企業マーケティングで培った企画・発信力と民間感覚。経済成長・中小企業支援の明確な政策軸と地元への強い愛着。", minus:"政治経験ゼロ・秘書歴もなく国会運営・政策立案の実務は白紙。甘利元幹事長の後継として支持基盤の独自性・自立度に課題。",
+    comment:"グリコのマーケター出身という異色キャリアで政界入りした若手女性議員。民間視点の経済成長論と地元密着の姿勢は新鮮だが、政治経験・実績はこれからが本番。",
+    links:{hp:"https://www.google.com/search?q=%E9%87%91%E6%BE%A4%20%E7%B5%90%E8%A1%A3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%87%91%E6%BE%A4%E7%B5%90%E8%A1%A3",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P122", name:"金子 恵美", reading:"かねこ えみ", party:"中道改革連合", role:"衆議院議員",
@@ -1362,13 +1362,13 @@ const POLITICIANS = [
   {
     id:"P124", name:"金子 容三", reading:"かねこ ようぞう", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"長崎3", status:"現職", gender:"男", age:null,
-    total:50, rank:"D",
-    axes:[3,2,3,3,2,3,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"3期当選の議員経験。大臣・長官職としての行政経験（詳細は公式記録を参照）。委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。金子 容三（かねこ ようぞう、1983年〈昭和58年〉2月1日 - ）は、日本の政治家。自由民主党所属の衆議院議員（3期）、内閣府大臣政務官。\n防衛大臣政務官（第2次石破内閣）などを歴任した。父は農林水産大臣や長崎県知事を務めた金子原二郎。…",
-    links:{hp:"https://www.google.com/search?q=%E9%87%91%E5%AD%90%20%E5%AE%B9%E4%B8%89%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/金子容三",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:67, rank:"C+",
+    axes:[4,4,3,4,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"3期連続当選の安定した地盤と防衛大臣政務官・内閣府大臣政務官2役での行政経験。防衛・内閣府で省庁横断的な実務を担った実績。", minus:"祖父・父から続く世襲色が強く独自の政策路線が見えにくい。地元長崎以外への発信力や立法実績が乏しい。",
+    comment:"証券マンからMBAを経て政界入りした3代目政治家。防衛・内閣府政務官を歴任し行政経験を積む。離島・過疎地の交通インフラを訴えるが、世襲色より独自性発揮が今後の課題。",
+    links:{hp:"https://www.google.com/search?q=%E9%87%91%E5%AD%90%20%E5%AE%B9%E4%B8%89%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%87%91%E5%AD%90%E5%AE%B9%E4%B8%89",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P125", name:"金村 龍那", reading:"かねむら りゅうな", party:"日本維新の会", role:"衆議院議員",
@@ -1406,35 +1406,35 @@ const POLITICIANS = [
   {
     id:"P128", name:"川 裕一郎", reading:"かわ ゆういちろう", party:"参政党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。川 裕一郎（かわ ゆういちろう、1971年10月27日 - ）は、日本の政治家、実業家。参政党所属の衆議院議員（1期）。\n金沢市議会議員（1期）、石川県議会議員（5期）、参政党副代表（第2代）兼副事務局長（第2代）などを歴任。",
-    links:{hp:"https://www.google.com/search?q=%E5%B7%9D%20%E8%A3%95%E4%B8%80%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/川裕一郎",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:62, rank:"C-",
+    axes:[3,3,3,3,3,3,3,4],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"◎",expo:"△",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"◎",foreign:"○",food:"◎",semi:"○"},
+    plus:"市議1期・県議5期合計6期の豊富な地方議員経験。福祉事業経営の現場経験と地域密着の活動基盤。", minus:"国政は初当選の1期目で国会での立法実績はこれから。参政党の支持基盤は小さく政策実現力に制約がある。",
+    comment:"福祉事業経営と地方政治20年超のキャリアを積み国政へ。地産地消・食の安全・国内農業保護を主軸に訴え、比例復活当選で国会対策副委員長として党の運営に参画する段階。",
+    links:{hp:"https://www.google.com/search?q=%E5%B7%9D%20%E8%A3%95%E4%B8%80%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P129", name:"河井 昭成", reading:"かわい あきなり", party:"国民民主党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:45, rank:"D",
-    axes:[2,2,2,3,2,2,3,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。河井 昭成（かわい あきなり、1973年〈昭和48年〉7月22日 - ）は、日本の政治家。国民民主党所属の衆議院議員（1期）。国民民主党滋賀県連代表。UAゼンセン組織内議員。\n滋賀県議会議員（2期）、大津市議会議員（2期）を歴任。",
-    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E4%BA%95%20%E6%98%AD%E6%88%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/河井昭成",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:62, rank:"C-",
+    axes:[3,3,3,3,3,3,4,3],
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"東レ労組から市議・県議と積み上げた現場感覚。「103万円の壁」引き上げなど中間層向け減税政策を一貫して訴える。", minus:"国政デビューの1期目で立法実績は未知数。組織内候補の色が強く幅広い有権者への訴求力が課題。",
+    comment:"理系エンジニア出身の労組政治家。大津市議・滋賀県議で地方行政を経験後、国民民主党の働く者の経済政策を代弁して衆院入り。積極財政・減税を軸に中間層の生活改善を訴える実務派。",
+    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E4%BA%95%20%E6%98%AD%E6%88%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E6%B2%B3%E4%BA%95%E6%98%AD%E6%88%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P130", name:"河合 道雄", reading:"かわい みちお", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:40, rank:"D",
-    axes:[2,2,2,2,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"Wikipediaの公開情報からは特筆すべき実績を確認できなかった。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。河合 道雄（かわい みちお、1990年〈平成2年〉7月12日 -）は、日本の政治家。チームみらい所属の衆議院議員（1期）。チームみらい広報本部長。",
-    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E5%90%88%20%E9%81%93%E9%9B%84%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/河合道雄",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"○",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"△",ir:"△",mynumber:"◎",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
+    plus:"東大・京大院の高い知的能力と教育・福祉の現場経験。チームみらいの顔として政策の言語化・広報に強い。", minus:"政治経験は1期目で立法・行政実績なし。組織基盤が弱く比例依存で次回選挙の安定性が低い。",
+    comment:"テクノロジーと教育改革を軸に掲げる新世代政治家。不登校問題への当事者意識から政策立案に挑む。文科委員・経済産業委員として活動を始めたばかりで実績はこれからだが、論理的な発信力が際立つ。",
+    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E5%90%88%20%E9%81%93%E9%9B%84%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P131", name:"川崎 ひでと", reading:"かわさき ひでと", party:"自民党", role:"衆議院議員",
@@ -1461,24 +1461,24 @@ const POLITICIANS = [
   {
     id:"P133", name:"河野 義博", reading:"かわの よしひろ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
-    total:40, rank:"D",
-    axes:[2,2,2,2,2,2,2,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"Wikipediaの公開情報からは特筆すべき実績を確認できなかった。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。河野 義博（かわの よしひろ、1943年10月4日  - ）は、日本の元スピードスケート選手。北海道中川郡本別町出身。同町出身者として初のオリンピック代表選手である。名字の読みは「こうの」ではなく「かわの」である。\n1962年、北海道帯広三…",
-    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E9%87%8E%20%E7%BE%A9%E5%8D%9A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/河野義博",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[4,3,4,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"◎",nuclear:"△",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
+    plus:"参院2期の国会経験と農林水産大臣政務官歴。農業・食料政策・災害対策分野に精通した実務知識。", minus:"公明党離党・中道改革連合という新政党で基盤が不安定。衆院選では比例で選挙区での支持が未確立。",
+    comment:"銀行・商社のビジネス経験から公明党参院議員として農林水産・総務分野を担い農水政務官を歴任。党離党・衆院転身と変化が続くが、農業政策の実務知見は野党屈指。",
+    links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E9%87%8E%20%E7%BE%A9%E5%8D%9A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E6%B2%B3%E9%87%8E%E7%BE%A9%E5%8D%9A",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P134", name:"川松 真一朗", reading:"かわまつ しんいちろう", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京23", status:"現職", gender:"男", age:null,
-    total:47, rank:"D",
-    axes:[2,2,2,3,2,3,3,2],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"△",defense:"△",econ_sec:"△",immigration:"△",renewable:"△",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"△",education:"△",regional:"△",china:"△",foreign:"△",food:"△",semi:"△"},
-    plus:"大臣・長官職としての行政経験（詳細は公式記録を参照）。委員会委員長・党幹部職の経験（詳細は公式記録を参照）。", minus:"Wikipediaの公開情報のみでは詳細な課題を特定できなかった。",
-    comment:"Wikipedia基礎評価。川松 真一朗（かわまつ しんいちろう、1980年12月8日 - ）は、日本の政治家、フリーアナウンサー、メディアプロデューサー、相撲評論家。自由民主党所属の衆議院議員（1期）。プロレスラー、YouTuberとしても活動している。東京都議会議…",
-    links:{hp:"https://www.google.com/search?q=%E5%B7%9D%E6%9D%BE%20%E7%9C%9F%E4%B8%80%E6%9C%97%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/川松真一朗",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.05", survey:"Wikipedia基礎評価"
+    total:65, rank:"C",
+    axes:[4,3,3,3,3,3,3,4],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
+    plus:"都議3期・都議会自民党幹事長の実績。メディア出身の高い発信力と都市防災・インフラ整備への継続した問題意識。", minus:"国政は1期目で衆院での立法経験なし。都議時代から都市部・東京中心の議題に偏り全国的な政策への視野が狭い。",
+    comment:"テレビ朝日アナウンサーから政界転身し都議3期・幹事長を務めた実力派。木造密集地解消・防災強靭化を一貫して訴え、衆院では東京23区の都市課題を担う。広報・発信力は自民新人屈指。",
+    links:{hp:"https://www.google.com/search?q=%E5%B7%9D%E6%9D%BE%20%E7%9C%9F%E4%B8%80%E6%9C%97%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E5%B7%9D%E6%9D%BE%E7%9C%9F%E4%B8%80%E6%9C%97",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
     id:"P135", name:"河村 たかし", reading:"かわむら たかし", party:"無所属", role:"衆議院議員（愛知1区）、元名古屋市長（4期・2009〜2024年）、日本保守党共同代表",
