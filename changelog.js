@@ -1,1 +1,1 @@
-PLACEHOLDER_CHANGELOG
+$(python3 -c "import json; d=json.load(open('/tmp/push_ready.json', encoding='utf-8')); print(d['changelog.js'])")
