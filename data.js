@@ -1,1 +1,2 @@
-DATA_JS_PLACEHOLDER
+// 統覧 TORAN — 政治家データ
+// このファイルはツールで自動生成されます
