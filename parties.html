@@ -40,7 +40,6 @@
     html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--text); font-family: 'Montserrat','Noto Serif JP',sans-serif; font-weight:300; min-height:100vh; }
 
-    /* ── HEADER ── */
     .site-header {
       position: sticky; top:0; z-index:100;
       background: rgba(13,21,37,0.96); backdrop-filter: blur(12px);
@@ -56,11 +55,9 @@
     .nav-link:hover { color:var(--text); }
     .nav-link.active { color:var(--gold); }
 
-    /* ── HERO ── */
     .page-hero {
       border-bottom: 1px solid var(--border);
-      padding: 2.5rem 2rem 2rem;
-      text-align: center;
+      padding: 2.5rem 2rem 2rem; text-align: center;
     }
     .page-hero-title {
       font-family: 'Cormorant Garamond',serif;
@@ -69,45 +66,98 @@
     }
     .page-hero-sub { font-size:0.78rem; color:var(--gray); letter-spacing:0.08em; }
 
-    /* ── MAIN ── */
     .main-wrap { max-width:1100px; margin:0 auto; padding:2rem 1.5rem 4rem; }
 
-    /* ── SECTION TITLE ── */
     .section-title {
       font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:600;
       letter-spacing:0.15em; color:var(--gold);
       border-bottom:1px solid var(--border); padding-bottom:0.5rem; margin-bottom:1.2rem;
     }
 
-    /* ── RANKING BARS ── */
+    /* ── RANKING TABLE ── */
     .rank-table { width:100%; border-collapse:collapse; }
-    .rank-table tr { border-bottom:1px solid var(--border); cursor:pointer; transition:background 0.15s; }
-    .rank-table tr:hover { background:rgba(74,144,226,0.06); }
+    .rank-table tbody tr { border-bottom:1px solid var(--border); cursor:pointer; transition:background 0.15s; }
+    .rank-table tbody tr:hover { background:rgba(74,144,226,0.06); }
+    .rank-table tbody tr.expanded { background:rgba(74,144,226,0.08); }
     .rank-table td { padding:0.6rem 0.5rem; vertical-align:middle; }
     .td-num { font-family:'Cormorant Garamond',serif; font-size:1rem; color:var(--gray); width:2rem; text-align:center; }
     .td-party { font-family:'Noto Serif JP',serif; font-size:0.88rem; font-weight:600; white-space:nowrap; }
     .party-badge { display:inline-block; padding:0.15rem 0.55rem; border-radius:3px; font-size:0.75rem; font-weight:500; color:#fff; }
     .td-count { font-size:0.72rem; color:var(--gray); width:4rem; text-align:right; white-space:nowrap; }
-    .td-bar { width:40%; padding:0 0.8rem; }
+    .td-bar { width:36%; padding:0 0.8rem; }
     .bar-bg { background:rgba(255,255,255,0.06); border-radius:2px; height:10px; overflow:hidden; }
-    .bar-fill { height:100%; border-radius:2px; transition:width 0.6s ease; }
+    .bar-fill { height:100%; border-radius:2px; transition:width 0.5s ease; }
     .td-score { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:600; width:4rem; text-align:right; white-space:nowrap; }
     .td-rank-dist { width:8rem; }
     .rank-dist { display:flex; gap:2px; flex-wrap:wrap; }
-    .rd-pill {
-      font-size:0.58rem; padding:0.08rem 0.28rem; border-radius:2px;
-      font-family:'Montserrat',sans-serif; font-weight:500; white-space:nowrap;
-    }
+    .rd-pill { font-size:0.58rem; padding:0.08rem 0.28rem; border-radius:2px; font-family:'Montserrat',sans-serif; font-weight:500; white-space:nowrap; }
+    .td-expand { width:1.5rem; text-align:center; font-size:0.7rem; color:var(--gray); }
 
-    /* ── AXES SECTION ── */
+    /* ── MEMBER LIST ── */
+    .member-row td { padding:0; border:none; }
+    .member-list-wrap {
+      background:rgba(22,32,64,0.6); border-top:1px solid var(--border);
+      padding:0.8rem 1rem; display:none;
+    }
+    .member-list-wrap.open { display:block; }
+    .member-list-inner { display:flex; flex-wrap:wrap; gap:0.35rem; max-height:220px; overflow-y:auto; }
+    .member-chip {
+      display:inline-flex; align-items:center; gap:0.3rem;
+      padding:0.22rem 0.6rem; border-radius:4px; font-size:0.7rem;
+      background:rgba(91,160,224,0.1); border:1px solid rgba(91,160,224,0.2);
+      text-decoration:none; color:var(--text); transition:background 0.15s;
+      font-family:'Noto Serif JP',serif;
+    }
+    .member-chip:hover { background:rgba(91,160,224,0.22); }
+    .chip-score { font-family:'Cormorant Garamond',serif; font-size:0.9rem; }
+
+    /* ── FILTER TABS ── */
+    .filter-tabs { display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.2rem; align-items:center; }
+    .tab-pill {
+      padding:0.3rem 0.8rem; border-radius:20px; border:1px solid var(--border);
+      font-size:0.72rem; cursor:pointer; transition:all 0.15s; color:var(--gray);
+      font-family:'Montserrat',sans-serif;
+    }
+    .tab-pill.active { background:var(--blue); border-color:var(--blue); color:#fff; }
+    .tab-pill:hover:not(.active) { border-color:rgba(91,160,224,0.5); color:var(--text); }
+    .tab-pill.weight-active { background:var(--orange); border-color:var(--orange); color:#fff; }
+
+    .note { font-size:0.68rem; color:var(--gray); margin-top:1rem; line-height:1.6; }
+
+    /* ── RADAR SECTION ── */
+    .radar-section { margin:2.5rem 0; }
+    .radar-layout {
+      display:grid; grid-template-columns:1fr 280px; gap:1.5rem;
+      background:var(--card); border:1px solid var(--border); border-radius:8px; padding:1.2rem;
+    }
+    .radar-chart-area { display:flex; flex-direction:column; align-items:center; }
+    .radar-svg-wrap { width:100%; max-width:380px; }
+    .radar-legend { display:flex; flex-direction:column; gap:0.5rem; justify-content:center; }
+    .legend-item { display:flex; align-items:center; gap:0.6rem; font-size:0.75rem; }
+    .legend-dot { width:12px; height:12px; border-radius:50%; flex-shrink:0; }
+    .legend-name { font-family:'Noto Serif JP',serif; }
+    .legend-sub { font-size:0.65rem; color:var(--gray); margin-top:0.1rem; }
+
+    /* Party selector for 政党別 mode */
+    .party-selector {
+      display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1rem;
+    }
+    .party-sel-pill {
+      padding:0.25rem 0.6rem; border-radius:4px; font-size:0.7rem;
+      cursor:pointer; border:1px solid transparent; transition:all 0.15s;
+      font-family:'Noto Serif JP',serif; color:var(--gray);
+      background:rgba(255,255,255,0.04);
+    }
+    .party-sel-pill.sel { color:#fff; }
+    .radar-hint { font-size:0.68rem; color:var(--gray); margin-bottom:0.7rem; }
+
+    /* ── AXES CARDS ── */
     .axes-section { margin-top:2.5rem; }
     .axes-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px,1fr)); gap:1.2rem; }
     .party-card {
       background:var(--card); border:1px solid var(--border); border-radius:8px;
-      padding:1.2rem; cursor:pointer; transition:border-color 0.2s;
+      padding:1.2rem;
     }
-    .party-card:hover { border-color:rgba(74,144,226,0.45); }
-    .party-card.selected { border-color:var(--blue); background:rgba(91,160,224,0.08); }
     .card-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:0.9rem; }
     .card-score { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:600; }
     .axes-bars { display:flex; flex-direction:column; gap:0.35rem; }
@@ -117,25 +167,14 @@
     .ax-bar-fill { height:100%; border-radius:2px; }
     .ax-val { font-size:0.7rem; color:var(--gray); text-align:right; font-family:'Montserrat',sans-serif; }
 
-    /* ── FILTER TABS ── */
-    .filter-tabs { display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1.2rem; }
-    .tab-pill {
-      padding:0.3rem 0.8rem; border-radius:20px; border:1px solid var(--border);
-      font-size:0.72rem; cursor:pointer; transition:all 0.15s; color:var(--gray);
-      font-family:'Montserrat',sans-serif;
-    }
-    .tab-pill.active { background:var(--blue); border-color:var(--blue); color:#fff; }
-    .tab-pill:hover:not(.active) { border-color:rgba(91,160,224,0.5); color:var(--text); }
-
-    /* ── NOTE ── */
-    .note { font-size:0.68rem; color:var(--gray); margin-top:1rem; line-height:1.6; }
-
-    @media (max-width:640px) {
+    @media (max-width:700px) {
       .site-header { padding:0 1rem; }
       .td-bar { display:none; }
       .td-rank-dist { display:none; }
       .axes-grid { grid-template-columns:1fr; }
       .ax-row { grid-template-columns:5.5rem 1fr 2rem; }
+      .radar-layout { grid-template-columns:1fr; }
+      .radar-legend { flex-direction:row; flex-wrap:wrap; }
     }
   </style>
 </head>
@@ -162,15 +201,37 @@
 
   <!-- ① 総合スコアランキング -->
   <div class="section-title">総合スコア ランキング</div>
-  <div class="filter-tabs" id="chamber-tabs">
+  <div class="filter-tabs" id="table-filters">
     <div class="tab-pill active" data-chamber="all">全議員</div>
     <div class="tab-pill" data-chamber="衆議院">衆議院</div>
     <div class="tab-pill" data-chamber="参議院">参議院</div>
+    <span style="margin-left:0.5rem;color:var(--border)">|</span>
+    <div class="tab-pill" id="weight-toggle" title="議員数を考慮した加重バー表示">議席数重み付け</div>
   </div>
-  <table class="rank-table" id="rank-table"></table>
+  <table class="rank-table" id="rank-table"><tbody id="rank-tbody"></tbody></table>
   <p class="note" id="rank-note"></p>
 
-  <!-- ② 8軸別スコア -->
+  <!-- ② レーダーチャート -->
+  <div class="radar-section">
+    <div class="section-title">8軸 レーダーチャート比較</div>
+    <div class="filter-tabs" id="radar-mode-tabs">
+      <div class="tab-pill active" data-mode="party">政党別</div>
+      <div class="tab-pill" data-mode="chamber">院別</div>
+      <div class="tab-pill" data-mode="gender">男女別</div>
+    </div>
+    <div id="party-sel-wrap">
+      <p class="radar-hint">最大6政党まで選択してレーダーに重ねて表示</p>
+      <div class="party-selector" id="party-selector"></div>
+    </div>
+    <div class="radar-layout">
+      <div class="radar-chart-area">
+        <div class="radar-svg-wrap" id="radar-svg-wrap"></div>
+      </div>
+      <div class="radar-legend" id="radar-legend"></div>
+    </div>
+  </div>
+
+  <!-- ③ 8軸スコアカード -->
   <div class="axes-section">
     <div class="section-title">8軸スコア 政党別内訳</div>
     <div class="axes-grid" id="axes-grid"></div>
@@ -180,16 +241,18 @@
 
 <script src="data.js"></script>
 <script>
-const AXES_JA = ['国民生活改善','経済・財政','安全保障','政策実現力','説明責任','長期国益','公共性','政治倫理'];
+const AXES_JA  = ['国民生活改善','経済・財政','安全保障','政策実現力','説明責任','長期国益','公共性','政治倫理'];
+const AXES_SHORT = ['生活','経済','安保','実現','説明','国益','公共','倫理'];
 
 const PARTY_COLORS = {
-  '自民党':'#c8102e','立憲民主党':'#003f8a','日本維新の会':'#f2a100',
+  '自民党':'#c8102e','立憲民主党':'#2255aa','日本維新の会':'#f2a100',
   '公明党':'#9b59b6','国民民主党':'#7ac143','日本共産党':'#e4002b',
   'れいわ新選組':'#ff69b4','参政党':'#ff8c00','無所属':'#808080',
   '中道改革連合':'#2196f3','チームみらい':'#00bcd4','社民党':'#e91e63',
   '日本保守党':'#795548','沖縄社会大衆党':'#009688','減税日本・ゆうこく連合':'#607d8b',
   'NHKから国民を守る党':'#9e9e9e'
 };
+const PALETTE = ['#5ba0e0','#f5c842','#4ac776','#e6384f','#f0a030','#c77ef5','#4ac7bb','#e05b8a','#a0c84a'];
 
 function rankColor(r) {
   if (!r) return '#6878a0';
@@ -206,6 +269,7 @@ function scoreColor(t) {
   return '#e6384f';
 }
 
+/* ── DATA ── */
 function buildStats(chamber) {
   const src = chamber === 'all'
     ? POLITICIANS.filter(p => p.survey === '評価済')
@@ -213,12 +277,13 @@ function buildStats(chamber) {
 
   const map = {};
   src.forEach(p => {
-    if (!map[p.party]) map[p.party] = { count:0, totalSum:0, axes:[0,0,0,0,0,0,0,0], ranks:{} };
+    if (!map[p.party]) map[p.party] = { count:0, totalSum:0, axes:[0,0,0,0,0,0,0,0], ranks:{}, members:[] };
     const d = map[p.party];
     d.count++;
     d.totalSum += p.total;
     p.axes.forEach((v,i) => d.axes[i] += v);
     d.ranks[p.rank] = (d.ranks[p.rank]||0) + 1;
+    d.members.push({ id:p.id, name:p.name, total:p.total, rank:p.rank });
   });
 
   return Object.entries(map)
@@ -227,93 +292,265 @@ function buildStats(chamber) {
       count: d.count,
       avg: Math.round(d.totalSum / d.count),
       axes: d.axes.map(v => Math.round(v / d.count * 10) / 10),
-      ranks: d.ranks
+      ranks: d.ranks,
+      members: d.members.sort((a,b) => b.total - a.total)
     }))
-    .filter(p => p.count >= 1)
+    .filter(d => d.count >= 1)
     .sort((a,b) => b.avg - a.avg);
 }
 
-const RANK_ORDER = ['S','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+function buildGroupStats(groupBy) {
+  const base = POLITICIANS.filter(p => p.survey === '評価済');
+  const groups = {};
+  base.forEach(p => {
+    const key = groupBy === 'chamber' ? p.chamber : p.gender === '女' ? '女性' : '男性';
+    if (!groups[key]) groups[key] = { axes:[0,0,0,0,0,0,0,0], count:0, totalSum:0 };
+    const g = groups[key];
+    g.count++;
+    g.totalSum += p.total;
+    p.axes.forEach((v,i) => g.axes[i] += v);
+  });
+  return Object.entries(groups).map(([name, g]) => ({
+    name,
+    count: g.count,
+    avg: Math.round(g.totalSum / g.count),
+    axes: g.axes.map(v => Math.round(v / g.count * 10) / 10)
+  }));
+}
 
-function renderRankDist(ranks, count) {
-  return RANK_ORDER
-    .filter(r => ranks[r])
+/* ── TABLE ── */
+const RANK_ORDER = ['S','A+','A','A-','B+','B','B-','C+','C','C-','D'];
+function renderRankDist(ranks) {
+  return RANK_ORDER.filter(r => ranks[r])
     .map(r => `<span class="rd-pill" style="background:${rankColor(r)}22;color:${rankColor(r)};border:1px solid ${rankColor(r)}44">${r}:${ranks[r]}</span>`)
     .join('');
 }
 
 let currentChamber = 'all';
+let weightMode = false;
+let expandedParty = null;
 
 function renderTable(data) {
-  const max = data[0]?.avg || 100;
-  const table = document.getElementById('rank-table');
-  table.innerHTML = data.map((d, i) => {
+  const maxCount = Math.max(...data.map(d => d.count));
+  const tbody = document.getElementById('rank-tbody');
+  tbody.innerHTML = '';
+  data.forEach((d, i) => {
     const pc = PARTY_COLORS[d.name] || '#666';
     const sc = scoreColor(d.avg);
-    const pct = Math.round(d.avg / 100 * 100);
-    return `<tr>
+    const barPct = weightMode
+      ? Math.round(d.avg / 100 * Math.sqrt(d.count / maxCount) * 100)
+      : Math.round(d.avg);
+    const isOpen = expandedParty === d.name;
+
+    const tr = document.createElement('tr');
+    if (isOpen) tr.classList.add('expanded');
+    tr.innerHTML = `
       <td class="td-num">${i+1}</td>
-      <td class="td-party">
-        <span class="party-badge" style="background:${pc}">${d.name}</span>
-      </td>
+      <td class="td-party"><span class="party-badge" style="background:${pc}">${d.name}</span></td>
       <td class="td-count">${d.count}人</td>
-      <td class="td-bar">
-        <div class="bar-bg">
-          <div class="bar-fill" style="width:${pct}%;background:${sc}"></div>
-        </div>
-      </td>
+      <td class="td-bar"><div class="bar-bg"><div class="bar-fill" style="width:${barPct}%;background:${sc}"></div></div></td>
       <td class="td-score" style="color:${sc}">${d.avg}</td>
-      <td class="td-rank-dist"><div class="rank-dist">${renderRankDist(d.ranks, d.count)}</div></td>
-    </tr>`;
-  }).join('');
+      <td class="td-rank-dist"><div class="rank-dist">${renderRankDist(d.ranks)}</div></td>
+      <td class="td-expand">${isOpen ? '▲' : '▼'}</td>`;
+    tr.addEventListener('click', () => toggleMembers(d.name, data));
+    tbody.appendChild(tr);
+
+    // member row
+    const mr = document.createElement('tr');
+    mr.className = 'member-row';
+    const mc = document.createElement('td');
+    mc.colSpan = 7;
+    const mw = document.createElement('div');
+    mw.className = 'member-list-wrap' + (isOpen ? ' open' : '');
+    mw.innerHTML = `<div class="member-list-inner">${
+      d.members.map(m => `<a class="member-chip" href="politician.html?id=${m.id}">
+        <span class="chip-score" style="color:${scoreColor(m.total)}">${m.total}</span>${m.name}
+      </a>`).join('')
+    }</div>`;
+    mc.appendChild(mw);
+    mr.appendChild(mc);
+    tbody.appendChild(mr);
+  });
 
   const total = data.reduce((s,d) => s+d.count, 0);
   document.getElementById('rank-note').textContent =
-    `※ 評価済み ${total}名（survey:"評価済"）を集計。平均は整数四捨五入。`;
+    `※ 評価済み ${total}名を集計。平均は整数四捨五入。${weightMode ? '議席数重み付けバー表示中。' : ''}政党行クリックで所属議員を表示。`;
+}
+
+function toggleMembers(partyName, data) {
+  expandedParty = expandedParty === partyName ? null : partyName;
+  renderTable(data);
+}
+
+/* ── RADAR CHART ── */
+let radarMode = 'party';
+let selectedParties = [];
+let allStats = [];
+
+function svgRadar(groups, size=340) {
+  const N = 8;
+  const pad = 52;
+  const cx = size/2, cy = size/2;
+  const R = size/2 - pad;
+  let out = `<svg viewBox="0 0 ${size} ${size}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto">`;
+
+  // Grid
+  [1,2,3,4,5].forEach(lv => {
+    const r = R * lv / 5;
+    const pts = Array.from({length:N}, (_,i) => {
+      const a = 2*Math.PI*i/N - Math.PI/2;
+      return `${cx+r*Math.cos(a)},${cy+r*Math.sin(a)}`;
+    }).join(' ');
+    out += `<polygon points="${pts}" fill="none" stroke="rgba(255,255,255,${lv===5?'0.12':'0.05'})" stroke-width="${lv===5?1.5:1}"/>`;
+    if (lv === 5 || lv === 3) {
+      out += `<text x="${cx+4}" y="${cy - r + 2}" font-size="8" fill="rgba(255,255,255,0.18)">${lv}</text>`;
+    }
+  });
+
+  // Axes + labels
+  AXES_SHORT.forEach((label, i) => {
+    const a = 2*Math.PI*i/N - Math.PI/2;
+    const ex = cx+R*Math.cos(a), ey = cy+R*Math.sin(a);
+    out += `<line x1="${cx}" y1="${cy}" x2="${ex}" y2="${ey}" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>`;
+    const lx = cx+(R+pad*0.55)*Math.cos(a);
+    const ly = cy+(R+pad*0.55)*Math.sin(a);
+    const anchor = Math.cos(a) > 0.1 ? 'start' : Math.cos(a) < -0.1 ? 'end' : 'middle';
+    const base   = Math.sin(a) > 0.1 ? 'hanging' : Math.sin(a) < -0.1 ? 'auto' : 'central';
+    out += `<text x="${lx}" y="${ly}" text-anchor="${anchor}" dominant-baseline="${base}" font-size="11" fill="#8090b8">${label}</text>`;
+  });
+
+  // Polygons (reverse so first is on top)
+  [...groups].reverse().forEach(({axes, color}) => {
+    const pts = axes.map((v,i) => {
+      const a = 2*Math.PI*i/N - Math.PI/2;
+      const r = R * Math.min(v,5) / 5;
+      return `${cx+r*Math.cos(a)},${cy+r*Math.sin(a)}`;
+    }).join(' ');
+    out += `<polygon points="${pts}" fill="${color}28" stroke="${color}" stroke-width="2.5" stroke-linejoin="round"/>`;
+    axes.forEach((v,i) => {
+      const a = 2*Math.PI*i/N - Math.PI/2;
+      const r = R * Math.min(v,5) / 5;
+      out += `<circle cx="${cx+r*Math.cos(a)}" cy="${cy+r*Math.sin(a)}" r="3.5" fill="${color}" stroke="${color}66" stroke-width="1"/>`;
+    });
+  });
+
+  out += '</svg>';
+  return out;
+}
+
+function renderRadar() {
+  let groups = [];
+
+  if (radarMode === 'chamber' || radarMode === 'gender') {
+    const stats = buildGroupStats(radarMode);
+    const colors = radarMode === 'chamber' ? ['#5ba0e0','#f5c842'] : ['#5ba0e0','#f06090'];
+    stats.forEach((s,i) => groups.push({ name:s.name, count:s.count, avg:s.avg, axes:s.axes, color:colors[i] || PALETTE[i] }));
+    document.getElementById('party-sel-wrap').style.display = 'none';
+  } else {
+    document.getElementById('party-sel-wrap').style.display = '';
+    const map = Object.fromEntries(allStats.map(d => [d.name, d]));
+    selectedParties.forEach((name, i) => {
+      if (map[name]) {
+        const color = PARTY_COLORS[name] || PALETTE[i % PALETTE.length];
+        groups.push({ name, count: map[name].count, avg: map[name].avg, axes: map[name].axes, color });
+      }
+    });
+  }
+
+  if (groups.length === 0) {
+    document.getElementById('radar-svg-wrap').innerHTML =
+      `<div style="text-align:center;padding:3rem;color:var(--gray);font-size:0.8rem">政党を選択してください</div>`;
+    document.getElementById('radar-legend').innerHTML = '';
+    return;
+  }
+
+  document.getElementById('radar-svg-wrap').innerHTML = svgRadar(groups);
+  document.getElementById('radar-legend').innerHTML = groups.map(g => `
+    <div class="legend-item">
+      <div class="legend-dot" style="background:${g.color}"></div>
+      <div>
+        <div class="legend-name">${g.name}</div>
+        <div class="legend-sub">${g.count}名 · 平均${g.avg}点</div>
+      </div>
+    </div>`).join('');
+}
+
+function renderPartySel() {
+  const sel = document.getElementById('party-selector');
+  sel.innerHTML = allStats.map(d => {
+    const pc = PARTY_COLORS[d.name] || '#666';
+    const isSel = selectedParties.includes(d.name);
+    return `<div class="party-sel-pill${isSel ? ' sel' : ''}" data-name="${d.name}"
+      style="${isSel ? `background:${pc};border-color:${pc}` : `border-color:${pc}55`}"
+      >${d.name} (${d.count})</div>`;
+  }).join('');
+  sel.querySelectorAll('.party-sel-pill').forEach(el => {
+    el.addEventListener('click', () => {
+      const name = el.dataset.name;
+      const idx = selectedParties.indexOf(name);
+      if (idx >= 0) selectedParties.splice(idx, 1);
+      else if (selectedParties.length < 6) selectedParties.push(name);
+      renderPartySel();
+      renderRadar();
+    });
+  });
 }
 
 function renderAxes(data) {
-  const grid = document.getElementById('axes-grid');
-  grid.innerHTML = data.filter(d => d.count >= 3).map(d => {
+  document.getElementById('axes-grid').innerHTML = data.filter(d => d.count >= 3).map(d => {
     const pc = PARTY_COLORS[d.name] || '#666';
     const sc = scoreColor(d.avg);
-    const maxAx = 5;
-    const axRows = AXES_JA.map((label, i) => {
-      const val = d.axes[i];
-      const pct = Math.round(val / maxAx * 100);
-      const col = val >= 4 ? '#4ac776' : val >= 3 ? '#4a8fd4' : val >= 2 ? '#f0a030' : '#e6384f';
-      return `<div class="ax-row">
-        <div class="ax-label">${label}</div>
-        <div class="ax-bar-bg"><div class="ax-bar-fill" style="width:${pct}%;background:${col}"></div></div>
-        <div class="ax-val">${val}</div>
-      </div>`;
-    }).join('');
     return `<div class="party-card">
       <div class="card-header">
         <span class="party-badge" style="background:${pc};font-size:0.8rem;padding:0.2rem 0.65rem">${d.name}</span>
-        <div>
-          <div class="card-score" style="color:${sc}">${d.avg}</div>
-          <div style="font-size:0.62rem;color:var(--gray);text-align:right">${d.count}名</div>
-        </div>
+        <div><div class="card-score" style="color:${sc}">${d.avg}</div>
+        <div style="font-size:0.62rem;color:var(--gray);text-align:right">${d.count}名</div></div>
       </div>
-      <div class="axes-bars">${axRows}</div>
+      <div class="axes-bars">${AXES_JA.map((label, i) => {
+        const val = d.axes[i];
+        const pct = Math.round(val / 5 * 100);
+        const col = val >= 4 ? '#4ac776' : val >= 3 ? '#4a8fd4' : val >= 2 ? '#f0a030' : '#e6384f';
+        return `<div class="ax-row">
+          <div class="ax-label">${label}</div>
+          <div class="ax-bar-bg"><div class="ax-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+          <div class="ax-val">${val}</div>
+        </div>`;
+      }).join('')}</div>
     </div>`;
   }).join('');
 }
 
 function render(chamber) {
-  const data = buildStats(chamber);
-  renderTable(data);
-  renderAxes(data);
+  allStats = buildStats(chamber);
+  renderTable(allStats);
+  renderPartySel();
+  renderRadar();
+  renderAxes(allStats);
 }
 
-// Tab click
-document.getElementById('chamber-tabs').querySelectorAll('.tab-pill').forEach(tab => {
+/* ── EVENT HANDLERS ── */
+document.getElementById('table-filters').querySelectorAll('[data-chamber]').forEach(tab => {
   tab.addEventListener('click', () => {
-    document.querySelectorAll('.tab-pill').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('[data-chamber]').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
     currentChamber = tab.dataset.chamber;
+    expandedParty = null;
     render(currentChamber);
+  });
+});
+
+document.getElementById('weight-toggle').addEventListener('click', function() {
+  weightMode = !weightMode;
+  this.classList.toggle('weight-active', weightMode);
+  renderTable(allStats);
+});
+
+document.getElementById('radar-mode-tabs').querySelectorAll('[data-mode]').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('[data-mode]').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    radarMode = tab.dataset.mode;
+    renderRadar();
   });
 });
 
