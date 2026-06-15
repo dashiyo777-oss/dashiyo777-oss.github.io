@@ -1,8 +1,1 @@
-// 統覧 TORAN — data.js
-// 自動生成ファイル。直接編集しないでください。
-// generate_js_data.py で再生成されます。
-// 評価済: 693名 / 🚨8名 / ⚠️115名 / 根拠831件
-
-const DATA_UPDATED_AT = "2026.06.13";
-
-PLACEHOLDER_FULL_DATA_JS
+FULL_DATA_JS_PLACEHOLDER_FOR_SIZE_TEST
