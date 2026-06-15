@@ -625,13 +625,18 @@
       <div id="changelog-list"></div>
     </div>
 
-    <div class="section-card" id="card-links" style="display:none">
+    <div class="section-card" id="card-links">
       <div class="section-head">
         <span class="section-head-icon">🔗</span>
         <span class="section-head-title">関連リンク</span>
       </div>
       <div class="section-body">
         <div class="links-grid" id="links-grid"></div>
+        <div id="external-links-wrap" style="margin-top:0.7rem">
+          <div style="font-size:0.73rem;color:#6878a0;font-weight:600;letter-spacing:0.04em;margin-bottom:0.45rem;">🏛 立法活動・採決記録（公式データベース）</div>
+          <div class="links-grid" id="external-links-grid"></div>
+          <p style="font-size:0.68rem;color:#4a5878;margin:0.45rem 0 0;">※各院の公式DBへ移動します。国会発言記録は氏名で自動検索されます。議案・採決は院全体の一覧から氏名で絞り込んでください。</p>
+        </div>
       </div>
     </div>
 
@@ -1018,7 +1023,29 @@ function buildPage(p) {
     `;
   }).join('');
 
-  // ── Links
+  // ── 評価変更履歴 ──
+  const logs = (typeof CHANGELOG !== 'undefined') ? CHANGELOG.filter(c => c.pid === p.id) : [];
+  if (logs.length > 0) {
+    document.getElementById('card-changelog').style.display = '';
+    document.getElementById('changelog-list').innerHTML = logs.map(c => {
+      const scoreHtml = (c.before_total !== null && c.after_total !== null)
+        ? `<div class="changelog-score">
+            <span class="score-before">${c.before_total}点</span>
+            <span class="arrow">→</span>
+            <span class="score-after" style="color:${c.after_total >= c.before_total ? 'var(--green)' : 'var(--red)'}">${c.after_total}点</span>
+           </div>` : '';
+      const actionLabel = c.action === 'add' ? '🆕 新規追加' : '✏️ 評価更新';
+      return `<div class="changelog-item">
+        <div class="changelog-date">${c.date}<br><span style="font-size:0.68rem">${actionLabel}</span></div>
+        <div class="changelog-body">
+          <div class="changelog-summary">${c.summary}</div>
+          ${scoreHtml}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  // ── 個人リンク（HP・SNS・Wikipedia）──
   if (p.links) {
     const pairs = [
       { key:'hp', label:'公式HP', icon:'🌐' },
@@ -1028,35 +1055,30 @@ function buildPage(p) {
     ];
     const validLinks = pairs.filter(lk => p.links[lk.key]);
     if (validLinks.length > 0) {
-      // ── 評価変更履歴 (⑥) ──
-      const logs = (typeof CHANGELOG !== 'undefined') ? CHANGELOG.filter(c => c.pid === p.id) : [];
-      if (logs.length > 0) {
-        document.getElementById('card-changelog').style.display = '';
-        document.getElementById('changelog-list').innerHTML = logs.map(c => {
-          const scoreHtml = (c.before_total !== null && c.after_total !== null)
-            ? `<div class="changelog-score">
-                <span class="score-before">${c.before_total}点</span>
-                <span class="arrow">→</span>
-                <span class="score-after" style="color:${c.after_total >= c.before_total ? 'var(--green)' : 'var(--red)'}">${c.after_total}点</span>
-               </div>` : '';
-          const actionLabel = c.action === 'add' ? '🆕 新規追加' : '✏️ 評価更新';
-          return `<div class="changelog-item">
-            <div class="changelog-date">${c.date}<br><span style="font-size:0.68rem">${actionLabel}</span></div>
-            <div class="changelog-body">
-              <div class="changelog-summary">${c.summary}</div>
-              ${scoreHtml}
-            </div>
-          </div>`;
-        }).join('');
-      }
-
-      document.getElementById('card-links').style.display = '';
       document.getElementById('links-grid').innerHTML = validLinks.map(lk =>
         `<a class="link-btn" href="${p.links[lk.key]}" target="_blank" rel="noopener">
           <span>${lk.icon}</span>${lk.label}
         </a>`
       ).join('');
     }
+  }
+
+  // ── 外部リンク（立法活動・採決記録）── 常に表示
+  {
+    const nameEncoded = encodeURIComponent(p.name);
+    const extLinks = [
+      { url: `https://kokkai.ndl.go.jp/#/search?speaker=${nameEncoded}`, label: '国会発言記録', icon: '🗣' },
+    ];
+    if (p.chamber === '衆議院') {
+      extLinks.push({ url: 'https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/menu.htm', label: '議案情報（衆議院）', icon: '📜' });
+      extLinks.push({ url: 'https://www.shugiin.go.jp/internet/itdb_vote2.nsf/html/vote2/menu.htm', label: '採決記録（衆議院）', icon: '🗳' });
+    } else if (p.chamber === '参議院') {
+      extLinks.push({ url: 'https://www.sangiin.go.jp/japanese/joho1/kousei/gian/', label: '議案情報（参議院）', icon: '📜' });
+      extLinks.push({ url: 'https://www.sangiin.go.jp/japanese/joho1/kousei/vote/', label: '採決記録（参議院）', icon: '🗳' });
+    }
+    document.getElementById('external-links-grid').innerHTML = extLinks.map(lk =>
+      `<a class="link-btn" href="${lk.url}" target="_blank" rel="noopener">${lk.icon} ${lk.label}</a>`
+    ).join('');
   }
 }
 
