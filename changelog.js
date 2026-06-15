@@ -1,1 +1,1 @@
-placeholder
+CHANGELOG_PLACEHOLDER
