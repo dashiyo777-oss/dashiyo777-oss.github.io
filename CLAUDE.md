@@ -1,1 +1,1 @@
-placeholder
+PLACEHOLDER_CLAUDE_MD

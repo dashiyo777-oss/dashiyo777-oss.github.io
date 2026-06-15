@@ -1,1 +1,1 @@
-placeholder
+PLACEHOLDER_CHANGELOG_JS
