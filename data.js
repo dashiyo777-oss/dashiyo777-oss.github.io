@@ -4,3 +4,7 @@
 // 評価済: 693名 / 🚨8名 / ⚠️115名 / 根拠831件
 
 const DATA_UPDATED_AT = "2026.06.13";
+
+const POLITICIANS = [
+  {
+    id:"P001", n
