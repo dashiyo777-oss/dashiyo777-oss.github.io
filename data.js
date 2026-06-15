@@ -1481,11 +1481,11 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P135", name:"河村 たかし", reading:"かわむら たかし", party:"無所属", role:"衆議院議員（愛知1区）、元名古屋市長（4期・2009〜2024年）、日本保守党共同代表",
+    id:"P135", name:"河村 たかし", reading:"かわむら たかし", party:"減税日本・ゆうこく連合", role:"衆議院議員（愛知1区）、元名古屋市長（4期・2009〜2024年）、減税日本・ゆうこく連合代表",
     chamber:"衆議院", district:"愛知1", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,4,4,3],
-    stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"○",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"○",expo:"×",ir:"×",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"×",foreign:"×",food:"○",semi:"○"},
+    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"○",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"○",expo:"×",ir:"×",mynumber:"×",birthrate:"○",education:"◎",regional:"◎",china:"×",foreign:"×",food:"○",semi:"○"},
     plus:"名古屋市長4期15年で「市民税一律5%恒久減税（年間約100億円規模の還元）」を全国唯一の政令市として定着。市長給与を年約2,700万円→800万円に削減し4期合計約1.6億円の退職金を全額カット。名古屋城本丸御殿を総事業費約150億円かけて忠実復元（2018年全面公開）。2014年に待機児童数ゼロを達成。子ども青少年局新設・24時間子どもSOSホットライン整備。", minus:"公的な場での突飛な放言・不規則発言を巡る資質論争が繰り返し起きており倫理面での強い賛否。議員報酬半減改革は後の市議会で再増額され中途半端な結果に。名古屋城天守木造復元はバリアフリー問題・石垣保存課題で着工の見通し立たず。",
     comment:"市民税減税・給与退職金返上・本丸御殿復元など政策実現力は高く庶民感覚の訴求で支持を集めた。財政・子育て・観光にわたる長期実績は評価できる。放言問題は継続注視が必要。",
     links:{hp:"https://takashi-kawamura.com",tw:"https://x.com/kawamura758",wiki:"https://ja.wikipedia.org/wiki/河村たかし",yt:""},
