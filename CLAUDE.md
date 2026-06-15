@@ -274,7 +274,7 @@ const SITE_CHANGELOG = [
 
 ---
 
-## アクセス改善（実施済み）
+## アクセス改嚄（実施済み）
 
 - ✅ OGPタグ（politicians.html・politician.html）
 - ✅ Xシェアボタン（議員カルテページ）
