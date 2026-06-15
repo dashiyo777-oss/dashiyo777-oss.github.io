@@ -7720,4 +7720,147 @@ const POLITICIANS = [
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"労働問題や地域の生活課題に対する取り組み。", minus:"独自の大規模立法実績はこれから。",
     comment:"立憲民主党所属。地域の現場を重視した活動。",
-    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E5%95%93%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%
+    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E5%95%93%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山本啓介",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P741", name:"山本 佐知子", reading:"やまもと さちこ", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"三重", status:"現職", gender:"女", age:null,
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"労働組合等の基盤を活かした地道な活動。", minus:"大規模立法実績はこれから。",
+    comment:"立憲民主党所属。組織の声を国会へ届ける。",
+    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E4%BD%90%E7%9F%A5%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山本佐知子",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P742", name:"山本 順三", reading:"やまもと じゅんぞう", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"愛媛", status:"現職", gender:"男", age:null,
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"幅広い行政経験による実務的な調整力。", minus:"大規模立法実績は発展途上。",
+    comment:"立憲民主党所属。議会活動において安定感がある。",
+    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E9%A0%86%E4%B8%89%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山本順三",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P743", name:"横沢 高徳", reading:"よこさわ たかのり", party:"立憲民主党", role:"参議院議員",
+    chamber:"参議院", district:"岩手", status:"現職", gender:"男", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"元知事としての豊富な地方行政実績と、政策提言能力。", minus:"野党の立場であり、大規模な政策実現には制約がある。",
+    comment:"元知事。地方行政の実務経験を活かし、国政で論戦を展開する。",
+    links:{hp:"https://www.google.com/search?q=%E6%A8%AA%E6%B2%A2%20%E9%AB%98%E5%BE%B3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/横沢高徳",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P744", name:"横山 信一", reading:"よこやま しんいち", party:"公明党", role:"参議院議員",
+    chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
+    total:70, rank:"B-",
+    axes:[4,3,3,4,4,3,4,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"行政監視役としての卓越した追及力と、メディアを通じた国民への高い発信力。", minus:"対決姿勢が強く、与党との実務的な合意形成が困難な場合が多い。",
+    comment:"ベテラン論客。行政の不透明な運用を追及する質疑で高い注目を集める。",
+    links:{hp:"https://www.google.com/search?q=%E6%A8%AA%E5%B1%B1%20%E4%BF%A1%E4%B8%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/横山信一",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P745", name:"吉井 章", reading:"よしい あきら", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"京都", status:"現職", gender:"男", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"経済財政や税制、特にデジタル社会推進に関する実務的な知見。", minus:"与党内調整を優先するため、大規模な独自政策の発信は控えめ。",
+    comment:"公明党。実務重視でデジタル政策や経済関連の実務を担う。",
+    links:{hp:"https://www.google.com/search?q=%E5%90%89%E4%BA%95%20%E7%AB%A0%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/吉井章",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {id:"P746",name:"吉川沙織",reading:"よしかわ さおり",party:"立憲民主党",role:"参議院議員",chamber:"参議院",district:"比例",status:"現職",gender:"女",age:null,total:65,rank:"C",axes:[4, 4, 3, 2, 3, 3, 4, 3],stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},plus:"NTT→情報労連→参院4期20年。情報通信政策・労働政策のエキスパートで経済産業委員長を歴任。2025年に京都大学法学博士取得",minus:"安全保障分野への関与は限定的。野党ゆえの政策実現力の限界も",comment:"NTT技術職→情報労連を経て2007年参院選に全国306,577票で初当選の4期目ベテラン議員。ICT・労働政策の専門家として党内中枢を担い法学博士取得で専門性をさらに深化",links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%90%89%E5%B7%9D%E6%B2%99%E7%B9%94",yt:""},flag_crime:false,flag_caution:false,updated:"2026.06",survey:"評価済"},
+  {
+    id:"P747", name:"吉田 忠智", reading:"よしだ ただとも", party:"立憲民主党", role:"参議院議員",
+    chamber:"参議院", district:"大分", status:"現職", gender:"女", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"国土交通・インフラ関連の調整能力と地域創生の実務。", minus:"大規模な立法実績は発展途上。",
+    comment:"自民党所属。実務的で安定した調整を行う。",
+    links:{hp:"https://www.google.com/search?q=%E5%90%89%E7%94%B0%20%E5%BF%A0%E6%99%BA%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/吉田忠智",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P748", name:"ラサール石井", reading:"らさーるいしい", party:"社民党", role:"参議院議員",
+    chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
+    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地域活性化への取り組み。", minus:"大規模立法実績はこれから。",
+    comment:"維新所属。地方政治の知見を活かす。",
+    links:{hp:"https://www.google.com/search?q=%E3%83%A9%E3%82%B5%E3%83%BC%E3%83%AB%E7%9F%B3%E4%BA%95%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/ラサール石井",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P750", name:"蓮舫", reading:"れんほう", party:"立憲民主党", role:"参議院議員",
+    chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
+    total:67, rank:"C+",
+    axes:[4,3,3,4,4,3,4,2],
+    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"行政監視役としての卓越した追及力と、メディアを通じた国民への高い発信力。", minus:"2016年に台湾国籍を「放棄済み」と公言したが、実際には2022年まで台湾籍が残存していた（6年間の虚偽説明）。対決姿勢が強く、与党との実務的な合意形成が困難な場合が多い。",
+    comment:"ベテラン論客。行政の不透明な運用を追及する質疑で高い注目を集める。一方、自身の二重国籍問題では6年間にわたり不正確な説明を続けており、政治倫理・説明責任に疑問が残る。",
+    links:{hp:"https://www.google.com/search?q=%E8%93%AE%E8%88%AB%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/renho_sha",wiki:"https://ja.wikipedia.org/wiki/蓮舫",yt:""},
+    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+  },
+    {
+    id:"P752", name:"若井 敦子", reading:"わかい あつこ", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"岐阜", status:"現職", gender:"女", age:null,
+    total:50, rank:"D",
+    axes:[2,2,2,2,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"◎",food:"○",semi:"○"},
+    plus:"世界空手道選手権4連覇（ギネス世界記録）・全日本8連覇という前人未到のスポーツ実績。岐阜県議として約10年の地方政治経験を積み、文部科学省スポーツ功労者顕彰も受賞。国際舞台での経験が外交・スポーツ振興に活かせる。", minus:"国政は2025年初当選で経験は浅く、政策面での独自色はまだ薄い。スポーツ以外の政策分野（経済・安保等）での実績・発信が少ない。",
+    comment:"世界空手道選手権4連覇（ギネス世界記録）・全日本8連覇を誇る日本を代表する空手選手。岐阜県議として約10年の地方政治経験を積み、2025年参院選で国政に挑戦。競技者・指導者・政治家として「次世代育成」を主軸に活動する。",
+    links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E8%8B%A5%E4%BA%95%E6%95%A6%E5%AD%90",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P753", name:"若林 洋平", reading:"わかばやし ようへい", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"静岡", status:"現職", gender:"男", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"地域産業振興や防災対策における実務的調整能力。", minus:"大規模な立法実績は発展途上。",
+    comment:"自民党所属。地方自治体との連携を通じた地域課題解決に注力。",
+    links:{hp:"https://www.google.com/search?q=%E8%8B%A5%E6%9E%97%20%E6%B4%8B%E5%B9%B3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/若林洋平",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P754", name:"脇 雅昭", reading:"わき まさあき", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"神奈川", status:"現職", gender:"男", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"行政管理・調整における安定した実務能力。", minus:"独自の大規模立法実績は発展途上。",
+    comment:"自民党所属。行政実務の安定感がある。",
+    links:{hp:"https://www.google.com/search?q=%E8%84%87%20%E9%9B%85%E6%98%AD%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/脇雅昭",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P755", name:"渡辺 猛之", reading:"わたなべ たけゆき", party:"自民党", role:"参議院議員",
+    chamber:"参議院", district:"岐阜", status:"現職", gender:"男", age:null,
+    total:62, rank:"C-",
+    axes:[3,4,3,3,3,3,3,3],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"厚生労働分野の専門性を活かした政策調整力。", minus:"大規模立法実績は発展途上。",
+    comment:"自民党所属。厚労分野の実務で着実な貢献。",
+    links:{hp:"https://www.google.com/search?q=%E6%B8%A1%E8%BE%BA%20%E7%8C%9B%E4%B9%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/渡辺猛之",yt:""},
+    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+  },
+  {
+    id:"P756", name:"鈴木 直道", reading:"すずき なおみち", party:"無所属", role:"北海道知事（2019年〜）、元夕張市長（2011〜2019年・全国最年少市長）",
+    chamber:"首長", district:"北海道", status:"現職", gender:"男", age:45,
+    total:82, rank:"A-",
+    axes:[4,4,4,5,4,4,4,4],
+    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
+    plus:"全国最年少市長（当時）として財政破綻した夕張市に乗り込み、日本初のコンパクトシティ推進（分散居住地の集約・立地適正化）と国との交渉による「攻めの財政再建」を断行。自身の給与7割カット・退職金100%カットで覚悟を示しながら8年間で夕張市の行政コストを大幅削減した。北海道知事就任後は2020年2月に全国に先駆けて独自の「緊急事態宣言」を発出しコロナ対応の先例を作り国を動かした。次世代半導体Rapidus（数兆円規模の国家プロジェクト）を千歳市への誘致に成功させ関連産業の集積・雇用創出の基盤を構築。再エネGX特区を推進し北海道のグリーン産業振興を主導。「なおみちカフェ」として道内179市町村を直接訪問するボトムアップ型の政治を展開。", minus:"夕張市長時代の観光施設（リゾート）売却について契約の進め方に批判が出た。酪農など一次産業支援の実効性についても現場からさらなる対応を求める声がある。",
+    comment:"財政破綻自治体の
