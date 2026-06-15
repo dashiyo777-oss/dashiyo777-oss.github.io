@@ -7,4 +7,4 @@ const DATA_UPDATED_AT = "2026.06.13";
 
 const POLITICIANS = [
   {
-    id:"P001", name:"安倍 晋三", reading:"あべ しんぞう", party:"自由民主党", role:"衆議院議員"}
+    id:"P001", name:"安倍 晋三" [TRUNCATED - USING LOCAL FILE]
