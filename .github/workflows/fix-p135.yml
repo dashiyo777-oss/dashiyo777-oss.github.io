@@ -1,0 +1,54 @@
+name: Fix P135 Party Data
+on:
+  push:
+    branches: ['fix/kawamura-p135-v2']
+    paths: ['.github/workflows/fix-p135.yml']
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/kawamura-p135-v2
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Apply P135 fix to data.js
+        run: |
+          python3 << 'PYEOF'
+          data = open('data.js', encoding='utf-8').read()
+          start = data.find('id:"P135"')
+          ob = data.rfind('{', 0, start)
+          depth = 1; i = ob + 1
+          while i < len(data) and depth > 0:
+              if data[i] == '{': depth += 1
+              elif data[i] == '}': depth -= 1
+              i += 1
+          old_entry = data[ob:i]
+          new_entry = old_entry
+          new_entry = new_entry.replace('party:"無所属"', 'party:"減税日本・ゆうこく連合"')
+          new_entry = new_entry.replace('日本保守党共同代表"', '減税日本・ゆうこく連合代表"')
+          new_entry = new_entry.replace('active_fiscal:"○"', 'active_fiscal:"◎"')
+          new_entry = new_entry.replace('mynumber:"○"', 'mynumber:"×"')
+          if old_entry == new_entry:
+              print('WARNING: No changes applied - check search strings')
+          else:
+              data = data.replace(old_entry, new_entry, 1)
+              open('data.js', 'w', encoding='utf-8').write(data)
+              print('P135 fix applied successfully')
+          PYEOF
+
+      - name: Commit and push fix
+        run: |
+          git config user.email "noreply@anthropic.com"
+          git config user.name "Claude"
+          git add data.js
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "fix: P135 河村たかし data.js 修正（party/role/stances）"
+            git push origin fix/kawamura-p135-v2
+          fi
