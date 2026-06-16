@@ -1071,10 +1071,9 @@ function buildPage(p) {
     ];
     if (p.chamber === '衆議院') {
       extLinks.push({ url: 'https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/menu.htm', label: '議案情報（衆議院）', icon: '📜' });
-      extLinks.push({ url: 'https://www.shugiin.go.jp/internet/itdb_vote2.nsf/html/vote2/menu.htm', label: '採決記録（衆議院）', icon: '🗳' });
     } else if (p.chamber === '参議院') {
       extLinks.push({ url: 'https://www.sangiin.go.jp/japanese/joho1/kousei/gian/', label: '議案情報（参議院）', icon: '📜' });
-      extLinks.push({ url: 'https://www.sangiin.go.jp/japanese/joho1/kousei/vote/', label: '採決記録（参議院）', icon: '🗳' });
+      extLinks.push({ url: 'https://www.sangiin.go.jp/japanese/touhyoulist/touhyoulist.html', label: '採決記録（参議院）', icon: '🗳' });
     }
     document.getElementById('external-links-grid').innerHTML = extLinks.map(lk =>
       `<a class="link-btn" href="${lk.url}" target="_blank" rel="noopener">${lk.icon} ${lk.label}</a>`
