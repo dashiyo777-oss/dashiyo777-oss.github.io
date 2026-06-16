@@ -2,6 +2,14 @@
 // data.js 更新時に先頭に追加していく
 const SITE_CHANGELOG = [
   {
+    date: "2026.06.16",
+    label: "リンク修正",
+    entries: [
+      "衆議院採決記録リンク（itdb_vote2.nsf）が廃止のため削除",
+      "参議院採決記録リンクを touhyoulist.html（本会議投票結果）に更新"
+    ]
+  },
+  {
     date: "2026.06.15",
     label: "データ修正",
     entries: [
