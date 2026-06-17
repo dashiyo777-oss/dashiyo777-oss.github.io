@@ -586,11 +586,13 @@
       display: flex;
     }
     .modal-box {
-      max-width: 520px;
+      max-width: 680px;
       width: 92%;
+      max-height: 88vh;
+      overflow-y: auto;
       background: linear-gradient(135deg, #3a2210, #2e1c0a);
       border: 1px solid rgba(200,134,10,0.35);
-      padding: 2.5rem;
+      padding: 2rem 2.5rem 2.5rem;
       position: relative;
       animation: modalIn 0.25s ease;
     }
@@ -631,6 +633,25 @@
       color: rgba(253,246,236,0.75);
       font-family: 'Noto Serif JP', serif;
     }
+    .modal-person-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.3rem; }
+    .modal-person-kanji { font-family: 'Noto Serif JP',serif; font-size: 2rem; font-weight: 700; color: var(--white); }
+    .modal-person-romaji { font-size: 0.8rem; letter-spacing: 0.2em; color: var(--gray); text-transform: uppercase; }
+    .modal-meta { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 1rem; align-items: center; }
+    .modal-tabs { display: flex; border-bottom: 1px solid rgba(200,134,10,0.25); margin-bottom: 1.5rem; }
+    .modal-tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--gray); font-size: 0.72rem; letter-spacing: 0.12em; padding: 0.6rem 0.3rem; cursor: pointer; transition: all 0.2s; margin-bottom: -1px; }
+    .modal-tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .modal-tab-btn:hover:not(.active) { color: var(--amber); }
+    .modal-tab-pane { display: none; }
+    .modal-tab-pane.active { display: block; }
+    .anecdote-item { border-left: 2px solid rgba(200,134,10,0.4); padding: 0.7rem 1rem; margin-bottom: 1rem; }
+    .anecdote-title { font-size: 0.78rem; color: var(--amber); font-weight: 500; margin-bottom: 0.35rem; letter-spacing: 0.05em; }
+    .anecdote-text { font-size: 0.83rem; line-height: 1.85; color: rgba(253,246,236,0.75); font-family: 'Noto Serif JP',serif; }
+    .quote-item { background: rgba(200,134,10,0.07); border: 1px solid rgba(200,134,10,0.2); padding: 1rem 1.2rem; margin-bottom: 1rem; }
+    .quote-text { font-family: 'Noto Serif JP',serif; font-size: 0.95rem; color: var(--white); line-height: 1.9; margin-bottom: 0.4rem; }
+    .quote-source { font-size: 0.63rem; color: var(--gray); letter-spacing: 0.1em; }
+    .tl-item { display: flex; gap: 1rem; margin-bottom: 0.9rem; }
+    .tl-year { font-size: 0.68rem; color: var(--amber); min-width: 72px; padding-top: 0.2rem; letter-spacing: 0.05em; }
+    .tl-event { font-size: 0.82rem; color: rgba(253,246,236,0.8); line-height: 1.75; border-left: 1px solid rgba(200,134,10,0.3); padding-left: 0.9rem; }
   </style>
 </head>
 <body>
@@ -2468,7 +2489,379 @@
     frame.style.position = 'relative';
     frame.appendChild(img);
   });
-  // Portrait frame click
+  // Person detail data for tabbed modal
+  const personData = {
+    1: {
+      anecdotes: [
+        { title: '「鬼道」で民を従える', text: '史書には「鬼道を事とし、能く衆を惑わす」と記され、巫術的祭祀によって神秘的権威を確立。男性支配の時代に宗教的カリスマで君臨した。' },
+        { title: '弟との二人三脚統治', text: '男性の弟が日常の政務を執行し、卑弥呼は神聖な権威を担う分業体制。宗教的権威と政治権力が未分離だった古代の統治モデルを象徴する。' },
+        { title: '百余歩の大きな塚と殉葬', text: '死後、百余歩（約150m）の大きな塚に埋葬され、百人余りの奴婢が殉死したと魏志倭人伝は記す。奈良県の箸墓古墳が有力な比定地とされる。' }
+      ],
+      quotes: [
+        { text: '「鬼道を事とし、能く衆を惑わす」', source: '魏志倭人伝（3世紀）' },
+        { text: '「親魏倭王」', source: '239年、魏の皇帝から授かった称号' }
+      ],
+      timeline: [
+        { year: '175年頃', event: '邪馬台国の女王として即位' },
+        { year: '239年', event: '魏に使者を派遣。「親魏倭王」の金印・銅鏡100枚を授かる' },
+        { year: '240年頃', event: '魏の使者が邪馬台国を訪問、詔書・金帛を届ける' },
+        { year: '248年頃', event: '崩御。百余歩の墓に埋葬。後継者・壱与（台与）が女王に' }
+      ]
+    },
+    2: {
+      anecdotes: [
+        { title: '石山寺での着想', text: '近江国石山寺で中秋の名月を眺めながら源氏物語の着想を得たとされる伝説。今も石山寺には「源氏の間」が残る。' },
+        { title: '宮廷での鋭い観察眼', text: '一条天皇の中宮彰子に仕えた「紫式部日記」には、ライバル清少納言への批評や宮廷の人間模様が赤裸々に記されている。' },
+        { title: '名前の謎', text: '本名は不明。「紫式部」は源氏物語の登場人物「紫の上」と、父の官職「式部丞」を組み合わせた後世の呼称とされる。' }
+      ],
+      quotes: [
+        { text: '「人はただ、思ひやりのあるこそ、あはれなれ」', source: '紫式部日記' },
+        { text: '「もの思へば沢の蛍も我が身より あくがれいづる魂かとぞみる」', source: '新古今和歌集' }
+      ],
+      timeline: [
+        { year: '970年頃', event: '藤原北家の学者・藤原為時の娘として生まれる' },
+        { year: '998年頃', event: '藤原宣孝と結婚' },
+        { year: '1001年頃', event: '夫と死別。源氏物語の執筆を開始' },
+        { year: '1005年頃', event: '一条天皇の中宮彰子に女房として出仕' },
+        { year: '1008年', event: '紫式部日記に源氏物語が宮廷で読まれた記録' },
+        { year: '1013年頃', event: '没（享年不詳）' }
+      ]
+    },
+    3: {
+      anecdotes: [
+        { title: '頼朝との命がけの恋', text: '父・北条時政の反対を押し切り、流人だった源頼朝のもとへ走った。信長から「時政よ、仲人でもせよ」と言われたほど知られた恋。' },
+        { title: '承久の乱での演説', text: '1221年、鎌倉の御家人たちを前に「故右大将（頼朝）の恩は山岳より高く溟渤より深し」と演説。兵士たちは涙し、全員が幕府側で戦うことを誓った。' },
+        { title: '「尼将軍」として院政', text: '頼朝の死後、出家して尼になりながらも政治の実権を握り続け、息子・実朝の暗殺後も北条氏の権力を盤石にした。' }
+      ],
+      quotes: [
+        { text: '「故右大将の恩、山岳よりも高く、溟渤よりも深し。その報謝の志、あに浅からんや」', source: '吾妻鑑・承久の乱前の演説（1221年）' }
+      ],
+      timeline: [
+        { year: '1157年', event: '伊豆国で北条時政の長女として生まれる' },
+        { year: '1177年頃', event: '流人・源頼朝と結婚' },
+        { year: '1192年', event: '頼朝、征夷大将軍に就任。鎌倉幕府成立' },
+        { year: '1199年', event: '頼朝急死。出家して「尼将軍」となる' },
+        { year: '1221年', event: '承久の乱。演説で御家人を鼓舞し幕府が勝利' },
+        { year: '1225年', event: '没（69歳）' }
+      ]
+    },
+    4: {
+      anecdotes: [
+        { title: '信長の「おねへの手紙」', text: '秀吉の浮気を嘆くねねの手紙を受けた信長は「そのほうほどの容貌なら、秀吉の不品行など気にするな」と返書。おねへの配慮と愛情が伝わるエピソード。' },
+        { title: '戦国武将の妻たちに慕われた', text: '「おねねさま」と親しく呼ばれ、他の武将の妻たちも相談に訪れた。秀吉の正室として、大坂城に広いネットワークを持っていた。' },
+        { title: '高台寺の建立', text: '秀吉の死後出家し「高台院」となり、京都東山に高台寺を建立。今も「ねねの道」として知られる参道が残る。' }
+      ],
+      quotes: [
+        { text: '（信長の返書より）「そのほうほどの美人が、あのはげねずみ（秀吉）の浮気など気にするな」', source: '伝承（信長からおねへの書状、1574年頃）' }
+      ],
+      timeline: [
+        { year: '1547年頃', event: '尾張国で誕生' },
+        { year: '1561年', event: '木下藤吉郎（後の豊臣秀吉）と結婚' },
+        { year: '1582年', event: '本能寺の変。秀吉が天下人への道を歩む' },
+        { year: '1598年', event: '秀吉死去。出家し「高台院」を名乗る' },
+        { year: '1606年', event: '京都東山に高台寺を建立' },
+        { year: '1624年', event: '没（享年76〜78歳頃）' }
+      ]
+    },
+    5: {
+      anecdotes: [
+        { title: '薩摩・徳川の橋渡し', text: '薩摩島津家出身でありながら徳川家に嫁いだ篤姫は、戊辰戦争の際に両者の間を取り持ち、江戸城の無血開城を陰で支えた。' },
+        { title: '複雑な養子縁組', text: '島津家→近衛家→一橋家と養女を繰り返し、将軍家定の御台所に。「篤姫」という名は将軍家入輿にあたり贈られた名。' },
+        { title: '明治以後の静かな生き方', text: '明治維新後は旧徳川家の残務処理に尽力し、表舞台を離れて71歳まで生きた。「天璋院」として品位ある晩年を送った。' }
+      ],
+      quotes: [
+        { text: '「徳川の御旗は私が守る」', source: '伝承（江戸城無血開城前後）' },
+        { text: '「武士の娘として、最後まで毅然と生きよ」', source: '伝承' }
+      ],
+      timeline: [
+        { year: '1836年', event: '薩摩藩島津家一族として誕生（幼名・一）' },
+        { year: '1853年', event: '島津斉彬の養女となる' },
+        { year: '1856年', event: '13代将軍徳川家定と結婚。江戸城大奥へ' },
+        { year: '1858年', event: '家定没。出家して「天璋院」を名乗る' },
+        { year: '1868年', event: '戊辰戦争。江戸城無血開城に貢献' },
+        { year: '1883年', event: '没（48歳）' }
+      ]
+    },
+    6: {
+      anecdotes: [
+        { title: '深草少将の百夜通い', text: '深草少将が百夜通い続けたが九十九夜目に命を落としたという悲恋伝説。小町の美しさと冷淡さを同時に伝える。' },
+        { title: '絶世の美女の晩年', text: '「卒都婆小町」という能の演目では、絶世の美女が老いさらばえ野垂れ死にする様が描かれる。美の無常を体現する存在として語り継がれた。' },
+        { title: '謎多き生涯', text: '生没年・出自・晩年のすべてが不明。「小野小町」という名が複数人を指す可能性も指摘されており、伝説と実在が混在する謎多き歌人。' }
+      ],
+      quotes: [
+        { text: '「花の色は移りにけりないたづらに わが身世にふるながめせしまに」', source: '古今和歌集・百人一首（9世紀）' },
+        { text: '「わびぬれば身を浮草の根を絶えて さそふ水あらばいなむとぞ思ふ」', source: '古今和歌集' }
+      ],
+      timeline: [
+        { year: '825年頃', event: '生まれる（出自・正確な年は不明）' },
+        { year: '850年頃', event: '六歌仙として活躍。宮廷女房として才能を発揮' },
+        { year: '905年', event: '古今和歌集に18首収録（六歌仙中最多）' },
+        { year: '900年頃', event: '没（享年・晩年の様子とも不明）' }
+      ]
+    },
+    7: {
+      anecdotes: [
+        { title: '倶利伽羅峠の女武者', text: '1183年の倶利伽羅峠の戦いで義仲軍の先陣を切った。「平家物語」は「弓矢・刀・馬術いずれも一騎当千の強者」と称える。' },
+        { title: '最後の一騎打ち', text: '義仲が粟津で討たれる直前、「女のあなたを残して死ぬわけにはいかない」と言う義仲に、巴は敵将の首を取って戦場を離れたとされる。' },
+        { title: '謎の晩年', text: '義仲の死後、越中で尼になったとも、鎌倉で武将・和田義盛の妻となったとも伝わる。100歳以上生きたという伝説まである。' }
+      ],
+      quotes: [
+        { text: '「女なれども、弓矢の道は一歩も引きませじ」', source: '平家物語・木曾最期（意訳）' }
+      ],
+      timeline: [
+        { year: '1157年頃', event: '生まれる（木曽義仲の乳兄弟とも）' },
+        { year: '1183年', event: '倶利伽羅峠の戦いで活躍。義仲軍が平家を破る' },
+        { year: '1184年', event: '宇治川の戦い。義仲の最期に従い、敵将・御田八郎を討つ' },
+        { year: '1184年以降', event: '義仲死後の行方は諸説あり。越中に逃れ尼となった伝承が有力' }
+      ]
+    },
+    8: {
+      anecdotes: [
+        { title: '鶴ヶ城の女砲手', text: '1868年の戊辰戦争で、スペンサー銃を操り男性顔負けの奮戦をした。白虎隊とともに「会津の誇り」として語り継がれる。' },
+        { title: '「ハンサムウーマン」の呼び声', text: '明治時代、洋装で自転車に乗り京都の街を颯爽と走る姿が評判となり「ハンサムウーマン」と呼ばれた。' },
+        { title: '日清・日露戦争での看護活動', text: '日本赤十字社の篤志看護婦として両戦争に参加し、傷病兵の看護に尽くした。波乱の人生で激動の明治を生き抜いた。' }
+      ],
+      quotes: [
+        { text: '「ならぬことはならぬものです」', source: '会津藩校日新館「什の掟」（八重が学んだ教え）' },
+        { text: '「自らの力で道を切り拓け」', source: '伝承' }
+      ],
+      timeline: [
+        { year: '1845年', event: '会津藩砲術師範・山本権八の娘として生まれる' },
+        { year: '1868年', event: '戊辰戦争・鶴ヶ城籠城戦でスペンサー銃を操り奮戦' },
+        { year: '1871年', event: '会津開城後、京都へ移住' },
+        { year: '1875年', event: '新島襄と結婚' },
+        { year: '1890年', event: '新島の死後、同志社女学校の発展に尽力' },
+        { year: '1915年', event: '没（70歳）' }
+      ]
+    },
+    9: {
+      anecdotes: [
+        { title: '小豆袋の伝説', text: '浅井長政に嫁いでいたお市が、信長の軍が来ることを伝えるため、両端を縛った小豆袋を陣中に送ったという伝説。史実かは不明だが広く知られる。' },
+        { title: '三人の娘が歴史を動かす', text: '長女・茶々（淀殿）は豊臣秀吉の側室、次女・初は京極高次の妻、三女・江は徳川秀忠の正室。三姉妹が安土桃山〜江戸の権力構造を繋いだ。' },
+        { title: '北ノ庄城での最期', text: '1583年、柴田勝家の北ノ庄城が秀吉軍に囲まれると、勝家と共に最期を迎えた。37歳の若さで散った。' }
+      ],
+      quotes: [
+        { text: '「さらぬだに 打ちぬる程も 夏の夜の 夢路を誘ふ ほととぎすかな」', source: '辞世の句（伝承）' }
+      ],
+      timeline: [
+        { year: '1547年頃', event: '織田信長の妹として尾張国で生まれる' },
+        { year: '1567年', event: '浅井長政と政略結婚。信長・浅井の同盟の証' },
+        { year: '1570年', event: '姉川の戦い。信長と長政が対立' },
+        { year: '1573年', event: '浅井氏滅亡。子供たちと共に信長のもとへ' },
+        { year: '1582年', event: '本能寺の変後、柴田勝家と再婚' },
+        { year: '1583年', event: '北ノ庄城落城。勝家と共に自害（37歳頃）' }
+      ]
+    },
+    10: {
+      anecdotes: [
+        { title: '幽閉された明智の娘', text: '本能寺の変で父・光秀が逆賊となり、夫・忠興は妻を幽閉。「謀反人の娘」として3年間、丹後の山奥に閉じ込められた。' },
+        { title: '秘密の洗礼', text: '禁教令が出ている中、こっそりとキリスト教の洗礼を受け「ガラシャ（恵み）」の洗礼名を得た。その信仰は命がけのものだった。' },
+        { title: '関ヶ原前夜の決断', text: '1600年、西軍の石田三成が人質を要求。ガラシャはこれを拒否し、家老・小笠原秀清に命じて自分を討たせた。「散り際の美」は日本とヨーロッパで語り継がれた。' }
+      ],
+      quotes: [
+        { text: '「散りぬべき時知りてこそ世の中の 花も花なれ人も人なれ」', source: '辞世の句（1600年）' },
+        { text: '「主よ、我が魂をお受けください」', source: '最後の祈り（伝承・切支丹記録より）' }
+      ],
+      timeline: [
+        { year: '1563年', event: '明智光秀の三女として生まれる' },
+        { year: '1578年', event: '細川忠興と結婚' },
+        { year: '1582年', event: '本能寺の変後、丹後に幽閉（3年間）' },
+        { year: '1587年頃', event: 'キリスト教に入信。洗礼名「ガラシャ」を受ける' },
+        { year: '1600年', event: '関ヶ原前夜、人質拒否。家老の手で殉死（38歳）' }
+      ]
+    },
+    11: {
+      anecdotes: [
+        { title: '6歳での渡米と言語喪失', text: '岩倉使節団の最年少留学生として6歳で渡米。11年後に帰国した際、日本語をほぼ忘れていたという有名なエピソードがある。' },
+        { title: '桜の染色体研究', text: 'ブリンマー女子大学（米）で植物学を研究し、桜の染色体に関する論文を発表。「サイエンティスト」としての顔を持つ先駆的な女性学者でもあった。' },
+        { title: '生涯独身で教育に捧げた人生', text: '「私が結婚すれば留学で得たものを家庭に費やすことになる」と生涯独身を貫き、女子英学塾（現・津田塾大学）設立に全精力を注いだ。' }
+      ],
+      quotes: [
+        { text: '「女性が教育を受ければ、必ず社会は変わる」', source: '伝承' },
+        { text: '「I want to do something for the women of Japan」', source: '留学中の手紙より（1887年頃）' }
+      ],
+      timeline: [
+        { year: '1864年', event: '東京で生まれる' },
+        { year: '1871年（6歳）', event: '岩倉使節団に随行して渡米（最年少）' },
+        { year: '1882年', event: '11年ぶりに帰国。日本語を学び直す' },
+        { year: '1889年', event: '再度渡米。ブリンマー女子大学で生物学を研究' },
+        { year: '1900年', event: '女子英学塾（現・津田塾大学）を設立' },
+        { year: '1929年', event: '没（65歳）' }
+      ]
+    },
+    12: {
+      anecdotes: [
+        { title: '「みだれ髪」の衝撃', text: '1901年刊行の処女歌集。「やは肌のあつき血汐にふれも見で」など官能的・大胆な歌は当時の社会を震撼させ、賛否両論を巻き起こした。' },
+        { title: '「君死にたまふことなかれ」の反響', text: '日露戦争で出征する弟を思い書いたこの詩は、戦意高揚の時代に真っ向から反戦を訴え、文壇や軍部から激しく批判された。' },
+        { title: '12人の子供を育てながら創作', text: '夫・与謝野鉄幹との間に11人の子を産み（1人夭折）、育児・家事をこなしながら膨大な歌と文筆を生み出し続けた。' }
+      ],
+      quotes: [
+        { text: '「ああ弟よ、君を泣く、君死にたまふことなかれ」', source: '「君死にたまふことなかれ」明星（1904年9月号）' },
+        { text: '「清水へ祇園をよぎる桜月夜 こよひ逢ふ人みなうつくしき」', source: 'みだれ髪（1901年）' }
+      ],
+      timeline: [
+        { year: '1878年', event: '大阪府堺市で生まれる' },
+        { year: '1900年', event: '与謝野鉄幹と結婚' },
+        { year: '1901年', event: '処女歌集「みだれ髪」発表。文壇に衝撃を与える' },
+        { year: '1904年', event: '「君死にたまふことなかれ」発表。反響を呼ぶ' },
+        { year: '1921年', event: '平塚らいてうと新婦人協会を創立' },
+        { year: '1942年', event: '没（64歳）' }
+      ]
+    },
+    13: {
+      anecdotes: [
+        { title: '鴎外・露伴が激賞した天才', text: '「たけくらべ」「にごりえ」を読んだ森鴎外と幸田露伴が競うように絶賛。「奇才が現れた」と文壇が騒然となった。' },
+        { title: '質屋・荒物屋での生活', text: '極貧の家計を支えるため下谷竜泉寺で質屋・荒物屋を営みながら執筆。現実の苦労が作品の深みとなった。' },
+        { title: '24歳での早世', text: '肺結核で24歳の若さで亡くなった。短い生涯に「大つごもり」「にごりえ」「たけくらべ」「十三夜」など傑作を次々と書き上げた。' }
+      ],
+      quotes: [
+        { text: '「にごりえのなかにも清い流れはある」', source: '作品「にごりえ」（1895年）に込めた思想' },
+        { text: '「人の世の定めはわからない」', source: '「大つごもり」（1894年）より' }
+      ],
+      timeline: [
+        { year: '1872年', event: '東京府（現・新宿区）で生まれる' },
+        { year: '1887年', event: '父の死。中島歌子の歌塾「萩の舎」に入門' },
+        { year: '1894年', event: '「大つごもり」発表。文壇デビュー' },
+        { year: '1895年', event: '「にごりえ」「たけくらべ」を発表。鴎外・露伴が激賞' },
+        { year: '1896年', event: '「十三夜」発表。同年11月に肺結核で没（24歳）' }
+      ]
+    },
+    14: {
+      anecdotes: [
+        { title: '「青鞜」創刊の宣言', text: '1911年、女性文芸誌「青鞜」を創刊。巻頭に「元始、女性は太陽であった」と宣言し、明治・大正の社会に革命的な波紋を投じた。' },
+        { title: '塩原事件の波紋', text: '1908年、作家・森田草平との心中未遂事件（塩原事件）でスキャンダルに。世間から非難されながらも自由な生き方を貫いた。' },
+        { title: '母性保護論争', text: '与謝野晶子との間で「女性は国家の保護を受けるべきか、自立すべきか」をめぐる有名な論争（1918年）。女性解放思想の深化に貢献した。' }
+      ],
+      quotes: [
+        { text: '「元始、女性は太陽であった。真正の人であった」', source: '青鞜創刊号（1911年9月）' },
+        { text: '「私は天才である」', source: '少女時代の日記（伝承）' }
+      ],
+      timeline: [
+        { year: '1886年', event: '東京府で生まれる' },
+        { year: '1908年', event: '森田草平との塩原事件（心中未遂）' },
+        { year: '1911年', event: '女性文芸誌「青鞜」創刊。「元始、女性は太陽であった」宣言' },
+        { year: '1919年', event: '市川房枝と「新婦人協会」を創立' },
+        { year: '1930年', event: '奥村博と正式に結婚' },
+        { year: '1971年', event: '没（85歳）' }
+      ]
+    },
+    15: {
+      anecdotes: [
+        { title: '崇峻天皇暗殺後の即位', text: '587年、蘇我馬子によって崇峻天皇が暗殺される混乱の中、推古天皇が史上初の女性天皇として即位。聖徳太子（甥）を摂政に任じた。' },
+        { title: '隋への対等外交', text: '「日出づる処の天子、書を日没する処の天子に致す」という国書は、大国・隋に対等を主張した画期的外交文書。隋の煬帝は不快に思ったが交流は続いた。' },
+        { title: '仏教興隆の詔', text: '「篤く三宝（仏法僧）を敬え」と詔を出し、飛鳥寺など多くの寺院建立を推進。日本の仏教文化の礎を築いた。' }
+      ],
+      quotes: [
+        { text: '「篤く三宝を敬え。三宝とは仏・法・僧なり」', source: '三宝興隆の詔（593年）' },
+        { text: '「日出づる処の天子、書を日没する処の天子に致す」', source: '遣隋使の国書（607年・小野妹子が持参）' }
+      ],
+      timeline: [
+        { year: '554年', event: '欽明天皇の娘として生まれる' },
+        { year: '593年', event: '史上初の女性天皇として即位。聖徳太子を摂政に' },
+        { year: '600年', event: '第1回遣隋使を派遣' },
+        { year: '604年', event: '聖徳太子が十七条憲法を制定' },
+        { year: '607年', event: '小野妹子を隋に派遣。対等外交の国書を送る' },
+        { year: '628年', event: '没（75歳）。日本史上最長の在位（36年）' }
+      ]
+    },
+    16: {
+      anecdotes: [
+        { title: '「東洋のマタ・ハリ」', text: '男装で上海・満州を闊歩し、日本の諜報活動に関与したとされる。その謎多き生き方が欧米でも"東洋のマタ・ハリ"として広く伝えられた。' },
+        { title: '清朝王族から日本人養女へ', text: '清朝の粛親王第14王女として生まれたが、辛亥革命後に日本人の川島浪速の養女として来日。「日本人でも中国人でもない」孤独を抱えた。' },
+        { title: '処刑をめぐる諸説', text: '1948年に北京で銃殺されたが、本人は別人で身代わりがいたとの伝説が今も残る。享年40歳の短い生涯は今も謎に包まれている。' }
+      ],
+      quotes: [
+        { text: '「私は日本人でも中国人でもない。私は私だ」', source: '伝承' },
+        { text: '「男に生まれたかった」', source: '伝承' }
+      ],
+      timeline: [
+        { year: '1907年', event: '清朝粛親王の第14王女として北京で生まれる' },
+        { year: '1913年', event: '川島浪速の養女となり来日。「芳子」と命名される' },
+        { year: '1931年', event: '満州事変に関与したとされる' },
+        { year: '1932年', event: '上海事変前後にスパイ活動。男装姿が話題に' },
+        { year: '1945年', event: '終戦後、中国国民政府に逮捕' },
+        { year: '1948年', event: '北京で銃殺（40歳）' }
+      ]
+    },
+    17: {
+      anecdotes: [
+        { title: 'クリーン選挙の象徴', text: '選挙費用をほとんどかけない「クリーン選挙」で知られた。有権者に直接語りかける草の根運動で、長年にわたり参議院議員として活躍した。' },
+        { title: 'GHQ公職追放からの復活', text: '戦後GHQにより公職追放を受けたが、解除後に政界に復帰。女性参政権の実現と、その後の女性の政治参加推進に生涯を捧げた。' },
+        { title: '88歳まで現役', text: '80代でも現役の参議院議員として活動し続けた。「政治は生活そのもの」という信念のもと、生涯を通じて女性の権利向上に取り組んだ。' }
+      ],
+      quotes: [
+        { text: '「女性が変われば政治が変わる、政治が変われば日本が変わる」', source: '演説より（伝承）' },
+        { text: '「政治は生活そのものです」', source: '演説より' }
+      ],
+      timeline: [
+        { year: '1893年', event: '愛知県で生まれる' },
+        { year: '1920年', event: '平塚らいてうと「新婦人協会」を共同設立' },
+        { year: '1924年', event: '「婦人参政権獲得期成同盟会」を設立' },
+        { year: '1945年', event: '女性参政権が実現' },
+        { year: '1953年', event: '参議院議員に初当選（以後7期務める）' },
+        { year: '1981年', event: '没（88歳）' }
+      ]
+    },
+    18: {
+      anecdotes: [
+        { title: '患者たちへの寄り添い', text: '水俣出身でも患者でもなかったが、水俣病患者たちと共に歩み続けた。患者の語りを「苦海浄土」で文学として結晶化させた。' },
+        { title: '「苦海浄土」の衝撃', text: '1969年刊行の「苦海浄土」は日本の環境文学の転換点。チッソ工場の水銀が引き起こした惨禍を文学的に描き、世界に水俣病の実態を伝えた。' },
+        { title: 'チッソとの闘い', text: '患者たちとともにチッソ本社へ乗り込み、直接交渉の場に立ち会い続けた。「加害者と向き合うことが文学の使命」と語った。' }
+      ],
+      quotes: [
+        { text: '「この海の底に、失われた命が、いまも光っている」', source: '苦海浄土（1969年）より意訳' },
+        { text: '「文学は、弱者の側に立つためにある」', source: 'インタビューより（伝承）' }
+      ],
+      timeline: [
+        { year: '1927年', event: '熊本県天草郡で生まれる' },
+        { year: '1956年', event: '水俣病の公式確認。取材・支援活動を始める' },
+        { year: '1969年', event: '「苦海浄土」出版。環境文学の金字塔となる' },
+        { year: '1973年', event: 'チッソ水俣病訴訟、患者側が勝訴' },
+        { year: '2001年', event: 'ユージン・スミス賞受賞' },
+        { year: '2018年', event: '没（90歳）' }
+      ]
+    },
+    19: {
+      anecdotes: [
+        { title: '水玉は「強迫観念の昇華」', text: '幼少期から水玉や網模様の幻覚を見ていた。「恐ろしいものを描き続けることで、恐怖を乗り越えてきた」と語り、アートを「自己療法」と位置づける。' },
+        { title: 'ウォーホルより先に「無限」を表現', text: '1960年代ニューヨークで、アンディ・ウォーホルよりも早く無限反復・増殖のコンセプトを展開。「無限の網」シリーズで先駆的地位を確立した。' },
+        { title: '精神科病院から世界へ', text: '1977年から東京の精神科病院に自ら入院しながら、隣接するスタジオで毎日制作を続ける。90代の現在も世界中で展覧会が開かれている。' }
+      ],
+      quotes: [
+        { text: '「アートは私の命を救ってくれた唯一の療法だ」', source: 'インタビュー（複数回発言）' },
+        { text: '「私は水玉の女王、永遠の魂の女王よ」', source: '各種インタビューより' }
+      ],
+      timeline: [
+        { year: '1929年', event: '長野県松本市で生まれる' },
+        { year: '1957年', event: '渡米。ニューヨークで前衛芸術活動を開始' },
+        { year: '1966年', event: 'ヴェネツィア・ビエンナーレに参加（非公式）' },
+        { year: '1973年', event: '帰国。精神科病院に自ら入院し、制作を継続' },
+        { year: '1993年', event: 'ヴェネツィア・ビエンナーレ日本館の公式代表' },
+        { year: '現在', event: '世界最多展示数の存命アーティストとして活動中' }
+      ]
+    },
+    20: {
+      anecdotes: [
+        { title: '「捨松」の名の由来', text: '渡米に際し「松（日本）を捨てて行く」という意味で「捨松」と名付けられた。帰国後は「日本女性の地位を高める」という使命感を持って生きた。' },
+        { title: 'ヴァッサー大学を首席卒業', text: '日本女性として初めてアメリカの大学を卒業（1882年）。首席での卒業は米国でも大きなニュースになった。' },
+        { title: '鹿鳴館の女王', text: '大山巌元帥夫人として明治政府の欧化政策の象徴・鹿鳴館で活躍。流暢な英語と知性で外交の橋渡し役を担った。' }
+      ],
+      quotes: [
+        { text: '「日本女性の地位を高めるために、私は帰国する」', source: '帰国時の発言（伝承）' },
+        { text: '「知識こそが、女性の自由への唯一の鍵です」', source: '伝承' }
+      ],
+      timeline: [
+        { year: '1860年', event: '会津藩士・山川重固の娘として生まれる' },
+        { year: '1871年（11歳）', event: '岩倉使節団に随行して渡米（津田梅子らと共に）' },
+        { year: '1882年', event: 'ヴァッサー大学を首席卒業。日本人女性初の米大学卒' },
+        { year: '1883年', event: '大山巌陸軍大将と結婚' },
+        { year: '1884年', event: '鹿鳴館での欧化外交で活躍。社交界の花形となる' },
+        { year: '1919年', event: '没（59歳）' }
+      ]
+    }
+  };
+
+  // Portrait frame click — tabbed modal
   document.querySelectorAll('.portrait-frame').forEach(frame => {
     frame.addEventListener('click', () => {
       const card = frame.closest('.profile-card');
@@ -2477,15 +2870,58 @@
       const bio = card?.querySelector('.profile-bio')?.textContent?.trim() || '';
       const eraBadge = card?.querySelector('.era-badge')?.textContent || '';
       const dates = card?.querySelector('.dates')?.textContent || '';
+      const rankNum = parseInt(card?.querySelector('.rank-num')?.textContent || '0', 10);
+      const data = personData[rankNum];
+
+      const anecdotesHTML = data ? data.anecdotes.map(a => `
+        <div class="anecdote-item">
+          <div class="anecdote-title">${a.title}</div>
+          <div class="anecdote-text">${a.text}</div>
+        </div>`).join('') : '<p class="modal-body">準備中</p>';
+
+      const quotesHTML = data ? data.quotes.map(q => `
+        <div class="quote-item">
+          <div class="quote-text">${q.text}</div>
+          <div class="quote-source">— ${q.source}</div>
+        </div>`).join('') : '<p class="modal-body">準備中</p>';
+
+      const timelineHTML = data ? data.timeline.map(t => `
+        <div class="tl-item">
+          <div class="tl-year">${t.year}</div>
+          <div class="tl-event">${t.event}</div>
+        </div>`).join('') : '<p class="modal-body">準備中</p>';
+
       openModal(`
-        <div style="font-family:'Noto Serif JP',serif;font-size:3.5rem;font-weight:700;writing-mode:vertical-rl;color:var(--white);text-shadow:0 2px 12px rgba(0,0,0,0.5),0 0 30px rgba(200,134,10,0.3);margin-bottom:1.2rem;">${kanji}</div>
-        <div class="modal-sub">${eraLabel}</div>
-        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-bottom:1rem;">
+        <div class="modal-person-header">
+          <span class="modal-person-kanji">${kanji}</span>
+          <span class="modal-person-romaji">${eraLabel}</span>
+        </div>
+        <div class="modal-meta">
           <span class="era-badge">${eraBadge}</span>
           <span class="dates">${dates}</span>
         </div>
-        <p class="modal-body">${bio}</p>
+        <div class="modal-tabs" id="modalTabs">
+          <button class="modal-tab-btn active" data-tab="bio">概要</button>
+          <button class="modal-tab-btn" data-tab="anecdotes">逸話</button>
+          <button class="modal-tab-btn" data-tab="quotes">言葉</button>
+          <button class="modal-tab-btn" data-tab="timeline">年表</button>
+        </div>
+        <div class="modal-tab-pane active" id="tab-bio">
+          <p class="modal-body">${bio}</p>
+        </div>
+        <div class="modal-tab-pane" id="tab-anecdotes">${anecdotesHTML}</div>
+        <div class="modal-tab-pane" id="tab-quotes">${quotesHTML}</div>
+        <div class="modal-tab-pane" id="tab-timeline">${timelineHTML}</div>
       `);
+
+      document.getElementById('modalTabs').addEventListener('click', e => {
+        const btn = e.target.closest('.modal-tab-btn');
+        if (!btn) return;
+        document.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.modal-tab-pane').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
     });
   });
 
