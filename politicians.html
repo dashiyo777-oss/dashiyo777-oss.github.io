@@ -271,6 +271,33 @@
       border-color: var(--blue);
       background: rgba(91,160,224,0.10);
     }
+    .filter-sep {
+      width: 1px;
+      height: 1.4rem;
+      background: rgba(255,255,255,0.12);
+      align-self: center;
+      flex-shrink: 0;
+    }
+    .btn-ext-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid rgba(104,190,140,0.35);
+      border-radius: 6px;
+      background: transparent;
+      color: #68be8c;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+      text-decoration: none;
+      font-family: 'Noto Serif JP', sans-serif;
+    }
+    .btn-ext-link:hover {
+      border-color: #68be8c;
+      background: rgba(104,190,140,0.10);
+    }
 
     /* ── GUIDE MODAL ── */
     .modal-overlay {
@@ -791,6 +818,10 @@
     <button class="filter-toggle" id="toggle-caution">⚠️ 要注意のみ</button>
     <button class="filter-toggle" id="btn-match" style="border-color:var(--gold);color:var(--gold)">🎯 マッチング</button>
     <button class="btn-guide" id="btn-guide">❓ 評価基準</button>
+    <span class="filter-sep"></span>
+    <a class="btn-ext-link" href="https://kokkai.ndl.go.jp/#/search" target="_blank" rel="noopener">🗣 国会発言情報</a>
+    <a class="btn-ext-link" href="https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/menu.htm" target="_blank" rel="noopener">📜 議案情報（衆）</a>
+    <a class="btn-ext-link" href="https://www.sangiin.go.jp/japanese/joho1/kousei/gian/" target="_blank" rel="noopener">📜 議案情報（参）</a>
   </div>
   <div class="result-count" id="result-count">
     <span id="result-count-text"></span>
