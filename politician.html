@@ -476,6 +476,27 @@
     line-height: 1.8;
   }
 
+  /* ── PLEDGES ── */
+  .pledge-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .pledge-item {
+    display: flex; align-items: flex-start; gap: 0.6rem;
+    padding: 0.55rem 0.7rem; border: 1px solid var(--border);
+    border-radius: 5px; font-size: 0.78rem; font-family: 'Noto Serif JP', serif; line-height: 1.5;
+  }
+  .pledge-status {
+    flex-shrink: 0; padding: 0.1rem 0.5rem; border-radius: 3px;
+    font-size: 0.62rem; font-weight: 500; white-space: nowrap;
+  }
+  .pledge-status.jitsugen { background: rgba(74,199,118,0.2); color: var(--green); border: 1px solid rgba(74,199,118,0.4); }
+  .pledge-status.ichibu   { background: rgba(91,160,224,0.2); color: var(--blue);  border: 1px solid rgba(91,160,224,0.4); }
+  .pledge-status.shingi   { background: rgba(245,200,66,0.15); color: var(--gold); border: 1px solid rgba(245,200,66,0.35); }
+  .pledge-status.micha    { background: rgba(128,144,184,0.12); color: var(--gray); border: 1px solid var(--border); }
+  .pledge-status.tessai   { background: rgba(230,56,79,0.12); color: var(--red);   border: 1px solid rgba(230,56,79,0.35); }
+  .pledge-fulfillment {
+    font-size: 0.68rem; color: var(--gray); margin-top: 0.8rem;
+    display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .site-header { padding: 0 1rem; }
@@ -528,6 +549,18 @@
         <span class="section-head-title">AI 評価サマリー</span>
       </div>
       <div class="section-body" id="body-comment"></div>
+    </div>
+
+    <!-- Pledges -->
+    <div class="section-card" id="card-pledges" style="display:none">
+      <div class="section-head">
+        <span class="section-head-icon">📣</span>
+        <span class="section-head-title">選挙公約</span>
+      </div>
+      <div class="section-body">
+        <div class="pledge-list" id="pledge-list"></div>
+        <div class="pledge-fulfillment" id="pledge-fulfillment"></div>
+      </div>
     </div>
 
     <!-- Evidence tabs -->
@@ -916,6 +949,43 @@ function buildPage(p) {
       </div>
     </div>
   `;
+
+  // ── Pledges
+  {
+    const pledgeCard = document.getElementById('card-pledges');
+    const pledgeList = document.getElementById('pledge-list');
+    const pledgeFulfillment = document.getElementById('pledge-fulfillment');
+    const raw = p.pledge_results || (p.pledges ? p.pledges.map(t => ({ text: t, status: null })) : null);
+    if (raw && raw.length > 0) {
+      pledgeCard.style.display = '';
+      const SC = {
+        '実現':   { cls: 'jitsugen', label: '✅ 実現' },
+        '一部実現':{ cls: 'ichibu',   label: '△ 一部実現' },
+        '審議中': { cls: 'shingi',    label: '⏳ 審議中' },
+        '未着手': { cls: 'micha',     label: '— 未着手' },
+        '撤回':   { cls: 'tessai',    label: '❌ 撤回' },
+      };
+      pledgeList.innerHTML = raw.map(pl => {
+        const sc = pl.status ? (SC[pl.status] || { cls: 'micha', label: pl.status }) : null;
+        return `<div class="pledge-item">
+          <span class="pledge-status ${sc ? sc.cls : 'micha'}">${sc ? sc.label : '公約'}</span>
+          <span>${pl.text}</span>
+        </div>`;
+      }).join('');
+      const withStatus = raw.filter(pl => pl.status);
+      if (withStatus.length > 0) {
+        const cnt = { '実現': 0, '一部実現': 0, '審議中': 0, '未着手': 0, '撤回': 0 };
+        withStatus.forEach(pl => { if (cnt[pl.status] !== undefined) cnt[pl.status]++; });
+        const fulfilled = cnt['実現'] + cnt['一部実現'] * 0.5;
+        const pct = Math.round((fulfilled / raw.length) * 100);
+        pledgeFulfillment.innerHTML =
+          `<span>📊 公約実現率 <strong style="color:var(--green)">${pct}%</strong>（${cnt['実現']}件実現 / 全${raw.length}件）</span>`
+          + (cnt['審議中'] > 0 ? `<span>⏳ 審議中 ${cnt['審議中']}件</span>` : '')
+          + (cnt['未着手'] > 0 ? `<span>— 未着手 ${cnt['未着手']}件</span>` : '')
+          + (cnt['撤回']   > 0 ? `<span style="color:var(--red)">❌ 撤回 ${cnt['撤回']}件</span>` : '');
+      }
+    }
+  }
 
   // ── Evidence tabs
   const cats = [
