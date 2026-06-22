@@ -483,6 +483,15 @@
     padding: 0.55rem 0.7rem; border: 1px solid var(--border);
     border-radius: 5px; font-size: 0.78rem; font-family: 'Noto Serif JP', serif; line-height: 1.5;
   }
+  .pledge-body { display: flex; flex-direction: column; gap: 0.3rem; flex: 1; }
+  .pledge-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-top: 0.15rem; }
+  .pledge-field-tag {
+    padding: 0.05rem 0.4rem; border-radius: 3px; font-size: 0.6rem; font-weight: 500;
+    background: rgba(74,143,212,0.12); color: var(--blue); border: 1px solid rgba(74,143,212,0.3);
+    white-space: nowrap;
+  }
+  .pledge-date { font-size: 0.62rem; color: var(--gray); white-space: nowrap; }
+  .pledge-context { font-size: 0.62rem; color: var(--gray); }
   .pledge-status {
     flex-shrink: 0; padding: 0.1rem 0.5rem; border-radius: 3px;
     font-size: 0.62rem; font-weight: 500; white-space: nowrap;
@@ -967,9 +976,17 @@ function buildPage(p) {
       };
       pledgeList.innerHTML = raw.map(pl => {
         const sc = pl.status ? (SC[pl.status] || { cls: 'micha', label: pl.status }) : null;
+        const meta = (pl.date || pl.context || pl.field) ? `
+          <div class="pledge-meta">
+            ${pl.field ? `<span class="pledge-field-tag">${pl.field}</span>` : ''}
+            ${pl.date ? `<span class="pledge-date">📅 ${pl.date}</span>` : ''}
+            ${pl.context ? `<span class="pledge-context">${pl.context}</span>` : ''}
+          </div>` : '';
         return `<div class="pledge-item">
           <span class="pledge-status ${sc ? sc.cls : 'micha'}">${sc ? sc.label : '公約'}</span>
-          <span>${pl.text}</span>
+          <div class="pledge-body">
+            <span>${pl.text}</span>${meta}
+          </div>
         </div>`;
       }).join('');
       const withStatus = raw.filter(pl => pl.status);
