@@ -1,1 +1,2 @@
-Ly8g57Wx6KanIFRPUkFOIOKAlCBkYXRhLmpzCi8vIOiHquWLleeUn+aIkOODleOCoeOCpOODq+OAguebtOaOpee3qOmbhuOBl+OBvuOBmeOAggovLyBDb3B5cmlnaHQgKGMpIDIwMjUgVG9yYW4gUHJvamVjdC4gQWxsIHJpZ2h0cyByZXNlcnZlZC4KCmNvbnN0IFBPTERUSUNJQU5TID0gWw==
+// 統覧 TORAN — data.js
+// 自動生成ファイル。直接編集しないでください。
