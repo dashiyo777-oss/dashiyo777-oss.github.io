@@ -895,7 +895,7 @@ const POLITICIANS = [
     plus:"飲食店経営から政界入りした叩き上げ。6期連続当選し維新の国対委員長として与野党交渉を主導。2025年10月に高市内閣の首相補佐官（連立政策推進担当）に就任。", minus:"高校卒業後の飲食業出身で政策専門性は限定的との指摘あり。所属政党が自民→維新と変遷し、政治的一貫性の評価が分かれる。",
     comment:"大阪高石市出身の叩き上げ政治家。飲食店経営から青年会議所活動を経て政界入りし、日本維新の会で6期を務める。国対委員長として党の交渉力を支え、高市内閣では連立合意政策推進担当の首相補佐官に就任。庶民感覚を強みとするが、専門政策力の評価は低い。",
     links:{hp:"https://www.google.com/search?q=%E9%81%A0%E8%97%A4%20%E6%95%AC%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E6%95%AC",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.06.25", survey:"評価済"
   },
   {
     id:"P082", name:"遠藤 寛明", reading:"えんどう ひろあき", party:"自民党", role:"衆議院議員",
