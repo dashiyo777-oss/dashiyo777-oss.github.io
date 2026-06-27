@@ -2709,10 +2709,10 @@ const POLITICIANS = [
     total:75, rank:"B",
     axes:[4,4,3,3,4,4,4,4],
     stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
-    plus:"通産・経産官僚出身。再生可能エネルギー導入拡大や地球温暖化対策への高い先導力。", minus:"環境政策の急進的な主張に対し、過渡期の現実的な産業コストへの配慮を懸念する声。",
-    comment:"経産省出身。党再生可能エネルギー主力化ワーキンググループなどで中心的に活動。脱炭素社会の実現や気候変動対策、物価インフレ下の中小企業支援に注力する。",
+    plus:"NTT・世界銀行グループ（IFC）での民間・国際機関17年のキャリアを持つ実務家議員。再生可能エネルギー推進や気候変動対策の政策立案に注力。", minus:"環境政策の急進的な主張に対し、過渡期の現実的な産業コストへの配慮を懸念する声。",
+    comment:"NTT入社後、ウォートンスクールMBAを経て世界銀行グループIFC（国際金融公社）に職員として勤務。民間・国際機関で17年のキャリアを積み2003年初当選。経済産業大臣政務官（菅直人内閣）として福島第一原発事故対応も担当。脱炭素社会の実現と再生可能エネルギー主力化に注力する。",
     links:{hp:"https://www.google.com/search?q=%E7%94%B0%E5%B6%8B%20%E8%A6%81%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/田嶋要",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.06.27", survey:"評価済"
   },
   {
     id:"P245", name:"橘 慶一郎", reading:"たちばな けいいちろう", party:"自民党", role:"衆議院議員",
