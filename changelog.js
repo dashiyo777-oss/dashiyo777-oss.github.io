@@ -2,6 +2,16 @@
 // data.js 更新時に先頭に追加していく
 const SITE_CHANGELOG = [
   {
+    date: "2026.07.04",
+    label: "機能追加：国会発言数の自動取得（GitHub Actions）",
+    entries: [
+      "scripts/fetch_speech_counts.py を追加：国会会議録API（NDL・無料）から全議員の発言数を取得",
+      ".github/workflows/fetch-speech-counts.yml を追加：毎月1日に自動実行、facts.json に保存・自動コミット",
+      "手動実行も可能（GitHub Actions の workflow_dispatch）",
+      "ファクト層（発言数・質問主意書数）表示のための第1ステップ"
+    ]
+  },
+  {
     date: "2026.06.27",
     label: "内部ドキュメント更新（再発防止）",
     entries: [
