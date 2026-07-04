@@ -1,0 +1,64 @@
+name: 発言数データ自動取得
+
+on:
+  schedule:
+    # 毎月1日 午前3時（JST）= UTC 18:00（前日）
+    - cron: '0 18 1 * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '実行モード'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - full
+          - test
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 発言数を取得
+        run: |
+          MODE="${{ github.event.inputs.mode || 'full' }}"
+          if [ "$MODE" = "full" ]; then
+            python3 scripts/fetch_speech_counts.py --full
+          else
+            python3 scripts/fetch_speech_counts.py
+          fi
+
+      - name: facts.json をコミット・プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add facts.json
+          if git diff --staged --quiet; then
+            echo "変更なし（スキップ）"
+          else
+            DATE=$(date +'%Y.%m.%d')
+            git commit -m "データ更新: 国会発言数（${DATE}）"
+            git push
+          fi
+
+      - name: エラーログを確認
+        if: always()
+        run: |
+          if [ -f error_log.txt ]; then
+            echo "=== エラーログ ==="
+            cat error_log.txt
+            echo "エラー件数: $(wc -l < error_log.txt)"
+          else
+            echo "エラーなし"
+          fi

@@ -2,6 +2,5 @@
 .claude/
 __pycache__/
 
-# 生成ファイル（ローカル実行結果）
-facts.json
+# ローカル実行ログ（コミット不要）
 error_log.txt
