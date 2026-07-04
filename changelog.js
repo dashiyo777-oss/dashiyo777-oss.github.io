@@ -2,6 +2,16 @@
 // data.js 更新時に先頭に追加していく
 const SITE_CHANGELOG = [
   {
+    date: "2026.07.04",
+    label: "機能追加：国会発言数の自動取得（GitHub Actions）",
+    entries: [
+      "scripts/fetch_speech_counts.py を追加：国会会議録API（NDL・無料）から全議員の発言数を取得",
+      ".github/workflows/fetch-speech-counts.yml を追加：毎月1日に自動実行、facts.json に保存・自動コミット",
+      "手動実行も可能（GitHub Actions の workflow_dispatch）",
+      "ファクト層（発言数・質問主意書数）表示のための第1ステップ"
+    ]
+  },
+  {
     date: "2026.06.27",
     label: "内部ドキュメント更新（再発防止）",
     entries: [
@@ -40,6 +50,15 @@ const SITE_CHANGELOG = [
       "役職を「首相補佐官（高市内閣、連立政策推進担当）」に更新",
       "選挙区を大阪18→大阪19に修正（2024年衆院選より）",
       "flag_crime誤設定（区長選有罪判決は事実無根）を解除"
+    ]
+  },
+  {
+    date: "2026.06.22",
+    label: "公約メタデータ追加（日付・場面・政策分野）",
+    entries: [
+      "高市早苗・玉木雄一郎・小池百合子・鈴木直道の公約データに日付・約束した場面・政策分野を付加",
+      "議員カルテの公約表示を拡張：各公約に📅日付・場面・分野タグを表示",
+      "pledge_results形式に移行（{text, status, date, context, field}）"
     ]
   },
   {
