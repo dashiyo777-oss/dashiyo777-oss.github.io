@@ -1,3 +1,7 @@
 # Local tools
 .claude/
 __pycache__/
+
+# 生成ファイル（ローカル実行結果）
+facts.json
+error_log.txt
