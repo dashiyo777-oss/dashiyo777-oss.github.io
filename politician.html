@@ -309,6 +309,18 @@
     font-size: 0.63rem; color: #6878a0; line-height: 1.6;
   }
   .fact-no-data { font-size: 0.78rem; color: var(--gray); }
+  .fact-divider {
+    margin: 1rem 0 0.8rem; border: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .fact-question-row {
+    display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.3rem;
+  }
+  .fact-question-num {
+    font-size: 1.5rem; font-family: 'Cormorant Garamond', serif;
+    font-weight: 600; color: var(--text); line-height: 1;
+  }
+  .fact-question-unit { font-size: 0.78rem; color: var(--gray); }
 
   /* ── RADAR CHART ── */
   .radar-wrap { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
@@ -1254,6 +1266,24 @@ function renderFactLayer(p, facts) {
     return;
   }
 
+  // 質問主意書セクション（共通パーツ）
+  const questionCount = (rec.question_count !== null && rec.question_count !== undefined)
+    ? rec.question_count : 0;
+  const chamber = p.chamber || '';
+  const questionUrl = chamber === '衆議院'
+    ? 'https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/kaiji221_l.htm'
+    : 'https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/221/syuisyo.htm';
+  const questionHtml = `
+    <hr class="fact-divider">
+    <div class="fact-question-row">
+      <span class="fact-question-num">${questionCount.toLocaleString()}</span>
+      <span class="fact-question-unit">件の質問主意書</span>
+    </div>
+    <div class="fact-period">集計期間：第207回〜第221回国会（2021年12月〜）</div>
+    <a class="fact-source-link" href="${questionUrl}" target="_blank" rel="noopener">
+      🔗 質問主意書一覧（${chamber || '国会'}）
+    </a>`;
+
   if (rec.speech_count === 0) {
     el.innerHTML = `
       <div class="fact-no-data">発言記録を確認中です（表記の照合に時間がかかる場合があります）</div>
@@ -1261,6 +1291,11 @@ function renderFactLayer(p, facts) {
         <a class="fact-source-link" href="${ndlUrl}" target="_blank" rel="noopener">
           🔗 国会会議録検索システムで検索
         </a>
+      </div>
+      ${questionHtml}
+      <div class="fact-note">
+        ※ 与党議員は政府に直接照会できるため、質問主意書の提出が少ない傾向があります。多寡のみで議員の優劣を示すものではありません。<br>
+        ※ これは評価ではなく、公開情報に基づく客観的な記録データです。
       </div>`;
     return;
   }
@@ -1278,8 +1313,10 @@ function renderFactLayer(p, facts) {
     <a class="fact-source-link" href="${ndlUrl}" target="_blank" rel="noopener">
       🔗 国会会議録検索システムで発言記録を確認（国立国会図書館）
     </a>
+    ${questionHtml}
     <div class="fact-note">
-      ※ 発言数は役職（大臣・委員長等）により大きく変動します。多寡が議員の優劣を示すものではありません。<br>
+      ※ 発言数は役職（大臣・委員長等）により大きく変動します。<br>
+      ※ 与党議員は政府に直接照会できるため、質問主意書の提出が少ない傾向があります。多寡のみで議員の優劣を示すものではありません。<br>
       ※ これは評価ではなく、公開情報に基づく客観的な記録データです。
     </div>`;
 }
