@@ -267,6 +267,49 @@
 
   .section-body { padding: 1.3rem; }
 
+  /* ── FACT LAYER ── */
+  .fact-layer-card {
+    background: #0d1a2e;
+    border: 1px solid rgba(74,194,154,0.25);
+    border-radius: 10px; margin-bottom: 1.5rem; overflow: hidden;
+  }
+  .fact-layer-head {
+    padding: 0.9rem 1.3rem; border-bottom: 1px solid rgba(74,194,154,0.15);
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  .fact-layer-badge {
+    font-size: 0.52rem; letter-spacing: 0.2em; font-weight: 700;
+    color: #4ac79a; background: rgba(74,199,154,0.1);
+    border: 1px solid rgba(74,199,154,0.35); border-radius: 3px;
+    padding: 0.15rem 0.45rem; font-family: 'Montserrat', sans-serif;
+  }
+  .fact-layer-title {
+    font-size: 0.65rem; letter-spacing: 0.2em; color: var(--gray);
+    text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 500;
+  }
+  .fact-layer-body { padding: 1.2rem 1.3rem; }
+  .fact-speech-row {
+    display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.3rem;
+  }
+  .fact-speech-num {
+    font-size: 2rem; font-family: 'Cormorant Garamond', serif;
+    font-weight: 600; color: var(--text); line-height: 1;
+  }
+  .fact-speech-unit { font-size: 0.82rem; color: var(--gray); }
+  .fact-period { font-size: 0.66rem; color: var(--gray); margin-bottom: 0.9rem; }
+  .fact-source-link {
+    font-size: 0.66rem; color: #4a90e2; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.25rem;
+  }
+  .fact-source-link:hover { text-decoration: underline; }
+  .fact-note {
+    margin-top: 0.9rem; padding: 0.55rem 0.8rem;
+    background: rgba(255,255,255,0.025);
+    border-left: 2px solid rgba(74,199,154,0.25);
+    font-size: 0.63rem; color: #6878a0; line-height: 1.6;
+  }
+  .fact-no-data { font-size: 0.78rem; color: var(--gray); }
+
   /* ── RADAR CHART ── */
   .radar-wrap { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
   .radar-svg { display: block; }
@@ -550,6 +593,17 @@
 
   <!-- LEFT COLUMN -->
   <div id="left-col">
+
+    <!-- Fact Layer: 国会活動データ -->
+    <div class="fact-layer-card" id="card-fact-layer">
+      <div class="fact-layer-head">
+        <span class="fact-layer-badge">FACT</span>
+        <span class="fact-layer-title">国会活動データ（客観記録）</span>
+      </div>
+      <div class="fact-layer-body" id="body-fact-layer">
+        <div class="fact-no-data">読み込み中…</div>
+      </div>
+    </div>
 
     <!-- Comment / Summary -->
     <div class="section-card" id="card-comment">
@@ -1173,6 +1227,49 @@ function switchTab(key) {
   document.querySelectorAll('.tab-content').forEach(p => p.classList.toggle('active', p.id === 'tab-' + key));
 }
 
+/* ── FACT LAYER ── */
+function renderFactLayer(pid, name, facts) {
+  const el = document.getElementById('body-fact-layer');
+  if (!el) return;
+  const rec = facts[pid];
+  const nameEncoded = encodeURIComponent(name.replace(/\s/g, ''));
+  const ndlUrl = `https://kokkai.ndl.go.jp/#/search?speaker=${nameEncoded}&from=2021-11-01&until=2026-06-30`;
+
+  if (!rec || rec.speech_count === null || rec.speech_count === undefined) {
+    el.innerHTML = `<div class="fact-no-data">データ取得中（次回更新時に反映予定）</div>`;
+    return;
+  }
+
+  if (rec.speech_count === 0) {
+    el.innerHTML = `
+      <div class="fact-no-data">発言記録を確認中です（表記の照合に時間がかかる場合があります）</div>
+      <div style="margin-top:0.7rem">
+        <a class="fact-source-link" href="${ndlUrl}" target="_blank" rel="noopener">
+          🔗 国会会議録検索システムで検索
+        </a>
+      </div>`;
+    return;
+  }
+
+  const [fromY, fromM] = rec.period.split('〜')[0].split('-');
+  const [untilY, untilM] = rec.period.split('〜')[1].split('-');
+  const periodJa = `${fromY}年${parseInt(fromM)}月〜${untilY}年${parseInt(untilM)}月`;
+
+  el.innerHTML = `
+    <div class="fact-speech-row">
+      <span class="fact-speech-num">${rec.speech_count.toLocaleString()}</span>
+      <span class="fact-speech-unit">件の国会発言</span>
+    </div>
+    <div class="fact-period">集計期間：${periodJa}</div>
+    <a class="fact-source-link" href="${ndlUrl}" target="_blank" rel="noopener">
+      🔗 国会会議録検索システムで発言記録を確認（国立国会図書館）
+    </a>
+    <div class="fact-note">
+      ※ 発言数は役職（大臣・委員長等）により大きく変動します。多寡が議員の優劣を示すものではありません。<br>
+      ※ これは評価ではなく、公開情報に基づく客観的な記録データです。
+    </div>`;
+}
+
 /* ── INIT ── */
 (function() {
   const id = new URLSearchParams(location.search).get('id') || 'P001';
@@ -1187,6 +1284,11 @@ function switchTab(key) {
     return;
   }
   buildPage(p);
+  // facts.json を非同期取得してファクト層を更新
+  fetch('facts.json')
+    .then(r => r.ok ? r.json() : {})
+    .then(facts => { renderFactLayer(p.id, p.name, facts); })
+    .catch(() => { renderFactLayer(p.id, p.name, {}); });
 })();
 
 /* ── 評価基準 折りたたみ ── */
