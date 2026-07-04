@@ -1,0 +1,20 @@
+name: 質問主意書HTML構造プローブ（開発用）
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: robots.txt と HTML 構造を調査
+        run: python3 scripts/probe_question_html.py
