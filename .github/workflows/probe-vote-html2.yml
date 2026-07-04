@@ -1,0 +1,21 @@
+name: 参議院投票記録プローブ第2回（touhyoulist調査）
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to run script from'
+        default: 'claude/amazing-volta-Ii6eP'
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || 'claude/amazing-volta-Ii6eP' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: プローブ実行
+        run: python3 scripts/probe_vote_html2.py
