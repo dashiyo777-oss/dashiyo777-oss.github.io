@@ -887,15 +887,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P081", name:"遠藤 敬", reading:"えんどう たかし", party:"日本維新の会", role:"元衆議院議員",
-    chamber:"衆議院", district:"大阪18", status:"現職", gender:"男", age:null,
-    total:40, rank:"D",
-    axes:[3,2,2,3,1,2,2,1],
+    id:"P081", name:"遠藤 敬", reading:"えんどう たかし", party:"日本維新の会", role:"衆議院議員・首相補佐官",
+    chamber:"衆議院", district:"大阪19", status:"現職", gender:"男", age:null,
+    total:47, rank:"D",
+    axes:[3,2,2,4,2,2,2,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"看護師の経験を活かした女性活躍や育児支援、休職者支援への法改正関与。", minus:"地方首長転身後の区長選における有料ネット広告規制違反による有罪判決。",
-    comment:"国会議員時代は厚生労働分野で活動し、その後地方の区長に転身したものの、選挙をめぐる有料ネット広告の規制違反で起訴され、執行猶予付きの有罪判決を受けたため倫理評価は厳しい。",
+    plus:"飲食店経営から政界入りした叩き上げ。6期連続当選し維新の国対委員長として与野党交渉を主導。2025年10月に高市内閣の首相補佐官（連立政策推進担当）に就任。", minus:"高校卒業後の飲食業出身で政策専門性は限定的との指摘あり。所属政党が自民→維新と変遷し、政治的一貫性の評価が分かれる。",
+    comment:"大阪高石市出身の叩き上げ政治家。飲食店経営から青年会議所活動を経て政界入りし、日本維新の会で6期を務める。国対委員長として党の交渉力を支え、高市内閣では連立合意政策推進担当の首相補佐官に就任。庶民感覚を強みとするが、専門政策力の評価は低い。",
     links:{hp:"https://www.google.com/search?q=%E9%81%A0%E8%97%A4%20%E6%95%AC%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E6%95%AC",yt:""},
-    flag_crime:true, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.06.25", survey:"評価済"
   },
   {
     id:"P082", name:"遠藤 寛明", reading:"えんどう ひろあき", party:"自民党", role:"衆議院議員",
@@ -2709,10 +2709,10 @@ const POLITICIANS = [
     total:75, rank:"B",
     axes:[4,4,3,3,4,4,4,4],
     stances:{tax_cut:"◎",active_fiscal:"○",discipline:"×",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
-    plus:"通産・経産官僚出身。再生可能エネルギー導入拡大や地球温暖化対策への高い先導力。", minus:"環境政策の急進的な主張に対し、過渡期の現実的な産業コストへの配慮を懸念する声。",
-    comment:"経産省出身。党再生可能エネルギー主力化ワーキンググループなどで中心的に活動。脱炭素社会の実現や気候変動対策、物価インフレ下の中小企業支援に注力する。",
+    plus:"NTT・世界銀行グループ（IFC）での民間・国際機関17年のキャリアを持つ実務家議員。再生可能エネルギー推進や気候変動対策の政策立案に注力。", minus:"環境政策の急進的な主張に対し、過渡期の現実的な産業コストへの配慮を懸念する声。",
+    comment:"NTT入社後、ウォートンスクールMBAを経て世界銀行グループIFC（国際金融公社）に職員として勤務。民間・国際機関で17年のキャリアを積み2003年初当選。経済産業大臣政務官（菅直人内閣）として福島第一原発事故対応も担当。脱炭素社会の実現と再生可能エネルギー主力化に注力する。",
     links:{hp:"https://www.google.com/search?q=%E7%94%B0%E5%B6%8B%20%E8%A6%81%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/田嶋要",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.06.27", survey:"評価済"
   },
   {
     id:"P245", name:"橘 慶一郎", reading:"たちばな けいいちろう", party:"自民党", role:"衆議院議員",
@@ -8794,7 +8794,6 @@ const EVIDENCE = [
   {id:"E0111", pid:"P077", cat:"実績", sub:"安全保障法制", summary:"平和安全法制をめぐる与党間協議の取りまとめ", detail:"憲法解釈の整合性を保ちつつ、自衛隊の活動範囲を定める難度の高い与党突合協議において、実務責任者として閣議決定への合意形成を導いた。", src:"与党安全保障法制整備協議会記録", url:"", rel:"defense", impact:"高", date:"2015-03"},
   {id:"E0112", pid:"P078", cat:"実績", sub:"農林水産", summary:"食料安全保障の強化", detail:"農林水産大臣として、食料安全保障の強化を掲げた法案や施策を推進した。", src:"農林水産省", url:"", rel:"長期国益", impact:"高", date:"2024-01"},
   {id:"E0113", pid:"P080", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党からの戒告処分", detail:"清和政策研究会（安倍派）のパーティー収入をめぐる不記載が指摘され、自由民主党の党紀委員会から戒告の処分を受けた。", src:"自由民主党党紀委員会処分発表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
-  {id:"E0114", pid:"P081", cat:"犯罪・違反", sub:"公職選挙法違反", summary:"区長選における有料ネット広告掲載容疑で有罪判決", detail:"区長選挙の期間中、動画サイトに自身への投票を呼びかける有料動画広告を掲載したとして在宅起訴され、懲役1年6カ月（執行猶予5年）の判決を受けた。", src:"東京地方裁判所判決・各紙報道", url:"", rel:"discipline", impact:"高", date:"2024-03"},
   {id:"E0115", pid:"P082", cat:"問題・疑惑", sub:"政治倫理", summary:"地元演説会をめぐる集客日当支払い問題の報道", detail:"自身の選挙区で開催された政府首脳の演説会において、関連団体が参加者に日当を支払って動員していた疑惑が週刊誌等で報じられ物議を醸した。", src:"週刊文春報道・国会追及質疑", url:"", rel:"discipline", impact:"高", date:"2021-11"},
   {id:"E0116", pid:"P083", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党からの戒告処分", detail:"清和政策研究会（安倍派）に所属。パーティー収入の過少記載・不記載が指摘され、党の処分基準に沿って戒告処分が下された。", src:"自由民主党党紀委員会処分記録", url:"", rel:"discipline", impact:"中", date:"2024-04"},
   {id:"E0117", pid:"P084", cat:"発言・主張", sub:"社会保障", summary:"健康保険証の存続とマイナ保険証強制の撤回を要求", detail:"参院厚生労働委員会において、マイナンバーカードのトラブルによる医療現場の混乱を突き、従来の紙の保険証の維持を強く迫った。", src:"参議院厚生労働委員会会議録", url:"", rel:"birthrate", impact:"中", date:"2023-06"},
