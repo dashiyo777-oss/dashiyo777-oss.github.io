@@ -1228,12 +1228,26 @@ function switchTab(key) {
 }
 
 /* ── FACT LAYER ── */
-function renderFactLayer(pid, name, facts) {
+function renderFactLayer(p, facts) {
   const el = document.getElementById('body-fact-layer');
   if (!el) return;
+  const pid = p.id, name = p.name;
   const rec = facts[pid];
   const nameEncoded = encodeURIComponent(name.replace(/\s/g, ''));
   const ndlUrl = `https://kokkai.ndl.go.jp/#/search?speaker=${nameEncoded}&from=2021-11-01&until=2026-06-30`;
+
+  // 候補者（議員経験なし）
+  if (p.status === '候補') {
+    el.innerHTML = `<div class="fact-no-data">国会での発言記録はありません（議員歴なし）</div>`;
+    return;
+  }
+
+  // 地方自治体首長（知事・市長）
+  const role = p.role || '';
+  if (role.includes('知事') || role.includes('市長')) {
+    el.innerHTML = `<div class="fact-no-data">国会での発言記録はありません（地方自治体首長）</div>`;
+    return;
+  }
 
   if (!rec || rec.speech_count === null || rec.speech_count === undefined) {
     el.innerHTML = `<div class="fact-no-data">データ取得中（次回更新時に反映予定）</div>`;
@@ -1287,8 +1301,8 @@ function renderFactLayer(pid, name, facts) {
   // facts.json を非同期取得してファクト層を更新
   fetch('facts.json')
     .then(r => r.ok ? r.json() : {})
-    .then(facts => { renderFactLayer(p.id, p.name, facts); })
-    .catch(() => { renderFactLayer(p.id, p.name, {}); });
+    .then(facts => { renderFactLayer(p, facts); })
+    .catch(() => { renderFactLayer(p, {}); });
 })();
 
 /* ── 評価基準 折りたたみ ── */
