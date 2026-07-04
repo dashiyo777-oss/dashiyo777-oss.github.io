@@ -14,6 +14,7 @@ on:
         options:
           - full
           - test
+          - alias-only  # 表記ゆれ再取得のみ
 
 jobs:
   fetch:
@@ -33,8 +34,11 @@ jobs:
       - name: 発言数を取得
         run: |
           MODE="${{ github.event.inputs.mode || 'full' }}"
-          if [ "$MODE" = "full" ]; then
+          if [ "$MODE" = "alias-only" ]; then
+            python3 scripts/fix_speech_aliases.py
+          elif [ "$MODE" = "full" ]; then
             python3 scripts/fetch_speech_counts.py --full
+            python3 scripts/fix_speech_aliases.py
           else
             python3 scripts/fetch_speech_counts.py
           fi
