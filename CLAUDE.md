@@ -184,6 +184,25 @@ stances の各キーの意味:
 
 ---
 
+## 国会会議録API（NDL）利用ノウハウ
+
+### 検索動作の特性
+
+- **NDL APIは読み仮名マッチを行う**: `speaker=漆間譲司`（漢字）で検索しても、NDLに「うるま譲司」（ひらがな）で登録されている議員のレコードがヒットする。漢字とひらがなの表記ゆれはAPIが自動吸収するため、件数比較では同一の結果が返る。
+- **登録名の確認方法**: `maximumRecords=5` 程度で実データを取得し、以下フィールドで本人確認を行う:
+  - `speaker` — NDLに実際に登録されている発言者名（この名前でALIASESを定義する）
+  - `speakerYomi` — 読み仮名（別人との区別に有効）
+  - `speakerGroup` — 所属会派（政党と一致しているか確認）
+  - `nameOfHouse` — 院名（衆議院/参議院）
+- **数値の異常検知**: 件数が過大・過小に見えても、`speakerGroup`・`nameOfHouse`・`nameOfMeeting` の整合性を確認してから判断する。属性が本人と一致していれば数値は正当と見なせる。
+
+### ALIASES定義のルール（fix_speech_aliases.py・fetch_question_counts.py）
+
+- NDL APIの `speaker` 登録名（上記確認手順で取得した値）を ALIASES に設定する
+- data.js の `name` フィールドとNDL登録名が異なる場合（例: data.jsは漢字、NDLはひらがな）は両スクリプトの ALIASES を同期させること
+
+---
+
 ## ⚠️ AI評価時の頻出誤りパターン（必読）
 
 ### 経歴・出身の混同（最多発）

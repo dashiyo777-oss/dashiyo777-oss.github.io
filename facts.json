@@ -529,7 +529,8 @@
     "speech_count": 689,
     "period": "2021-11-01〜2026-07-04",
     "question_count": 1,
-    "question_period": "第207回〜第221回国会"
+    "question_period": "第207回〜第221回国会",
+    "alias_used": "うるま譲司"
   },
   "P077": {
     "name": "江渡聡徳",
@@ -5503,10 +5504,11 @@
   },
   "P815": {
     "name": "大石晃子",
-    "speech_count": 0,
+    "speech_count": 509,
     "period": "2021-11-01〜2026-07-04",
     "question_count": 20,
-    "question_period": "第207回〜第221回国会"
+    "question_period": "第207回〜第221回国会",
+    "alias_used": "大石あきこ"
   },
   "P816": {
     "name": "山本譲司",
