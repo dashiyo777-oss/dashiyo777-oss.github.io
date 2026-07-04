@@ -1,4 +1,4 @@
-name: 参議院投票記録プローブ第2回（touhyoulist調査）
+name: 参議院投票記録プローブ第3回（詳細ページURL特定）
 
 on:
   workflow_dispatch:
@@ -18,4 +18,4 @@ jobs:
         with:
           python-version: '3.11'
       - name: プローブ実行
-        run: python3 scripts/probe_vote_html2.py
+        run: python3 scripts/probe_vote_html3.py
