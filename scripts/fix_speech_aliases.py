@@ -8,26 +8,13 @@
   python3 scripts/fix_speech_aliases.py --dry-run # API呼び出しなしで確認のみ
 """
 
-import json, urllib.request, urllib.parse, time, argparse, datetime, os
+import json, urllib.request, urllib.parse, time, argparse, datetime, os, sys
 
-# ── 別名マッピング（pid: [試行する名前リスト]）──────────────────────
-# 旧字体・表記ゆれ
-ALIASES = {
-    "P010": ["浅田真澄美"],          # 眞→真
-    "P109": ["鹿島祐介"],             # 嶋→島
-    "P121": ["金沢結衣"],             # 澤→沢
-    "P284": ["長沢興祐"],             # 澤→沢
-    "P783": ["斎藤元彦", "齊藤元彦"], # 齋→斎/齊（兵庫県知事）
-    "P794": ["浜田省司"],             # 濵→浜
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common_aliases import get_aliases
 
-    # 通称名（ひらがな・カタカナ）
-    "P073": ["内山幸子"],             # 内山こう→戸籍名
-    "P076": ["うるま譲司"],           # data.jsはひらがな、NDLでの照合用
-    "P165": ["高来啓一郎", "高麗啓一郎"],  # こうらい啓一郎→漢字
-    "P802": ["玉城康裕"],             # 玉城デニー→戸籍名
-    "P815": ["大石あきこ"],           # data.jsは「大石晃子」、NDLはひらがな表記
-    "P817": ["佐藤紗央里"],           # さとうさおり→漢字
-}
+# NDL 国会会議録用の別名マッピング（common_aliases.py で一元管理）
+ALIASES = get_aliases("ndl")
 # ────────────────────────────────────────────────────────────────────
 
 FROM_DATE  = "2021-11-01"

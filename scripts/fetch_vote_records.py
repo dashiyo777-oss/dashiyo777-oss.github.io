@@ -3,17 +3,26 @@
 参議院 第221回国会 本会議投票記録取得スクリプト。
 
 出力: votes/{議員ID}.json (参議院議員ごと、1ファイル = 1議員の全投票記録)
-実行: python3 scripts/fetch_vote_records.py  (リポジトリルートから)
+実行: python3 scripts/fetch_vote_records.py [--limit N] [--dry-run]
+
+  --limit N   : 最初の N 件の議案のみ処理（テスト用）
+  --dry-run   : HTTPアクセスなし、辞書構築のみ確認
 """
 
+import argparse
 import json
+import os
 import re
+import sys
 import time
 import unicodedata
 import urllib.request
 from pathlib import Path
 
-# ── 定数 ─────────────────────────────────────────────
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common_aliases import get_aliases
+
+# ── 定数 ─────────────────────────────────────────────────────────────
 UA = "TORAN-Research/1.0 (https://dashiyo777-oss.github.io; research)"
 SLEEP = 3.0
 SESSION = 221
@@ -22,24 +31,11 @@ BASE_URL = f"https://www.sangiin.go.jp/japanese/touhyoulist/{SESSION}/"
 INDEX_URL = f"{BASE_URL}vote_ind.htm"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 
-# ── ALIASES: sangiin 表記ゆれ → data.js 議員ID ───────────────────
-ALIASES: dict[str, list[str]] = {
-    "P010": ["浅田真澄美"],               # 真→真
-    "P073": ["内山幸子"],                 # 内山こう→戈籍名
-    "P076": ["うるま㖲司", "漆間㖲司"],
-    "P109": ["鹿島祄介"],                 # 島→島
-    "P121": ["金沢結衣"],                 # 沢→沢
-    "P165": ["高来啿一郎", "高麗啿一郎"],
-    "P284": ["長沢興瞔"],                 # 沢→沢
-    "P794": ["浜田省司"],                 # 濵→浜
-    "P783": ["斎藤元彦", "齊藤元彦"],
-    "P802": ["玉城康裕"],                 # 玉城デニー→戈籍名
-    "P815": ["大石あきこ"],               # data.jsは大石晉子
-    "P817": ["佐藤紗央里"],               # さとうさおり→漢字
-}
+# 参議院投票記録用のエイリアス（common_aliases.py で一元管理）
+ALIASES = get_aliases("sangiin_vote")
 
 
-# ── ユーティリティ ────────────────────────────────────────────
+# ── ユーティリティ ────────────────────────────────────────────────────
 def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as resp:
@@ -57,12 +53,12 @@ def normalize_name(name: str) -> str:
     return re.sub(r"[　\s]+", "", unicodedata.normalize("NFKC", name))
 
 
-# ── data.js から参議院議員を読み込む ────────────────────────
+# ── data.js から参議院議員を読み込む ─────────────────────────────────
 def load_sangiin_members() -> tuple[dict[str, str], dict[str, dict]]:
     """
     戻り値:
       name_to_id: 正規化名 → 議員ID
-      id_to_info: 譹員ID → {name, party}
+      id_to_info: 議員ID → {name, party}
     """
     data = (REPO_ROOT / "data.js").read_text(encoding="utf-8")
 
@@ -97,7 +93,7 @@ def load_sangiin_members() -> tuple[dict[str, str], dict[str, dict]]:
         name_to_id[norm] = pid
         id_to_info[pid] = {"name": name_m.group(1), "party": party_m.group(1)}
 
-    # ALIASES を参議院譹員のみ追加
+    # ALIASES を参議院議員のみ追加
     for alias_pid, aliases in ALIASES.items():
         if alias_pid not in id_to_info:
             continue
@@ -107,7 +103,7 @@ def load_sangiin_members() -> tuple[dict[str, str], dict[str, dict]]:
     return name_to_id, id_to_info
 
 
-# ── vote_ind.htm から詳細URLを抽出 ────────────────────────────────
+# ── vote_ind.htm から詳細URLを抽出 ────────────────────────────────────
 def extract_detail_urls(index_html: str) -> list[str]:
     hrefs = re.findall(r'href="([^"]+)"', index_html, re.IGNORECASE)
     return list(dict.fromkeys(
@@ -117,7 +113,7 @@ def extract_detail_urls(index_html: str) -> list[str]:
     ))
 
 
-# ── 詳細ページのパース ────────────────────────────────────────────
+# ── 詳細ページのパース ────────────────────────────────────────────────
 def parse_bill_title(html: str) -> str:
     m = re.search(r"<title>([^<]+)</title>", html, re.IGNORECASE)
     if not m:
@@ -133,13 +129,13 @@ def parse_vote_date(url: str) -> str:
 
 def parse_member_votes(html: str) -> list[dict]:
     """
-    譹員ごとの投票記録を返す。
+    議員ごとの投票記録を返す。
     各レコード: {raw_name: str, vote: "pros"|"cons"|"novote"|"unknown", party_group: str}
     """
     records: list[dict] = []
     current_party = ""
 
-    # h4.party (会派区切り) と li.giin (譹員エントリ) を文書順で処理
+    # h4.party (会派区切り) と li.giin (議員エントリ) を文書順で処理
     for tok in re.finditer(
         r'<h4[^>]*class="party"[^>]*>(.*?)</h4>'
         r'|<li[^>]*class="giin"[^>]*>(.*?)</li>',
@@ -174,21 +170,35 @@ def parse_member_votes(html: str) -> list[dict]:
     return records
 
 
-# ── メイン ──────────────────────────────────────────────────────────────
+# ── メイン ────────────────────────────────────────────────────────────
 def main() -> None:
-    print("=== 参議院第221回 投票記録取得スクリプト ===\n")
+    parser = argparse.ArgumentParser(description="参議院第221回 投票記録取得")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="処理する議案数の上限（省略時は全件）")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="HTTPアクセスなし、辞書構築のみ確認")
+    args = parser.parse_args()
+
+    label = f"（テスト: 先頭{args.limit}件）" if args.limit else "（全件）"
+    print(f"=== 参議院第221回 投票記録取得スクリプト {label} ===\n")
 
     # [1] data.js 読み込み
-    print("[1] data.js から参議院譹員情報を読み込み中...")
+    print("[1] data.js から参議院議員情報を読み込み中...")
     name_to_id, id_to_info = load_sangiin_members()
-    print(f"    参議院譹員数: {len(id_to_info)}名")
+    print(f"    参議院議員数: {len(id_to_info)}名")
     print(f"    正規化名辞書: {len(name_to_id)}件 (ALIASES含む)\n")
+
+    if args.dry_run:
+        print("[DRY-RUN] 辞書確認完了。HTTPアクセスをスキップします。")
+        return
 
     # [2] 投票一覧インデックス取得
     print(f"[2] 投票結果一覧取得: {INDEX_URL}")
     index_html = fetch(INDEX_URL)
     time.sleep(SLEEP)
     detail_urls = extract_detail_urls(index_html)
+    if args.limit:
+        detail_urls = detail_urls[:args.limit]
     print(f"    詳細ページ: {len(detail_urls)}件\n")
 
     # [3] 各詳細ページを取得・パース
@@ -241,14 +251,24 @@ def main() -> None:
 
     for pid in sorted(all_votes):
         info = id_to_info[pid]
+        out_path = votes_dir / f"{pid}.json"
+        # 既存ファイルがあれば votes リストをマージ（将来の複数会期対応）
+        if out_path.exists():
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+            existing_urls = {v["url"] for v in existing.get("votes", [])}
+            new_votes = [v for v in all_votes[pid] if v["url"] not in existing_urls]
+            merged = existing.get("votes", []) + new_votes
+        else:
+            merged = all_votes[pid]
+
         out = {
             "id": pid,
             "name": info["name"],
             "party": info["party"],
             "chamber": "参議院",
-            "votes": sorted(all_votes[pid], key=lambda v: (v["date"], v["url"])),
+            "votes": sorted(merged, key=lambda v: (v["date"], v["url"])),
         }
-        (votes_dir / f"{pid}.json").write_text(
+        out_path.write_text(
             json.dumps(out, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
@@ -263,7 +283,7 @@ def main() -> None:
     print(f"出力ファイル: {len(all_votes)} 名分")
 
     if unmatched:
-        print(f"\n[未照合名一覧]{len(unmatched)}件 — ALIASES 追加を検討:")
+        print(f"\n[未照合名一覧] {len(unmatched)}件 — ALIASES 追加を検討:")
         for name, cnt in sorted(unmatched.items(), key=lambda x: -x[1]):
             print(f"  '{name}' ({cnt}件)")
     else:

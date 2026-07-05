@@ -5258,7 +5258,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P475", name:"足立 康史", reading:"あだち やすし", party:"国民民主党", role:"衆議院議員",
+    id:"P475", name:"足立 康史", reading:"あだち やすし", party:"国民民主党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],

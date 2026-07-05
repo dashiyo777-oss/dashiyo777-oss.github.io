@@ -15,7 +15,10 @@ HTML形式が2種類あるため自動検出して対応：
   python3 scripts/fetch_question_counts.py --dry-run # API呼び出しなし
 """
 
-import json, re, time, datetime, os, unicodedata, urllib.request, collections, argparse
+import json, re, time, datetime, os, sys, unicodedata, urllib.request, collections, argparse
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from common_aliases import get_aliases
 
 UA = "TORAN-Research/1.0 (https://dashiyo777-oss.github.io; public data research)"
 SLEEP = 3.0
@@ -34,21 +37,8 @@ UNTIL_SESSION = 221
 SHUGIIN_URL = "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/kaiji{n}_l.htm"
 SANGIIN_URL = "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/{n}/syuisyo.htm"
 
-# 表記ゆれ・通称名マッピング（fix_speech_aliases.py と共通）
-ALIASES = {
-    "P010": ["浅田真澄美"],
-    "P076": ["漆間譲司"],        # data.jsは「うるま譲司」（ひらがな）、質問主意書は漢字表記
-    "P109": ["鹿島祐介"],
-    "P121": ["金沢結衣"],
-    "P284": ["長沢興祐"],
-    "P783": ["斎藤元彦", "齊藤元彦"],
-    "P794": ["浜田省司"],
-    "P073": ["内山幸子"],
-    "P165": ["高来啓一郎", "高麗啓一郎"],
-    "P802": ["玉城康裕"],
-    "P815": ["大石あきこ"],      # data.jsは「大石晃子」（漢字）、質問主意書はひらがな表記
-    "P817": ["佐藤紗央里"],
-}
+# 衆議院質問主意書用の表記ゆれマッピング（common_aliases.py で一元管理）
+ALIASES = get_aliases("shugiin_shitsumon")
 
 
 # ── ユーティリティ ──────────────────────────────────────────────
