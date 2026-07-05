@@ -1,0 +1,21 @@
+name: 議員立法アクセス可否テスト（調査用・一時）
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 公式サイトアクセス可否テスト
+        run: |
+          python3 scripts/test_gian_access.py
