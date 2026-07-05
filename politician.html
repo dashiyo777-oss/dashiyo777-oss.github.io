@@ -561,6 +561,55 @@
     display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center;
   }
 
+  /* ── VOTE RECORD ── */
+  .vote-section { margin-top: 0; }
+  .vote-section-title {
+    font-size: 0.62rem; letter-spacing: 0.12em; color: #4ac79a;
+    font-family: 'Montserrat', sans-serif; font-weight: 600;
+    text-transform: uppercase; margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem; border-bottom: 1px solid rgba(74,199,154,0.15);
+  }
+  .vote-row {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.4rem 0.4rem; border-radius: 5px; cursor: pointer;
+    transition: background 0.15s; border: 1px solid transparent;
+  }
+  .vote-row:hover { background: rgba(255,255,255,0.03); border-color: rgba(74,144,226,0.08); }
+  .vote-date { font-size: 0.63rem; color: var(--gray); white-space: nowrap; min-width: 3.8rem; }
+  .vote-bill-short {
+    font-size: 0.71rem; color: var(--text); flex: 1;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .vote-badge {
+    flex-shrink: 0; padding: 0.1rem 0.48rem; border-radius: 3px;
+    font-size: 0.6rem; font-weight: 500; white-space: nowrap;
+  }
+  .vote-badge.pros   { background: rgba(74,120,200,0.15); border: 1px solid rgba(74,120,200,0.35); color: #7aacde; }
+  .vote-badge.cons   { background: rgba(180,130,60,0.15);  border: 1px solid rgba(180,130,60,0.35);  color: #c9a970; }
+  .vote-badge.novote { background: rgba(128,144,184,0.1);  border: 1px solid rgba(128,144,184,0.2);  color: #6878a0; }
+  .vote-detail {
+    display: none; padding: 0.3rem 0.4rem 0.5rem 4.8rem;
+    font-size: 0.67rem; font-family: 'Noto Serif JP', serif; line-height: 1.65;
+    color: rgba(200,210,230,0.72);
+  }
+  .vote-detail.open { display: block; }
+  .vote-detail a { color: #4a90e2; font-size: 0.62rem; margin-top: 0.25rem; display: inline-block; text-decoration: none; }
+  .vote-detail a:hover { text-decoration: underline; }
+  .vote-show-all {
+    margin-top: 0.3rem; padding: 0.35rem 0.4rem;
+    font-size: 0.65rem; color: #4a90e2; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 0.25rem;
+    background: none; border: none; transition: color 0.15s;
+  }
+  .vote-show-all:hover { color: #5ba0e0; }
+  .vote-footer-notes {
+    margin-top: 0.8rem; padding: 0.5rem 0.75rem;
+    background: rgba(255,255,255,0.025);
+    border-left: 2px solid rgba(74,199,154,0.2);
+    font-size: 0.62rem; color: #6878a0; line-height: 1.65;
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .site-header { padding: 0 1rem; }
@@ -1321,6 +1370,89 @@ function renderFactLayer(p, facts) {
     </div>`;
 }
 
+/* ── VOTE SECTION ── */
+function renderVoteSection(p) {
+  const el = document.getElementById('body-fact-layer');
+  if (!el) return;
+
+  const divider = document.createElement('hr');
+  divider.className = 'fact-divider';
+  el.appendChild(divider);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'vote-section';
+  wrap.innerHTML = '<div class="vote-section-title">本会議投票記録（第221回国会）</div>'
+    + '<div style="font-size:0.72rem;color:var(--gray)">照合中…</div>';
+  el.appendChild(wrap);
+
+  const fmtDate = d => { const pt = d.split('-'); return `${parseInt(pt[1])}/${parseInt(pt[2])}`; };
+  const billShort = b => b.length > 30 ? b.slice(0, 30) + '…' : b;
+  const voteBadge = v => {
+    if (v === 'pros')   return '<span class="vote-badge pros">賛成</span>';
+    if (v === 'cons')   return '<span class="vote-badge cons">反対</span>';
+    return '<span class="vote-badge novote">投票なし</span>';
+  };
+  const rowHtml = v => {
+    const url = `https://www.sangiin.go.jp/japanese/touhyoulist/221/${v.url}`;
+    return `<div class="vote-row" tabindex="0">`
+      + `<span class="vote-date">${fmtDate(v.date)}</span>`
+      + `<span class="vote-bill-short">${billShort(v.bill)}</span>`
+      + voteBadge(v.vote)
+      + `</div>`
+      + `<div class="vote-detail">${v.bill}<br>`
+      + `<a href="${url}" target="_blank" rel="noopener">🔗 公式投票結果（参議院）</a></div>`;
+  };
+
+  const wireRows = container => {
+    container.querySelectorAll('.vote-row').forEach(row => {
+      const detail = row.nextElementSibling;
+      const toggle = () => { if (detail && detail.classList.contains('vote-detail')) detail.classList.toggle('open'); };
+      row.addEventListener('click', toggle);
+      row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+    });
+  };
+
+  fetch(`votes/${p.id}.json`)
+    .then(r => {
+      if (!r.ok) throw new Error('not found');
+      return r.json();
+    })
+    .then(data => {
+      const votes = (data.votes || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+      const total = votes.length;
+      const INITIAL = 10;
+      const shown = votes.slice(0, INITIAL);
+      const rest  = votes.slice(INITIAL);
+
+      const restHtml = rest.length > 0
+        ? `<div id="vote-rest" style="display:none">${rest.map(rowHtml).join('')}</div>` : '';
+      const showMoreHtml = rest.length > 0
+        ? `<button class="vote-show-all" id="vote-show-all-btn">▼ すべて表示（全${total}件）</button>` : '';
+
+      wrap.innerHTML = `<div class="vote-section-title">本会議投票記録（第221回国会）</div>`
+        + `<div id="vote-rows-wrap">${shown.map(rowHtml).join('')}${showMoreHtml}${restHtml}</div>`
+        + `<div class="vote-footer-notes">`
+        + `※ 賛否は参議院公式サイト・本会議投票結果の転記であり、当サイトによる評価ではありません<br>`
+        + `※ 「投票なし」には欠席・棄権・議長職等が含まれます（公表データでは区別されません）`
+        + `</div>`;
+
+      wireRows(wrap);
+
+      const showAllBtn = wrap.querySelector('#vote-show-all-btn');
+      if (showAllBtn) {
+        showAllBtn.addEventListener('click', () => {
+          const restEl = wrap.querySelector('#vote-rest');
+          if (restEl) { restEl.style.display = ''; wireRows(restEl); }
+          showAllBtn.remove();
+        });
+      }
+    })
+    .catch(() => {
+      wrap.innerHTML = '<div class="vote-section-title">本会議投票記録（第221回国会）</div>'
+        + '<div class="fact-no-data">投票記録を照合中です</div>';
+    });
+}
+
 /* ── INIT ── */
 (function() {
   const id = new URLSearchParams(location.search).get('id') || 'P001';
@@ -1339,7 +1471,8 @@ function renderFactLayer(p, facts) {
   fetch('facts.json')
     .then(r => r.ok ? r.json() : {})
     .then(facts => { renderFactLayer(p, facts); })
-    .catch(() => { renderFactLayer(p, {}); });
+    .catch(() => { renderFactLayer(p, {}); })
+    .finally(() => { if (p.chamber === '参議院') renderVoteSection(p); });
 })();
 
 /* ── 評価基準 折りたたみ ── */
