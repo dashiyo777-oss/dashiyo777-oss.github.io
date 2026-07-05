@@ -1,0 +1,52 @@
+name: 参議院投票記録取得（第221回）
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: '実行ブランチ'
+        default: 'claude/amazing-volta-Ii6eP'
+      limit:
+        description: '処理議案数上限（省略で全件、テスト時は 3 など）'
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || 'claude/amazing-volta-Ii6eP' }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 第221回投票記録取得
+        env:
+          LIMIT: ${{ github.event.inputs.limit }}
+        run: |
+          if [ -n "$LIMIT" ]; then
+            python3 scripts/fetch_vote_records.py --limit "$LIMIT"
+          else
+            python3 scripts/fetch_vote_records.py
+          fi
+
+      - name: votes/ をコミット・プッシュ
+        env:
+          TARGET_REF: ${{ github.event.inputs.ref || 'claude/amazing-volta-Ii6eP' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add votes/
+          if git diff --cached --quiet; then
+            echo "votes/ に変更なし（スキップ）"
+          else
+            COUNT=$(git diff --cached --name-only | wc -l)
+            git commit -m "data: 第221回参議院投票記録を追加 (${COUNT}ファイル)"
+            git push origin "$TARGET_REF"
+          fi
