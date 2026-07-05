@@ -267,6 +267,8 @@ def main() -> None:
     total_san_bills = 0
     total_shu_matched = 0
     total_san_matched = 0
+    # 継続審議で同一 keika URL が複数会期の一覧に載るため全セッション横断で重複排除
+    processed_keika_urls: set[str] = set()
 
     sessions = [221] if args.test else SESSIONS
 
@@ -290,13 +292,23 @@ def main() -> None:
                 errors.append(msg)
             else:
                 keika_urls = extract_shugiin_keika_urls(html)
-                out(f"  衆法件数: {len(keika_urls)}")
-                total_shu_bills += len(keika_urls)
+                # 継続審議による重複を排除（同一 URL は初出会期のみ処理）
+                new_keika_urls = [u for u in keika_urls if u not in processed_keika_urls]
+                skipped = len(keika_urls) - len(new_keika_urls)
+                out(f"  衆法件数: {len(keika_urls)}（継続審議除く新規: {len(new_keika_urls)}件）")
+                total_shu_bills += len(new_keika_urls)
 
-                for i, kurl in enumerate(keika_urls, 1):
+                for i, kurl in enumerate(new_keika_urls, 1):
+                    processed_keika_urls.add(kurl)
                     page = fetch_html(kurl, encoding='shift_jis')
                     if not page:
                         errors.append(f"第{session}回 衆法 keika取得失敗: {kurl}")
+                        time.sleep(SLEEP)
+                        continue
+
+                    # 閣法（内閣提出）が衆法セクションに混入した場合はスキップ
+                    if re.search(r'<TITLE>\s*閣法', page, re.IGNORECASE):
+                        out(f"  [{i:3d}] 閣法ページ → スキップ: {kurl.split('/')[-1]}")
                         time.sleep(SLEEP)
                         continue
 
@@ -409,7 +421,7 @@ def main() -> None:
     out("## 完了サマリ")
     out(f"| 項目 | 値 |")
     out(f"|------|-----|")
-    out(f"| 衆法 一覧ページ | {len(sessions)}回次 / 合計 {total_shu_bills} 件 |")
+    out(f"| 衆法 一覧ページ | {len(sessions)}回次 / ユニーク {total_shu_bills} 件（重複除く） |")
     out(f"| 参法 一覧ページ | {len(sessions)}回次 / 合計 {total_san_bills} 件 |")
     out(f"| 参法 照合成功  | {total_san_matched}/{total_san_bills} |")
     out(f"| bill_sponsor_count 更新 | {len(sponsor_counts)} 名 |")
