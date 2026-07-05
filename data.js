@@ -744,7 +744,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P068", name:"上野 宏史", reading:"うえの ひろし", party:"自民党", role:"参議院議員",
+    id:"P068", name:"上野 宏史", reading:"うえの ひろし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
@@ -810,7 +810,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P074", name:"梅村 聡", reading:"うめむら さとし", party:"日本維新の会", role:"参議院議員",
+    id:"P074", name:"梅村 聡", reading:"うめむら さとし", party:"日本維新の会", role:"衆議院議員",
     chamber:"衆議院", district:"大阪5", status:"現職", gender:"男", age:null,
     total:70, rank:"B-",
     axes:[3,4,3,3,4,3,4,4],
@@ -920,7 +920,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P084", name:"大串 正樹", reading:"おおぐし まさき", party:"自民党", role:"参議院議員",
+    id:"P084", name:"大串 正樹", reading:"おおぐし まさき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"兵庫6", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[4,2,1,3,4,3,4,4],
@@ -3069,7 +3069,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"参議院議員（国土交通副大臣）",
+    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[3,3,3,4,3,3,3,3],
@@ -3080,7 +3080,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P277", name:"豊田 真由子", reading:"とよた まゆこ", party:"参政党", role:"参政党 参議院議員（比例区）、元文部科学大臣政務官・復興大臣政務官・東京五輪大臣政務官、元厚生労働省官僚（WHO勤務）",
+    id:"P277", name:"豊田 真由子", reading:"とよた まゆこ", party:"参政党", role:"衆議院議員（比例北関東）、参政党政策調査会長、元厚生労働省官僚（WHO出向経験）",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"女", age:null,
     total:55, rank:"D",
     axes:[4,3,3,4,1,3,3,1],
@@ -3157,7 +3157,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P284", name:"長澤 興祐", reading:"ながさわ こうすけ", party:"自民党", role:"参議院議員（元財務副大臣）",
+    id:"P284", name:"長澤 興祐", reading:"ながさわ こうすけ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京29", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[3,4,3,4,3,4,4,4],
@@ -3883,7 +3883,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P350", name:"広瀬 建", reading:"ひろせ けん", party:"自民党", role:"元参議院議員",
+    id:"P350", name:"広瀬 建", reading:"ひろせ けん", party:"自民党", role:"衆議院議員（農林水産大臣政務官）",
     chamber:"衆議院", district:"大分2", status:"現職", gender:"男", age:null,
     total:37, rank:"D",
     axes:[3,2,2,2,1,2,2,1],
@@ -3938,7 +3938,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"参議院議員",
+    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京18", status:"現職", gender:"男", age:null,
     total:70, rank:"B-",
     axes:[4,3,2,4,4,3,4,4],
@@ -4829,7 +4829,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P436", name:"山田 美樹", reading:"やまだ みき", party:"自民党", role:"参議院議員",
+    id:"P436", name:"山田 美樹", reading:"やまだ みき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京1", status:"現職", gender:"男", age:null,
     total:67, rank:"C+",
     axes:[3,4,3,4,3,3,4,3],
@@ -4906,7 +4906,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P443", name:"山本 裕三", reading:"やまもと ゆうぞう", party:"自民党", role:"参議院議員",
+    id:"P443", name:"山本 裕三", reading:"やまもと ゆうぞう", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"静岡3", status:"現職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,4,3,4,4,3,4,4],
@@ -4972,7 +4972,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"参議院議員",
+    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"福岡10", status:"現職", gender:"男", age:null,
     total:70, rank:"B-",
     axes:[3,4,3,3,4,3,4,4],
@@ -4994,7 +4994,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P451", name:"笠 浩史", reading:"りゅう ひろふみ", party:"中道改革連合", role:"参議院議員",
+    id:"P451", name:"笠 浩史", reading:"りゅう ひろふみ", party:"中道改革連合", role:"衆議院議員",
     chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -5115,7 +5115,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"参議院議員",
+    id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,4,3,4,4],
@@ -5126,7 +5126,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P463", name:"渡辺 真太朗", reading:"わたなべ しんたろう", party:"無所属", role:"参議院議員",
+    id:"P463", name:"渡辺 真太朗", reading:"わたなべ しんたろう", party:"無所属", role:"衆議院議員",
     chamber:"衆議院", district:"栃木3", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -5434,7 +5434,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P494", name:"礒崎 哲史", reading:"いそざき てつじ", party:"国民民主党", role:"衆議院議員",
+    id:"P494", name:"礒崎 哲史", reading:"いそざき てつじ", party:"国民民主党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],

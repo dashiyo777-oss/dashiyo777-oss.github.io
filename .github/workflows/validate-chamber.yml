@@ -1,0 +1,69 @@
+name: 衆参議員名簿 整合チェック（月次）
+
+on:
+  schedule:
+    - cron: '0 2 1 * *'  # 毎月1日 02:00 UTC（日本時間 11:00）
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: '実行ブランチ'
+        default: 'main'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 整合チェック実行
+        id: check
+        run: |
+          python3 scripts/validate_chamber.py
+          echo "exit_code=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: 不整合があれば Issue を作成
+        if: steps.check.outputs.exit_code != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `[自動] 衆参名簿 整合チェック: 要確認あり (${new Date().toISOString().slice(0,10)})`;
+            const body = [
+              '## 概要',
+              '衆参公式名簿と data.js の chamber フィールドに不整合が検出されました。',
+              '',
+              '## 対応手順',
+              '1. `python3 scripts/validate_chamber.py` を手元で実行して詳細を確認',
+              '2. 衆参公式名簿（[参議院](https://www.sangiin.go.jp/japanese/joho1/kousei/giin/current/giin.htm) / [衆議院](https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/syu/1giin.htm)）で1件ずつ目視確認',
+              '3. 確認後、data.js の chamber / role を修正してコミット',
+              '',
+              '> ⚠️ AI 推定による一括修正は禁止。必ず一次情報で検証してから修正すること（CLAUDE.md 参照）',
+            ].join('\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'data-quality',
+            });
+
+            const existing = issues.find(i => i.title.startsWith('[自動] 衆参名簿 整合チェック'));
+            if (!existing) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: ['data-quality'],
+              });
+            }
