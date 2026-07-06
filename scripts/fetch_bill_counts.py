@@ -214,7 +214,7 @@ def parse_meisai_page(html: str) -> dict:
         # 「外N名」あり
         m = re.match(r'(.+?君)\s*外\s*(\d+)\s*名', cell)
         if m:
-            result['main_sponsor']     = normalize(m.group(1))
+            result['main_sponsor']    = normalize(m.group(1))
             result['co_sponsor_count'] = int(m.group(2))
             break
         # 「外N名」なし
@@ -267,8 +267,10 @@ def main() -> None:
     total_san_bills = 0
     total_shu_matched = 0
     total_san_matched = 0
-    # 継続審議で同一 keika URL が複数会期の一覧に載るため全セッション横断で重複排除
-    processed_keika_urls: set[str] = set()
+    # 継続審議で同一法案が複数会期の kaiji.htm に載るため全セッション横断で重複排除。
+    # dedupキー: (提出回次, 議案番号) — keika ページの TITLE から取得。
+    # URL は会期ごとに別ページが生成されるため URL 一意 ≠ 法案一意。
+    processed_bill_keys: set[tuple[int, int]] = set()
 
     sessions = [221] if args.test else SESSIONS
 
@@ -292,14 +294,11 @@ def main() -> None:
                 errors.append(msg)
             else:
                 keika_urls = extract_shugiin_keika_urls(html)
-                # 継続審議による重複を排除（同一 URL は初出会期のみ処理）
-                new_keika_urls = [u for u in keika_urls if u not in processed_keika_urls]
-                skipped = len(keika_urls) - len(new_keika_urls)
-                out(f"  衆法件数: {len(keika_urls)}（継続審議除く新規: {len(new_keika_urls)}件）")
-                total_shu_bills += len(new_keika_urls)
+                out(f"  衆法候補: {len(keika_urls)}件（継続審議重複は法案IDで除外）")
 
-                for i, kurl in enumerate(new_keika_urls, 1):
-                    processed_keika_urls.add(kurl)
+                shu_new = shu_dup = shu_skip = 0
+
+                for i, kurl in enumerate(keika_urls, 1):
                     page = fetch_html(kurl, encoding='shift_jis')
                     if not page:
                         errors.append(f"第{session}回 衆法 keika取得失敗: {kurl}")
@@ -308,15 +307,33 @@ def main() -> None:
 
                     # 閣法（内閣提出）が衆法セクションに混入した場合はスキップ
                     if re.search(r'<TITLE>\s*閣法', page, re.IGNORECASE):
+                        shu_skip += 1
                         out(f"  [{i:3d}] 閣法ページ → スキップ: {kurl.split('/')[-1]}")
                         time.sleep(SLEEP)
                         continue
 
                     data = parse_keika_page(page)
-                    label = (
-                        f"第{data['session']}回衆法第{data['bill_no']}号"
-                        if data['session'] else f"({kurl.split('/')[-1]})"
-                    )
+
+                    # TITLEパース失敗（閣法の別書式等） → スキップ
+                    if data['session'] == 0:
+                        shu_skip += 1
+                        out(f"  [{i:3d}] TITLE未解析 → スキップ: {kurl.split('/')[-1]}")
+                        time.sleep(SLEEP)
+                        continue
+
+                    bill_key = (data['session'], data['bill_no'])
+
+                    # 継続審議による重複排除: 同一法案は初出会期のページのみで処理
+                    if bill_key in processed_bill_keys:
+                        shu_dup += 1
+                        time.sleep(SLEEP)
+                        continue
+
+                    processed_bill_keys.add(bill_key)
+                    shu_new += 1
+                    total_shu_bills += 1
+
+                    label = f"第{data['session']}回衆法第{data['bill_no']}号"
 
                     for name in data['sponsors']:
                         pid = name_to_pid.get(name)
@@ -331,7 +348,6 @@ def main() -> None:
                         pid = name_to_pid.get(name)
                         if pid:
                             supporter_counts[pid] += 1
-                        # 未照合賛成者は報告不要（引退議員が大量）
 
                     out(
                         f"  [{i:3d}] {label}: "
@@ -339,6 +355,12 @@ def main() -> None:
                         f" 賛成者{len(data['supporters'])}名"
                     )
                     time.sleep(SLEEP)
+
+                out(
+                    f"  ↳ ユニーク: {shu_new}件 / "
+                    f"継続審議除外: {shu_dup}件 / "
+                    f"閣法等スキップ: {shu_skip}件"
+                )
 
         # ── 参議院 ──────────────────────────────────────────
         san_url = SANGIIN_LIST_URL.format(n=session)
@@ -417,11 +439,20 @@ def main() -> None:
         json.dump(facts, f, ensure_ascii=False, indent=2)
 
     # ── サマリ出力 ────────────────────────────────────────────
+    shu_match_rate = (
+        f"{total_shu_matched}/{total_shu_bills * 5:.0f}（推定）"
+        if total_shu_bills else "N/A"
+    )
+    san_match_rate = (
+        f"{total_san_matched}/{total_san_bills}"
+        if total_san_bills else "N/A"
+    )
+
     out(f"\n{'='*52}")
     out("## 完了サマリ")
     out(f"| 項目 | 値 |")
     out(f"|------|-----|")
-    out(f"| 衆法 一覧ページ | {len(sessions)}回次 / ユニーク {total_shu_bills} 件（重複除く） |")
+    out(f"| 衆法 一覧ページ | {len(sessions)}回次 / 合計 {total_shu_bills} 件 |")
     out(f"| 参法 一覧ページ | {len(sessions)}回次 / 合計 {total_san_bills} 件 |")
     out(f"| 参法 照合成功  | {total_san_matched}/{total_san_bills} |")
     out(f"| bill_sponsor_count 更新 | {len(sponsor_counts)} 名 |")

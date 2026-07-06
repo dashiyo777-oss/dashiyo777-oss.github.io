@@ -136,7 +136,7 @@ def get_aliases(source: str) -> dict[str, list[str]]:
     指定ソース用の ALIASES 辞書を返す。
 
     Args:
-        source: "ndl" | "shugiin_shitsumon" | "sangiin_vote" | "gian"
+        source: "ndl" | "shugiin_shitsumon" | "sangiin_vote"
 
     Returns:
         {議員ID: [別名リスト]} の辞書（ソースにエントリが存在する議員のみ）
