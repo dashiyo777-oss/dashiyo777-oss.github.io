@@ -321,6 +321,15 @@
     font-weight: 600; color: var(--text); line-height: 1;
   }
   .fact-question-unit { font-size: 0.78rem; color: var(--gray); }
+  .fact-bill-row {
+    display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.3rem;
+  }
+  .fact-bill-num {
+    font-size: 1.5rem; font-family: 'Cormorant Garamond', serif;
+    font-weight: 600; color: var(--text); line-height: 1;
+  }
+  .fact-bill-unit { font-size: 0.78rem; color: var(--gray); }
+  .fact-bill-breakdown { font-size: 0.68rem; color: var(--gray); display: block; margin-bottom: 0.3rem; }
 
   /* ── RADAR CHART ── */
   .radar-wrap { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
@@ -1333,6 +1342,28 @@ function renderFactLayer(p, facts) {
       🔗 質問主意書一覧（${chamber || '国会'}）
     </a>`;
 
+  // 議員立法セクション
+  const billCount = (rec.bill_sponsor_count !== null && rec.bill_sponsor_count !== undefined)
+    ? rec.bill_sponsor_count : 0;
+  const billUrl = chamber === '衆議院'
+    ? 'https://www.shugiin.go.jp/internet/itdb_gian.nsf/html/gian/menu.htm'
+    : 'https://www.sangiin.go.jp/japanese/joho1/kousei/gian/gian.htm';
+  const billLinkLabel = chamber === '衆議院' ? '衆議院議案データベース' : '参議院 議案情報';
+  const billBreakdown = billCount > 0
+    ? (chamber === '衆議院' ? `衆法 ${billCount}件` : `参法 ${billCount}件（主発議者分）`)
+    : '';
+  const billHtml = `
+    <hr class="fact-divider">
+    <div class="fact-bill-row">
+      <span class="fact-bill-num">${billCount.toLocaleString()}</span>
+      <span class="fact-bill-unit">件の議員立法（発議）</span>
+    </div>
+    ${billBreakdown ? `<span class="fact-bill-breakdown">${billBreakdown}</span>` : ''}
+    <div class="fact-period">集計期間：第207回〜第221回国会（2021年12月〜）</div>
+    <a class="fact-source-link" href="${billUrl}" target="_blank" rel="noopener">
+      🔗 ${billLinkLabel}
+    </a>`;
+
   if (rec.speech_count === 0) {
     el.innerHTML = `
       <div class="fact-no-data">発言記録を確認中です（表記の照合に時間がかかる場合があります）</div>
@@ -1342,8 +1373,12 @@ function renderFactLayer(p, facts) {
         </a>
       </div>
       ${questionHtml}
+      ${billHtml}
       <div class="fact-note">
         ※ 与党議員は政府に直接照会できるため、質問主意書の提出が少ない傾向があります。多寡のみで議員の優劣を示すものではありません。<br>
+        ※ 議員立法の発議数は法案の主体的な提出者（発議者）のみを集計しています。参議院提出法案は公表形式の制約により主発議者のみの集計です。<br>
+        ※ 与党の政策は内閣提出法案として実現されるため、与党議員の発議数は少ない傾向があります。<br>
+        ※ 集計は当サイト収録議員を対象としています。<br>
         ※ これは評価ではなく、公開情報に基づく客観的な記録データです。
       </div>`;
     return;
@@ -1363,9 +1398,13 @@ function renderFactLayer(p, facts) {
       🔗 国会会議録検索システムで発言記録を確認（国立国会図書館）
     </a>
     ${questionHtml}
+    ${billHtml}
     <div class="fact-note">
       ※ 発言数は役職（大臣・委員長等）により大きく変動します。<br>
       ※ 与党議員は政府に直接照会できるため、質問主意書の提出が少ない傾向があります。多寡のみで議員の優劣を示すものではありません。<br>
+      ※ 議員立法の発議数は法案の主体的な提出者（発議者）のみを集計しています。参議院提出法案は公表形式の制約により主発議者のみの集計です。<br>
+      ※ 与党の政策は内閣提出法案として実現されるため、与党議員の発議数は少ない傾向があります。<br>
+      ※ 集計は当サイト収録議員を対象としています。<br>
       ※ これは評価ではなく、公開情報に基づく客観的な記録データです。
     </div>`;
 }
