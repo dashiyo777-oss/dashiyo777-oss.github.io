@@ -698,6 +698,58 @@
     .match-back-btn { background: none; border: 1px solid var(--border); color: var(--gray); padding: 0.4rem 1rem; border-radius: 6px; font-size: 0.75rem; cursor: pointer; margin-top: 1rem; transition: all 0.15s; }
     .match-back-btn:hover { color: var(--text); border-color: var(--blue); }
 
+    /* ── HIGHLIGHTS ── */
+    .highlights-section {
+      margin: 0 2rem 0.5rem;
+      border: 1px solid rgba(91,160,224,0.25);
+      border-radius: 10px;
+      background: rgba(22,32,64,0.6);
+      padding: 1rem 1.2rem 0.8rem;
+    }
+    .highlights-header {
+      display: flex; align-items: baseline; gap: 0.8rem; margin-bottom: 0.7rem; flex-wrap: wrap;
+    }
+    .highlights-title {
+      font-family: 'Noto Serif JP', serif; font-size: 0.9rem; font-weight: 600; color: var(--text);
+    }
+    .highlights-period {
+      font-size: 0.72rem; color: var(--gray);
+    }
+    .highlights-share {
+      margin-left: auto; font-size: 0.72rem; color: var(--blue);
+      text-decoration: none; border: 1px solid rgba(91,160,224,0.3);
+      border-radius: 4px; padding: 0.15rem 0.5rem; white-space: nowrap;
+    }
+    .highlights-share:hover { background: rgba(91,160,224,0.1); }
+    .highlights-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem;
+    }
+    .highlights-col-title {
+      font-size: 0.72rem; color: var(--gray); margin-bottom: 0.4rem; letter-spacing: 0.03em;
+    }
+    .highlights-row {
+      display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0;
+      text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .highlights-row:hover { background: rgba(91,160,224,0.06); border-radius: 4px; }
+    .hl-name { font-size: 0.8rem; color: var(--text); white-space: nowrap; flex-shrink: 0; }
+    .hl-party {
+      font-size: 0.62rem; color: #fff; border-radius: 3px; padding: 0.1rem 0.3rem;
+      white-space: nowrap; flex-shrink: 0; opacity: 0.85;
+    }
+    .hl-diff {
+      margin-left: auto; font-size: 0.8rem; color: var(--green);
+      font-family: 'Cormorant Garamond', serif; font-weight: 600; white-space: nowrap;
+    }
+    .highlights-msg { font-size: 0.78rem; color: var(--gray); padding: 0.3rem 0; }
+    .highlights-note {
+      font-size: 0.65rem; color: var(--gray); margin-top: 0.6rem; opacity: 0.7;
+    }
+    @media (max-width: 768px) {
+      .highlights-section { margin: 0 0.75rem 0.5rem; padding: 0.8rem 0.8rem 0.6rem; }
+      .highlights-grid { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+
     /* ── FACT COLUMNS ── */
     .th-fact, .td-fact { text-align: right; }
     .td-fact { font-variant-numeric: tabular-nums; }
@@ -776,6 +828,17 @@
     </div>
   </div>
 </section>
+
+<!-- HIGHLIGHTS -->
+<div class="highlights-section" id="highlights-section" style="display:none">
+  <div class="highlights-header">
+    <span class="highlights-title">📊 今月の注目の動き</span>
+    <span class="highlights-period" id="highlights-period"></span>
+    <a class="highlights-share" id="highlights-share" href="#" target="_blank" rel="noopener">𝕏 シェア</a>
+  </div>
+  <div id="highlights-body"></div>
+  <div class="highlights-note">※ 照合精度向上による変動を含む場合があります</div>
+</div>
 
 <!-- RANKING CHIPS (①) -->
 <div class="ranking-section">
@@ -1394,6 +1457,69 @@ function pushSortUrl() {
 fetch('facts.json')
   .then(r => r.json())
   .then(data => { factsMap = data; render(); })
+  .catch(() => {});
+
+/* ── HIGHLIGHTS ── */
+fetch('highlights.json')
+  .then(r => { if (!r.ok) throw new Error('not found'); return r.json(); })
+  .then(data => {
+    const section = document.getElementById('highlights-section');
+    const periodEl = document.getElementById('highlights-period');
+    const bodyEl = document.getElementById('highlights-body');
+    const shareEl = document.getElementById('highlights-share');
+
+    const fmt = d => {
+      const [y, m, day] = d.split('.');
+      return `${y}年${parseInt(m)}月${parseInt(day)}日`;
+    };
+
+    if (data.first_run) {
+      periodEl.textContent = '';
+      bodyEl.innerHTML = '<div class="highlights-msg">来月から「注目の動き」が表示されます（データ蓄積中）</div>';
+      shareEl.style.display = 'none';
+      section.style.display = 'block';
+      return;
+    }
+
+    periodEl.textContent = `${fmt(data.period_from)}〜${fmt(data.period_to)}の変化`;
+
+    if (data.no_change) {
+      bodyEl.innerHTML = '<div class="highlights-msg">今月は国会閉会期間のため変動なし</div>';
+      shareEl.style.display = 'none';
+      section.style.display = 'block';
+      return;
+    }
+
+    const COLS = [
+      { key: 'speech_top3',   title: '🗣 発言数 増加TOP',     unit: '件増' },
+      { key: 'question_top3', title: '📋 質問主意書 増加TOP', unit: '件増' },
+      { key: 'bill_top3',     title: '📜 議員立法 発議増加TOP', unit: '件増' },
+    ];
+    const activeCols = COLS.filter(c => (data[c.key] || []).length > 0);
+    if (!activeCols.length) return;
+
+    let html = '<div class="highlights-grid">';
+    for (const col of activeCols) {
+      html += `<div class="highlights-col"><div class="highlights-col-title">${col.title}</div>`;
+      for (const p of data[col.key]) {
+        const color = PARTY_COLORS[p.party] || '#555';
+        html += `<a class="highlights-row" href="politician.html?id=${p.id}">
+          <span class="hl-name">${p.name}</span>
+          <span class="hl-party" style="background:${color}">${p.party}</span>
+          <span class="hl-diff">+${p.diff.toLocaleString()}${col.unit}</span>
+        </a>`;
+      }
+      html += '</div>';
+    }
+    html += '</div>';
+    bodyEl.innerHTML = html;
+
+    const shareText = `📊 今月の注目の動き（${data.period_from}〜${data.period_to}）\n` +
+      `統覧 TORAN — 国会議員データベース\nhttps://dashiyo777-oss.github.io/politicians.html`;
+    shareEl.href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
+
+    section.style.display = 'block';
+  })
   .catch(() => {});
 
 /* ── マッチング機能 (⑤) ── */
