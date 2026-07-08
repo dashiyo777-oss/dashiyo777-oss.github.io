@@ -798,6 +798,12 @@
       <span class="search-icon">🔍</span>
       <input class="filter-input" id="search" type="text" placeholder="氏名・政党・役職で検索…">
     </div>
+    <select class="filter-select" id="filter-status">
+      <option value="">すべての在職</option>
+      <option value="現職">現職のみ</option>
+      <option value="元職">元職</option>
+      <option value="候補">候補</option>
+    </select>
     <select class="filter-select" id="filter-chamber">
       <option value="">すべての院</option>
       <option value="衆議院">衆議院</option>
@@ -1111,7 +1117,7 @@ function extractBlock(district) {
 /* ── STATE ── */
 let sortCol = 'total';
 let sortDir = 'desc';
-let filters = { search:'', chamber:'', party:'', rank:'', caution: false, district:'', stanceKey:'', stanceVal:'', preset:'' };
+let filters = { search:'', chamber:'', party:'', rank:'', caution: false, district:'', stanceKey:'', stanceVal:'', preset:'', status:'' };
 let filtered = [...POLITICIANS];
 let presetLimit = 0;
 let factsMap = {};
@@ -1139,6 +1145,7 @@ function applyFilters() {
       if(type === 'block') { if(!(p.district||'').includes(val)) return false; }
       else { const m = (p.district||'').match(/^([^\d]+)/); if(!m || m[1].replace(/[都道府県]$/,'') !== val) return false; }
     }
+    if(filters.status && p.status !== filters.status) return false;
     if(filters.stanceKey && filters.stanceVal) {
       if((p.stances||{})[filters.stanceKey] !== filters.stanceVal) return false;
     }
@@ -1270,6 +1277,7 @@ document.getElementById('filter-chamber').addEventListener('change', e => { filt
 document.getElementById('filter-party').addEventListener('change', e => { filters.party = e.target.value; applyFilters(); });
 document.getElementById('filter-rank').addEventListener('change', e => { filters.rank = e.target.value; applyFilters(); });
 document.getElementById('filter-district').addEventListener('change', e => { filters.district = e.target.value; applyFilters(); });
+document.getElementById('filter-status').addEventListener('change', e => { filters.status = e.target.value; applyFilters(); });
 document.getElementById('toggle-caution').addEventListener('click', function() {
   filters.caution = !filters.caution;
   this.classList.toggle('active', filters.caution);
@@ -1283,6 +1291,7 @@ document.querySelectorAll('.rank-chip').forEach(btn => {
     document.querySelectorAll('.rank-chip').forEach(b => b.classList.remove('active'));
     if(preset === 'reset') {
       filters.preset = ''; presetLimit = 0; sortCol = 'total'; sortDir = 'desc';
+      pushSortUrl();
     } else {
       this.classList.add('active');
       filters.preset = preset;
@@ -1307,6 +1316,7 @@ document.querySelectorAll('th[data-col]').forEach(th => {
     updateFactNote();
     updateMobileFactCol();
     syncSortSelect();
+    pushSortUrl();
   });
 });
 
@@ -1351,7 +1361,34 @@ document.getElementById('sort-select').addEventListener('change', e => {
   render();
   updateFactNote();
   updateMobileFactCol();
+  pushSortUrl();
 });
+
+/* ── URL SORT PARAM ── */
+function pushSortUrl() {
+  const url = new URL(location.href);
+  if (FACT_KEYS[sortCol]) {
+    url.searchParams.set('sort', sortCol);
+  } else {
+    url.searchParams.delete('sort');
+  }
+  history.replaceState(null, '', url.toString());
+}
+
+// 初期ロード時に URL パラメータを適用
+(function applyUrlParams() {
+  const params = new URLSearchParams(location.search);
+  const initSort = params.get('sort');
+  if (initSort && FACT_KEYS[initSort]) {
+    sortCol = initSort;
+    sortDir = 'desc';
+    applySort();
+    render();
+    updateFactNote();
+    updateMobileFactCol();
+    syncSortSelect();
+  }
+})();
 
 /* ── FACTS DATA (非同期・初期表示をブロックしない) ── */
 fetch('facts.json')
