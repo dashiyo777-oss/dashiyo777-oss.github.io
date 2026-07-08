@@ -698,6 +698,18 @@
     .match-back-btn { background: none; border: 1px solid var(--border); color: var(--gray); padding: 0.4rem 1rem; border-radius: 6px; font-size: 0.75rem; cursor: pointer; margin-top: 1rem; transition: all 0.15s; }
     .match-back-btn:hover { color: var(--text); border-color: var(--blue); }
 
+    /* ── FACT COLUMNS ── */
+    .th-fact, .td-fact { text-align: right; }
+    .td-fact { font-variant-numeric: tabular-nums; }
+    .td-fact-dash { color: var(--gray); }
+    .fact-sort-note {
+      font-size: 0.72rem; color: var(--orange);
+      background: rgba(240,160,48,0.08);
+      border-left: 3px solid var(--orange);
+      padding: 0.4rem 1rem; display: none;
+    }
+    .fact-sort-note.visible { display: block; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .site-header { padding: 0 1rem; }
@@ -708,7 +720,17 @@
       .th-chamber, .td-chamber { display: none; }
       .th-flags { display: none; }
       .td-flags { display: none; }
+      .th-fact, .td-fact { display: none; }
       .stats-grid { gap: 1.2rem; }
+      /* ファクト列ソート選択中: 該当列のみ表示 & 総合スコア列を非表示 */
+      #politician-table[data-fact-col="speech"] .th-fact-speech,
+      #politician-table[data-fact-col="speech"] .td-fact-speech { display: table-cell; }
+      #politician-table[data-fact-col="question"] .th-fact-question,
+      #politician-table[data-fact-col="question"] .td-fact-question { display: table-cell; }
+      #politician-table[data-fact-col="bill"] .th-fact-bill,
+      #politician-table[data-fact-col="bill"] .td-fact-bill { display: table-cell; }
+      #politician-table[data-fact-col] .th-total,
+      #politician-table[data-fact-col] .td-total { display: none; }
     }
     @media (max-width: 540px) {
       .th-rank-badge, .td-rank-badge { display: none; }
@@ -806,6 +828,12 @@
     <select class="filter-select" id="filter-district">
       <option value="">すべての選挙区</option>
     </select>
+    <select class="filter-select" id="sort-select" title="並び替え">
+      <option value="total">並び順: 総合スコア</option>
+      <option value="speech">並び順: 発言数</option>
+      <option value="question">並び順: 質問主意書</option>
+      <option value="bill">並び順: 議員立法</option>
+    </select>
     <select class="filter-select-sm" id="filter-stance-key">
       <option value="">政策テーマ…</option>
     </select>
@@ -841,6 +869,9 @@
   </div>
 </div>
 
+<!-- FACT SORT NOTE -->
+<div class="fact-sort-note" id="fact-sort-note"></div>
+
 <!-- TABLE -->
 <main class="table-section">
   <div class="table-wrap">
@@ -852,7 +883,10 @@
           <th data-col="name">氏名<span class="sort-icon"></span></th>
           <th data-col="party">政党<span class="sort-icon"></span></th>
           <th data-col="chamber" class="th-chamber">院/選挙区<span class="sort-icon"></span></th>
-          <th data-col="total">総合スコア<span class="sort-icon"></span></th>
+          <th data-col="total" class="th-total">総合スコア<span class="sort-icon"></span></th>
+          <th data-col="speech" class="th-fact th-fact-speech" title="第207回〜第221回国会の国会発言件数">発言<span class="sort-icon"></span></th>
+          <th data-col="question" class="th-fact th-fact-question" title="第207回〜第221回国会の質問主意書提出件数">質問<span class="sort-icon"></span></th>
+          <th data-col="bill" class="th-fact th-fact-bill" title="第207回〜第221回国会の議員立法（発議）件数">立法<span class="sort-icon"></span></th>
           <th data-col="flags" class="th-flags">フラグ</th>
           <th></th>
         </tr>
@@ -1080,6 +1114,7 @@ let sortDir = 'desc';
 let filters = { search:'', chamber:'', party:'', rank:'', caution: false, district:'', stanceKey:'', stanceVal:'', preset:'' };
 let filtered = [...POLITICIANS];
 let presetLimit = 0;
+let factsMap = {};
 
 /* ── STATS ── */
 function updateStats() {
@@ -1121,9 +1156,22 @@ function applyFilters() {
 }
 
 const RANK_ORDER = ['S','A+','A','A-','B+','B','B-','C+','C','C-','D','E','情報不足'];
+const FACT_KEYS = { speech: 'speech_count', question: 'question_count', bill: 'bill_sponsor_count' };
 function applySort() {
   filtered.sort((a,b) => {
     let av, bv;
+    if (FACT_KEYS[sortCol]) {
+      const key = FACT_KEYS[sortCol];
+      const fa = factsMap[a.id], fb = factsMap[b.id];
+      av = (fa && fa[key] != null) ? fa[key] : null;
+      bv = (fb && fb[key] != null) ? fb[key] : null;
+      // データなしは最後尾
+      if (av === null && bv === null) return b.total - a.total;
+      if (av === null) return 1;
+      if (bv === null) return -1;
+      if (av === bv) return b.total - a.total; // 同数は総合スコア降順
+      return sortDir === 'asc' ? av - bv : bv - av;
+    }
     switch(sortCol) {
       case 'total': av=a.total; bv=b.total; break;
       case 'name': av=a.name; bv=b.name; break;
@@ -1173,6 +1221,12 @@ function render() {
       p.flag_crime ? '<span class="flag-icon" title="犯罪・違反">🚨</span>' : '',
       p.flag_caution ? '<span class="flag-icon" title="要注意">⚠️</span>' : ''
     ].join('');
+    const f = factsMap[p.id];
+    const fv = v => (v != null) ? v.toLocaleString() : '—';
+    const fd = v => (v == null) ? ' td-fact-dash' : '';
+    const sc = f ? f.speech_count : null;
+    const qc = f ? f.question_count : null;
+    const bc = f ? f.bill_sponsor_count : null;
 
     return `<tr onclick="window.location='politician.html?id=${p.id}'">
       <td class="rank-num">${rankMap[p.id]}</td>
@@ -1188,10 +1242,13 @@ function render() {
         <div class="chamber-text">${p.chamber}</div>
         <div class="district-text">${p.district}</div>
       </td>
-      <td class="score-cell">
+      <td class="score-cell td-total">
         <div class="score-num">${p.total}</div>
         <div class="score-bar-wrap"><div class="score-bar-fill" style="width:${barW}%"></div></div>
       </td>
+      <td class="td-fact td-fact-speech${fd(sc)}">${fv(sc)}</td>
+      <td class="td-fact td-fact-question${fd(qc)}">${fv(qc)}</td>
+      <td class="td-fact td-fact-bill${fd(bc)}">${fv(bc)}</td>
       <td class="flags-cell td-flags">${flags || '<span style="color:var(--gray);font-size:0.7rem">—</span>'}</td>
       <td><a class="detail-btn" href="politician.html?id=${p.id}" onclick="event.stopPropagation()">詳細 →</a></td>
     </tr>`;
@@ -1243,16 +1300,64 @@ document.querySelectorAll('th[data-col]').forEach(th => {
       sortDir = sortDir === 'asc' ? 'desc' : 'asc';
     } else {
       sortCol = th.dataset.col;
-      sortDir = sortCol === 'total' ? 'desc' : 'asc';
+      sortDir = (sortCol === 'total' || FACT_KEYS[sortCol]) ? 'desc' : 'asc';
     }
     applySort();
     render();
+    updateFactNote();
+    updateMobileFactCol();
+    syncSortSelect();
   });
 });
 
 /* ── INIT ── */
 updateStats();
 applyFilters();
+
+/* ── FACT SORT HELPERS ── */
+const FACT_NOTES = {
+  speech:   '※ 発言数は役職（大臣・委員長等）により大きく変動します',
+  question: '※ 与党議員は政府に直接照会できるため、質問主意書の提出が少ない傾向があります',
+  bill:     '※ 与党の政策は内閣提出法案として実現されるため、与党議員の発議数は少ない傾向があります',
+};
+function updateFactNote() {
+  const el = document.getElementById('fact-sort-note');
+  if (FACT_NOTES[sortCol]) {
+    el.textContent = FACT_NOTES[sortCol];
+    el.classList.add('visible');
+  } else {
+    el.classList.remove('visible');
+  }
+}
+function updateMobileFactCol() {
+  const table = document.getElementById('politician-table');
+  if (FACT_KEYS[sortCol]) {
+    table.dataset.factCol = sortCol;
+  } else {
+    delete table.dataset.factCol;
+  }
+}
+function syncSortSelect() {
+  const sel = document.getElementById('sort-select');
+  if (['total','speech','question','bill'].includes(sortCol)) sel.value = sortCol;
+  else sel.value = 'total';
+}
+
+/* ── SORT SELECT ── */
+document.getElementById('sort-select').addEventListener('change', e => {
+  sortCol = e.target.value || 'total';
+  sortDir = 'desc';
+  applySort();
+  render();
+  updateFactNote();
+  updateMobileFactCol();
+});
+
+/* ── FACTS DATA (非同期・初期表示をブロックしない) ── */
+fetch('facts.json')
+  .then(r => r.json())
+  .then(data => { factsMap = data; render(); })
+  .catch(() => {});
 
 /* ── マッチング機能 (⑤) ── */
 (function() {
