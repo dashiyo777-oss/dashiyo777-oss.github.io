@@ -1078,9 +1078,9 @@
 </footer>
 
 <script>
-/* data.js 読み込みエラー時に「更新中」メッセージを表示 */
+/* data_core.js 読み込みエラー時に「更新中」メッセージを表示 */
 window.addEventListener('error', function(e) {
-  if (e.filename && e.filename.includes('data.js')) {
+  if (e.filename && e.filename.includes('data_core.js')) {
     document.body.style.display = 'flex';
     document.body.style.alignItems = 'center';
     document.body.style.justifyContent = 'center';
@@ -1094,7 +1094,7 @@ window.addEventListener('error', function(e) {
   }
 }, true);
 </script>
-<script src="data.js?v=4"></script>
+<script src="data_core.js?v=1"></script>
 <script src="changelog.js"></script>
 <script>
 /* ── DATA ── */
@@ -1190,7 +1190,7 @@ function updateStats() {
   document.getElementById('stat-surveyed').textContent = POLITICIANS.filter(p=>p.total>0).length + '人';
   document.getElementById('stat-a-plus').textContent = POLITICIANS.filter(p=>p.rank.startsWith('A')||p.rank.startsWith('S')).length + '人';
   document.getElementById('stat-caution').textContent = POLITICIANS.filter(p=>p.flag_caution||p.flag_crime).length + '人';
-  document.getElementById('stat-evidence').textContent = EVIDENCE.length + '件';
+  document.getElementById('stat-evidence').textContent = EVIDENCE_COUNT + '件';
 }
 
 /* ── RENDER ── */
