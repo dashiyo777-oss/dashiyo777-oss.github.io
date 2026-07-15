@@ -252,6 +252,26 @@
       color: var(--orange);
       background: rgba(240,160,48,0.08);
     }
+    #toggle-watch.active {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(232,184,74,0.08);
+    }
+    .watch-count-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 1.1rem; height: 1.1rem; padding: 0 0.25rem;
+      border-radius: 999px; background: var(--gold);
+      color: #16233f; font-size: 0.65rem; font-weight: 700;
+    }
+    .name-cell-flex { display: flex; align-items: center; gap: 0.3rem; }
+    .watch-star {
+      background: transparent; border: none; cursor: pointer;
+      font-size: 1.05rem; line-height: 1; padding: 0.3rem 0.35rem;
+      color: var(--gray); transition: color 0.2s, transform 0.15s;
+      flex-shrink: 0;
+    }
+    .watch-star:hover { transform: scale(1.2); }
+    .watch-star.on { color: var(--gold); }
     .btn-guide {
       display: flex;
       align-items: center;
@@ -875,16 +895,6 @@
     </select>
     <select class="filter-select" id="filter-party">
       <option value="">すべての政党</option>
-      <option value="自民党">自民党</option>
-      <option value="中道改革連合">中道改革連合</option>
-      <option value="立憲民主党">立憲民主党</option>
-      <option value="日本維新の会">日本維新の会</option>
-      <option value="公明党">公明党</option>
-      <option value="国民民主党">国民民主党</option>
-      <option value="日本共産党">日本共産党</option>
-      <option value="れいわ新選組">れいわ新選組</option>
-      <option value="参政党">参政党</option>
-      <option value="無所属">無所属</option>
     </select>
     <select class="filter-select" id="filter-rank">
       <option value="">すべてのランク</option>
@@ -913,6 +923,7 @@
       <option value="×">× 反対</option>
     </select>
     <button class="filter-toggle" id="toggle-caution">⚠️ 要注意のみ</button>
+    <button class="filter-toggle" id="toggle-watch">★ ウォッチ中のみ<span class="watch-count-badge" id="watch-count" style="display:none"></span></button>
     <button class="filter-toggle" id="btn-match" style="border-color:var(--gold);color:var(--gold)">🎯 マッチング</button>
     <button class="btn-guide" id="btn-guide">❓ 評価基準</button>
     <span class="filter-sep"></span>
@@ -1161,6 +1172,19 @@ function extractBlock(district) {
   }
 })();
 
+/* ── PARTY DROPDOWN(データから動的生成:新党の漏れを防止) ── */
+(function buildPartyDropdown() {
+  const sel = document.getElementById('filter-party');
+  const counts = {};
+  POLITICIANS.forEach(p => { if (p.party) counts[p.party] = (counts[p.party] || 0) + 1; });
+  const parties = Object.keys(counts).sort((a, b) => {
+    if (a === '無所属') return 1;
+    if (b === '無所属') return -1;
+    return counts[b] - counts[a] || a.localeCompare(b, 'ja');
+  });
+  parties.forEach(pt => sel.appendChild(new Option(pt, pt)));
+})();
+
 /* ── STANCE DROPDOWN (③) ── */
 (function buildStanceDropdown() {
   const sel = document.getElementById('filter-stance-key');
@@ -1177,10 +1201,37 @@ function extractBlock(district) {
   });
 })();
 
+/* ── WATCHLIST(localStorage・端末ごと) ── */
+const WATCH_KEY = 'toran_watchlist';
+let watchSet = new Set();
+try { watchSet = new Set(JSON.parse(localStorage.getItem(WATCH_KEY) || '[]')); } catch (e) { watchSet = new Set(); }
+function saveWatch() {
+  try { localStorage.setItem(WATCH_KEY, JSON.stringify([...watchSet])); } catch (e) {}
+}
+function updateWatchCount() {
+  const badge = document.getElementById('watch-count');
+  if (!badge) return;
+  if (watchSet.size > 0) { badge.textContent = watchSet.size; badge.style.display = 'inline-flex'; }
+  else { badge.style.display = 'none'; }
+}
+function toggleWatch(id, ev) {
+  if (ev) ev.stopPropagation();
+  if (watchSet.has(id)) watchSet.delete(id); else watchSet.add(id);
+  saveWatch();
+  updateWatchCount();
+  if (filters.watch) { applyFilters(); return; }
+  // フィルタ非適用時は全再描画せず★のみ更新(高速化維持)
+  document.querySelectorAll('.watch-star[data-wid="' + id + '"]').forEach(b => {
+    const on = watchSet.has(id);
+    b.classList.toggle('on', on);
+    b.textContent = on ? '★' : '☆';
+  });
+}
+
 /* ── STATE ── */
 let sortCol = 'total';
 let sortDir = 'desc';
-let filters = { search:'', chamber:'', party:'', rank:'', caution: false, district:'', stanceKey:'', stanceVal:'', preset:'', status:'' };
+let filters = { search:'', chamber:'', party:'', rank:'', caution: false, watch: false, district:'', stanceKey:'', stanceVal:'', preset:'', status:'' };
 let filtered = [...POLITICIANS];
 let presetLimit = 0;
 let factsMap = {};
@@ -1203,6 +1254,7 @@ function applyFilters() {
     if(filters.party && p.party !== filters.party) return false;
     if(filters.rank && !p.rank.startsWith(filters.rank)) return false;
     if(filters.caution && !p.flag_caution && !p.flag_crime) return false;
+    if(filters.watch && !watchSet.has(p.id)) return false;
     if(filters.district) {
       const [type, val] = filters.district.split(':');
       if(type === 'block') { if(!(p.district||'').includes(val)) return false; }
@@ -1302,9 +1354,12 @@ function render() {
       <td class="rank-num">${rankMap[p.id]}</td>
       <td class="td-rank-badge"><span class="rank-badge" style="color:${rc};border-color:${rc}20;background:${rc}12">${p.rank}</span></td>
       <td>
-        <div class="name-block">
-          <div class="name-ja">${p.name}</div>
-          <div class="name-reading">${p.reading}</div>
+        <div class="name-cell-flex">
+          <button class="watch-star${watchSet.has(p.id) ? ' on' : ''}" data-wid="${p.id}" onclick="toggleWatch('${p.id}',event)" title="ウォッチリストに追加/解除" aria-label="ウォッチリストに追加/解除">${watchSet.has(p.id) ? '★' : '☆'}</button>
+          <div class="name-block">
+            <div class="name-ja">${p.name}</div>
+            <div class="name-reading">${p.reading}</div>
+          </div>
         </div>
       </td>
       <td>${partyBadge(p.party)}</td>
@@ -1344,6 +1399,11 @@ document.getElementById('filter-status').addEventListener('change', e => { filte
 document.getElementById('toggle-caution').addEventListener('click', function() {
   filters.caution = !filters.caution;
   this.classList.toggle('active', filters.caution);
+  applyFilters();
+});
+document.getElementById('toggle-watch').addEventListener('click', function() {
+  filters.watch = !filters.watch;
+  this.classList.toggle('active', filters.watch);
   applyFilters();
 });
 
@@ -1386,6 +1446,7 @@ document.querySelectorAll('th[data-col]').forEach(th => {
 /* ── INIT ── */
 updateStats();
 applyFilters();
+updateWatchCount();
 
 /* ── FACT SORT HELPERS ── */
 const FACT_NOTES = {
