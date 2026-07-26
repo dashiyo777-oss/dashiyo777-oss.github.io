@@ -5,7 +5,7 @@ on:
     inputs:
       ref:
         description: '実行ブランチ'
-        default: 'claude/amazing-volta-Ii6eP'
+        default: 'main'
       limit:
         description: '処理議案数上限（省略で全件、テスト時は 3 など）'
         default: ''
@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.ref || 'claude/amazing-volta-Ii6eP' }}
+          ref: ${{ github.event.inputs.ref || 'main' }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
@@ -38,7 +38,7 @@ jobs:
 
       - name: votes/ をコミット・プッシュ
         env:
-          TARGET_REF: ${{ github.event.inputs.ref || 'claude/amazing-volta-Ii6eP' }}
+          TARGET_REF: ${{ github.event.inputs.ref || 'main' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -48,5 +48,6 @@ jobs:
           else
             COUNT=$(git diff --cached --name-only | wc -l)
             git commit -m "data: 第221回参議院投票記録を追加 (${COUNT}ファイル)"
+            git pull --rebase origin "$TARGET_REF"
             git push origin "$TARGET_REF"
           fi

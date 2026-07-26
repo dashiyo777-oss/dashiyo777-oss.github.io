@@ -52,6 +52,7 @@ jobs:
           else
             DATE=$(date +'%Y.%m.%d')
             git commit -m "データ更新: 議員立法件数（${DATE}）"
+            git pull --rebase origin main
             git push
           fi
 
