@@ -49,6 +49,7 @@ jobs:
           else
             DATE=$(date +'%Y.%m.%d')
             git commit -m "データ更新: 質問主意書提出数（${DATE}）"
+            git pull --rebase origin main
             git push
           fi
 
