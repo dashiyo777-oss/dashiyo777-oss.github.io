@@ -752,7 +752,7 @@
   "P076": {
     "name": "うるま譲司",
     "speech_count": 710,
-    "period": "2021-11-01〜2026-07-25",
+    "period": "2021-11-01〜2026-08-01",
     "question_count": 1,
     "question_period": "第207回〜第221回国会",
     "alias_used": "うるま譲司",
@@ -1082,13 +1082,14 @@
   },
   "P109": {
     "name": "鹿嶋祐介",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 5,
+    "period": "2021-11-01〜2026-08-01",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 3,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "鹿島祐介"
   },
   "P110": {
     "name": "梶山弘志",
@@ -1202,13 +1203,14 @@
   },
   "P121": {
     "name": "金澤結衣",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 6,
+    "period": "2021-11-01〜2026-08-01",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "金沢結衣"
   },
   "P122": {
     "name": "金子恵美",
@@ -7863,7 +7865,7 @@
   "P815": {
     "name": "大石晃子",
     "speech_count": 509,
-    "period": "2021-11-01〜2026-07-25",
+    "period": "2021-11-01〜2026-08-01",
     "question_count": 20,
     "question_period": "第207回〜第221回国会",
     "alias_used": "大石あきこ",
