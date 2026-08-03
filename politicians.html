@@ -1722,24 +1722,29 @@ fetch('highlights.json')
 <!-- アクセス計測ビーコン -->
 <script>new Image().src="https://api.eichinohi.com/api/hit?site=politicians&r="+Math.random();</script>
 <script>〜</script>
-<script>
+<script><script>
 (function(){
   var wrap=document.createElement('div');
   wrap.style.cssText='margin:12px 0;';
   var btn=document.createElement('button');
-  btn.textContent='📥 国会活動データをCSVでダウンロード(無料)';
+  var LABEL='📥 議員データ一覧をCSVでダウンロード(無料)';
+  btn.textContent=LABEL;
   btn.style.cssText='padding:8px 14px;border:1px solid #4a90d9;border-radius:8px;background:transparent;color:#7fb3e8;cursor:pointer;font-size:14px;';
   var note=document.createElement('div');
-  note.textContent='収録内容:発言数・質問主意書・議員立法(第207〜221回国会)。出典:国会会議録検索システム等/集計:TORAN。二次利用の際は「出典:TORAN」の明記をお願いします。';
+  note.textContent='収録内容:氏名・政党・院・選挙区・在職・総合スコア・ランク・発言数・質問主意書・議員立法(第207〜221回国会)。出典:国会会議録検索システム等/集計:TORAN。二次利用の際は「出典:TORAN」の明記をお願いします。';
   note.style.cssText='font-size:11px;opacity:.7;margin-top:4px;';
   btn.onclick=async function(){
     btn.disabled=true;btn.textContent='生成中…';
     try{
-      var res=await fetch('facts.json');
-      var data=await res.json();
-      var header=['ID','氏名','発言数','発言集計期間','質問主意書','質問主意書集計期間','議員立法(発議)','議員立法(賛成者)'];
-      var rows=Object.entries(data).map(function(e){var id=e[0],v=e[1];
-        return [id,v.name||'',v.speech_count??'',v.period||'',v.question_count??'',v.question_period||'',v.bill_sponsor_count??'',v.bill_supporter_count??''];});
+      var r1=await fetch('politicians_base.json');
+      var base=await r1.json();
+      var r2=await fetch('facts.json');
+      var facts=await r2.json();
+      var header=['ID','氏名','よみ','政党','院','選挙区','在職','役職','総合スコア','ランク','発言数(2021.11〜2026.07)','質問主意書(第207〜221回)','議員立法(発議)','議員立法(賛成者)'];
+      var rows=base.map(function(p){
+        var f=facts[p.id]||{};
+        return [p.id,p.name||'',p.reading||'',p.party||'',p.chamber||'',p.district||'',p.status||'',p.role||'',p.total??'',p.rank||'',f.speech_count??'',f.question_count??'',f.bill_sponsor_count??'',f.bill_supporter_count??''];
+      });
       var esc=function(s){return '"'+String(s).replace(/"/g,'""')+'"';};
       var csv='\uFEFF'+[header].concat(rows).map(function(r){return r.map(esc).join(',');}).join('\r\n');
       var blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
@@ -1748,7 +1753,7 @@ fetch('highlights.json')
       a.download='TORAN_議員データ_'+new Date().toISOString().slice(0,10)+'.csv';
       a.click();URL.revokeObjectURL(a.href);
     }catch(err){alert('ダウンロードに失敗しました: '+err.message);}
-    finally{btn.disabled=false;btn.textContent='📥 国会活動データをCSVでダウンロード(無料)';}
+    finally{btn.disabled=false;btn.textContent=LABEL;}
   };
   wrap.appendChild(btn);wrap.appendChild(note);
   var table=document.querySelector('table');
@@ -1756,4 +1761,5 @@ fetch('highlights.json')
   else{document.body.insertBefore(wrap,document.body.firstChild);}
 })();
 </script></body>
+
 </html>
