@@ -2372,7 +2372,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"立憲民主党", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
+    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"中道改革連合", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:82, rank:"A-",
     axes:[5,3,3,5,4,4,5,4],
