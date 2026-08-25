@@ -8327,17 +8327,6 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P791", name:"飯泉 嘉門", reading:"いいずみ かもん", party:"無所属", role:"徳島県知事",
-    chamber:"首長", district:"徳島県", status:"現職", gender:"男", age:66,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域資源を活かした地域活性化。", minus:"大規模な構造改革の先導力は保守的。",
-    comment:"安定した県政運営を行う。",
-    links:{hp:"https://www.google.com/search?q=%E9%A3%AF%E6%B3%89%20%E5%98%89%E9%96%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/飯泉嘉門",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
     id:"P792", name:"池田 豊人", reading:"いけだ とよひと", party:"無所属", role:"香川県知事",
     chamber:"首長", district:"香川県", status:"現職", gender:"男", age:65,
     total:62, rank:"C-",

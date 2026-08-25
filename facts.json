@@ -215,8 +215,8 @@
     "period": "2021-11-01〜2026-07-04",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
-    "bill_sponsor_count": 0,
-    "bill_supporter_count": 0,
+    "bill_sponsor_count": 1,
+    "bill_supporter_count": 20,
     "bill_period": "第207回〜第221回国会"
   },
   "P023": {
@@ -7620,16 +7620,6 @@
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
-  },
-  "P791": {
-    "name": "飯泉嘉門",
-    "speech_count": 10,
-    "period": "2021-11-01〜2026-07-04",
-    "question_count": 0,
-    "question_period": "第207回〜第221回国会",
-    "bill_sponsor_count": 1,
-    "bill_supporter_count": 20,
     "bill_period": "第207回〜第221回国会"
   },
   "P792": {

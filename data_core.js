@@ -6086,14 +6086,6 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P791", name:"飯泉 嘉門", reading:"いいずみ かもん", party:"無所属", role:"徳島県知事",
-    chamber:"首長", district:"徳島県", status:"現職", gender:"男", age:66,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
     id:"P792", name:"池田 豊人", reading:"いけだ とよひと", party:"無所属", role:"香川県知事",
     chamber:"首長", district:"香川県", status:"現職", gender:"男", age:65,
     total:62, rank:"C-",
