@@ -3245,7 +3245,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"立憲民主党", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
+    id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"中道改革連合", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
     total:82, rank:"A-",
     axes:[5,3,3,5,4,4,5,4],
@@ -8324,17 +8324,6 @@ const POLITICIANS = [
     plus:"地域インフラの維持と産業振興への取り組み。", minus:"大規模な政策先導は発展途上。",
     comment:"地域の実情に根ざした県政運営。",
     links:{hp:"https://www.google.com/search?q=%E6%9D%91%E5%B2%A1%20%E5%97%A3%E6%94%BF%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/村岡嗣政",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
-    id:"P791", name:"飯泉 嘉門", reading:"いいずみ かもん", party:"無所属", role:"徳島県知事",
-    chamber:"首長", district:"徳島県", status:"現職", gender:"男", age:66,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域資源を活かした地域活性化。", minus:"大規模な構造改革の先導力は保守的。",
-    comment:"安定した県政運営を行う。",
-    links:{hp:"https://www.google.com/search?q=%E9%A3%AF%E6%B3%89%20%E5%98%89%E9%96%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/飯泉嘉門",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
