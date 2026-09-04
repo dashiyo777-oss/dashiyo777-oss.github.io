@@ -1,10 +1,36 @@
 {
-  "generated": "2026.08.04",
+  "generated": "2026.09.04",
   "period_from": "2026.08.04",
-  "period_to": "2026.08.04",
-  "first_run": true,
+  "period_to": "2026.09.04",
+  "first_run": false,
   "no_change": false,
-  "speech_top3": [],
+  "speech_top3": [
+    {
+      "id": "P121",
+      "name": "金澤 結衣",
+      "party": "自民党",
+      "prev": 6,
+      "curr": 12,
+      "diff": 6
+    },
+    {
+      "id": "P109",
+      "name": "鹿嶋 祐介",
+      "party": "自民党",
+      "prev": 5,
+      "curr": 10,
+      "diff": 5
+    }
+  ],
   "question_top3": [],
-  "bill_top3": []
+  "bill_top3": [
+    {
+      "id": "P022",
+      "name": "飯泉 嘉門",
+      "party": "国民民主党",
+      "prev": 0,
+      "curr": 1,
+      "diff": 1
+    }
+  ]
 }
