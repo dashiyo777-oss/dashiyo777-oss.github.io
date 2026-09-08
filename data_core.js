@@ -3556,14 +3556,6 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P440", name:"山本ジョージ", reading:"やまもと じょーじ", party:"無所属", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
     id:"P441", name:"山本 深", reading:"やまもと しん", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"広島5", status:"現職", gender:"男", age:null,
     total:57, rank:"D",
@@ -4607,7 +4599,6 @@ const POLITICIANS = [
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"△",defense:"○",econ_sec:"○",immigration:"△",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
-  {id:"P583",name:"塩入清香",reading:"しおいり さやか",party:"参政党",role:"参議院議員",chamber:"参議院",district:"東京",status:"現職",gender:"女",age:null,total:55,rank:"D",axes:[2, 3, 2, 2, 3, 2, 5, 3],stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"◎",expo:"△",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"◎",foreign:"○",food:"◎",semi:"○"},flag_crime:false,flag_caution:false,updated:"2026.06",survey:"評価済"},
   {
     id:"P584", name:"こやり 隆史", reading:"こやり たかし", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"滋賀", status:"現職", gender:"男", age:null,
@@ -5044,14 +5035,6 @@ const POLITICIANS = [
   },
   {
     id:"P647", name:"ながえ 孝子", reading:"ながえ たかこ", party:"無所属", role:"参議院議員",
-    chamber:"参議院", district:"愛媛", status:"現職", gender:"女", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
-    id:"P648", name:"永江 孝子", reading:"ながえ たかこ", party:"無所属", role:"参議院議員",
     chamber:"参議院", district:"愛媛", status:"現職", gender:"女", age:null,
     total:60, rank:"C-",
     axes:[3,3,3,3,3,3,3,3],
@@ -6278,7 +6261,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P816", name:"山本 譲司", reading:"やまもと じょうじ", party:"れいわ新選組", role:"衆議院議員（比例南関東）、れいわ新選組幹事長・国会対策委員長、元東京都議会議員",
+    id:"P816", name:"山本 譲司", reading:"やまもと じょうじ", party:"れいわ新選組", role:"衆議院議員（比例南関東）、れいわ新選組代表、元東京都議会議員",
     chamber:"衆議院", district:"比例南関東", status:"現職", gender:"男", age:63,
     total:60, rank:"C-",
     axes:[4,3,2,3,3,3,4,2],

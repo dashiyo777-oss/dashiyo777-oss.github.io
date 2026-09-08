@@ -4393,16 +4393,6 @@
     "bill_supporter_count": 5,
     "bill_period": "第207回〜第221回国会"
   },
-  "P440": {
-    "name": "山本ジョージ",
-    "speech_count": 4,
-    "period": "2021-11-01〜2026-07-04",
-    "question_count": 6,
-    "question_period": "第207回〜第221回国会",
-    "bill_sponsor_count": 0,
-    "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
-  },
   "P441": {
     "name": "山本深",
     "speech_count": 5,
@@ -5713,16 +5703,6 @@
     "bill_supporter_count": 0,
     "bill_period": "第207回〜第221回国会"
   },
-  "P583": {
-    "name": "塩入清香",
-    "speech_count": 61,
-    "period": "2021-11-01〜2026-07-04",
-    "question_count": 0,
-    "question_period": "第207回〜第221回国会",
-    "bill_sponsor_count": 0,
-    "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
-  },
   "P584": {
     "name": "こやり隆史",
     "speech_count": 177,
@@ -6288,16 +6268,6 @@
     "speech_count": 380,
     "period": "2021-11-01〜2026-07-04",
     "question_count": 5,
-    "question_period": "第207回〜第221回国会",
-    "bill_sponsor_count": 0,
-    "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
-  },
-  "P648": {
-    "name": "永江孝子",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
-    "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
@@ -7868,7 +7838,7 @@
     "name": "山本譲司",
     "speech_count": 4,
     "period": "2021-11-01〜2026-07-04",
-    "question_count": 0,
+    "question_count": 6,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,

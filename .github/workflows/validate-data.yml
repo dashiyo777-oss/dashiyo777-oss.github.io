@@ -4,11 +4,13 @@ on:
   pull_request:
     paths:
       - 'data.js'
+      - 'politicians_base.json'
   push:
     branches:
       - main
     paths:
       - 'data.js'
+      - 'politicians_base.json'
 
 jobs:
   validate:
@@ -58,6 +60,10 @@ jobs:
       - name: Check total/rank consistency
         run: |
           python3 scripts/validate_data.py
+
+      - name: Check politicians_base.json is in sync with data.js
+        run: |
+          node scripts/validate_base_sync.js
 
       - name: Check changelog.js was updated
         run: |

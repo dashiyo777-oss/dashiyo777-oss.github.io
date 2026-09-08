@@ -4873,17 +4873,6 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P440", name:"山本ジョージ", reading:"やまもと じょーじ", party:"無所属", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・南関東", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域密着型の活動や、教育現場の課題解決への真摯な取り組み。", minus:"独自の大型立法実績が未蓄積。",
-    comment:"自民党所属。特定の閣僚経験等はなく、単独での国会審議実績を定量評価するための情報が現時点で限定的であるため、推定配置とする。",
-    links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%E3%82%B8%E3%83%A7%E3%83%BC%E3%82%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山本ジョージ",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
     id:"P441", name:"山本 深", reading:"やまもと しん", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"広島5", status:"現職", gender:"男", age:null,
     total:57, rank:"D",
@@ -6317,7 +6306,6 @@ const POLITICIANS = [
     links:{tw:"",hp:"",wiki:"",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
-  {id:"P583",name:"塩入清香",reading:"しおいり さやか",party:"参政党",role:"参議院議員",chamber:"参議院",district:"東京",status:"現職",gender:"女",age:null,total:55,rank:"D",axes:[2, 3, 2, 2, 3, 2, 5, 3],stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"×",renewable:"△",nuclear:"◎",expo:"△",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"◎",foreign:"○",food:"◎",semi:"○"},plus:"JAZZシンガー・DJ・保守系メディアMCとしての発信経験。消費税廃止・AI産業支援など政策軸が明確",minus:"行政実務経験が乏しく参院1期目で立法実績はまだこれから",comment:"音楽・メディアを経て参政党から2025年参院選東京選挙区初当選。消費税廃止・AI産業支援など明確な政策軸を持ち一定の発信力がある",links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E5%A1%A9%E5%85%A5%E6%B8%85%E9%A6%99",yt:""},flag_crime:false,flag_caution:false,updated:"2026.06",survey:"評価済"},
   {
     id:"P584", name:"こやり 隆史", reading:"こやり たかし", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"滋賀", status:"現職", gender:"男", age:null,
@@ -6923,17 +6911,6 @@ const POLITICIANS = [
     plus:"メディア経験を活かした発信力。", minus:"大規模な政策実現力は発展途上。",
     comment:"地域課題や生活者視点での議論を行う。表記揺れがあるため、同姓同名実績として準用。",
     links:{hp:"https://www.google.com/search?q=%E3%81%AA%E3%81%8C%E3%81%88%20%E5%AD%9D%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/ながえ孝子",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
-    id:"P648", name:"永江 孝子", reading:"ながえ たかこ", party:"無所属", role:"参議院議員",
-    chamber:"参議院", district:"愛媛", status:"現職", gender:"女", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
-    stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"メディア経験を活かした発信力。", minus:"大規模な政策実現力は発展途上。",
-    comment:"表記揺れのため、上記と同一人物として評価。",
-    links:{hp:"https://www.google.com/search?q=%5B%E6%B0%B8%E6%B1%9F%20%E5%AD%9D%E5%AD%90%5D%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/[永江孝子]",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
@@ -8591,7 +8568,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.05", survey:"評価済"
   },
   {
-    id:"P816", name:"山本 譲司", reading:"やまもと じょうじ", party:"れいわ新選組", role:"衆議院議員（比例南関東）、れいわ新選組幹事長・国会対策委員長、元東京都議会議員",
+    id:"P816", name:"山本 譲司", reading:"やまもと じょうじ", party:"れいわ新選組", role:"衆議院議員（比例南関東）、れいわ新選組代表、元東京都議会議員",
     chamber:"衆議院", district:"比例南関東", status:"現職", gender:"男", age:63,
     total:60, rank:"C-",
     axes:[4,3,2,3,3,3,4,2],
@@ -9324,7 +9301,7 @@ const EVIDENCE = [
   {id:"E0653", pid:"P640", cat:"実績", sub:"福祉政策", summary:"インクルーシブ社会実現への提言", detail:"障害者の社会参加を促進するための制度改善や、バリアフリー化の推進を積極的に訴えている。", src:"参議院会議録", url:"", rel:"regional", impact:"中", date:"2026-03"},
   {id:"E0654", pid:"P644", cat:"実績", sub:"法務行政", summary:"法的知見に基づく法整備への関与", detail:"法務分野の知見を活かし、適切な法整備に向けた実務調整を行った。", src:"選挙ドットコム", url:"https://go2senkyo.com/seijika/183863", rel:"description", impact:"低", date:"2024-05"},
   {id:"E0655", pid:"P647", cat:"実績", sub:"生活支援", summary:"地域課題の継続的な発信", detail:"地方の生活基盤や文化政策について、国会審議等で発言を継続している。", src:"参議院会議録", url:"", rel:"regional", impact:"低", date:"2025-10"},
-  {id:"E0656", pid:"P648", cat:"実績", sub:"生活支援", summary:"地域課題の継続的な発信", detail:"地方の生活基盤や文化政策について、国会審議等で発言を継続している。", src:"参議院会議録", url:"", rel:"regional", impact:"低", date:"2025-10"},
+  {id:"E0656", pid:"P647", cat:"実績", sub:"生活支援", summary:"地域課題の継続的な発信", detail:"地方の生活基盤や文化政策について、国会審議等で発言を継続している。", src:"参議院会議録", url:"", rel:"regional", impact:"低", date:"2025-10"},
   {id:"E0657", pid:"P651", cat:"実績", sub:"外交行政", summary:"外務大臣として外交調整を主導", detail:"外相として二国間外交の調整や国際的な枠組みへの参画を閣僚として指揮した。", src:"外務省政策実績アーカイブ", url:"", rel:"foreign", impact:"高", date:"2024-03"},
   {id:"E0658", pid:"P653", cat:"実績", sub:"地方政治", summary:"地方行政の知見による実務調整", detail:"地方の課題解決に向けた予算配分の適正化に実務面から関与。", src:"参議院会議録", url:"", rel:"regional", impact:"低", date:"2025-06"},
   {id:"E0659", pid:"P656", cat:"実績", sub:"経済財政", summary:"積極的な経済政策論戦の展開", detail:"財政規律を重視しつつ、経済成長に向けた積極的な財政出動の必要性を論理的に訴えている。", src:"参議院予算委員会会議録", url:"", rel:"econ_sec", impact:"中", date:"2026-02"},
