@@ -92,7 +92,7 @@
   "P010": {
     "name": "浅田眞澄美",
     "speech_count": 4,
-    "period": "2021-11-01〜2026-09-01",
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
@@ -753,7 +753,7 @@
   "P076": {
     "name": "うるま譲司",
     "speech_count": 710,
-    "period": "2021-11-01〜2026-09-01",
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 1,
     "question_period": "第207回〜第221回国会",
     "alias_used": "うるま譲司",
@@ -1084,7 +1084,7 @@
   "P109": {
     "name": "鹿嶋祐介",
     "speech_count": 10,
-    "period": "2021-11-01〜2026-09-01",
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
@@ -1204,8 +1204,8 @@
   },
   "P121": {
     "name": "金澤結衣",
-    "speech_count": 12,
-    "period": "2021-11-01〜2026-09-01",
+    "speech_count": 22,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
@@ -5025,13 +5025,14 @@
   },
   "P509": {
     "name": "犬童周作",
-    "speech_count": 36,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 39,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "いんどう周作"
   },
   "P510": {
     "name": "上田勇",
@@ -5055,13 +5056,14 @@
   },
   "P513": {
     "name": "上野蛍",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 143,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "上野ほたる"
   },
   "P514": {
     "name": "上野通子",
@@ -5125,13 +5127,14 @@
   },
   "P523": {
     "name": "江原久美子",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 109,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "江原くみ子"
   },
   "P524": {
     "name": "大家敏志",
@@ -5505,13 +5508,14 @@
   },
   "P562": {
     "name": "吉良佳子",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 1095,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "吉良よし子"
   },
   "P563": {
     "name": "串田誠一",
@@ -5715,13 +5719,14 @@
   },
   "P585": {
     "name": "小鑓隆史",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 187,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "こやり隆史"
   },
   "P586": {
     "name": "齊藤健一郎",
@@ -5845,13 +5850,14 @@
   },
   "P598": {
     "name": "塩村文夏",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 991,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "塩村あやか"
   },
   "P599": {
     "name": "柴愼一",
@@ -6745,13 +6751,14 @@
   },
   "P698": {
     "name": "牧野京夫",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 764,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "牧野たかお"
   },
   "P699": {
     "name": "牧山ひろえ",
@@ -6995,13 +7002,14 @@
   },
   "P728": {
     "name": "森裕子",
-    "speech_count": 0,
-    "period": "2021-11-01〜2026-07-04",
+    "speech_count": 198,
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 0,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "森ゆうこ"
   },
   "P729": {
     "name": "森本真治",
@@ -7826,7 +7834,7 @@
   "P815": {
     "name": "大石晃子",
     "speech_count": 509,
-    "period": "2021-11-01〜2026-09-01",
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 20,
     "question_period": "第207回〜第221回国会",
     "alias_used": "大石あきこ",
@@ -7837,12 +7845,13 @@
   "P816": {
     "name": "山本譲司",
     "speech_count": 4,
-    "period": "2021-11-01〜2026-07-04",
+    "period": "2021-11-01〜2026-09-08",
     "question_count": 6,
     "question_period": "第207回〜第221回国会",
     "bill_sponsor_count": 0,
     "bill_supporter_count": 0,
-    "bill_period": "第207回〜第221回国会"
+    "bill_period": "第207回〜第221回国会",
+    "alias_used": "山本ジョージ"
   },
   "P817": {
     "name": "さとうさおり",
