@@ -9,7 +9,7 @@ on:
       mode:
         description: '実行モード'
         required: true
-        default: 'test'
+        default: 'full'
         type: choice
         options:
           - test    # 第221回のみ（動作確認、約10分）

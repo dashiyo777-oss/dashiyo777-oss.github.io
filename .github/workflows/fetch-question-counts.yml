@@ -9,7 +9,7 @@ on:
       mode:
         description: '実行モード'
         required: true
-        default: 'test'
+        default: 'full'
         type: choice
         options:
           - full    # 全15会期（約2〜3分）
