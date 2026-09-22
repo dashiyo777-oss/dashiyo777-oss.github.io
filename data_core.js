@@ -113,10 +113,10 @@ const POLITICIANS = [
   {
     id:"P014", name:"畦元 将吾", reading:"あぜもと しょうご", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京6", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P015", name:"麻生 太郎", reading:"あそう たろう", party:"自民党", role:"衆議院議員（福岡8区・14期）、第92代内閣総理大臣（2008〜2009年）、元副総理兼財務大臣（安倍内閣・戦後最長約8年9ヶ月）、元外務大臣、自由民主党副総裁",
@@ -153,10 +153,10 @@ const POLITICIANS = [
   {
     id:"P019", name:"阿部 弘樹", reading:"あべ ひろき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"男", age:null,
-    total:57, rank:"D",
-    axes:[3,3,3,3,3,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P020", name:"有田 芳生", reading:"ありた よしふ", party:"中道改革連合", role:"衆議院議員",
@@ -169,10 +169,10 @@ const POLITICIANS = [
   {
     id:"P021", name:"安藤 たかお", reading:"あんどう たかお", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京28", status:"現職", gender:"男", age:null,
-    total:57, rank:"D",
-    axes:[4,3,3,3,2,3,3,2],
+    total:62, rank:"C-",
+    axes:[4,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P022", name:"飯泉 嘉門", reading:"いいずみ かもん", party:"国民民主党", role:"衆議院議員",
@@ -185,10 +185,10 @@ const POLITICIANS = [
   {
     id:"P023", name:"五十嵐 清", reading:"いがらし きよし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"栃木2", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P024", name:"池下 卓", reading:"いけした たく", party:"日本維新の会", role:"衆議院議員",
@@ -225,18 +225,18 @@ const POLITICIANS = [
   {
     id:"P028", name:"石井 拓", reading:"いしい たく", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"愛知13", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P029", name:"石川 昭政", reading:"いしかわ あきまさ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P030", name:"石川 勝", reading:"いしかわ まさる", party:"参政党", role:"衆議院議員",
@@ -321,10 +321,10 @@ const POLITICIANS = [
   {
     id:"P040", name:"井出 庸生", reading:"いで ようせい", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"長野3", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P041", name:"井戸 まさえ", reading:"いど まさえ", party:"国民民主党", role:"衆議院議員",
@@ -657,10 +657,10 @@ const POLITICIANS = [
   {
     id:"P082", name:"遠藤 寛明", reading:"えんどう ひろあき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"山形1", status:"現職", gender:"男", age:null,
-    total:57, rank:"D",
-    axes:[4,3,3,3,2,3,3,2],
+    total:62, rank:"C-",
+    axes:[4,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P083", name:"大岡 敏孝", reading:"おおおか としたか", party:"自民党", role:"衆議院議員（滋賀1区）、環境副大臣、元財務大臣政務官、元衆議院内閣委員長",
@@ -1057,10 +1057,10 @@ const POLITICIANS = [
   {
     id:"P132", name:"河野 正美", reading:"かわの まさみ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・九州", status:"現職", gender:"女", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P133", name:"河野 義博", reading:"かわの よしひろ", party:"中道改革連合", role:"衆議院議員",
@@ -1532,7 +1532,7 @@ const POLITICIANS = [
     total:65, rank:"C",
     axes:[4,3,3,3,3,3,3,4],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P192", name:"佐々木 紀", reading:"ささき はじめ", party:"自民党", role:"衆議院議員（元国土交通政務官）",
@@ -1593,10 +1593,10 @@ const POLITICIANS = [
   {
     id:"P199", name:"繁本 護", reading:"しげもと まもる", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P200", name:"階 猛", reading:"しな たけし", party:"中道改革連合", role:"衆議院議員",
@@ -3518,10 +3518,10 @@ const POLITICIANS = [
   {
     id:"P435", name:"山田 賢司", reading:"やまだ けんじ", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"兵庫7", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P436", name:"山田 美樹", reading:"やまだ みき", party:"自民党", role:"衆議院議員",
@@ -5706,7 +5706,7 @@ const POLITICIANS = [
     total:67, rank:"C+",
     axes:[4,3,3,4,4,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
     {
     id:"P752", name:"若井 敦子", reading:"わかい あつこ", party:"自民党", role:"参議院議員",
