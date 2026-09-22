@@ -73,6 +73,10 @@ jobs:
         run: |
           node scripts/validate_evidence_sources.js
 
+      - name: Check for duplicate politician records
+        run: |
+          node scripts/validate_duplicates.js
+
       - name: Check changelog.js was updated
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then

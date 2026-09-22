@@ -102,13 +102,15 @@ PRマージ前に自動実行（`.github/workflows/validate-data.yml`）:
 5. **total/rank 整合性** — `scripts/validate_data.py` で検証
 6. **politicians_base.json の同期** — `scripts/validate_base_sync.js` で検証
 7. **問題・疑惑 evidence の出典** — `scripts/validate_evidence_sources.js` で検証
+8. **議員レコードの重複** — `scripts/validate_duplicates.js` で検証
 
 ローカル確認コマンド:
 ```bash
 node --check data.js \
   && python3 scripts/validate_data.py \
   && node scripts/validate_base_sync.js \
-  && node scripts/validate_evidence_sources.js
+  && node scripts/validate_evidence_sources.js \
+  && node scripts/validate_duplicates.js
 ```
 
 ---
@@ -243,6 +245,30 @@ stances の各キーの意味:
 - `plus` / `comment` に「○○省出身」「○○官僚」を書く場合 → Wikipedia・公式サイトで**入省経歴を必ず確認**
 - 「大臣」「副大臣」「政務官」は省出身の証拠にならない
 - NTT・商社・銀行・国際機関出身者は官僚ではない
+
+### ⚠️ 議員レコードの重複防止（2026.09.22追記）
+
+**同一人物を複数レコードに登録してはならない。** CI（`scripts/validate_duplicates.js`）で強制する。
+
+**なぜ必要か:**
+2026年9月の全件検証で、同一人物が「平仮名表記」と「漢字表記」で別レコードになっている重複が**9組**見つかった。森まさこ／三好雅子、吉良よし子／吉良佳子、福島みずほ／福島瑞穂、塩村あやか／塩村文夏など。議員総数が790人と過大に集計され、**CSVを二次利用した方にも重複レコードが届いていた**（実数は781人）。
+
+出どころは、氏名が角かっこ付きで取り込まれた参議院議員43人のバッチとみられる（wikiリンクに `[釜萢敏]` のような表記が残っていた）。
+
+**ルール:**
+- **正式表記は参議院・衆議院の議員名簿での登録名**を採用する。通称使用を届け出ている議員は通称が登録名（例：森まさこ、吉良よし子、こやり隆史）
+- **本名・戸籍名が異なる場合は `comment` に記載**する。別レコードを作ってはならない
+- 氏名やリンクに角かっこ `[...]` を残さない（取り込み時のプレースホルダ）
+- 読みが同じでも別人の場合がある（例：伊藤孝江／伊藤孝恵）。選挙区・経歴で判別すること
+
+**統合の手順:**
+1. 参議院・衆議院の公式名簿で登録名を確認
+2. 登録名側のレコードを残し、もう一方を削除
+3. 内容は具体的で検証可能なほうを採用。評価が食い違う場合は中立値から再出発
+4. evidence の `pid` を生存レコードに付け替え、重複 evidence は削除
+5. `politicians_base.json` と `data_core.js` からも削除する
+
+---
 
 ### ⚠️ 問題・疑惑 evidence の出典必須ルール（2026.09.22追記）
 
