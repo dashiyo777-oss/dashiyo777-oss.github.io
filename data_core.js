@@ -657,10 +657,10 @@ const POLITICIANS = [
   {
     id:"P082", name:"遠藤 寛明", reading:"えんどう ひろあき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"山形1", status:"現職", gender:"男", age:null,
-    total:57, rank:"D",
-    axes:[4,3,3,3,2,3,3,2],
+    total:62, rank:"C-",
+    axes:[4,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P083", name:"大岡 敏孝", reading:"おおおか としたか", party:"自民党", role:"衆議院議員（滋賀1区）、環境副大臣、元財務大臣政務官、元衆議院内閣委員長",
