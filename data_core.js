@@ -639,12 +639,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P080", name:"英利アルフィヤ", reading:"えり あるふぃや", party:"自民党", role:"衆議院議員",
+    id:"P080", name:"英利アルフィヤ", reading:"えり あるふぃや", party:"自民党", role:"衆議院議員（千葉5区・3期）、外務大臣政務官、元日本銀行職員、元国連職員",
     chamber:"衆議院", district:"千葉5", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P081", name:"遠藤 敬", reading:"えんどう たかし", party:"日本維新の会", role:"衆議院議員・首相補佐官",
@@ -2348,12 +2348,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P289", name:"中谷 元", reading:"なかたに げん", party:"自民党", role:"衆議院議員",
+    id:"P289", name:"中谷 元", reading:"なかたに げん", party:"自民党", role:"衆議院議員（高知1区・12期）、防衛大臣（石破内閣・第2次石破内閣）、元防衛庁長官、元内閣総理大臣補佐官、陸上自衛隊出身",
     chamber:"衆議院", district:"高知1", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P290", name:"中谷 真一", reading:"なかたに しんいち", party:"自民党", role:"衆議院議員",
