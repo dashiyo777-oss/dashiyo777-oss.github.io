@@ -233,7 +233,7 @@ const POLITICIANS = [
     axes:[4,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"医療法人理事長としての現場発のコロナ対策提言。", minus:"医療分野が中心で、他分野での独自の政策発信は相対的に控えめ。",
-    comment:"地域医療の充実や救急体制の強化に力を注ぐが、自民党派閥の政治資金問題における不記載が発覚し、政治倫理的な懸念を持たれた。",
+    comment:"地域医療の充実や救急体制の強化に力を注ぐ。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E5%AE%89%E8%97%A4%20%E3%81%9F%E3%81%8B%E3%81%8A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/AndoTakao1959",yt:"",wiki:"https://share.google/VFlanEmTZbCTfw51U"},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -255,7 +255,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"栃木県議時代からの地域密着の行政インフラ整備。", minus:"栃木県議出身で、国政での立法実績や独自の政策発信はこれからの段階。",
-    comment:"栃木の過疎化対策や道路網整備を主張。一方で、一連の自民党の政治資金問題での不記載が指摘され、道義的責任を問われた。",
+    comment:"栃木の過疎化対策や道路網整備を主張。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%94%E5%8D%81%E5%B5%90%20%E6%B8%85%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/igakiyo1969",yt:"",wiki:"https://share.google/yM9yw6pUVPliR5LwR"},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -310,7 +310,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"愛知県議出身としての自動車・ものづくり産業への理解。", minus:"2024年10月の衆院選で落選し2026年2月に返り咲いており、国政での連続した実績の蓄積が課題。",
-    comment:"愛知の製造業基盤の強化を訴えるが、清和政策研究会（安倍派）の政治資金収支報告書の不記載問題の影響で社会的信頼が低下した。",
+    comment:"愛知の製造業基盤の強化を訴える。旧安倍派に所属していたが、2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E7%9F%B3%E4%BA%95%20%E6%8B%93%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/takuishii",yt:"",wiki:"https://share.google/fbVvhv1TjFfq7Uyq4"},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -321,7 +321,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"経済産業副大臣としてエネルギー・DX政策の推進。", minus:"経済産業分野が中心で、他分野での独自の政策発信は相対的に控えめ。",
-    comment:"経済産業やデジタル政策に強みを持つが、派閥の資金還流不記載問題への関与が響き倫理面の評価が低い。",
+    comment:"経済産業やデジタル政策に強みを持つ。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E7%9F%B3%E5%B7%9D%20%E6%98%AD%E6%94%BF%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/iakimasa1",yt:"",wiki:"https://share.google/9pxuKh2X47lo8PvWT"},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -442,7 +442,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"文部科学副大臣等の経験。教育現場の負担軽減や給付型奨学金の拡充への関与。", minus:"文部科学分野が中心で、他分野での独自の政策発信は相対的に控えめ。",
-    comment:"新聞記者から国政へ。文科副大臣としてGIGAスクール構想等を支えたが、清和政策研究会（安倍派）の不記載に関与したとして処分を受け信頼回復の最中にある。",
+    comment:"新聞記者から国政へ。文部科学副大臣としてGIGAスクール構想等を支えた。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E5%87%BA%20%E5%BA%B8%E7%94%9F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/yousei_ide",yt:"",wiki:"https://share.google/nsC7dxwNKtmLg7C44"},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -595,10 +595,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"◎"},
-    plus:"地方議会出身。財務政務官等の経験。九州地域のインフラ投資や半導体誘致の支援。", minus:"麻生派の政治資金パーティー不記載問題への関与に伴う、ガバナンスへの不信感。",
-    comment:"財務政務官などを経験。九州への先端半導体サプライチェーン構築などに協力。一方で、所属する麻生派の資金処理に関する一部不記載報道があり、説明責任と信頼回復の最中にある。",
+    plus:"地方議会出身。財務政務官等の経験。九州地域のインフラ投資や半導体誘致の支援。", minus:"2012年衆院選で受領した寄付1300万円を選挙運動費用収支報告書に記載しておらず、2015年7月に福岡県選挙管理委員会へ訂正を届け出た。",
+    comment:"財務大臣政務官などを経験。九州への先端半導体サプライチェーン構築などに協力。2012年衆院選の選挙費用1300万円未記載という別個の事案があるが、2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E4%B8%8A%20%E8%B2%B4%E5%8D%9A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E8%B2%B4%E5%8D%9A_(%E6%94%BF%E6%B2%BB%E5%AE%B6)",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P055", name:"井上 英孝", reading:"いのうえ ひでたか", party:"日本維新の会", role:"衆議院議員",
@@ -749,10 +749,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"経済産業政務官等の経験。通産・経産官僚の知見を活かした通商政策提言。", minus:"過去の週刊誌等による不祥事報道や、派閥資金問題による倫理的懸念。",
-    comment:"経産官僚出身。経産政務官や法務政務官を経験。しかし、過去の不適切発言をめぐる報道や二階派の政治資金不記載問題に関与したことで、党から処分を受け信頼回復の最中にある。",
+    plus:"経済産業政務官等の経験。通産・経産官僚の知見を活かした通商政策提言。", minus:"2019年8月、厚生労働大臣政務官在任中に在留資格審査をめぐる口利き疑惑が報じられ政務官を辞任した（本人は違法性を否定）。",
+    comment:"経済産業省出身。経済産業大臣政務官や法務大臣政務官を経験。2019年の口利き疑惑報道による政務官辞任という別個の事案があるが、2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。なお選挙区の記載（比例・九州）は比例・南関東の誤りの可能性があり、再確認を要する。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%8A%E9%87%8E%20%E5%AE%8F%E5%8F%B2%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/ueno_hiroshi",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%87%8E%E5%AE%8F%E5%8F%B2",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P069", name:"上原 正裕", reading:"うえはら まさひろ", party:"自民党", role:"衆議院議員",
@@ -1454,7 +1454,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"医師。精神医療の高度化や社会保障、医療現場の働き方改革への提言。", minus:"党籍・議席状況の記載に誤りがあり、レコード全体の再確認を要する。",
-    comment:"医療・保健分野で専門性を発揮してきたが、自民党派閥のパーティー収入をめぐる不記載問題に関連して処分を受け、政治的信頼回復が急務となっている。",
+    comment:"医療・保健分野で専門性を発揮してきた。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。なお党籍・議席状況の記載自体に誤りがある可能性が高く、レコード全体の再確認を要する。",
     links:{hp:"https://www.google.com/search?q=%E6%B2%B3%E9%87%8E%20%E6%AD%A3%E7%BE%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/mkawano2416",wiki:"https://ja.wikipedia.org/wiki/%E6%B2%B3%E9%87%8E%E6%AD%A3%E7%BE%8E",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -1945,13 +1945,13 @@ const POLITICIANS = [
   {
     id:"P177", name:"小森 卓郎", reading:"こもり たくお", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"石川1", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"大蔵・財務官僚出身。総務政務官等の経験。北陸の災害復旧や財政支援実務。", minus:"手堅い実務・官僚型気質であり、独自の強力な成長減税戦略の提示が薄い点。",
-    comment:"財務省の主計局主計官などを経て国政へ。総務政務官を経験。能登半島地震後の財政的災害復旧措置の整備において、予算当局の視点から実務的なバックアップに動いた中堅。一部指標は党方針から推定。",
+    plus:"大蔵・財務官僚出身。総務政務官等の経験。北陸の災害復旧や財政支援実務。", minus:"手堅い実務・官僚型気質であり、独自の強力な成長減税戦略の提示が薄い点。2018〜2022年分の政治資金収支報告書に70万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"財務省の主計局主計官などを経て国政へ。総務政務官を経験。能登半島地震後の財政的災害復旧措置の整備において、予算当局の視点から実務的なバックアップに動いた中堅。一部指標は党方針から推定。2018〜2022年分の政治資金収支報告書に70万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%B0%8F%E6%A3%AE%20%E5%8D%93%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/takuokomori_1",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E6%A3%AE%E5%8D%93%E9%83%8E",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P178", name:"今 洋佑", reading:"こん ようすけ", party:"自民党", role:"衆議院議員",
@@ -2191,7 +2191,7 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"国土交通政務官等の経験。観光立国の推進や交通インフラ強靱化への関与。", minus:"国土交通分野が中心で、他分野での独自の政策発信は相対的に控えめ。",
-    comment:"国交官僚を経て国政へ。京都の観光産業振興に尽力した。しかし、所属した二階派の政治資金不記載問題で処分を受け信頼回復に努めている。",
+    comment:"国土交通省を経て国政へ。京都の観光産業振興に尽力した。2024年2月13日に自由民主党が公表した政治資金収支報告書の不記載議員85人、および同年4月4日の党紀委員会による処分者39人のいずれにも同氏は含まれていない。評価は中立値からの再出発であり、今後の本格評価が必要。",
     links:{hp:"https://www.google.com/search?q=%E7%B9%81%E6%9C%AC%20%E8%AD%B7%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/繁本護",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
@@ -2849,13 +2849,13 @@ const POLITICIANS = [
   {
     id:"P257", name:"田畑 裕明", reading:"たばた ひろあき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北陸信越", status:"現職", gender:"男", age:null,
-    total:72, rank:"B-",
-    axes:[4,4,3,4,3,4,4,3],
+    total:67, rank:"C+",
+    axes:[4,4,3,4,2,4,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"総務副大臣や厚労政務官を歴任。社会保障制度、少子化・働き方改革の制度実務。", minus:"手堅い実務調整型の政策派である一方、国家規模での強力な独自減税発信が地味な点。",
-    comment:"総務副大臣、党厚生労働部会長などを歴任。北陸新幹線の整備推進や、過疎地支援の行財政調整、現役世代の雇用環境整備やDX活用といった社会保障実務全般において安定した手腕を発揮している政策通。",
+    plus:"総務副大臣や厚労政務官を歴任。社会保障制度、少子化・働き方改革の制度実務。", minus:"手堅い実務調整型の政策派である一方、国家規模での強力な独自減税発信が地味な点。2018〜2022年分の政治資金収支報告書に68万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"総務副大臣、党厚生労働部会長などを歴任。北陸新幹線の整備推進や、過疎地支援の行財政調整、現役世代の雇用環境整備やDX活用といった社会保障実務全般において安定した手腕を発揮している政策通。2018〜2022年分の政治資金収支報告書に68万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E7%94%B0%E7%95%91%20%E8%A3%95%E6%98%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/田畑裕明",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P258", name:"玉木 雄一郎", reading:"たまき ゆういちろう", party:"国民民主党", role:"衆議院議員（香川2区）、国民民主党代表、元財務省官僚",
@@ -3951,13 +3951,13 @@ const POLITICIANS = [
   {
     id:"P356", name:"福田 達夫", reading:"ふくだ たつお", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"群馬4", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[3,4,3,4,3,3,4,4],
+    total:62, rank:"C-",
+    axes:[3,4,3,4,2,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"国土交通副大臣等の経験。近畿圏の土木治水インフラ強靱化や、スマート都市推進。", minus:"手堅い実務官僚型（旧建設省）であり、独自の強力な国民向け税制アピールは地味な点。",
-    comment:"国交省出身。国土交通副大臣や内閣府副大臣、環境政務官などを歴任。豪雨災害に備える流域治水対策の執行や、過疎地ローカル鉄道の維持に向けた公的支援措置の調整に長けた行政実務派中堅。",
+    plus:"国土交通副大臣等の経験。近畿圏の土木治水インフラ強靱化や、スマート都市推進。", minus:"手堅い実務官僚型（旧建設省）であり、独自の強力な国民向け税制アピールは地味な点。2018〜2022年分の政治資金収支報告書に98万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"国交省出身。国土交通副大臣や内閣府副大臣、環境政務官などを歴任。豪雨災害に備える流域治水対策の執行や、過疎地ローカル鉄道の維持に向けた公的支援措置の調整に長けた行政実務派中堅。2018〜2022年分の政治資金収支報告書に98万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E7%A6%8F%E7%94%B0%20%E9%81%94%E5%A4%AB%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/福田達夫",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P357", name:"福原 淳嗣", reading:"ふくはら じゅんじ", party:"自民党", role:"衆議院議員",
@@ -4050,13 +4050,13 @@ const POLITICIANS = [
   {
     id:"P365", name:"藤原 崇", reading:"ふじわら たかし", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"岩手3", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"法務政務官等の経験。東日本大震災の復興や、地域の医療福祉振興への尽力。", minus:"国政レベルでの主要な立法主導や、多角的な議会活動データがこれからの段階。",
-    comment:"法務政務官や復興政務官などを歴任。被災地の復興事業や地域福祉政策において手堅い貢献を見せる。一部指標は党の方針に基づき推定配置した。",
+    plus:"法務政務官等の経験。東日本大震災の復興や、地域の医療福祉振興への尽力。", minus:"国政レベルでの主要な立法主導や、多角的な議会活動データがこれからの段階。2018〜2022年分の政治資金収支報告書に14万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"法務政務官や復興政務官などを歴任。被災地の復興事業や地域福祉政策において手堅い貢献を見せる。一部指標は党の方針に基づき推定配置した。2018〜2022年分の政治資金収支報告書に14万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E8%97%A4%E5%8E%9F%20%E5%B4%87%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/藤原崇",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P366", name:"文月 涼", reading:"ふづき りょう", party:"自民党", role:"衆議院議員",
@@ -4468,13 +4468,13 @@ const POLITICIANS = [
   {
     id:"P403", name:"宮内 秀樹", reading:"みやうち ひでき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"福岡4", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地方自治体での行政経験、防災インフラやデジタル田園都市構想の推進。", minus:"実務型の立ち位置にあり、国家規模での強力な独自税制突破の発信は地味な点。",
-    comment:"地方議会出身。地方財政やインフラ整備の実務に関与する安定した政策中堅。一部指標に党方針に基づく推定を含む。",
+    plus:"地方自治体での行政経験、防災インフラやデジタル田園都市構想の推進。", minus:"実務型の立ち位置にあり、国家規模での強力な独自税制突破の発信は地味な点。2018〜2022年分の政治資金収支報告書に161万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"地方議会出身。地方財政やインフラ整備の実務に関与する安定した政策中堅。一部指標に党方針に基づく推定を含む。2018〜2022年分の政治資金収支報告書に161万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%AE%AE%E5%86%85%20%E7%A7%80%E6%A8%B9%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/宮内秀樹",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P404", name:"宮崎 政久", reading:"みやざき まさひさ", party:"自民党", role:"衆議院議員",
@@ -4831,13 +4831,13 @@ const POLITICIANS = [
   {
     id:"P436", name:"山田 美樹", reading:"やまだ みき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京1", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,4,3,4,3,3,4,3],
+    total:62, rank:"C-",
+    axes:[3,4,3,4,2,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"児童ポルノ規制等、表現の自由を重んじるIT・ネット政策の論客。", minus:"独自の立場を貫くため、党内調整において孤立しやすい面がある。",
-    comment:"漫画・アニメ等の表現の自由を守る活動で著名。ネット世論を味方につけ、デジタルの活用や若者の政治参加を推進する。実務調整よりも政策の「旗振り」に強み。",
+    plus:"児童ポルノ規制等、表現の自由を重んじるIT・ネット政策の論客。", minus:"独自の立場を貫くため、党内調整において孤立しやすい面がある。2018〜2022年分の政治資金収支報告書に76万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"漫画・アニメ等の表現の自由を守る活動で著名。ネット世論を味方につけ、デジタルの活用や若者の政治参加を推進する。実務調整よりも政策の「旗振り」に強み。2018〜2022年分の政治資金収支報告書に76万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E7%94%B0%20%E7%BE%8E%E6%A8%B9%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山田美樹",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P437", name:"山田 基靖", reading:"やまだ もとやす", party:"自民党", role:"衆議院議員",
@@ -5007,13 +5007,13 @@ const POLITICIANS = [
   {
     id:"P453", name:"若林 健太", reading:"わかばやし けんた", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"長野1", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"◎",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"身を切る改革の推進や、旧文通費使途公開等の政治改革への賛同。", minus:"国政レベルでの独自法案を先導した累積実績データが未蓄積。",
-    comment:"維新所属。歳出削減や政治の透明化を掲げる。詳細実績データ不足のため党の傾向から推定。",
+    plus:"身を切る改革の推進や、旧文通費使途公開等の政治改革への賛同。", minus:"国政レベルでの独自法案を先導した累積実績データが未蓄積。2018〜2022年分の政治資金収支報告書に368万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"維新所属。歳出削減や政治の透明化を掲げる。詳細実績データ不足のため党の傾向から推定。2018〜2022年分の政治資金収支報告書に368万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E8%8B%A5%E6%9E%97%20%E5%81%A5%E5%A4%AA%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/若林健太",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P454", name:"若宮 健嗣", reading:"わかみや けんじ", party:"自民党", role:"衆議院議員",
@@ -5381,13 +5381,13 @@ const POLITICIANS = [
   {
     id:"P490", name:"石田 昌宏", reading:"いしだ まさひろ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"医療・福祉分野の実務に精通した政策推進。", minus:"国家規模での大規模立法を先導する累積実績が発展途上。",
-    comment:"自民党所属。専門分野で着実な貢献を見せる中堅。",
+    plus:"医療・福祉分野の実務に精通した政策推進。", minus:"国家規模での大規模立法を先導する累積実績が発展途上。2018〜2022年分の政治資金収支報告書に26万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党所属。専門分野で着実な貢献を見せる中堅。2018〜2022年分の政治資金収支報告書に26万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E7%9F%B3%E7%94%B0%20%E6%98%8C%E5%AE%8F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/石田昌宏",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P491", name:"石橋 通宏", reading:"いしばし みちひろ", party:"立憲民主党", role:"参議院議員",
@@ -5483,10 +5483,10 @@ const POLITICIANS = [
     total:50, rank:"D",
     axes:[3,3,3,3,1,3,3,1],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"党務や地域調整における実務能力。", minus:"旧統一教会から組織的な選挙支援・動員を受け入れた（自民党調査で正式認定）。教団の賛同会員にもなっていた。",
-    comment:"自民党所属。特定の専門分野で安定的な議会活動を行う。",
+    plus:"党務や地域調整における実務能力。", minus:"旧統一教会から組織的な選挙支援・動員を受け入れた（自民党調査で正式認定）。教団の賛同会員にもなっていた。2018〜2022年分の政治資金収支報告書に178万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党所属。特定の専門分野で安定的な議会活動を行う。2018〜2022年分の政治資金収支報告書に178万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E4%B8%8A%20%E7%BE%A9%E8%A1%8C%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/井上義行",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P500", name:"猪口 邦子", reading:"いのぐち くにこ", party:"自民党", role:"参議院議員（元少子化担当大臣）",
@@ -5614,13 +5614,13 @@ const POLITICIANS = [
   {
     id:"P514", name:"上野 通子", reading:"うえの みちこ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"栃木", status:"現職", gender:"女", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"文部科学分野や社会保障における実務調整能力。", minus:"大規模な政策先導の実績は発展途上。",
-    comment:"教育や福祉分野での実務をこなす中堅議員。",
+    plus:"文部科学分野や社会保障における実務調整能力。", minus:"大規模な政策先導の実績は発展途上。2018〜2022年分の政治資金収支報告書に318万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"教育や福祉分野での実務をこなす中堅議員。2018〜2022年分の政治資金収支報告書に318万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%8A%E9%87%8E%20%E9%80%9A%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/上野通子",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P515", name:"牛田 茉友", reading:"うしだ まゆ", party:"国民民主党", role:"参議院議員",
@@ -5669,13 +5669,13 @@ const POLITICIANS = [
   {
     id:"P521", name:"江島 潔", reading:"えじま きよし", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"山口", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"国土交通分野での実務的な知見と調整力。", minus:"国家レベルでの大規模な税制改革を先導する実績は発展途上。",
-    comment:"インフラ整備や地域活性化に注力。実直な政策調整を行う。",
+    plus:"国土交通分野での実務的な知見と調整力。", minus:"国家レベルでの大規模な税制改革を先導する実績は発展途上。2018〜2022年分の政治資金収支報告書に280万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"インフラ整備や地域活性化に注力。実直な政策調整を行う。2018〜2022年分の政治資金収支報告書に280万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E6%B1%9F%E5%B3%B6%20%E6%BD%94%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/江島潔",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   
   {
@@ -6033,13 +6033,13 @@ const POLITICIANS = [
   {
     id:"P556", name:"北村 経夫", reading:"きたむら つねお", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"山口", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域産業の維持や防災インフラ整備への地道な関与。", minus:"国家規模での大規模立法を先導する累積実績は発展途上。",
-    comment:"自民党所属。地域社会の課題解決に注力する実務型議員。",
+    plus:"地域産業の維持や防災インフラ整備への地道な関与。", minus:"国家規模での大規模立法を先導する累積実績は発展途上。2018〜2022年分の政治資金収支報告書に118万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党所属。地域社会の課題解決に注力する実務型議員。2018〜2022年分の政治資金収支報告書に118万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%8C%97%E6%9D%91%20%E7%B5%8C%E5%A4%AB%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/kitamuraoffice",wiki:"https://ja.wikipedia.org/wiki/%E5%8C%97%E6%9D%91%E7%B5%8C%E5%A4%AB",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P557", name:"北村 晴男", reading:"きたむら はるお", party:"日本保守党", role:"参議院議員",
@@ -6353,13 +6353,13 @@ const POLITICIANS = [
   {
     id:"P588", name:"酒井 庸行", reading:"さかい やすゆき", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"愛知", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域産業の振興や防災インフラ整備への手堅い関与。", minus:"国家規模の大規模立法実績は発展途上。",
-    comment:"自民党所属。地域社会の安定に寄与する実務型議員。",
+    plus:"地域産業の振興や防災インフラ整備への手堅い関与。", minus:"国家規模の大規模立法実績は発展途上。2018〜2022年分の政治資金収支報告書に58万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党所属。地域社会の安定に寄与する実務型議員。2018〜2022年分の政治資金収支報告書に58万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E9%85%92%E4%BA%95%20%E5%BA%B8%E8%A1%8C%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/yasuyukisakai",wiki:"https://ja.wikipedia.org/wiki/%E9%85%92%E4%BA%95%E5%BA%B8%E8%A1%8C",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P589", name:"櫻井 祥子", reading:"さくらい しょうこ", party:"参政党", role:"参議院議員",
@@ -6409,13 +6409,13 @@ const POLITICIANS = [
   {
     id:"P594", name:"佐藤 啓", reading:"さとう けい", party:"自民党", role:"参議院議員（奈良県選挙区）、内閣官房副長官（政務担当）、元財務大臣政務官、元経済産業大臣政務官（内閣府・復興政務官兼任・菅内閣）、元総務省官僚（茨城県常陸太田市部長等）",
     chamber:"参議院", district:"奈良", status:"現職", gender:"男", age:null,
-    total:75, rank:"B",
-    axes:[4,4,3,5,3,4,4,3],
+    total:70, rank:"B-",
+    axes:[4,4,3,5,2,4,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"総務省官僚出身（茨城県常陸太田市部長等）の政策通。菅内閣で経済産業大臣政務官（内閣府・復興政務官兼任）・財務大臣政務官を歴任し経済・財政政策の実務を担当。内閣官房副長官（政務担当）として国政の政策調整中枢を担う。物価高・原油高対策の全国調査に基づく提言を官房長官に届け補正予算確保を推進。こども基本法制定・こども家庭庁創設に携わり教育格差解消を推進。女性の健康支援活動・地元奈良のインフラ整備（やまとecoクリーンセンター等）にも尽力。", minus:"官僚出身の実務型であり大胆な独自の財政政策・立法実績はまだ蓄積途上。",
-    comment:"総務省出身の行政実務の専門知識を武器に、経産・財務の政務官から内閣官房副長官まで要職を積み重ねた実力派。物価高対策・こども政策・女性の健康支援と幅広い分野で「結果を出す政治」を実践している。",
+    plus:"総務省官僚出身（茨城県常陸太田市部長等）の政策通。菅内閣で経済産業大臣政務官（内閣府・復興政務官兼任）・財務大臣政務官を歴任し経済・財政政策の実務を担当。内閣官房副長官（政務担当）として国政の政策調整中枢を担う。物価高・原油高対策の全国調査に基づく提言を官房長官に届け補正予算確保を推進。こども基本法制定・こども家庭庁創設に携わり教育格差解消を推進。女性の健康支援活動・地元奈良のインフラ整備（やまとecoクリーンセンター等）にも尽力。", minus:"官僚出身の実務型であり大胆な独自の財政政策・立法実績はまだ蓄積途上。2018〜2022年分の政治資金収支報告書に306万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"総務省出身の行政実務の専門知識を武器に、経産・財務の政務官から内閣官房副長官まで要職を積み重ねた実力派。物価高対策・こども政策・女性の健康支援と幅広い分野で「結果を出す政治」を実践している。2018〜2022年分の政治資金収支報告書に306万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E4%BD%90%E8%97%A4%20%E5%95%93%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/佐藤啓",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P595", name:"里見 隆治", reading:"さとみ りゅうじ", party:"公明党", role:"参議院議員",
@@ -6674,13 +6674,13 @@ const POLITICIANS = [
   {
     id:"P621", name:"高橋 はるみ", reading:"たかはし はるみ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"北海道", status:"現職", gender:"男", age:null,
-    total:72, rank:"B-",
-    axes:[4,4,3,4,3,3,4,4],
+    total:65, rank:"C",
+    axes:[4,4,3,4,2,3,4,2],
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"北海道知事としての豊富な地方行政経験と、地域振興の実務力。", minus:"与党内での調整を重視し、独自の大胆な経済改革発信は慎重。",
-    comment:"知事経験を活かし、地方創生や観光インフラ整備で安定した存在感を示す。",
+    plus:"北海道知事としての豊富な地方行政経験と、地域振興の実務力。", minus:"与党内での調整を重視し、独自の大胆な経済改革発信は慎重。2018〜2022年分の政治資金収支報告書に22万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"知事経験を活かし、地方創生や観光インフラ整備で安定した存在感を示す。2018〜2022年分の政治資金収支報告書に22万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E9%AB%98%E6%A9%8B%20%E3%81%AF%E3%82%8B%E3%81%BF%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/高橋はるみ",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P622", name:"高橋 光男", reading:"たかはし みつお", party:"公明党", role:"参議院議員",
@@ -6982,13 +6982,13 @@ const POLITICIANS = [
   {
     id:"P656", name:"西田 昌司", reading:"にしだ しょうじ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"京都", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[4,4,3,4,3,4,3,3],
+    total:65, rank:"C",
+    axes:[4,4,3,4,2,4,3,2],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"経済・財政政策における高い論理的構成力と積極的な論戦。", minus:"保守的な経済観を強く持っており、意見が分かれることが多い。",
-    comment:"自民党内の経済政策通。自身の主張を論理的に展開する論客。",
+    plus:"経済・財政政策における高い論理的構成力と積極的な論戦。", minus:"保守的な経済観を強く持っており、意見が分かれることが多い。2018〜2022年分の政治資金収支報告書に411万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党内の経済政策通。自身の主張を論理的に展開する論客。2018〜2022年分の政治資金収支報告書に411万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E8%A5%BF%E7%94%B0%20%E6%98%8C%E5%8F%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/西田昌司",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P657", name:"西田 英範", reading:"にした ひでのり", party:"自民党", role:"参議院議員",
@@ -7027,13 +7027,13 @@ const POLITICIANS = [
   {
     id:"P661", name:"野上 浩太郎", reading:"のがみ こうたろう", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"富山", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"国土交通・インフラ関連の知見が深く、地域経済活性化に向けた実務的調整能力に長けている。", minus:"大規模な国家政策の先導実績は、党内での実務的役割に重きを置いている。",
-    comment:"自民党所属。国土交通分野の実務家として、インフラ整備等の政策推進に手堅い実績を残している。",
+    plus:"国土交通・インフラ関連の知見が深く、地域経済活性化に向けた実務的調整能力に長けている。", minus:"大規模な国家政策の先導実績は、党内での実務的役割に重きを置いている。2018〜2022年分の政治資金収支報告書に100万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"自民党所属。国土交通分野の実務家として、インフラ整備等の政策推進に手堅い実績を残している。2018〜2022年分の政治資金収支報告書に100万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E9%87%8E%E4%B8%8A%20%E6%B5%A9%E5%A4%AA%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/野上浩太郎",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P662", name:"野村 哲郎", reading:"のむら てつろう", party:"自民党", role:"参議院議員",
@@ -7415,13 +7415,13 @@ const POLITICIANS = [
   {
     id:"P701", name:"松川 るい", reading:"まつかわ るい", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"大阪", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[4,4,3,4,3,4,3,3],
+    total:65, rank:"C",
+    axes:[4,4,3,4,2,4,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"○",food:"○",semi:"○"},
-    plus:"外務省出身の知見を活かした外交・安保分野での積極的発信。", minus:"主張が強硬であり、他会派との調整において軋轢を生む場合がある。",
-    comment:"外交・安保の論客。国益を重視した論理的な議論を展開する。",
+    plus:"外務省出身の知見を活かした外交・安保分野での積極的発信。", minus:"主張が強硬であり、他会派との調整において軋轢を生む場合がある。2018〜2022年分の政治資金収支報告書に204万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"外交・安保の論客。国益を重視した論理的な議論を展開する。2018〜2022年分の政治資金収支報告書に204万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E6%9D%BE%E5%B7%9D%20%E3%82%8B%E3%81%84%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/松川るい",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P703", name:"松沢 成文", reading:"まつざわ しげふみ", party:"日本維新の会", role:"参議院議員",
@@ -7595,13 +7595,13 @@ const POLITICIANS = [
   {
     id:"P725", name:"森 まさこ", reading:"もり まさこ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"福島", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[4,3,3,4,3,3,4,3],
+    total:62, rank:"C-",
+    axes:[4,3,3,4,2,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"元法務大臣。司法制度改革や人権・福祉関連の政策で安定した行政経験を持つ。", minus:"与党内での調整を重視し、抜本的な政策転換の発信は保守的。",
-    comment:"法務行政の実務に明るく、幅広い分野で着実な調整を行う経験豊富な議員。",
+    plus:"元法務大臣。司法制度改革や人権・福祉関連の政策で安定した行政経験を持つ。", minus:"与党内での調整を重視し、抜本的な政策転換の発信は保守的。2018〜2022年分の政治資金収支報告書に282万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"法務行政の実務に明るく、幅広い分野で着実な調整を行う経験豊富な議員。2018〜2022年分の政治資金収支報告書に282万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E6%A3%AE%20%E3%81%BE%E3%81%95%E3%81%93%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/森まさこ",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {id:"P726",name:"三好雅子",reading:"みよし まさこ",party:"自民党",role:"参議院議員",chamber:"参議院",district:"福島",status:"現職",gender:"女",age:null,total:62,rank:"C-",axes:[4, 3, 4, 3, 3, 4, 1, 3],stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"△",nuclear:"◎",expo:"○",ir:"○",mynumber:"◎",birthrate:"○",education:"○",regional:"○",china:"○",foreign:"○",food:"○",semi:"◎"},plus:"東北大法→金融庁→弁護士の専門性を活かし法務大臣・女性活力担当大臣・消費者担当大臣を歴任。消費者庁設置に深く貢献した立法実績",minus:"安倍派裏金問題（5年間282万円不記載）に加え法務大臣時代の国会答弁（黒川検事長定年延長問題）での混乱が評価を大きく下げる",comment:"弁護士・金融庁出身で参院4期目のベテラン（通称：森まさこ）。消費者庁設置・女性活躍推進・LGBT理解増進など豊富な政策実績を持つが安倍派裏金問題（282万円不記載）が信頼性に大きな傷",links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E6%A3%AE%E3%81%BE%E3%81%95%E3%81%93",yt:""},flag_crime:false,flag_caution:true,updated:"2026.06",survey:"評価済"},
   {
@@ -7641,13 +7641,13 @@ const POLITICIANS = [
   {
     id:"P731", name:"山崎 正昭", reading:"やまざき まさあき", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"福井", status:"現職", gender:"男", age:null,
-    total:65, rank:"C",
-    axes:[3,4,3,4,3,3,3,3],
+    total:60, rank:"C-",
+    axes:[3,4,3,4,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"元参議院議長。議会運営の最高権威としての高い安定感と調整実績。", minus:"調整役としての側面が強く、急進的な構造改革の発信は保守的。",
-    comment:"議会政治の重鎮。円滑な議会運営と党内の調整に長年の実績。",
+    plus:"元参議院議長。議会運営の最高権威としての高い安定感と調整実績。", minus:"調整役としての側面が強く、急進的な構造改革の発信は保守的。2018〜2022年分の政治資金収支報告書に4万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"議会政治の重鎮。円滑な議会運営と党内の調整に長年の実績。2018〜2022年分の政治資金収支報告書に4万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E5%B4%8E%20%E6%AD%A3%E6%98%AD%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山崎正昭",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P732", name:"山下 雄平", reading:"やました ゆうへい", party:"自民党", role:"参議院議員",
@@ -7751,13 +7751,13 @@ const POLITICIANS = [
   {
     id:"P742", name:"山本 順三", reading:"やまもと じゅんぞう", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"愛媛", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"幅広い行政経験による実務的な調整力。", minus:"大規模立法実績は発展途上。",
-    comment:"立憲民主党所属。議会活動において安定感がある。",
+    plus:"幅広い行政経験による実務的な調整力。", minus:"大規模立法実績は発展途上。2018〜2022年分の政治資金収支報告書に58万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
+    comment:"立憲民主党所属。議会活動において安定感がある。2018〜2022年分の政治資金収支報告書に58万円の不記載があり、2024年2月13日に自由民主党が公表した不記載議員85人に掲載された（不記載額が党の処分基準に達せず、同年4月4日の処分39人には含まれていない）。",
     links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E6%9C%AC%20%E9%A0%86%E4%B8%89%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山本順三",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P743", name:"横沢 高徳", reading:"よこさわ たかのり", party:"立憲民主党", role:"参議院議員",
@@ -9318,7 +9318,28 @@ const EVIDENCE = [
   {id:"E0846", pid:"P387", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
   {id:"E0847", pid:"P665", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
   {id:"E0848", pid:"P425", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止6か月処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止6か月の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
-  {id:"E0849", pid:"P377", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"}
+  {id:"E0849", pid:"P377", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0850", pid:"P453", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載368万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が368万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0851", pid:"P403", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載161万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が161万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0852", pid:"P356", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載98万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が98万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0853", pid:"P436", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載76万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が76万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0854", pid:"P177", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載70万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が70万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0855", pid:"P257", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載68万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が68万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0856", pid:"P365", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載14万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が14万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0857", pid:"P656", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載411万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が411万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0858", pid:"P514", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載318万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が318万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0859", pid:"P594", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載306万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が306万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0860", pid:"P521", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載280万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が280万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0861", pid:"P701", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載204万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が204万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0862", pid:"P499", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載178万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が178万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0863", pid:"P556", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載118万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が118万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0864", pid:"P661", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載100万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が100万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0865", pid:"P588", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載58万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が58万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0866", pid:"P742", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載58万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が58万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0867", pid:"P490", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載26万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が26万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0868", pid:"P621", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載22万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が22万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0869", pid:"P731", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載4万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が4万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0870", pid:"P725", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載282万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が282万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"}
 
 ];
 
