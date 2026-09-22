@@ -1033,7 +1033,9 @@
   function filterPoliticians() {
     const block = PREF_TO_BLOCK[selectedPref] || '';
     return POLITICIANS.filter(function(p) {
-      if (p.survey === '情報不足' || p.survey === '未評価') return false;
+      // 相性診断はスタンス（政策的立場）だけで計算しており、総合評価点とは独立している。
+      // 評価点がブランク（survey:"未評価"）でもスタンスがあれば診断対象に含める。
+      if (p.survey === '情報不足') return false;
       if (selectedChamber !== 'both' && p.chamber !== selectedChamber) return false;
       const d = p.district || '';
       if (d.includes(selectedPref)) return true;
@@ -1133,7 +1135,8 @@
       const p = item.p;
       const pct = item.pct;
       const color = pctColor(pct);
-      const rcolor = RANK_COLORS[p.rank] || 'var(--gray)';
+      const pScored = p.total !== null && p.total !== undefined;
+      const rcolor = pScored ? (RANK_COLORS[p.rank] || 'var(--gray)') : 'var(--gray)';
       const explain = generateExplanation(p);
 
       const card = document.createElement('div');
@@ -1144,7 +1147,9 @@
         + '<div class="match-rank-name">'
         + '<span class="match-rank-num">#' + (idx+1) + '</span>'
         + '<span class="match-name">' + p.name + '</span>'
-        + '<span class="match-score-badge" style="color:' + rcolor + '">' + p.rank + '&nbsp;' + p.total + '点</span>'
+        + '<span class="match-score-badge" style="color:' + rcolor + '"'
+        + (pScored ? '' : ' title="裏付けとなる資料が確認できていないため評価点を付けていません"')
+        + '>' + (pScored ? p.rank + '&nbsp;' + p.total + '点' : '評価なし') + '</span>'
         + '</div>'
         + '<div class="match-meta">' + p.party + ' ／ ' + p.chamber + ' ／ ' + (p.district || '—') + '</div>'
         + '</div>'

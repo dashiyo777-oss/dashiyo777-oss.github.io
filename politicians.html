@@ -547,6 +547,9 @@
       text-align: center;
     }
 
+    .rank-badge-none { color: var(--gray) !important; border-color: rgba(136,136,136,0.25) !important; background: rgba(136,136,136,0.07) !important; }
+    .score-none { font-size: 0.72rem; color: var(--gray); letter-spacing: 0.04em; white-space: nowrap; }
+    .score-none-note { font-size: 0.62rem; color: var(--gray); opacity: 0.75; margin-top: 0.15rem; white-space: nowrap; }
     .rank-badge {
       display: inline-block;
       font-family: 'Cormorant Garamond', serif;
@@ -1237,6 +1240,15 @@ let filtered = [...POLITICIANS];
 let presetLimit = 0;
 let factsMap = {};
 
+// 評価点の降順。total が null（裏付けとなる evidence を持たないため
+// 評価点を付けていない議員）は常に最後尾に置く。
+function scoreDesc(a, b) {
+  if (a.total === null && b.total === null) return 0;
+  if (a.total === null) return 1;
+  if (b.total === null) return -1;
+  return b.total - a.total;
+}
+
 /* ── STATS ── */
 function updateStats() {
   document.getElementById('stat-surveyed').textContent = POLITICIANS.filter(p=>p.total>0).length + '人';
@@ -1270,7 +1282,9 @@ function applyFilters() {
     if(filters.preset === 'opposition') { if(!OPPOSITION.includes(p.party)) return false; }
     if(filters.preset === 'ldp') { if(p.party !== '自民党') return false; }
     if(filters.preset === 's-rank') { if(!p.rank.startsWith('S') && !p.rank.startsWith('A')) return false; }
-    if(p.survey === '情報不足' || p.survey === '未評価') return false;
+    // survey:"未評価" は「裏付けとなる evidence が無いため評価点を付けていない」議員。
+    // 一覧からは隠さず、スコア欄に「評価なし」と理由を出す（2026-09-22）。
+    if(p.survey === '情報不足') return false;
     return true;
   });
   applySort();
@@ -1289,12 +1303,15 @@ function applySort() {
       av = (fa && fa[key] != null) ? fa[key] : null;
       bv = (fb && fb[key] != null) ? fb[key] : null;
       // データなしは最後尾
-      if (av === null && bv === null) return b.total - a.total;
+      if (av === null && bv === null) return scoreDesc(a, b);
       if (av === null) return 1;
       if (bv === null) return -1;
-      if (av === bv) return b.total - a.total; // 同数は総合スコア降順
+      if (av === bv) return scoreDesc(a, b); // 同数は総合スコア降順
       return sortDir === 'asc' ? av - bv : bv - av;
     }
+    // 評価点ブランク（裏付け evidence なし）は、並び順に関わらず最後尾に置く
+    if (a.total === null && b.total !== null) return 1;
+    if (b.total === null && a.total !== null) return -1;
     switch(sortCol) {
       case 'total': av=a.total; bv=b.total; break;
       case 'name': av=a.name; bv=b.name; break;
@@ -1306,6 +1323,9 @@ function applySort() {
         break;
       default: av=a.total; bv=b.total;
     }
+    if (av === null && bv === null) return 0;
+    if (av === null) return 1;
+    if (bv === null) return -1;
     if(av < bv) return sortDir==='asc' ? -1 : 1;
     if(av > bv) return sortDir==='asc' ? 1 : -1;
     return 0;
@@ -1323,7 +1343,7 @@ function render() {
   const empty = document.getElementById('empty-state');
 
   // Rank by total desc (original rank order)
-  const sorted_by_total = [...POLITICIANS].sort((a,b) => b.total - a.total);
+  const sorted_by_total = [...POLITICIANS].filter(p => p.total !== null).sort(scoreDesc);
   const rankMap = {};
   sorted_by_total.forEach((p,i) => rankMap[p.id] = i+1);
 
@@ -1338,8 +1358,9 @@ function render() {
   empty.style.display = 'none';
 
   tbody.innerHTML = filtered.map(p => {
-    const rc = rankColor(p.rank);
-    const barW = Math.round(p.total);
+    const scored = p.total !== null;
+    const rc = scored ? rankColor(p.rank) : 'var(--gray)';
+    const barW = scored ? Math.round(p.total) : 0;
     const flags = [
       p.flag_crime ? '<span class="flag-icon" title="犯罪・違反">🚨</span>' : '',
       p.flag_caution ? '<span class="flag-icon" title="要注意">⚠️</span>' : ''
@@ -1352,8 +1373,10 @@ function render() {
     const bc = f ? f.bill_sponsor_count : null;
 
     return `<tr onclick="window.location='politician.html?id=${p.id}'">
-      <td class="rank-num">${rankMap[p.id]}</td>
-      <td class="td-rank-badge"><span class="rank-badge" style="color:${rc};border-color:${rc}20;background:${rc}12">${p.rank}</span></td>
+      <td class="rank-num">${scored ? rankMap[p.id] : '—'}</td>
+      <td class="td-rank-badge">${scored
+        ? `<span class="rank-badge" style="color:${rc};border-color:${rc}20;background:${rc}12">${p.rank}</span>`
+        : '<span class="rank-badge rank-badge-none" title="裏付けとなる資料が確認できていないため評価点を付けていません">—</span>'}</td>
       <td>
         <div class="name-cell-flex">
           <button class="watch-star${watchSet.has(p.id) ? ' on' : ''}" data-wid="${p.id}" onclick="toggleWatch('${p.id}',event)" title="ウォッチリストに追加/解除" aria-label="ウォッチリストに追加/解除">${watchSet.has(p.id) ? '★' : '☆'}</button>
@@ -1368,9 +1391,11 @@ function render() {
         <div class="chamber-text">${p.chamber}</div>
         <div class="district-text">${p.district}</div>
       </td>
-      <td class="score-cell td-total">
-        <div class="score-num">${p.total}</div>
-        <div class="score-bar-wrap"><div class="score-bar-fill" style="width:${barW}%"></div></div>
+      <td class="score-cell td-total">${scored
+        ? `<div class="score-num">${p.total}</div>
+        <div class="score-bar-wrap"><div class="score-bar-fill" style="width:${barW}%"></div></div>`
+        : `<div class="score-none">評価なし</div>
+        <div class="score-none-note">裏付け資料の確認中</div>`}
       </td>
       <td class="td-fact td-fact-speech${fd(sc)}">${fv(sc)}</td>
       <td class="td-fact td-fact-question${fd(qc)}">${fv(qc)}</td>
@@ -1722,7 +1747,6 @@ fetch('highlights.json')
 </script>
 <!-- アクセス計測ビーコン -->
 <script>new Image().src="https://api.eichinohi.com/api/hit?site=politicians&r="+Math.random();</script>
-<script>〜</script>
 <script>
 (function(){
   var wrap=document.createElement('div');

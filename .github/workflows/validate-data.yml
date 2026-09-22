@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'data.js'
+      - 'data_core.js'
       - 'politicians_base.json'
       - 'scripts/**'
       - '.github/workflows/validate-data.yml'
@@ -12,6 +13,7 @@ on:
       - main
     paths:
       - 'data.js'
+      - 'data_core.js'
       - 'politicians_base.json'
       - 'scripts/**'
       - '.github/workflows/validate-data.yml'
@@ -69,9 +71,17 @@ jobs:
         run: |
           node scripts/validate_base_sync.js
 
+      - name: Check data_core.js is in sync with data.js
+        run: |
+          node scripts/validate_core_sync.js
+
       - name: Check evidence sources for 問題・疑惑 entries
         run: |
           node scripts/validate_evidence_sources.js
+
+      - name: Check for duplicate politician records
+        run: |
+          node scripts/validate_duplicates.js
 
       - name: Check changelog.js was updated
         run: |
@@ -81,7 +91,7 @@ jobs:
             RANGE_ARGS='HEAD~1 HEAD'
           fi
           FILES=$(git diff --name-only $RANGE_ARGS)
-          DATA_CHANGED=$(echo "$FILES" | grep -E '^(data\.js|politicians_base\.json)$' || true)
+          DATA_CHANGED=$(echo "$FILES" | grep -E '^(data\.js|data_core\.js|politicians_base\.json)$' || true)
           if [ -z "$DATA_CHANGED" ]; then
             echo "ℹ️  data.js / politicians_base.json に変更なし。changelog.js のチェックはスキップします。"
             exit 0
