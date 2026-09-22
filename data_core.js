@@ -2220,12 +2220,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P273", name:"渡海 紀三朗", reading:"とかい きさぶろう", party:"自民党", role:"元衆議院議員",
+    id:"P273", name:"渡海 紀三朗", reading:"とかい きさぶろう", party:"自民党", role:"衆議院議員（兵庫10区・12期）、元文部科学大臣、元自由民主党政務調査会長、党政治改革本部長",
     chamber:"衆議院", district:"兵庫10", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[4,2,1,4,4,4,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"×",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"×",food:"○",semi:"×"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P274", name:"冨樫 博之", reading:"とがし ひろゆき", party:"自民党", role:"衆議院議員（自由民主党政務調査会長）",
@@ -2244,12 +2244,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"衆議院議員",
+    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"衆議院議員（比例東京ブロック）、脚本家・小説家",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,3,3,4,3,3,3,3],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P277", name:"豊田 真由子", reading:"とよた まゆこ", party:"参政党", role:"衆議院議員（比例北関東）、参政党政策調査会長、元厚生労働省官僚（WHO出向経験）",
@@ -2852,12 +2852,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P352", name:"深澤 陽一", reading:"ふかざわ よういち", party:"自民党", role:"衆議院議員",
+    id:"P352", name:"深澤 陽一", reading:"ふかざわ よういち", party:"自民党", role:"衆議院議員（静岡4区・4期）、元外務大臣政務官、元厚生労働大臣政務官",
     chamber:"衆議院", district:"静岡4", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[4,3,3,3,3,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P353", name:"福重 隆浩", reading:"ふくしげ たかひろ", party:"中道改革連合", role:"衆議院議員",
@@ -2876,12 +2876,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"衆議院議員",
+    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"衆議院議員（東京18区）、文部科学大臣政務官、元農林水産省職員",
     chamber:"衆議院", district:"東京18", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[4,3,2,4,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P356", name:"福田 達夫", reading:"ふくだ たつお", party:"自民党", role:"衆議院議員",
@@ -3620,12 +3620,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"衆議院議員",
+    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"衆議院議員（福岡10区）、元福岡県議会議員（4期）",
     chamber:"衆議院", district:"福岡10", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[3,4,3,3,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P450", name:"米内 紘正", reading:"よない ひろまさ", party:"自民党", role:"衆議院議員",
@@ -3692,12 +3692,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P458", name:"和田 政宗", reading:"わだ まさむね", party:"参政党", role:"大阪府知事",
+    id:"P458", name:"和田 政宗", reading:"わだ まさむね", party:"参政党", role:"衆議院議員（比例東北ブロック）、元参議院議員（2期）、元NHKアナウンサー",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"男", age:null,
-    total:75, rank:"B",
-    axes:[4,4,3,4,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P459", name:"和田 義明", reading:"わだ よしあき", party:"自民党", role:"衆議院議員",
@@ -3716,12 +3716,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P461", name:"渡辺 勝幸", reading:"わたなべ かつゆき", party:"自民党", role:"衆議院議員",
+    id:"P461", name:"渡辺 勝幸", reading:"わたなべ かつゆき", party:"自民党", role:"衆議院議員（宮城2区）、元宮城県議会議員",
     chamber:"衆議院", district:"宮城2", status:"現職", gender:"男", age:null,
-    total:72, rank:"B-",
-    axes:[4,4,3,4,3,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"衆議院議員",

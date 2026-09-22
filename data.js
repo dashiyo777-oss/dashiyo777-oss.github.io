@@ -3036,15 +3036,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P273", name:"渡海 紀三朗", reading:"とかい きさぶろう", party:"自民党", role:"元衆議院議員",
+    id:"P273", name:"渡海 紀三朗", reading:"とかい きさぶろう", party:"自民党", role:"衆議院議員（兵庫10区・12期）、元文部科学大臣、元自由民主党政務調査会長、党政治改革本部長",
     chamber:"衆議院", district:"兵庫10", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[4,2,1,4,4,4,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"×",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"×",food:"○",semi:"×"},
-    plus:"弁護士。沖縄選出として米軍基地問題の是正や不戦・平和主義、弱者救済への一貫した姿勢。", minus:"防衛関係予算への全面反対など、現実的な近隣リスク対抗抑止安全保障観への批判。",
-    comment:"社民党副党首などを歴任。沖縄独自の地政学的リスクや基地周辺の騒音・環境問題、憲法9条の護憲を強く主張。困窮世帯への経済支援や人権保護において強い一貫性を保持した。",
+    plus:"早稲田大学理工学部建築学科卒の一級建築士。文部科学大臣、首相補佐官（教育再生担当）、自民党政調会長を歴任し、2024年10月から党政治改革本部長。", minus:"当選12回のベテランで党内調整に重きを置く反面、独自の政策発信は控えめ。",
+    comment:"1948年生まれ、当選12回のベテラン。早稲田大学理工学部建築学科を卒業した一級建築士で、文部科学大臣、内閣総理大臣補佐官（教育再生担当）、自民党の青年局長・政調会長代理・科学技術イノベーション戦略調査会長・政務調査会長などを歴任。2024年10月、石破総裁直属の政治改革本部の本部長に就任した。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E6%B8%A1%E6%B5%B7%20%E7%B4%80%E4%B8%89%E6%9C%97%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/渡海紀三朗",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P274", name:"冨樫 博之", reading:"とがし ひろゆき", party:"自民党", role:"衆議院議員（自由民主党政務調査会長）",
@@ -3069,15 +3069,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"衆議院議員",
+    id:"P276", name:"土橋 章宏", reading:"どばし あきひろ", party:"チームみらい", role:"衆議院議員（比例東京ブロック）、脚本家・小説家",
     chamber:"衆議院", district:"比例・東京", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,3,3,4,3,3,3,3],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    plus:"地方議会出身。国交副大臣や農水政務官として北陸圏のインフラ強靱化を推進。", minus:"実務・調整型の立ち位置であり、国家規模を先導する独自の大型減税発信は地味。",
-    comment:"富山県議会議長等を経て国政へ。国土交通副大臣や農林水産政務官を歴任。能登半島地震後の激甚災害復旧措置の整備、北陸新幹線の延伸インフラ確保、流域治水・過疎地振興などの実務で手堅い手腕を発揮している。",
+    plus:"日立製作所での研究開発、Web制作会社の起業、脚本家・小説家という異色の経歴。映画の脚本で知られる発信力。", minus:"2026年初当選で政治経験がなく、国会での立法実績や政策の専門性はこれから問われる段階。",
+    comment:"1969年大阪生まれ。関西大学工学部を卒業後、日立製作所で研究開発に従事し、その後Web制作会社を起業。脚本家・小説家として映画「超高速!参勤交代」「身代わり忠臣蔵」などを手がけた。2026年2月の第51回衆院選にチームみらい公認で東京2区から立候補し、小選挙区では3位だったが比例東京ブロックで復活当選。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E5%9C%9F%E6%A9%8B%20%E7%AB%A0%E5%AE%8F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/土橋章宏",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P277", name:"豊田 真由子", reading:"とよた まゆこ", party:"参政党", role:"衆議院議員（比例北関東）、参政党政策調査会長、元厚生労働省官僚（WHO出向経験）",
@@ -3905,15 +3905,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P352", name:"深澤 陽一", reading:"ふかざわ よういち", party:"自民党", role:"衆議院議員",
+    id:"P352", name:"深澤 陽一", reading:"ふかざわ よういち", party:"自民党", role:"衆議院議員（静岡4区・4期）、元外務大臣政務官、元厚生労働大臣政務官",
     chamber:"衆議院", district:"静岡4", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[4,3,3,3,3,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
-    plus:"地方議会（群馬県議5期）の経験。子育て支援や地域防災、中小企業振興の推進。", minus:"連立内の枠組み合意を優先する立場から、強力な独自の税制突破力に制約。",
-    comment:"公明党選出。党遊説局長などを経験。地方議会での豊富な活動を基に、多子世帯の経済負担軽減や児童手当の所得制限撤廃、北関東の防災インフラ強化に手堅い貢献を示す。推定値を含む。",
+    plus:"静岡市議・静岡県議を経た地方行政の経験。外務大臣政務官・厚生労働大臣政務官を歴任し、党副幹事長・文部科学部会長を務める。", minus:"実務・調整型で党内の役職を重ねる一方、国政を先導する独自の政策発信は控えめ。",
+    comment:"静岡市清水区興津出身。静岡市議会議員、静岡県議会議員を経て、望月義夫の死去に伴う2020年4月の衆議院静岡4区補欠選挙で初当選し4期目。外務大臣政務官、厚生労働大臣政務官を歴任し、党では副幹事長、文部科学部会長、国土交通部会長代理を務める。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E6%B7%B1%E6%BE%A4%20%E9%99%BD%E4%B8%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/深澤陽一",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P353", name:"福重 隆浩", reading:"ふくしげ たかひろ", party:"中道改革連合", role:"衆議院議員",
@@ -3938,15 +3938,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"衆議院議員",
+    id:"P355", name:"福田 かおる", reading:"ふくだ かおる", party:"自民党", role:"衆議院議員（東京18区）、文部科学大臣政務官、元農林水産省職員",
     chamber:"衆議院", district:"東京18", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[4,3,2,4,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
-    plus:"内閣官房副長官の経験。圧倒的な国会対策、与野党間合意形成の実務能力。", minus:"是正・監視型姿勢が前面に出る反面、中長期の強力な成長投資対案の発信に課題。",
-    comment:"内閣官房副長官や党幹事長を歴任。行政の公金使途（不透明な不記載や裏金問題等）に対する鋭い追及で知られる。消費税の時限的減税、最低賃金引き上げ、京都の過疎化・文化振興を叫ぶ野党重鎮。",
+    plus:"東京大学法学部から米コロンビア大学大学院へ進み、農林水産省・JETROバンコク事務所で食品輸出の実務を担当。2025年10月から文部科学大臣政務官。", minus:"2024年初当選で国会での立法実績や独自の政策発信はこれからの段階。",
+    comment:"渋谷教育学園幕張中学・高校から東京大学法学部を経て農林水産省に入省。米コロンビア大学大学院を修了し、JETROバンコク事務所の農林水産・食品部長、齋藤健法務大臣の秘書官などを務めた。2024年10月の第50回衆院選で東京18区から初当選し、2025年10月に文部科学大臣政務官に就任。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E7%A6%8F%E7%94%B0%20%E3%81%8B%E3%81%8A%E3%82%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/福田かおる",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P356", name:"福田 達夫", reading:"ふくだ たつお", party:"自民党", role:"衆議院議員",
@@ -4961,15 +4961,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"衆議院議員",
+    id:"P449", name:"吉村 悠", reading:"よしむら はるか", party:"自民党", role:"衆議院議員（福岡10区）、元福岡県議会議員（4期）",
     chamber:"衆議院", district:"福岡10", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[3,4,3,3,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},
-    plus:"北海道選出。地域の農林水産業振興や防災対策における安定的な調整力。", minus:"与党連立内の枠組みを優先するため、抜本的な独自の税制改革推進には制約。",
-    comment:"公明党。地域密着の実務型議員。福祉や教育、地方のインフラ整備において党の方針に準じた堅実な実務貢献を示す。",
+    plus:"福岡県議会議員を4期務め、県連の青年局長・政調会長を歴任した地方政治の経験。九州大学大学院法学府修了。", minus:"2024年初当選で国会での立法実績や独自の政策発信はこれからの段階。",
+    comment:"北九州市出身。明治学園中学・高校から法政大学法学部を卒業し、九州大学大学院法学府を修了。2011年に福岡県議会議員に初当選して4期務め、自民党県連の青年局長・政調会長を歴任。2023年8月の福岡10区支部長を決める党員投票で有効投票の6割超を獲得して公認を得て、2024年10月の第50回衆院選で当選。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E5%90%89%E6%9D%91%20%E6%82%A0%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/吉村悠",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P450", name:"米内 紘正", reading:"よない ひろまさ", party:"自民党", role:"衆議院議員",
@@ -5060,15 +5060,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P458", name:"和田 政宗", reading:"わだ まさむね", party:"参政党", role:"大阪府知事",
+    id:"P458", name:"和田 政宗", reading:"わだ まさむね", party:"参政党", role:"衆議院議員（比例東北ブロック）、元参議院議員（2期）、元NHKアナウンサー",
     chamber:"衆議院", district:"比例・東北", status:"現職", gender:"男", age:null,
-    total:75, rank:"B",
-    axes:[4,4,3,4,4,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"◎",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"○",renewable:"○",nuclear:"○",expo:"◎",ir:"◎",mynumber:"○",birthrate:"○",education:"◎",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"維新の成長戦略を地方自治から強力に推進。高い発信力と突破力。", minus:"大型プロジェクトの推進手法や、従来の行政管理との対立が一部批判対象となる面。",
-    comment:"大阪府知事として、身を切る改革や万博・IR誘致など大型施策を強力に推進。高い支持と注目を集める維新の看板政策牽引者。",
+    plus:"NHKアナウンサーとして仙台放送局に勤務し東日本大震災を取材。参議院議員2期を経て2026年に衆議院へ。高い知名度と発信力。", minus:"所属政党を複数回変えており政治的立場の一貫性に評価が分かれる。衆議院では1期目で立法実績はこれから。",
+    comment:"元NHKアナウンサー。仙台放送局在任中に東日本大震災を経験したことを機に政界へ転じ、参議院議員を2期務めた。2025年7月の参院選で落選後、参政党と政策覚書を結び、同年10月の宮城県知事選に立候補。2026年2月の第51回衆院選で参政党公認により比例東北ブロックで当選した。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E5%92%8C%E7%94%B0%20%E6%94%BF%E5%AE%97%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/和田政宗",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P459", name:"和田 義明", reading:"わだ よしあき", party:"自民党", role:"衆議院議員",
@@ -5093,15 +5093,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P461", name:"渡辺 勝幸", reading:"わたなべ かつゆき", party:"自民党", role:"衆議院議員",
+    id:"P461", name:"渡辺 勝幸", reading:"わたなべ かつゆき", party:"自民党", role:"衆議院議員（宮城2区）、元宮城県議会議員",
     chamber:"衆議院", district:"宮城2", status:"現職", gender:"男", age:null,
-    total:72, rank:"B-",
-    axes:[4,4,3,4,3,3,4,4],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"医師（医学博士）の知見。コロナ禍等における緻密な論戦と政策提言。", minus:"かつての地方行政実績に対する批判や、政治的立場を巡る賛否の分かれやすさ。",
-    comment:"元新潟県知事。医師・医学博士のバックグラウンドを持ち、論理的な国会質疑を行う。専門分野において高い存在感を持つ。",
+    plus:"慶應義塾大学大学院で政治学を修め、東北大学大学院の非常勤講師も務めた。参議院議員秘書・宮城県議を経た地元基盤と行政知識。", minus:"2026年初当選の1期目で、国会での立法実績や独自の政策発信はこれからの段階。",
+    comment:"仙台市若林区出身。慶應義塾大学法学部政治学科から同大学院法学研究科へ進み、東北大学大学院情報科学研究科の非常勤講師も務めた。参議院議員・市川一朗の政策担当秘書、宮城県議会議員（自民党・県民会議の会長、幹事長、青年局長を歴任）を経て、2026年2月の第51回衆院選で宮城2区から初当選。衆議院財務金融委員会、東日本大震災復興及び原子力問題調査特別委員会に所属。評価は中立値からの再出発であり、政策スタンスは要再検証。",
     links:{hp:"https://www.google.com/search?q=%E6%B8%A1%E8%BE%BA%20%E5%8B%9D%E5%B9%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/渡辺勝幸",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"衆議院議員",
@@ -8997,10 +8997,10 @@ const EVIDENCE = [
   {id:"E0349", pid:"P270", cat:"実績", sub:"福祉・一次産業支援", summary:"農林水産政務官として物価高下の飼料高騰対策をサポート", detail:"原材料や燃料価格の暴騰に直面する酪農家・一次産業就業者を守るため、配合飼料安定基金の財源確保や、激変緩和に伴う給付金措置の迅速な現場適用を実務面から支えた。", src:"農林水産省政務官職務成果報告", url:"", rel:"food", impact:"中", date:"2023-03"},
   {id:"E0350", pid:"P271", cat:"問題・疑惑", sub:"政治資金問題", summary:"関係団体の不適切会計処理報道による総務大臣辞任", detail:"自身の関連政治団体において、収支報告書の多額の不記載や不適切な会計処理の疑惑が報道され、国会審議や国政運営への影響を考慮して総務大臣を辞任した。", src:"東京地検特捜部捜査記録・首相官邸発表・各紙報道", url:"", rel:"discipline", impact:"高", date:"2022-11"},
   {id:"E0351", pid:"P272", cat:"実績", sub:"行政監視", summary:"内閣府の公的イベントをめぐる公金使途の不透明さを追及", detail:"衆院予算委員会等において、政府主催の公的行事における招待者名簿の廃棄や公金支出の妥当性に関し、行政監視の観点から緻密な公的資料分析に基づき追及を主導した。", src:"衆議院予算委員会会議録", url:"", rel:"discipline", impact:"中", date:"2020-02"},
-  {id:"E0352", pid:"P273", cat:"実績", sub:"沖縄・平和政策", summary:"米軍普天間飛行場の辺野古移設反対と特別措置法をめぐる審議", detail:"衆院安全保障委員会等において、沖縄の基地負担軽減と日米地位協定の抜本改定を求め、辺野古新基地建設に伴う公金支出の不適切さを一貫して厳しく批判した。", src:"衆議院安全保障委員会会議録", url:"", rel:"regional", impact:"中", date:"2018-04"},
+
   {id:"E0353", pid:"P274", cat:"実績", sub:"文教・科学技術", summary:"政調会長として多子世帯の大学授業料等無償化の枠組みを決定", detail:"少子化対策の一環として、所得制限を設けずに3人以上の子どもを扶養する世帯の大学・高専等の授業料および入学金を全面無償化する政府・与党方針の政策調整を主導した。", src:"自由民主党政務調査会発表資料・首相官邸記録", url:"", rel:"education", impact:"高", date:"2023-12"},
   {id:"E0354", pid:"P275", cat:"発言・主張", sub:"農業・食の安全", summary:"学校給食の国産有機化による子どもの健康保護を主張", detail:"化学農薬や化学肥料への過度な依存から脱却し、国内の一次産業を守るため、国費を投入した無償オーガニック給食の全国導入を街頭等で強く訴えている。", src:"参政党政策宣言マニフェスト", url:"", rel:"food", impact:"低", date:"2024-10"},
-  {id:"E0355", pid:"P276", cat:"実績", sub:"災害復興インフラ", summary:"国交副大臣として能登半島地震の道路・港湾復旧を指揮", detail:"国土交通副大臣等の立場で、震災によって寸断された北陸地方の幹線道路や重要港湾の迅速な復旧事業、避難住民の移動手段確保に向けた省庁・自治体間の実務調整を取りまとめた。", src:"国土交通省災害対策本部職務記録", url:"", rel:"regional", impact:"中", date:"2024-02"},
+
   {id:"E0356", pid:"P277", cat:"犯罪・違反", sub:"貸金業法違反", summary:"無登録の違法融資仲介で在宅起訴・有罪判決（執行猶予）", detail:"国に登録せず無登録で貸金業の仲介行為を行ったとして在宅起訴され、東京地裁から懲役2年（執行猶予3年）および罰金の有罪判決を受けた。", src:"東京地方裁判所判決・各紙報道", url:"https://ja.wikipedia.org/wiki/豊田真由子", rel:"政治倫理", impact:"高", date:"2022-03"},
   {id:"E0357", pid:"P277", cat:"問題・疑惑", sub:"秘書暴行・暴言", summary:"秘書への暴行・暴言が録音・週刊誌報道され自民党を離党・議員辞職", detail:"2017年、政策秘書に対する暴行・暴言の音声が週刊新潮に掲載され社会的批判を浴びた。自民党を離党し、同年の衆院選で落選。政治家としての信頼を大きく失う契機となった。", src:"Wikipedia・各紙報道", url:"https://ja.wikipedia.org/wiki/豊田真由子", rel:"政治倫理", impact:"高", date:"2017-07"},
   {id:"E0358", pid:"P277", cat:"実績", sub:"国際・感染症対策", summary:"在ジュネーブ日本政府代表部でWHOと連携し新型インフルエンザ国際対策に従事", detail:"厚生労働省在籍中、在ジュネーブ国際機関日本政府代表部の一等書記官としてWHOと連携しながら2009年の新型インフルエンザ世界的流行への国際的な感染症対策に当たった。ハーバード大学大学院で公衆衛生学を修めた専門家として国際交渉の前線に立った。", src:"講演プラス公式プロフィール", url:"https://kouenplus.com/profile/toyota_mayuko/", rel:"国民生活改善", impact:"中", date:"2009-05"},
@@ -9096,10 +9096,10 @@ const EVIDENCE = [
   {id:"E0448", pid:"P349", cat:"実績", sub:"農林水産行政", summary:"農林水産大臣政務官として一次産業振興に関与", detail:"農水政務官等の立場で、高齢化に直面する地域の農林漁業保護や、スマート一次産業の導入支援、地域資源を活かしたオンリーワンの地域づくりに向けた実務を担う。", src:"農林水産省政務官活動記録・公式公報", url:"https://www.hiroseken.info/", rel:"food", impact:"低", date:"2025-10"},
 
   {id:"E0450", pid:"P351", cat:"発言・主張", sub:"家計経済対策", summary:"所得税控除額の拡大による現役世代の負担軽減を主張", detail:"物価インフレに対抗するため、パートや若年層の手取りを最大化する税制緩和措置、およびガソリン税のトリガー条項凍結解除の早期成立を訴えている。", src:"国民民主党公認選挙公報資料", url:"", rel:"tax_cut", impact:"低", date:"2024-10"},
-  {id:"E0451", pid:"P352", cat:"発言・主張", sub:"地域創生・福祉", summary:"中小企業の賃上げ構造支援と地域インフラ改修を主張", detail:"物価インフレに直面する小規模事業者の社会保険料負担軽減や、激甚化する災害に備えるための流域治水対策への予算確保の重要性を求めている。", src:"公明党公認候補マニフェスト資料", url:"", rel:"regional", impact:"低", date:"2024-10"},
+
   {id:"E0452", pid:"P353", cat:"実績", sub:"文教行政", summary:"文部科学大臣政務官として教育負担軽減の調整に関与", detail:"文科政務官等の立場で、現役子育て世帯の経済的支援、給付型奨学金の拡充や教育現場のデジタル化（GIGAスクール構想）に関わる実務調整に携わった。", src:"文部科学省政務活動成果報告", url:"", rel:"education", impact:"低", date:"2025-11"},
   {id:"E0453", pid:"P354", cat:"実績", sub:"経済安全保障", summary:"内閣府補佐官等として重要物資の国内供給網構築に関与", detail:"半導体や重要物資の過度な海外依存リスクを低減するため、戦略物資の国内生産拠点整備や企業誘致補助金の財政枠組み調整に携わった。", src:"内閣府・首相官邸成長戦略記録", url:"", rel:"semi", impact:"中", date:"2022-05"},
-  {id:"E0454", pid:"P355", cat:"実績", sub:"行政監視・国会運営", summary:"官房副長官として東日本大震災の復興法案調整を主導", detail:"内閣官房副長官在任時、未曾有の災害からの迅速な復旧を目指し、復興庁設置法や各種特例措置の法案可決に向けた与野党間の激しい実務調整を取りまとめた。", src:"内閣官房・参議院内閣委員会審議記録", url:"", rel:"regional", impact:"高", date:"2011-12"},
+
   {id:"E0455", pid:"P356", cat:"実績", sub:"国土交通行政", summary:"国土交通副大臣として「防災・減災国土強靱化」予枠の執行管理", detail:"国交副大臣等の立場で、線状降水帯による激甚災害から地域を守るため、全国の重要河川の堤防強化や砂防ダム改修、避難体制のデジタル化に関する実務調整を主導した。", src:"国土交通省重要政策決定アーカイブ", url:"", rel:"regional", impact:"中", date:"2021-03"},
   {id:"E0456", pid:"P357", cat:"実績", sub:"政治改革", summary:"旧文通費の透明化と残金返納の関連法案提出を指揮", detail:"政治資金のガバナンス是正に向け、領収書添付による使途完全公開、および国庫返納義務化を盛り込んだ規正法見直しの党内法案作成と与野党調整を主導した。", src:"衆議院法案提出公報記録・各紙報道", url:"", rel:"discipline", impact:"高", date:"2024-05"},
 
@@ -9195,9 +9195,9 @@ const EVIDENCE = [
   {id:"E0547", pid:"P445", cat:"発言・主張", sub:"経済政策", summary:"再生可能エネルギー政策の問題点・中小企業賃上げ施策を国民生活への影響から検証", detail:"再生可能エネルギー政策の国民負担増・エネルギー安全保障への影響、中小企業の賃上げ施策の実効性について、政府の政策が国民生活に及ぼす影響を質疑で厳しく検証。「税収やGDPは手段であって目的ではない」と主張。", src:"吉川里奈公式サイト", url:"https://yoshikawa-rina.jp", rel:"経済・財政", impact:"中", date:"2025-02"},
   {id:"E0548", pid:"P446", cat:"実績", sub:"防衛行政", summary:"防衛政務官として国内防衛産業の支援に関与", detail:"防衛装備品の供給網維持や、国内関連企業への技術支援スキームに関与し、実務的な安定性を発揮した。", src:"防衛省活動記録", url:"", rel:"defense", impact:"低", date:"2025-06"},
   {id:"E0549", pid:"P447", cat:"発言・主張", sub:"家計支援", summary:"所得減税と雇用環境是正の必要性を強く主張", detail:"インフレに即した賃上げ支援や、非正規労働者の待遇改善、教育負担軽減を国会審議等で繰り返し要求している。", src:"党政策公約・国会会議録", url:"", rel:"tax_cut", impact:"低", date:"2026-05"},
-  {id:"E0550", pid:"P449", cat:"実績", sub:"地域振興", summary:"北陸・北海道の一次産業支援を調整", detail:"寒冷地農業の振興や防災インフラ強靱化に向けた交付金活用、中小事業者向けの経営安定化施策の現場実務を調整した。", src:"公明党政策実績報告", url:"", rel:"regional", impact:"低", date:"2025-09"},
-  {id:"E0551", pid:"P458", cat:"実績", sub:"地方行政・都市戦略", summary:"大型プロジェクト誘致や行財政改革の推進", detail:"府知事として、IR誘致や教育無償化の枠組み拡大、行財政改革を強力に主導し、自治体経営において独自の政策を断行している。", src:"大阪府公式政策資料", url:"", rel:"regional", impact:"高", date:"2026-05"},
-  {id:"E0552", pid:"P461", cat:"実績", sub:"国会論戦", summary:"医学的知見に基づいた論理的な質疑", detail:"予算委員会等において、医学博士としての知見をフル活用し、医療政策や感染症対策に関する政府答弁の課題を鋭く追及した。", src:"衆議院予算委員会会議録", url:"", rel:"regional", impact:"中", date:"2024-03"},
+
+
+
   {id:"E0553", pid:"P462", cat:"実績", sub:"行政監視", summary:"行政の無駄を排除するための鋭い追及", detail:"参議院等の委員会審議において、公的資金の支出先や事業内容の妥当性について徹底的に追及し、行政監視役として高い影響力を発揮している。", src:"参議院予算委員会会議録", url:"", rel:"description", impact:"高", date:"2025-05"},
   {id:"E0554", pid:"P466", cat:"実績", sub:"生活支援", summary:"消費者保護に向けた法整備の議論に関与", detail:"消費者被害を防ぐための特定商取引法等の改正議論において、市民の立場から意見を述べ、監視機能の強化を求めた。", src:"参議院会議録", url:"", rel:"regional", impact:"中", date:"2025-06"},
   {id:"E0555", pid:"P469", cat:"実績", sub:"IT・表現政策", summary:"著作権法改正議論での表現の自由保護", detail:"違法コンテンツ対策に関する著作権法改正議論において、過度な規制が文化活動を萎縮させないよう慎重な議論を主導した。", src:"参議院文教科学委員会会議録", url:"", rel:"education", impact:"中", date:"2025-06"},
