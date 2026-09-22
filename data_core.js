@@ -2900,12 +2900,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P358", name:"藤井 比早之", reading:"ふじい ひさゆき", party:"自民党", role:"衆議院議員",
+    id:"P358", name:"藤井 比早之", reading:"ふじい ひさゆき", party:"自民党", role:"衆議院議員（兵庫4区）、総務大臣兼内閣府特命担当大臣（地方創生）・地域未来戦略担当・副首都整備等推進担当（第2次高市改造内閣）、旧自治省（総務省）官僚出身",
     chamber:"衆議院", district:"兵庫4", status:"現職", gender:"男", age:null,
-    total:55, rank:"D",
-    axes:[3,3,3,3,2,3,3,2],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P359", name:"藤沢 忠盛", reading:"ふじさわ ただもり", party:"自民党", role:"衆議院議員",
