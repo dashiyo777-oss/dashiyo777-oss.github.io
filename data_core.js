@@ -2838,10 +2838,10 @@ const POLITICIANS = [
   {
     id:"P350", name:"広瀬 建", reading:"ひろせ けん", party:"自民党", role:"衆議院議員（農林水産大臣政務官）",
     chamber:"衆議院", district:"大分2", status:"現職", gender:"男", age:null,
-    total:37, rank:"D",
-    axes:[3,2,2,2,1,2,2,1],
+    total:60, rank:"C-",
+    axes:[3,3,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P351", name:"深作 ヘスス", reading:"ふかさく へすす", party:"国民民主党", role:"衆議院議員",
