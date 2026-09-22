@@ -100,10 +100,15 @@ PRマージ前に自動実行（`.github/workflows/validate-data.yml`）:
 3. **ヘッダーコメント** — "統覧 TORAN" を含む
 4. **政治家数** — 800件以上
 5. **total/rank 整合性** — `scripts/validate_data.py` で検証
+6. **politicians_base.json の同期** — `scripts/validate_base_sync.js` で検証
+7. **問題・疑惑 evidence の出典** — `scripts/validate_evidence_sources.js` で検証
 
 ローカル確認コマンド:
 ```bash
-node --check data.js && python3 scripts/validate_data.py
+node --check data.js \
+  && python3 scripts/validate_data.py \
+  && node scripts/validate_base_sync.js \
+  && node scripts/validate_evidence_sources.js
 ```
 
 ---
@@ -238,6 +243,31 @@ stances の各キーの意味:
 - `plus` / `comment` に「○○省出身」「○○官僚」を書く場合 → Wikipedia・公式サイトで**入省経歴を必ず確認**
 - 「大臣」「副大臣」「政務官」は省出身の証拠にならない
 - NTT・商社・銀行・国際機関出身者は官僚ではない
+
+### ⚠️ 問題・疑惑 evidence の出典必須ルール（2026.09.22追記）
+
+**`cat:"問題・疑惑"` の evidence には一次情報の `url` が必須。** CI（`scripts/validate_evidence_sources.js`）で強制する。
+
+**なぜ必須か:**
+2026年9月、note読者からの指摘を端緒に不祥事フラグの全件照合を行ったところ、自民党の公式リスト（2024年2月13日公表の不記載議員85人 / 2024年4月4日の党紀委員会処分39人）のいずれにも該当しない**41人に「不記載」「役職停止処分」が誤って記載されていた**。うち28人は axes が `[3,3,3,3,2,3,3,2]`（55/D）で完全に一致しており、バッチ評価によるテンプレート量産が原因と判明した。
+
+削除した虚偽 evidence の**共通点は `url:""`** だった。`src` には「自由民主党党紀委員会処分決定公報」等のもっともらしい公的文書名が書かれていたが、**URLが無い＝誰も一次情報に当たっていない**。実在の政治家に対する事実無根の不祥事記載は最も重い種類の誤りであり、この構造を機械的に止める。
+
+**ルール:**
+- `src` に公的文書名を書くだけでは裏取りにならない。**必ず実際に到達できるURLを付ける**
+- 検索結果ページ（`google.com/search?q=...`）は出典として認めない
+- URLを用意できないなら、**その evidence は追加しない**。裏取りできない疑惑は載せない
+- Wikipedia は二次情報。警告は出るがCIは通る。報道・公的資料への差し替えが望ましい
+
+**既存の未裏取りエントリ（48件）:**
+`scripts/evidence_source_baseline.json` に「既知の負債」として登録済み。このファイルは**縮む方向にしか更新できない**:
+```bash
+# 裏取りしてURLを付けたあと、baseline から外す
+node scripts/validate_evidence_sources.js --prune
+```
+**このファイルに手作業でIDを追加してはならない。** 新規エントリを通すために baseline に足すのは、このルールの趣旨に真っ向から反する。
+
+---
 
 ### データ不整合の修正ルール（2026.07.05追記）
 
