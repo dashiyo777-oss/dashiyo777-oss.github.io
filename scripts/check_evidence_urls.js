@@ -33,7 +33,13 @@ const STATUS_FILE = path.join(ROOT, 'evidence_url_status.js');
 
 // 1回の実行で失敗しただけでは「リンク切れ」と断定しない。
 // 一時的な障害・メンテナンスと恒久的な消滅を区別するため、
-// 連続 DEAD_AFTER 回失敗して初めて dead にする。
+// 連続 DEAD_AFTER 回「404/410」を返して初めて dead にする。
+//
+// ⚠️ dead にするのは 404/410 が続いたときだけ。403（Bot遮断）や 429（レート制限）、
+// 5xx、通信エラーは何回続いても dead にしない。経産省・農水省の会見概要ページは
+// 素の fetch に 403 を返すが、ブラウザでは普通に開ける。これを「リンク切れ」と
+// 表示したら読者に嘘をつくことになる。到達を確認できないだけなので unverified とし、
+// サイト上はリンクをそのまま出す。
 const DEAD_AFTER = 2;
 const TIMEOUT_MS = 20000;
 const CONCURRENCY = 6;
@@ -75,6 +81,7 @@ function mergeStatus(prev, outcome, date) {
     last_checked: date,
     last_status: outcome.status === null ? (outcome.reason || 'network_error') : outcome.status,
     fail_streak: base.fail_streak || 0,
+    gone_streak: base.gone_streak || 0,
     state: base.state || 'unchecked',
   };
 
@@ -82,12 +89,24 @@ function mergeStatus(prev, outcome, date) {
     next.first_ok = base.first_ok || date;
     next.last_ok = date;
     next.fail_streak = 0;
+    next.gone_streak = 0;
     next.state = 'ok';
     return next;
   }
 
   next.fail_streak = (base.fail_streak || 0) + 1;
-  next.state = next.fail_streak >= DEAD_AFTER ? 'dead' : 'suspect';
+
+  if (outcome.verdict === 'gone') {
+    // サーバが「無い」と答えた。これだけが消滅の証拠になる
+    next.gone_streak = (base.gone_streak || 0) + 1;
+    next.state = next.gone_streak >= DEAD_AFTER ? 'dead' : 'suspect';
+    return next;
+  }
+
+  // 到達できなかったが、無いとは限らない（403 / 429 / 5xx / 通信エラー）。
+  // 何回続いても dead にはしない
+  next.gone_streak = 0;
+  next.state = 'unverified';
   return next;
 }
 
@@ -174,7 +193,8 @@ function writeStatus(status, summary) {
 // 読者に「いつの時点では閲覧できたか」を示すために残しています。
 //
 // 最終確認: ${summary.date} / 対象 ${summary.total}件
-// 到達 ${summary.ok}件 / 未到達（疑い）${summary.suspect}件 / リンク切れ ${summary.dead}件
+// 到達 ${summary.ok}件 / リンク切れ ${summary.dead}件 / 消滅の疑い ${summary.suspect}件
+// 確認できず ${summary.unverified}件（403・429・通信エラー等。ページは生きている可能性が高い）
 
 const EVIDENCE_URL_STATUS = {
 ${entries}
@@ -227,8 +247,23 @@ async function selfTest() {
   check('1回失敗では dead にしない', [s2.state, s2.fail_streak, s2.last_ok], ['suspect', 1, d1]);
 
   const s3 = mergeStatus(s2, goneOutcome('https://a.example/x'), d3);
-  check('2回連続失敗で dead', [s3.state, s3.fail_streak], ['dead', 2]);
+  check('404が2回続いて dead', [s3.state, s3.gone_streak], ['dead', 2]);
   check('dead になっても first_ok / last_ok は残る', [s3.first_ok, s3.last_ok], [d1, d1]);
+
+  // 403 / 429 / 通信エラーは何回続いても dead にしない。
+  // 経産省・農水省の会見ページは素の fetch に 403 を返すが実際には生きている
+  const errOutcome = (url, status) => ({ url, status, verdict: 'error' });
+  const e1 = mergeStatus(s1, errOutcome('https://a.example/x', 403), d2);
+  check('403 は1回目から unverified', [e1.state, e1.gone_streak], ['unverified', 0]);
+  const e2 = mergeStatus(e1, errOutcome('https://a.example/x', 403), d3);
+  check('403 が続いても dead にしない', [e2.state, e2.gone_streak], ['unverified', 0]);
+  const e3 = mergeStatus(e2, errOutcome('https://a.example/x', 429), '2026-04-01');
+  check('429 も同様', e3.state, 'unverified');
+  check('unverified でも last_ok は保たれる', e3.last_ok, d1);
+  const e4 = mergeStatus(e2, goneOutcome('https://a.example/x'), '2026-04-01');
+  check('403続きのあと404が1回では suspect 止まり', [e4.state, e4.gone_streak], ['suspect', 1]);
+  const e5 = mergeStatus(e4, goneOutcome('https://a.example/x'), '2026-05-01');
+  check('404が2回続けば dead', [e5.state, e5.gone_streak], ['dead', 2]);
 
   const s4 = mergeStatus(s3, okOutcome('https://a.example/x'), '2026-04-01');
   check('復活したら ok に戻り streak がリセットされる', [s4.state, s4.fail_streak, s4.last_ok], ['ok', 0, '2026-04-01']);
@@ -284,6 +319,24 @@ async function main() {
   const args = process.argv.slice(2);
   if (args.includes('--self-test')) return selfTest();
 
+  // 差し替え候補のURLが本当に開けるかを、データに入れる前に確かめるための単発確認
+  const urlArg = args.indexOf('--check-url');
+  if (urlArg >= 0) {
+    const urls = args.slice(urlArg + 1).filter((a) => /^https?:\/\//.test(a));
+    if (!urls.length) {
+      console.error('--check-url のあとに http(s) で始まるURLを1つ以上指定してください');
+      process.exit(2);
+    }
+    let ng = 0;
+    for (const u of urls) {
+      const r = await checkUrl(u);
+      const mark = r.verdict === 'ok' ? '✅' : r.verdict === 'gone' ? '❌' : '⚠️';
+      console.log(`${mark} ${r.verdict.padEnd(6)} HTTP ${String(r.status ?? r.reason).padEnd(8)} ${u}`);
+      if (r.verdict !== 'ok') ng++;
+    }
+    process.exit(ng ? 1 : 0);
+  }
+
   const dryRun = args.includes('--dry-run');
   const limitArg = args.indexOf('--limit');
   const limit = limitArg >= 0 ? parseInt(args[limitArg + 1], 10) : Infinity;
@@ -328,10 +381,14 @@ async function main() {
     ok: Object.values(status).filter((s) => s.state === 'ok').length,
     suspect: Object.values(status).filter((s) => s.state === 'suspect').length,
     dead: Object.values(status).filter((s) => s.state === 'dead').length,
+    unverified: Object.values(status).filter((s) => s.state === 'unverified').length,
   };
 
   console.log('');
-  console.log(`到達 ${summary.ok}件 / 未到達（疑い）${summary.suspect}件 / リンク切れ ${summary.dead}件`);
+  console.log(
+    `到達 ${summary.ok}件 / リンク切れ ${summary.dead}件 / 消滅の疑い ${summary.suspect}件 / ` +
+    `確認できず ${summary.unverified}件（403・429・通信エラー等。ページは生きている可能性が高い）`
+  );
 
   if (newlyDead.length) {
     console.log('');
