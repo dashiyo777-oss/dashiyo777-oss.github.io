@@ -452,6 +452,12 @@
   }
   .ev-meta .ev-src-link:hover { color: #7db4ee; border-bottom-color: #7db4ee; }
   .ev-meta .ev-src-plain { font-size: 0.55rem; color: var(--gray); letter-spacing: 0.08em; opacity: 0.8; }
+  .ev-meta .ev-src-dead { font-size: 0.55rem; color: #f0a030; letter-spacing: 0.08em; }
+  .ev-meta .ev-src-archive {
+    font-size: 0.55rem; letter-spacing: 0.08em; color: var(--gray);
+    text-decoration: none; border-bottom: 1px dotted rgba(136,136,136,0.5);
+  }
+  .ev-meta .ev-src-archive:hover { color: var(--text); border-bottom-color: var(--text); }
 
   .ev-empty {
     text-align: center; padding: 2rem; color: var(--gray);
@@ -848,6 +854,7 @@ window.addEventListener('error', function(e) {
 }, true);
 </script>
 <script src="data.js"></script>
+<script src="evidence_url_status.js"></script>
 <script>
 /* ── SHARED DATA ── */
 const AXES_JA = ['国民生活改善','経済・財政','安全保障','政策実現力','説明責任','長期国益','公共性','政治倫理'];
@@ -950,6 +957,46 @@ function buildRadar(axes, container) {
   }
 
   container.innerHTML = svg;
+}
+
+/* ── 出典の描画 ──
+   URLは消える。官公庁のページは改組・年度切り替え・サイトリニューアルで頻繁に失われる。
+   リンクが切れたとき、ただ繋がらないだけだと「最初から無かった出典」と
+   「当時は実在したが後に消えた出典」の区別が読者に付かない。
+   evidence_url_status.js に記録した last_ok（最後に到達できた日）を添えて、
+   後者であることを示せるようにしている。 */
+function urlStatusOf(id) {
+  if (typeof EVIDENCE_URL_STATUS === 'undefined' || !EVIDENCE_URL_STATUS) return null;
+  return EVIDENCE_URL_STATUS[id] || null;
+}
+
+function archiveSearchUrl(url, lastOk) {
+  // last_ok の日付に近い保存版を探す。保存されていない場合もある
+  const stamp = lastOk ? lastOk.replace(/-/g, '') : '';
+  return `https://web.archive.org/web/${stamp}/${url}`;
+}
+
+function renderSource(e) {
+  const hasUrl = /^https?:\/\//.test(e.url || '');
+  if (!hasUrl) {
+    return `<span class="ev-src-plain" title="この出典にはURLが登録されていません">📎 ${e.src}（URL未登録）</span>`;
+  }
+
+  const st = urlStatusOf(e.id);
+  const link = `<a class="ev-src-link" href="${e.url}" target="_blank" rel="noopener noreferrer">📎 ${e.src} ↗</a>`;
+
+  if (!st || st.state !== 'dead') return link;
+
+  // 2回以上連続して到達できなかったURL
+  const note = st.last_ok
+    ? `<span class="ev-src-dead" title="出典URLに到達できません。${st.last_ok} 時点では閲覧できることを確認していました">` +
+      `⚠ リンク切れ（${st.last_ok} 時点では閲覧可）</span>` +
+      ` <a class="ev-src-archive" href="${archiveSearchUrl(e.url, st.last_ok)}" target="_blank" rel="noopener noreferrer">` +
+      `保存版を探す ↗</a>`
+    : `<span class="ev-src-dead" title="出典URLに到達できません。到達を確認できた記録もありません">` +
+      `⚠ リンク切れ（到達の確認記録なし）</span>`;
+
+  return `${link} ${note}`;
 }
 
 /* ── BUILD PAGE ── */
@@ -1216,9 +1263,7 @@ function buildPage(p) {
           <div class="ev-detail">${e.detail || ''}</div>
           <div class="ev-meta">
             ${e.date ? `<span>📅 ${e.date}</span>` : ''}
-            ${e.src ? (/^https?:\/\//.test(e.url || '')
-              ? `<a class="ev-src-link" href="${e.url}" target="_blank" rel="noopener noreferrer">📎 ${e.src} ↗</a>`
-              : `<span class="ev-src-plain" title="この出典にはURLが登録されていません">📎 ${e.src}（URL未登録）</span>`) : ''}
+            ${e.src ? renderSource(e) : ''}
             ${e.rel ? `<span>信頼度: ${e.rel}</span>` : ''}
             ${e.impact ? `<span>影響: ${e.impact}</span>` : ''}
             ${e.sub ? `<span>分類: ${e.sub}</span>` : ''}

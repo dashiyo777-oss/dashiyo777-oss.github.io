@@ -1,0 +1,115 @@
+name: 出典URL 生存確認（週次）
+
+on:
+  schedule:
+    # 毎週月曜 02:30 UTC（日本時間 11:30）
+    - cron: '30 2 * * 1'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '確認する件数の上限（動作確認用。空なら全件）'
+        required: false
+        default: ''
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 判定ロジックのセルフテスト
+        run: node scripts/check_evidence_urls.js --self-test
+
+      - name: 出典URLの生存確認
+        id: check
+        continue-on-error: true
+        run: |
+          LIMIT="${{ github.event.inputs.limit }}"
+          if [ -n "$LIMIT" ]; then
+            node scripts/check_evidence_urls.js --limit "$LIMIT" | tee /tmp/check.log
+          else
+            node scripts/check_evidence_urls.js | tee /tmp/check.log
+          fi
+
+      - name: 生存記録をコミット・プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add evidence_url_status.js
+          if git diff --staged --quiet; then
+            echo "変更なし（スキップ）"
+          else
+            DATE=$(date +'%Y.%m.%d')
+            git commit -m "データ更新: 出典URLの生存確認（${DATE}）"
+            git push
+          fi
+
+      - name: 新たなリンク切れがあれば Issue を作成
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let log = '';
+            try { log = fs.readFileSync('/tmp/check.log', 'utf8'); } catch {}
+            // 「あらたにリンク切れ」以降だけを抜き出す
+            const idx = log.indexOf('⚠️ 今回あらたにリンク切れ');
+            const detail = idx >= 0 ? log.slice(idx) : log.slice(-3000);
+
+            const title = `[自動] 出典URLのリンク切れ (${new Date().toISOString().slice(0,10)})`;
+            const body = [
+              '## 概要',
+              '2回連続で到達できなかった出典URLが検出されました。',
+              '',
+              '## 対応方針',
+              '',
+              '**リンクが切れたというだけで evidence を削除しないこと。**',
+              '`evidence_url_status.js` の `last_ok` に「いつまで到達できていたか」が',
+              '記録されています。記述の裏付けがその時点で存在したことは事実なので、',
+              '以下の順で対応してください。',
+              '',
+              '1. 移転先を探す（サイト内検索・`site:` 検索・省庁の新着一覧）',
+              '2. 見つかれば url を差し替える',
+              '3. 見つからなければ Internet Archive の保存版を探して url に入れる',
+              '4. どうしても見つからない場合のみ、記述の真偽を改めて検証する',
+              '   （URLが消えたことは、記述が誤りだったことを意味しない）',
+              '',
+              '## 検出内容',
+              '',
+              '```',
+              detail.trim().slice(0, 5000),
+              '```',
+              '',
+              '> 詳細は CLAUDE.md「出典URLの生存確認」および',
+              '> docs/incident-2026-09-data-integrity.md を参照',
+            ].join('\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'data-quality',
+            });
+            const existing = issues.find(i => i.title.startsWith('[自動] 出典URLのリンク切れ'));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title, body, labels: ['data-quality'],
+              });
+            }

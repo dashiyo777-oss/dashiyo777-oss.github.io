@@ -2,11 +2,17 @@
 
 ## 概要
 
-国会議員（衆参計822名）を8軸で独自評価するデータベースサイト。
+国会議員・首長を8軸で独自評価するデータベースサイト。
 GitHub Pages でホスティング。データは `data.js` に格納。
 
 - URL: `https://dashiyo777-oss.github.io/politicians.html`
-- 評価済: 794名（2026.06時点） / Wikipedia基礎評価: 0名 / 情報不足: 0名
+- 収録 781名 / 評価点あり 336名 / 未評価（裏付けなし）445名 / evidence 552件（2026.09.22時点）
+
+> ⚠️ **最初に読むこと** — [`docs/incident-2026-09-data-integrity.md`](docs/incident-2026-09-data-integrity.md)
+>
+> 2026年9月、出典の創作・裏付けのない評価点・出典がリンクになっていなかった等の
+> 構造的な欠陥が見つかり、evidence の3分の1を削除した。同じ失敗を繰り返さないための
+> 判断基準をまとめてある。evidence を追加・修正する前に必ず目を通すこと。
 
 ---
 
@@ -365,6 +371,38 @@ node scripts/validate_evidence_sources.js --prune
 `scripts/validate_evidence_sources.js` が以下の2方向を検出する。
 - evidence が無いのに評価点がある
 - evidence があるのに評価点がブランク
+
+**4-4. 出典URLの生存確認（2026.09.22追記）**
+
+官公庁のページは改組・年度切り替え・サイトリニューアルで頻繁に消える。
+`scripts/check_evidence_urls.js` が週次（GitHub Actions）で全URLの生存を確認し、
+`evidence_url_status.js` に「最後に到達できた日（last_ok）」を記録する。
+
+2回連続で到達できなかったURLは `dead` と判定され、詳細ページに
+「⚠ リンク切れ（YYYY-MM-DD 時点では閲覧可）」と保存版への導線が出る。
+1回の失敗で断定しないのは、メンテナンスや一時的な障害と区別するため。
+
+**リンクが切れたというだけで evidence を削除しないこと。**
+
+```
+1. 移転先を探す（サイト内検索・site: 検索・省庁の新着一覧）
+2. 見つかれば url を差し替える
+3. 見つからなければ Internet Archive の保存版を url に入れる
+4. どうしても見つからない場合のみ、記述の真偽を改めて検証する
+```
+
+**URLが消えたことは、記述が誤りだったことを意味しない。** last_ok に到達できていた
+記録が残っている限り、その時点で裏付けが存在したことは事実である。逆に、
+一度も到達を確認できていないURL（last_ok が null）は、最初から実在しなかった
+可能性を疑うこと。
+
+手元で動かす場合:
+
+```bash
+node scripts/check_evidence_urls.js --self-test   # 判定ロジックの検証（ネット不要）
+node scripts/check_evidence_urls.js --limit 20    # 先頭20件だけ確認
+node scripts/check_evidence_urls.js --dry-run     # 記録ファイルを書き換えない
+```
 
 **5. 地方自治体の長としての実績を国会議員の実績欄に書かない**
 
