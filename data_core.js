@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 336名 / 未評価（裏付けなし）: 445名 / 🚨5名 / ⚠️93名 / 根拠552件
+// 評価済: 336名 / 未評価（裏付けなし）: 445名 / 🚨5名 / ⚠️93名 / 根拠551件
 
 const DATA_UPDATED_AT = "2026.06.13";
 
@@ -6274,7 +6274,7 @@ const POLITICIANS = [
   }
 ];
 
-const EVIDENCE_COUNT = 552;
+const EVIDENCE_COUNT = 551;
 
 const CHANGELOG = [
   {pid:"P493", date:"2026-05-29", summary:"安全保障5・長期国益4に上方修正。30年紛争実務・国連PKO統括・『新国防論』著者として唯一無二の実績を反映。ウクライナ発言は賛否両論として政治倫理2に緩和。", before_total:60, after_total:62, action:"update"},
