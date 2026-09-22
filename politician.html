@@ -443,6 +443,16 @@
 
   .ev-meta span { font-size: 0.55rem; color: var(--gray); letter-spacing: 0.08em; }
 
+  /* 出典リンク。読者がその場で一次情報を開けるようにする */
+  .ev-meta .ev-src-link {
+    font-size: 0.55rem; letter-spacing: 0.08em; color: var(--blue);
+    text-decoration: none; border-bottom: 1px solid rgba(74,144,226,0.4);
+    padding-bottom: 1px; transition: color 0.15s, border-color 0.15s;
+    overflow-wrap: anywhere;
+  }
+  .ev-meta .ev-src-link:hover { color: #7db4ee; border-bottom-color: #7db4ee; }
+  .ev-meta .ev-src-plain { font-size: 0.55rem; color: var(--gray); letter-spacing: 0.08em; opacity: 0.8; }
+
   .ev-empty {
     text-align: center; padding: 2rem; color: var(--gray);
     font-size: 0.72rem; letter-spacing: 0.1em;
@@ -1206,7 +1216,9 @@ function buildPage(p) {
           <div class="ev-detail">${e.detail || ''}</div>
           <div class="ev-meta">
             ${e.date ? `<span>📅 ${e.date}</span>` : ''}
-            ${e.src ? `<span>📎 ${e.src}</span>` : ''}
+            ${e.src ? (/^https?:\/\//.test(e.url || '')
+              ? `<a class="ev-src-link" href="${e.url}" target="_blank" rel="noopener noreferrer">📎 ${e.src} ↗</a>`
+              : `<span class="ev-src-plain" title="この出典にはURLが登録されていません">📎 ${e.src}（URL未登録）</span>`) : ''}
             ${e.rel ? `<span>信頼度: ${e.rel}</span>` : ''}
             ${e.impact ? `<span>影響: ${e.impact}</span>` : ''}
             ${e.sub ? `<span>分類: ${e.sub}</span>` : ''}
