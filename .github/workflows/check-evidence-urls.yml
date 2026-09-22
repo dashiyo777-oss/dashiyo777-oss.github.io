@@ -10,6 +10,10 @@ on:
         description: '確認する件数の上限（動作確認用。空なら全件）'
         required: false
         default: ''
+      urls:
+        description: '差し替え候補URLの単発確認（空白区切り）。指定すると全件確認は行わない'
+        required: false
+        default: ''
 
 jobs:
   check:
@@ -28,8 +32,15 @@ jobs:
       - name: 判定ロジックのセルフテスト
         run: node scripts/check_evidence_urls.js --self-test
 
+      # データに入れる前に、候補URLが本当に開けるかを確かめるための単発確認。
+      # 検索インデックスが返すURLが現に404であることが実際にあったため用意している
+      - name: 候補URLの単発確認
+        if: github.event.inputs.urls != ''
+        run: node scripts/check_evidence_urls.js --check-url ${{ github.event.inputs.urls }}
+
       - name: 出典URLの生存確認
         id: check
+        if: github.event.inputs.urls == ''
         continue-on-error: true
         run: |
           LIMIT="${{ github.event.inputs.limit }}"
@@ -40,6 +51,7 @@ jobs:
           fi
 
       - name: 生存記録をコミット・プッシュ
+        if: github.event.inputs.urls == ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
