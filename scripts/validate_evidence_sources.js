@@ -35,6 +35,7 @@ const TARGET_CAT = '問題・疑惑';
 
 const dataJs = fs.readFileSync(path.join(ROOT, 'data.js'), 'utf8');
 const EVIDENCE = vm.runInNewContext(dataJs + ';EVIDENCE', {});
+const POLITICIANS = vm.runInNewContext(dataJs + ';POLITICIANS', {});
 
 let baseline = { ids: [] };
 if (fs.existsSync(BASELINE_PATH)) {
@@ -94,6 +95,70 @@ for (const e of EVIDENCE) {
   // 警告: 二次情報のみを出典とする不祥事記載
   if (u.hostname === 'ja.wikipedia.org' || u.hostname === 'en.wikipedia.org') {
     warnings.push(`${where}: 出典が Wikipedia（二次情報）です。報道・公的資料への差し替えが望まれます。`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// A2. 出典名の創作・内容空疎・テンプレート量産の検出（全カテゴリ）
+//
+//   2026-09の全件検証で、以下4種類の量産パターンが見つかった。
+//   いずれも「もっともらしいが実在しない」記載であり、機械的に止める。
+//     (1) 実在しない公的文書名（「〜公報資料」「〜処分決定公報」等）
+//     (2) 内容が空疎な evidence（「Wikipediaに記述が確認された」等、事実を述べていない）
+//     (3) 同一 detail の複数議員への使い回し（テンプレート量産）
+//     (4) 存在しない議員IDを参照する孤児 evidence
+// ---------------------------------------------------------------------------
+const FAKE_DOC = [
+  /公報資料$/, /公報記録$/, /職務記録公報/, /政策実績公報/, /審議記録公報/,
+  /処分決定公報/, /処分決定通達/, /処分決定通知/, /活動記録・公式公報/,
+];
+const EMPTY_DETAIL = [
+  /Wikipediaに.{0,20}記述が確認された/,
+  /Wikipediaの記載により.{0,20}確認された/,
+];
+const pidSet = new Set(POLITICIANS.map((p) => p.id));
+
+for (const e of EVIDENCE) {
+  const where = `${e.id}（${e.pid}）`;
+  if (!pidSet.has(e.pid)) {
+    errors.push(`${where}: 存在しない議員ID "${e.pid}" を参照しています（孤児 evidence）。削除してください。`);
+  }
+  if (FAKE_DOC.some((re) => re.test(e.src || ''))) {
+    errors.push(
+      `${where}: 出典名「${e.src}」は実在しない公的文書の疑いがあります。\n` +
+      `      「〜公報」「〜公報資料」といった官公庁文書を装った名称は、2026年9月の検証で\n` +
+      `      85件すべてが創作と判明しました。実在する資料名とURLを指定してください。`
+    );
+  }
+  if (EMPTY_DETAIL.some((re) => re.test(e.detail || ''))) {
+    errors.push(
+      `${where}: detail が事実を述べていません（「Wikipediaに記述が確認された」型）。\n` +
+      `      何が・いつ・どうだったのかを書いてください。出典に何かが書いてあるという記述は\n` +
+      `      evidence になりません。`
+    );
+  }
+}
+
+// 同一 detail が複数の議員に使い回されていないか
+{
+  const seen = new Map();
+  for (const e of EVIDENCE) {
+    const key = (e.detail || '').trim();
+    if (key.length < 40) continue;
+    if (!seen.has(key)) seen.set(key, []);
+    seen.get(key).push(e);
+  }
+  for (const [key, list] of seen) {
+    const pids = new Set(list.map((e) => e.pid));
+    if (pids.size < 2) continue;
+    // 同一の公的事実を同一文言で記述するのは正当（例: 同じ処分の説明）。
+    // URLを伴うものは許容し、裏取りの無い使い回しのみを弾く。
+    if (list.every((e) => has(e.url))) continue;
+    errors.push(
+      `${[...pids].join(', ')}: 同一の detail が ${pids.size}人に使い回されています（${list.map((e) => e.id).join(', ')}）。\n` +
+      `      「${key.slice(0, 50)}…」\n` +
+      `      テンプレート量産の疑いがあります。各議員に固有の事実を、出典URLとともに記述してください。`
+    );
   }
 }
 
