@@ -5,12 +5,16 @@ on:
     paths:
       - 'data.js'
       - 'politicians_base.json'
+      - 'scripts/**'
+      - '.github/workflows/validate-data.yml'
   push:
     branches:
       - main
     paths:
       - 'data.js'
       - 'politicians_base.json'
+      - 'scripts/**'
+      - '.github/workflows/validate-data.yml'
 
 jobs:
   validate:
@@ -65,14 +69,24 @@ jobs:
         run: |
           node scripts/validate_base_sync.js
 
+      - name: Check evidence sources for 問題・疑惑 entries
+        run: |
+          node scripts/validate_evidence_sources.js
+
       - name: Check changelog.js was updated
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            BASE="${{ github.event.pull_request.base.sha }}"
-            CHANGED=$(git diff --name-only "$BASE"...HEAD | grep '^changelog.js$' || true)
+            RANGE_ARGS='${{ github.event.pull_request.base.sha }}...HEAD'
           else
-            CHANGED=$(git diff --name-only HEAD~1 HEAD | grep '^changelog.js$' || true)
+            RANGE_ARGS='HEAD~1 HEAD'
           fi
+          FILES=$(git diff --name-only $RANGE_ARGS)
+          DATA_CHANGED=$(echo "$FILES" | grep -E '^(data\.js|politicians_base\.json)$' || true)
+          if [ -z "$DATA_CHANGED" ]; then
+            echo "ℹ️  data.js / politicians_base.json に変更なし。changelog.js のチェックはスキップします。"
+            exit 0
+          fi
+          CHANGED=$(echo "$FILES" | grep '^changelog.js$' || true)
           if [ -z "$CHANGED" ]; then
             echo "❌ ERROR: data.js が変更されましたが changelog.js が更新されていません。"
             echo ""
