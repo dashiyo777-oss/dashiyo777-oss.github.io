@@ -240,6 +240,32 @@ if (stale.length) {
 }
 
 // ---------------------------------------------------------------------------
+// A5. 評価点と evidence の対応（2026-09-22 追加）
+//
+//   裏付けとなる evidence を1件も持たない議員に評価点を付けない、という原則を
+//   データ側で担保する。2026年9月の全件検証以前は、evidence を持たない議員
+//   445人（全781人の57%）に評価点だけが付いている状態だった。
+// ---------------------------------------------------------------------------
+{
+  const pidsWithEvidence = new Set(EVIDENCE.map((e) => e.pid));
+  for (const p of POLITICIANS) {
+    const hasEvi = pidsWithEvidence.has(p.id);
+    const hasScore = p.total !== null && p.total !== undefined;
+    if (hasScore && !hasEvi) {
+      errors.push(
+        `${p.id}（${p.name}）: evidence が1件も無いのに total=${p.total} が付いています。` +
+        `裏付けを示す evidence を追加するか、total/rank/axes を null・"" にしてください。`
+      );
+    }
+    if (!hasScore && hasEvi) {
+      errors.push(
+        `${p.id}（${p.name}）: evidence があるのに total がブランクです。評価点を算出してください。`
+      );
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
 // 出力
 // ---------------------------------------------------------------------------
 const total = EVIDENCE.filter((e) => e.cat === TARGET_CAT).length;

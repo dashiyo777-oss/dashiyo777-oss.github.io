@@ -73,6 +73,15 @@
   .hero-score-block { text-align: right; display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
   .hero-score-label { font-size: 0.6rem; color: var(--gray); letter-spacing: 0.15em; text-transform: uppercase; }
   .hero-score-num { font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 600; line-height: 1; }
+  /* 裏付け evidence が無く評価点を付けていない議員の表示 */
+  .hero-score-none { font-family: 'Noto Serif JP', serif; font-size: 1.5rem; font-weight: 600; line-height: 1.3; color: var(--gray); }
+  .score-none-large { font-family: 'Noto Serif JP', serif; font-size: 1.6rem; font-weight: 600; color: var(--gray); letter-spacing: 0.06em; }
+  .score-none-desc { font-size: 0.72rem; color: var(--gray); line-height: 1.7; margin-top: 0.6rem; }
+  .axes-none {
+    font-size: 0.75rem; color: var(--gray); line-height: 1.9; text-align: center;
+    padding: 2.4rem 1rem; border: 1px dashed rgba(136,136,136,0.28); border-radius: 8px;
+    background: rgba(136,136,136,0.04);
+  }
   .hero-score-max { font-size: 0.75rem; color: var(--gray); }
   .hero-updated { font-size: 0.62rem; color: var(--gray); margin-top: 0.4rem; }
   .nav-prev-next { max-width: 1100px; margin: 0 auto 1.5rem; padding: 0 2rem; display: flex; justify-content: space-between; gap: 1rem; }
@@ -935,18 +944,29 @@ function buildRadar(axes, container) {
 
 /* ── BUILD PAGE ── */
 function buildPage(p) {
+  // 裏付けとなる evidence を1件も持たない議員には評価点を付けていない。
+  // その場合 total / rank / axes はすべてブランクになる。
+  const scored = p.total !== null && p.total !== undefined;
+  const NO_SCORE_LABEL = '評価なし';
+  const NO_SCORE_NOTE  = '裏付けとなる資料が確認できていないため、評価点を付けていません';
+
   // ── title / OGP 動的更新
   const pageUrl = `https://dashiyo777-oss.github.io/politician.html?id=${p.id}`;
-  const ogTitle = `${p.name}（${p.party}）の評価: ${p.rank} / ${p.total}点 | 統覧 TORAN`;
-  const ogDesc  = `${p.name}は${p.party}の${p.role}。統覧TORANの総合評価: ${p.rank}（${p.total}点）。${p.comment ? p.comment.slice(0, 60) + '…' : ''}`;
-  document.title = `${p.name}（${p.party}）評価 ${p.rank} ${p.total}点 | 統覧 TORAN`;
+  const scorePhrase = scored ? `${p.rank} / ${p.total}点` : `${NO_SCORE_LABEL}（裏付け資料の確認中）`;
+  const ogTitle = `${p.name}（${p.party}）の評価: ${scorePhrase} | 統覧 TORAN`;
+  const ogDesc  = scored
+    ? `${p.name}は${p.party}の${p.role}。統覧TORANの総合評価: ${p.rank}（${p.total}点）。${p.comment ? p.comment.slice(0, 60) + '…' : ''}`
+    : `${p.name}は${p.party}の${p.role}。${NO_SCORE_NOTE}。${p.comment ? p.comment.slice(0, 60) + '…' : ''}`;
+  document.title = scored
+    ? `${p.name}（${p.party}）評価 ${p.rank} ${p.total}点 | 統覧 TORAN`
+    : `${p.name}（${p.party}）${NO_SCORE_LABEL} | 統覧 TORAN`;
   ['og-title','tw-title'].forEach(id => { const el=document.getElementById(id); if(el) el.setAttribute('content', ogTitle); });
   ['og-desc', 'tw-desc' ].forEach(id => { const el=document.getElementById(id); if(el) el.setAttribute('content', ogDesc); });
   const ogUrl = document.getElementById('og-url'); if(ogUrl) ogUrl.setAttribute('content', pageUrl);
 
   const ev = EVIDENCE.filter(e => e.pid === p.id);
-  const rc = rankColor(p.rank);
-  const sc = scoreColor(p.total);
+  const rc = scored ? rankColor(p.rank) : 'var(--gray)';
+  const sc = scored ? scoreColor(p.total) : 'var(--gray)';
   const pc = PARTY_COLORS[p.party] || '#666';
 
   // ── NEW Profile Hero
@@ -966,15 +986,15 @@ function buildPage(p) {
     p.links && p.links.wiki ? `<a class="hero-link" href="${p.links.wiki}" target="_blank" rel="noopener">📖 Wikipedia</a>` : ''
   ].join('');
 
-  const sorted2 = [...POLITICIANS].sort((a,b) => b.total - a.total);
-  const rankNum2 = sorted2.findIndex(x => x.id === p.id) + 1;
+  const sorted2 = [...POLITICIANS].filter(x => x.total !== null).sort((a,b) => b.total - a.total);
+  const rankNum2 = scored ? (sorted2.findIndex(x => x.id === p.id) + 1) : null;
 
   document.getElementById('profile-hero-v2').innerHTML = `
     <div class="profile-hero-inner">
       <div>
         <div class="hero-rank-row">
-          <span style="font-size:0.7rem;color:var(--gray);letter-spacing:0.15em;font-family:'Montserrat',sans-serif"># ${rankNum2}</span>
-          <span class="hero-rank-box" style="color:${rc};border-color:${rc}40;background:${rc}12">${p.rank}</span>
+          ${scored ? `<span style="font-size:0.7rem;color:var(--gray);letter-spacing:0.15em;font-family:'Montserrat',sans-serif"># ${rankNum2}</span>` : ''}
+          <span class="hero-rank-box" style="color:${rc};border-color:${rc}40;background:${rc}12" ${scored ? '' : `title="${NO_SCORE_NOTE}"`}>${scored ? p.rank : '—'}</span>
           <span class="hero-party-badge" style="background:${pc}">${p.party}</span>
           ${flagPills}
         </div>
@@ -990,7 +1010,7 @@ function buildPage(p) {
         <div class="hero-links">${linkPills}</div>
         <div style="margin-top:0.7rem">
           <a class="share-x-btn"
-             href="https://twitter.com/intent/tweet?text=${encodeURIComponent(p.name + '（' + p.party + '）の評価: ' + p.rank + ' / ' + p.total + '点 | 統覧 TORAN')}&url=${encodeURIComponent('https://dashiyo777-oss.github.io/politician.html?id=' + p.id)}"
+             href="https://twitter.com/intent/tweet?text=${encodeURIComponent(p.name + '（' + p.party + '）の評価: ' + scorePhrase + ' | 統覧 TORAN')}&url=${encodeURIComponent('https://dashiyo777-oss.github.io/politician.html?id=' + p.id)}"
              target="_blank" rel="noopener">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
             Xでシェア
@@ -999,8 +1019,11 @@ function buildPage(p) {
       </div>
       <div class="hero-score-block">
         <div class="hero-score-label">総合スコア</div>
-        <div class="hero-score-num" style="color:${rc}">${p.total}</div>
-        <div class="hero-score-max">/ 100</div>
+        ${scored
+          ? `<div class="hero-score-num" style="color:${rc}">${p.total}</div>
+        <div class="hero-score-max">/ 100</div>`
+          : `<div class="hero-score-none">${NO_SCORE_LABEL}</div>
+        <div class="hero-score-max">裏付け資料の確認中</div>`}
         <div class="hero-updated">最終更新 ${p.updated}</div>
       </div>
     </div>
@@ -1023,13 +1046,13 @@ function buildPage(p) {
   ].join('');
 
   // Compute rank number
-  const sorted = [...POLITICIANS].sort((a,b) => b.total - a.total);
-  const rankNum = sorted.findIndex(x => x.id === p.id) + 1;
+  const sorted = [...POLITICIANS].filter(x => x.total !== null).sort((a,b) => b.total - a.total);
+  const rankNum = scored ? (sorted.findIndex(x => x.id === p.id) + 1) : null;
 
   document.getElementById('profile-left').innerHTML = `
     <div class="profile-rank-row">
-      <span class="rank-num-large"># ${rankNum}</span>
-      <span class="rank-badge-large" style="color:${rc};border-color:${rc}30;background:${rc}12">${p.rank}</span>
+      ${scored ? `<span class="rank-num-large"># ${rankNum}</span>` : ''}
+      <span class="rank-badge-large" style="color:${rc};border-color:${rc}30;background:${rc}12">${scored ? p.rank : '—'}</span>
       <span class="party-badge" style="background:${pc}">${p.party}</span>
     </div>
     <div class="profile-name-ja">${p.name}</div>
@@ -1061,10 +1084,14 @@ function buildPage(p) {
   `;
 
   // ── Score box
-  document.getElementById('score-box').innerHTML = `
+  document.getElementById('score-box').innerHTML = scored ? `
     <div class="score-total-num" style="color:${sc}">${p.total}</div>
     <div class="score-total-label">TOTAL SCORE / 100</div>
     <div class="score-grade" style="color:${rc};border-color:${rc}30;background:${rc}12">${p.rank}</div>
+    <div class="updated-label">更新: ${p.updated}</div>
+  ` : `
+    <div class="score-none-large">${NO_SCORE_LABEL}</div>
+    <div class="score-none-desc">${NO_SCORE_NOTE}。<br>裏付けとなる一次情報が確認でき次第、評価を再開します。</div>
     <div class="updated-label">更新: ${p.updated}</div>
   `;
 
@@ -1194,9 +1221,26 @@ function buildPage(p) {
 
   // ── Radar
   const radarSvg = document.getElementById('radar-svg');
+  const axesLegend = document.getElementById('axes-legend');
+  const axesTable = document.getElementById('axes-table');
+
+  if (!scored || !p.axes) {
+    // 評価点は8軸の合計から算出している。軸ごとの評価も裏付けを伴わないため、
+    // 数値を表示せず、理由を明示する。
+    // SVG を空のまま残すと 260px の空洞ができるので、要素ごと隠す
+    if (radarSvg) { radarSvg.innerHTML = ''; radarSvg.style.display = 'none'; }
+    if (axesLegend) axesLegend.innerHTML =
+      `<div class="axes-none">${NO_SCORE_NOTE}。8つの評価軸も同じ理由で空欄にしています。</div>`;
+    if (axesTable) axesTable.innerHTML = AXES_JA.map((ax) => `
+      <tr>
+        <td class="ax-name">${ax}</td>
+        <td class="ax-bar-wrap"><div class="ax-bar-bg"></div></td>
+        <td class="ax-val" style="color:var(--gray)">—</td>
+      </tr>
+    `).join('');
+  } else {
   buildRadar(p.axes, radarSvg);
 
-  const axesLegend = document.getElementById('axes-legend');
   axesLegend.innerHTML = AXES_JA.map((ax, i) => `
     <div class="axis-item">
       <div class="axis-dot"></div>
@@ -1206,7 +1250,6 @@ function buildPage(p) {
   `).join('');
 
   // ── Axes table
-  const axesTable = document.getElementById('axes-table');
   axesTable.innerHTML = AXES_JA.map((ax, i) => {
     const pct = (p.axes[i] / 5) * 100;
     const col = p.axes[i] >= 4 ? '#4ac776' : p.axes[i] >= 3 ? '#4a8fd4' : p.axes[i] >= 2 ? '#f0a030' : '#e6384f';
@@ -1220,6 +1263,7 @@ function buildPage(p) {
       </tr>
     `;
   }).join('');
+  }
 
   // ── Stance grid
   const stanceGrid = document.getElementById('stance-grid');
