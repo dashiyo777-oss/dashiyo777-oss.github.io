@@ -540,10 +540,10 @@ const POLITICIANS = [
     total:65, rank:"C",
     axes:[4,3,4,4,2,4,4,1],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"○",food:"○",semi:"○"},
-    plus:"防衛大臣として女性2人目に就任。ひとり親控除創設（党内保守派の反発を押し切り2019年税制改正で実現）、LGBT理解増進法推進、女性活躍・婚前氏続称の提唱など「しなやかな保守」路線で党内世論を動かす実績。政調会長2期を務め自民党政策立案を牽引。整備新幹線等鉄道調査会長として北陸新幹線延伸を推進。", minus:"防衛相在任中の南スーダンPKO日報問題（隠蔽疑惑）で引責辞任。安倍派政治資金パーティー不記載問題で党役職停止1年の処分を受けた。",
-    comment:"「しなやかな保守」を掲げ、ひとり親控除・LGBT理解増進法など党内保守派の反発を押し切って実現した実績は評価に値する。防衛相辞任と安倍派不記載という二重の倫理問題が重く政治倫理点は低いが、政策実現の実績を加味して中堅評価。",
+    plus:"防衛大臣として女性2人目に就任。ひとり親控除創設（党内保守派の反発を押し切り2019年税制改正で実現）、LGBT理解増進法推進、女性活躍・婚前氏続称の提唱など「しなやかな保守」路線で党内世論を動かす実績。政調会長2期を務め自民党政策立案を牽引。整備新幹線等鉄道調査会長として北陸新幹線延伸を推進。", minus:"防衛相在任中の南スーダンPKO日報問題（隠蔽疑惑）で引責辞任。安倍派の政治資金収支報告書に不記載があり、2024年2月に自民党が公表した不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"「しなやかな保守」を掲げ、ひとり親控除・LGBT理解増進法など党内保守派の反発を押し切って実現した実績は評価に値する。防衛相辞任と、安倍派の政治資金収支報告書不記載という二重の倫理問題が重く政治倫理点は低いが、政策実現の実績を加味して中堅評価。",
     links:{hp:"https://inada-tomomi.com",tw:"https://x.com/inada_tomomi",wiki:"https://ja.wikipedia.org/wiki/稲田朋美",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P050", name:"稲葉 大輔", reading:"いなば だいすけ", party:"自民党", role:"衆議院議員",
@@ -628,10 +628,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    plus:"地方首長・地方議会の経験。経産政務官等の経験に基づく四国の一次産業振興。", minus:"自民党派閥の資金不記載問題に関与した責任による、党からの処分履歴。",
-    comment:"元愛媛県議、元四国中央市長。経産政務官などを経験し地域経済や災害対策を推進。一方で、安倍派の一連の政治資金収支報告書不記載問題で戒告処分を受け、道義的信頼の回復が課題となっている。",
+    plus:"地方首長・地方議会の経験。経産政務官等の経験に基づく四国の一次産業振興。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"元愛媛県議、元四国中央市長。経産政務官などを経験し地域経済や災害対策を推進。一方で、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり、道義的信頼の回復が課題となっている。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E5%8E%9F%20%E5%B7%A7%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/takumi_ihara",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E5%8E%9F%E5%B7%A7",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P058", name:"井原 隆", reading:"いはら ゆたか", party:"自民党", role:"衆議院議員",
@@ -955,13 +955,13 @@ const POLITICIANS = [
   {
     id:"P087", name:"大塚 拓", reading:"おおつか たく", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"埼玉9", status:"現職", gender:"男", age:null,
-    total:72, rank:"B-",
-    axes:[3,4,4,4,3,4,3,4],
+    total:65, rank:"C",
+    axes:[3,4,4,4,2,4,3,2],
     stances:{tax_cut:"×",active_fiscal:"×",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"○",renewable:"◎",nuclear:"△",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"◎"},
-    plus:"圧倒的な発信力と知名度。環境相として脱炭素目標の法制化を主導。", minus:"労働市場や規制改革への姿勢が、慎重派や従来支持層から賛否を呼ぶ点。",
-    comment:"環境大臣や党選対委員長を歴任。ライドシェア解禁や労働市場の流動化を伴う改革見直しなど、中堅の改革派としての立ち位置を狙う。派閥に属さない立場から不記載問題への厳格な処分を求めた。",
+    plus:"圧倒的な発信力と知名度。環境相として脱炭素目標の法制化を主導。", minus:"労働市場や規制改革への姿勢が、慎重派や従来支持層から賛否を呼ぶ点。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"環境大臣や党選対委員長を歴任。ライドシェア解禁や労働市場の流動化を伴う改革見直しなど、中堅の改革派としての立ち位置を狙う。派閥に属さない立場から不記載問題への厳格な処分を求めた。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%A4%A7%E5%A1%9A%20%E6%8B%93%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/otsukataku",wiki:"https://ja.wikipedia.org/wiki/大塚拓",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P088", name:"大西 洋平", reading:"おおにし ようへい", party:"自民党", role:"衆議院議員",
@@ -1112,10 +1112,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"△",defense:"○",econ_sec:"△",immigration:"△",renewable:"○",nuclear:"△",expo:"△",ir:"△",mynumber:"△",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"△"},
-    plus:"東京選出の自民党議員として安全保障・外交委員会等に参加。", minus:"倫理・説明責任面での不安が評価を下げる。独自の政策発信が限定的。",
-    comment:"自民党議員として外交安保分野に関わるが、倫理面での懸念から低評価となる。",
+    plus:"東京選出の自民党議員として安全保障・外交委員会等に参加。", minus:"倫理・説明責任面での不安が評価を下げる。独自の政策発信が限定的。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
+    comment:"自民党議員として外交安保分野に関わるが、倫理面での懸念から低評価となる。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%B0%8F%E7%94%B0%E5%8E%9F%20%E6%BD%94%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/odawarakiyoshi",wiki:"https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%94%B0%E5%8E%9F%E6%BD%94",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P102", name:"落合 貴之", reading:"おちあい たかゆき", party:"中道改革連合", role:"衆議院議員",
@@ -1629,10 +1629,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    plus:"地方自治体出身の経歴。港湾整備、激甚災害からの復旧や一次産業保護。", minus:"所属した派閥の政治資金問題への関与に伴う、党からの処分（戒告）による懸念。",
-    comment:"青森県庁出身。国交政務官や防衛政務官を経験。青森の防除対策や水産振興に注力するが、安倍派の一連の不記載問題において戒告処分を受け、道義的信頼回復の最中にある。",
+    plus:"地方自治体出身の経歴。港湾整備、激甚災害からの復旧や一次産業保護。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"青森県庁出身。国交政務官や防衛政務官を経験。青森の防除対策や水産振興に注力するが、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり、道義的信頼回復の最中にある。",
     links:{hp:"https://www.google.com/search?q=%E6%9C%A8%E6%9D%91%20%E6%AC%A1%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/jiro_kimura_",wiki:"https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9D%91%E6%AC%A1%E9%83%8E",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P149", name:"金城 泰邦", reading:"きんじょう やすくに", party:"中道改革連合", role:"衆議院議員",
@@ -2322,10 +2322,10 @@ const POLITICIANS = [
     total:60, rank:"C-",
     axes:[3,4,3,3,2,4,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"三重県知事3期の実績、地方自治行政やデジタル化、災害対策への高い実務手腕。", minus:"安倍派の政治資金不記載問題に関与したことによる、党からの役職停止処分。",
-    comment:"通産官僚や三重県知事を経て国政へ。知事時代には地方創生やデジタルガバナンスで実績を残した。一方で、安倍派の不記載問題に絡み党から処分を受け、信頼回復に努めている。",
+    plus:"三重県知事3期の実績、地方自治行政やデジタル化、災害対策への高い実務手腕。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"通産官僚や三重県知事を経て国政へ。知事時代には地方創生やデジタルガバナンスで実績を残した。一方で、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり、信頼回復に努めている。",
     links:{hp:"https://www.google.com/search?q=%E9%88%B4%E6%9C%A8%20%E8%8B%B1%E6%95%AC%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/鈴木英敬",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P212", name:"鈴木 馨祐", reading:"すずき けいすけ", party:"自民党", role:"衆議院議員",
@@ -2355,10 +2355,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"総務大臣等の経験。地方自治体の行政デジタル化や、過疎地支援への着実な取り組み。", minus:"安倍派の政治資金不記載問題に関与したことによる、党からの役職停止処分。",
-    comment:"総務大臣などを歴任。マイナンバーカードの活用推進や過疎地域のインフラ強靱化を担った。一方で、安倍派の一連の不記載問題により党から役職停止処分を受け、信頼回復に努めている。",
+    plus:"総務大臣等の経験。地方自治体の行政デジタル化や、過疎地支援への着実な取り組み。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"総務大臣などを歴任。マイナンバーカードの活用推進や過疎地域のインフラ強靱化を担った。一方で、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり、信頼回復に努めている。",
     links:{hp:"https://www.google.com/search?q=%E9%88%B4%E6%9C%A8%20%E6%B7%B3%E5%8F%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/jyunji_suzuki",wiki:"https://ja.wikipedia.org/wiki/%E9%88%B4%E6%9C%A8%E6%B7%B3%E5%8F%B8",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P215", name:"鈴木 貴子", reading:"すずき たかこ", party:"自民党", role:"衆議院議員",
@@ -2830,10 +2830,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"総務政務官等の経験。大阪・関西圏の防災対策や地域活動への取り組み。", minus:"安倍派の政治資金不記載問題に関与したことによる党からの戒告処分歴。",
-    comment:"総務政務官などを経験。近畿圏の土木強靱化や地域経済の支援を訴える。一方で、清和政策研究会（安倍派）の不記載に関与した責任から戒告処分を受け信頼回復の途上にある。一部指標は党方針より推定。",
+    plus:"総務政務官等の経験。大阪・関西圏の防災対策や地域活動への取り組み。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"総務政務官などを経験。近畿圏の土木強靱化や地域経済の支援を訴える。一方で、清和政策研究会（安倍派）の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり信頼回復の途上にある。一部指標は党方針より推定。",
     links:{hp:"https://www.google.com/search?q=%E8%B0%B7%E5%B7%9D%20%E3%81%A8%E3%82%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/谷川とむ",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P256", name:"田野瀬 太道", reading:"たのせ たいどう", party:"自民党", role:"衆議院議員",
@@ -3280,13 +3280,13 @@ const POLITICIANS = [
   {
     id:"P295", name:"中根 一幸", reading:"なかね かずゆき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,3,4,4,3,4,3,3],
+    total:62, rank:"C-",
+    axes:[3,3,4,4,2,4,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"×",food:"○",semi:"○"},
-    plus:"外務副大臣・内閣府副大臣・衆院国土交通委員長を歴任。安倍内閣で外交の最前線に立ち日本のプレゼンス向上に貢献。自民党主要部会長（総務・国土交通・内閣）複数歴任で政策立案に深く関与。", minus:"外交の成果が見えにくく、地元インフラ整備が中心の地域型政治家の側面も。少子化・社会保障分野での独自政策立案は限定的。",
-    comment:"第2・3次安倍内閣で外務大臣政務官、第3次改造・第4次安倍内閣で外務副大臣を歴任し、外交最前線で日本の国際プレゼンス強化に貢献。内閣府副大臣・衆院国土交通委員長として防災・インフラにも注力。総務・国土交通・内閣の各部会長を歴任する政策通の中堅議員。",
+    plus:"外務副大臣・内閣府副大臣・衆院国土交通委員長を歴任。安倍内閣で外交の最前線に立ち日本のプレゼンス向上に貢献。自民党主要部会長（総務・国土交通・内閣）複数歴任で政策立案に深く関与。", minus:"外交の成果が見えにくく、地元インフラ整備が中心の地域型政治家の側面も。少子化・社会保障分野での独自政策立案は限定的。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
+    comment:"第2・3次安倍内閣で外務大臣政務官、第3次改造・第4次安倍内閣で外務副大臣を歴任し、外交最前線で日本の国際プレゼンス強化に貢献。内閣府副大臣・衆院国土交通委員長として防災・インフラにも注力。総務・国土交通・内閣の各部会長を歴任する政策通の中堅議員。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
     links:{tw:"",hp:"https://nakane-kazuyuki.com",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%AD%E6%A0%B9%E4%B8%80%E5%B9%B8",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P296", name:"中野 英幸", reading:"なかの ひでゆき", party:"自民党", role:"衆議院議員",
@@ -3368,13 +3368,13 @@ const POLITICIANS = [
   {
     id:"P303", name:"中山 泰秀", reading:"なかやま やすひで", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[3,4,4,4,3,4,3,3],
+    total:65, rank:"C",
+    axes:[3,4,4,4,2,4,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"◎",food:"○",semi:"◎"},
-    plus:"防衛副大臣や外務政務官の経験。サイバー防衛や日米抑止力強化の強い発信力。", minus:"安全保障分野に特化する反面、現下の即効的な家計減税等の独自提示が地味な点。",
-    comment:"防衛副大臣などを歴任。サイバー空間における安全保障能力の構築や安全保障関連3文書の改定議論に関与。地政学的リスクを捉えた防衛生産・技術基盤の強靱化を訴える国際外交・安保派の中堅。",
+    plus:"防衛副大臣や外務政務官の経験。サイバー防衛や日米抑止力強化の強い発信力。", minus:"安全保障分野に特化する反面、現下の即効的な家計減税等の独自提示が地味な点。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"防衛副大臣などを歴任。サイバー空間における安全保障能力の構築や安全保障関連3文書の改定議論に関与。地政学的リスクを捉えた防衛生産・技術基盤の強靱化を訴える国際外交・安保派の中堅。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%AD%E5%B1%B1%20%E6%B3%B0%E7%A7%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/中山泰秀",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
     {
     id:"P304", name:"鍋島 勢理", reading:"なべしま せり", party:"国民民主党", role:"衆議院議員",
@@ -3580,10 +3580,10 @@ const POLITICIANS = [
     total:55, rank:"D",
     axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"国土交通政務官等の経験。中京圏の道路網改修、港湾防災インフラへの注力。", minus:"派閥の政治資金不記載問題に関与したことによる党からの役職停止処分履歴。",
-    comment:"建設・不動産業界の実務を経て国政へ。国交政務官や内閣府政務官を歴任。一方で、旧二階派のパーティー収入をめぐる不記載により役職停止処分を受け信頼回復の途上にある。一部指標は党方針から推定。",
+    plus:"国土交通政務官等の経験。中京圏の道路網改修、港湾防災インフラへの注力。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"建設・不動産業界の実務を経て国政へ。国交政務官や内閣府政務官を歴任。一方で、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり信頼回復の途上にある。一部指標は党方針から推定。",
     links:{hp:"https://www.google.com/search?q=%E6%A0%B9%E6%9C%AC%20%E5%B9%B8%E5%85%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/根本幸典",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P323", name:"野田 聖子", reading:"のだ せいこ", party:"自民党", role:"衆議院議員",
@@ -3852,13 +3852,13 @@ const POLITICIANS = [
   {
     id:"P347", name:"平沢 勝栄", reading:"ひらさわ かつえい", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"東京17", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,3,4,4,3,4,3,3],
+    total:60, rank:"C-",
+    axes:[3,3,4,4,2,4,3,1],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"×",food:"○",semi:"○"},
-    plus:"北朝鮮拉致問題特別委員長・拉致議連事務局長として長年被害者救済に尽力。警察庁保安課長時代にパチンコ業界への全国共通プリペイドカード導入で脱税・暴力団資金遮断を実現。第11代復興大臣として被災地復興を主導。", minus:"1996年初当選から30年近い長期議員だが、経済・財政分野での独自の国家政策立案は限定的。復興大臣への初入閣が70代近くと遅かった。",
-    comment:"1996年初当選の長期議員で元警察官僚。保安課長時代にパチンコ業界への全国共通プリペイドカード導入で10兆円規模の不透明資金の透明化・暴力団資金遮断を実現した実績は際立つ。拉致問題特委委員長として被害者家族支援に長年尽力。菅内閣で第11代復興大臣として初入閣し被災地支援を主導。",
+    plus:"北朝鮮拉致問題特別委員長・拉致議連事務局長として長年被害者救済に尽力。警察庁保安課長時代にパチンコ業界への全国共通プリペイドカード導入で脱税・暴力団資金遮断を実現。第11代復興大臣として被災地復興を主導。", minus:"1996年初当選から30年近い長期議員だが、経済・財政分野での独自の国家政策立案は限定的。復興大臣への初入閣が70代近くと遅かった。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
+    comment:"1996年初当選の長期議員で元警察官僚。保安課長時代にパチンコ業界への全国共通プリペイドカード導入で10兆円規模の不透明資金の透明化・暴力団資金遮断を実現した実績は際立つ。拉致問題特委委員長として被害者家族支援に長年尽力。菅内閣で第11代復興大臣として初入閣し被災地支援を主導。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
     links:{tw:"",hp:"https://hirasawa.net",wiki:"https://ja.wikipedia.org/wiki/%E5%B9%B3%E6%B2%A2%E5%8B%9D%E6%A0%84",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P348", name:"平沼 正二郎", reading:"ひらぬま しょうじろう", party:"自民党", role:"衆議院議員",
@@ -4182,13 +4182,13 @@ const POLITICIANS = [
   {
     id:"P377", name:"細田 健一", reading:"ほそだ けんいち", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・東海", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,4,3,4,3,3,4,3],
+    total:62, rank:"C-",
+    axes:[3,4,3,4,2,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"経産省出身。経済産業政務官として脱炭素や中小企業支援の実務を牽引。", minus:"実務調整派の側面が強く、マクロ経済構造を抜本的に変える独自発信は地味。",
-    comment:"経産官僚を経て国政へ。経産政務官等を歴任し、エネルギー政策や中小企業のDX支援、事業承継税制の円滑な運用などで安定した実務能力を示す。",
+    plus:"経産省出身。経済産業政務官として脱炭素や中小企業支援の実務を牽引。", minus:"実務調整派の側面が強く、マクロ経済構造を抜本的に変える独自発信は地味。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"経産官僚を経て国政へ。経産政務官等を歴任し、エネルギー政策や中小企業のDX支援、事業承継税制の円滑な運用などで安定した実務能力を示す。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E7%B4%B0%E7%94%B0%20%E5%81%A5%E4%B8%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/細田健一",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P378", name:"細野 豪志", reading:"ほその ごうし", party:"自民党", role:"衆議院議員（元環境大臣）",
@@ -4292,13 +4292,13 @@ const POLITICIANS = [
   {
     id:"P387", name:"松野 博一", reading:"まつの ひろかず", party:"自民党", role:"衆議院議員（元官房長官）",
     chamber:"衆議院", district:"千葉3", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,4,3,4,3,3,4,3],
+    total:60, rank:"C-",
+    axes:[3,4,3,4,2,3,4,1],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"官房長官を歴任。圧倒的な行政統括力と党内調整の知見。危機管理への対応実績。", minus:"安倍派の資金問題に関与した責任を問われ、党からの重い処分による信頼喪失。",
-    comment:"官房長官、経済産業大臣などを歴任した党の重鎮。政権の実務中枢を長く担い、行政統括や外交調整で高い成果を残した。しかし、派閥の政治資金処理問題で重い処分を受け、倫理的信頼が大きく低下した。",
+    plus:"官房長官を歴任。圧倒的な行政統括力と党内調整の知見。危機管理への対応実績。", minus:"安倍派の資金問題に関与した責任を問われ、党からの重い処分による信頼喪失。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
+    comment:"官房長官、経済産業大臣などを歴任した党の重鎮。政権の実務中枢を長く担い、行政統括や外交調整で高い成果を残した。しかし、派閥の政治資金処理問題で重い処分を受け、倫理的信頼が大きく低下した。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E6%9D%BE%E9%87%8E%20%E5%8D%9A%E4%B8%80%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/松野博一",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P388", name:"松本 泉", reading:"まつもと いずみ", party:"自民党", role:"衆議院議員",
@@ -4347,13 +4347,13 @@ const POLITICIANS = [
   {
     id:"P392", name:"丸川 珠代", reading:"まるかわ たまよ", party:"自民党", role:"衆議院議員（元五輪担当相）",
     chamber:"衆議院", district:"東京7", status:"現職", gender:"女", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"五輪担当相等を歴任。女性活躍推進やメディア対応における発信力。", minus:"閣僚在任時の発言を巡る波紋や、組織運営上の説明責任に関する批判。",
-    comment:"五輪担当相や女性活躍担当相を歴任。組織のマネジメントや広報戦略に強みを持つが、過去の発言を巡り説明責任が問われた経緯があり、政治倫理面で慎重な評価を要する。",
+    plus:"五輪担当相等を歴任。女性活躍推進やメディア対応における発信力。", minus:"閣僚在任時の発言を巡る波紋や、組織運営上の説明責任に関する批判。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"五輪担当相や女性活躍担当相を歴任。組織のマネジメントや広報戦略に強みを持つが、過去の発言を巡り説明責任が問われた経緯があり、政治倫理面で慎重な評価を要する。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%B8%E5%B7%9D%20%E7%8F%A0%E4%BB%A3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/丸川珠代",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P393", name:"丸田 康一郎", reading:"まるた こういちろう", party:"自民党", role:"衆議院議員",
@@ -4504,10 +4504,10 @@ const POLITICIANS = [
     total:57, rank:"D",
     axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"農林水産大臣等を歴任。農業政策や地域経済振興における実務的な調整力に強み。", minus:"安倍派の政治資金不記載問題に関与したことによる、党からの役職停止処分等の影響。",
-    comment:"農水相などを歴任。地方の農業基盤強化やインフラ強靱化に手堅い貢献を見せるが、派閥の不記載問題で処分を受け信頼回復に努めている。一部指標は党方針から推定。",
+    plus:"農林水産大臣等を歴任。農業政策や地域経済振興における実務的な調整力に強み。", minus:"安倍派の政治資金収支報告書に不記載があり、2024年2月の不記載議員リストに掲載された（同年4月の党処分の対象にはなっていない）。",
+    comment:"農水相などを歴任。地方の農業基盤強化やインフラ強靱化に手堅い貢献を見せるが、安倍派の政治資金収支報告書不記載が2024年2月の党公表リストで明らかになり信頼回復に努めている。一部指標は党方針から推定。",
     links:{hp:"https://www.google.com/search?q=%E5%AE%AE%E4%B8%8B%20%E4%B8%80%E9%83%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/宮下一郎",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P407", name:"向山 淳", reading:"むこうやま じゅん", party:"自民党", role:"衆議院議員",
@@ -4710,13 +4710,13 @@ const POLITICIANS = [
   {
     id:"P425", name:"簗 和生", reading:"やな かずお", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"比例・北関東", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域インフラの維持管理や、一次産業振興における地道な政策調整能力。", minus:"国家規模での大規模な独自減税発信などは慎重な立ち位置。",
-    comment:"自民党所属。地域経済の活性化や防災対策において手堅い実務を行う。客観データが限定的なため、党の基本傾向をベースとした推定配置。",
+    plus:"地域インフラの維持管理や、一次産業振興における地道な政策調整能力。", minus:"国家規模での大規模な独自減税発信などは慎重な立ち位置。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
+    comment:"自民党所属。地域経済の活性化や防災対策において手堅い実務を行う。客観データが限定的なため、党の基本傾向をベースとした推定配置。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E7%B0%97%20%E5%92%8C%E7%94%9F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/簗和生",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P426", name:"山岡 達丸", reading:"やまおか たつまる", party:"中道改革連合", role:"衆議院議員",
@@ -5073,13 +5073,13 @@ const POLITICIANS = [
   {
     id:"P459", name:"和田 義明", reading:"わだ よしあき", party:"自民党", role:"衆議院議員",
     chamber:"衆議院", district:"北海道5", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"教育現場の経験を活かした文教政策や青少年の健全育成への関心。", minus:"かつての教育問題への熱意と比べ、国会全体をリードする法案実績は発展途上。",
-    comment:"元教員。教育分野に高い知見を持ち、党内論議で発言力がある。",
+    plus:"教育現場の経験を活かした文教政策や青少年の健全育成への関心。", minus:"かつての教育問題への熱意と比べ、国会全体をリードする法案実績は発展途上。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"元教員。教育分野に高い知見を持ち、党内論議で発言力がある。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%92%8C%E7%94%B0%20%E7%BE%A9%E6%98%8E%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/和田義明",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P460", name:"渡辺 藍理", reading:"わたなべ あいり", party:"参政党", role:"衆議院議員",
@@ -5736,13 +5736,13 @@ const POLITICIANS = [
   {
     id:"P528", name:"岡田 直樹", reading:"おかだ なおき", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"石川", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"国家公安委員長等を歴任し、危機管理や政策調整における安定した管理能力。", minus:"実務管理・調整重視のため、抜本的な経済改革の発信は控えめ。",
-    comment:"内閣府特命担当大臣等を歴任。安定した行政運営と調整力を持つ重鎮。",
+    plus:"国家公安委員長等を歴任し、危機管理や政策調整における安定した管理能力。", minus:"実務管理・調整重視のため、抜本的な経済改革の発信は控えめ。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"内閣府特命担当大臣等を歴任。安定した行政運営と調整力を持つ重鎮。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%B2%A1%E7%94%B0%20%E7%9B%B4%E6%A8%B9%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/岡田直樹",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P529", name:"小川 克巳", reading:"おがわ かつみ", party:"自民党", role:"参議院議員",
@@ -5879,13 +5879,13 @@ const POLITICIANS = [
     {
     id:"P542", name:"加田 裕之", reading:"かだ ひろゆき", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"兵庫", status:"現職", gender:"男", age:null,
-    total:57, rank:"D",
-    axes:[3,3,2,3,3,3,3,3],
+    total:52, rank:"D",
+    axes:[3,3,2,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"◎",semi:"○"},
-    plus:"兵庫県議4期16年（副議長・農政環境委員長等）と法務大臣政務官の実績。経産委理事として産業競争力強化・レアアース調達多角化等の政策に関与。物価高や農業対策を精力的に訴える地域密着型議員。", minus:"安保分野での独自政策が見えない。国政での政策発信力・存在感が地方比較でやや薄い。",
-    comment:"阪神・淡路大震災の取材経験から政治を志し、兵庫県議4期16年（副議長）を経て参院へ。法務大臣政務官として法整備に携わり、経産委理事として産業競争力強化・レアアース調達多角化等の政策を推進。農業・物価高対策にも精力的に取り組む。",
+    plus:"兵庫県議4期16年（副議長・農政環境委員長等）と法務大臣政務官の実績。経産委理事として産業競争力強化・レアアース調達多角化等の政策に関与。物価高や農業対策を精力的に訴える地域密着型議員。", minus:"安保分野での独自政策が見えない。国政での政策発信力・存在感が地方比較でやや薄い。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"阪神・淡路大震災の取材経験から政治を志し、兵庫県議4期16年（副議長）を経て参院へ。法務大臣政務官として法整備に携わり、経産委理事として産業競争力強化・レアアース調達多角化等の政策を推進。農業・物価高対策にも精力的に取り組む。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{tw:"https://x.com/kadahiroyuki",hp:"https://kadahiroyuki.com",wiki:"https://ja.wikipedia.org/wiki/%E5%8A%A0%E7%94%B0%E8%A3%95%E4%B9%8B",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P543", name:"嘉田 由紀子", reading:"かだ ゆきこ", party:"日本維新の会", role:"参議院議員",
@@ -6542,13 +6542,13 @@ const POLITICIANS = [
   {
     id:"P608", name:"末松 信介", reading:"すえまつ しんすけ", party:"自民党", role:"参議院議員（元文部科学大臣）",
     chamber:"参議院", district:"兵庫", status:"現職", gender:"男", age:null,
-    total:67, rank:"C+",
-    axes:[3,4,3,4,3,3,4,3],
+    total:62, rank:"C-",
+    axes:[3,4,3,4,2,3,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"文部科学大臣等を歴任。教育行政の安定した運用実務。", minus:"調整・実務派の重鎮であり、国家規模での抜本的な経済改革発信は保守的。",
-    comment:"文科大臣などを歴任。教育行政や地方の課題解決で着実な貢献。",
+    plus:"文部科学大臣等を歴任。教育行政の安定した運用実務。", minus:"調整・実務派の重鎮であり、国家規模での抜本的な経済改革発信は保守的。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"文科大臣などを歴任。教育行政や地方の課題解決で着実な貢献。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E6%9C%AB%E6%9D%BE%20%E4%BF%A1%E4%BB%8B%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/末松信介",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P609", name:"杉 久武", reading:"すぎ ひさたけ", party:"公明党", role:"参議院議員",
@@ -7061,13 +7061,13 @@ const POLITICIANS = [
   {
     id:"P665", name:"橋本 聖子", reading:"はしもと せいこ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
-    total:67, rank:"C+",
-    axes:[4,3,3,4,3,3,4,3],
+    total:60, rank:"C-",
+    axes:[4,3,3,4,2,3,4,1],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"スポーツ庁長官、東京五輪・パラリンピック担当相等の歴任による高い行政管理能力。", minus:"過去の大規模行事担当における調整手法等について評価が分かれる面がある。",
-    comment:"スポーツ振興や大型行事のマネジメントで豊富な行政実績を持つ。",
+    plus:"スポーツ庁長官、東京五輪・パラリンピック担当相等の歴任による高い行政管理能力。", minus:"過去の大規模行事担当における調整手法等について評価が分かれる面がある。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
+    comment:"スポーツ振興や大型行事のマネジメントで豊富な行政実績を持つ。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E6%A9%8B%E6%9C%AC%20%E8%81%96%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/橋本聖子",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P667", name:"長谷川 岳", reading:"はせがわ がく", party:"自民党", role:"参議院議員",
@@ -7349,13 +7349,13 @@ const POLITICIANS = [
   {
     id:"P694", name:"堀井 巌", reading:"ほりい いわお", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"奈良", status:"現職", gender:"男", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,3,3,3,3,3,3],
+    total:55, rank:"D",
+    axes:[3,3,3,3,2,3,3,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"外交・防衛分野での安定的な実務能力と党内調整。", minus:"大規模な政策先導の実績は発展途上。",
-    comment:"自民党所属。外交防衛関連の実務を支える。",
+    plus:"外交・防衛分野での安定的な実務能力と党内調整。", minus:"大規模な政策先導の実績は発展途上。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"自民党所属。外交防衛関連の実務を支える。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%A0%80%E4%BA%95%20%E5%B7%8C%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/堀井巌",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P695", name:"本田 顕子", reading:"ほんだ あきこ", party:"自民党", role:"参議院議員",
@@ -7572,13 +7572,13 @@ const POLITICIANS = [
   {
     id:"P722", name:"宮本 周司", reading:"みやもと しゅうじ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"石川", status:"現職", gender:"男", age:null,
-    total:62, rank:"C-",
-    axes:[3,4,3,3,3,3,3,3],
+    total:57, rank:"D",
+    axes:[3,4,3,3,2,3,3,2],
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"商工分野の実務経験を活かし、中小企業政策や地方経済の活性化に貢献。", minus:"国家規模の大規模立法を主導する突破力は発展途上。",
-    comment:"自民党所属。実務的な経済政策立案に関与し、地域産業の声に耳を傾ける。",
+    plus:"商工分野の実務経験を活かし、中小企業政策や地方経済の活性化に貢献。", minus:"国家規模の大規模立法を主導する突破力は発展途上。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
+    comment:"自民党所属。実務的な経済政策立案に関与し、地域産業の声に耳を傾ける。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止6か月の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%AE%AE%E6%9C%AC%20%E5%91%A8%E5%8F%B8%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/宮本周司",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P723", name:"村田 享子", reading:"むらた きょうこ", party:"立憲民主党", role:"参議院議員",
@@ -7685,13 +7685,13 @@ const POLITICIANS = [
   {
     id:"P735", name:"山田 宏", reading:"やまだ ひろし", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
-    total:70, rank:"B-",
-    axes:[3,4,4,4,3,4,3,3],
+    total:65, rank:"C",
+    axes:[3,4,4,4,2,4,3,2],
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"◎",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"◎",food:"○",semi:"○"},
-    plus:"外交・安全保障分野での強硬な姿勢と、論理的な政策発信。", minus:"主張が先鋭的であり、他会派との調整においては軋轢を生む場合がある。",
-    comment:"保守論客として防衛・外交を重視する。国益を前面に出した論理的な議論を展開。",
+    plus:"外交・安全保障分野での強硬な姿勢と、論理的な政策発信。", minus:"主張が先鋭的であり、他会派との調整においては軋轢を生む場合がある。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
+    comment:"保守論客として防衛・外交を重視する。国益を前面に出した論理的な議論を展開。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から戒告の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E7%94%B0%20%E5%AE%8F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山田宏",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P736", name:"山田 吉彦", reading:"やまだ よしひこ", party:"国民民主党", role:"参議院議員",
@@ -7707,13 +7707,13 @@ const POLITICIANS = [
   {
     id:"P737", name:"山谷 えり子", reading:"やまたに えりこ", party:"自民党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
-    total:60, rank:"C-",
-    axes:[3,3,4,3,2,4,3,2],
+    total:57, rank:"D",
+    axes:[3,3,4,3,2,4,3,1],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"◎",econ_sec:"○",immigration:"×",renewable:"△",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"×",foreign:"○",food:"○",semi:"○"},
-    plus:"拉致問題解決への強い執念と、保守的な価値観に基づく外交・安全保障政策での一貫した姿勢。", minus:"主張が保守的で強硬なため、リベラル層からの反発や、包括的な合意形成が難しい場面がある。",
-    comment:"元国家公安委員長。保守政治家として、拉致問題や日本の伝統・文化を守る活動を精力的に行っている。外交・防衛分野での発信力には定評がある。",
+    plus:"拉致問題解決への強い執念と、保守的な価値観に基づく外交・安全保障政策での一貫した姿勢。", minus:"主張が保守的で強硬なため、リベラル層からの反発や、包括的な合意形成が難しい場面がある。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
+    comment:"元国家公安委員長。保守政治家として、拉致問題や日本の伝統・文化を守る活動を精力的に行っている。外交・防衛分野での発信力には定評がある。安倍派等の政治資金収支報告書不記載をめぐり、2024年4月4日に自由民主党の党紀委員会から役職停止1年の処分を受けた。",
     links:{hp:"https://www.google.com/search?q=%E5%B1%B1%E8%B0%B7%20%E3%81%88%E3%82%8A%E5%AD%90%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/山谷えり子",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.09", survey:"評価済"
   },
   {
     id:"P739", name:"山中 泉", reading:"やまなか せん", party:"参政党", role:"参議院議員",
@@ -8717,7 +8717,7 @@ const EVIDENCE = [
   {id:"E0068", pid:"P046", cat:"実績", sub:"経済政策", summary:"首相補佐官として国内の起業・ベンチャー支援を推進", detail:"岸田内閣の首相補佐官等として、スタートアップ育成5か年計画の策定を実務面で支え、リスクマネーの供給拡大や規制緩和による新産業創出の土台構築に貢献した。", src:"首相官邸・内閣官房政策資料", url:"", rel:"econ_sec", impact:"中", date:"2022-11"},
   {id:"E0069", pid:"P047", cat:"問題・疑惑", sub:"政治倫理", summary:"特定商取引法違反企業をめぐる関連報道と厳重注意処分", detail:"行政処分を受けた民間企業の関連集会等での講演や、研究への関与が報じられ、日本維新の会本部から口頭での厳重注意処分を受けた。", src:"日本維新の会公式発表・報道記録", url:"", rel:"discipline", impact:"高", date:"2021-12"},
   {id:"E0070", pid:"P048", cat:"問題・疑惑", sub:"政治資金問題", summary:"派閥の政治資金パーティー不記載に伴う党内処分", detail:"志帥会（二階派）の資金還流問題に絡み、自身の関連政治団体における収支報告書への不記載が指摘され、自由民主党より党役職停止等の処分を受けた。", src:"自由民主党党紀委員会処分決定通達", url:"", rel:"discipline", impact:"中", date:"2024-04"},
-  {id:"E0071", pid:"P049", cat:"問題・疑惑", sub:"政治資金問題", summary:"安倍派の資金不記載問題による党役職停止1年処分", detail:"清和政策研究会（安倍派）のパーティー収入還流に関し、収支報告書への多額の不記載が判明。党紀委員会から役職停止1年の処分を下された。", src:"自由民主党党紀委員会公式発表", url:"", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0071", pid:"P049", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0072", pid:"P049", cat:"実績", sub:"子育て・税制", summary:"党内保守派の反発を押し切りひとり親控除を創設（2019年税制改正）", detail:"自民党内の保守派議員が「婚外子優遇」として強く反発する中、稲田朋美が旗振り役となりひとり親世帯向け所得控除（ひとり親控除）の創設を主導。2019年度税制改正大綱に盛り込まれ、同年末に正式決定。子育て支援の公平性確保という観点から保守側の論理を超えた政策実現を示した。", src:"朝日新聞・Wikipedia", url:"https://ja.wikipedia.org/wiki/稲田朋美", rel:"国民生活改善", impact:"中", date:"2019-12"},
   {id:"E0073", pid:"P049", cat:"実績", sub:"LGBT・多様性", summary:"LGBT理解増進法の制定推進・自民党内の賛成派を牽引（2023年）", detail:"2023年の通常国会でLGBT理解増進法の成立に向け、自民党内で推進派の中心的存在として活動。党内保守派の抵抗を受けながらも超党派での議論をリードし、同法が同年6月に成立した。女性活躍や婚前氏続称（選択的夫婦別姓に類する提唱）も訴え、保守政党内での多様性政策推進者として存在感を示した。", src:"朝日新聞・Wikipedia", url:"https://ja.wikipedia.org/wiki/稲田朋美", rel:"公共性", impact:"中", date:"2023-06"},
   {id:"E0074", pid:"P049", cat:"実績", sub:"安全保障・防衛", summary:"第15代防衛大臣に就任（女性2人目）、南スーダンPKO日報問題で引責辞任", detail:"2016年8月、第2次安倍改造内閣で第15代防衛大臣（女性として小池百合子以来2人目）に就任。在任中に南スーダンPKO派遣部隊の日報に「戦闘」との記載があるにも関わらず「存在しない」と答弁した問題（日報隠蔽疑惑）が発覚し、2017年7月に引責辞任した。", src:"Wikipedia", url:"https://ja.wikipedia.org/wiki/稲田朋美", rel:"安全保障", impact:"中", date:"2017-07"},
@@ -8728,7 +8728,7 @@ const EVIDENCE = [
   {id:"E0079", pid:"P054", cat:"問題・疑惑", sub:"政治資金問題", summary:"所属派閥の政治資金パーティー収入過少記載の訂正", detail:"志公会（麻生派）のパーティー収入還流に関し、自身の収支報告書への一部不記載・過少記載が報道され、後に報告書の修正と釈明対応を行った。", src:"西日本新聞等 各紙報道記録", url:"", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0080", pid:"P055", cat:"実績", sub:"国会改革", summary:"旧文通費の使途公開および残金返納を求める法案提出", detail:"調査研究広報滞在費（旧文通費）の領収書添付による使途完全義務化や、国庫返納に向け、維新の国対幹部らと連携して法案の共同提出をリードした。", src:"衆議院法案提出公報記録", url:"", rel:"discipline", impact:"中", date:"2023-06"},
   {id:"E0081", pid:"P056", cat:"実績", sub:"環境行政", summary:"環境副大臣として地域の脱炭素先行地域プロジェクトを主導", detail:"地方自治体が主導する太陽光発電等の再生可能エネルギー導入と、省エネ・地域課題解決を組み合わせたモデル地域の選定と予算措置を実務でとりまとめた。", src:"環境省 脱炭素先行地域選定発表資料", url:"", rel:"renewable", impact:"中", date:"2023-04"},
-  {id:"E0082", pid:"P057", cat:"問題・疑惑", sub:"", summary:"政治資金収支報告書の不記載による党紀委員会処分", detail:"清和政策研究会（安倍派）のパーティー収入還流をめぐり、政治資金収支報告書に適切な記載を行っていなかったとして、党から戒告処分が下された。", src:"自由民主党党紀委員会公式発表記録", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0082", pid:"P057", cat:"問題・疑惑", sub:"", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0083", pid:"P058", cat:"発言・主張", sub:"地域振興", summary:"地方の産業基盤維持と雇用機会創出を訴え", detail:"党の関連部会や地方活動において、過疎地域の小規模事業者に対する経営支援税制の継続や、高齢者の就労環境整備の重要性を主張している。", src:"公式広報活動発信資料", url:"", rel:"regional", impact:"低", date:"2024-11"},
   {id:"E0084", pid:"P059", cat:"発言・主張", sub:"", summary:"国会議員の定数削減と徹底的な歳出削減の必要性", detail:"本会議や街頭演説において、民間が物価高に苦しむ中でまず身を切るべきとして、議員定数の大幅カットを強く主張。", src:"日本維新の会 政策綱領", url:"", rel:"", impact:"", date:"2024-10-15"},
   {id:"E0085", pid:"P059", cat:"実績", sub:"教育政策", summary:"文部科学副大臣として給付型奨学金の対象拡大を推進", detail:"中間層の子育て世帯に対する教育負担軽減を目的とし、多子世帯や理工農系の学生を対象とした返済不要の給付型奨学金・授業料減免制度の拡充設計を実務で主導した。", src:"文部科学省 閣僚・副大臣記者会見記録", url:"", rel:"education", impact:"中", date:"2024-02"},
@@ -8851,7 +8851,7 @@ const EVIDENCE = [
   {id:"E0203", pid:"P147", cat:"実績", sub:"防衛力強化", summary:"防衛大臣として安保3文書に基づく防衛費増額・装備品拡充を統括・ソマリア沖等の国際派遣を指揮", detail:"防衛大臣として国家安全保障戦略など安保3文書に基づく防衛費の段階的増額と装備品拡充を統括。ソマリア沖・アデン湾での海賊対処行動、ジブチや南スーダンへの自衛隊派遣・部隊運用を指揮し国際安全保障への貢献を継続した。", src:"防衛省・Wikipedia", url:"https://ja.wikipedia.org/wiki/木原稔", rel:"安全保障", impact:"高", date:"2023-09"},
   {id:"E0204", pid:"P147", cat:"実績", sub:"内閣官房長官", summary:"高市内閣で内閣官房長官に就任・省庁横断調整・拉致問題・沖縄基地負担軽減担当を兼務（2025年〜）", detail:"高市内閣において内閣官房長官に就任し、政府の最高報道官として政策発信を担うとともに省庁間の総合調整を主導。拉致問題担当大臣・沖縄基地負担軽減担当大臣を兼任し、国家の最重要課題に直接当たる「内閣の要」を務めている。", src:"TBSニュースDIG・Wikipedia", url:"https://newsdig.tbs.co.jp/articles/-/2357490", rel:"公共性", impact:"高", date:"2025-10"},
   {id:"E0205", pid:"P147", cat:"実績", sub:"経済安全保障", summary:"首相補佐官（国家安全保障担当）として経済安全保障の基礎構築に貢献（安倍・菅内閣）", detail:"第4次安倍第2次改造内閣および菅内閣において内閣総理大臣補佐官（国家安全保障に関する重要政策担当）を歴任し、半導体・医薬品・食料など国民生活の根幹を守る経済安全保障の重要性をいち早く唱え、省庁横断的な政策立案をサポートした。", src:"首相官邸", url:"https://www.kantei.go.jp/jp/99_suga/meibo/hosakan/kihara_minoru.html", rel:"長期国益", impact:"中", date:"2020-09"},
-  {id:"E0206", pid:"P148", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"清和政策研究会（安倍派）のパーティー収入をめぐる不記載に関与したとして、自民党の党紀委員会から戒告の処分が下された。", src:"自由民主党党紀委員会処分発表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0206", pid:"P148", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0207", pid:"P149", cat:"実績", sub:"地域振興", summary:"内閣府政務官（沖縄担当）として振興予算執行に関与", detail:"沖縄の子供の貧困対策や地域観光インフラの改修、離島の医療環境の整備に向けた補助金の配分スキームの執行に携わった。", src:"内閣府 沖縄振興局実績資料", url:"", rel:"regional", impact:"低", date:"2022-08"},
   {id:"E0208", pid:"P150", cat:"発言・主張", sub:"都市政策", summary:"横浜・神奈川圏の広域防災ネットワークの強化を主張", detail:"地方議員時代の知見を踏まえ、首都直下地震等の激甚災害時における避難拠点の耐震化や、備蓄物資のDX管理体制の確立を党内会合等で訴えた。", src:"公式選挙公報・街頭活動報告", url:"", rel:"regional", impact:"低", date:"2024-10"},
   {id:"E0209", pid:"P151", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党役職停止処分", detail:"志帥会（二階派）の資金還流問題に絡み、自身の関連政治団体における収支報告書への不記載が指摘され、自由民主党から役職停止の処分を受けた。", src:"自由民主党党紀委員会処分決定", url:"", rel:"political_ethics", impact:"中", date:"2024-04"},
@@ -8921,10 +8921,10 @@ const EVIDENCE = [
   {id:"E0273", pid:"P209", cat:"実績", sub:"領土・主権", summary:"「竹島・尖閣を守る議員連盟」会長として領土主権を20年以上にわたり訴求", detail:"「日本の領土（竹島、尖閣諸島など）を守るため行動する議員連盟」の会長を務め、自民党内の領土特命委員長も歴任。竹島・尖閣諸島に関する日本の歴史的・国際法的正当性を国内外へ発信する議論を長年にわたりリードしてきた。", src:"新藤義孝公式", url:"https://www.shindo.gr.jp/vision", rel:"安全保障", impact:"中", date:"2005-01"},
   {id:"E0274", pid:"P209", cat:"実績", sub:"硫黄島・戦没者", summary:"超党派「硫黄島問題懇話会」幹事長として戦没者遺骨収集を継続支援（栗林忠道大将の孫）", detail:"映画『硫黄島からの手紙』で知られる栗林忠道陸軍大将の孫として、超党派「硫黄島問題懇話会」の幹事長を務め、硫黄島における戦没者の遺骨収集事業と平和の尊さを伝える活動を長年にわたり支援してきた。", src:"新藤義孝公式", url:"https://www.shindo.gr.jp/author/sainet", rel:"公共性", impact:"中", date:"2010-01"},
   {id:"E0275", pid:"P210", cat:"犯罪・違反", sub:"公職選挙法違反", summary:"公選法違反（寄付行為）容疑による略式起訴", detail:"選挙区内の有権者に対し、秘書らを通じて香典や供花を不適切に提供したとされる問題。略式起訴され、東京簡裁から罰金判決と公民権停止の司法処分が下された経緯がある。", src:"東京簡易裁判所判決・最高検察庁記録", url:"", rel:"discipline", impact:"高", date:"2021-06"},
-  {id:"E0276", pid:"P211", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党役職停止処分", detail:"清和政策研究会（安倍派）のパーティー収入還流をめぐり、自身の政治団体における不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。", src:"自由民主党党紀委員会処分決定公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0276", pid:"P211", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0277", pid:"P212", cat:"実績", sub:"先端技術政策", summary:"内閣府副大臣として生成AIの安全枠組み策定を牽引", detail:"内閣府副大臣（科学技術・イノベーション等担当）として、AIの国際的な規制緩和と利用促進、著作権等に関する官民の共通ガイドライン策定の実務を統括した。", src:"内閣府 科学技術政策発表資料", url:"", rel:"econ_sec", impact:"中", date:"2024-02"},
   {id:"E0278", pid:"P213", cat:"実績", sub:"財政運営", summary:"財務大臣として防衛力強化に向けた財源確保スキームの策定", detail:"防衛予算の抜本増額を支えるため、防衛力強化資金の設置や歳出削減の積み上げなど、財政規律を一定程度維持しつつ多額の資金を捻出する実務を主導した。", src:"財務省 予算編成公報資料", url:"", rel:"discipline", impact:"高", date:"2023-12"},
-  {id:"E0279", pid:"P214", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党役職停止処分", detail:"清和政策研究会（安倍派）のパーティー収入をめぐる不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。", src:"自由民主党党紀委員会処分決定通知", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0279", pid:"P214", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0280", pid:"P215", cat:"実績", sub:"危機管理外交", summary:"外務副大臣としてウクライナへの人道支援物資輸送を差配", detail:"外務副大臣の立場で、防衛省や関係機関と連携し、ウクライナに対する医療用資材や防弾チョッキ等の迅速な無償供与手続きの調整にあたった。", src:"外務省 ウクライナ情勢緊急対応記録", url:"", rel:"foreign", impact:"中", date:"2022-03"},
   {id:"E0281", pid:"P216", cat:"発言・主張", sub:"地域振興", summary:"過疎地域の一次産業保護と鳥獣害対策の強化を要求", detail:"地域産業を守るため、農家へのスマート化機器導入助成や、中山間地域における野生鳥獣による作物被害を防ぐ防除予算拡大を求めている。", src:"自由民主党公認候補選挙公報資料", url:"", rel:"regional", impact:"低", date:"2024-10"},
   {id:"E0282", pid:"P217", cat:"実績", sub:"農政改革", summary:"食料・農業・農村基本法の四半世紀ぶり改正に尽力（2024年）", detail:"農林水産副大臣等として、地政学的リスクに伴う肥料・飼料の国内確保や備蓄強化を柱とする食料・農業・農村基本法の抜本的見直しをまとめ、2024年に約25年ぶりの改正法成立に寄与した。食料安全保障の強化を法的に担保した。", src:"農林水産省・農業新聞", url:"https://www.agrinews.co.jp/news/index/339715", rel:"長期国益", impact:"高", date:"2024-05"},
@@ -8974,7 +8974,7 @@ const EVIDENCE = [
   {id:"E0326", pid:"P252", cat:"実績", sub:"経済安全保障", summary:"科学技術相として国際競争力を高める先端宇宙・量子投資を差配", detail:"最先端技術の海外流出防止や技術主権確保を見据え、重要技術分野におけるイノベーション推進基金の配分体制構築を主導した。", src:"内閣府 科学技術イノベーション政策記録", url:"", rel:"econ_sec", impact:"中", date:"2021-06"},
   {id:"E0327", pid:"P253", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載にともなう党の役職停止処分", detail:"清和政策研究会（安倍派）のパーティー収入をめぐる不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
   {id:"E0328", pid:"P254", cat:"発言・主張", sub:"農業・教育政策", summary:"学校給食の国産有機化による子どもの健康保護を主張", detail:"化学農薬に依存しない有機農産物への国庫支援拡充と、それを用いた無償オーガニック給食の導入を街頭等で強く訴えている。", src:"参政党政策宣言マニフェスト", url:"", rel:"food", impact:"低", date:"2024-10"},
-  {id:"E0329", pid:"P255", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載にともなう党の戒告処分", detail:"安倍派の政治資金パーティーをめぐる不記載が指摘され、自由民主党の党紀委員会から戒告の処分が下された。", src:"自由民主党党紀委員会処分決定通知", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0329", pid:"P255", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0330", pid:"P256", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載にともなう党の役職停止処分", detail:"清和政策研究会（安倍派）の資金処理に関して、自身の政治団体における収支報告書への不記載が指摘され、自由民主党の党紀委員会から役職停止の処分を受けた。", src:"自由民主党党紀委員会処分決定公報", url:"", rel:"discipline", impact:"中", date:"2024-04"},
   {id:"E0331", pid:"P257", cat:"実績", sub:"社会保障行政", summary:"厚生労働部会長等として働き方改革や雇用確保の実務を推進", detail:"党の厚生労働部会長や雇用問題調査会幹部等として、若年労働者の処遇改善、地方における多様な働き方の推進や、現役世代の育児負担軽減に向けた関連法案のすり合わせを担った。", src:"自由民主党厚生労働部会政策実績資料", url:"", rel:"birthrate", impact:"中", date:"2023-11"},
   {id:"E0332", pid:"P258", cat:"実績", sub:"年収の壁・減税政策", summary:"「103万円の壁」引き上げ・ガソリン税トリガー条項凍結解除・年少扶養控除復活を政府・与党を巻き込んで主導", detail:"国民民主党代表として現役世代の「手取りを増やす」経済政策を一貫して推進。所得税の基礎控除引き上げ（「103万円の壁」→178万円への議論）・ガソリン税暫定税率を一時廃止・引き下げする「トリガー条項」の凍結解除・年少扶養控除の復活を強力に訴え政府・与党を巻き込んだ具体的な政策議論の場を設けることに成功した。", src:"国民民主党・YouTube", url:"https://tamakinet.jp/results/", rel:"国民生活改善", impact:"高", date:"2024-11"},
@@ -9054,7 +9054,7 @@ const EVIDENCE = [
   {id:"E0406", pid:"P319", cat:"実績", sub:"議会ガバナンス", summary:"衆院議長として政治資金改革を巡る与野党協議の環境整備", detail:"政治不信が高まる中、衆院議長等の立場で各会派代表者による規正法改正の議論を後押しし、議会における説明責任と透明性向上に向けた手続きの円滑な進行を司った。", src:"衆議院事務局議事記録資料", url:"", rel:"discipline", impact:"高", date:"2024-05"},
   {id:"E0407", pid:"P320", cat:"実績", sub:"医療・福祉振興", summary:"医師の知見を反映した地域医療提供体制の確保を要求", detail:"委員会審議等において、コロナ禍での医療現場の負担軽減、適切な医療情報の提供体制構築、および介護・医療従事者の処遇改善に向けた制度設計の必要性を専門的視点から強く迫った。", src:"衆議院厚生労働委員会質疑記録", url:"", rel:"welfare", impact:"中", date:"2025-03"},
   {id:"E0408", pid:"P321", cat:"発言・主張", sub:"地域創生", summary:"福島の中山間地域インフラ強靱化とスマート化を主張", detail:"過疎化や高齢化に直面する地域の基幹産業を保護するため、災害に強い道路網・治水整備や、若者が定着するための就農・新規起業助成の必要性を訴えている。", src:"自由民主党公認候補選挙公報資料", url:"", rel:"regional", impact:"低", date:"2026-02"},
-  {id:"E0409", pid:"P322", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載問題にともなう党からの処分", detail:"志帥会（二階派）の資金処理に関連し、自身の関連団体での還流金の報告書不記載が指摘され、自由民主党の党紀委員会から役職停止処分が下された。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0409", pid:"P322", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0410", pid:"P323", cat:"実績", sub:"こども・福祉政策", summary:"男女共同参画計画の策定やこども家庭庁創設の議論を牽引", detail:"内閣府特命担当大臣等として、少子化対策の抜本強化に向けた基本方針策定に関与。多子世帯の経済支援やバリアフリー推進など、福祉・分配目線の法制実務を推進した。", src:"内閣府・子ども家庭庁重要政策アーカイブ", url:"", rel:"birthrate", impact:"高", date:"2022-03"},
   {id:"E0411", pid:"P324", cat:"実績", sub:"行政監視・国会論戦", summary:"党代表等として政治改革法案を巡る国会追及を主導", detail:"衆院予算委員会等において、一連の政治資金問題をめぐる使途開示の完全透明化や、規正法改正に向けた実務協議の急先鋒として立ち、政府へ厳しい対案提示を行った。", src:"衆議院予算委員会会議録", url:"", rel:"discipline", impact:"高", date:"2024-05"},
   {id:"E0412", pid:"P325", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載にともなう党の戒告処分", detail:"安倍派の政治資金パーティーをめぐる資金処理に関し、自身の関連団体での還流金の報告書不記載が指摘され、自由民主党の党紀委員会から処分が下された。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
@@ -9166,7 +9166,7 @@ const EVIDENCE = [
   {id:"E0518", pid:"P403", cat:"実績", sub:"地域創生", summary:"自治体DX推進と防災インフラ強靱化予算の調整に関与", detail:"地方のDX推進に向けた公的支援スキームや、激甚災害に備えるための地域インフラ整備予算の円滑な執行に関与した。", src:"自由民主党部会活動実績記録", url:"", rel:"regional", impact:"低", date:"2025-09"},
   {id:"E0519", pid:"P404", cat:"実績", sub:"法務・地域振興", summary:"沖縄の振興に向けたインフラ整備と関係省庁調整に関与", detail:"沖縄振興予算の執行管理や、地域振興に向けた関連法案の審議において、法的整合性確保と地元自治体との調整役を担った。", src:"自由民主党政策実績・国会質疑記録", url:"", rel:"regional", impact:"中", date:"2025-06"},
   {id:"E0520", pid:"P405", cat:"実績", sub:"地域振興", summary:"地方のインフラ防災・農業振興の予算執行に関与", detail:"激甚災害に対応するための河川改修や道路強靱化、スマート農業の普及支援に向けた公的助成スキームの実務調整に尽力した。", src:"自由民主党部会活動実績記録", url:"", rel:"regional", impact:"低", date:"2025-09"},
-  {id:"E0521", pid:"P406", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載問題による党役職停止処分", detail:"安倍派のパーティー収入還流をめぐる収支報告書の不記載に関与した責任を問われ、自由民主党の党紀委員会から処分が下された。", src:"自由民主党党紀委員会処分公表", url:"", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0521", pid:"P406", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載があり、2024年2月13日に自由民主党が公表した不記載議員リストに掲載された。ただし不記載額が党の処分基準（500万円以上）に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書不記載に関する調査結果（2024年2月13日公表）", url:"https://www.nikkei.com/article/DGXZQOUA133TC0T10C24A2000000/", rel:"discipline", impact:"中", date:"2024-02"},
   {id:"E0522", pid:"P407", cat:"実績", sub:"政策実現", summary:"大臣・長官職の経験（Wikipedia確認）", detail:"Wikipediaの記載により大臣または長官職の経験が確認された。", src:"Wikipedia", url:"https://ja.wikipedia.org/wiki/向山淳", rel:"政策実現力", impact:"中", date:"（確認中）"},
   {id:"E0523", pid:"P410", cat:"実績", sub:"経済産業支援", summary:"経済産業副大臣として中小企業支援枠組みを推進", detail:"物価高騰の影響を受ける小規模事業者に対し、DX投資や経営改善を促すための公的助成金スキームの運用管理を主導した。", src:"経済産業省政務活動記録", url:"", rel:"econ_sec", impact:"低", date:"2025-06"},
   {id:"E0524", pid:"P411", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載問題による党役職停止処分", detail:"二階派の資金還流問題に絡み、自身の政治団体における還流分の報告書不記載が指摘され、自由民主党から役職停止処分を受けた。", src:"自由民主党党紀委員会処分決定公報", url:"", rel:"discipline", impact:"中", date:"2024-04"},
@@ -9476,7 +9476,26 @@ const EVIDENCE = [
   {id:"E0828", pid:"P821", cat:"実績", sub:"経済産業大臣・FIT制度導入", summary:"野田内閣の経済産業大臣として再生可能エネルギー固定価格買取制度（FIT）を導入し再エネ普及の礎を築く", detail:"野田内閣で経済産業大臣に就任し震災後のエネルギー政策の抜本見直しに着手。再生可能エネルギーの普及促進を目的とした「電気事業者による再生可能エネルギー電気の調達に関する特別措置法」（FIT法）を導入した。これにより太陽光・風力発電の普及が加速し日本の再エネ転換の礎を築いた。", src:"経済産業省・Wikipedia", url:"https://ja.wikipedia.org/wiki/枝野幸男", rel:"国民生活改善", impact:"高", date:"2012-07"},
   {id:"E0829", pid:"P822", cat:"実績", sub:"国政政党確立・NHK受信料問題の社会問題化", summary:"NHK党を国政政党に押し上げ・NHK受信料制度の議論を国会に持ち込み戸別訪問集金廃止につながる世論形成に貢献", detail:"2019年参院選でNHKから国民を守る党より比例区から当選し党を国政政党へと押し上げた。「NHKをぶっ壊す」「スクランブル放送化」を掲げてNHK受信料制度・集金業務のあり方を社会的議論に引き上げた。「NHK撃退シール」など法的対抗手段の普及でNHKによる戸別訪問集金の段階的縮小・廃止につながる世論形成の一因となった。", src:"時事通信・朝日新聞", url:"https://www.asahi.com/articles/ASTCW4Q3YTCWPTIL008M.html", rel:"政策実現力", impact:"中", date:"2019-07"},
   {id:"E0830", pid:"P822", cat:"実績", sub:"ネット選挙・インフルエンサー型政治の先駆け", summary:"YouTubeやSNSを軸にしたネット選挙の手法を確立し後の地方選挙候補者のネット戦略に多大な影響を与えた", detail:"既存マスメディアに頼らずYouTube・SNSの動画配信を軸に支持を集めるネット選挙の先駆者となった。アテンション・エコノミーを最大限に活用した政治広報の手法は、東京都知事選・兵庫県知事選など後の選挙における候補者たちのネット戦略に多大な影響を与えた。政治活動を毎日動画で公開するガラス張り型の情報発信は継続された。", src:"YouTube", url:"https://www.youtube.com/watch?v=ojLON9GL6Po", rel:"説明責任", impact:"中", date:"2019-07"},
-  {id:"E0831", pid:"P822", cat:"問題・疑惑", sub:"有罪判決（威力業務妨害・脅迫）・2025年逮捕", summary:"NHK契約者個人情報不正入手・脅迫で有罪判決（執行猶予付き）、2025年11月に名誉毀損容疑で逮捕", detail:"NHK契約者の個人情報を不正に入手してNHK関係者を脅迫した罪（威力業務妨害等）で有罪判決（執行猶予付き）を受けた。2025年11月には元兵庫県議への名誉毀損容疑で兵庫県警察に逮捕された。参議院議員を2023年に任期途中で辞職し直接の立法実績はほぼない。多数候補擁立によるポスター掲示場ジャックなど選挙制度の形骸化として法改正を求める議論を引き起こした。", src:"Wikipedia・読売新聞", url:"https://ja.wikipedia.org/wiki/立花孝志", rel:"政治倫理", impact:"高", date:"2025-11"}
+  {id:"E0831", pid:"P822", cat:"問題・疑惑", sub:"有罪判決（威力業務妨害・脅迫）・2025年逮捕", summary:"NHK契約者個人情報不正入手・脅迫で有罪判決（執行猶予付き）、2025年11月に名誉毀損容疑で逮捕", detail:"NHK契約者の個人情報を不正に入手してNHK関係者を脅迫した罪（威力業務妨害等）で有罪判決（執行猶予付き）を受けた。2025年11月には元兵庫県議への名誉毀損容疑で兵庫県警察に逮捕された。参議院議員を2023年に任期途中で辞職し直接の立法実績はほぼない。多数候補擁立によるポスター掲示場ジャックなど選挙制度の形骸化として法改正を求める議論を引き起こした。", src:"Wikipedia・読売新聞", url:"https://ja.wikipedia.org/wiki/立花孝志", rel:"政治倫理", impact:"高", date:"2025-11"},
+  {id:"E0832", pid:"P303", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0833", pid:"P295", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止6か月処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止6か月の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0834", pid:"P392", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0835", pid:"P542", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0836", pid:"P459", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0837", pid:"P694", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0838", pid:"P087", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0839", pid:"P722", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止6か月処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止6か月の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0840", pid:"P101", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止6か月処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止6か月の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0841", pid:"P735", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0842", pid:"P737", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0843", pid:"P528", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0844", pid:"P347", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0845", pid:"P608", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0846", pid:"P387", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0847", pid:"P665", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止1年処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止1年の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"高", date:"2024-04"},
+  {id:"E0848", pid:"P425", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の役職停止6か月処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から役職停止6か月の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"},
+  {id:"E0849", pid:"P377", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載による党の戒告処分", detail:"2018〜2022年分の政治資金収支報告書における派閥からの還流等の不記載をめぐり、2024年4月4日、自由民主党の党紀委員会から戒告の処分を受けた（処分を受けた議員・支部長は計39人）。", src:"自由民主党 党紀委員会 処分決定（2024年4月4日）／日本経済新聞「自民党が処分対象とした39人の議員ら一覧」", url:"https://www.jimin.jp/news/information/207975.html", rel:"discipline", impact:"中", date:"2024-04"}
+
 ];
 
 const CHANGELOG = [
