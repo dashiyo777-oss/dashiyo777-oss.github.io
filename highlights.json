@@ -1,36 +1,44 @@
 {
-  "generated": "2026.09.04",
-  "period_from": "2026.08.04",
-  "period_to": "2026.09.04",
+  "generated": "2026.10.04",
+  "period_from": "2026.09.04",
+  "period_to": "2026.10.04",
   "first_run": false,
   "no_change": false,
   "speech_top3": [
     {
-      "id": "P121",
-      "name": "金澤 結衣",
-      "party": "自民党",
-      "prev": 6,
-      "curr": 12,
-      "diff": 6
+      "id": "P513",
+      "name": "上野 蛍",
+      "party": "日本維新の会",
+      "prev": 0,
+      "curr": 143,
+      "diff": 143
     },
     {
-      "id": "P109",
-      "name": "鹿嶋 祐介",
-      "party": "自民党",
-      "prev": 5,
-      "curr": 10,
-      "diff": 5
-    }
-  ],
-  "question_top3": [],
-  "bill_top3": [
-    {
-      "id": "P022",
-      "name": "飯泉 嘉門",
+      "id": "P523",
+      "name": "江原 久美子",
       "party": "国民民主党",
       "prev": 0,
-      "curr": 1,
-      "diff": 1
+      "curr": 109,
+      "diff": 109
+    },
+    {
+      "id": "P509",
+      "name": "犬童 周作",
+      "party": "自民党",
+      "prev": 36,
+      "curr": 54,
+      "diff": 18
     }
-  ]
+  ],
+  "question_top3": [
+    {
+      "id": "P816",
+      "name": "山本 譲司",
+      "party": "れいわ新選組",
+      "prev": 0,
+      "curr": 6,
+      "diff": 6
+    }
+  ],
+  "bill_top3": []
 }
