@@ -47,12 +47,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P006", name:"赤澤 亮正", reading:"あかざわ りょうせい", party:"自民党", role:"衆議院議員（鳥取2区）、元経済産業大臣・経済財政政策担当大臣・GX実行推進担当大臣（石破内閣）、旧運輸省（国土交通省）官僚出身",
+    id:"P006", name:"赤澤 亮正", reading:"あかざわ りょうせい", party:"自民党", role:"衆議院議員（鳥取2区）、経済産業大臣（第2次高市改造内閣・2026年9月〜）、元経済財政政策担当大臣・GX実行推進担当大臣（石破内閣）、旧運輸省（国土交通省）官僚出身",
     chamber:"衆議院", district:"鳥取2", status:"現職", gender:"男", age:null,
     total:82, rank:"A-",
     axes:[4,5,4,5,3,5,4,3],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"◎"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P007", name:"赤羽 一嘉", reading:"あかば かずよし", party:"中道改革連合", role:"衆議院議員",
@@ -447,12 +447,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"未評価"
   },
   {
-    id:"P056", name:"井林 辰憲", reading:"いばやし たつのり", party:"自民党", role:"衆議院議員（元内閣府副大臣）",
+    id:"P056", name:"井林 辰憲", reading:"いばやし たつのり", party:"自民党", role:"衆議院議員、国土交通大臣（第2次高市改造内閣・2026年9月〜）、元内閣府副大臣",
     chamber:"衆議院", district:"静岡2", status:"現職", gender:"男", age:null,
     total:77, rank:"B+",
     axes:[4,4,3,4,4,4,4,4],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P057", name:"井原 巧", reading:"いはら たくみ", party:"自民党", role:"衆議院議員（元経済産業政務官）",
@@ -1791,12 +1791,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
   {
-    id:"P224", name:"関 芳弘", reading:"せき よしひろ", party:"自民党", role:"衆議院議員",
+    id:"P224", name:"関 芳弘", reading:"せき よしひろ", party:"自民党", role:"衆議院議員、文部科学大臣（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"兵庫3", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[3,4,3,3,2,4,4,2],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"◎",immigration:"△",renewable:"○",nuclear:"◎",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"◎"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P225", name:"世古 万美子", reading:"せこ まみこ", party:"自民党", role:"衆議院議員",
@@ -6256,7 +6256,7 @@ const POLITICIANS = [
   }
 ];
 
-const EVIDENCE_COUNT = 552;
+const EVIDENCE_COUNT = 557;
 
 const CHANGELOG = [
   {pid:"P493", date:"2026-05-29", summary:"安全保障5・長期国益4に上方修正。30年紛争実務・国連PKO統括・『新国防論』著者として唯一無二の実績を反映。ウクライナ発言は賛否両論として政治倫理2に緩和。", before_total:60, after_total:62, action:"update"},
