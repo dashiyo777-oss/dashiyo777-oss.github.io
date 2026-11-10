@@ -6,7 +6,7 @@
 GitHub Pages でホスティング。データは `data.js` に格納。
 
 - URL: `https://dashiyo777-oss.github.io/politicians.html`
-- 収録 777名 / 評価点あり 336名 / 未評価（裏付けなし）441名 / evidence 557件（2026.11.05時点）
+- 収録 777名 / 評価点あり 336名 / 未評価（裏付けなし）441名 / evidence 559件（2026.11.10時点）
 
 > ⚠️ **最初に読むこと** — [`docs/incident-2026-09-data-integrity.md`](docs/incident-2026-09-data-integrity.md)
 >

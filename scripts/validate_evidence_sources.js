@@ -267,9 +267,12 @@ if (stale.length) {
 //   裏付けとなる evidence を1件も持たない議員に評価点を付けない、という原則を
 //   データ側で担保する。2026年9月の全件検証以前は、evidence を持たない議員
 //   445人（全781人の57%）に評価点だけが付いている状態だった。
+//
+//   「団体との接点」は評価点に反映しない区分のため、評価の裏付けには数えない
+//   （2026-11-10 追加）。
 // ---------------------------------------------------------------------------
 {
-  const pidsWithEvidence = new Set(EVIDENCE.map((e) => e.pid));
+  const pidsWithEvidence = new Set(EVIDENCE.filter((e) => e.cat !== LINK_CAT).map((e) => e.pid));
   for (const p of POLITICIANS) {
     const hasEvi = pidsWithEvidence.has(p.id);
     const hasScore = p.total !== null && p.total !== undefined;
