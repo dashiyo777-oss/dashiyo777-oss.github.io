@@ -2364,12 +2364,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P291", name:"中司 宏", reading:"なかつか ひろし", party:"日本維新の会", role:"衆議院議員",
+    id:"P291", name:"中司 宏", reading:"なかつか ひろし", party:"日本維新の会", role:"衆議院議員、内閣府特命担当大臣（こども政策、少子化対策、若者活躍、規制改革、共生・共助）（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"大阪11", status:"現職", gender:"男", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"未評価"
   },
   {
     id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"中道改革連合", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
@@ -2716,12 +2716,12 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"未評価"
   },
   {
-    id:"P335", name:"葉梨 康弘", reading:"はなし やすひろ", party:"自民党", role:"衆議院議員",
+    id:"P335", name:"葉梨 康弘", reading:"はなし やすひろ", party:"自民党", role:"衆議院議員、国家公安委員会委員長（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"茨城3", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[3,3,3,4,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P336", name:"馬場 伸幸", reading:"ばば のぶゆき", party:"日本維新の会", role:"日本維新の会代表",
@@ -6256,7 +6256,7 @@ const POLITICIANS = [
   }
 ];
 
-const EVIDENCE_COUNT = 557;
+const EVIDENCE_COUNT = 559;
 
 const CHANGELOG = [
   {pid:"P493", date:"2026-05-29", summary:"安全保障5・長期国益4に上方修正。30年紛争実務・国連PKO統括・『新国防論』著者として唯一無二の実績を反映。ウクライナ発言は賛否両論として政治倫理2に緩和。", before_total:60, after_total:62, action:"update"},
