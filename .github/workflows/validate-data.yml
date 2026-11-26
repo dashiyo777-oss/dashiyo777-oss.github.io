@@ -6,6 +6,7 @@ on:
       - 'data.js'
       - 'data_core.js'
       - 'politicians_base.json'
+      - 'evidence_url_status.js'
       - 'scripts/**'
       - '.github/workflows/validate-data.yml'
   push:
@@ -15,6 +16,7 @@ on:
       - 'data.js'
       - 'data_core.js'
       - 'politicians_base.json'
+      - 'evidence_url_status.js'
       - 'scripts/**'
       - '.github/workflows/validate-data.yml'
 
@@ -41,6 +43,12 @@ jobs:
         run: |
           node --check data.js
           echo "✅ JavaScript syntax OK"
+
+      # 週次ワークフローの bot が毎回全面的に書き換え、詳細ページが読み込む
+      # ファイルなのに、これまでどこからも検査されていなかった
+      - name: Check evidence_url_status.js
+        run: |
+          node scripts/validate_url_status.js
 
       - name: Check required header comment
         run: |

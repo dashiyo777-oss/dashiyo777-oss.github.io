@@ -14,6 +14,14 @@ on:
         description: '差し替え候補URLの単発確認（空白区切り）。指定すると全件確認は行わない'
         required: false
         default: ''
+      dump_urls:
+        description: '出典本文の読み出し（空白区切り）。記述を裏付けているかの確認用。指定すると全件確認は行わない'
+        required: false
+        default: ''
+      notify_test:
+        description: '通知経路の動作確認。yes にすると確認用のIssueを1件作って即座に閉じる（データには触らない）'
+        required: false
+        default: ''
 
 jobs:
   check:
@@ -35,14 +43,23 @@ jobs:
       # データに入れる前に、候補URLが本当に開けるかを確かめるための単発確認。
       # 検索インデックスが返すURLが現に404であることが実際にあったため用意している
       - name: 候補URLの単発確認
-        if: github.event.inputs.urls != ''
+        if: github.event.inputs.urls != '' && github.event.inputs.notify_test == ''
         run: node scripts/check_evidence_urls.js --check-url ${{ github.event.inputs.urls }}
+
+      # 到達するだけでは、その出典が記述を裏付けているかは分からない。
+      # 執筆環境から直接開けない相手先の本文を読むために使う
+      - name: 出典本文の読み出し
+        if: github.event.inputs.dump_urls != '' && github.event.inputs.notify_test == ''
+        run: node scripts/check_evidence_urls.js --dump-url ${{ github.event.inputs.dump_urls }}
 
       - name: 出典URLの生存確認
         id: check
-        if: github.event.inputs.urls == ''
+        if: github.event.inputs.urls == '' && github.event.inputs.dump_urls == '' && github.event.inputs.notify_test == ''
         continue-on-error: true
         run: |
+          # pipefail がないと、パイプ全体の終了コードは tee のもの（常に 0）に
+          # なる。以前これで検知の合図が消え、Issue が一度も立たなかった
+          set -o pipefail
           LIMIT="${{ github.event.inputs.limit }}"
           if [ -n "$LIMIT" ]; then
             node scripts/check_evidence_urls.js --limit "$LIMIT" | tee /tmp/check.log
@@ -51,7 +68,7 @@ jobs:
           fi
 
       - name: 生存記録をコミット・プッシュ
-        if: github.event.inputs.urls == ''
+        if: github.event.inputs.urls == '' && github.event.inputs.dump_urls == '' && github.event.inputs.notify_test == ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -64,22 +81,23 @@ jobs:
             git push
           fi
 
-      - name: 新たなリンク切れがあれば Issue を作成
-        if: steps.check.outcome == 'failure'
+      - name: リンク切れがあれば Issue を作成・更新
+        # 終了コードではなく件数で判断する。dead が残っているあいだは
+        # 常に追跡できる Issue が開いている状態を保つ
+        if: >-
+          steps.check.outputs.dead != '' &&
+          steps.check.outputs.dead != '0'
         uses: actions/github-script@v7
         with:
           script: |
-            const fs = require('fs');
-            let log = '';
-            try { log = fs.readFileSync('/tmp/check.log', 'utf8'); } catch {}
-            // 「あらたにリンク切れ」以降だけを抜き出す
-            const idx = log.indexOf('⚠️ 今回あらたにリンク切れ');
-            const detail = idx >= 0 ? log.slice(idx) : log.slice(-3000);
+            const dead = process.env.DEAD;
+            const newlyDead = process.env.NEWLY_DEAD;
+            const report = process.env.REPORT || '(詳細を取得できませんでした)';
 
             const title = `[自動] 出典URLのリンク切れ (${new Date().toISOString().slice(0,10)})`;
             const body = [
               '## 概要',
-              '2回連続で到達できなかった出典URLが検出されました。',
+              `2回連続で到達できなかった出典URLが **${dead}件** あります（うち今回あらたに ${newlyDead}件）。`,
               '',
               '## 対応方針',
               '',
@@ -90,14 +108,15 @@ jobs:
               '',
               '1. 移転先を探す（サイト内検索・`site:` 検索・省庁の新着一覧）',
               '2. 見つかれば url を差し替える',
+              '   （差し替え候補は必ず `--check-url` で到達を確認してから入れる）',
               '3. 見つからなければ Internet Archive の保存版を探して url に入れる',
               '4. どうしても見つからない場合のみ、記述の真偽を改めて検証する',
               '   （URLが消えたことは、記述が誤りだったことを意味しない）',
               '',
-              '## 検出内容',
+              '## 対象',
               '',
               '```',
-              detail.trim().slice(0, 5000),
+              report.trim().slice(0, 5000),
               '```',
               '',
               '> 詳細は CLAUDE.md「出典URLの生存確認」および',
@@ -111,7 +130,18 @@ jobs:
               labels: 'data-quality',
             });
             const existing = issues.find(i => i.title.startsWith('[自動] 出典URLのリンク切れ'));
-            if (existing) {
+
+            if (!existing) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title, body, labels: ['data-quality'],
+              });
+              return;
+            }
+            // すでに開いている Issue があるときは、増えたときだけ追記する。
+            // 毎週同じ内容を貼り続けないため
+            if (newlyDead !== '0') {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -119,9 +149,49 @@ jobs:
                 body,
               });
             } else {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title, body, labels: ['data-quality'],
-              });
+              core.info(`既存 Issue #${existing.number} で追跡中（新規なし）のため追記しません`);
             }
+        env:
+          DEAD: ${{ steps.check.outputs.dead }}
+          NEWLY_DEAD: ${{ steps.check.outputs.newly_dead }}
+          REPORT: ${{ steps.check.outputs.report }}
+
+      # 検査は「検知する」「合図を上げる」「人に届ける」の3段で、どの段が切れても
+      # CIは緑のまま通る。実際に2026年11月まで、合図の段が切れていることに
+      # 誰も気づかなかった。通知経路だけを単独で通せるようにしておく
+      - name: 通知経路の動作確認
+        if: github.event.inputs.notify_test != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `[自動][動作確認] 通知経路のテスト (${new Date().toISOString().slice(0,19)}Z)`;
+            const body = [
+              'リンク切れを知らせる経路が実際に動くかを確認するために作成した Issue です。',
+              'データの問題を報告するものではありません。作成後すぐに閉じます。',
+              '',
+              '2026年11月、週次の生存確認は2か月間リンク切れを検知し続けていたのに、',
+              '合図が `tee` に飲まれて Issue が一度も立ちませんでした。',
+              '検知できていても届かなければ、検知していないのと同じです。',
+              '',
+              '実行: `出典URL 生存確認（週次）` の `notify_test` に `yes` を指定',
+            ].join('\n');
+
+            const { data: issue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title, body, labels: ['data-quality'],
+            });
+            core.info(`Issue #${issue.number} を作成しました: ${issue.html_url}`);
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              state: 'closed',
+              state_reason: 'completed',
+            });
+            core.info(`Issue #${issue.number} を閉じました。通知経路は生きています`);
+            await core.summary
+              .addHeading('通知経路の動作確認')
+              .addRaw(`Issue #${issue.number} を作成し、閉じました。`)
+              .write();
