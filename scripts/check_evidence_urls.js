@@ -160,6 +160,65 @@ async function checkUrl(url, fetchImpl = fetchOnce) {
   return { url, status: r.status, reason: r.reason, verdict: classify(r) };
 }
 
+/**
+ * URLの本文をテキストに落として返す。
+ *
+ * 出典が「実在する」ことと「その記述を裏付けている」ことは別である。
+ * 到達確認だけでは前者しか分からないため、本文を読んで後者を確かめる手段を
+ * 用意する。執筆環境から直接開けない相手先でも、Actions の runner からは
+ * 読めることがある。
+ */
+async function dumpUrl(url, maxChars = 4000) {
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      method: 'GET',
+      redirect: 'follow',
+      signal: ctl.signal,
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (compatible; TORAN-link-checker/1.0; +https://dashiyo777-oss.github.io/)',
+        'Accept': 'text/html,application/xhtml+xml,*/*',
+      },
+    });
+    const type = res.headers.get('content-type') || '';
+    if (!res.ok) return { url, status: res.status, text: null };
+    if (!/text|xml|json/.test(type)) {
+      return { url, status: res.status, text: null, note: `本文がテキストではありません（${type}）` };
+    }
+    const html = await res.text();
+    return { url, status: res.status, text: htmlToText(html).slice(0, maxChars) };
+  } catch (e) {
+    return { url, status: null, text: null, note: e.name === 'AbortError' ? 'timeout' : 'network' };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/** HTMLからタグとスクリプトを落として読める形にする（厳密な変換は目的としない） */
+function htmlToText(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/(p|div|li|tr|h[1-6]|dt|dd|table)>/gi, '\n')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/[ \t\u3000]+/g, ' ')
+    .replace(/\n\s*\n\s*\n+/g, '\n\n')
+    .split('\n')
+    .map((l) => l.trim())
+    .join('\n')
+    .trim();
+}
+
 // ---------------------------------------------------------------------------
 // 入出力
 // ---------------------------------------------------------------------------
@@ -209,6 +268,7 @@ ${entries}
 
 async function selfTest() {
   const http = require('http');
+  const os = require('os');
   let failures = 0;
   const check = (name, actual, expected) => {
     const a = JSON.stringify(actual);
@@ -272,6 +332,37 @@ async function selfTest() {
   check('URLが差し替わったら履歴をリセット', resetIfUrlChanged(s4, 'https://b.example/y'), null);
   check('URLが同じなら履歴を引き継ぐ', resetIfUrlChanged(s4, 'https://a.example/x') === s4, true);
 
+  // --- 本文の読み出し
+  console.log('本文:');
+  check(
+    'タグを落として読める形にする',
+    htmlToText('<h1>略歴</h1><p>平成9年4月\u3000科学技術庁</p><script>var x=1;</script>'),
+    '略歴\n平成9年4月 科学技術庁'
+  );
+  check('実体参照を戻す', htmlToText('<p>A&amp;B&nbsp;C</p>'), 'A&B C');
+
+  // --- Actions への受け渡し（終了コードに頼らない通知経路）
+  console.log('outputs:');
+  const sumFixture = { dead: 2, unverified: 3 };
+  const deadFixture = [
+    { id: 'E0001', pid: 'P001', src: '某省', url: 'https://a.example/x', last_ok: '2026-01-01', last_status: 404 },
+    { id: 'E0002', pid: 'P002', src: '某県', url: 'https://b.example/y', last_ok: null, last_status: 404 },
+  ];
+  const out = buildOutputs(sumFixture, deadFixture, []);
+  check('dead 件数を文字列で渡す', out.dead, '2');
+  check('newly_dead が0でも dead は立つ', [out.dead, out.newly_dead], ['2', '0']);
+  check('report に両方のIDが入る', /E0001[\s\S]*E0002/.test(out.report), true);
+  check('last_ok がないものは「確認記録なし」と書く', /到達の確認記録なし/.test(out.report), true);
+
+  const outFile = path.join(os.tmpdir(), `toran-out-${process.pid}.txt`);
+  try { fs.unlinkSync(outFile); } catch {}
+  check('GITHUB_OUTPUT がなければ書かない', appendOutputs(out, undefined), false);
+  check('GITHUB_OUTPUT があれば書く', appendOutputs(out, outFile), true);
+  const written = fs.readFileSync(outFile, 'utf8');
+  check('複数行の値はヒアドキュメント形式', /report<<__TORAN_REPORT__\n/.test(written), true);
+  check('書き出した内容に件数が含まれる', /dead<<__TORAN_DEAD__\n2\n/.test(written), true);
+  fs.unlinkSync(outFile);
+
   // --- 実際のHTTPに対する挙動（ローカルサーバ）
   console.log('HTTP:');
   const server = http.createServer((req, res) => {
@@ -312,6 +403,44 @@ async function selfTest() {
 }
 
 // ---------------------------------------------------------------------------
+// GitHub Actions への受け渡し
+//
+// 以前はスクリプトの終了コード（新たなリンク切れがあれば 1）だけを合図にして
+// いたが、ワークフロー側が `node ... | tee` で受けていたため、パイプの終了
+// コードは tee のもの（常に 0）になり、Issue を作る手順が一度も動かなかった。
+// 検知できていても通知が出なければ、検知していないのと同じである。
+// そこで終了コードに頼らず、件数を outputs として明示的に渡す。
+// ---------------------------------------------------------------------------
+
+function buildOutputs(summary, deadEntries, newlyDead) {
+  const lines = [];
+  for (const d of deadEntries) {
+    const seen = d.last_ok ? `${d.last_ok} まで到達を確認` : '到達の確認記録なし';
+    lines.push(`- ${d.id}（${d.pid}）${d.src}`);
+    lines.push(`    ${d.url}`);
+    lines.push(`    ${seen} / HTTP ${d.last_status ?? '-'}`);
+  }
+  return {
+    dead: String(summary.dead),
+    newly_dead: String(newlyDead.length),
+    unverified: String(summary.unverified),
+    report: lines.join('\n'),
+  };
+}
+
+function appendOutputs(outputs, file) {
+  if (!file) return false;
+  let body = '';
+  for (const [key, value] of Object.entries(outputs)) {
+    // 複数行の値はヒアドキュメント形式で渡す必要がある
+    const delim = `__TORAN_${key.toUpperCase()}__`;
+    body += `${key}<<${delim}\n${value}\n${delim}\n`;
+  }
+  fs.appendFileSync(file, body, 'utf8');
+  return true;
+}
+
+// ---------------------------------------------------------------------------
 // 本体
 // ---------------------------------------------------------------------------
 
@@ -333,6 +462,32 @@ async function main() {
       const mark = r.verdict === 'ok' ? '✅' : r.verdict === 'gone' ? '❌' : '⚠️';
       console.log(`${mark} ${r.verdict.padEnd(6)} HTTP ${String(r.status ?? r.reason).padEnd(8)} ${u}`);
       if (r.verdict !== 'ok') ng++;
+    }
+    process.exit(ng ? 1 : 0);
+  }
+
+  // 出典が記述を裏付けているかを確かめるため、本文を読み出す
+  const dumpArg = args.indexOf('--dump-url');
+  if (dumpArg >= 0) {
+    const urls = args.slice(dumpArg + 1).filter((a) => /^https?:\/\//.test(a));
+    if (!urls.length) {
+      console.error('--dump-url のあとに http(s) で始まるURLを1つ以上指定してください');
+      process.exit(2);
+    }
+    let ng = 0;
+    for (const u of urls) {
+      const r = await dumpUrl(u);
+      console.log('='.repeat(70));
+      console.log(`URL   : ${r.url}`);
+      console.log(`HTTP  : ${r.status ?? r.note ?? '-'}`);
+      console.log('='.repeat(70));
+      if (r.text) {
+        console.log(r.text);
+      } else {
+        console.log(`(本文を取得できませんでした: ${r.note ?? r.status})`);
+        ng++;
+      }
+      console.log('');
     }
     process.exit(ng ? 1 : 0);
   }
@@ -389,6 +544,35 @@ async function main() {
     `到達 ${summary.ok}件 / リンク切れ ${summary.dead}件 / 消滅の疑い ${summary.suspect}件 / ` +
     `確認できず ${summary.unverified}件（403・429・通信エラー等。ページは生きている可能性が高い）`
   );
+
+  // dead のものは「今回あらたに」かどうかに関わらず全件を通知対象にする。
+  // 一度しか報せない仕組みだと、その一度を取りこぼした時点で永久に黙る
+  const deadEntries = targets
+    .filter((e) => status[e.id] && status[e.id].state === 'dead')
+    .map((e) => ({
+      id: e.id,
+      pid: e.pid,
+      src: e.src,
+      url: e.url,
+      last_ok: status[e.id].last_ok,
+      last_status: status[e.id].last_status,
+    }));
+
+  if (deadEntries.length) {
+    console.log('');
+    console.log(`⚠️ リンク切れと判定されているURL（${deadEntries.length}件）:`);
+    for (const d of deadEntries) {
+      const seen = d.last_ok ? `${d.last_ok} まで到達を確認` : '到達の確認記録なし';
+      console.log(`  - ${d.id}（${d.pid}）${d.src}`);
+      console.log(`      ${d.url}`);
+      console.log(`      ${seen} / HTTP ${d.last_status ?? '-'}`);
+    }
+  }
+
+  if (appendOutputs(buildOutputs(summary, deadEntries, newlyDead), process.env.GITHUB_OUTPUT)) {
+    console.log('');
+    console.log('GitHub Actions の outputs に件数を渡しました');
+  }
 
   if (newlyDead.length) {
     console.log('');
