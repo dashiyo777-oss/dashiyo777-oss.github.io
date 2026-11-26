@@ -1,7 +1,7 @@
 // 統覧 TORAN — data.js
 // 自動生成ファイル。直接編集しないでください。
 // generate_js_data.py で再生成されます。
-// 評価済: 336名 / 未評価（裏付けなし）: 445名 / 🚨5名 / ⚠️93名 / 根拠551件
+// 評価済: 336名 / 未評価（裏付けなし）: 441名 / 🚨5名 / ⚠️92名 / 根拠558件
 
 const DATA_UPDATED_AT = "2026.06.13";
 
@@ -62,7 +62,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P006", name:"赤澤 亮正", reading:"あかざわ りょうせい", party:"自民党", role:"衆議院議員（鳥取2区）、元経済産業大臣・経済財政政策担当大臣・GX実行推進担当大臣（石破内閣）、旧運輸省（国土交通省）官僚出身",
+    id:"P006", name:"赤澤 亮正", reading:"あかざわ りょうせい", party:"自民党", role:"衆議院議員（鳥取2区）、経済産業大臣（第2次高市改造内閣・2026年9月〜）、元経済財政政策担当大臣・GX実行推進担当大臣（石破内閣）、旧運輸省（国土交通省）官僚出身",
     chamber:"衆議院", district:"鳥取2", status:"現職", gender:"男", age:null,
     total:82, rank:"A-",
     axes:[4,5,4,5,3,5,4,3],
@@ -70,7 +70,7 @@ const POLITICIANS = [
     plus:"旧運輸省官僚出身で防災・国土強靭化をライフワークとする政策通。石破内閣で経済財政政策担当大臣・GX実行推進担当大臣・経済産業大臣を歴任。日米通商交渉では年間数兆円規模の関税負担を削減・回避する交渉を主導。経産相として中東情勢緊迫化に対応しエネルギー国内供給を例年の1.8倍に引き上げ、日サウジ・エネルギーシステム強靭化タスクフォースを設立。ラピダス等を含む国内半導体基盤強化も推進。", minus:"官僚出身として大胆な財政出動には慎重姿勢。石破内閣が短命に終わったため政策の継続性・成果が限定的な面もある。",
     comment:"経済・通商・エネルギー・防災と幅広い分野で実務型の高い政策実現力を持つ。日米通商交渉での関税削減とエネルギー安全保障の即応は特に評価できる実績。GX・半導体・サプライチェーン構築という長期的な国家戦略への貢献も顕著。",
     links:{tw:"https://x.com/ryosei_akazawa",wiki:"https://ja.wikipedia.org/wiki/%E8%B5%A4%E6%B2%A2%E4%BA%AE%E6%AD%A3",hp:"https://www.akazawa.to/",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P007", name:"赤羽 一嘉", reading:"あかば かずよし", party:"中道改革連合", role:"衆議院議員",
@@ -612,7 +612,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"未評価"
   },
   {
-    id:"P056", name:"井林 辰憲", reading:"いばやし たつのり", party:"自民党", role:"衆議院議員（元内閣府副大臣）",
+    id:"P056", name:"井林 辰憲", reading:"いばやし たつのり", party:"自民党", role:"衆議院議員、国土交通大臣（第2次高市改造内閣・2026年9月〜）、元内閣府副大臣",
     chamber:"衆議院", district:"静岡2", status:"現職", gender:"男", age:null,
     total:77, rank:"B+",
     axes:[4,4,3,4,4,4,4,4],
@@ -620,7 +620,7 @@ const POLITICIANS = [
     plus:"国土交通省出身。環境副大臣や内閣府副大臣として防災・脱炭素政策の実務牽引。", minus:"官僚・実務型気質であり、マクロな税制改革などでの強力なリーダーシップは控えめ。",
     comment:"元国交官僚。環境副大臣や内閣府副大臣（防災、気候変動等担当）を歴任。静岡の流域治水や国土強靱化、地方自治体の脱炭素先行地域選定などの環境・土木実務で確実な手腕を発揮している。",
     links:{hp:"https://www.google.com/search?q=%E4%BA%95%E6%9E%97%20%E8%BE%B0%E6%86%B2%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/T_Ibayashi",wiki:"https://ja.wikipedia.org/wiki/%E4%BA%95%E6%9E%97%E8%BE%B0%E6%86%B2",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P057", name:"井原 巧", reading:"いはら たくみ", party:"自民党", role:"衆議院議員（元経済産業政務官）",
@@ -767,7 +767,7 @@ const POLITICIANS = [
   },
   {
     id:"P070", name:"浮島 智子", reading:"うきしま ともこ", party:"中道改革連合", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・近畿", status:"現職", gender:"女", age:null,
+    chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"女", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"△",defense:"△",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"△",expo:"○",ir:"×",mynumber:"○",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
@@ -888,7 +888,7 @@ const POLITICIANS = [
   },
   {
     id:"P081", name:"遠藤 敬", reading:"えんどう たかし", party:"日本維新の会", role:"衆議院議員・首相補佐官",
-    chamber:"衆議院", district:"大阪19", status:"現職", gender:"男", age:null,
+    chamber:"衆議院", district:"大阪18", status:"現職", gender:"男", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"◎",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
@@ -2460,7 +2460,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
   {
-    id:"P224", name:"関 芳弘", reading:"せき よしひろ", party:"自民党", role:"衆議院議員",
+    id:"P224", name:"関 芳弘", reading:"せき よしひろ", party:"自民党", role:"衆議院議員、文部科学大臣（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"兵庫3", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[3,4,3,3,2,4,4,2],
@@ -2468,7 +2468,7 @@ const POLITICIANS = [
     plus:"経済産業副大臣等の経験。エネルギー政策や経済安全保障の実務。過疎地支援。", minus:"安倍派の政治資金不記載問題に関与したことによる、党からの戒告処分の影響。",
     comment:"経産副大臣や環境政務官を歴任。水素エネルギー導入拡大や先端技術のサプライチェーン確保などに関与。一方で、安倍派の一連の不記載問題において戒告処分を受け、道義的信頼の回復が課題の最中にある。",
     links:{hp:"https://www.google.com/search?q=%E9%96%A2%20%E8%8A%B3%E5%BC%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/関芳弘",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P225", name:"世古 万美子", reading:"せこ まみこ", party:"自民党", role:"衆議院議員",
@@ -3234,15 +3234,15 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P291", name:"中司 宏", reading:"なかつか ひろし", party:"日本維新の会", role:"衆議院議員",
+    id:"P291", name:"中司 宏", reading:"なかつか ひろし", party:"日本維新の会", role:"衆議院議員、内閣府特命担当大臣（こども政策、少子化対策、若者活躍、規制改革、共生・共助）（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"大阪11", status:"現職", gender:"男", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
-    plus:"厚生労働大臣を歴任。年金問題の追及や、社会保障制度改革における屈指の専門知識。", minus:"行政監視や是正措置に強みを持つ一方、中長期の大規模マクロ産業投資の対案提示が地味。",
-    comment:"「消えた年金問題」の追及で知られ、厚労相や野党第一党の幹事長、政調会長などの重要ポストを歴任。非正規雇用の是正や最低賃金引き上げ、生活困窮者支援など福祉分野の実務で極めて高い存在感を示す。",
+    plus:"2026年9月の第2次高市改造内閣で、日本維新の会から初めて入閣した（内閣府特命担当大臣）。", minus:"",
+    comment:"評価の裏付けとなる資料を確認中。2026年11月、他の議員の経歴と取り違えていた記述（厚生労働大臣の歴任、「消えた年金問題」の追及など）を削除した。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%AD%E5%8F%B8%20%E5%AE%8F%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/中司宏",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
+    flag_crime:false, flag_caution:false, updated:"2026.11", survey:"未評価"
   },
   {
     id:"P292", name:"長妻 昭", reading:"ながつま あきら", party:"中道改革連合", role:"衆議院議員（東京7区）、立憲民主党代表代行、元厚生労働大臣（鳩山内閣・2009〜2010年）、「ミスター年金」",
@@ -3718,7 +3718,7 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"未評価"
   },
   {
-    id:"P335", name:"葉梨 康弘", reading:"はなし やすひろ", party:"自民党", role:"衆議院議員",
+    id:"P335", name:"葉梨 康弘", reading:"はなし やすひろ", party:"自民党", role:"衆議院議員、国家公安委員会委員長（第2次高市改造内閣・2026年9月〜）",
     chamber:"衆議院", district:"茨城3", status:"現職", gender:"男", age:null,
     total:62, rank:"C-",
     axes:[3,3,3,4,3,3,3,3],
@@ -3726,7 +3726,7 @@ const POLITICIANS = [
     plus:"法務大臣等の閣僚経験、警察官僚出身の精緻な法理知見と危機管理能力。", minus:"過去の法相在任時における国会答弁（死刑・法務行政を巡る発言）での更迭劇。",
     comment:"法務大臣などを歴任。司法手続きのデジタル化や刑法改正の実務に関与。国会答弁が物議を醸し法相を更迭された経緯があり、説明責任や発信の丁寧さにおいて慎重な評価を伴う。",
     links:{hp:"https://www.google.com/search?q=%E8%91%89%E6%A2%A8%20%E5%BA%B7%E5%BC%98%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/葉梨康弘",yt:""},
-    flag_crime:false, flag_caution:true, updated:"2026.06", survey:"評価済"
+    flag_crime:false, flag_caution:true, updated:"2026.11", survey:"評価済"
   },
   {
     id:"P336", name:"馬場 伸幸", reading:"ばば のぶゆき", party:"日本維新の会", role:"日本維新の会代表",
@@ -5104,8 +5104,8 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.09", survey:"未評価"
   },
   {
-    id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"衆議院議員",
-    chamber:"衆議院", district:"比例・北海道", status:"現職", gender:"男", age:null,
+    id:"P462", name:"渡辺 孝一", reading:"わたなべ こういち", party:"自民党", role:"元衆議院議員（比例北海道）",
+    chamber:"元議員", district:"比例・北海道", status:"元職", gender:"男", age:null,
     total:72, rank:"B-",
     axes:[4,3,3,4,4,3,4,4],
     stances:{tax_cut:"△",active_fiscal:"△",discipline:"×",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"×",birthrate:"◎",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"△"},
@@ -5762,20 +5762,9 @@ const POLITICIANS = [
     axes:[3,3,3,3,3,3,4,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"○",ir:"○",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"2011年震災・原発事故を契機に市民活動へ転身。「全国カルト校則廃止プロジェクト」代表・「子ども権利・校則プロジェクト」発起人として理不尽な校則に悩む子どもたちのSOSを受け止め全国規模の運動を組織。九州で玄海原発再稼働差し止め要請書の提出など脱原発市民運動を牽引。2025年7月参院選にれいわ新選組から立候補し初当選。参院・環境委員会・予算委員会・憲法審査会に所属し教育・環境・経済政策の質問活動を行っている。", minus:"初当選（1期目）で議会での立法・政策実現実績は蓄積途上。主な実績は市民活動レベルであり国政における独自法案の先導等はまだない。",
-    comment:"ピアノ講師から市民活動家・参議院議員へと転身した新人議員。校則改革・子どもの権利擁護という具体的な全国運動の実績を持つが、国政での政策実現はこれからの段階。",
+    comment:"ピアノ講師から市民活動家・参議院議員へと転身した新人議員。校則改革・子どもの権利擁護という具体的な全国運動の実績を持つが、国政での政策実現はこれからの段階。参議院の議員名簿での登録名は「奥田 ふみよ」（通称使用）、本名は「遠藤 芙美代」。重複して登録されていたレコードを統合した。",
     links:{hp:"https://www.okudafumiyo.com",tw:"",wiki:"https://ja.wikipedia.org/wiki/奥田ふみよ",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
-    id:"P531", name:"遠藤 芙美代", reading:"えんどう ふみよ", party:"れいわ新選組", role:"参議院議員",
-    chamber:"参議院", district:"比例", status:"現職", gender:"女", age:null,
-    total:null, rank:"",
-    axes:null,
-    stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"×",defense:"×",econ_sec:"△",immigration:"○",renewable:"◎",nuclear:"×",expo:"×",ir:"×",mynumber:"△",birthrate:"◎",education:"◎",regional:"○",china:"△",foreign:"△",food:"◎",semi:"△"},
-    plus:"ピアノ講師から脱原発・子どもの権利・校則廃止の市民運動を経てれいわ共同代表に就任した行動力。代表質問・予算委員会を担う発信力で、社会変革への情熱的なメッセージを発信し続ける。", minus:"音楽・市民運動出身で行政実務・経済政策の専門性が薄く立法実務はこれから。反軍拡・消費税廃止など多数派との政策距離が大きい。",
-    comment:"脱原発・校則廃止・子どもの権利を訴えてきた市民活動家がれいわ共同代表として国政の表舞台へ。現場の声を政策に変える情熱と発信力が強みだが、行政実務・経済政策での専門性構築が今後の課題。",
-    links:{hp:"https://www.google.com/search?q=%E9%81%A0%E8%97%A4%20%E8%8A%99%E7%BE%8E%E4%BB%A3%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
   {
     id:"P532", name:"奥村 祥大", reading:"おくむら よしひろ", party:"国民民主党", role:"参議院議員",
@@ -6351,16 +6340,15 @@ const POLITICIANS = [
   },
   {
     id:"P592", name:"佐々木 りえ", reading:"ささき りえ", party:"日本維新の会", role:"参議院議員",
-    chamber:"参議院", district:"大阪", status:"現職", gender:"男", age:null,
+    chamber:"参議院", district:"大阪", status:"現職", gender:"女", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"タレント活動を活かした発信力。", minus:"大規模な政策実現力は発展途上。",
-    comment:"維新所属。発信力に強みがあるが、国政実績はこれから。",
+    comment:"維新所属。発信力に強みがあるが、国政実績はこれから。参議院の議員名簿での登録名は「佐々木 りえ」（通称使用）、本名は「中野 理江」。重複して登録されていたレコードを統合した。",
     links:{hp:"https://www.google.com/search?q=%E4%BD%90%E3%80%85%E6%9C%A8%20%E3%82%8A%E3%81%88%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/佐々木りえ",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
-  {id:"P593",name:"中野理江",reading:"なかの りえ",party:"日本維新の会",role:"参議院議員",chamber:"参議院",district:"大阪",status:"現職",gender:"女",age:null,total:null,rank:"",axes:null,stances:{tax_cut:"○",active_fiscal:"△",discipline:"◎",defense:"○",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"△",expo:"◎",ir:"◎",mynumber:"◎",birthrate:"○",education:"◎",regional:"◎",china:"○",foreign:"○",food:"○",semi:"○"},plus:"大阪市議3期・維新総務会長代行を経た党内実績。教育無償化・子育て支援への一貫した姿勢",minus:"金融庁警告を受けた投資詐欺疑惑業者のグループ会社代表取締役を参院選出馬直前まで務めていた問題。政治資金でも秘書の娘への発注疑惑",comment:"グラビア出身から大阪市議3期・維新総務会長代行を経て2025年参院選大阪トップ当選（佐々木りえ名義）。教育・子育て政策に取り組むが関連会社の投資詐欺疑惑など問題点も",links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E4%BD%90%E3%80%85%E6%9C%A8%E7%90%86%E6%B1%9F",yt:""},flag_crime:false,flag_caution:true,updated:"2026.06",survey:"未評価"},
   {
     id:"P594", name:"佐藤 啓", reading:"さとう けい", party:"自民党", role:"参議院議員（奈良県選挙区）、内閣官房副長官（政務担当）、元財務大臣政務官、元経済産業大臣政務官（内閣府・復興政務官兼任・菅内閣）、元総務省官僚（茨城県常陸太田市部長等）",
     chamber:"参議院", district:"奈良", status:"現職", gender:"男", age:null,
@@ -7339,20 +7327,9 @@ const POLITICIANS = [
     axes:[3,4,3,3,3,3,3,3],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"国土交通・地域振興における実務的な調整力。", minus:"独自の主要立法実績が未蓄積。",
-    comment:"自民党所属。インフラ整備や地域政策の調整を行う。",
+    comment:"自民党所属。インフラ整備や地域政策の調整を行う。参議院の議員名簿での登録名は「牧野 たかお」（通称使用）、本名は「牧野 京夫」。重複して登録されていたレコードを統合した。",
     links:{hp:"https://www.google.com/search?q=%E7%89%A7%E9%87%8E%20%E3%81%9F%E3%81%8B%E3%81%8A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/牧野たかお",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
-  },
-  {
-    id:"P698", name:"牧野 京夫", reading:"まきの きょうお", party:"自民党", role:"参議院議員",
-    chamber:"参議院", district:"静岡", status:"現職", gender:"男", age:null,
-    total:null, rank:"",
-    axes:null,
-    stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
-    plus:"地域での地道な活動。", minus:"独自の大規模立法実績はこれから。",
-    comment:"表記の揺れのため同人物として評価。",
-    links:{hp:"https://www.google.com/search?q=%E7%89%A7%E9%87%8E%20%E4%BA%AC%E5%A4%AB%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"",wiki:"https://ja.wikipedia.org/wiki/牧野京夫",yt:""},
-    flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
   {
     id:"P699", name:"牧山 ひろえ", reading:"まきやま ひろえ", party:"立憲民主党", role:"参議院議員",
@@ -7455,16 +7432,15 @@ const POLITICIANS = [
   },
   {
     id:"P711", name:"三上 えり", reading:"みかみ えり", party:"立憲民主党", role:"参議院議員",
-    chamber:"参議院", district:"広島", status:"現職", gender:"男", age:null,
+    chamber:"参議院", district:"広島", status:"現職", gender:"女", age:null,
     total:null, rank:"",
     axes:null,
     stances:{tax_cut:"○",active_fiscal:"△",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"○",nuclear:"○",expo:"△",ir:"△",mynumber:"○",birthrate:"○",education:"○",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},
     plus:"地域での地道な福祉政策への取り組み。", minus:"大規模な政策先導の実績はこれから。",
-    comment:"立憲民主党所属。地域の課題を重視する。",
+    comment:"立憲民主党所属。地域の課題を重視する。参議院の議員名簿での登録名は「三上 えり」（通称使用）、本名は「川堀 絵里」。重複して登録されていたレコードを統合した。",
     links:{hp:"https://www.google.com/search?q=%E4%B8%89%E4%B8%8A%20%E3%81%88%E3%82%8A%20%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88%20%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8",tw:"https://x.com/erimikami0611",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E7%B5%B5%E9%87%8C",yt:""},
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"未評価"
   },
-  {id:"P712",name:"川堀絵里",reading:"かわほり えり",party:"立憲民主党",role:"参議院議員",chamber:"参議院",district:"広島",status:"現職",gender:"女",age:null,total:null,rank:"",axes:null,stances:{tax_cut:"○",active_fiscal:"○",discipline:"○",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"○",education:"◎",regional:"○",china:"△",foreign:"○",food:"○",semi:"○"},plus:"テレビ新広島でのアナウンサー・ディレクター26年の情報発信経験。野党統一候補として広島から当選した実績",minus:"参院1期目で立法実績はまだ限定的。安全保障・経済政策への専門性はこれから",comment:"テレビ新広島26年のアナウンサー経験を持つ広島選出参議院議員（1期目・三上えり名義で当選）。核禁止条約・環境問題を中心に活動し2025年9月立憲民主党入党",links:{tw:"",hp:"",wiki:"https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E7%B5%B5%E9%87%8C",yt:""},flag_crime:false,flag_caution:false,updated:"2026.06",survey:"未評価"},
   {
     id:"P713", name:"水岡 俊一", reading:"みずおか しゅんいち", party:"立憲民主党", role:"参議院議員",
     chamber:"参議院", district:"比例", status:"現職", gender:"男", age:null,
@@ -8542,8 +8518,8 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P819", name:"逢坂 誠二", reading:"おおさか せいじ", party:"立憲民主党", role:"衆議院議員（北海道8区）、元立憲民主党代表、元内閣総理大臣補佐官（地域主権担当）、元総務大臣政務官、元ニセコ町長（3期・全国最年少当選）",
-    chamber:"衆議院", district:"北海道8区", status:"現職", gender:"男", age:null,
+    id:"P819", name:"逢坂 誠二", reading:"おおさか せいじ", party:"立憲民主党", role:"前衆議院議員（北海道8区）、元立憲民主党代表、元内閣総理大臣補佐官（地域主権担当）、元総務大臣政務官、元ニセコ町長（3期・全国最年少当選）",
+    chamber:"元議員", district:"北海道8区", status:"元職", gender:"男", age:null,
     total:77, rank:"B+",
     axes:[4,3,3,4,4,5,4,4],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"◎",defense:"×",econ_sec:"△",immigration:"△",renewable:"○",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"○",education:"○",regional:"◎",china:"△",foreign:"△",food:"◎",semi:"△"},
@@ -8553,8 +8529,8 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P820", name:"馬淵 澄夫", reading:"まぶち すみお", party:"中道改革連合", role:"衆議院議員（奈良1区）、元国土交通大臣（第14代・菅直人内閣）、元国土交通副大臣、元内閣総理大臣補佐官（原子力発電所事故対応担当）、元民主党国会対策委員長",
-    chamber:"衆議院", district:"奈良1", status:"現職", gender:"男", age:null,
+    id:"P820", name:"馬淵 澄夫", reading:"まぶち すみお", party:"中道改革連合", role:"前衆議院議員（奈良1区）、元国土交通大臣（第14代・菅直人内閣）、元国土交通副大臣、元内閣総理大臣補佐官（原子力発電所事故対応担当）、元民主党国会対策委員長",
+    chamber:"元議員", district:"奈良1", status:"元職", gender:"男", age:null,
     total:75, rank:"B",
     axes:[4,3,4,5,3,4,4,3],
     stances:{tax_cut:"◎",active_fiscal:"◎",discipline:"○",defense:"○",econ_sec:"○",immigration:"△",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"○",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
@@ -8564,8 +8540,8 @@ const POLITICIANS = [
     flag_crime:false, flag_caution:false, updated:"2026.06", survey:"評価済"
   },
   {
-    id:"P821", name:"枝野 幸男", reading:"えだの ゆきお", party:"立憲民主党", role:"衆議院議員（埼玉5区）、衆議院憲法審査会会長（2024年〜）、元立憲民主党代表、元内閣官房長官（菅直人内閣）、元経済産業大臣（野田内閣）、元行政刷新担当大臣（鳩山内閣）",
-    chamber:"衆議院", district:"埼玉5", status:"現職", gender:"男", age:null,
+    id:"P821", name:"枝野 幸男", reading:"えだの ゆきお", party:"立憲民主党", role:"前衆議院議員（埼玉5区）、元衆議院憲法審査会会長、元立憲民主党代表、元内閣官房長官（菅直人内閣）、元経済産業大臣（野田内閣）、元行政刷新担当大臣（鳩山内閣）",
+    chamber:"元議員", district:"埼玉5", status:"元職", gender:"男", age:null,
     total:82, rank:"A-",
     axes:[4,4,2,5,5,4,5,4],
     stances:{tax_cut:"△",active_fiscal:"○",discipline:"○",defense:"△",econ_sec:"○",immigration:"○",renewable:"◎",nuclear:"×",expo:"△",ir:"×",mynumber:"△",birthrate:"○",education:"◎",regional:"○",china:"○",foreign:"○",food:"○",semi:"○"},
@@ -9149,8 +9125,14 @@ const EVIDENCE = [
   {id:"E0867", pid:"P490", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載26万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が26万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
   {id:"E0868", pid:"P621", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載22万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が22万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
   {id:"E0869", pid:"P731", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載4万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が4万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
-  {id:"E0870", pid:"P725", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載282万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が282万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"}
-
+  {id:"E0870", pid:"P725", cat:"問題・疑惑", sub:"政治資金問題", summary:"政治資金収支報告書の不記載282万円（党の処分対象外）", detail:"2018〜2022年分の政治資金収支報告書に派閥からの還流等の不記載が282万円あり、2024年2月13日に自由民主党が公表した不記載議員85人（衆院51人・参院31人・選挙区支部長3人、総額約5.8億円）に掲載された。ただし不記載額が党の処分基準に達しなかったため、同年4月4日の党紀委員会による処分39人には含まれていない。", src:"自由民主党 政治資金収支報告書の不記載に関する調査結果（2024年2月13日公表・85人）／東京新聞「【一覧】自民党『裏金』調査」", url:"https://www.tokyo-np.co.jp/article/308351", rel:"政治倫理", impact:"中", date:"2024-02"},
+  {id:"E0871", pid:"P224", cat:"団体との接点", sub:"旧統一教会（2022年自民党調査）", summary:"旧統一教会の関連団体の会合に本人が出席し、あいさつ（2022年の自民党調査で氏名公表）", detail:"自民党が2022年9月8日に公表した所属国会議員379人への調査結果（接点ありと回答179人、うち氏名公表121人）で、「旧統一教会関連団体の会合への出席（議員本人出席で挨拶有り）」の項目に氏名が掲載された。本人の回答にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"自由民主党が2022年9月8日に公表した調査結果の氏名一覧（テレビ朝日の同日報道に掲載）", url:"https://news.tv-asahi.co.jp/news_politics/articles/000267739.html", rel:"", impact:"", date:"2022-09-08"},
+  {id:"E0872", pid:"P056", cat:"団体との接点", sub:"旧統一教会（2022年自民党調査）", summary:"旧統一教会の関連団体の会合に本人が出席し、あいさつ（2022年の自民党調査で氏名公表）", detail:"自民党が2022年9月8日に公表した所属国会議員379人への調査結果（接点ありと回答179人、うち氏名公表121人）で、「旧統一教会関連団体の会合への出席（議員本人出席で挨拶有り）」の項目に氏名が掲載された。本人の回答にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"自由民主党が2022年9月8日に公表した調査結果の氏名一覧（テレビ朝日の同日報道に掲載）", url:"https://news.tv-asahi.co.jp/news_politics/articles/000267739.html", rel:"", impact:"", date:"2022-09-08"},
+  {id:"E0873", pid:"P006", cat:"団体との接点", sub:"旧統一教会（2022年自民党調査）", summary:"旧統一教会の関連団体の会合に本人が出席し、あいさつと講演（2022年の自民党調査で氏名公表）", detail:"自民党が2022年9月8日に公表した所属国会議員379人への調査結果（接点ありと回答179人、うち氏名公表121人）で、「旧統一教会関連団体の会合への出席」のうち「議員本人出席で挨拶有り」と「議員本人出席で講演」の両方の項目に氏名が掲載された。本人の回答にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"自由民主党が2022年9月8日に公表した調査結果の氏名一覧（テレビ朝日の同日報道に掲載）", url:"https://news.tv-asahi.co.jp/news_politics/articles/000267739.html", rel:"", impact:"", date:"2022-09-08"},
+  {id:"E0874", pid:"P147", cat:"団体との接点", sub:"旧統一教会（2022年自民党調査）", summary:"旧統一教会の関連団体の会合に本人が出席し、講演（2022年の自民党調査で氏名公表）", detail:"自民党が2022年9月8日に公表した所属国会議員379人への調査結果（接点ありと回答179人、うち氏名公表121人）で、「旧統一教会関連団体の会合への出席（議員本人出席で講演）」の項目に氏名が掲載された。本人の回答にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"自由民主党が2022年9月8日に公表した調査結果の氏名一覧（テレビ朝日の同日報道に掲載）", url:"https://news.tv-asahi.co.jp/news_politics/articles/000267739.html", rel:"", impact:"", date:"2022-09-08"},
+  {id:"E0875", pid:"P067", cat:"団体との接点", sub:"旧統一教会（2022年自民党調査）", summary:"旧統一教会や関連団体への会費類の支出（2022年の自民党調査で氏名公表）", detail:"自民党が2022年9月8日に公表した所属国会議員379人への調査結果（接点ありと回答179人、うち氏名公表121人）で、「旧統一教会及び関連団体に対する会費類の支出」のうち、政治資金規正法上の公開対象となる議員として氏名が掲載された。本人の回答にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"自由民主党が2022年9月8日に公表した調査結果の氏名一覧（テレビ朝日の同日報道に掲載）", url:"https://news.tv-asahi.co.jp/news_politics/articles/000267739.html", rel:"", impact:"", date:"2022-09-08"},
+  {id:"E0876", pid:"P335", cat:"団体との接点", sub:"旧統一教会（本人の説明）", summary:"旧統一教会と関係が深いとされる「世界日報」発行の月刊誌にインタビューが掲載（2008年ごろ、2022年に本人が説明）", detail:"2022年8月15日の記者会見で、2008年ごろに「ダイジェスト版世界日報 月刊ビューポイント」に自身のインタビュー記事が掲載されていたことを明らかにした。本人は「取材に応じたからといって、当該団体と関係があるとは認識していません」と述べている。本人の説明にもとづく当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"Business Insider Japan「旧統一教会と接点の閣僚・副大臣・政務官」（2022年8月17日）", url:"https://www.businessinsider.jp/article/257978", rel:"", impact:"", date:"2008"},
+  {id:"E0877", pid:"P291", cat:"団体との接点", sub:"旧統一教会（2022年日本維新の会調査）", summary:"旧統一教会の関連団体のイベントへの参加や講演（2022年8月に日本維新の会が公表した所属国会議員13人の一人）", detail:"日本維新の会が2022年8月2日に公表した所属国会議員の調査結果で、旧統一教会の関連団体と接点があった13人の一人として氏名が挙げられた。党は13人について、関連団体のイベントへの参加や講演を行ったが、組織的な支援や寄付は受けていないと説明している。13人それぞれの内訳は報道されていない。党の調査にもとづく2022年当時の記録であり、現在の関係の有無や政策への影響を示すものではない。", src:"東京スポーツ「維新 国会議員13人が旧統一教会と接点」（2022年8月2日）", url:"https://www.tokyo-sports.co.jp/social/4358945/", rel:"", impact:"", date:"2022-08-02"},
 ];
 
 const CHANGELOG = [

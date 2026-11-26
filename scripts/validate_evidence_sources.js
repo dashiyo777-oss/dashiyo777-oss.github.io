@@ -99,6 +99,28 @@ for (const e of EVIDENCE) {
 }
 
 // ---------------------------------------------------------------------------
+// A1. 「団体との接点」evidence の検証（2026-11-05追加）
+//
+//   政治家と宗教団体・政治団体などとの接点を記録する区分。不祥事ではないが、
+//   特定の団体との関係を示す記載は読者の評価に直結するため、「問題・疑惑」と
+//   同じく出典名と到達できるURLを必須にする。baseline による例外は設けない。
+// ---------------------------------------------------------------------------
+const LINK_CAT = '団体との接点';
+for (const e of EVIDENCE) {
+  if (e.cat !== LINK_CAT) continue;
+  const where = `${e.id}（${e.pid}）`;
+  if (!has(e.src)) {
+    errors.push(`${where}: cat:"${LINK_CAT}" の evidence に src がありません。出典を明記してください。`);
+  }
+  if (!has(e.url) || !/^https?:\/\//.test(e.url)) {
+    errors.push(`${where}: cat:"${LINK_CAT}" の evidence には、到達できる出典のURLが必須です。`);
+  }
+  if (!has(e.date)) {
+    errors.push(`${where}: cat:"${LINK_CAT}" の evidence には、接点があった時期（date）が必須です。`);
+  }
+}
+
+// ---------------------------------------------------------------------------
 // A2. 出典名の創作・内容空疎・テンプレート量産の検出（全カテゴリ）
 //
 //   2026-09の全件検証で、以下4種類の量産パターンが見つかった。
@@ -245,9 +267,12 @@ if (stale.length) {
 //   裏付けとなる evidence を1件も持たない議員に評価点を付けない、という原則を
 //   データ側で担保する。2026年9月の全件検証以前は、evidence を持たない議員
 //   445人（全781人の57%）に評価点だけが付いている状態だった。
+//
+//   「団体との接点」は評価点に反映しない区分のため、評価の裏付けには数えない
+//   （2026-11-10 追加）。
 // ---------------------------------------------------------------------------
 {
-  const pidsWithEvidence = new Set(EVIDENCE.map((e) => e.pid));
+  const pidsWithEvidence = new Set(EVIDENCE.filter((e) => e.cat !== LINK_CAT).map((e) => e.pid));
   for (const p of POLITICIANS) {
     const hasEvi = pidsWithEvidence.has(p.id);
     const hasScore = p.total !== null && p.total !== undefined;

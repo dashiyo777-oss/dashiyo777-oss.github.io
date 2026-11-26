@@ -1,0 +1,64 @@
+name: 発言の内訳（議員・答弁・議事進行）取得
+
+# 会議録の発言を1件ずつ取得し、発言者の肩書きで分類して facts.json の
+# speech_breakdown に保存する。全員分で2時間前後かかるため手動実行のみ。
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '実行モード'
+        required: true
+        default: 'test'
+        type: choice
+        options:
+          - test   # 最初の5名のみ
+          - full   # 全員分
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 発言の内訳を取得
+        id: fetch
+        continue-on-error: true
+        run: |
+          MODE="${{ github.event.inputs.mode || 'test' }}"
+          if [ "$MODE" = "full" ]; then
+            python3 scripts/fetch_speech_breakdown.py --full
+          else
+            python3 scripts/fetch_speech_breakdown.py
+          fi
+
+      # 途中でエラーが出ても、取得できた分は保存する。
+      # 同じ日にもう一度実行すると、取得済みの議員は飛ばして続きから取得する。
+      - name: facts.json をコミット・プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add facts.json
+          if git diff --staged --quiet; then
+            echo "変更なし（スキップ）"
+          else
+            DATE=$(date +'%Y.%m.%d')
+            git commit -m "データ更新: 発言の内訳（${DATE}）"
+            git pull --rebase
+            git push
+          fi
+
+      - name: 取得エラーの有無
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "一部の議員で取得に失敗しました。同じ日に再実行すると続きから取得します。"
+          exit 1

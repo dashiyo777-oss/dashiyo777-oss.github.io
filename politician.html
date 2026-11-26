@@ -424,6 +424,7 @@
   .ev-card.cat-problem { background: rgba(240,160,48,0.11); border-color: var(--orange); }
   .ev-card.cat-achievement { background: rgba(74,199,118,0.11); border-color: var(--green); }
   .ev-card.cat-statement { background: rgba(91,160,224,0.11); border-color: var(--blue); }
+  .ev-card.cat-link { background: rgba(140,140,150,0.10); border-color: var(--gray); }
 
   .ev-icon { font-size: 0.85rem; margin-right: 0.4rem; }
 
@@ -1217,6 +1218,7 @@ function buildPage(p) {
     { key: 'all', label: 'すべて', icon: '📁' },
     { key: '実績', label: '実績', icon: '✅' },
     { key: '発言・主張', label: '発言・主張', icon: '💬' },
+    { key: '団体との接点', label: '団体との接点', icon: '🔗' },
     { key: '問題・疑惑', label: '問題・疑惑', icon: '⚠️' },
     { key: '犯罪・違反', label: '犯罪・違反', icon: '🚨' }
   ];
@@ -1251,10 +1253,12 @@ function buildPage(p) {
       panelEv.forEach(e => {
         const cardClass = e.cat === '犯罪・違反' ? 'cat-crime' :
                           e.cat === '問題・疑惑' ? 'cat-problem' :
-                          e.cat === '実績' ? 'cat-achievement' : 'cat-statement';
+                          e.cat === '実績' ? 'cat-achievement' :
+                          e.cat === '団体との接点' ? 'cat-link' : 'cat-statement';
         const icon = e.cat === '犯罪・違反' ? '🚨' :
                      e.cat === '問題・疑惑' ? '⚠️' :
-                     e.cat === '実績' ? '✅' : '💬';
+                     e.cat === '実績' ? '✅' :
+                     e.cat === '団体との接点' ? '🔗' : '💬';
 
         const card = document.createElement('div');
         card.className = `ev-card ${cardClass}`;

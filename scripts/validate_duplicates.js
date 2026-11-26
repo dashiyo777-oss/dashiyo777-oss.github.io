@@ -15,6 +15,8 @@
 //   (1) 読み（reading）＋院＋選挙区 が一致する別レコード
 //   (2) 氏名に角かっこが含まれるレコード（取り込み時のプレースホルダ残り）
 //   (3) links の URL に角かっこが含まれるレコード
+//   (4) 現職の人数が衆参の定数を超えている
+//   (5) 衆議院の同じ小選挙区に現職が2人以上いる
 //
 // 使い方: node scripts/validate_duplicates.js
 
@@ -48,6 +50,45 @@ const norm = (v) => String(v || '').replace(/[\s　]/g, '');
       `      同一人物の重複であれば統合してください。参議院の議員名簿での登録名を\n` +
       `      正式表記とし、本名は comment に記載する運用です。\n` +
       `      別人であれば、読みが同じでも選挙区が異なるはずです（例: 伊藤孝江/伊藤孝恵）。`
+    );
+  }
+}
+
+// (4) 現職の人数が定数を超えていないか
+//   2026-10、現職が衆468人（定数465）・参251人（定数248）と定数を上回っていた。
+//   参議院は通称と本名で読みが異なる重複4組が (1) をすり抜けており、
+//   衆議院は議席を失った3人と死去した1人が現職のまま残っていた。
+{
+  const SEATS = { 衆議院: 465, 参議院: 248 };
+  for (const [chamber, seats] of Object.entries(SEATS)) {
+    const n = POLITICIANS.filter((p) => p.chamber === chamber && p.status === '現職').length;
+    if (n > seats) {
+      errors.push(
+        `${chamber}の現職が ${n}人 で、定数 ${seats} を超えています。\n` +
+        `      通称と本名による重複登録、または議席を失った議員が現職のまま残っていないか、\n` +
+        `      ${chamber}の公式サイトの議員一覧と照合してください。`
+      );
+    }
+  }
+}
+
+// (5) 衆議院の同じ小選挙区に現職が2人以上いないか（比例は対象外）
+{
+  const byDistrict = new Map();
+  for (const p of POLITICIANS) {
+    if (p.chamber !== '衆議院' || p.status !== '現職') continue;
+    const d = norm(p.district).replace(/区$/, '');
+    if (!d || d.startsWith('比例')) continue;
+    if (!byDistrict.has(d)) byDistrict.set(d, []);
+    byDistrict.get(d).push(p);
+  }
+  for (const [d, list] of byDistrict) {
+    if (list.length < 2) continue;
+    errors.push(
+      `衆議院 ${d}区 に現職が ${list.length}人 います: ` +
+      list.map((p) => `${p.id}「${p.name}」`).join(' / ') + `\n` +
+      `      小選挙区の当選者は1人です。比例復活なら district を比例ブロックに、\n` +
+      `      落選・辞職・死去なら status を元職にしてください。`
     );
   }
 }

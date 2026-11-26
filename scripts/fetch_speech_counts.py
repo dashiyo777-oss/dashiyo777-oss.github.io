@@ -107,11 +107,17 @@ def main():
         print(f"[テストモード] 最初の {TEST_COUNT} 名のみ実行")
 
     facts = load_existing(OUTPUT_PATH)
-    already_done = set(facts.keys())
-    if already_done:
-        print(f"既存データ: {len(already_done)} 名分（スキップ）")
-
     period_str = f"{FROM_DATE}〜{UNTIL_DATE}"
+    # 同じ日に取得済みの議員だけをスキップする（中断後の再開用）。
+    # 以前は facts.json にある議員をすべてスキップしていたため、毎月の --full でも
+    # 既存議員の発言数が更新されず、703名が 2026-07-04 時点の値のままになっていた。
+    already_done = {
+        pid for pid, v in facts.items()
+        if v.get("period") == period_str and v.get("speech_count") is not None
+    }
+    if already_done:
+        print(f"本日取得済み: {len(already_done)} 名分（スキップ）")
+
     errors = []
     processed = 0
 
@@ -128,14 +134,13 @@ def main():
             print(f"  [ERROR] {pid} {name}: {err_msg}")
             log_error(pid, name, err_msg)
             errors.append(pid)
-            facts[pid] = {
-                "name": name, "speech_count": None,
-                "period": period_str, "error": err_msg
-            }
+            # 取得に失敗しても、前回の値は消さずに残す
+            facts.setdefault(pid, {"name": name})["error"] = err_msg
         else:
-            facts[pid] = {
-                "name": name, "speech_count": result, "period": period_str
-            }
+            # speech_count 以外の項目（質問主意書・議員立法・speech_breakdown 等）は残す
+            entry = facts.setdefault(pid, {})
+            entry.update({"name": name, "speech_count": result, "period": period_str})
+            entry.pop("error", None)
             warn = " ⚠️ 0件（表記ゆれ？）" if result == 0 else ""
             print(f"  {pid} {name}: {result}件{warn}")
             if result == 0:
